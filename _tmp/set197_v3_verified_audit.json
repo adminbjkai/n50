@@ -1,0 +1,425 @@
+{
+  "version": "v3",
+  "setNum": 197,
+  "searchCalls": 8,
+  "poolSize": 598,
+  "scoredCount": 327,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/Pumpkin-MC/Pumpkin",
+      "score": 97.0,
+      "category": "Gaming / Game Servers",
+      "stars": 7803,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/openkruise/kruise-game",
+      "score": 89.64,
+      "category": "Gaming / Game Servers",
+      "stars": 1060,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ferrumc-rs/ferrumc",
+      "score": 89.55,
+      "category": "Gaming / Game Servers",
+      "stars": 2282,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/deinfreu/hytale-server-container",
+      "score": 88.47,
+      "category": "Gaming / Game Servers",
+      "stars": 254,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/agones-dev/agones",
+      "score": 85.26,
+      "category": "Gaming / Game Servers",
+      "stars": 6883,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/PowerNukkitX/PowerNukkitX",
+      "score": 84.0,
+      "category": "AI / LLM",
+      "stars": 619,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/daydreamsai/daydreams",
+      "score": 83.64,
+      "category": "AI / LLM",
+      "stars": 608,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/gonglei007/GameDevMind",
+      "score": 73.0,
+      "category": "Maps / GIS / Location",
+      "stars": 6357,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/singchia/frontier",
+      "score": 67.16,
+      "category": "Media / Streaming",
+      "stars": 291,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/calloftheNIGHT2023/gamebuddy-agent",
+      "score": 65.99,
+      "category": "AI / LLM",
+      "stars": 34,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/youngmonkeys/ezyfox-server",
+      "score": 65.9,
+      "category": "Media / Streaming",
+      "stars": 685,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Mr-Homeless/waldo",
+      "score": 62.43,
+      "category": "AI / LLM",
+      "stars": 436,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/chrisgleissner/c64stream",
+      "score": 56.72,
+      "category": "Media / Streaming",
+      "stars": 61,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ineedbots/iw4_bot_warfare",
+      "score": 56.57,
+      "category": "AI / LLM",
+      "stars": 166,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ArtIsWar/ArtTuneDB",
+      "score": 56.12,
+      "category": "Media / Streaming",
+      "stars": 42,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ImmerNochNoah/VideoGameCapture",
+      "score": 55.13,
+      "category": "Media / Streaming",
+      "stars": 54,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/swstegall/Garlemald-Server",
+      "score": 48.54,
+      "category": "Maps / GIS / Location",
+      "stars": 10,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Avenuegrochain/Wuthering-Waves-Cheat",
+      "score": 43.1,
+      "category": "Maps / GIS / Location",
+      "stars": 17,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dumbie/CtrlUI",
+      "score": 42.71,
+      "category": "Maps / GIS / Location",
+      "stars": 82,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kazetaos/kazeta",
+      "score": 82.55,
+      "category": "Gaming / Game Servers",
+      "stars": 648,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Unixcraft-Studios/X3Dctl",
+      "score": 50.42,
+      "category": "Media / Streaming",
+      "stars": 35,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ineedbots/iw5_bot_warfare",
+      "score": 49.38,
+      "category": "AI / LLM",
+      "stars": 147,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aceld/zinx",
+      "score": 78.5,
+      "category": "Gaming / Game Servers",
+      "stars": 7728,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/acreloaded/acr",
+      "score": 48.84,
+      "category": "Media / Streaming",
+      "stars": 144,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pokerdeveloper/Real-time-Multiplayer-Poker-Game-Engine-",
+      "score": 43.98,
+      "category": "AI / LLM",
+      "stars": 9,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/GameServerManagers/docker-gameserver",
+      "score": 78.26,
+      "category": "Gaming / Game Servers",
+      "stars": 335,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pokercode88/Texas-Holdem-Poker-Platform",
+      "score": 39.9,
+      "category": "AI / LLM",
+      "stars": 8,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hperrin/stream-overlay",
+      "score": 38.2,
+      "category": "Media / Streaming",
+      "stars": 43,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/colyseus/colyseus",
+      "score": 77.07,
+      "category": "Gaming / Game Servers",
+      "stars": 7005,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/blizzless/blizzless-diiis",
+      "score": 77.06,
+      "category": "Gaming / Game Servers",
+      "stars": 1562,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/opentibiabr/canary",
+      "score": 76.93,
+      "category": "Gaming / Game Servers",
+      "stars": 597,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cherry-game/cherry",
+      "score": 76.33,
+      "category": "Gaming / Game Servers",
+      "stars": 783,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/topfreegames/pitaya",
+      "score": 76.24,
+      "category": "Gaming / Game Servers",
+      "stars": 2792,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hyperion-mc/hyperion",
+      "score": 75.34,
+      "category": "Gaming / Game Servers",
+      "stars": 1048,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/binary-knight/usurper-reborn",
+      "score": 74.74,
+      "category": "Gaming / Game Servers",
+      "stars": 75,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sashkinbro/EmuCoreX",
+      "score": 74.34,
+      "category": "Gaming / Game Servers",
+      "stars": 135,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mmvanheusden/SteamDepotDownloaderGUI",
+      "score": 73.95,
+      "category": "Gaming / Game Servers",
+      "stars": 487,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ndeadly/MissionControl",
+      "score": 73.87,
+      "category": "Gaming / Game Servers",
+      "stars": 3402,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/otland/forgottenserver",
+      "score": 73.78,
+      "category": "Gaming / Game Servers",
+      "stars": 1810,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zfoo-project/zfoo",
+      "score": 73.33,
+      "category": "Gaming / Game Servers",
+      "stars": 2003,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/escapingnetwork/core-keeper-dedicated",
+      "score": 73.19,
+      "category": "Gaming / Game Servers",
+      "stars": 224,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pterodactyl/game-eggs",
+      "score": 73.07,
+      "category": "Gaming / Game Servers",
+      "stars": 302,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/doitsujin/dxvk",
+      "score": 73.0,
+      "category": "Gaming / Game Servers",
+      "stars": 17334,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/eklonofficial/Vice",
+      "score": 72.88,
+      "category": "Gaming / Game Servers",
+      "stars": 109,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mirror-engine/the-mirror",
+      "score": 72.85,
+      "category": "Gaming / Game Servers",
+      "stars": 1295,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kra-mo/cartridges",
+      "score": 72.69,
+      "category": "Gaming / Game Servers",
+      "stars": 820,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/KonaBess-Next/KonaBess-Next",
+      "score": 72.67,
+      "category": "Gaming / Game Servers",
+      "stars": 163,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/crschnick/pdx_unlimiter",
+      "score": 72.57,
+      "category": "Gaming / Game Servers",
+      "stars": 406,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/partykit/partykit",
+      "score": 71.5,
+      "category": "Gaming / Game Servers",
+      "stars": 5641,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/DeckCheatz/wemod-launcher",
+      "score": 71.45,
+      "category": "Gaming / Game Servers",
+      "stars": 563,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Gaming / Game Servers": 30,
+    "AI / LLM": 8,
+    "Media / Streaming": 8,
+    "Maps / GIS / Location": 4
+  },
+  "scoreStats": {
+    "min": 38.2,
+    "max": 97.0,
+    "mean": 69.0
+  },
+  "dockerCount": 27
+}

@@ -1,0 +1,439 @@
+{
+  "version": "v3",
+  "setNum": 188,
+  "searchCalls": 9,
+  "poolSize": 774,
+  "scoredCount": 346,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/proxy-intell/facebook-ads-library-mcp",
+      "score": 85.23,
+      "category": "AI / LLM",
+      "stars": 238,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/FrigadeHQ/trench",
+      "score": 85.09,
+      "category": "AI / LLM",
+      "stars": 1638,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/faisalman/ua-parser-js",
+      "score": 84.79,
+      "category": "AI / LLM",
+      "stars": 10143,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zhongyu09/openchatbi",
+      "score": 84.67,
+      "category": "AI / LLM",
+      "stars": 580,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/builderz-labs/marketing-dashboard",
+      "score": 84.38,
+      "category": "AI / LLM",
+      "stars": 312,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/SonicJs-Org/sonicjs",
+      "score": 83.71,
+      "category": "CMS / Website",
+      "stars": 1600,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/terminusdb/terminusdb",
+      "score": 83.46,
+      "category": "Analytics / Data",
+      "stars": 3321,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/primocms/primo",
+      "score": 81.46,
+      "category": "Developer Tools / Utilities",
+      "stars": 2337,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/estruyf/vscode-front-matter",
+      "score": 81.44,
+      "category": "Developer Tools / Utilities",
+      "stars": 2517,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/antonkomarev/github-profile-views-counter",
+      "score": 81.37,
+      "category": "Analytics / Data",
+      "stars": 4944,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/justnullname/QuickView",
+      "score": 81.15,
+      "category": "Media / Streaming",
+      "stars": 342,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/plasmicapp/plasmic",
+      "score": 81.0,
+      "category": "Image / Design / Creative",
+      "stars": 6863,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hunvreus/pagescms",
+      "score": 81.0,
+      "category": "Media / Streaming",
+      "stars": 3745,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/betterlytics/betterlytics",
+      "score": 80.96,
+      "category": "Analytics / Data",
+      "stars": 162,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/BemiHQ/BemiDB",
+      "score": 80.93,
+      "category": "Analytics / Data",
+      "stars": 1524,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/oqtane/oqtane.framework",
+      "score": 80.73,
+      "category": "Productivity / Tasks",
+      "stars": 2250,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/withstudiocms/studiocms",
+      "score": 79.5,
+      "category": "CMS / Website",
+      "stars": 790,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/overhangio/tutor",
+      "score": 79.43,
+      "category": "DevOps / Infra",
+      "stars": 1111,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/alibaba/GraphScope",
+      "score": 79.39,
+      "category": "Analytics / Data",
+      "stars": 3550,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nuxt/content",
+      "score": 79.14,
+      "category": "Developer Tools / Utilities",
+      "stars": 3640,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/area17/twill",
+      "score": 78.57,
+      "category": "Communication / Social",
+      "stars": 3956,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/deco-cx/deco",
+      "score": 77.92,
+      "category": "Developer Tools / Utilities",
+      "stars": 845,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nunomaduro/phpinsights",
+      "score": 77.62,
+      "category": "Developer Tools / Utilities",
+      "stars": 5606,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/thechangelog/changelog.com",
+      "score": 77.39,
+      "category": "CMS / Website",
+      "stars": 2766,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/emdash-cms/emdash",
+      "score": 77.2,
+      "category": "CMS / Website",
+      "stars": 10845,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/514-labs/moosestack",
+      "score": 77.1,
+      "category": "Monitoring / Observability",
+      "stars": 582,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/LiuYuYang01/ThriveX-Admin",
+      "score": 76.98,
+      "category": "Networking / VPN",
+      "stars": 282,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Tuhinshubhra/CMSeeK",
+      "score": 75.95,
+      "category": "Documents / PDF / Paperless",
+      "stars": 2547,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/SeriaWei/ZKEACMS",
+      "score": 75.59,
+      "category": "CMS / Website",
+      "stars": 2838,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lynxbase/lynxdb",
+      "score": 74.81,
+      "category": "Monitoring / Observability",
+      "stars": 274,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/boilingdata/boilstream",
+      "score": 74.03,
+      "category": "Media / Streaming",
+      "stars": 101,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/openfun/richie",
+      "score": 73.77,
+      "category": "Education / Learning",
+      "stars": 309,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wakatime/wakatime-cli",
+      "score": 73.1,
+      "category": "Monitoring / Observability",
+      "stars": 443,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dromara/skyeye",
+      "score": 72.57,
+      "category": "CRM / Business",
+      "stars": 1186,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/unacms/UNA",
+      "score": 72.39,
+      "category": "Networking / VPN",
+      "stars": 314,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nextlyhq/nextly",
+      "score": 72.18,
+      "category": "Media / Streaming",
+      "stars": 39,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/code16/sharp",
+      "score": 72.14,
+      "category": "Dashboard / Homelab",
+      "stars": 789,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Mati365/ckeditor5-phoenix",
+      "score": 72.05,
+      "category": "CRM / Business",
+      "stars": 125,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/magicblack/maccms10",
+      "score": 71.87,
+      "category": "Media / Streaming",
+      "stars": 2814,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hubtype/botonic",
+      "score": 71.31,
+      "category": "Automation",
+      "stars": 617,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/xavier-hernandez/goaccess-for-nginxproxymanager",
+      "score": 71.14,
+      "category": "Monitoring / Observability",
+      "stars": 699,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/BranchMetrics/react-native-branch-deep-linking-attribution",
+      "score": 70.41,
+      "category": "Monitoring / Observability",
+      "stars": 539,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/gouline/dbt-metabase",
+      "score": 69.53,
+      "category": "CRM / Business",
+      "stars": 607,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/tx7do/go-wind-cms",
+      "score": 67.24,
+      "category": "Files / Storage / Backup",
+      "stars": 215,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cataseven/Statistics-Graph-Chart-Card",
+      "score": 63.79,
+      "category": "Home Automation / IoT",
+      "stars": 156,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/valkey-io/valkey-search",
+      "score": 63.72,
+      "category": "Image / Design / Creative",
+      "stars": 127,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/HEIGE-PCloud/Notion-Hugo",
+      "score": 63.43,
+      "category": "Productivity / Tasks",
+      "stars": 194,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/PacktPublishing/Interactive-Dashboards-and-Data-Apps-with-Plotly-and-Dash",
+      "score": 63.16,
+      "category": "Dashboard / Homelab",
+      "stars": 283,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/risinglightdb/risinglight",
+      "score": 62.54,
+      "category": "Education / Learning",
+      "stars": 1835,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/otterbrix/otterbrix",
+      "score": 62.32,
+      "category": "Files / Storage / Backup",
+      "stars": 128,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "AI / LLM": 5,
+    "CMS / Website": 5,
+    "Analytics / Data": 5,
+    "Developer Tools / Utilities": 5,
+    "Media / Streaming": 5,
+    "Monitoring / Observability": 5,
+    "CRM / Business": 3,
+    "Image / Design / Creative": 2,
+    "Productivity / Tasks": 2,
+    "Networking / VPN": 2,
+    "Education / Learning": 2,
+    "Dashboard / Homelab": 2,
+    "Files / Storage / Backup": 2,
+    "DevOps / Infra": 1,
+    "Communication / Social": 1,
+    "Documents / PDF / Paperless": 1,
+    "Automation": 1,
+    "Home Automation / IoT": 1
+  },
+  "scoreStats": {
+    "min": 62.32,
+    "max": 85.23,
+    "mean": 75.81
+  },
+  "dockerCount": 16
+}

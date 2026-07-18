@@ -1,0 +1,336 @@
+{
+  "version": "v2",
+  "setNum": 177,
+  "searchCalls": 9,
+  "poolSize": 754,
+  "scoredCount": 369,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/tetherto/qvac",
+      "score": 85.05,
+      "category": "AI / LLM",
+      "stars": 257
+    },
+    {
+      "url": "https://github.com/Kieirra/murmure",
+      "score": 84.3,
+      "category": "AI / LLM",
+      "stars": 870
+    },
+    {
+      "url": "https://github.com/sgasser/pasteguard",
+      "score": 83.54,
+      "category": "AI / LLM",
+      "stars": 655
+    },
+    {
+      "url": "https://github.com/memex-lab/memex",
+      "score": 83.37,
+      "category": "AI / LLM",
+      "stars": 492
+    },
+    {
+      "url": "https://github.com/vorojar/Folio-OCR",
+      "score": 83.21,
+      "category": "AI / LLM",
+      "stars": 444
+    },
+    {
+      "url": "https://github.com/monero-project/monero",
+      "score": 82.35,
+      "category": "Security / Auth",
+      "stars": 10634
+    },
+    {
+      "url": "https://github.com/anyproto/anytype-ts",
+      "score": 82.04,
+      "category": "Web App / Other",
+      "stars": 8200
+    },
+    {
+      "url": "https://github.com/sigoden/dufs",
+      "score": 81.97,
+      "category": "Files / Storage / Backup",
+      "stars": 10315
+    },
+    {
+      "url": "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation",
+      "score": 81.86,
+      "category": "Security / Auth",
+      "stars": 7935
+    },
+    {
+      "url": "https://github.com/yokoffing/Betterfox",
+      "score": 81.62,
+      "category": "Security / Auth",
+      "stars": 10544
+    },
+    {
+      "url": "https://github.com/accrescent/accrescent",
+      "score": 81.51,
+      "category": "Security / Auth",
+      "stars": 2122
+    },
+    {
+      "url": "https://github.com/eljojo/rememory",
+      "score": 81.46,
+      "category": "Security / Auth",
+      "stars": 1385
+    },
+    {
+      "url": "https://github.com/karolswdev/HoldSpeak",
+      "score": 81.16,
+      "category": "Web App / Other",
+      "stars": 276
+    },
+    {
+      "url": "https://github.com/aistra0528/Hail",
+      "score": 81.02,
+      "category": "Web App / Other",
+      "stars": 6048
+    },
+    {
+      "url": "https://github.com/phuc-nt/my-translator",
+      "score": 80.15,
+      "category": "Web App / Other",
+      "stars": 1155
+    },
+    {
+      "url": "https://github.com/openstyles/stylus",
+      "score": 79.3,
+      "category": "Web App / Other",
+      "stars": 6699
+    },
+    {
+      "url": "https://github.com/rejetto/hfs",
+      "score": 79.17,
+      "category": "Files / Storage / Backup",
+      "stars": 3758
+    },
+    {
+      "url": "https://github.com/PurpleI2P/i2pd",
+      "score": 78.74,
+      "category": "Networking / VPN",
+      "stars": 4100
+    },
+    {
+      "url": "https://github.com/ShouChenICU/FastSend",
+      "score": 78.58,
+      "category": "Files / Storage / Backup",
+      "stars": 1282
+    },
+    {
+      "url": "https://github.com/blokadaorg/blokada",
+      "score": 78.24,
+      "category": "Networking / VPN",
+      "stars": 3237
+    },
+    {
+      "url": "https://github.com/sleep3r/mtproto.zig",
+      "score": 78.18,
+      "category": "Networking / VPN",
+      "stars": 1018
+    },
+    {
+      "url": "https://github.com/szTheory/exifcleaner",
+      "score": 77.65,
+      "category": "Media / Streaming",
+      "stars": 2478
+    },
+    {
+      "url": "https://github.com/ONLYOFFICE/CommunityServer",
+      "score": 77.58,
+      "category": "Documents / PDF / Paperless",
+      "stars": 3137
+    },
+    {
+      "url": "https://github.com/WCY-dt/EasyTransfer",
+      "score": 77.38,
+      "category": "Files / Storage / Backup",
+      "stars": 687
+    },
+    {
+      "url": "https://github.com/syncthing/syncthing-macos",
+      "score": 77.18,
+      "category": "Files / Storage / Backup",
+      "stars": 3750
+    },
+    {
+      "url": "https://github.com/Milkshiift/GoofCord",
+      "score": 76.71,
+      "category": "Communication / Social",
+      "stars": 955
+    },
+    {
+      "url": "https://github.com/OnionBrowser/OnionBrowser",
+      "score": 76.23,
+      "category": "Networking / VPN",
+      "stars": 2596
+    },
+    {
+      "url": "https://github.com/kalcaddle/KodExplorer",
+      "score": 75.54,
+      "category": "Developer Tools / Utilities",
+      "stars": 6379
+    },
+    {
+      "url": "https://github.com/kennbroorg/iKy",
+      "score": 75.53,
+      "category": "Communication / Social",
+      "stars": 959
+    },
+    {
+      "url": "https://github.com/AdguardTeam/AdGuardDNS",
+      "score": 75.5,
+      "category": "Networking / VPN",
+      "stars": 933
+    },
+    {
+      "url": "https://github.com/hagezi/dns-blocklists",
+      "score": 75.18,
+      "category": "Monitoring / Observability",
+      "stars": 23824
+    },
+    {
+      "url": "https://github.com/RoboSats/robosats",
+      "score": 75.18,
+      "category": "Finance / Budget",
+      "stars": 1000
+    },
+    {
+      "url": "https://github.com/timvisee/ffsend",
+      "score": 75.15,
+      "category": "Developer Tools / Utilities",
+      "stars": 7349
+    },
+    {
+      "url": "https://github.com/sane-apps/SaneBar",
+      "score": 75.1,
+      "category": "Developer Tools / Utilities",
+      "stars": 232
+    },
+    {
+      "url": "https://github.com/apparition47/MailTrackerBlocker",
+      "score": 74.76,
+      "category": "Communication / Social",
+      "stars": 1125
+    },
+    {
+      "url": "https://github.com/Rezivure/Grid-Mobile",
+      "score": 74.35,
+      "category": "Maps / GIS / Location",
+      "stars": 491
+    },
+    {
+      "url": "https://github.com/holtwick/bx-mac",
+      "score": 74.2,
+      "category": "Developer Tools / Utilities",
+      "stars": 78
+    },
+    {
+      "url": "https://github.com/openfheorg/openfhe-development",
+      "score": 73.61,
+      "category": "Books / Reading / Library",
+      "stars": 1139
+    },
+    {
+      "url": "https://github.com/zhangjingwei/kuake_cli",
+      "score": 73.37,
+      "category": "Developer Tools / Utilities",
+      "stars": 173
+    },
+    {
+      "url": "https://github.com/GrapheneOS/grapheneos.org",
+      "score": 73.29,
+      "category": "Maps / GIS / Location",
+      "stars": 678
+    },
+    {
+      "url": "https://github.com/ph1losof/flashbang",
+      "score": 73.18,
+      "category": "Search / Indexing",
+      "stars": 33
+    },
+    {
+      "url": "https://github.com/ZG089/Re-Malwack",
+      "score": 72.64,
+      "category": "Privacy / Ad-Blocking",
+      "stars": 387
+    },
+    {
+      "url": "https://github.com/ghostery/adblocker",
+      "score": 72.27,
+      "category": "Books / Reading / Library",
+      "stars": 979
+    },
+    {
+      "url": "https://github.com/linagora/Twake",
+      "score": 72.24,
+      "category": "Productivity / Tasks",
+      "stars": 1922
+    },
+    {
+      "url": "https://github.com/J-shw/Menstrudel",
+      "score": 72.07,
+      "category": "Health / Food / Fitness",
+      "stars": 83
+    },
+    {
+      "url": "https://github.com/elesiuta/picosnitch",
+      "score": 71.88,
+      "category": "Monitoring / Observability",
+      "stars": 962
+    },
+    {
+      "url": "https://github.com/JFreegman/toxic",
+      "score": 71.67,
+      "category": "Media / Streaming",
+      "stars": 1299
+    },
+    {
+      "url": "https://github.com/privau/searxng",
+      "score": 71.43,
+      "category": "Docker / Containers",
+      "stars": 103
+    },
+    {
+      "url": "https://github.com/opendp/opendp",
+      "score": 71.05,
+      "category": "Books / Reading / Library",
+      "stars": 422
+    },
+    {
+      "url": "https://github.com/ibericode/koko-analytics",
+      "score": 70.95,
+      "category": "Analytics / Data",
+      "stars": 396
+    }
+  ],
+  "categoryDistribution": {
+    "AI / LLM": 5,
+    "Security / Auth": 5,
+    "Web App / Other": 5,
+    "Files / Storage / Backup": 5,
+    "Networking / VPN": 5,
+    "Developer Tools / Utilities": 5,
+    "Communication / Social": 3,
+    "Books / Reading / Library": 3,
+    "Media / Streaming": 2,
+    "Monitoring / Observability": 2,
+    "Maps / GIS / Location": 2,
+    "Documents / PDF / Paperless": 1,
+    "Finance / Budget": 1,
+    "Search / Indexing": 1,
+    "Privacy / Ad-Blocking": 1,
+    "Productivity / Tasks": 1,
+    "Health / Food / Fitness": 1,
+    "Docker / Containers": 1,
+    "Analytics / Data": 1
+  },
+  "scoreStats": {
+    "min": 70.95,
+    "max": 85.05,
+    "mean": 77.19
+  }
+}

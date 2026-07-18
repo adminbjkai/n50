@@ -1,0 +1,328 @@
+{
+  "version": "v2",
+  "setNum": 206,
+  "searchCalls": 8,
+  "poolSize": 514,
+  "scoredCount": 242,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/thunder-app/thunder",
+      "score": 78.36,
+      "category": "Communication / Social",
+      "stars": 1014
+    },
+    {
+      "url": "https://github.com/fedify-dev/fedify",
+      "score": 77.24,
+      "category": "Communication / Social",
+      "stars": 990
+    },
+    {
+      "url": "https://github.com/nextcloud/social",
+      "score": 76.73,
+      "category": "Networking / VPN",
+      "stars": 499
+    },
+    {
+      "url": "https://github.com/davidichalfyorov-wq/openxiv",
+      "score": 74.24,
+      "category": "Books / Reading / Library",
+      "stars": 45
+    },
+    {
+      "url": "https://github.com/TryGhost/ActivityPub",
+      "score": 72.94,
+      "category": "Communication / Social",
+      "stars": 236
+    },
+    {
+      "url": "https://github.com/snarfed/bridgy-fed",
+      "score": 72.88,
+      "category": "Communication / Social",
+      "stars": 1216
+    },
+    {
+      "url": "https://github.com/fedify-dev/hollo",
+      "score": 72.02,
+      "category": "Communication / Social",
+      "stars": 469
+    },
+    {
+      "url": "https://github.com/Solsynth/Solian",
+      "score": 71.58,
+      "category": "Media / Streaming",
+      "stars": 277
+    },
+    {
+      "url": "https://github.com/joinloops/loops-expo",
+      "score": 69.63,
+      "category": "Media / Streaming",
+      "stars": 149
+    },
+    {
+      "url": "https://github.com/hackers-pub/hackerspub",
+      "score": 67.43,
+      "category": "Networking / VPN",
+      "stars": 148
+    },
+    {
+      "url": "https://github.com/grishka/Smithereen",
+      "score": 67.26,
+      "category": "Networking / VPN",
+      "stars": 540
+    },
+    {
+      "url": "https://github.com/Ocelot-Social-Community/Ocelot-Social",
+      "score": 65.79,
+      "category": "Media / Streaming",
+      "stars": 111
+    },
+    {
+      "url": "https://github.com/snarfed/granary",
+      "score": 63.69,
+      "category": "Developer Tools / Utilities",
+      "stars": 516
+    },
+    {
+      "url": "https://github.com/dimkr/tootik",
+      "score": 63.66,
+      "category": "Media / Streaming",
+      "stars": 203
+    },
+    {
+      "url": "https://github.com/Admin6016/xhs_matrix_system",
+      "score": 63.47,
+      "category": "AI / LLM",
+      "stars": 416
+    },
+    {
+      "url": "https://github.com/matrix-org/vodozemac",
+      "score": 63.24,
+      "category": "Security / Auth",
+      "stars": 368
+    },
+    {
+      "url": "https://github.com/RubixML/Tensor",
+      "score": 62.52,
+      "category": "AI / LLM",
+      "stars": 279
+    },
+    {
+      "url": "https://github.com/arcuru/chaz",
+      "score": 62.16,
+      "category": "AI / LLM",
+      "stars": 67
+    },
+    {
+      "url": "https://github.com/nicolium/nicolium",
+      "score": 62.08,
+      "category": "Media / Streaming",
+      "stars": 77
+    },
+    {
+      "url": "https://github.com/Minds/engine",
+      "score": 61.81,
+      "category": "Networking / VPN",
+      "stars": 206
+    },
+    {
+      "url": "https://github.com/cameronrye/activitypub-mcp",
+      "score": 60.92,
+      "category": "AI / LLM",
+      "stars": 16
+    },
+    {
+      "url": "https://github.com/SleeplessOne1917/lemmy-bot",
+      "score": 60.23,
+      "category": "Books / Reading / Library",
+      "stars": 103
+    },
+    {
+      "url": "https://github.com/mljs/matrix",
+      "score": 59.76,
+      "category": "AI / LLM",
+      "stars": 395
+    },
+    {
+      "url": "https://github.com/juandjara/wafrn-rn",
+      "score": 58.8,
+      "category": "Networking / VPN",
+      "stars": 43
+    },
+    {
+      "url": "https://github.com/bouncepaw/betula",
+      "score": 58.14,
+      "category": "Notes / Knowledge",
+      "stars": 136
+    },
+    {
+      "url": "https://github.com/theCheeseboard/theGrid",
+      "score": 57.0,
+      "category": "Books / Reading / Library",
+      "stars": 13
+    },
+    {
+      "url": "https://github.com/kooparse/zalgebra",
+      "score": 57.0,
+      "category": "Books / Reading / Library",
+      "stars": 323
+    },
+    {
+      "url": "https://github.com/chrvadala/transformation-matrix",
+      "score": 56.63,
+      "category": "Books / Reading / Library",
+      "stars": 387
+    },
+    {
+      "url": "https://github.com/fedi-e2ee/pkd-server-php",
+      "score": 56.49,
+      "category": "Security / Auth",
+      "stars": 21
+    },
+    {
+      "url": "https://github.com/web-tech-tw/arona",
+      "score": 56.42,
+      "category": "Developer Tools / Utilities",
+      "stars": 32
+    },
+    {
+      "url": "https://github.com/Impressia/Impressia",
+      "score": 55.97,
+      "category": "Developer Tools / Utilities",
+      "stars": 118
+    },
+    {
+      "url": "https://github.com/gematik/api-ti-messenger",
+      "score": 55.0,
+      "category": "Security / Auth",
+      "stars": 51
+    },
+    {
+      "url": "https://github.com/eigenmagic/fediblockhole",
+      "score": 53.98,
+      "category": "Privacy / Ad-Blocking",
+      "stars": 84
+    },
+    {
+      "url": "https://github.com/turt2live/matrix-bot-sdk",
+      "score": 52.88,
+      "category": "Developer Tools / Utilities",
+      "stars": 269
+    },
+    {
+      "url": "https://github.com/mribri999/MRSignalsSeqs",
+      "score": 50.02,
+      "category": "Developer Tools / Utilities",
+      "stars": 167
+    },
+    {
+      "url": "https://github.com/hallard/rgb-matrix-crypto-ticker",
+      "score": 44.09,
+      "category": "Finance / Budget",
+      "stars": 13
+    },
+    {
+      "url": "https://github.com/trustbloc/orb",
+      "score": 43.93,
+      "category": "Files / Storage / Backup",
+      "stars": 35
+    },
+    {
+      "url": "https://github.com/recp/cglm",
+      "score": 70.18,
+      "category": "Communication / Social",
+      "stars": 2949
+    },
+    {
+      "url": "https://github.com/pulsate-dev/pulsate",
+      "score": 60.29,
+      "category": "Media / Streaming",
+      "stars": 33
+    },
+    {
+      "url": "https://github.com/h1ddenpr0cess20/ollamarama-matrix",
+      "score": 57.97,
+      "category": "AI / LLM",
+      "stars": 66
+    },
+    {
+      "url": "https://github.com/flame/blis",
+      "score": 56.33,
+      "category": "Books / Reading / Library",
+      "stars": 2646
+    },
+    {
+      "url": "https://github.com/fedidb/fedidb-nuxt",
+      "score": 52.7,
+      "category": "Networking / VPN",
+      "stars": 43
+    },
+    {
+      "url": "https://github.com/minibikini/pleroma",
+      "score": 46.82,
+      "category": "Developer Tools / Utilities",
+      "stars": 32
+    },
+    {
+      "url": "https://github.com/quotient-im/Quaternion",
+      "score": 69.87,
+      "category": "Communication / Social",
+      "stars": 697
+    },
+    {
+      "url": "https://github.com/dahlia/fedi-badge",
+      "score": 60.0,
+      "category": "Media / Streaming",
+      "stars": 46
+    },
+    {
+      "url": "https://github.com/dragonfly-ai/slash",
+      "score": 57.47,
+      "category": "AI / LLM",
+      "stars": 40
+    },
+    {
+      "url": "https://github.com/chaotic-society/theoretica",
+      "score": 56.27,
+      "category": "Books / Reading / Library",
+      "stars": 30
+    },
+    {
+      "url": "https://github.com/corbindavenport/share-to-mastodon",
+      "score": 48.67,
+      "category": "Networking / VPN",
+      "stars": 67
+    },
+    {
+      "url": "https://github.com/warriordog/ActivityPubSharp",
+      "score": 45.01,
+      "category": "Developer Tools / Utilities",
+      "stars": 55
+    },
+    {
+      "url": "https://github.com/Blorp-Labs/blorp",
+      "score": 69.69,
+      "category": "Communication / Social",
+      "stars": 127
+    }
+  ],
+  "categoryDistribution": {
+    "Communication / Social": 8,
+    "Networking / VPN": 7,
+    "Books / Reading / Library": 7,
+    "Media / Streaming": 7,
+    "Developer Tools / Utilities": 7,
+    "AI / LLM": 7,
+    "Security / Auth": 3,
+    "Notes / Knowledge": 1,
+    "Privacy / Ad-Blocking": 1,
+    "Finance / Budget": 1,
+    "Files / Storage / Backup": 1
+  },
+  "scoreStats": {
+    "min": 43.93,
+    "max": 78.36,
+    "mean": 61.15
+  }
+}

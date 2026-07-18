@@ -1,0 +1,425 @@
+{
+  "version": "v3",
+  "setNum": 196,
+  "searchCalls": 9,
+  "poolSize": 709,
+  "scoredCount": 341,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/ximu3/vnite",
+      "score": 93.5,
+      "category": "Gaming / Game Servers",
+      "stars": 1289,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mbround18/valheim-docker",
+      "score": 89.79,
+      "category": "Gaming / Game Servers",
+      "stars": 836,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/teamspeak/teamspeak6-server",
+      "score": 87.24,
+      "category": "Media / Streaming",
+      "stars": 1631,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/PierreBeucher/cloudypad",
+      "score": 84.77,
+      "category": "Media / Streaming",
+      "stars": 924,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/streetpea/chiaki-ng",
+      "score": 83.31,
+      "category": "Media / Streaming",
+      "stars": 2452,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bpwhelan/GameSentenceMiner",
+      "score": 82.53,
+      "category": "AI / LLM",
+      "stars": 681,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/SpecialKO/SpecialK",
+      "score": 81.64,
+      "category": "Gaming / Game Servers",
+      "stars": 1927,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/azerothcore/azerothcore-wotlk",
+      "score": 80.94,
+      "category": "Gaming / Game Servers",
+      "stars": 8488,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/utkuozdemir/nvidia_gpu_exporter",
+      "score": 80.41,
+      "category": "AI / LLM",
+      "stars": 1495,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/utkarshdalal/GameNative",
+      "score": 80.2,
+      "category": "Gaming / Game Servers",
+      "stars": 8106,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/steffendx/GoNorth",
+      "score": 76.77,
+      "category": "Maps / GIS / Location",
+      "stars": 617,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/GeorgeEnglezos/Scrcpy-GUI",
+      "score": 76.45,
+      "category": "Media / Streaming",
+      "stars": 404,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AntiMicroX/antimicrox",
+      "score": 74.51,
+      "category": "Maps / GIS / Location",
+      "stars": 3785,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/JosefNemec/Playnite",
+      "score": 74.2,
+      "category": "Media / Streaming",
+      "stars": 13296,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/OpenOrienteering/mapper",
+      "score": 71.6,
+      "category": "Maps / GIS / Location",
+      "stars": 478,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/huderlem/porymap",
+      "score": 71.48,
+      "category": "Maps / GIS / Location",
+      "stars": 614,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/anonymousRAID/OSINT-Mapping-Tool",
+      "score": 71.37,
+      "category": "Maps / GIS / Location",
+      "stars": 342,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/urbanmorph/geodata",
+      "score": 53.78,
+      "category": "AI / LLM",
+      "stars": 36,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ALH477/Oligarchy",
+      "score": 53.58,
+      "category": "AI / LLM",
+      "stars": 11,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/space0blaster/smartmap",
+      "score": 52.17,
+      "category": "AI / LLM",
+      "stars": 51,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/haydenbleasel/ghost",
+      "score": 78.03,
+      "category": "Gaming / Game Servers",
+      "stars": 160,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/geocompx/geocompr",
+      "score": 71.13,
+      "category": "Maps / GIS / Location",
+      "stars": 1773,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/NARBEHOUSE/Benny-s-Accessibility-Hub-2.0",
+      "score": 68.03,
+      "category": "Media / Streaming",
+      "stars": 50,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/PackRat-AI/PackRat",
+      "score": 50.99,
+      "category": "AI / LLM",
+      "stars": 35,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ublue-os/bazzite",
+      "score": 78.0,
+      "category": "Gaming / Game Servers",
+      "stars": 8608,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/themustafaomar/jsvectormap",
+      "score": 70.96,
+      "category": "Maps / GIS / Location",
+      "stars": 529,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Jellyfin-PG/JellyEmu",
+      "score": 67.49,
+      "category": "Media / Streaming",
+      "stars": 157,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/DanWahlin/agent-arcade",
+      "score": 46.91,
+      "category": "AI / LLM",
+      "stars": 11,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
+      "score": 78.0,
+      "category": "Gaming / Game Servers",
+      "stars": 11603,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AliFlux/MapTilesDownloader",
+      "score": 70.81,
+      "category": "Maps / GIS / Location",
+      "stars": 530,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/PiterWeb/LibreRemotePlay",
+      "score": 67.25,
+      "category": "Media / Streaming",
+      "stars": 175,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sklongger/AI-timeline-geomap",
+      "score": 41.94,
+      "category": "AI / LLM",
+      "stars": 42,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/johnfanv2/LenovoLegionLinux",
+      "score": 77.66,
+      "category": "Gaming / Game Servers",
+      "stars": 3129,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mapbox/mapbox-maps-ios",
+      "score": 70.06,
+      "category": "Maps / GIS / Location",
+      "stars": 593,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/oliverames/ping-warden",
+      "score": 65.04,
+      "category": "Media / Streaming",
+      "stars": 60,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/3Shain/dxmt",
+      "score": 77.63,
+      "category": "Gaming / Game Servers",
+      "stars": 1096,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/software-mansion/kmp-maps",
+      "score": 69.96,
+      "category": "Maps / GIS / Location",
+      "stars": 203,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sewandev/Reverbic",
+      "score": 62.85,
+      "category": "Media / Streaming",
+      "stars": 67,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/CarrotRub/Fit-Launcher",
+      "score": 76.82,
+      "category": "Gaming / Game Servers",
+      "stars": 1140,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/GeiserX/Pumperly",
+      "score": 69.61,
+      "category": "Maps / GIS / Location",
+      "stars": 24,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Nastas95/SteamClip",
+      "score": 59.09,
+      "category": "Media / Streaming",
+      "stars": 58,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/RetroDECK/RetroDECK",
+      "score": 76.4,
+      "category": "Gaming / Game Servers",
+      "stars": 1206,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/r-tmap/tmap",
+      "score": 69.23,
+      "category": "Maps / GIS / Location",
+      "stars": 901,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sezanzeb/input-remapper",
+      "score": 76.0,
+      "category": "Gaming / Game Servers",
+      "stars": 5722,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/googlemaps/google-maps-services-js",
+      "score": 69.17,
+      "category": "Maps / GIS / Location",
+      "stars": 3055,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dhewm/dhewm3",
+      "score": 75.48,
+      "category": "Gaming / Game Servers",
+      "stars": 2111,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/steveberardi/starplot",
+      "score": 69.13,
+      "category": "Maps / GIS / Location",
+      "stars": 163,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bottlesdevs/Bottles",
+      "score": 75.44,
+      "category": "Gaming / Game Servers",
+      "stars": 8517,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mapbox/mapbox-maps-flutter",
+      "score": 69.03,
+      "category": "Maps / GIS / Location",
+      "stars": 372,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/SimonvBez/CPUSetSetter",
+      "score": 75.13,
+      "category": "Gaming / Game Servers",
+      "stars": 696,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Gaming / Game Servers": 16,
+    "Maps / GIS / Location": 15,
+    "Media / Streaming": 11,
+    "AI / LLM": 8
+  },
+  "scoreStats": {
+    "min": 41.94,
+    "max": 93.5,
+    "mean": 71.87
+  },
+  "dockerCount": 16
+}

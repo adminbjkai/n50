@@ -1,0 +1,332 @@
+{
+  "version": "v2",
+  "setNum": 200,
+  "searchCalls": 9,
+  "poolSize": 456,
+  "scoredCount": 246,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/didi/LogicFlow",
+      "score": 88.46,
+      "category": "Books / Reading / Library",
+      "stars": 11437
+    },
+    {
+      "url": "https://github.com/antvis/X6",
+      "score": 87.99,
+      "category": "Books / Reading / Library",
+      "stars": 6593
+    },
+    {
+      "url": "https://github.com/Agents365-ai/drawio-skill",
+      "score": 86.64,
+      "category": "AI / LLM",
+      "stars": 4118
+    },
+    {
+      "url": "https://github.com/hediet/vscode-drawio",
+      "score": 86.6,
+      "category": "Developer Tools / Utilities",
+      "stars": 9453
+    },
+    {
+      "url": "https://github.com/royalbhati/sqltoerdiagram",
+      "score": 84.73,
+      "category": "Developer Tools / Utilities",
+      "stars": 469
+    },
+    {
+      "url": "https://github.com/synergycodes/ng-diagram",
+      "score": 84.3,
+      "category": "Books / Reading / Library",
+      "stars": 539
+    },
+    {
+      "url": "https://github.com/visjs/vis-network",
+      "score": 81.73,
+      "category": "Networking / VPN",
+      "stars": 3586
+    },
+    {
+      "url": "https://github.com/apertureless/vue-chartjs",
+      "score": 81.53,
+      "category": "Books / Reading / Library",
+      "stars": 5718
+    },
+    {
+      "url": "https://github.com/SWE-agent/SWE-agent",
+      "score": 81.48,
+      "category": "AI / LLM",
+      "stars": 19560
+    },
+    {
+      "url": "https://github.com/plait-board/drawnix",
+      "score": 81.43,
+      "category": "Maps / GIS / Location",
+      "stars": 14074
+    },
+    {
+      "url": "https://github.com/netless-io/flat",
+      "score": 81.43,
+      "category": "Education / Learning",
+      "stars": 6407
+    },
+    {
+      "url": "https://github.com/Mertcikla/tld",
+      "score": 81.15,
+      "category": "Developer Tools / Utilities",
+      "stars": 257
+    },
+    {
+      "url": "https://github.com/ThisIs-Developer/Markdown-Viewer",
+      "score": 79.91,
+      "category": "Notes / Knowledge",
+      "stars": 304
+    },
+    {
+      "url": "https://github.com/le5le-com/meta2d.js",
+      "score": 79.15,
+      "category": "Home Automation / IoT",
+      "stars": 1204
+    },
+    {
+      "url": "https://github.com/oddlama/nix-topology",
+      "score": 78.73,
+      "category": "DevOps / Infra",
+      "stars": 954
+    },
+    {
+      "url": "https://github.com/1jehuang/mermaid-rs-renderer",
+      "score": 78.52,
+      "category": "Developer Tools / Utilities",
+      "stars": 1396
+    },
+    {
+      "url": "https://github.com/plantuml-stdlib/C4-PlantUML",
+      "score": 77.78,
+      "category": "Image / Design / Creative",
+      "stars": 7323
+    },
+    {
+      "url": "https://github.com/AlexeyBoiko/DgrmJS",
+      "score": 77.36,
+      "category": "Books / Reading / Library",
+      "stars": 1070
+    },
+    {
+      "url": "https://github.com/varkor/quiver",
+      "score": 77.22,
+      "category": "Image / Design / Creative",
+      "stars": 3565
+    },
+    {
+      "url": "https://github.com/wojtekmaj/react-lifecycle-methods-diagram",
+      "score": 76.97,
+      "category": "Image / Design / Creative",
+      "stars": 3935
+    },
+    {
+      "url": "https://github.com/zhitongblog/solomd",
+      "score": 76.64,
+      "category": "AI / LLM",
+      "stars": 384
+    },
+    {
+      "url": "https://github.com/dineug/erd-editor",
+      "score": 75.56,
+      "category": "Image / Design / Creative",
+      "stars": 1656
+    },
+    {
+      "url": "https://github.com/worktile/plait",
+      "score": 75.55,
+      "category": "Image / Design / Creative",
+      "stars": 644
+    },
+    {
+      "url": "https://github.com/konoe-akitoshi/shumoku",
+      "score": 75.32,
+      "category": "Developer Tools / Utilities",
+      "stars": 138
+    },
+    {
+      "url": "https://github.com/Agents365-ai/excalidraw-skill",
+      "score": 74.91,
+      "category": "AI / LLM",
+      "stars": 114
+    },
+    {
+      "url": "https://github.com/getartisanflow/wireflow",
+      "score": 74.5,
+      "category": "Files / Storage / Backup",
+      "stars": 91
+    },
+    {
+      "url": "https://github.com/Agents365-ai/mermaid-skill",
+      "score": 73.56,
+      "category": "AI / LLM",
+      "stars": 89
+    },
+    {
+      "url": "https://github.com/LHRUN/paint-board",
+      "score": 71.94,
+      "category": "Gaming / Game Servers",
+      "stars": 2620
+    },
+    {
+      "url": "https://github.com/cycloidio/inframap",
+      "score": 70.11,
+      "category": "DevOps / Infra",
+      "stars": 2039
+    },
+    {
+      "url": "https://github.com/mohanvd/edutraceapp",
+      "score": 69.84,
+      "category": "Productivity / Tasks",
+      "stars": 54
+    },
+    {
+      "url": "https://github.com/micro-nova/AmpliPi",
+      "score": 69.65,
+      "category": "Home Automation / IoT",
+      "stars": 341
+    },
+    {
+      "url": "https://github.com/Abrar74774/FossFLOW",
+      "score": 69.62,
+      "category": "DevOps / Infra",
+      "stars": 23
+    },
+    {
+      "url": "https://github.com/mbrlabs/Lorien",
+      "score": 69.16,
+      "category": "Notes / Knowledge",
+      "stars": 6694
+    },
+    {
+      "url": "https://github.com/Automattic/sensei",
+      "score": 69.09,
+      "category": "Education / Learning",
+      "stars": 588
+    },
+    {
+      "url": "https://github.com/gocodebox/lifterlms",
+      "score": 68.6,
+      "category": "Education / Learning",
+      "stars": 206
+    },
+    {
+      "url": "https://github.com/academico-sis/academico",
+      "score": 68.25,
+      "category": "Education / Learning",
+      "stars": 372
+    },
+    {
+      "url": "https://github.com/erseco/alpine-moodle",
+      "score": 67.75,
+      "category": "Networking / VPN",
+      "stars": 77
+    },
+    {
+      "url": "https://github.com/cobel1024/minima",
+      "score": 66.13,
+      "category": "Education / Learning",
+      "stars": 42
+    },
+    {
+      "url": "https://github.com/nextcloud/whiteboard",
+      "score": 65.49,
+      "category": "Files / Storage / Backup",
+      "stars": 198
+    },
+    {
+      "url": "https://github.com/sindrel/excalidraw-converter",
+      "score": 63.88,
+      "category": "Productivity / Tasks",
+      "stars": 286
+    },
+    {
+      "url": "https://github.com/pupilfirst/pupilfirst",
+      "score": 63.65,
+      "category": "Productivity / Tasks",
+      "stars": 970
+    },
+    {
+      "url": "https://github.com/11suixing11/mindnotes-pro",
+      "score": 63.45,
+      "category": "Notes / Knowledge",
+      "stars": 8
+    },
+    {
+      "url": "https://github.com/yomea/lx-doc",
+      "score": 62.95,
+      "category": "Maps / GIS / Location",
+      "stars": 112
+    },
+    {
+      "url": "https://github.com/im2nguyen/rover",
+      "score": 62.88,
+      "category": "DevOps / Infra",
+      "stars": 3308
+    },
+    {
+      "url": "https://github.com/BoddepallyVenkatesh06/Study-Notion-LMS",
+      "score": 62.38,
+      "category": "Productivity / Tasks",
+      "stars": 84
+    },
+    {
+      "url": "https://github.com/juzzlin/Heimer",
+      "score": 61.17,
+      "category": "Maps / GIS / Location",
+      "stars": 976
+    },
+    {
+      "url": "https://github.com/sooraj-sky/improving-everyday",
+      "score": 60.88,
+      "category": "DevOps / Infra",
+      "stars": 44
+    },
+    {
+      "url": "https://github.com/AvaCodeSolutions/django-email-learning",
+      "score": 60.82,
+      "category": "Communication / Social",
+      "stars": 13
+    },
+    {
+      "url": "https://github.com/coderomm/CollabyDraw",
+      "score": 60.3,
+      "category": "Productivity / Tasks",
+      "stars": 152
+    },
+    {
+      "url": "https://github.com/hjelev/lyrtui",
+      "score": 60.12,
+      "category": "Media / Streaming",
+      "stars": 20
+    }
+  ],
+  "categoryDistribution": {
+    "Books / Reading / Library": 5,
+    "AI / LLM": 5,
+    "Developer Tools / Utilities": 5,
+    "Education / Learning": 5,
+    "DevOps / Infra": 5,
+    "Image / Design / Creative": 5,
+    "Productivity / Tasks": 5,
+    "Maps / GIS / Location": 3,
+    "Notes / Knowledge": 3,
+    "Networking / VPN": 2,
+    "Home Automation / IoT": 2,
+    "Files / Storage / Backup": 2,
+    "Gaming / Game Servers": 1,
+    "Communication / Social": 1,
+    "Media / Streaming": 1
+  },
+  "scoreStats": {
+    "min": 60.12,
+    "max": 88.46,
+    "mean": 73.35
+  }
+}

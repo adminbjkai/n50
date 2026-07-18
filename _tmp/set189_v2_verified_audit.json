@@ -1,0 +1,336 @@
+{
+  "version": "v2",
+  "setNum": 189,
+  "searchCalls": 9,
+  "poolSize": 709,
+  "scoredCount": 294,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/notionnext-org/NotionNext",
+      "score": 91.91,
+      "category": "Productivity / Tasks",
+      "stars": 11569
+    },
+    {
+      "url": "https://github.com/AgriciDaniel/claude-blog",
+      "score": 89.08,
+      "category": "AI / LLM",
+      "stars": 1101
+    },
+    {
+      "url": "https://github.com/openRin/Rin",
+      "score": 87.71,
+      "category": "CMS / Website",
+      "stars": 2788
+    },
+    {
+      "url": "https://github.com/OrchardCMS/OrchardCore",
+      "score": 87.15,
+      "category": "CMS / Website",
+      "stars": 8098
+    },
+    {
+      "url": "https://github.com/giscus/giscus",
+      "score": 86.32,
+      "category": "Communication / Social",
+      "stars": 11809
+    },
+    {
+      "url": "https://github.com/BuilderIO/builder",
+      "score": 85.11,
+      "category": "CMS / Website",
+      "stars": 8708
+    },
+    {
+      "url": "https://github.com/wechatsync/Wechatsync",
+      "score": 85.11,
+      "category": "Notes / Knowledge",
+      "stars": 5787
+    },
+    {
+      "url": "https://github.com/miantiao-me/BroadcastChannel",
+      "score": 84.11,
+      "category": "CMS / Website",
+      "stars": 2046
+    },
+    {
+      "url": "https://github.com/qor/qor",
+      "score": 83.43,
+      "category": "E-commerce / Shop",
+      "stars": 5346
+    },
+    {
+      "url": "https://github.com/joemccann/dillinger",
+      "score": 82.12,
+      "category": "Developer Tools / Utilities",
+      "stars": 8257
+    },
+    {
+      "url": "https://github.com/gatsbyjs/gatsby",
+      "score": 82.09,
+      "category": "Security / Auth",
+      "stars": 55939
+    },
+    {
+      "url": "https://github.com/yaojingang/GEOFlow",
+      "score": 81.06,
+      "category": "AI / LLM",
+      "stars": 2624
+    },
+    {
+      "url": "https://github.com/Thinkmill/keystatic",
+      "score": 81.06,
+      "category": "Developer Tools / Utilities",
+      "stars": 2147
+    },
+    {
+      "url": "https://github.com/YYsuni/2025-blog-public",
+      "score": 79.95,
+      "category": "CMS / Website",
+      "stars": 1554
+    },
+    {
+      "url": "https://github.com/pdsuwwz/nextjs-nextra-starter",
+      "score": 79.63,
+      "category": "AI / LLM",
+      "stars": 297
+    },
+    {
+      "url": "https://github.com/LetTTGACO/elog",
+      "score": 79.44,
+      "category": "Notes / Knowledge",
+      "stars": 1858
+    },
+    {
+      "url": "https://github.com/aymericzip/intlayer",
+      "score": 79.31,
+      "category": "AI / LLM",
+      "stars": 767
+    },
+    {
+      "url": "https://github.com/Gridea-Pro/gridea-pro",
+      "score": 79.06,
+      "category": "AI / LLM",
+      "stars": 421
+    },
+    {
+      "url": "https://github.com/gautamkrishnar/blog-post-workflow",
+      "score": 78.76,
+      "category": "Notes / Knowledge",
+      "stars": 3405
+    },
+    {
+      "url": "https://github.com/bahdotsh/blogr",
+      "score": 77.6,
+      "category": "Developer Tools / Utilities",
+      "stars": 341
+    },
+    {
+      "url": "https://github.com/surmon-china/nodepress",
+      "score": 77.48,
+      "category": "Developer Tools / Utilities",
+      "stars": 1521
+    },
+    {
+      "url": "https://github.com/mkiser/WTFJHT",
+      "score": 77.19,
+      "category": "Monitoring / Observability",
+      "stars": 672
+    },
+    {
+      "url": "https://github.com/rochacbruno/marmite",
+      "score": 77.11,
+      "category": "Notes / Knowledge",
+      "stars": 854
+    },
+    {
+      "url": "https://github.com/sanluan/PublicCMS",
+      "score": 77.03,
+      "category": "Developer Tools / Utilities",
+      "stars": 2084
+    },
+    {
+      "url": "https://github.com/vriteio/vrite",
+      "score": 75.76,
+      "category": "Productivity / Tasks",
+      "stars": 1984
+    },
+    {
+      "url": "https://github.com/austintoddj/canvas",
+      "score": 75.65,
+      "category": "Image / Design / Creative",
+      "stars": 3347
+    },
+    {
+      "url": "https://github.com/88250/solo",
+      "score": 75.58,
+      "category": "Networking / VPN",
+      "stars": 1746
+    },
+    {
+      "url": "https://github.com/domye/Solace",
+      "score": 75.48,
+      "category": "Notes / Knowledge",
+      "stars": 287
+    },
+    {
+      "url": "https://github.com/morethanmin/morethan-log",
+      "score": 75.44,
+      "category": "Productivity / Tasks",
+      "stars": 2284
+    },
+    {
+      "url": "https://github.com/otoyo/astro-notion-blog",
+      "score": 74.94,
+      "category": "Productivity / Tasks",
+      "stars": 954
+    },
+    {
+      "url": "https://github.com/gitcoffee-os/postbot",
+      "score": 74.72,
+      "category": "Media / Streaming",
+      "stars": 1108
+    },
+    {
+      "url": "https://github.com/rust-lang/this-week-in-rust",
+      "score": 74.6,
+      "category": "Analytics / Data",
+      "stars": 2573
+    },
+    {
+      "url": "https://github.com/alxshelepenok/lumen",
+      "score": 73.79,
+      "category": "DevOps / Infra",
+      "stars": 2016
+    },
+    {
+      "url": "https://github.com/PacktPublishing/Django-5-By-Example",
+      "score": 73.55,
+      "category": "Networking / VPN",
+      "stars": 527
+    },
+    {
+      "url": "https://github.com/LiuYuYang01/ThriveX-Server",
+      "score": 72.86,
+      "category": "Networking / VPN",
+      "stars": 354
+    },
+    {
+      "url": "https://github.com/craigary/nobelium",
+      "score": 72.75,
+      "category": "Productivity / Tasks",
+      "stars": 3155
+    },
+    {
+      "url": "https://github.com/linhaojun857/aurora",
+      "score": 72.38,
+      "category": "Networking / VPN",
+      "stars": 4643
+    },
+    {
+      "url": "https://github.com/iAmCorey/devtoolset",
+      "score": 71.64,
+      "category": "Analytics / Data",
+      "stars": 380
+    },
+    {
+      "url": "https://github.com/jktrn/enscribe.dev",
+      "score": 71.3,
+      "category": "Security / Auth",
+      "stars": 576
+    },
+    {
+      "url": "https://github.com/nephila/djangocms-blog",
+      "score": 71.29,
+      "category": "Networking / VPN",
+      "stars": 482
+    },
+    {
+      "url": "https://github.com/Kunstmaan/KunstmaanBundlesCMS",
+      "score": 71.15,
+      "category": "Media / Streaming",
+      "stars": 412
+    },
+    {
+      "url": "https://github.com/EdiWang/Moonglade",
+      "score": 69.56,
+      "category": "Files / Storage / Backup",
+      "stars": 536
+    },
+    {
+      "url": "https://github.com/statamic/eloquent-driver",
+      "score": 68.59,
+      "category": "CRM / Business",
+      "stars": 126
+    },
+    {
+      "url": "https://github.com/RaisFast/raisfast",
+      "score": 67.89,
+      "category": "E-commerce / Shop",
+      "stars": 12
+    },
+    {
+      "url": "https://github.com/wolfSSL/wolfssl-examples",
+      "score": 67.35,
+      "category": "Home Automation / IoT",
+      "stars": 284
+    },
+    {
+      "url": "https://github.com/Ducksss/payload-components",
+      "score": 67.11,
+      "category": "Books / Reading / Library",
+      "stars": 9
+    },
+    {
+      "url": "https://github.com/nukeviet/nukeviet",
+      "score": 66.95,
+      "category": "Education / Learning",
+      "stars": 165
+    },
+    {
+      "url": "https://github.com/numerique-gouv/sites-conformes",
+      "score": 66.71,
+      "category": "Image / Design / Creative",
+      "stars": 65
+    },
+    {
+      "url": "https://github.com/haxtheweb/haxcms-php",
+      "score": 66.13,
+      "category": "Education / Learning",
+      "stars": 129
+    },
+    {
+      "url": "https://github.com/snowykami/neo-blog",
+      "score": 65.6,
+      "category": "Media / Streaming",
+      "stars": 38
+    }
+  ],
+  "categoryDistribution": {
+    "Productivity / Tasks": 5,
+    "AI / LLM": 5,
+    "CMS / Website": 5,
+    "Notes / Knowledge": 5,
+    "Developer Tools / Utilities": 5,
+    "Networking / VPN": 5,
+    "Media / Streaming": 3,
+    "E-commerce / Shop": 2,
+    "Security / Auth": 2,
+    "Image / Design / Creative": 2,
+    "Analytics / Data": 2,
+    "Education / Learning": 2,
+    "Communication / Social": 1,
+    "Monitoring / Observability": 1,
+    "DevOps / Infra": 1,
+    "Files / Storage / Backup": 1,
+    "CRM / Business": 1,
+    "Home Automation / IoT": 1,
+    "Books / Reading / Library": 1
+  },
+  "scoreStats": {
+    "min": 65.6,
+    "max": 91.91,
+    "mean": 76.55
+  }
+}

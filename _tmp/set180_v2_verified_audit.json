@@ -1,0 +1,331 @@
+{
+  "version": "v2",
+  "setNum": 180,
+  "searchCalls": 6,
+  "poolSize": 388,
+  "scoredCount": 238,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/waynesutton/markdown-site",
+      "score": 86.44,
+      "category": "AI / LLM",
+      "stars": 621
+    },
+    {
+      "url": "https://github.com/floccusaddon/floccus",
+      "score": 86.06,
+      "category": "Notes / Knowledge",
+      "stars": 8147
+    },
+    {
+      "url": "https://github.com/electric-sql/electric",
+      "score": 85.2,
+      "category": "AI / LLM",
+      "stars": 10238
+    },
+    {
+      "url": "https://github.com/kr8s-org/kr8s",
+      "score": 83.31,
+      "category": "Books / Reading / Library",
+      "stars": 960
+    },
+    {
+      "url": "https://github.com/ViscousPot/GitSync",
+      "score": 82.38,
+      "category": "Developer Tools / Utilities",
+      "stars": 1984
+    },
+    {
+      "url": "https://github.com/lovelaze/nebula-sync",
+      "score": 82.12,
+      "category": "Networking / VPN",
+      "stars": 1532
+    },
+    {
+      "url": "https://github.com/MALSync/MALSync",
+      "score": 81.66,
+      "category": "Media / Streaming",
+      "stars": 2884
+    },
+    {
+      "url": "https://github.com/readest/readest",
+      "score": 81.35,
+      "category": "Books / Reading / Library",
+      "stars": 21591
+    },
+    {
+      "url": "https://github.com/realm/realm-swift",
+      "score": 81.08,
+      "category": "Files / Storage / Backup",
+      "stars": 16604
+    },
+    {
+      "url": "https://github.com/CrossPaste/crosspaste-desktop",
+      "score": 81.01,
+      "category": "Files / Storage / Backup",
+      "stars": 2199
+    },
+    {
+      "url": "https://github.com/garden-co/classic-jazz",
+      "score": 80.63,
+      "category": "Security / Auth",
+      "stars": 2537
+    },
+    {
+      "url": "https://github.com/objectbox/objectbox-java",
+      "score": 79.81,
+      "category": "Files / Storage / Backup",
+      "stars": 4610
+    },
+    {
+      "url": "https://github.com/mandarons/icloud-docker",
+      "score": 78.87,
+      "category": "Media / Streaming",
+      "stars": 1838
+    },
+    {
+      "url": "https://github.com/wei/pull",
+      "score": 78.7,
+      "category": "Files / Storage / Backup",
+      "stars": 7152
+    },
+    {
+      "url": "https://github.com/smacke/ffsubsync",
+      "score": 77.94,
+      "category": "Media / Streaming",
+      "stars": 7744
+    },
+    {
+      "url": "https://github.com/powersync-ja/powersync-js",
+      "score": 77.58,
+      "category": "Developer Tools / Utilities",
+      "stars": 677
+    },
+    {
+      "url": "https://github.com/remotestorage/remotestorage.js",
+      "score": 77.51,
+      "category": "Books / Reading / Library",
+      "stars": 2409
+    },
+    {
+      "url": "https://github.com/Dancode-188/synckit",
+      "score": 76.77,
+      "category": "Developer Tools / Utilities",
+      "stars": 659
+    },
+    {
+      "url": "https://github.com/phw198/OutlookGoogleCalendarSync",
+      "score": 76.22,
+      "category": "Productivity / Tasks",
+      "stars": 2094
+    },
+    {
+      "url": "https://github.com/oldratlee/fucking-java-concurrency",
+      "score": 76.12,
+      "category": "Files / Storage / Backup",
+      "stars": 1213
+    },
+    {
+      "url": "https://github.com/denizsafak/AutoSubSync",
+      "score": 75.01,
+      "category": "Media / Streaming",
+      "stars": 1079
+    },
+    {
+      "url": "https://github.com/Santofer/Remindian",
+      "score": 74.36,
+      "category": "Productivity / Tasks",
+      "stars": 291
+    },
+    {
+      "url": "https://github.com/naggie/dstask",
+      "score": 73.34,
+      "category": "Developer Tools / Utilities",
+      "stars": 1177
+    },
+    {
+      "url": "https://github.com/git-ftp/git-ftp",
+      "score": 72.25,
+      "category": "Developer Tools / Utilities",
+      "stars": 5583
+    },
+    {
+      "url": "https://github.com/jobisoft/TbSync",
+      "score": 70.79,
+      "category": "Productivity / Tasks",
+      "stars": 887
+    },
+    {
+      "url": "https://github.com/carvel-dev/vendir",
+      "score": 70.39,
+      "category": "DevOps / Infra",
+      "stars": 374
+    },
+    {
+      "url": "https://github.com/shrimqy/Sefirah-Android",
+      "score": 70.37,
+      "category": "Media / Streaming",
+      "stars": 883
+    },
+    {
+      "url": "https://github.com/Kong/deck",
+      "score": 69.79,
+      "category": "DevOps / Infra",
+      "stars": 495
+    },
+    {
+      "url": "https://github.com/natelindev/tsdav",
+      "score": 69.38,
+      "category": "Productivity / Tasks",
+      "stars": 347
+    },
+    {
+      "url": "https://github.com/0-don/clippy",
+      "score": 67.38,
+      "category": "Security / Auth",
+      "stars": 225
+    },
+    {
+      "url": "https://github.com/panteLx/BetterShift",
+      "score": 67.28,
+      "category": "Productivity / Tasks",
+      "stars": 174
+    },
+    {
+      "url": "https://github.com/bakito/adguardhome-sync",
+      "score": 67.25,
+      "category": "Privacy / Ad-Blocking",
+      "stars": 1721
+    },
+    {
+      "url": "https://github.com/mdfriday/obsidian-friday-plugin",
+      "score": 65.88,
+      "category": "Notes / Knowledge",
+      "stars": 92
+    },
+    {
+      "url": "https://github.com/zpl-c/librg",
+      "score": 65.29,
+      "category": "Books / Reading / Library",
+      "stars": 1483
+    },
+    {
+      "url": "https://github.com/neo1027144-creator/antigravity-history-vscode",
+      "score": 65.01,
+      "category": "AI / LLM",
+      "stars": 43
+    },
+    {
+      "url": "https://github.com/renoki-co/php-k8s",
+      "score": 64.66,
+      "category": "DevOps / Infra",
+      "stars": 323
+    },
+    {
+      "url": "https://github.com/unorouter/new-api-sync",
+      "score": 63.23,
+      "category": "AI / LLM",
+      "stars": 16
+    },
+    {
+      "url": "https://github.com/EzyGang/py-cachify",
+      "score": 62.97,
+      "category": "Books / Reading / Library",
+      "stars": 82
+    },
+    {
+      "url": "https://github.com/InfiniteSenseLab/SimpleSensorSync",
+      "score": 61.91,
+      "category": "Maps / GIS / Location",
+      "stars": 70
+    },
+    {
+      "url": "https://github.com/kitschpatrol/yanki-obsidian",
+      "score": 61.82,
+      "category": "Security / Auth",
+      "stars": 169
+    },
+    {
+      "url": "https://github.com/phrp720/aw-sync-suite",
+      "score": 60.22,
+      "category": "Monitoring / Observability",
+      "stars": 37
+    },
+    {
+      "url": "https://github.com/ZGQ-inc/source",
+      "score": 60.09,
+      "category": "Notes / Knowledge",
+      "stars": 1217
+    },
+    {
+      "url": "https://github.com/bl4ko/netbox-ssot",
+      "score": 60.05,
+      "category": "DevOps / Infra",
+      "stars": 73
+    },
+    {
+      "url": "https://github.com/victor-wiki/DatabaseManager",
+      "score": 59.4,
+      "category": "Notes / Knowledge",
+      "stars": 147
+    },
+    {
+      "url": "https://github.com/iloveitaly/llm-ide-rules",
+      "score": 58.25,
+      "category": "AI / LLM",
+      "stars": 13
+    },
+    {
+      "url": "https://github.com/d4rken-org/octi-server",
+      "score": 56.71,
+      "category": "Security / Auth",
+      "stars": 34
+    },
+    {
+      "url": "https://github.com/FilenCloudDienste/filen-desktop",
+      "score": 54.22,
+      "category": "Networking / VPN",
+      "stars": 235
+    },
+    {
+      "url": "https://github.com/3rd-party-integrations/github-team-sync",
+      "score": 53.86,
+      "category": "Security / Auth",
+      "stars": 210
+    },
+    {
+      "url": "https://github.com/qlerup/chores4kids",
+      "score": 53.11,
+      "category": "Home Automation / IoT",
+      "stars": 37
+    },
+    {
+      "url": "https://github.com/TCB13/LoFloccus",
+      "score": 52.96,
+      "category": "Notes / Knowledge",
+      "stars": 305
+    }
+  ],
+  "categoryDistribution": {
+    "AI / LLM": 5,
+    "Notes / Knowledge": 5,
+    "Books / Reading / Library": 5,
+    "Developer Tools / Utilities": 5,
+    "Media / Streaming": 5,
+    "Files / Storage / Backup": 5,
+    "Security / Auth": 5,
+    "Productivity / Tasks": 5,
+    "DevOps / Infra": 4,
+    "Networking / VPN": 2,
+    "Privacy / Ad-Blocking": 1,
+    "Maps / GIS / Location": 1,
+    "Monitoring / Observability": 1,
+    "Home Automation / IoT": 1
+  },
+  "scoreStats": {
+    "min": 52.96,
+    "max": 86.44,
+    "mean": 70.76
+  }
+}

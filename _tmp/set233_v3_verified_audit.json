@@ -1,0 +1,423 @@
+{
+  "version": "v3",
+  "setNum": 233,
+  "searchCalls": 9,
+  "poolSize": 522,
+  "scoredCount": 301,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/ViewTube/viewtube",
+      "score": 91.69,
+      "category": "Media / Streaming",
+      "stars": 1463,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/trykimu/videoeditor",
+      "score": 90.11,
+      "category": "Media / Streaming",
+      "stars": 2077,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nadermx/backgroundremover",
+      "score": 89.0,
+      "category": "AI / LLM",
+      "stars": 7929,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "score": 89.0,
+      "category": "AI / LLM",
+      "stars": 5695,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aooiuu/any-reader",
+      "score": 89.0,
+      "category": "Media / Streaming",
+      "stars": 1127,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/rust-av/Av1an",
+      "score": 88.34,
+      "category": "Media / Streaming",
+      "stars": 1940,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/FireRedTeam/FireRed-OpenStoryline",
+      "score": 88.0,
+      "category": "AI / LLM",
+      "stars": 2968,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/P1kaj1uu/ChattyPlay-Agent",
+      "score": 87.4,
+      "category": "AI / LLM",
+      "stars": 697,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AimesSoft/NipaPlay-Reload",
+      "score": 87.19,
+      "category": "Media / Streaming",
+      "stars": 1577,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/869413421/ai-moive-studio",
+      "score": 85.75,
+      "category": "AI / LLM",
+      "stars": 1260,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zkep/my-geektime",
+      "score": 86.88,
+      "category": "Media / Streaming",
+      "stars": 718,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/umlx5h/LLPlayer",
+      "score": 84.0,
+      "category": "AI / LLM",
+      "stars": 3847,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/tommyxchow/frosty",
+      "score": 86.13,
+      "category": "Media / Streaming",
+      "stars": 1017,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aiming-lab/SimpleMem",
+      "score": 84.0,
+      "category": "AI / LLM",
+      "stars": 3525,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mediago-dev/mediago",
+      "score": 86.0,
+      "category": "Media / Streaming",
+      "stars": 9026,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zanllp/infinite-image-browsing",
+      "score": 83.75,
+      "category": "AI / LLM",
+      "stars": 1317,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nv-tlabs/lyra",
+      "score": 85.13,
+      "category": "Media / Streaming",
+      "stars": 2109,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zhouxiaoka/autoclip_mvp",
+      "score": 83.46,
+      "category": "AI / LLM",
+      "stars": 972,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/tiangolo/nginx-rtmp-docker",
+      "score": 85.07,
+      "category": "Media / Streaming",
+      "stars": 1345,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/marcelo-earth/generative-manim",
+      "score": 81.79,
+      "category": "AI / LLM",
+      "stars": 883,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/astrofox-io/astrofox",
+      "score": 84.56,
+      "category": "Media / Streaming",
+      "stars": 1914,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pixpark/gpupixel",
+      "score": 81.34,
+      "category": "AI / LLM",
+      "stars": 2287,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/yutto-dev/yutto",
+      "score": 84.02,
+      "category": "Media / Streaming",
+      "stars": 1896,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Renumics/spotlight",
+      "score": 80.42,
+      "category": "AI / LLM",
+      "stars": 1259,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Vanilagy/mediabunny",
+      "score": 84.0,
+      "category": "Media / Streaming",
+      "stars": 6522,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/taco-group/SparkVSR",
+      "score": 79.9,
+      "category": "AI / LLM",
+      "stars": 675,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/giantpinkrobots/varia",
+      "score": 82.91,
+      "category": "Media / Streaming",
+      "stars": 1716,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/insight-platform/Savant",
+      "score": 74.63,
+      "category": "AI / LLM",
+      "stars": 825,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kandinskylab/kandinsky-5",
+      "score": 82.78,
+      "category": "Media / Streaming",
+      "stars": 777,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/byjlw/video-analyzer",
+      "score": 73.95,
+      "category": "AI / LLM",
+      "stars": 1460,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/svpcom/wfb-ng",
+      "score": 82.62,
+      "category": "Media / Streaming",
+      "stars": 1462,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hybridgroup/gocv",
+      "score": 82.45,
+      "category": "Media / Streaming",
+      "stars": 7467,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/alfg/ffmpeg-commander",
+      "score": 82.14,
+      "category": "Media / Streaming",
+      "stars": 1050,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/muxinc/media-chrome",
+      "score": 81.81,
+      "category": "Media / Streaming",
+      "stars": 2700,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wujunwei928/parse-video",
+      "score": 81.51,
+      "category": "Media / Streaming",
+      "stars": 954,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/TzuHuanTai/RaspberryPi-WebRTC",
+      "score": 80.47,
+      "category": "Media / Streaming",
+      "stars": 976,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cpvalente/ontime",
+      "score": 79.74,
+      "category": "Media / Streaming",
+      "stars": 902,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/xxxily/h5player",
+      "score": 79.62,
+      "category": "Media / Streaming",
+      "stars": 3618,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/moneytoo/Player",
+      "score": 79.27,
+      "category": "Media / Streaming",
+      "stars": 2592,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/clappr/clappr",
+      "score": 79.26,
+      "category": "Media / Streaming",
+      "stars": 7473,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/holtwick/briefing",
+      "score": 79.09,
+      "category": "Media / Streaming",
+      "stars": 1625,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nova-video-player/aos-AVP",
+      "score": 78.98,
+      "category": "Media / Streaming",
+      "stars": 4524,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Novage/p2p-media-loader",
+      "score": 78.97,
+      "category": "Media / Streaming",
+      "stars": 1688,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AAndyProgram/SCrawler",
+      "score": 78.91,
+      "category": "Media / Streaming",
+      "stars": 2080,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mediathekview/mediathekviewweb",
+      "score": 78.9,
+      "category": "Media / Streaming",
+      "stars": 1161,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zhihu/griffith",
+      "score": 78.72,
+      "category": "Media / Streaming",
+      "stars": 2510,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zhw2590582/ArtPlayer",
+      "score": 78.56,
+      "category": "Media / Streaming",
+      "stars": 3805,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/openframeworks/openFrameworks",
+      "score": 78.36,
+      "category": "Media / Streaming",
+      "stars": 10389,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/media-kit/media-kit",
+      "score": 78.26,
+      "category": "Media / Streaming",
+      "stars": 1765,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/muxinc/next-video",
+      "score": 78.26,
+      "category": "Media / Streaming",
+      "stars": 1213,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Media / Streaming": 35,
+    "AI / LLM": 15
+  },
+  "scoreStats": {
+    "min": 73.95,
+    "max": 91.69,
+    "mean": 82.72
+  },
+  "dockerCount": 27
+}

@@ -1,0 +1,330 @@
+{
+  "version": "v2",
+  "setNum": 203,
+  "searchCalls": 11,
+  "poolSize": 630,
+  "scoredCount": 299,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/Kunzisoft/KeePassDX",
+      "score": 85.81,
+      "category": "Security / Auth",
+      "stars": 6925
+    },
+    {
+      "url": "https://github.com/Brisk4t/ToothPaste",
+      "score": 81.96,
+      "category": "Media / Streaming",
+      "stars": 174
+    },
+    {
+      "url": "https://github.com/authpass/authpass",
+      "score": 80.86,
+      "category": "Security / Auth",
+      "stars": 2660
+    },
+    {
+      "url": "https://github.com/PhilippC/keepass2android",
+      "score": 80.48,
+      "category": "Security / Auth",
+      "stars": 6056
+    },
+    {
+      "url": "https://github.com/huabeitech/agent-desk",
+      "score": 79.01,
+      "category": "AI / LLM",
+      "stars": 142
+    },
+    {
+      "url": "https://github.com/OpenKeyring/oak-keyring",
+      "score": 77.6,
+      "category": "Developer Tools / Utilities",
+      "stars": 138
+    },
+    {
+      "url": "https://github.com/mssun/passforios",
+      "score": 76.09,
+      "category": "Security / Auth",
+      "stars": 1634
+    },
+    {
+      "url": "https://github.com/yogeshpaliyal/KeyPass",
+      "score": 75.67,
+      "category": "Security / Auth",
+      "stars": 765
+    },
+    {
+      "url": "https://github.com/passwall/passwall-server",
+      "score": 74.68,
+      "category": "DevOps / Infra",
+      "stars": 767
+    },
+    {
+      "url": "https://github.com/coderflexx/laravel-ticket",
+      "score": 74.35,
+      "category": "CRM / Business",
+      "stars": 439
+    },
+    {
+      "url": "https://github.com/faveosuite/faveo-helpdesk",
+      "score": 74.26,
+      "category": "CRM / Business",
+      "stars": 1238
+    },
+    {
+      "url": "https://github.com/pluginsGLPI/formcreator",
+      "score": 73.11,
+      "category": "CRM / Business",
+      "stars": 187
+    },
+    {
+      "url": "https://github.com/Keeper-Security/secrets-manager",
+      "score": 72.46,
+      "category": "DevOps / Infra",
+      "stars": 113
+    },
+    {
+      "url": "https://github.com/passbolt/charts-passbolt",
+      "score": 72.12,
+      "category": "DevOps / Infra",
+      "stars": 75
+    },
+    {
+      "url": "https://github.com/IJHack/QtPass",
+      "score": 71.9,
+      "category": "Developer Tools / Utilities",
+      "stars": 1137
+    },
+    {
+      "url": "https://github.com/django-helpdesk/django-helpdesk",
+      "score": 71.19,
+      "category": "Productivity / Tasks",
+      "stars": 1679
+    },
+    {
+      "url": "https://github.com/krishna-build/claude-coach-kit",
+      "score": 70.32,
+      "category": "AI / LLM",
+      "stars": 31
+    },
+    {
+      "url": "https://github.com/Dashlane/dashlane-cli",
+      "score": 70.31,
+      "category": "Developer Tools / Utilities",
+      "stars": 221
+    },
+    {
+      "url": "https://github.com/orbiteus/orbiteus",
+      "score": 70.0,
+      "category": "AI / LLM",
+      "stars": 38
+    },
+    {
+      "url": "https://github.com/richchang0721-boop/it-diagnostic-agent",
+      "score": 69.81,
+      "category": "AI / LLM",
+      "stars": 22
+    },
+    {
+      "url": "https://github.com/martinsbrezauckis/shellx",
+      "score": 69.1,
+      "category": "AI / LLM",
+      "stars": 13
+    },
+    {
+      "url": "https://github.com/makepkg/SecureGen",
+      "score": 69.09,
+      "category": "Home Automation / IoT",
+      "stars": 74
+    },
+    {
+      "url": "https://github.com/protonpass/android-pass",
+      "score": 68.51,
+      "category": "Developer Tools / Utilities",
+      "stars": 716
+    },
+    {
+      "url": "https://github.com/loderunner/scrt",
+      "score": 68.44,
+      "category": "DevOps / Infra",
+      "stars": 226
+    },
+    {
+      "url": "https://github.com/Keeper-Security/Commander",
+      "score": 67.97,
+      "category": "Developer Tools / Utilities",
+      "stars": 244
+    },
+    {
+      "url": "https://github.com/libkeepass/pykeepass",
+      "score": 67.13,
+      "category": "Books / Reading / Library",
+      "stars": 502
+    },
+    {
+      "url": "https://github.com/ArtisanCloud/PowerX",
+      "score": 66.45,
+      "category": "CRM / Business",
+      "stars": 342
+    },
+    {
+      "url": "https://github.com/Zakarialabib/myStockMaster",
+      "score": 66.11,
+      "category": "CRM / Business",
+      "stars": 436
+    },
+    {
+      "url": "https://github.com/RunaVault/RunaVault",
+      "score": 65.12,
+      "category": "DevOps / Infra",
+      "stars": 127
+    },
+    {
+      "url": "https://github.com/arnaultpascual/Verrou",
+      "score": 61.28,
+      "category": "Networking / VPN",
+      "stars": 32
+    },
+    {
+      "url": "https://github.com/blackwell-systems/gcp-secret-manager-emulator",
+      "score": 59.96,
+      "category": "Gaming / Game Servers",
+      "stars": 11
+    },
+    {
+      "url": "https://github.com/hassio-addons/app-vaultwarden",
+      "score": 58.79,
+      "category": "Home Automation / IoT",
+      "stars": 209
+    },
+    {
+      "url": "https://github.com/wrogistefan/LocalPass",
+      "score": 57.66,
+      "category": "Monitoring / Observability",
+      "stars": 34
+    },
+    {
+      "url": "https://github.com/TheBeardofKnowledge/Scripts-from-my-videos",
+      "score": 53.25,
+      "category": "Networking / VPN",
+      "stars": 54
+    },
+    {
+      "url": "https://github.com/david-dick/firefox-marionette",
+      "score": 53.02,
+      "category": "Networking / VPN",
+      "stars": 20
+    },
+    {
+      "url": "https://github.com/RohanNagar/op-connect-sdk-java",
+      "score": 47.94,
+      "category": "Books / Reading / Library",
+      "stars": 9
+    },
+    {
+      "url": "https://github.com/wael-sudo2/facebook-page-info-scraper",
+      "score": 47.73,
+      "category": "Books / Reading / Library",
+      "stars": 61
+    },
+    {
+      "url": "https://github.com/detunized/password-manager-access",
+      "score": 46.68,
+      "category": "Books / Reading / Library",
+      "stars": 49
+    },
+    {
+      "url": "https://github.com/moqui/mantle-usl",
+      "score": 46.63,
+      "category": "Books / Reading / Library",
+      "stars": 34
+    },
+    {
+      "url": "https://github.com/seibert-media/teamvault",
+      "score": 45.11,
+      "category": "Media / Streaming",
+      "stars": 47
+    },
+    {
+      "url": "https://github.com/JamieMason/self-help",
+      "score": 44.81,
+      "category": "Notes / Knowledge",
+      "stars": 38
+    },
+    {
+      "url": "https://github.com/erkenes/docker-vaultwarden-server",
+      "score": 42.81,
+      "category": "Networking / VPN",
+      "stars": 53
+    },
+    {
+      "url": "https://github.com/f1nnix/magplan",
+      "score": 37.6,
+      "category": "Productivity / Tasks",
+      "stars": 30
+    },
+    {
+      "url": "https://github.com/azamjonbro/CRM",
+      "score": 36.58,
+      "category": "Productivity / Tasks",
+      "stars": 28
+    },
+    {
+      "url": "https://github.com/dtbaker/ucm",
+      "score": 34.36,
+      "category": "Productivity / Tasks",
+      "stars": 16
+    },
+    {
+      "url": "https://github.com/roddhjav/pass-import",
+      "score": 73.44,
+      "category": "Security / Auth",
+      "stars": 910
+    },
+    {
+      "url": "https://github.com/danieljustus/symaira-vault",
+      "score": 67.55,
+      "category": "AI / LLM",
+      "stars": 21
+    },
+    {
+      "url": "https://github.com/frikishaan/tiny-crm",
+      "score": 65.85,
+      "category": "CRM / Business",
+      "stars": 173
+    },
+    {
+      "url": "https://github.com/twofas/2fas-pass-android",
+      "score": 65.59,
+      "category": "Developer Tools / Utilities",
+      "stars": 224
+    },
+    {
+      "url": "https://github.com/chrisns/kubectl-passman",
+      "score": 63.64,
+      "category": "DevOps / Infra",
+      "stars": 131
+    }
+  ],
+  "categoryDistribution": {
+    "Security / Auth": 6,
+    "AI / LLM": 6,
+    "Developer Tools / Utilities": 6,
+    "DevOps / Infra": 6,
+    "CRM / Business": 6,
+    "Books / Reading / Library": 5,
+    "Productivity / Tasks": 4,
+    "Networking / VPN": 4,
+    "Media / Streaming": 2,
+    "Home Automation / IoT": 2,
+    "Gaming / Game Servers": 1,
+    "Monitoring / Observability": 1,
+    "Notes / Knowledge": 1
+  },
+  "scoreStats": {
+    "min": 34.36,
+    "max": 85.81,
+    "mean": 64.4
+  }
+}

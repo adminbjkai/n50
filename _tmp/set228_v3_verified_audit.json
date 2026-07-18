@@ -1,0 +1,422 @@
+{
+  "version": "v3",
+  "setNum": 228,
+  "searchCalls": 9,
+  "poolSize": 661,
+  "scoredCount": 364,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/vellum-ai/vellum-assistant",
+      "score": 99.03,
+      "category": "AI / LLM",
+      "stars": 732,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/PatterAI/Patter",
+      "score": 96.02,
+      "category": "AI / LLM",
+      "stars": 726,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/darkzOGx/youtube-automation-agent",
+      "score": 95.0,
+      "category": "AI / LLM",
+      "stars": 1385,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/777genius/agent-teams-ai",
+      "score": 94.98,
+      "category": "AI / LLM",
+      "stars": 1368,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ENTERPILOT/GoModel",
+      "score": 94.43,
+      "category": "AI / LLM",
+      "stars": 956,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/yym68686/uni-api",
+      "score": 93.2,
+      "category": "AI / LLM",
+      "stars": 1230,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AmrDab/clawdcursor",
+      "score": 92.88,
+      "category": "AI / LLM",
+      "stars": 343,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Nano-Collective/nanocoder",
+      "score": 92.66,
+      "category": "AI / LLM",
+      "stars": 2143,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "score": 92.0,
+      "category": "AI / LLM",
+      "stars": 3635,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/crmne/ruby_llm",
+      "score": 92.0,
+      "category": "AI / LLM",
+      "stars": 4034,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/qixing-jk/all-api-hub",
+      "score": 92.0,
+      "category": "AI / LLM",
+      "stars": 4222,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/thClaws/thClaws",
+      "score": 91.67,
+      "category": "AI / LLM",
+      "stars": 1117,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hydropix/TranslateBooksWithLLMs",
+      "score": 90.46,
+      "category": "AI / LLM",
+      "stars": 1874,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/im4codes/imcodes",
+      "score": 90.35,
+      "category": "AI / LLM",
+      "stars": 469,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lidge-jun/ima2-gen",
+      "score": 90.25,
+      "category": "AI / LLM",
+      "stars": 438,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/xiaojilele-glitch/WhyBuddy",
+      "score": 89.89,
+      "category": "AI / LLM",
+      "stars": 346,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/caidaoli/ccLoad",
+      "score": 89.76,
+      "category": "AI / LLM",
+      "stars": 326,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/orneryd/NornicDB",
+      "score": 89.13,
+      "category": "AI / LLM",
+      "stars": 782,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/decolua/9router",
+      "score": 89.0,
+      "category": "AI / LLM",
+      "stars": 18115,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/looplj/axonhub",
+      "score": 89.0,
+      "category": "AI / LLM",
+      "stars": 4364,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mengxi-ream/read-frog",
+      "score": 89.0,
+      "category": "AI / LLM",
+      "stars": 8035,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/vericontext/vibeframe",
+      "score": 88.96,
+      "category": "AI / LLM",
+      "stars": 138,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/TanStack/ai",
+      "score": 88.0,
+      "category": "AI / LLM",
+      "stars": 2811,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/RTGS2017/NagaAgent",
+      "score": 87.14,
+      "category": "AI / LLM",
+      "stars": 1522,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/shiwenwen/hope-agent",
+      "score": 86.53,
+      "category": "AI / LLM",
+      "stars": 1016,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/langroid/langroid",
+      "score": 86.5,
+      "category": "AI / LLM",
+      "stars": 4042,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Azure-Samples/chat-with-your-data-solution-accelerator",
+      "score": 86.43,
+      "category": "AI / LLM",
+      "stars": 1172,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nextlevelbuilder/goclaw",
+      "score": 86.0,
+      "category": "AI / LLM",
+      "stars": 3302,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/langbot-app/LangBot",
+      "score": 86.0,
+      "category": "AI / LLM",
+      "stars": 16370,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/askalf/dario",
+      "score": 85.6,
+      "category": "AI / LLM",
+      "stars": 286,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jazzyalex/agent-sessions",
+      "score": 85.36,
+      "category": "AI / LLM",
+      "stars": 651,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nicedreamzapp/claude-code-local",
+      "score": 85.0,
+      "category": "AI / LLM",
+      "stars": 2803,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/SyntheticAutonomicMind/CLIO",
+      "score": 84.97,
+      "category": "AI / LLM",
+      "stars": 180,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ChrisChen667788/wind-comic",
+      "score": 84.68,
+      "category": "AI / LLM",
+      "stars": 216,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dcostenco/prism-coder",
+      "score": 84.62,
+      "category": "AI / LLM",
+      "stars": 148,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jonigl/mcp-client-for-ollama",
+      "score": 84.58,
+      "category": "AI / LLM",
+      "stars": 753,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/MCPJam/inspector",
+      "score": 84.57,
+      "category": "AI / LLM",
+      "stars": 2021,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/xorbitsai/xagent",
+      "score": 84.54,
+      "category": "AI / LLM",
+      "stars": 262,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/deta/surf",
+      "score": 84.0,
+      "category": "AI / LLM",
+      "stars": 3450,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/osaurus-ai/osaurus",
+      "score": 84.0,
+      "category": "AI / LLM",
+      "stars": 5978,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/justrach/codedb",
+      "score": 83.94,
+      "category": "AI / LLM",
+      "stars": 1333,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ARahim3/mlx-tune",
+      "score": 83.92,
+      "category": "AI / LLM",
+      "stars": 1315,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/k8sgpt-ai/k8sgpt",
+      "score": 83.5,
+      "category": "AI / LLM",
+      "stars": 7901,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/supermemoryai/openclaw-supermemory",
+      "score": 83.15,
+      "category": "AI / LLM",
+      "stars": 791,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lightseekorg/smg",
+      "score": 83.13,
+      "category": "AI / LLM",
+      "stars": 347,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/polterguy/magic",
+      "score": 82.82,
+      "category": "AI / LLM",
+      "stars": 1147,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/caura-ai/caura-memclaw",
+      "score": 82.18,
+      "category": "AI / LLM",
+      "stars": 131,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Genesis1231/Eva01",
+      "score": 82.03,
+      "category": "AI / LLM",
+      "stars": 143,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/gglucass/headroom-desktop",
+      "score": 81.91,
+      "category": "AI / LLM",
+      "stars": 205,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ax-llm/ax",
+      "score": 81.88,
+      "category": "AI / LLM",
+      "stars": 2779,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "AI / LLM": 50
+  },
+  "scoreStats": {
+    "min": 81.88,
+    "max": 99.03,
+    "mean": 87.77
+  },
+  "dockerCount": 55
+}

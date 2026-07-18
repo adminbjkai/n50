@@ -1,0 +1,439 @@
+{
+  "version": "v4",
+  "setNum": 215,
+  "searchCalls": 8,
+  "poolSize": 607,
+  "scoredCount": 170,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/kaorii-ako/Shiori-v1",
+      "score": 72.65,
+      "category": "AI / LLM",
+      "stars": 43,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ctrlaltwill/LearnKit",
+      "score": 72.18,
+      "category": "AI / LLM",
+      "stars": 129,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/HuckleR2003/PC_Workman_HCK",
+      "score": 72.13,
+      "category": "AI / LLM",
+      "stars": 59,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ZhangZhuoSJTU/tiny-dec",
+      "score": 71.82,
+      "category": "Education / Learning",
+      "stars": 227,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/logisim-evolution/logisim-evolution",
+      "score": 71.81,
+      "category": "Education / Learning",
+      "stars": 7224,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/SimonWaldherr/golang-examples",
+      "score": 71.69,
+      "category": "Education / Learning",
+      "stars": 1692,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hneemann/Digital",
+      "score": 71.61,
+      "category": "Education / Learning",
+      "stars": 5788,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/learning-commons-org/knowledge-graph",
+      "score": 70.43,
+      "category": "AI / LLM",
+      "stars": 133,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/uccser/cs-field-guide",
+      "score": 70.3,
+      "category": "Education / Learning",
+      "stars": 373,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aicademyorg/AIcademy",
+      "score": 69.83,
+      "category": "AI / LLM",
+      "stars": 309,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/soghayarmahmoud/procode-edu-pulse-lms",
+      "score": 54.44,
+      "category": "Developer Tools / Utilities",
+      "stars": 24,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/w3develops/w3Develops",
+      "score": 52.68,
+      "category": "Developer Tools / Utilities",
+      "stars": 122,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/MahadMuhammad/FirstContributions",
+      "score": 51.92,
+      "category": "Developer Tools / Utilities",
+      "stars": 424,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/OpenRoberta/openroberta-lab",
+      "score": 51.11,
+      "category": "Developer Tools / Utilities",
+      "stars": 143,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Polkadot-Blockchain-Academy/pba-book",
+      "score": 51.0,
+      "category": "Gaming / Game Servers",
+      "stars": 122,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/scribe-org/Scribe-Data",
+      "score": 50.82,
+      "category": "Developer Tools / Utilities",
+      "stars": 58,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wkoszek/cpu60",
+      "score": 50.33,
+      "category": "Gaming / Game Servers",
+      "stars": 161,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pssc/ha-addon-lms",
+      "score": 49.31,
+      "category": "Home Automation / IoT",
+      "stars": 76,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ocadotechnology/rapid-router",
+      "score": 47.28,
+      "category": "Gaming / Game Servers",
+      "stars": 58,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ocadotechnology/codeforlife-portal",
+      "score": 47.03,
+      "category": "Gaming / Game Servers",
+      "stars": 54,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/damalis/full-stack-nginx-moodle-for-everyone-with-docker-compose",
+      "score": 45.95,
+      "category": "Networking / VPN",
+      "stars": 23,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/oweitman/ioBroker.squeezeboxrpc",
+      "score": 35.84,
+      "category": "Home Automation / IoT",
+      "stars": 18,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AF-1/lms-ratingslight",
+      "score": 32.49,
+      "category": "Media / Streaming",
+      "stars": 14,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AF-1/lms-visualstatistics",
+      "score": 30.72,
+      "category": "Media / Streaming",
+      "stars": 8,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/floriant3/study-notion-edtech-mern",
+      "score": 30.7,
+      "category": "Productivity / Tasks",
+      "stars": 17,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/engrshuvodas/LMS-POINT",
+      "score": 30.48,
+      "category": "Media / Streaming",
+      "stars": 9,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bklieger-groq/mathtutor-on-groq",
+      "score": 70.07,
+      "category": "Education / Learning",
+      "stars": 244,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Open-TutorAi/open-tutor-ai-CE",
+      "score": 69.26,
+      "category": "AI / LLM",
+      "stars": 69,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mathigon/textbooks",
+      "score": 39.05,
+      "category": "Developer Tools / Utilities",
+      "stars": 386,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/CopterExpress/clover",
+      "score": 69.49,
+      "category": "Education / Learning",
+      "stars": 639,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/natolambert/colloquium",
+      "score": 69.22,
+      "category": "AI / LLM",
+      "stars": 208,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Mariotti94/WebRISC-V",
+      "score": 69.21,
+      "category": "Education / Learning",
+      "stars": 172,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zoonk/zoonk",
+      "score": 68.96,
+      "category": "AI / LLM",
+      "stars": 136,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/tighten/onramp",
+      "score": 69.11,
+      "category": "Education / Learning",
+      "stars": 165,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Ceyron/machine-learning-and-simulation",
+      "score": 68.44,
+      "category": "AI / LLM",
+      "stars": 1180,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jcputney/scorm-again",
+      "score": 68.79,
+      "category": "Education / Learning",
+      "stars": 318,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/24kchengYe/human-skill-tree",
+      "score": 67.65,
+      "category": "AI / LLM",
+      "stars": 569,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/StudyDrift/lextures",
+      "score": 68.78,
+      "category": "Education / Learning",
+      "stars": 57,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ml-from-scratch-book/code",
+      "score": 67.54,
+      "category": "AI / LLM",
+      "stars": 63,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jupyterhub/the-littlest-jupyterhub",
+      "score": 68.54,
+      "category": "Education / Learning",
+      "stars": 1139,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/robocode-dev/tank-royale",
+      "score": 67.04,
+      "category": "AI / LLM",
+      "stars": 251,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/endlessm/godot-block-coding",
+      "score": 67.57,
+      "category": "Education / Learning",
+      "stars": 456,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ai-lingnan/econai-agent-platform",
+      "score": 65.68,
+      "category": "AI / LLM",
+      "stars": 26,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kelvins/algorithms-and-data-structures",
+      "score": 67.56,
+      "category": "Education / Learning",
+      "stars": 1084,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ECNU-ICALK/EduChat",
+      "score": 65.41,
+      "category": "AI / LLM",
+      "stars": 941,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/gpiozero/gpiozero",
+      "score": 67.51,
+      "category": "Education / Learning",
+      "stars": 2120,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/workofart/ml-by-hand",
+      "score": 64.86,
+      "category": "AI / LLM",
+      "stars": 87,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/krahets/hello-algo",
+      "score": 67.0,
+      "category": "Education / Learning",
+      "stars": 127736,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/learning-commons-org/evaluators",
+      "score": 64.6,
+      "category": "AI / LLM",
+      "stars": 74,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/seed-labs/seed-labs",
+      "score": 66.68,
+      "category": "Education / Learning",
+      "stars": 945,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Education / Learning": 17,
+    "AI / LLM": 16,
+    "Developer Tools / Utilities": 6,
+    "Gaming / Game Servers": 4,
+    "Media / Streaming": 3,
+    "Home Automation / IoT": 2,
+    "Networking / VPN": 1,
+    "Productivity / Tasks": 1
+  },
+  "scoreStats": {
+    "min": 30.48,
+    "max": 72.65,
+    "mean": 60.49
+  },
+  "dockerCount": 33,
+  "hostname": "M17s-MacBook-Pro.local",
+  "python": "3.14.5",
+  "timing": {
+    "gather": 28.0,
+    "score": 0.0,
+    "confirm": 11.9,
+    "confirmedPool": 130,
+    "diversify": 0.9,
+    "total": 170.8
+  }
+}

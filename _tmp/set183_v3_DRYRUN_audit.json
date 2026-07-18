@@ -1,0 +1,438 @@
+{
+  "version": "v3",
+  "setNum": 183,
+  "searchCalls": 6,
+  "poolSize": 499,
+  "scoredCount": 322,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/cvhariharan/flowctl",
+      "score": 93.86,
+      "category": "DevOps / Infra",
+      "stars": 317,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/MatrixAges/polywise",
+      "score": 91.13,
+      "category": "AI / LLM",
+      "stars": 781,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bubblelabai/BubbleLab",
+      "score": 88.64,
+      "category": "AI / LLM",
+      "stars": 1094,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/synergycodes/ng-diagram",
+      "score": 87.85,
+      "category": "Developer Tools / Utilities",
+      "stars": 539,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/agentjido/jido",
+      "score": 87.35,
+      "category": "AI / LLM",
+      "stars": 1744,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/steven-jianhao-li/zotero-AI-Butler",
+      "score": 87.07,
+      "category": "AI / LLM",
+      "stars": 1455,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/datawhalechina/easy-vibe",
+      "score": 86.0,
+      "category": "AI / LLM",
+      "stars": 17104,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/luangjokaj/wordpressify",
+      "score": 85.84,
+      "category": "Networking / VPN",
+      "stars": 1642,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/direktiv/direktiv",
+      "score": 84.69,
+      "category": "DevOps / Infra",
+      "stars": 492,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ChaoMixian/vFlow",
+      "score": 83.7,
+      "category": "Automation",
+      "stars": 1138,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cschleiden/go-workflows",
+      "score": 82.76,
+      "category": "Automation",
+      "stars": 495,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pypa/gh-action-pypi-publish",
+      "score": 82.44,
+      "category": "Security / Auth",
+      "stars": 1171,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dbos-inc/dbos-transact-golang",
+      "score": 82.29,
+      "category": "Automation",
+      "stars": 725,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/PowerJob/PowerJob",
+      "score": 82.0,
+      "category": "Productivity / Tasks",
+      "stars": 7756,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/astronomer/astronomer-cosmos",
+      "score": 80.13,
+      "category": "Developer Tools / Utilities",
+      "stars": 1219,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/DataBiosphere/toil",
+      "score": 79.8,
+      "category": "DevOps / Infra",
+      "stars": 933,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/JamesIves/github-pages-deploy-action",
+      "score": 79.39,
+      "category": "DevOps / Infra",
+      "stars": 4582,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/durable-workflow/workflow",
+      "score": 79.38,
+      "category": "Monitoring / Observability",
+      "stars": 1209,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/microsoft/RulesEngine",
+      "score": 79.36,
+      "category": "CRM / Business",
+      "stars": 4294,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Allaman/nvim",
+      "score": 79.31,
+      "category": "DevOps / Infra",
+      "stars": 708,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ergo-services/ergo",
+      "score": 78.77,
+      "category": "Networking / VPN",
+      "stars": 4592,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/broadinstitute/cromwell",
+      "score": 78.48,
+      "category": "Automation",
+      "stars": 1069,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/step-security/secure-repo",
+      "score": 78.13,
+      "category": "Security / Auth",
+      "stars": 329,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lint-staged/lint-staged",
+      "score": 78.0,
+      "category": "Developer Tools / Utilities",
+      "stars": 14661,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pdm-project/pdm",
+      "score": 78.0,
+      "category": "Automation",
+      "stars": 8640,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/azat-io/actions-up",
+      "score": 77.59,
+      "category": "Developer Tools / Utilities",
+      "stars": 589,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/entropy-cloud/nop-entropy",
+      "score": 76.98,
+      "category": "Developer Tools / Utilities",
+      "stars": 688,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mikepenz/release-changelog-builder-action",
+      "score": 76.73,
+      "category": "Notes / Knowledge",
+      "stars": 859,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kaloscope/kaloscope",
+      "score": 76.44,
+      "category": "Media / Streaming",
+      "stars": 134,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/getrebuild/rebuild",
+      "score": 76.32,
+      "category": "Files / Storage / Backup",
+      "stars": 1011,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/salgum1114/react-design-editor",
+      "score": 75.95,
+      "category": "Image / Design / Creative",
+      "stars": 1700,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dockstore/dockstore",
+      "score": 74.21,
+      "category": "E-commerce / Shop",
+      "stars": 130,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ad-si/Perspec",
+      "score": 72.51,
+      "category": "Media / Streaming",
+      "stars": 654,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/apache/incubator-kie-kogito-runtimes",
+      "score": 72.17,
+      "category": "CRM / Business",
+      "stars": 610,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/gautamkrishnar/blog-post-workflow",
+      "score": 72.09,
+      "category": "Notes / Knowledge",
+      "stars": 3405,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sartography/spiff-arena",
+      "score": 71.18,
+      "category": "Monitoring / Observability",
+      "stars": 138,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/reugn/go-streams",
+      "score": 71.05,
+      "category": "Media / Streaming",
+      "stars": 2169,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/common-workflow-language/common-workflow-language",
+      "score": 69.93,
+      "category": "CRM / Business",
+      "stars": 1480,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cylc/cylc-flow",
+      "score": 69.34,
+      "category": "Productivity / Tasks",
+      "stars": 376,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sayiir/sayiir",
+      "score": 68.54,
+      "category": "Monitoring / Observability",
+      "stars": 63,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/WeBankFinTech/DataSphereStudio",
+      "score": 65.57,
+      "category": "Productivity / Tasks",
+      "stars": 3260,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/IBM/IBM-Z-zOS",
+      "score": 65.04,
+      "category": "Maps / GIS / Location",
+      "stars": 456,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/WeBankFinTech/Schedulis",
+      "score": 63.68,
+      "category": "Productivity / Tasks",
+      "stars": 399,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ComponentGlazier/NordVPN-2026",
+      "score": 63.45,
+      "category": "Monitoring / Observability",
+      "stars": 113,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Trueuechisel/LagoFast-2026",
+      "score": 63.26,
+      "category": "Gaming / Game Servers",
+      "stars": 109,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ProhibitionCzarCure/ExpressVPN-2026",
+      "score": 63.26,
+      "category": "Networking / VPN",
+      "stars": 109,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/epilande/alfred-browser-tabs",
+      "score": 61.8,
+      "category": "Search / Indexing",
+      "stars": 466,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/taniarascia/primitive",
+      "score": 61.56,
+      "category": "Image / Design / Creative",
+      "stars": 940,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/luno/workflow",
+      "score": 61.32,
+      "category": "CRM / Business",
+      "stars": 239,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bpmnServer/bpmn-server",
+      "score": 61.28,
+      "category": "Monitoring / Observability",
+      "stars": 244,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "DevOps / Infra": 5,
+    "AI / LLM": 5,
+    "Developer Tools / Utilities": 5,
+    "Automation": 5,
+    "Monitoring / Observability": 5,
+    "Productivity / Tasks": 4,
+    "CRM / Business": 4,
+    "Networking / VPN": 3,
+    "Media / Streaming": 3,
+    "Security / Auth": 2,
+    "Notes / Knowledge": 2,
+    "Image / Design / Creative": 2,
+    "Files / Storage / Backup": 1,
+    "E-commerce / Shop": 1,
+    "Maps / GIS / Location": 1,
+    "Gaming / Game Servers": 1,
+    "Search / Indexing": 1
+  },
+  "scoreStats": {
+    "min": 61.28,
+    "max": 93.86,
+    "mean": 76.11
+  },
+  "dockerCount": 15
+}

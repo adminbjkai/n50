@@ -1,0 +1,423 @@
+{
+  "version": "v3",
+  "setNum": 185,
+  "searchCalls": 9,
+  "poolSize": 578,
+  "scoredCount": 374,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/bunkeriot/BunkerM",
+      "score": 91.84,
+      "category": "AI / LLM",
+      "stars": 481,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/IoTSharp/IoTSharp",
+      "score": 90.97,
+      "category": "Home Automation / IoT",
+      "stars": 1348,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ag2ai/faststream",
+      "score": 89.0,
+      "category": "Home Automation / IoT",
+      "stars": 5239,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/snazzybean/roommind",
+      "score": 87.91,
+      "category": "Home Automation / IoT",
+      "stars": 350,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Yeraze/meshmonitor",
+      "score": 87.84,
+      "category": "Home Automation / IoT",
+      "stars": 531,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zwave-js/zwave-js-ui",
+      "score": 86.49,
+      "category": "Home Automation / IoT",
+      "stars": 1221,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/robustmq/robustmq",
+      "score": 82.25,
+      "category": "AI / LLM",
+      "stars": 1621,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Edgenesis/shifu",
+      "score": 79.76,
+      "category": "AI / LLM",
+      "stars": 1420,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dromara/dante-cloud",
+      "score": 77.57,
+      "category": "AI / LLM",
+      "stars": 942,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/valentinfrlch/ha-llmvision",
+      "score": 77.04,
+      "category": "AI / LLM",
+      "stars": 1380,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/apache/bifromq",
+      "score": 86.33,
+      "category": "Home Automation / IoT",
+      "stars": 771,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/daxaur/openpaw",
+      "score": 73.78,
+      "category": "AI / LLM",
+      "stars": 152,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/21cncstudio/project_aura",
+      "score": 85.89,
+      "category": "Home Automation / IoT",
+      "stars": 667,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aide-family/moon",
+      "score": 70.97,
+      "category": "AI / LLM",
+      "stars": 253,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kubeedge/kubeedge",
+      "score": 85.89,
+      "category": "Home Automation / IoT",
+      "stars": 7481,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Lucky-183/PI-Assistant",
+      "score": 62.57,
+      "category": "AI / LLM",
+      "stars": 268,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/rmqtt/rmqtt",
+      "score": 85.56,
+      "category": "Home Automation / IoT",
+      "stars": 964,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/thingsboard/thingsboard-gateway",
+      "score": 85.52,
+      "category": "Home Automation / IoT",
+      "stars": 2146,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wind-c/comqtt",
+      "score": 84.62,
+      "category": "Home Automation / IoT",
+      "stars": 1159,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/thingsboard/tbmq",
+      "score": 84.04,
+      "category": "Home Automation / IoT",
+      "stars": 736,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/thomasnordquist/MQTT-Explorer",
+      "score": 83.82,
+      "category": "Home Automation / IoT",
+      "stars": 3982,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mqttsnet/thinglinks",
+      "score": 83.43,
+      "category": "Home Automation / IoT",
+      "stars": 1069,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/emitter-io/emitter",
+      "score": 82.96,
+      "category": "Home Automation / IoT",
+      "stars": 4004,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/40rbidd3n/Hydro0x01",
+      "score": 82.45,
+      "category": "Home Automation / IoT",
+      "stars": 500,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jimuzhe/tiez-clipboard",
+      "score": 81.71,
+      "category": "Home Automation / IoT",
+      "stars": 2218,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/PlotJuggler/PlotJuggler",
+      "score": 81.6,
+      "category": "Home Automation / IoT",
+      "stars": 5961,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cloudamqp/lavinmq",
+      "score": 81.18,
+      "category": "Home Automation / IoT",
+      "stars": 967,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/homebridge/homebridge-config-ui-x",
+      "score": 81.14,
+      "category": "Home Automation / IoT",
+      "stars": 2790,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/steve-community/steve",
+      "score": 81.01,
+      "category": "Home Automation / IoT",
+      "stars": 1067,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/al-one/hass-xiaomi-miot",
+      "score": 81.0,
+      "category": "Home Automation / IoT",
+      "stars": 5922,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/crossbario/crossbar",
+      "score": 80.81,
+      "category": "Home Automation / IoT",
+      "stars": 2065,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Thank-you-Linus/Linus-Dashboard",
+      "score": 80.57,
+      "category": "Home Automation / IoT",
+      "stars": 199,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nanomq/nanomq",
+      "score": 80.31,
+      "category": "Home Automation / IoT",
+      "stars": 2536,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bramstroker/homeassistant-powercalc",
+      "score": 79.93,
+      "category": "Home Automation / IoT",
+      "stars": 1506,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mrlt8/docker-wyze-bridge",
+      "score": 79.52,
+      "category": "Home Automation / IoT",
+      "stars": 3244,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/openshwprojects/OpenBK7231T_App",
+      "score": 79.28,
+      "category": "Home Automation / IoT",
+      "stars": 2187,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kbialek/deye-inverter-mqtt",
+      "score": 79.12,
+      "category": "Home Automation / IoT",
+      "stars": 346,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/asyncapi/spec",
+      "score": 78.89,
+      "category": "Home Automation / IoT",
+      "stars": 5215,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mtrossbach/noah-mqtt",
+      "score": 78.77,
+      "category": "Home Automation / IoT",
+      "stars": 147,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/BangerTech/Prism-Dashboard",
+      "score": 78.73,
+      "category": "Home Automation / IoT",
+      "stars": 190,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ThingsGateway/ThingsGateway",
+      "score": 78.14,
+      "category": "Home Automation / IoT",
+      "stars": 1422,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jetlinks/jetlinks-community",
+      "score": 78.0,
+      "category": "Home Automation / IoT",
+      "stars": 6517,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ithewei/libhv",
+      "score": 77.87,
+      "category": "Home Automation / IoT",
+      "stars": 7522,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/fl4p/batmon-ha",
+      "score": 77.79,
+      "category": "Home Automation / IoT",
+      "stars": 490,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AnWeber/httpyac",
+      "score": 77.77,
+      "category": "Home Automation / IoT",
+      "stars": 842,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hivemq/hivemq-community-edition",
+      "score": 77.57,
+      "category": "Home Automation / IoT",
+      "stars": 1202,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/vogler75/monster-mq",
+      "score": 77.54,
+      "category": "Home Automation / IoT",
+      "stars": 134,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/tbnobody/OpenDTU",
+      "score": 77.51,
+      "category": "Home Automation / IoT",
+      "stars": 2140,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/KouShenhai/KCloud-Platform-IoT",
+      "score": 77.18,
+      "category": "Home Automation / IoT",
+      "stars": 662,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/emqx/neuron",
+      "score": 76.93,
+      "category": "Home Automation / IoT",
+      "stars": 1352,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Home Automation / IoT": 42,
+    "AI / LLM": 8
+  },
+  "scoreStats": {
+    "min": 62.57,
+    "max": 91.84,
+    "mean": 80.97
+  },
+  "dockerCount": 36
+}

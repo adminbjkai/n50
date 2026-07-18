@@ -1,0 +1,423 @@
+{
+  "version": "v3",
+  "setNum": 184,
+  "searchCalls": 6,
+  "poolSize": 458,
+  "scoredCount": 314,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/OpenCCU/OpenCCU",
+      "score": 83.47,
+      "category": "Home Automation / IoT",
+      "stars": 1801,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/HA-Pulse/home-assistant-global-health-score",
+      "score": 83.23,
+      "category": "Home Automation / IoT",
+      "stars": 434,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/djdevil/AlertTicker-Card",
+      "score": 82.6,
+      "category": "Home Automation / IoT",
+      "stars": 285,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sirkirby/unifi-mcp",
+      "score": 81.99,
+      "category": "AI / LLM",
+      "stars": 448,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/home-assistant/supervisor",
+      "score": 80.16,
+      "category": "Home Automation / IoT",
+      "stars": 2176,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/KartoffelToby/better_thermostat",
+      "score": 80.05,
+      "category": "Home Automation / IoT",
+      "stars": 1453,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/trudenboy/sendspin-bt-bridge",
+      "score": 77.37,
+      "category": "AI / LLM",
+      "stars": 158,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/CCOSTAN/Home-AssistantConfig",
+      "score": 75.85,
+      "category": "AI / LLM",
+      "stars": 5213,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/judahpaul16/gpt-home",
+      "score": 75.75,
+      "category": "AI / LLM",
+      "stars": 643,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/gbroeckling/padspanHA",
+      "score": 73.78,
+      "category": "AI / LLM",
+      "stars": 158,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ESPresense/ESPresense",
+      "score": 79.83,
+      "category": "Home Automation / IoT",
+      "stars": 1432,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dadaloop82/EverShelf",
+      "score": 73.29,
+      "category": "AI / LLM",
+      "stars": 78,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mKeRix/room-assistant",
+      "score": 79.56,
+      "category": "Home Automation / IoT",
+      "stars": 1344,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mr-tbot/mesh-api",
+      "score": 72.23,
+      "category": "AI / LLM",
+      "stars": 156,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jeroenterheerdt/HAsmartirrigation",
+      "score": 79.43,
+      "category": "Home Automation / IoT",
+      "stars": 513,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/M64GitHub/WireClaw",
+      "score": 66.31,
+      "category": "AI / LLM",
+      "stars": 140,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bkbilly/lnxlink",
+      "score": 79.39,
+      "category": "Home Automation / IoT",
+      "stars": 467,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kellerza/sunsynk",
+      "score": 78.51,
+      "category": "Home Automation / IoT",
+      "stars": 325,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/1technophile/OpenMQTTGateway",
+      "score": 77.94,
+      "category": "Home Automation / IoT",
+      "stars": 4029,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/BottlecapDave/HomeAssistant-OctopusEnergy",
+      "score": 77.8,
+      "category": "Home Automation / IoT",
+      "stars": 947,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/emsesp/EMS-ESP32",
+      "score": 77.58,
+      "category": "Home Automation / IoT",
+      "stars": 966,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/rednblkx/HomeKey-ESP32",
+      "score": 77.2,
+      "category": "Home Automation / IoT",
+      "stars": 981,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mholzi/beatify",
+      "score": 77.02,
+      "category": "Home Automation / IoT",
+      "stars": 205,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/joshuar/go-hass-agent",
+      "score": 76.97,
+      "category": "Home Automation / IoT",
+      "stars": 546,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/home-assistant/iOS",
+      "score": 76.95,
+      "category": "Home Automation / IoT",
+      "stars": 2229,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jakowenko/double-take",
+      "score": 76.53,
+      "category": "Home Automation / IoT",
+      "stars": 1432,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/home-assistant/android",
+      "score": 76.18,
+      "category": "Home Automation / IoT",
+      "stars": 3691,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/NSPManager/NSPanelManager",
+      "score": 75.9,
+      "category": "Home Automation / IoT",
+      "stars": 335,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/davidusb-geek/emhass",
+      "score": 75.73,
+      "category": "Home Automation / IoT",
+      "stars": 622,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dresden-elektronik/deconz-rest-plugin",
+      "score": 75.38,
+      "category": "Home Automation / IoT",
+      "stars": 1914,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/house-of-abbey/GarminHomeAssistant",
+      "score": 74.6,
+      "category": "Home Automation / IoT",
+      "stars": 328,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/frenck/spook",
+      "score": 74.54,
+      "category": "Home Automation / IoT",
+      "stars": 1150,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/postlund/pyatv",
+      "score": 73.87,
+      "category": "Home Automation / IoT",
+      "stars": 1130,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/joBr99/nspanel-lovelace-ui",
+      "score": 73.27,
+      "category": "Home Automation / IoT",
+      "stars": 987,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control",
+      "score": 73.2,
+      "category": "Home Automation / IoT",
+      "stars": 1916,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/itavero/homebridge-z2m",
+      "score": 72.53,
+      "category": "Home Automation / IoT",
+      "stars": 381,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/NRCHKB/node-red-contrib-homekit-bridged",
+      "score": 72.2,
+      "category": "Home Automation / IoT",
+      "stars": 443,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/crankyoldgit/IRremoteESP8266",
+      "score": 72.01,
+      "category": "Home Automation / IoT",
+      "stars": 3494,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ruvnet/RuView",
+      "score": 72.0,
+      "category": "Home Automation / IoT",
+      "stars": 74618,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/swingerman/ha-dual-smart-thermostat",
+      "score": 71.95,
+      "category": "Home Automation / IoT",
+      "stars": 225,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Laxilef/OTGateway",
+      "score": 71.72,
+      "category": "Home Automation / IoT",
+      "stars": 448,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/marq24/ha-evcc",
+      "score": 71.57,
+      "category": "Home Automation / IoT",
+      "stars": 416,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/richibrics/IoTuring",
+      "score": 71.47,
+      "category": "Home Automation / IoT",
+      "stars": 114,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/moralmunky/Home-Assistant-Mail-And-Packages",
+      "score": 70.93,
+      "category": "Home Automation / IoT",
+      "stars": 851,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/N4S4/synology-api",
+      "score": 70.89,
+      "category": "Home Automation / IoT",
+      "stars": 555,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/HomeSpan/HomeSpan",
+      "score": 70.58,
+      "category": "Home Automation / IoT",
+      "stars": 2120,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ESPresense/ESPresense-companion",
+      "score": 70.43,
+      "category": "Home Automation / IoT",
+      "stars": 213,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bencevans/node-sonos",
+      "score": 70.37,
+      "category": "Home Automation / IoT",
+      "stars": 719,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bachya/ecowitt2mqtt",
+      "score": 70.37,
+      "category": "Home Automation / IoT",
+      "stars": 293,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/custom-cards/button-card",
+      "score": 70.36,
+      "category": "Home Automation / IoT",
+      "stars": 2460,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Home Automation / IoT": 42,
+    "AI / LLM": 8
+  },
+  "scoreStats": {
+    "min": 66.31,
+    "max": 83.47,
+    "mean": 75.26
+  },
+  "dockerCount": 14
+}

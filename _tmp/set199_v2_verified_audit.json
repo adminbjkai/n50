@@ -1,0 +1,330 @@
+{
+  "version": "v2",
+  "setNum": 199,
+  "searchCalls": 6,
+  "poolSize": 488,
+  "scoredCount": 233,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/pshenok/server-survival",
+      "score": 90.67,
+      "category": "Gaming / Game Servers",
+      "stars": 5778
+    },
+    {
+      "url": "https://github.com/PetoiCamp/OpenCat-Quadruped-Robot",
+      "score": 86.23,
+      "category": "AI / LLM",
+      "stars": 4880
+    },
+    {
+      "url": "https://github.com/rohitg00/k8sgames",
+      "score": 86.04,
+      "category": "Gaming / Game Servers",
+      "stars": 1157
+    },
+    {
+      "url": "https://github.com/ob-f/OpenBot",
+      "score": 81.35,
+      "category": "Maps / GIS / Location",
+      "stars": 3298
+    },
+    {
+      "url": "https://github.com/DosX-dev/obfus.h",
+      "score": 81.13,
+      "category": "Security / Auth",
+      "stars": 1713
+    },
+    {
+      "url": "https://github.com/SeanWong17/Future-Style-Periodic-Table",
+      "score": 80.9,
+      "category": "Education / Learning",
+      "stars": 487
+    },
+    {
+      "url": "https://github.com/gsantner/markor",
+      "score": 80.75,
+      "category": "Notes / Knowledge",
+      "stars": 5726
+    },
+    {
+      "url": "https://github.com/mortbopet/Ripes",
+      "score": 80.21,
+      "category": "Gaming / Game Servers",
+      "stars": 3346
+    },
+    {
+      "url": "https://github.com/SYuan03/Skill-Anything",
+      "score": 80.11,
+      "category": "AI / LLM",
+      "stars": 283
+    },
+    {
+      "url": "https://github.com/SJRiz/pytogether",
+      "score": 79.78,
+      "category": "Developer Tools / Utilities",
+      "stars": 249
+    },
+    {
+      "url": "https://github.com/showlab/Code2Video",
+      "score": 79.66,
+      "category": "Media / Streaming",
+      "stars": 1799
+    },
+    {
+      "url": "https://github.com/sakaiproject/sakai",
+      "score": 78.61,
+      "category": "Education / Learning",
+      "stars": 1217
+    },
+    {
+      "url": "https://github.com/jungang/alumnet",
+      "score": 78.51,
+      "category": "AI / LLM",
+      "stars": 199
+    },
+    {
+      "url": "https://github.com/SirhanMacx/Claw-ED",
+      "score": 77.85,
+      "category": "AI / LLM",
+      "stars": 50
+    },
+    {
+      "url": "https://github.com/rudra496/StealthHumanizer",
+      "score": 77.8,
+      "category": "AI / LLM",
+      "stars": 48
+    },
+    {
+      "url": "https://github.com/xiaochong0302/course-tencent-cloud",
+      "score": 77.71,
+      "category": "Education / Learning",
+      "stars": 1157
+    },
+    {
+      "url": "https://github.com/trifectatechfoundation/teach-rs",
+      "score": 77.05,
+      "category": "Education / Learning",
+      "stars": 3393
+    },
+    {
+      "url": "https://github.com/mitmath/computational-thinking",
+      "score": 76.57,
+      "category": "Education / Learning",
+      "stars": 2819
+    },
+    {
+      "url": "https://github.com/swe-labs/the-go-engineer",
+      "score": 75.73,
+      "category": "Books / Reading / Library",
+      "stars": 163
+    },
+    {
+      "url": "https://github.com/hackclub/hackclub",
+      "score": 75.19,
+      "category": "Developer Tools / Utilities",
+      "stars": 2598
+    },
+    {
+      "url": "https://github.com/scribe-org/Scribe-iOS",
+      "score": 74.12,
+      "category": "Productivity / Tasks",
+      "stars": 165
+    },
+    {
+      "url": "https://github.com/AnubisLMS/Anubis",
+      "score": 74.11,
+      "category": "DevOps / Infra",
+      "stars": 377
+    },
+    {
+      "url": "https://github.com/processing/processing4",
+      "score": 73.21,
+      "category": "Books / Reading / Library",
+      "stars": 424
+    },
+    {
+      "url": "https://github.com/toxicbishop/DSA-Study-Hub",
+      "score": 72.91,
+      "category": "Developer Tools / Utilities",
+      "stars": 40
+    },
+    {
+      "url": "https://github.com/yhzhang0128/egos-2000",
+      "score": 72.77,
+      "category": "Developer Tools / Utilities",
+      "stars": 3238
+    },
+    {
+      "url": "https://github.com/renzorlive/vimmaster",
+      "score": 72.38,
+      "category": "Gaming / Game Servers",
+      "stars": 1701
+    },
+    {
+      "url": "https://github.com/ad-si/Coding-Flashcards",
+      "score": 72.29,
+      "category": "Notes / Knowledge",
+      "stars": 740
+    },
+    {
+      "url": "https://github.com/codu-code/codu",
+      "score": 71.13,
+      "category": "Developer Tools / Utilities",
+      "stars": 154
+    },
+    {
+      "url": "https://github.com/LiaScript/LiaScript",
+      "score": 69.32,
+      "category": "Notes / Knowledge",
+      "stars": 277
+    },
+    {
+      "url": "https://github.com/tableaunoir/tableaunoir",
+      "score": 68.83,
+      "category": "Media / Streaming",
+      "stars": 206
+    },
+    {
+      "url": "https://github.com/earthlab/earthpy",
+      "score": 68.18,
+      "category": "CRM / Business",
+      "stars": 536
+    },
+    {
+      "url": "https://github.com/quinton-ashley/p5play",
+      "score": 67.55,
+      "category": "Gaming / Game Servers",
+      "stars": 732
+    },
+    {
+      "url": "https://github.com/replit/replit-py",
+      "score": 67.22,
+      "category": "Books / Reading / Library",
+      "stars": 188
+    },
+    {
+      "url": "https://github.com/stratosphereips/stratocyberlab",
+      "score": 64.5,
+      "category": "Security / Auth",
+      "stars": 132
+    },
+    {
+      "url": "https://github.com/boschresearch/pylife",
+      "score": 62.82,
+      "category": "Books / Reading / Library",
+      "stars": 186
+    },
+    {
+      "url": "https://github.com/hrshadhin/school-management-system",
+      "score": 61.04,
+      "category": "Books / Reading / Library",
+      "stars": 1122
+    },
+    {
+      "url": "https://github.com/lucasfrag/kali-linux-tools-interface",
+      "score": 59.66,
+      "category": "Security / Auth",
+      "stars": 274
+    },
+    {
+      "url": "https://github.com/jiajiayao/course-study-helper",
+      "score": 57.07,
+      "category": "Notes / Knowledge",
+      "stars": 320
+    },
+    {
+      "url": "https://github.com/rwxrob/boost",
+      "score": 56.91,
+      "category": "DevOps / Infra",
+      "stars": 129
+    },
+    {
+      "url": "https://github.com/geo-python/site",
+      "score": 56.65,
+      "category": "Maps / GIS / Location",
+      "stars": 268
+    },
+    {
+      "url": "https://github.com/spectrocloud/librarium",
+      "score": 56.38,
+      "category": "DevOps / Infra",
+      "stars": 27
+    },
+    {
+      "url": "https://github.com/MathewJoseph31/scuoler",
+      "score": 55.39,
+      "category": "Media / Streaming",
+      "stars": 41
+    },
+    {
+      "url": "https://github.com/albertms10/music_notes",
+      "score": 53.31,
+      "category": "Media / Streaming",
+      "stars": 42
+    },
+    {
+      "url": "https://github.com/syntithenai/abc2book",
+      "score": 49.66,
+      "category": "Media / Streaming",
+      "stars": 10
+    },
+    {
+      "url": "https://github.com/particify/arsnova-webclient",
+      "score": 46.36,
+      "category": "Communication / Social",
+      "stars": 8
+    },
+    {
+      "url": "https://github.com/minicoohei/ai-agent-camp",
+      "score": 77.27,
+      "category": "AI / LLM",
+      "stars": 344
+    },
+    {
+      "url": "https://github.com/mawoka-myblock/ClassQuiz",
+      "score": 76.41,
+      "category": "Education / Learning",
+      "stars": 699
+    },
+    {
+      "url": "https://github.com/expertiza/expertiza",
+      "score": 69.04,
+      "category": "Developer Tools / Utilities",
+      "stars": 192
+    },
+    {
+      "url": "https://github.com/aau-network-security/haaukins",
+      "score": 65.66,
+      "category": "Gaming / Game Servers",
+      "stars": 197
+    },
+    {
+      "url": "https://github.com/databayt/hogwarts",
+      "score": 56.44,
+      "category": "Books / Reading / Library",
+      "stars": 13
+    }
+  ],
+  "categoryDistribution": {
+    "Gaming / Game Servers": 6,
+    "AI / LLM": 6,
+    "Education / Learning": 6,
+    "Developer Tools / Utilities": 6,
+    "Books / Reading / Library": 6,
+    "Media / Streaming": 5,
+    "Notes / Knowledge": 4,
+    "Security / Auth": 3,
+    "DevOps / Infra": 3,
+    "Maps / GIS / Location": 2,
+    "Productivity / Tasks": 1,
+    "CRM / Business": 1,
+    "Communication / Social": 1
+  },
+  "scoreStats": {
+    "min": 46.36,
+    "max": 90.67,
+    "mean": 71.01
+  }
+}

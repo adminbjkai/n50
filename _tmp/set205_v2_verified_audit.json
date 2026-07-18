@@ -1,0 +1,325 @@
+{
+  "version": "v2",
+  "setNum": 205,
+  "searchCalls": 9,
+  "poolSize": 558,
+  "scoredCount": 331,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/mautrix/whatsapp",
+      "score": 76.07,
+      "category": "Communication / Social",
+      "stars": 1814
+    },
+    {
+      "url": "https://github.com/mautrix/meta",
+      "score": 75.13,
+      "category": "Communication / Social",
+      "stars": 389
+    },
+    {
+      "url": "https://github.com/Nheko-Reborn/nheko",
+      "score": 74.52,
+      "category": "Communication / Social",
+      "stars": 2432
+    },
+    {
+      "url": "https://github.com/libxsmm/libxsmm",
+      "score": 74.37,
+      "category": "AI / LLM",
+      "stars": 962
+    },
+    {
+      "url": "https://github.com/sepandhaghighi/pycm",
+      "score": 73.98,
+      "category": "AI / LLM",
+      "stars": 1503
+    },
+    {
+      "url": "https://github.com/mlm-games/Mages",
+      "score": 73.81,
+      "category": "Communication / Social",
+      "stars": 144
+    },
+    {
+      "url": "https://github.com/SableClient/Sable",
+      "score": 73.44,
+      "category": "Communication / Social",
+      "stars": 236
+    },
+    {
+      "url": "https://github.com/Visualize-ML/Book4_Power-of-Matrix",
+      "score": 73.11,
+      "category": "AI / LLM",
+      "stars": 9932
+    },
+    {
+      "url": "https://github.com/Visualize-ML/Book3_Elements-of-Mathematics",
+      "score": 72.77,
+      "category": "AI / LLM",
+      "stars": 7501
+    },
+    {
+      "url": "https://github.com/paxlabs-inc/matrix-core",
+      "score": 70.94,
+      "category": "AI / LLM",
+      "stars": 65
+    },
+    {
+      "url": "https://github.com/bartobri/no-more-secrets",
+      "score": 69.38,
+      "category": "Media / Streaming",
+      "stars": 7797
+    },
+    {
+      "url": "https://github.com/keepassxreboot/keepassxc-browser",
+      "score": 67.89,
+      "category": "Security / Auth",
+      "stars": 2260
+    },
+    {
+      "url": "https://github.com/GlitterWare/Passy",
+      "score": 67.76,
+      "category": "Security / Auth",
+      "stars": 189
+    },
+    {
+      "url": "https://github.com/subdavis/Tusk",
+      "score": 67.65,
+      "category": "Security / Auth",
+      "stars": 522
+    },
+    {
+      "url": "https://github.com/redorav/hlslpp",
+      "score": 67.09,
+      "category": "Books / Reading / Library",
+      "stars": 1112
+    },
+    {
+      "url": "https://github.com/markrogoyski/math-php",
+      "score": 66.58,
+      "category": "Books / Reading / Library",
+      "stars": 2413
+    },
+    {
+      "url": "https://github.com/passff/passff",
+      "score": 66.47,
+      "category": "Security / Auth",
+      "stars": 1288
+    },
+    {
+      "url": "https://github.com/cloudflare/gokey",
+      "score": 66.15,
+      "category": "Security / Auth",
+      "stars": 2430
+    },
+    {
+      "url": "https://github.com/Rezmason/matrix",
+      "score": 66.1,
+      "category": "Developer Tools / Utilities",
+      "stars": 3777
+    },
+    {
+      "url": "https://github.com/uncomplicate/neanderthal",
+      "score": 65.75,
+      "category": "Books / Reading / Library",
+      "stars": 1124
+    },
+    {
+      "url": "https://github.com/kebenxiaoming/matrix",
+      "score": 64.97,
+      "category": "Media / Streaming",
+      "stars": 911
+    },
+    {
+      "url": "https://github.com/HandmadeMath/HandmadeMath",
+      "score": 64.3,
+      "category": "Books / Reading / Library",
+      "stars": 1567
+    },
+    {
+      "url": "https://github.com/JOML-CI/JOML",
+      "score": 64.24,
+      "category": "Books / Reading / Library",
+      "stars": 834
+    },
+    {
+      "url": "https://github.com/8go/matrix-commander-rs",
+      "score": 63.91,
+      "category": "Developer Tools / Utilities",
+      "stars": 219
+    },
+    {
+      "url": "https://github.com/aaravmaloo/apm",
+      "score": 61.94,
+      "category": "Developer Tools / Utilities",
+      "stars": 28
+    },
+    {
+      "url": "https://github.com/Keeper-Security/keeper-sdk-dotnet",
+      "score": 61.64,
+      "category": "Developer Tools / Utilities",
+      "stars": 38
+    },
+    {
+      "url": "https://github.com/twofas/2fas-pass-ios",
+      "score": 60.98,
+      "category": "Developer Tools / Utilities",
+      "stars": 91
+    },
+    {
+      "url": "https://github.com/t2bot/matrix-media-repo",
+      "score": 57.74,
+      "category": "Media / Streaming",
+      "stars": 235
+    },
+    {
+      "url": "https://github.com/0015/Arduino_DigitalRain_Matrix",
+      "score": 52.59,
+      "category": "Media / Streaming",
+      "stars": 171
+    },
+    {
+      "url": "https://github.com/Pony-House/Client",
+      "score": 51.09,
+      "category": "Finance / Budget",
+      "stars": 31
+    },
+    {
+      "url": "https://github.com/remram44/matrix-helm",
+      "score": 44.98,
+      "category": "DevOps / Infra",
+      "stars": 38
+    },
+    {
+      "url": "https://github.com/UMapx/UMapx",
+      "score": 44.74,
+      "category": "Media / Streaming",
+      "stars": 63
+    },
+    {
+      "url": "https://github.com/gomuks/gomuks",
+      "score": 71.86,
+      "category": "Communication / Social",
+      "stars": 1677
+    },
+    {
+      "url": "https://github.com/Visualize-ML/Book7_Visualizations-for-Machine-Learning",
+      "score": 69.92,
+      "category": "AI / LLM",
+      "stars": 3283
+    },
+    {
+      "url": "https://github.com/jksalcedo/PassVault",
+      "score": 65.58,
+      "category": "Security / Auth",
+      "stars": 100
+    },
+    {
+      "url": "https://github.com/Einsums/Einsums",
+      "score": 63.58,
+      "category": "Books / Reading / Library",
+      "stars": 71
+    },
+    {
+      "url": "https://github.com/Frederick888/git-credential-keepassxc",
+      "score": 60.82,
+      "category": "Developer Tools / Utilities",
+      "stars": 297
+    },
+    {
+      "url": "https://github.com/matrix-msu/kora",
+      "score": 39.26,
+      "category": "Media / Streaming",
+      "stars": 33
+    },
+    {
+      "url": "https://github.com/mautrix/signal",
+      "score": 71.31,
+      "category": "Communication / Social",
+      "stars": 652
+    },
+    {
+      "url": "https://github.com/maubot/maubot",
+      "score": 68.74,
+      "category": "AI / LLM",
+      "stars": 884
+    },
+    {
+      "url": "https://github.com/Vincent550102/nPassword",
+      "score": 64.67,
+      "category": "Security / Auth",
+      "stars": 91
+    },
+    {
+      "url": "https://github.com/quotient-im/libQuotient",
+      "score": 62.14,
+      "category": "Books / Reading / Library",
+      "stars": 153
+    },
+    {
+      "url": "https://github.com/connect2x-de/trixnity",
+      "score": 60.0,
+      "category": "Developer Tools / Utilities",
+      "stars": 47
+    },
+    {
+      "url": "https://github.com/mautrix/discord",
+      "score": 71.18,
+      "category": "Communication / Social",
+      "stars": 473
+    },
+    {
+      "url": "https://github.com/etkecc/baibot",
+      "score": 67.5,
+      "category": "AI / LLM",
+      "stars": 230
+    },
+    {
+      "url": "https://github.com/HuChengzhen/SwiftFastPass",
+      "score": 63.83,
+      "category": "Security / Auth",
+      "stars": 360
+    },
+    {
+      "url": "https://github.com/matrix-nio/matrix-nio",
+      "score": 57.43,
+      "category": "Books / Reading / Library",
+      "stars": 701
+    },
+    {
+      "url": "https://github.com/quexten/goldwarden",
+      "score": 56.95,
+      "category": "Developer Tools / Utilities",
+      "stars": 980
+    },
+    {
+      "url": "https://github.com/element-hq/element-call",
+      "score": 70.24,
+      "category": "Communication / Social",
+      "stars": 965
+    },
+    {
+      "url": "https://github.com/WSTxda/Google-Shortcuts-Launcher",
+      "score": 66.59,
+      "category": "AI / LLM",
+      "stars": 679
+    }
+  ],
+  "categoryDistribution": {
+    "Communication / Social": 9,
+    "AI / LLM": 9,
+    "Security / Auth": 8,
+    "Books / Reading / Library": 8,
+    "Developer Tools / Utilities": 8,
+    "Media / Streaming": 6,
+    "Finance / Budget": 1,
+    "DevOps / Infra": 1
+  },
+  "scoreStats": {
+    "min": 39.26,
+    "max": 76.07,
+    "mean": 65.07
+  }
+}

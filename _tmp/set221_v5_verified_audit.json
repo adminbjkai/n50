@@ -1,0 +1,3921 @@
+{
+  "version": "v5",
+  "setNum": 221,
+  "searchCalls": 9,
+  "poolSize": 581,
+  "scoredCount": 259,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/cesanta/mongoose",
+      "score": 74.75,
+      "category": "Home Automation / IoT",
+      "stars": 12885,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hoornet/home-mind",
+      "score": 68.63,
+      "category": "AI / LLM",
+      "stars": 63,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/HASwitchPlate/openHASP",
+      "score": 74.53,
+      "category": "Home Automation / IoT",
+      "stars": 994,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/smartboot/smart-mqtt",
+      "score": 73.97,
+      "category": "Home Automation / IoT",
+      "stars": 177,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/halfgaar/FlashMQ",
+      "score": 73.89,
+      "category": "Home Automation / IoT",
+      "stars": 240,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cyberman54/ESP32-Paxcounter",
+      "score": 73.72,
+      "category": "Home Automation / IoT",
+      "stars": 2031,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/GeniePod/genie-claw",
+      "score": 64.2,
+      "category": "AI / LLM",
+      "stars": 48,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ITSpecialist111/HASS-AI-Orchestrator",
+      "score": 57.57,
+      "category": "AI / LLM",
+      "stars": 57,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dotradepro/SelenaCore",
+      "score": 57.36,
+      "category": "AI / LLM",
+      "stars": 18,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/robsonfelix/robsonfelix-hass-addons",
+      "score": 56.09,
+      "category": "AI / LLM",
+      "stars": 84,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/fdm-monster/fdm-monster",
+      "score": 73.52,
+      "category": "Home Automation / IoT",
+      "stars": 177,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Meterbit/PIXLPAL-M1",
+      "score": 54.06,
+      "category": "AI / LLM",
+      "stars": 35,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aklivity/zilla",
+      "score": 73.42,
+      "category": "Home Automation / IoT",
+      "stars": 691,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/IceWhaleTech/ZimaOS-Blue",
+      "score": 48.92,
+      "category": "AI / LLM",
+      "stars": 15,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/absmach/fluxmq",
+      "score": 73.11,
+      "category": "Home Automation / IoT",
+      "stars": 213,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/createcandle/voco",
+      "score": 47.04,
+      "category": "AI / LLM",
+      "stars": 30,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dromara/mica-mqtt",
+      "score": 72.99,
+      "category": "Home Automation / IoT",
+      "stars": 480,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wolfSSL/wolfMQTT",
+      "score": 72.7,
+      "category": "Home Automation / IoT",
+      "stars": 589,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/fhmq/hmq",
+      "score": 72.6,
+      "category": "Home Automation / IoT",
+      "stars": 1392,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/DrmagicE/gmqtt",
+      "score": 72.6,
+      "category": "Home Automation / IoT",
+      "stars": 1040,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mihai-dinculescu/tapo",
+      "score": 72.34,
+      "category": "Home Automation / IoT",
+      "stars": 767,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pnoker/iot-dc3",
+      "score": 72.16,
+      "category": "Home Automation / IoT",
+      "stars": 639,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nyu-mlab/iot-inspector-client",
+      "score": 71.96,
+      "category": "Home Automation / IoT",
+      "stars": 470,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hybridgroup/gobot",
+      "score": 71.95,
+      "category": "Home Automation / IoT",
+      "stars": 9426,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/allangood/rtlamr2mqtt",
+      "score": 71.81,
+      "category": "Home Automation / IoT",
+      "stars": 492,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hivemq/hivemq-edge",
+      "score": 71.75,
+      "category": "Home Automation / IoT",
+      "stars": 164,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/moquette-io/moquette",
+      "score": 71.63,
+      "category": "Home Automation / IoT",
+      "stars": 2443,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hivemq/mqtt-cli",
+      "score": 71.62,
+      "category": "Home Automation / IoT",
+      "stars": 361,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hjelev/rpi-mqtt-monitor",
+      "score": 71.32,
+      "category": "Home Automation / IoT",
+      "stars": 304,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/flyte/mqtt-io",
+      "score": 71.13,
+      "category": "Home Automation / IoT",
+      "stars": 503,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/MichalZaniewicz/esphome-guition-jc3636k718c-va",
+      "score": 71.11,
+      "category": "Home Automation / IoT",
+      "stars": 129,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/EdJoPaTo/mqttui",
+      "score": 70.59,
+      "category": "Home Automation / IoT",
+      "stars": 684,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/home-assistant-ecosystem/home-assistant-cli",
+      "score": 70.26,
+      "category": "Home Automation / IoT",
+      "stars": 567,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pixelit-project/PixelIt",
+      "score": 70.17,
+      "category": "Home Automation / IoT",
+      "stars": 446,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/tonylofgren/aurora-smart-home",
+      "score": 70.05,
+      "category": "Home Automation / IoT",
+      "stars": 89,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jibrilsharafi/EnergyMe-Home",
+      "score": 70.03,
+      "category": "Home Automation / IoT",
+      "stars": 256,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jrhubott/adaptive-cover-pro",
+      "score": 69.93,
+      "category": "Home Automation / IoT",
+      "stars": 114,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/tx7do/kratos-transport",
+      "score": 69.35,
+      "category": "Home Automation / IoT",
+      "stars": 439,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bokub/ha-linky",
+      "score": 69.2,
+      "category": "Home Automation / IoT",
+      "stars": 503,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/simps/mqtt",
+      "score": 69.18,
+      "category": "Home Automation / IoT",
+      "stars": 394,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/unixorn/ha-mqtt-discoverable",
+      "score": 69.14,
+      "category": "Home Automation / IoT",
+      "stars": 167,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/yswenli/SAEA",
+      "score": 68.94,
+      "category": "Home Automation / IoT",
+      "stars": 423,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/technyon/nuki_hub",
+      "score": 68.87,
+      "category": "Home Automation / IoT",
+      "stars": 722,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/empicano/aiomqtt",
+      "score": 68.83,
+      "category": "Home Automation / IoT",
+      "stars": 563,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kpetremann/mqtt-exporter",
+      "score": 68.82,
+      "category": "Home Automation / IoT",
+      "stars": 161,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/grafana/mqtt-datasource",
+      "score": 68.78,
+      "category": "Home Automation / IoT",
+      "stars": 198,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Pioreactor/pioreactor",
+      "score": 68.77,
+      "category": "Home Automation / IoT",
+      "stars": 143,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/michalowskil/flex-cells-card",
+      "score": 68.38,
+      "category": "Home Automation / IoT",
+      "stars": 64,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zarusz/SlimMessageBus",
+      "score": 68.34,
+      "category": "Home Automation / IoT",
+      "stars": 646,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mysticrenji/home-assistant-on-kubernetes",
+      "score": 68.31,
+      "category": "Home Automation / IoT",
+      "stars": 153,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Home Automation / IoT": 42,
+    "AI / LLM": 8
+  },
+  "scoreStats": {
+    "min": 47.04,
+    "max": 74.75,
+    "mean": 68.81
+  },
+  "dockerCount": 23,
+  "hostname": "M17s-MacBook-Pro.local",
+  "python": "3.14.5",
+  "timing": {
+    "gather": 25.7,
+    "score": 0.0,
+    "confirm": 28.0,
+    "confirmedPool": 130,
+    "diversify": 5.2,
+    "total": 188.9
+  },
+  "decisions": [
+    {
+      "url": "https://github.com/arendst/Tasmota",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/XiaoMi/ha_xiaomi_home",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 54.5
+    },
+    {
+      "url": "https://github.com/al-one/hass-xiaomi-miot",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/CCOSTAN/Home-AssistantConfig",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/rytilahti/python-miio",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/domoticz/domoticz",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/homebridge/homebridge-config-ui-x",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/openshwprojects/OpenBK7231T_App",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/bramstroker/homeassistant-powercalc",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/valentinfrlch/ha-llmvision",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/mKeRix/room-assistant",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/steve-community/steve",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/BottlecapDave/HomeAssistant-OctopusEnergy",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/zwave-js/zwave-js",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/a2633063/zTC1",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/mihai-dinculescu/tapo",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 72.34
+    },
+    {
+      "url": "https://github.com/humbertogontijo/homeassistant-roborock",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.64
+    },
+    {
+      "url": "https://github.com/alexa-samples/alexa-smarthome",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 55.66
+    },
+    {
+      "url": "https://github.com/dontsovcmc/waterius",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/21cncstudio/project_aura",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/EventGhost/EventGhost",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 47.99
+    },
+    {
+      "url": "https://github.com/home-assistant-ecosystem/home-assistant-cli",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 62.26
+    },
+    {
+      "url": "https://github.com/BeardedTinker/Home-Assistant_Config",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 62.44
+    },
+    {
+      "url": "https://github.com/Nitwel/Immersive-Home",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.16
+    },
+    {
+      "url": "https://github.com/bokub/ha-linky",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 61.2
+    },
+    {
+      "url": "https://github.com/orangekame3/mirrormate",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/nyu-mlab/iot-inspector-client",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 71.96
+    },
+    {
+      "url": "https://github.com/genielabs/HomeGenie",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/blakadder/templates",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "list-template-or-tutorial"
+    },
+    {
+      "url": "https://github.com/snazzybean/roommind",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/denysdovhan/purifier-card",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 62.5
+    },
+    {
+      "url": "https://github.com/micro-nova/AmpliPi",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/seangreen2/home_assistant",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/chkr1011/mqttMultimeter",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 59.99
+    },
+    {
+      "url": "https://github.com/akuehlewind/ESPHome-touch-display-mount",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/denysdovhan/smart-home",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/asosnovsky/Shortumation",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 59.11
+    },
+    {
+      "url": "https://github.com/Alexwijn/SAT",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 56.17
+    },
+    {
+      "url": "https://github.com/blakadder/zigbee",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/webdjoe/pyvesync",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/tschamm/boschshc-hass",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/ImplFerris/esp32-book",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 67.92
+    },
+    {
+      "url": "https://github.com/mholzi/beatify",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/dhewg/esphome-miot",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 55.0
+    },
+    {
+      "url": "https://github.com/Thank-you-Linus/Linus-Dashboard",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/BangerTech/Prism-Dashboard",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/jeremiaa/magic-frame",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "list-template-or-tutorial"
+    },
+    {
+      "url": "https://github.com/enesbcs/rpieasy",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 50.2
+    },
+    {
+      "url": "https://github.com/gbroeckling/padspanHA",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/SmartHome-yourself/sonoff-tx-ultimate-for-esphome",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 58.05
+    },
+    {
+      "url": "https://github.com/daxaur/openpaw",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/analytix-energy-solutions/ticker",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 64.21
+    },
+    {
+      "url": "https://github.com/Patrick762/hassio-bluetti-bt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 49.94
+    },
+    {
+      "url": "https://github.com/omarshahine/HomeClaw",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "mobile-only-client"
+    },
+    {
+      "url": "https://github.com/FutureProofHomes/Satellite1-Hardware",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/hiall-fyi/tado_ce",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/fffonion/tplink-plug-exporter",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 34.76
+    },
+    {
+      "url": "https://github.com/mitchkoko/ModernSmartHomeUI",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "mobile-only-client"
+    },
+    {
+      "url": "https://github.com/MichalZaniewicz/esphome-guition-jc3636k718c-va",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 71.11
+    },
+    {
+      "url": "https://github.com/arendst/Tasmota-firmware",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 63.79
+    },
+    {
+      "url": "https://github.com/simple-hub-organization/simple-hub",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "mobile-only-client"
+    },
+    {
+      "url": "https://github.com/arm-education/A-Beginners-Guide-to-Designing-Embedded-System-Applications-on-Arm-Cortex-M-Microcontrollers",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/QuackHack-McBlindy/dotfiles",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "list-template-or-tutorial"
+    },
+    {
+      "url": "https://github.com/metriful/sensor",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 45.75
+    },
+    {
+      "url": "https://github.com/jrhubott/adaptive-cover-pro",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 69.93
+    },
+    {
+      "url": "https://github.com/esphome/esphome-desktop",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 64.55
+    },
+    {
+      "url": "https://github.com/e154/smart-home",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.98
+    },
+    {
+      "url": "https://github.com/jonducrou/ha_visualiser",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 54.41
+    },
+    {
+      "url": "https://github.com/ClusterM/localtuya_rc",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 58.44
+    },
+    {
+      "url": "https://github.com/TheRealFalseReality/aquapi",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 58.58
+    },
+    {
+      "url": "https://github.com/sfortis/massdroid_native",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "mobile-only-client"
+    },
+    {
+      "url": "https://github.com/zebin-wu/homekit-bridge",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.6
+    },
+    {
+      "url": "https://github.com/DzurisHome/ESPHome-IKEA-VINDRIKTNING",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/danielmigueltejedor/nodalia-cards",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/redakker/blecker",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 40.45
+    },
+    {
+      "url": "https://github.com/tonylofgren/aurora-smart-home",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 70.05
+    },
+    {
+      "url": "https://github.com/avbor/HomeAssistantConfig",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 55.99
+    },
+    {
+      "url": "https://github.com/unixorn/home-assistant-compatibility-guide",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/robsonfelix/robsonfelix-hass-addons",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 56.09
+    },
+    {
+      "url": "https://github.com/veonua/SmartThingsEdge-Xiaomi",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 45.19
+    },
+    {
+      "url": "https://github.com/SUPLA/supla-core",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/tillsteinbach/WeConnect-mqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/andreaprosseda/vimar-byme-plus-homeassistant",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 52.96
+    },
+    {
+      "url": "https://github.com/SUPLA/supla-cloud",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/FutureProofHomes/Documentation",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 58.14
+    },
+    {
+      "url": "https://github.com/mcaminiti/homeassistant",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/edwardtfn/TX-Ultimate-Easy",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 50.94
+    },
+    {
+      "url": "https://github.com/LeivoSepp/Smart-heating-management-with-Shelly",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 43.16
+    },
+    {
+      "url": "https://github.com/mzyy94/daikin-matter",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 51.92
+    },
+    {
+      "url": "https://github.com/tschamm/boschshcpy",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/k-the-hidden-hero/bticino_intercom",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 58.73
+    },
+    {
+      "url": "https://github.com/majamassarini/automate-home",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 56.02
+    },
+    {
+      "url": "https://github.com/tillsteinbach/CarConnectivity-plugin-mqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 61.84
+    },
+    {
+      "url": "https://github.com/tostmann/SixBack",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 64.93
+    },
+    {
+      "url": "https://github.com/Dino-Tech/Home-Assistant-Main",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/CometVisu/CometVisu",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 53.11
+    },
+    {
+      "url": "https://github.com/cmgrayb/hass-dyson",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 61.73
+    },
+    {
+      "url": "https://github.com/dykandDK/home-assistant-config",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 41.36
+    },
+    {
+      "url": "https://github.com/lasswellt/govee-homeassistant",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 63.88
+    },
+    {
+      "url": "https://github.com/tspopp/AquaMQTT",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 49.53
+    },
+    {
+      "url": "https://github.com/michalowskil/flex-cells-card",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 68.38
+    },
+    {
+      "url": "https://github.com/hoornet/home-mind",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 60.63
+    },
+    {
+      "url": "https://github.com/denysdovhan/home-assistant-config",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.88
+    },
+    {
+      "url": "https://github.com/RenierM26/pyEzvizApi",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 64.29
+    },
+    {
+      "url": "https://github.com/EddieDSuza/techwitheddie",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "list-template-or-tutorial"
+    },
+    {
+      "url": "https://github.com/Piflyer/SmartDisplayPi",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 45.32
+    },
+    {
+      "url": "https://github.com/kdeyev/eyeonwater",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 42.91
+    },
+    {
+      "url": "https://github.com/sjmotew/NarwalIntegration",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 58.19
+    },
+    {
+      "url": "https://github.com/ITSpecialist111/HASS-AI-Orchestrator",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 57.57
+    },
+    {
+      "url": "https://github.com/home-assistant-ecosystem/python-connect-box",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 39.06
+    },
+    {
+      "url": "https://github.com/thecem/octopus_germany",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 57.04
+    },
+    {
+      "url": "https://github.com/guimpt/iot_hdmi_mux",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 56.11
+    },
+    {
+      "url": "https://github.com/blakadder/tuya-uncover",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 36.3
+    },
+    {
+      "url": "https://github.com/mike81gr/deddie-metering",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.28
+    },
+    {
+      "url": "https://github.com/mgerhard74/amis_smartmeter_reader",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 56.02
+    },
+    {
+      "url": "https://github.com/jdmg94/Hue-Sync",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/fhempy/fhempy",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 31.68
+    },
+    {
+      "url": "https://github.com/smarthomecompared/smart-home-planner",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 58.45
+    },
+    {
+      "url": "https://github.com/GeniePod/genie-claw",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 56.2
+    },
+    {
+      "url": "https://github.com/lnagel/hass-komfovent",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 52.56
+    },
+    {
+      "url": "https://github.com/PalmManiac/battery-smartflow-ai",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 60.44
+    },
+    {
+      "url": "https://github.com/tonypest0/sonos-controller",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.99
+    },
+    {
+      "url": "https://github.com/onkelbeh/HomeAssistantRepository",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/gsaslis/home-on-k8s",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 40.28
+    },
+    {
+      "url": "https://github.com/steelcuts/ir2mqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 54.77
+    },
+    {
+      "url": "https://github.com/ronnnnnnnnnnnnn/etekcity_fitness_scale_ble",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.9
+    },
+    {
+      "url": "https://github.com/JonasDoebertin/ha-today-card",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 44.92
+    },
+    {
+      "url": "https://github.com/UbhiTS/ad-alexatalkingclock",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 37.57
+    },
+    {
+      "url": "https://github.com/OpenSurface/SonosESP",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 60.4
+    },
+    {
+      "url": "https://github.com/davidhoo/relive",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/maoawa/project-sleepy",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 42.07
+    },
+    {
+      "url": "https://github.com/Connectlife-LLC/HomeAssistantPlugin",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 39.21
+    },
+    {
+      "url": "https://github.com/SUPLA/supla-android",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 47.73
+    },
+    {
+      "url": "https://github.com/carletz/DOMIX-Open-Source-Modular-Home-Automation-System",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 45.83
+    },
+    {
+      "url": "https://github.com/GuyAzria/home-organizer",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/andrewsayre/pyheos",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/Meterbit/PIXLPAL-M1",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 54.06
+    },
+    {
+      "url": "https://github.com/jensrossbach/node-red-contrib-chronos",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/buggedcom/HASS-Data-Points",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 55.83
+    },
+    {
+      "url": "https://github.com/renaudallard/homeassistant_philips_homeid",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 50.26
+    },
+    {
+      "url": "https://github.com/samuelebistoletti/HomeAssistant-OctopusEnergyIT",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 50.23
+    },
+    {
+      "url": "https://github.com/WB2024/SAWSUBE",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/houzzkit/houzzkit-ai-ha",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/Garfieldttt/zabbix-homeassistant",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "list-template-or-tutorial"
+    },
+    {
+      "url": "https://github.com/createcandle/voco",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 47.04
+    },
+    {
+      "url": "https://github.com/wiiu-smarthome/Ristretto",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 46.11
+    },
+    {
+      "url": "https://github.com/jvandenaardweg/homewizard-energy-api",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/ythx-101/lan-control",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/TheEagleByte/skylight-mcp",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 44.35
+    },
+    {
+      "url": "https://github.com/culiplan/home-assistant-culiplan",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/irext/irext",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/Xenon-s/ioBroker.device-reminder",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/nclamvn/bom-cham",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/rsampayo/sleepme_thermostat",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/LarsK1/hass_solvis_control",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/Elektroarzt/simplebus2-mqtt-bridge",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/holomekc/ioBroker.bshb",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/YangLang116/ha_dnake_home",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/wb-mirta/core",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/hiall-fyi/yale_smart_alarm_ce",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/wiltodelta/homeassistant-govee-smart-heater-h7131",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "list-template-or-tutorial"
+    },
+    {
+      "url": "https://github.com/kirillsimin/zengge-lightbulbs",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 24.36
+    },
+    {
+      "url": "https://github.com/sk7n4k3d/delonghi-ha",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/gbeine/knx2mqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/kgelinas/Mysa_HA",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/AchimPieters/esp32-homekit-demo",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "demo-monorepo"
+    },
+    {
+      "url": "https://github.com/nitaybz/optimistic_feedback",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/svitrix/svitrix-firmware",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "no-description"
+    },
+    {
+      "url": "https://github.com/jaebinsim/IntentCP",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 54.79
+    },
+    {
+      "url": "https://github.com/jagheterfredrik/esphome-rego1000",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/pppedrillo/shelly_auto_access_point",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/gkiefer/home2l",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/jjohnsen/esphome-altherma",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 52.07
+    },
+    {
+      "url": "https://github.com/xjywhu/SmartGuard",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/smartwiz-plus/art",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/hxmelab/node-red-contrib-bosch-shc",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/d3dfantasy99/Lymow-HA",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 52.9
+    },
+    {
+      "url": "https://github.com/b0bbywan/go-odio-api",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/oneofthemany/ZigBee-Matter-Manager",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.43
+    },
+    {
+      "url": "https://github.com/samclane/mantle",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/tm24fan8/Home-Assistant-Configs",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 23.31
+    },
+    {
+      "url": "https://github.com/Patrick762/hassio-streamdeck",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/DzurisHome/LocalTuyaSK",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/ahamitd/cosa-homeassistant",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/Favio25/Kronoterm-homeassistant",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 36.54
+    },
+    {
+      "url": "https://github.com/qbaware/homeassistant-eldom",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/oweitman/ioBroker.squeezeboxrpc",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/genielabs/homegenie-mini",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/ID-Robots/clawbox",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/dotradepro/SelenaCore",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 49.36
+    },
+    {
+      "url": "https://github.com/airalab/robonomics.app",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/Appartme/Appartme-System-HACI",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/relaxo-player/RelaxoPlayer-Android",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "mobile-only-client"
+    },
+    {
+      "url": "https://github.com/markusleben/ha-nova",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/home-assistant-ecosystem/python-mystrom",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/PandaKing2021/Edge-Enabled-Smart-Home-AI-Agent-Gateway-System",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/omerome83/homeassistant",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 19.65
+    },
+    {
+      "url": "https://github.com/jbouwh/ha-elro-connects",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/lnagel/hass-ufh-controller",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/topsworld/ha_xiaomi_home",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/apdevelop/tapo-devices",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/KRISUUUU/esp32-s3-voice-satellite",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/moellere/WireStudio",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/psobiech/opengr8on",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/airalab/homeassistant-robonomics-integration",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/lafin/smarthome",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 26.35
+    },
+    {
+      "url": "https://github.com/jensrossbach/esphome-ferraris-meter",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/seanlaidlaw/homeassistant-instantpot",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/IceWhaleTech/ZimaOS-Blue",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.92
+    },
+    {
+      "url": "https://github.com/Ivkaiv/homeglance",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 52.49
+    },
+    {
+      "url": "https://github.com/cibernox/homeassistant-poolstation",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 28.36
+    },
+    {
+      "url": "https://github.com/JohanAlvedal/Svotc",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/weirdtangent/pulse-os",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 50.08
+    },
+    {
+      "url": "https://github.com/sfox38/HArvest",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/dgtal1/extalife_custom_component",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/cptkirki/BETTA-HA-PANEL",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 51.15
+    },
+    {
+      "url": "https://github.com/ronnnnnnnnnnnnn/renpho_fitness_scale_ble",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/kek353/philipswizlightcontroller",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/firsttris/esphome-energy-dashboard",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/albertnis/mqcontrol",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 25.94
+    },
+    {
+      "url": "https://github.com/asruda/mi_kettle_pro",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/iret33/deepseek-ha-integration",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/wooniot/ha-digitalstrom-smart",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/Sikerdebaard/ducopy",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/airalab/robonomics.network",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/Antoni-Czaplicki/SteamVR.HA",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/BottlecapDave/HomeAssistant-FirstBus",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/andersevenrud/ha-nexa-bridge-x",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/Fistacho/ha-nexus-agent",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 44.42
+    },
+    {
+      "url": "https://github.com/Bwillou1/HomeAssistant-macOS-Installer",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 44.42
+    },
+    {
+      "url": "https://github.com/LukeChannings/kube-config",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/SnipsC0/Home-Inventory",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/desiFish/Smart-Aquarium-V3.0",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 27.08
+    },
+    {
+      "url": "https://github.com/home-assistant-ecosystem/python-opendata-transport",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/FredrikM97/surepetcare_feeder_motor_fix",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/vogler/smart-home",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 29.0
+    },
+    {
+      "url": "https://github.com/gomgom-40/Smart-Clock-Display-System",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/SUPLA/supla-ios",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 42.93
+    },
+    {
+      "url": "https://github.com/squarejaw/wiz",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/foxriver76/ioBroker.bring",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/KOSASIH/Vilatech",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 27.74
+    },
+    {
+      "url": "https://github.com/frenck/python-fumis",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/jordanlyall/re-frame",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 41.54
+    },
+    {
+      "url": "https://github.com/elden1337/hass-peaqnext",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/Xerolux/HB-RF-ETH-ng",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/airalab/hardware",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/Yagodnik/YandexHomeDesktop",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/dwainscheeren/dwains-dashboard-next",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 43.04
+    },
+    {
+      "url": "https://github.com/Combadge/Spindoctor",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 25.39
+    },
+    {
+      "url": "https://github.com/ichbinder/MCP2ZigBee2MQTT",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 37.26
+    },
+    {
+      "url": "https://github.com/nassereb/ha-marstek",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/totkeks/SmartHome",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/Mikasmarthome/ThermoSmart",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/BottlecapDave/HomeAssistant-CarbonIntensity",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/Patrick762/hassio-solvis-modbus",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/nikopaulanne/nordpool-spot-cutoff-optimizer",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/maginawin/ha-dali-center",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/jwlerch78/dashie-ha-integration",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/bramboe/stagg-ekg-plus-ha",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/oweitman/ioBroker.rssfeed",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/WiesiDeluxe/ha-harvia-sauna",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 42.24
+    },
+    {
+      "url": "https://github.com/Polarssj/Iot-smart-home-automation",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "mobile-only-client"
+    },
+    {
+      "url": "https://github.com/condatek/finderblissha",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/gomgom-40/RD-03_presence_radar",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/RichM1216/hubitat-floor-plan-dashboard",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 32.9
+    },
+    {
+      "url": "https://github.com/ABovsh/eveus",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/clentfort/girea-system-3000",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/poweredgenl/smarthome",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 36.23
+    },
+    {
+      "url": "https://github.com/DM911-AI/homebridge-homepod-mini-music-sensor",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/jrsarath/Aura-Climate",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 38.05
+    },
+    {
+      "url": "https://github.com/EuleMitKeule/template-media-player",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "list-template-or-tutorial"
+    },
+    {
+      "url": "https://github.com/yktoo/infopi",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 39.86
+    },
+    {
+      "url": "https://github.com/illianoaoi/Wiim-Dashboard",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 47.49
+    },
+    {
+      "url": "https://github.com/MattiaSaiko/lovelace-window-guardian-card",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/milanorszagh/evon-smart-home-homeassistant-integration",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/filipnet/haos-uv-index",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 47.25
+    },
+    {
+      "url": "https://github.com/riolaf05/plant-monitoring-system",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 30.04
+    },
+    {
+      "url": "https://github.com/elaris-control/core",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 42.05
+    },
+    {
+      "url": "https://github.com/deswong/Openhab-MCP",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/wiiu-smarthome/ha-wiiu",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/CasaVinteUm/Cafe21",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/TheEagleByte/skylight-api",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/ivin-titus/ReSmart",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "mobile-only-client"
+    },
+    {
+      "url": "https://github.com/dzerik/melitta-barista-ha",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/samuelebistoletti/HomeAssistant-V2C-Cloud",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/patrickjcash/ha-moen-flo",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/gbeine/fronius2mqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/jaringuyen/InsnrgHomeAssistance",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/gitmacer/Homedisplay-for-Fritzfon",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/home-assistant/core",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/curl/curl",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/blakeblackshear/frigate",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/pppscn/SmsForwarder",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 64.0
+    },
+    {
+      "url": "https://github.com/thingsboard/thingsboard",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/influxdata/telegraf",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/emqx/emqx",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/rabbitmq/rabbitmq-server",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/cesanta/mongoose",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 74.75
+    },
+    {
+      "url": "https://github.com/esphome/esphome",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/eclipse-mosquitto/mosquitto",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/hybridgroup/gobot",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 71.95
+    },
+    {
+      "url": "https://github.com/mqttjs/MQTT.js",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 62.71
+    },
+    {
+      "url": "https://github.com/teslamate-org/teslamate",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/ithewei/libhv",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/kubeedge/kubeedge",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/evcc-io/evcc",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/processone/ejabberd",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/jetlinks/jetlinks-community",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/PlotJuggler/PlotJuggler",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/ag2ai/faststream",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/asyncapi/spec",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/blinker-iot/blinker-library",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/dotnet/MQTTnet",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/emqx/MQTTX",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/dgiot/dgiot",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 60.66
+    },
+    {
+      "url": "https://github.com/frangoteam/FUXA",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/blinker-iot/blinker-py",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/blinker-iot/blinker-js",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 56.82
+    },
+    {
+      "url": "https://github.com/1technophile/OpenMQTTGateway",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/emitter-io/emitter",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/thomasnordquist/MQTT-Explorer",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/vernemq/vernemq",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/mrlt8/docker-wyze-bridge",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/eclipse-paho/paho.mqtt.golang",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "no-description"
+    },
+    {
+      "url": "https://github.com/gioblu/PJON",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 61.09
+    },
+    {
+      "url": "https://github.com/processone/tsung",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/dmotz/trystero",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/absmach/magistrala",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/nanomq/nanomq",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/moquette-io/moquette",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 71.63
+    },
+    {
+      "url": "https://github.com/apache/activemq",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/eclipse-paho/paho.mqtt.python",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/awesome-mqtt/awesome-mqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "awesome-list"
+    },
+    {
+      "url": "https://github.com/eclipse-paho/paho.mqtt.c",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/jimuzhe/tiez-clipboard",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/vshymanskyy/TinyGSM",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/thingsboard/thingsboard-gateway",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/tbnobody/OpenDTU",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/bytebeamio/rumqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/crossbario/crossbar",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/cyberman54/ESP32-Paxcounter",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 73.72
+    },
+    {
+      "url": "https://github.com/fr3ts0n/AndrOBD",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/moscajs/aedes",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/mochi-mqtt/server",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 51.03
+    },
+    {
+      "url": "https://github.com/openremote/openremote",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/zhonghuasheng/Tutorial",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "list-template-or-tutorial"
+    },
+    {
+      "url": "https://github.com/emqx/CocoaMQTT",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "mobile-only-client"
+    },
+    {
+      "url": "https://github.com/owntracks/android",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "mobile-only-client"
+    },
+    {
+      "url": "https://github.com/robustmq/robustmq",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/jakowenko/double-take",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/ESPresense/ESPresense",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/ThingsGateway/ThingsGateway",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/Edgenesis/shifu",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/fhmq/hmq",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 64.6
+    },
+    {
+      "url": "https://github.com/homieiot/homie-esp8266",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/emqx/neuron",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/IoTSharp/IoTSharp",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/synrc/n2o",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 67.53
+    },
+    {
+      "url": "https://github.com/RRQM/TouchSocket",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "list-template-or-tutorial"
+    },
+    {
+      "url": "https://github.com/chowa/ejyy",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/zwave-js/zwave-js-ui",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/wildfirechat/ios-chat",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/hivemq/hivemq-community-edition",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/imiphp/imi",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 67.15
+    },
+    {
+      "url": "https://github.com/owntracks/recorder",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/koalazak/dorita980",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/wind-c/comqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/taverntesting/tavern",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/hivemq/hivemq-mqtt-client",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/256dpi/arduino-mqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/mqttsnet/thinglinks",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/lensesio/stream-reactor",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "list-template-or-tutorial"
+    },
+    {
+      "url": "https://github.com/DrmagicE/gmqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 64.6
+    },
+    {
+      "url": "https://github.com/apache/artemis",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/lumapu/ahoy",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 64.53
+    },
+    {
+      "url": "https://github.com/x-tools-author/x-tools",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/HASwitchPlate/openHASP",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 74.53
+    },
+    {
+      "url": "https://github.com/joBr99/nspanel-lovelace-ui",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/3dg1luk43/ha_washdata",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/mqtt-tools/mqttwarn",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/cloudamqp/lavinmq",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/emsesp/EMS-ESP32",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/rmqtt/rmqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/dromara/dante-cloud",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/sagoo-cloud/sagooiot",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/AnWeber/httpyac",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/god-jason/iot-master",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/IoTSharp/mqttclient",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 62.14
+    },
+    {
+      "url": "https://github.com/john30/ebusd",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 59.68
+    },
+    {
+      "url": "https://github.com/apache/bifromq",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/shmuelzon/esp32-ble2mqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 56.3
+    },
+    {
+      "url": "https://github.com/emqx/qmqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/homieiot/convention",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/thingsboard/tbmq",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/espressif/esp-mqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/technyon/nuki_hub",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 68.87
+    },
+    {
+      "url": "https://github.com/seydx/homebridge-camera-ui",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 66.99
+    },
+    {
+      "url": "https://github.com/aklivity/zilla",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 73.42
+    },
+    {
+      "url": "https://github.com/EdJoPaTo/mqttui",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 70.59
+    },
+    {
+      "url": "https://github.com/KouShenhai/KCloud-Platform-IoT",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/WeBankBlockchain/WeEvent",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 58.04
+    },
+    {
+      "url": "https://github.com/Monika1313/Wu.CommTool",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/zarusz/SlimMessageBus",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 68.34
+    },
+    {
+      "url": "https://github.com/pnoker/iot-dc3",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 64.16
+    },
+    {
+      "url": "https://github.com/daoshenzzg/socket-mqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/timmbogner/Farm-Data-Relay-System",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 68.13
+    },
+    {
+      "url": "https://github.com/adafruit/Adafruit_MQTT_Library",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/wolfSSL/wolfMQTT",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 72.7
+    },
+    {
+      "url": "https://github.com/forkineye/ESPixelStick",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/aws-samples/aws-iot-chat-example",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "demo-monorepo"
+    },
+    {
+      "url": "https://github.com/empicano/aiomqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 68.83
+    },
+    {
+      "url": "https://github.com/njh/ruby-mqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 66.25
+    },
+    {
+      "url": "https://github.com/emqx/emqtt-bench",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/FunkeyFlo/ps5-mqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 68.2
+    },
+    {
+      "url": "https://github.com/joshuar/go-hass-agent",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/Yeraze/meshmonitor",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/jetlinks/jetlinks",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/lensesio/kafka-connect-ui",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 42.95
+    },
+    {
+      "url": "https://github.com/osresearch/hcpy",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 42.3
+    },
+    {
+      "url": "https://github.com/rjwats/esp8266-react",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/flyte/mqtt-io",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 63.13
+    },
+    {
+      "url": "https://github.com/40rbidd3n/Hydro0x01",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/allangood/rtlamr2mqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 71.81
+    },
+    {
+      "url": "https://github.com/fl4p/batmon-ha",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/emqx/mqtt-jmeter",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/bunkeriot/BunkerM",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/dromara/mica-mqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 72.99
+    },
+    {
+      "url": "https://github.com/bkbilly/lnxlink",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/Arnold-n/P1P2MQTT",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 53.84
+    },
+    {
+      "url": "https://github.com/UtilitechAS/amsreader-firmware",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 64.76
+    },
+    {
+      "url": "https://github.com/Laxilef/OTGateway",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/pixelit-project/PixelIt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 70.17
+    },
+    {
+      "url": "https://github.com/wialon/gmqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 62.17
+    },
+    {
+      "url": "https://github.com/chirpstack/chirpstack-gateway-bridge",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 56.42
+    },
+    {
+      "url": "https://github.com/fabaff/mqtt-panel",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/OpenInverterGateway/OpenInverterGateway",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 62.37
+    },
+    {
+      "url": "https://github.com/php-mqtt/client",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 65.32
+    },
+    {
+      "url": "https://github.com/tx7do/kratos-transport",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 69.35
+    },
+    {
+      "url": "https://github.com/emqx/emqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/yswenli/SAEA",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 68.94
+    },
+    {
+      "url": "https://github.com/hikhvar/mqtt2prometheus",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/owntracks/ios",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/ParadoxAlarmInterface/pai",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/biologist79/ESPuino",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 68.1
+    },
+    {
+      "url": "https://github.com/riclolsen/json-scada",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/Sennevds/system_sensors",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 55.47
+    },
+    {
+      "url": "https://github.com/simps/mqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 69.18
+    },
+    {
+      "url": "https://github.com/a2633063/zM1",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/UmerCodez/DroidPad",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "mobile-only-client"
+    },
+    {
+      "url": "https://github.com/netxms/netxms",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 68.26
+    },
+    {
+      "url": "https://github.com/SBFspot/SBFspot",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.85
+    },
+    {
+      "url": "https://github.com/ntex-rs/ntex-mqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/DomiStyle/esphome-panasonic-ac",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 58.4
+    },
+    {
+      "url": "https://github.com/heishamon/HeishaMon",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 61.73
+    },
+    {
+      "url": "https://github.com/hivemq/mqtt-cli",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 71.62
+    },
+    {
+      "url": "https://github.com/aneisch/home-assistant-config",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 56.94
+    },
+    {
+      "url": "https://github.com/mlesniew/PicoMQTT",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 59.02
+    },
+    {
+      "url": "https://github.com/absalom-muc/MHI-AC-Ctrl",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 55.9
+    },
+    {
+      "url": "https://github.com/kbialek/deye-inverter-mqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/AnWeber/vscode-httpyac",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 65.35
+    },
+    {
+      "url": "https://github.com/Amazingwujun/mqttx",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 56.35
+    },
+    {
+      "url": "https://github.com/TheDuffman85/crowdsec-web-ui",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/wendy512/stream",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 62.21
+    },
+    {
+      "url": "https://github.com/rfquack/RFQuack",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 45.24
+    },
+    {
+      "url": "https://github.com/ItKindaWorks/ESPHelper",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 38.65
+    },
+    {
+      "url": "https://github.com/bieniu/ha-shellies-discovery",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 66.27
+    },
+    {
+      "url": "https://github.com/vvip-68/GyverPanelWiFi",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/kellerza/sunsynk",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/blacklight/platypush",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/hjelev/rpi-mqtt-monitor",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 71.32
+    },
+    {
+      "url": "https://github.com/liamcottle/meshtastic-map",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/vogler75/automation-gateway",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 55.68
+    },
+    {
+      "url": "https://github.com/softwarecrash/Solar2MQTT-ESP8266",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 56.67
+    },
+    {
+      "url": "https://github.com/davidepianca98/KMQTT",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "mobile-only-client"
+    },
+    {
+      "url": "https://github.com/bachya/ecowitt2mqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/zibous/ha-watermeter",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 52.62
+    },
+    {
+      "url": "https://github.com/ika-rwth-aachen/mqtt_client",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 61.05
+    },
+    {
+      "url": "https://github.com/BEagle1984/silverback",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/Lucky-183/PI-Assistant",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/RobertWojtowicz/export2garmin",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/arjenhiemstra/ithowifi",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 58.97
+    },
+    {
+      "url": "https://github.com/eclipse-tahu/tahu",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 63.71
+    },
+    {
+      "url": "https://github.com/IoT-Technology/IoT-Toolkit",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 47.91
+    },
+    {
+      "url": "https://github.com/slsys/Gateway",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/jibrilsharafi/EnergyMe-Home",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 70.03
+    },
+    {
+      "url": "https://github.com/alutov/ESP32-R4sGate-for-Redmond",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 56.04
+    },
+    {
+      "url": "https://github.com/aide-family/moon",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/nebulous/infinitude",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 56.27
+    },
+    {
+      "url": "https://github.com/itsDNNS/docsight",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/adlerre/obd2-mqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 59.16
+    },
+    {
+      "url": "https://github.com/swift-server-community/mqtt-nio",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "mobile-only-client"
+    },
+    {
+      "url": "https://github.com/halfgaar/FlashMQ",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 65.89
+    },
+    {
+      "url": "https://github.com/kurapica/PLoop",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 52.64
+    },
+    {
+      "url": "https://github.com/nktnet1/webview-kiosk",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/toke/docker-mosquitto",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 49.86
+    },
+    {
+      "url": "https://github.com/aqualinkd/AqualinkD",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 58.88
+    },
+    {
+      "url": "https://github.com/tobiasehlert/teslamateapi",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/jmstoolbox/jmstoolbox",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 54.87
+    },
+    {
+      "url": "https://github.com/owntracks/docker-recorder",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 40.61
+    },
+    {
+      "url": "https://github.com/monteslu/pagenodes",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 54.53
+    },
+    {
+      "url": "https://github.com/OpenEVSE/openevse_esp32_firmware",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.9
+    },
+    {
+      "url": "https://github.com/tjko/fanpico",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 57.49
+    },
+    {
+      "url": "https://github.com/walkor/mqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 45.19
+    },
+    {
+      "url": "https://github.com/emqx/esockd",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 58.2
+    },
+    {
+      "url": "https://github.com/vert-x3/vertx-mqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/theelims/ESP32-sveltekit",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "list-template-or-tutorial"
+    },
+    {
+      "url": "https://github.com/absmach/fluxmq",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 73.11
+    },
+    {
+      "url": "https://github.com/ESPresense/ESPresense-companion",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/devbis/ble2mqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 49.71
+    },
+    {
+      "url": "https://github.com/qiscus/qiscus-sdk-android",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "mobile-only-client"
+    },
+    {
+      "url": "https://github.com/boostorg/mqtt5",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 62.77
+    },
+    {
+      "url": "https://github.com/to4ko/myconfig",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/thingsboard/thingsboard-client-sdk",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.55
+    },
+    {
+      "url": "https://github.com/njh/mqtt-sn-tools",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.09
+    },
+    {
+      "url": "https://github.com/grafana/mqtt-datasource",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 60.78
+    },
+    {
+      "url": "https://github.com/machbase/neo-server",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 64.11
+    },
+    {
+      "url": "https://github.com/bmwcarit/joynr",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 54.73
+    },
+    {
+      "url": "https://github.com/open3e/open3e",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 62.23
+    },
+    {
+      "url": "https://github.com/IATkachenko/HA-SleepAsAndroid",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 46.96
+    },
+    {
+      "url": "https://github.com/rvdbreemen/OTGW-firmware",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 60.32
+    },
+    {
+      "url": "https://github.com/streamnative/mop",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 57.54
+    },
+    {
+      "url": "https://github.com/cpainchaud/RFLink32",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 32.92
+    },
+    {
+      "url": "https://github.com/xHasKx/luamqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 54.63
+    },
+    {
+      "url": "https://github.com/tomer-w/ha-victron-mqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 66.46
+    },
+    {
+      "url": "https://github.com/eschava/psmqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.66
+    },
+    {
+      "url": "https://github.com/blinker-iot/blinker-doc",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/ESPWortuhr/Multilayout-ESP-Wordclock",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 54.15
+    },
+    {
+      "url": "https://github.com/matthias-bs/BresserWeatherSensorReceiver",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 61.11
+    },
+    {
+      "url": "https://github.com/bieniu/ha-shellies-discovery-gen2",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 60.82
+    },
+    {
+      "url": "https://github.com/Dielee/volvo2mqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 56.62
+    },
+    {
+      "url": "https://github.com/toreamun/amshan-homeassistant",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 39.79
+    },
+    {
+      "url": "https://github.com/smartboot/smart-mqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 65.97
+    },
+    {
+      "url": "https://github.com/fdm-monster/fdm-monster",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 65.52
+    },
+    {
+      "url": "https://github.com/softwarecrash/Daly2MQTT",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 57.92
+    },
+    {
+      "url": "https://github.com/tiagofreire-pt/Home_Assistant_EDP_Box",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/unixorn/ha-mqtt-discoverable",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 61.14
+    },
+    {
+      "url": "https://github.com/thingsboard/thingsboard-edge",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/mwarning/trigger",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "mobile-only-client"
+    },
+    {
+      "url": "https://github.com/emqx/NanoSDK",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 60.46
+    },
+    {
+      "url": "https://github.com/dentra/esphome-tion",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 62.48
+    },
+    {
+      "url": "https://github.com/redboltz/async_mqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/theengs/gateway",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 65.38
+    },
+    {
+      "url": "https://github.com/hivemq/hivemq-edge",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 71.75
+    },
+    {
+      "url": "https://github.com/sclaflin/Plate-Minder",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 49.28
+    },
+    {
+      "url": "https://github.com/likeablob/cydintosh",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 64.77
+    },
+    {
+      "url": "https://github.com/kpetremann/mqtt-exporter",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 60.82
+    },
+    {
+      "url": "https://github.com/gojek/courier-android",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "mobile-only-client"
+    },
+    {
+      "url": "https://github.com/freakent/dbus-mqtt-devices",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 49.75
+    },
+    {
+      "url": "https://github.com/mysticrenji/home-assistant-on-kubernetes",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 68.31
+    },
+    {
+      "url": "https://github.com/1812z/PCTools",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/00imvj00/mqttrs",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 34.96
+    },
+    {
+      "url": "https://github.com/bambooww/iot-tree",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 54.48
+    },
+    {
+      "url": "https://github.com/NewLifeX/NewLife.MQTT",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/vvatelot/mosquitto-docker-compose",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "list-template-or-tutorial"
+    },
+    {
+      "url": "https://github.com/gavinying/modpoll",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 56.18
+    },
+    {
+      "url": "https://github.com/sairon/esphome-nspanel-lovelace-ui",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 47.61
+    },
+    {
+      "url": "https://github.com/mtrossbach/noah-mqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/TheDuffman85/linux-update-dashboard",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/mdzio/ccu-jack",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 47.44
+    },
+    {
+      "url": "https://github.com/MichielVanwelsenaere/HomeAutomation.CoDeSys3",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 51.22
+    },
+    {
+      "url": "https://github.com/Pioreactor/pioreactor",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 68.77
+    },
+    {
+      "url": "https://github.com/tydom2mqtt/tydom2mqtt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/cyrils/renogy-bt",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/akasamq/akasa",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 53.32
+    },
+    {
+      "url": "https://github.com/LiamSnow/opensleep",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 61.53
+    },
+    {
+      "url": "https://github.com/gromeck/BLE-Scanner",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 38.86
+    },
+    {
+      "url": "https://github.com/birdie1/victron",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.06
+    },
+    {
+      "url": "https://github.com/dzurikmiroslav/esp32-evse",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/SmartThingsCommunity/st-device-sdk-c",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "library-or-sdk-no-selfhost-signal"
+    },
+    {
+      "url": "https://github.com/codepr/sol",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 42.77
+    },
+    {
+      "url": "https://github.com/vogler75/monster-mq",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/SmartThingsCommunity/st-device-sdk-c-ref",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 50.95
+    },
+    {
+      "url": "https://github.com/Ladder99/fanuc-driver",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 43.38
+    },
+    {
+      "url": "https://github.com/michaelwoods/onstar2mqtt",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 31.61
+    },
+    {
+      "url": "https://github.com/freeioe/freeioe",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 63.93
+    },
+    {
+      "url": "https://github.com/wangzihaogithub/spring-boot-protocol",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 48.46
+    },
+    {
+      "url": "https://github.com/thingsboard/thingsboard-python-client-sdk",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "description-not-a-sentence"
+    },
+    {
+      "url": "https://github.com/TrakHound/MTConnect.NET",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    },
+    {
+      "url": "https://github.com/bkbilly/AlarmPI",
+      "stage": "gate",
+      "verdict": "keep",
+      "score": 59.38
+    },
+    {
+      "url": "https://github.com/Jason2866/Tasmota-specials",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "passes_app_gate_false"
+    },
+    {
+      "url": "https://github.com/getmockd/mockd",
+      "stage": "gate",
+      "verdict": "drop",
+      "reason": "already-used"
+    }
+  ]
+}

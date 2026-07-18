@@ -1,0 +1,338 @@
+{
+  "version": "v2",
+  "setNum": 212,
+  "searchCalls": 9,
+  "poolSize": 800,
+  "scoredCount": 374,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/wukongdaily/ImmortalWrt-ImageBuilder",
+      "score": 94.53,
+      "category": "Docker / Containers",
+      "stars": 2418
+    },
+    {
+      "url": "https://github.com/dependabot/dependabot-core",
+      "score": 87.69,
+      "category": "DevOps / Infra",
+      "stars": 5649
+    },
+    {
+      "url": "https://github.com/nginx/kubernetes-ingress",
+      "score": 87.46,
+      "category": "DevOps / Infra",
+      "stars": 5037
+    },
+    {
+      "url": "https://github.com/BretFisher/udemy-docker-mastery",
+      "score": 87.35,
+      "category": "DevOps / Infra",
+      "stars": 5782
+    },
+    {
+      "url": "https://github.com/madhuakula/kubernetes-goat",
+      "score": 87.07,
+      "category": "DevOps / Infra",
+      "stars": 5679
+    },
+    {
+      "url": "https://github.com/cdk-team/CDK",
+      "score": 86.94,
+      "category": "DevOps / Infra",
+      "stars": 4688
+    },
+    {
+      "url": "https://github.com/microsoft/mcp-gateway",
+      "score": 86.26,
+      "category": "AI / LLM",
+      "stars": 700
+    },
+    {
+      "url": "https://github.com/however-yir/knowledgeops-agent",
+      "score": 85.04,
+      "category": "AI / LLM",
+      "stars": 211
+    },
+    {
+      "url": "https://github.com/ddev/ddev",
+      "score": 84.75,
+      "category": "Docker / Containers",
+      "stars": 3664
+    },
+    {
+      "url": "https://github.com/jenkinsci/docker",
+      "score": 84.15,
+      "category": "Docker / Containers",
+      "stars": 7524
+    },
+    {
+      "url": "https://github.com/vulhub/vulhub",
+      "score": 83.94,
+      "category": "Docker / Containers",
+      "stars": 20855
+    },
+    {
+      "url": "https://github.com/Sitoi/dailycheckin",
+      "score": 83.65,
+      "category": "Docker / Containers",
+      "stars": 8637
+    },
+    {
+      "url": "https://github.com/songloft-org/songloft",
+      "score": 82.79,
+      "category": "Media / Streaming",
+      "stars": 710
+    },
+    {
+      "url": "https://github.com/speaches-ai/speaches",
+      "score": 82.75,
+      "category": "AI / LLM",
+      "stars": 3401
+    },
+    {
+      "url": "https://github.com/joao-zanutto/easydocker",
+      "score": 81.44,
+      "category": "Developer Tools / Utilities",
+      "stars": 115
+    },
+    {
+      "url": "https://github.com/nikhilbadyal/docker-py-revanced",
+      "score": 81.29,
+      "category": "Media / Streaming",
+      "stars": 651
+    },
+    {
+      "url": "https://github.com/myccarl/ai-shortVideo-pipeline",
+      "score": 80.72,
+      "category": "AI / LLM",
+      "stars": 321
+    },
+    {
+      "url": "https://github.com/PlaytikaOSS/testcontainers-spring-boot",
+      "score": 80.6,
+      "category": "Security / Auth",
+      "stars": 877
+    },
+    {
+      "url": "https://github.com/DataTalksClub/machine-learning-zoomcamp",
+      "score": 80.57,
+      "category": "AI / LLM",
+      "stars": 13265
+    },
+    {
+      "url": "https://github.com/tsu-moe/tsu-stack",
+      "score": 80.22,
+      "category": "Security / Auth",
+      "stars": 94
+    },
+    {
+      "url": "https://github.com/immichFrame/ImmichFrame",
+      "score": 80.09,
+      "category": "Media / Streaming",
+      "stars": 2142
+    },
+    {
+      "url": "https://github.com/conduktor/kafka-stack-docker-compose",
+      "score": 79.43,
+      "category": "Networking / VPN",
+      "stars": 3629
+    },
+    {
+      "url": "https://github.com/us/mocker",
+      "score": 79.15,
+      "category": "Developer Tools / Utilities",
+      "stars": 245
+    },
+    {
+      "url": "https://github.com/score-spec/score-compose",
+      "score": 77.38,
+      "category": "CRM / Business",
+      "stars": 459
+    },
+    {
+      "url": "https://github.com/johnbedeir/Devops-Tools-Documentation",
+      "score": 76.05,
+      "category": "Monitoring / Observability",
+      "stars": 328
+    },
+    {
+      "url": "https://github.com/invoiceninja/dockerfiles",
+      "score": 75.89,
+      "category": "Finance / Budget",
+      "stars": 607
+    },
+    {
+      "url": "https://github.com/microsoft/vscode-docker",
+      "score": 75.14,
+      "category": "Developer Tools / Utilities",
+      "stars": 1306
+    },
+    {
+      "url": "https://github.com/qoomon/docker-host",
+      "score": 74.69,
+      "category": "Networking / VPN",
+      "stars": 1159
+    },
+    {
+      "url": "https://github.com/mkuf/prind",
+      "score": 73.27,
+      "category": "Automation",
+      "stars": 499
+    },
+    {
+      "url": "https://github.com/irisXDR/NEO-WZML",
+      "score": 73.22,
+      "category": "Monitoring / Observability",
+      "stars": 40
+    },
+    {
+      "url": "https://github.com/KenMwaura1/Fast-Api-example",
+      "score": 72.7,
+      "category": "Analytics / Data",
+      "stars": 182
+    },
+    {
+      "url": "https://github.com/microsoft/vscode-containers",
+      "score": 72.42,
+      "category": "Developer Tools / Utilities",
+      "stars": 127
+    },
+    {
+      "url": "https://github.com/hackforla/website",
+      "score": 72.17,
+      "category": "CMS / Website",
+      "stars": 364
+    },
+    {
+      "url": "https://github.com/EXG1O/Constructor-Telegram-Bots-Backend",
+      "score": 72.14,
+      "category": "Developer Tools / Utilities",
+      "stars": 113
+    },
+    {
+      "url": "https://github.com/immauss/openvas",
+      "score": 71.62,
+      "category": "Documents / PDF / Paperless",
+      "stars": 465
+    },
+    {
+      "url": "https://github.com/SkBlaz/py3plex",
+      "score": 71.35,
+      "category": "Books / Reading / Library",
+      "stars": 185
+    },
+    {
+      "url": "https://github.com/demyxsh/demyx",
+      "score": 70.92,
+      "category": "Networking / VPN",
+      "stars": 157
+    },
+    {
+      "url": "https://github.com/elkozmon/zoonavigator",
+      "score": 70.9,
+      "category": "Security / Auth",
+      "stars": 560
+    },
+    {
+      "url": "https://github.com/cr0hn/dockerscan",
+      "score": 70.61,
+      "category": "Security / Auth",
+      "stars": 1546
+    },
+    {
+      "url": "https://github.com/toinbox/simplerelay",
+      "score": 70.48,
+      "category": "Networking / VPN",
+      "stars": 86
+    },
+    {
+      "url": "https://github.com/SeanChang/xuanyuan_docker_proxy",
+      "score": 69.72,
+      "category": "Networking / VPN",
+      "stars": 85
+    },
+    {
+      "url": "https://github.com/rameshsunkara/go-rest-api-example",
+      "score": 69.14,
+      "category": "Image / Design / Creative",
+      "stars": 431
+    },
+    {
+      "url": "https://github.com/mozilla/treeherder",
+      "score": 68.76,
+      "category": "Analytics / Data",
+      "stars": 274
+    },
+    {
+      "url": "https://github.com/max-pfeiffer/rust-game-server-docker",
+      "score": 68.71,
+      "category": "Gaming / Game Servers",
+      "stars": 40
+    },
+    {
+      "url": "https://github.com/pantavisor/pantavisor",
+      "score": 68.25,
+      "category": "Home Automation / IoT",
+      "stars": 73
+    },
+    {
+      "url": "https://github.com/Bader-Idris/nuxt4-fullstack-portfolio",
+      "score": 68.19,
+      "category": "Media / Streaming",
+      "stars": 28
+    },
+    {
+      "url": "https://github.com/hartwork/jawanndenn",
+      "score": 68.12,
+      "category": "Productivity / Tasks",
+      "stars": 203
+    },
+    {
+      "url": "https://github.com/p2pool-starter-stack/pithead",
+      "score": 67.21,
+      "category": "Dashboard / Homelab",
+      "stars": 32
+    },
+    {
+      "url": "https://github.com/nextcloud/nextcloud-docker-dev",
+      "score": 67.21,
+      "category": "Files / Storage / Backup",
+      "stars": 185
+    },
+    {
+      "url": "https://github.com/RXTX4816/cockpit-compose",
+      "score": 67.11,
+      "category": "Dashboard / Homelab",
+      "stars": 9
+    }
+  ],
+  "categoryDistribution": {
+    "Docker / Containers": 5,
+    "DevOps / Infra": 5,
+    "AI / LLM": 5,
+    "Developer Tools / Utilities": 5,
+    "Networking / VPN": 5,
+    "Media / Streaming": 4,
+    "Security / Auth": 4,
+    "Monitoring / Observability": 2,
+    "Analytics / Data": 2,
+    "Dashboard / Homelab": 2,
+    "CRM / Business": 1,
+    "Finance / Budget": 1,
+    "Automation": 1,
+    "CMS / Website": 1,
+    "Documents / PDF / Paperless": 1,
+    "Books / Reading / Library": 1,
+    "Image / Design / Creative": 1,
+    "Gaming / Game Servers": 1,
+    "Home Automation / IoT": 1,
+    "Productivity / Tasks": 1,
+    "Files / Storage / Backup": 1
+  },
+  "scoreStats": {
+    "min": 67.11,
+    "max": 94.53,
+    "mean": 77.03
+  }
+}

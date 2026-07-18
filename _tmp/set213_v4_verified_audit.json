@@ -1,0 +1,434 @@
+{
+  "version": "v4",
+  "setNum": 213,
+  "searchCalls": 8,
+  "poolSize": 598,
+  "scoredCount": 260,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/ashpynov/AnyFSE",
+      "score": 72.05,
+      "category": "Gaming / Game Servers",
+      "stars": 265,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nook24/lagident",
+      "score": 71.09,
+      "category": "Gaming / Game Servers",
+      "stars": 206,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/elishacloud/dxwrapper",
+      "score": 70.99,
+      "category": "Gaming / Game Servers",
+      "stars": 1915,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cafali/SnapKey",
+      "score": 69.6,
+      "category": "Gaming / Game Servers",
+      "stars": 483,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bgauduch/call-of-duty-2-docker-server",
+      "score": 69.56,
+      "category": "Gaming / Game Servers",
+      "stars": 89,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/oracle-quickstart/oke-unreal-pixel-streaming",
+      "score": 45.58,
+      "category": "Media / Streaming",
+      "stars": 68,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/gigamon-dev/SubspaceServer",
+      "score": 37.2,
+      "category": "Media / Streaming",
+      "stars": 22,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ineedbots/t4_bot_warfare",
+      "score": 37.05,
+      "category": "AI / LLM",
+      "stars": 51,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/masterai-top/Online-Texas-Holdem-Poker-Platform",
+      "score": 35.22,
+      "category": "AI / LLM",
+      "stars": 9,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/masterai-top/Texas-Holdem-Poker-Game-Source-Code",
+      "score": 34.93,
+      "category": "AI / LLM",
+      "stars": 9,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/masterai-top/Texas-Holdem-Poker-Game-Server-Club-Source-Code",
+      "score": 34.93,
+      "category": "AI / LLM",
+      "stars": 9,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ineedbots/iw3_bot_warfare",
+      "score": 32.36,
+      "category": "AI / LLM",
+      "stars": 69,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sta-ger/pokie",
+      "score": 30.84,
+      "category": "Media / Streaming",
+      "stars": 61,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dante4rt/blum-airdrop-bot",
+      "score": 69.47,
+      "category": "Gaming / Game Servers",
+      "stars": 136,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/owenselles/CloudNow",
+      "score": 69.22,
+      "category": "Gaming / Game Servers",
+      "stars": 132,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Melledy/LunarCore",
+      "score": 69.07,
+      "category": "Gaming / Game Servers",
+      "stars": 1407,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Mezeporta/Erupe",
+      "score": 69.02,
+      "category": "Gaming / Game Servers",
+      "stars": 271,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Hucaru/Valhalla",
+      "score": 68.92,
+      "category": "Gaming / Game Servers",
+      "stars": 334,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Drarig29/brackets-manager.js",
+      "score": 68.76,
+      "category": "Gaming / Game Servers",
+      "stars": 329,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/fuzziqersoftware/newserv",
+      "score": 68.69,
+      "category": "Gaming / Game Servers",
+      "stars": 253,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/emylfy/Winrift",
+      "score": 68.61,
+      "category": "Gaming / Game Servers",
+      "stars": 153,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/unhappychoice/steamfetch",
+      "score": 68.12,
+      "category": "Gaming / Game Servers",
+      "stars": 187,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/runejs/server",
+      "score": 67.95,
+      "category": "Gaming / Game Servers",
+      "stars": 293,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/geektcp/UeCore",
+      "score": 67.83,
+      "category": "Gaming / Game Servers",
+      "stars": 833,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dyc3/steamguard-cli",
+      "score": 67.52,
+      "category": "Gaming / Game Servers",
+      "stars": 985,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Sealva-Devs/Crypto-Casino-Game",
+      "score": 67.5,
+      "category": "Gaming / Game Servers",
+      "stars": 51,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/WindowsGSM/WindowsGSM",
+      "score": 67.48,
+      "category": "Gaming / Game Servers",
+      "stars": 628,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sniper00/moon",
+      "score": 67.46,
+      "category": "Gaming / Game Servers",
+      "stars": 967,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nickybmon/OpenEmu-Silicon",
+      "score": 66.98,
+      "category": "Gaming / Game Servers",
+      "stars": 263,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Convex-Dev/convex",
+      "score": 65.74,
+      "category": "Gaming / Game Servers",
+      "stars": 116,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/GameFrameX/GameFrameX.Server",
+      "score": 65.63,
+      "category": "Gaming / Game Servers",
+      "stars": 58,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/xiaonanln/goworld",
+      "score": 64.83,
+      "category": "Gaming / Game Servers",
+      "stars": 2718,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/phil616/dst-server-icp",
+      "score": 64.41,
+      "category": "Gaming / Game Servers",
+      "stars": 50,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jwpttcg66/NettyGameServer",
+      "score": 64.31,
+      "category": "Gaming / Game Servers",
+      "stars": 1669,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/treyyoder/quakejs-docker",
+      "score": 64.15,
+      "category": "Gaming / Game Servers",
+      "stars": 240,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Segs/Segs",
+      "score": 63.88,
+      "category": "Gaming / Game Servers",
+      "stars": 231,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wojtmic/prefixer",
+      "score": 63.42,
+      "category": "Gaming / Game Servers",
+      "stars": 225,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/imLinguin/comet",
+      "score": 63.37,
+      "category": "Gaming / Game Servers",
+      "stars": 356,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/varmd/wine-wayland",
+      "score": 63.28,
+      "category": "Gaming / Game Servers",
+      "stars": 851,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Drarig29/brackets-viewer.js",
+      "score": 62.96,
+      "category": "Gaming / Game Servers",
+      "stars": 228,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/congcoi123/tenio",
+      "score": 62.9,
+      "category": "Gaming / Game Servers",
+      "stars": 128,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ninja-con-gafas/steam-in-container",
+      "score": 62.82,
+      "category": "Gaming / Game Servers",
+      "stars": 20,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/SoftbearStudios/mk48",
+      "score": 62.65,
+      "category": "Gaming / Game Servers",
+      "stars": 429,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mikeroyal/Apple-Silicon-Guide",
+      "score": 62.31,
+      "category": "Gaming / Game Servers",
+      "stars": 1877,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jpietek/PenguinBurner",
+      "score": 62.22,
+      "category": "Gaming / Game Servers",
+      "stars": 59,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mikeroyal/Windows-11-Guide",
+      "score": 61.77,
+      "category": "Gaming / Game Servers",
+      "stars": 1759,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lansuite/lansuite",
+      "score": 61.71,
+      "category": "Gaming / Game Servers",
+      "stars": 76,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wesfly/bevy_fs",
+      "score": 60.92,
+      "category": "Gaming / Game Servers",
+      "stars": 45,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Ketbome/hytalepanel",
+      "score": 60.73,
+      "category": "Gaming / Game Servers",
+      "stars": 28,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/EmberEmu/Ember",
+      "score": 60.35,
+      "category": "Gaming / Game Servers",
+      "stars": 69,
+      "docker": true,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Gaming / Game Servers": 42,
+    "AI / LLM": 5,
+    "Media / Streaming": 3
+  },
+  "scoreStats": {
+    "min": 30.84,
+    "max": 72.05,
+    "mean": 61.17
+  },
+  "dockerCount": 24,
+  "hostname": "M17s-MacBook-Pro.local",
+  "python": "3.14.5",
+  "timing": {
+    "gather": 24.6,
+    "score": 0.0,
+    "confirm": 27.4,
+    "confirmedPool": 130,
+    "diversify": 1.1,
+    "total": 183.1
+  }
+}

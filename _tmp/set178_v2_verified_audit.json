@@ -1,0 +1,329 @@
+{
+  "version": "v2",
+  "setNum": 178,
+  "searchCalls": 9,
+  "poolSize": 571,
+  "scoredCount": 284,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/kejilion/sh",
+      "score": 91.61,
+      "category": "DevOps / Infra",
+      "stars": 2926
+    },
+    {
+      "url": "https://github.com/offen/docker-volume-backup",
+      "score": 89.1,
+      "category": "Files / Storage / Backup",
+      "stars": 3719
+    },
+    {
+      "url": "https://github.com/rustic-rs/rustic",
+      "score": 83.72,
+      "category": "Security / Auth",
+      "stars": 3102
+    },
+    {
+      "url": "https://github.com/XayahSuSuSu/Android-DataBackup",
+      "score": 81.51,
+      "category": "Files / Storage / Backup",
+      "stars": 6903
+    },
+    {
+      "url": "https://github.com/dataplat/dbatools",
+      "score": 81.17,
+      "category": "Files / Storage / Backup",
+      "stars": 2792
+    },
+    {
+      "url": "https://github.com/spatie/laravel-backup",
+      "score": 80.72,
+      "category": "DevOps / Infra",
+      "stars": 5996
+    },
+    {
+      "url": "https://github.com/mariadb-operator/mariadb-operator",
+      "score": 80.57,
+      "category": "Monitoring / Observability",
+      "stars": 983
+    },
+    {
+      "url": "https://github.com/gobackup/gobackup",
+      "score": 80.37,
+      "category": "Developer Tools / Utilities",
+      "stars": 2700
+    },
+    {
+      "url": "https://github.com/borgbase/vykar",
+      "score": 79.5,
+      "category": "Files / Storage / Backup",
+      "stars": 645
+    },
+    {
+      "url": "https://github.com/utkuozdemir/pv-migrate",
+      "score": 79.3,
+      "category": "DevOps / Infra",
+      "stars": 2344
+    },
+    {
+      "url": "https://github.com/framps/raspiBackup",
+      "score": 79.2,
+      "category": "Files / Storage / Backup",
+      "stars": 1003
+    },
+    {
+      "url": "https://github.com/pgrwl/pgrwl",
+      "score": 78.28,
+      "category": "Media / Streaming",
+      "stars": 177
+    },
+    {
+      "url": "https://github.com/ReagentX/imessage-exporter",
+      "score": 78.23,
+      "category": "Developer Tools / Utilities",
+      "stars": 5324
+    },
+    {
+      "url": "https://github.com/k8up-io/k8up",
+      "score": 77.71,
+      "category": "DevOps / Infra",
+      "stars": 981
+    },
+    {
+      "url": "https://github.com/bvisible/mcp-ssh-manager",
+      "score": 77.64,
+      "category": "AI / LLM",
+      "stars": 299
+    },
+    {
+      "url": "https://github.com/outdoorbits/little-backup-box",
+      "score": 76.61,
+      "category": "Media / Streaming",
+      "stars": 583
+    },
+    {
+      "url": "https://github.com/raullenchai/vnsh",
+      "score": 76.58,
+      "category": "AI / LLM",
+      "stars": 166
+    },
+    {
+      "url": "https://github.com/Matteo842/SaveState",
+      "score": 76.36,
+      "category": "Media / Streaming",
+      "stars": 462
+    },
+    {
+      "url": "https://github.com/libarchive/libarchive",
+      "score": 75.31,
+      "category": "Books / Reading / Library",
+      "stars": 3526
+    },
+    {
+      "url": "https://github.com/rdiff-backup/rdiff-backup",
+      "score": 74.13,
+      "category": "Networking / VPN",
+      "stars": 1256
+    },
+    {
+      "url": "https://github.com/ytti/oxidized",
+      "score": 74.1,
+      "category": "Networking / VPN",
+      "stars": 3417
+    },
+    {
+      "url": "https://github.com/mtkennerly/ludusavi",
+      "score": 73.76,
+      "category": "Gaming / Game Servers",
+      "stars": 5767
+    },
+    {
+      "url": "https://github.com/deskive/deskive",
+      "score": 73.34,
+      "category": "AI / LLM",
+      "stars": 23
+    },
+    {
+      "url": "https://github.com/decentpaste/decentpaste",
+      "score": 72.69,
+      "category": "Security / Auth",
+      "stars": 207
+    },
+    {
+      "url": "https://github.com/hasinhayder/tyro-checkpoint",
+      "score": 72.21,
+      "category": "Developer Tools / Utilities",
+      "stars": 72
+    },
+    {
+      "url": "https://github.com/ShareDropio/sharedrop",
+      "score": 72.0,
+      "category": "Developer Tools / Utilities",
+      "stars": 10735
+    },
+    {
+      "url": "https://github.com/gardener/etcd-druid",
+      "score": 71.98,
+      "category": "DevOps / Infra",
+      "stars": 118
+    },
+    {
+      "url": "https://github.com/filedonkey/filedonkey",
+      "score": 71.89,
+      "category": "Networking / VPN",
+      "stars": 346
+    },
+    {
+      "url": "https://github.com/JellyPlugins/jellyfin-helper",
+      "score": 71.46,
+      "category": "AI / LLM",
+      "stars": 23
+    },
+    {
+      "url": "https://github.com/itzg/docker-mc-backup",
+      "score": 70.43,
+      "category": "Gaming / Game Servers",
+      "stars": 503
+    },
+    {
+      "url": "https://github.com/nuwainfo/ffl",
+      "score": 70.42,
+      "category": "Developer Tools / Utilities",
+      "stars": 95
+    },
+    {
+      "url": "https://github.com/pgmoneta/pgmoneta",
+      "score": 68.86,
+      "category": "Monitoring / Observability",
+      "stars": 298
+    },
+    {
+      "url": "https://github.com/tmo1/sms-ie",
+      "score": 68.76,
+      "category": "Monitoring / Observability",
+      "stars": 663
+    },
+    {
+      "url": "https://github.com/jannskiee/floe",
+      "score": 68.23,
+      "category": "Security / Auth",
+      "stars": 16
+    },
+    {
+      "url": "https://github.com/MaxMaeder/DriveBackupV2",
+      "score": 68.01,
+      "category": "Gaming / Game Servers",
+      "stars": 196
+    },
+    {
+      "url": "https://github.com/MeowDump/Unlimited-Photos-Storage",
+      "score": 67.91,
+      "category": "Media / Streaming",
+      "stars": 53
+    },
+    {
+      "url": "https://github.com/number571/hidden-lake",
+      "score": 67.88,
+      "category": "AI / LLM",
+      "stars": 255
+    },
+    {
+      "url": "https://github.com/ngosang/docker-amule",
+      "score": 67.45,
+      "category": "Networking / VPN",
+      "stars": 237
+    },
+    {
+      "url": "https://github.com/robotnikz/WinBorg",
+      "score": 67.25,
+      "category": "Security / Auth",
+      "stars": 35
+    },
+    {
+      "url": "https://github.com/fcorbelli/zpaqfranz",
+      "score": 66.67,
+      "category": "Security / Auth",
+      "stars": 475
+    },
+    {
+      "url": "https://github.com/Tiarait/HTTP-FS-file-server",
+      "score": 66.41,
+      "category": "Networking / VPN",
+      "stars": 147
+    },
+    {
+      "url": "https://github.com/netinvent/npbackup",
+      "score": 65.19,
+      "category": "Monitoring / Observability",
+      "stars": 337
+    },
+    {
+      "url": "https://github.com/valtteriluomapareto/photo-export",
+      "score": 65.0,
+      "category": "Media / Streaming",
+      "stars": 66
+    },
+    {
+      "url": "https://github.com/HoussemDellai/aks-course",
+      "score": 64.08,
+      "category": "Monitoring / Observability",
+      "stars": 223
+    },
+    {
+      "url": "https://github.com/FileShot/FileShotZKE",
+      "score": 63.85,
+      "category": "Books / Reading / Library",
+      "stars": 27
+    },
+    {
+      "url": "https://github.com/simatec/ioBroker.backitup",
+      "score": 63.04,
+      "category": "Home Automation / IoT",
+      "stars": 72
+    },
+    {
+      "url": "https://github.com/carderne/signal-export",
+      "score": 61.2,
+      "category": "Notes / Knowledge",
+      "stars": 758
+    },
+    {
+      "url": "https://github.com/jcwillox/hassio-rclone-backup",
+      "score": 60.68,
+      "category": "Home Automation / IoT",
+      "stars": 198
+    },
+    {
+      "url": "https://github.com/Kaiede/Bedrockifier",
+      "score": 60.27,
+      "category": "Gaming / Game Servers",
+      "stars": 56
+    },
+    {
+      "url": "https://github.com/tasmota/decode-config",
+      "score": 59.31,
+      "category": "Home Automation / IoT",
+      "stars": 253
+    }
+  ],
+  "categoryDistribution": {
+    "DevOps / Infra": 5,
+    "Files / Storage / Backup": 5,
+    "Security / Auth": 5,
+    "Monitoring / Observability": 5,
+    "Developer Tools / Utilities": 5,
+    "Media / Streaming": 5,
+    "AI / LLM": 5,
+    "Networking / VPN": 5,
+    "Gaming / Game Servers": 4,
+    "Home Automation / IoT": 3,
+    "Books / Reading / Library": 2,
+    "Notes / Knowledge": 1
+  },
+  "scoreStats": {
+    "min": 59.31,
+    "max": 91.61,
+    "mean": 72.64
+  }
+}

@@ -1,0 +1,439 @@
+{
+  "version": "v4",
+  "setNum": 214,
+  "searchCalls": 10,
+  "poolSize": 683,
+  "scoredCount": 270,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/HugeCatLab/ChatTutor",
+      "score": 85.3,
+      "category": "AI / LLM",
+      "stars": 1217,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/beihaili/Get-Started-with-Web3",
+      "score": 84.37,
+      "category": "AI / LLM",
+      "stars": 613,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/steveyeow/Feynman",
+      "score": 81.83,
+      "category": "AI / LLM",
+      "stars": 156,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ystemsrx/mini-nanoGPT",
+      "score": 81.27,
+      "category": "AI / LLM",
+      "stars": 375,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ai-shifu/ai-shifu",
+      "score": 80.2,
+      "category": "AI / LLM",
+      "stars": 296,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/autolab/Autolab",
+      "score": 78.96,
+      "category": "Education / Learning",
+      "stars": 810,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dodona-edu/dolos",
+      "score": 76.98,
+      "category": "Developer Tools / Utilities",
+      "stars": 344,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/LearningOS/os-lectures",
+      "score": 76.01,
+      "category": "Education / Learning",
+      "stars": 805,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Cur10s1tyByt3/GenP",
+      "score": 75.76,
+      "category": "Education / Learning",
+      "stars": 1302,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/google/codeworld",
+      "score": 74.58,
+      "category": "Developer Tools / Utilities",
+      "stars": 1267,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/alanbjohnston/CubeSatSim",
+      "score": 74.35,
+      "category": "Education / Learning",
+      "stars": 397,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ystemsrx/sql_to_ER",
+      "score": 73.93,
+      "category": "Education / Learning",
+      "stars": 171,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/classmoji/classmoji",
+      "score": 71.45,
+      "category": "Developer Tools / Utilities",
+      "stars": 66,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Sobeston/zig.guide",
+      "score": 69.89,
+      "category": "Developer Tools / Utilities",
+      "stars": 922,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/iggredible/Learn-Vim",
+      "score": 67.0,
+      "category": "Developer Tools / Utilities",
+      "stars": 15124,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lcgamboa/picsimlab",
+      "score": 65.6,
+      "category": "Gaming / Game Servers",
+      "stars": 637,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pojol/braid",
+      "score": 58.98,
+      "category": "Gaming / Game Servers",
+      "stars": 152,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Tiiffi/mcrcon",
+      "score": 58.88,
+      "category": "Gaming / Game Servers",
+      "stars": 1051,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/no5ix/realtime-server",
+      "score": 58.29,
+      "category": "Gaming / Game Servers",
+      "stars": 501,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lottec-ufpb/populus-viewer",
+      "score": 57.09,
+      "category": "Communication / Social",
+      "stars": 122,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Ch4r0ne/ARK-Ascended-Server-Manager",
+      "score": 56.85,
+      "category": "Gaming / Game Servers",
+      "stars": 68,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/NesoHQ/bgce-archive",
+      "score": 55.51,
+      "category": "DevOps / Infra",
+      "stars": 124,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/rmariano/Clean-code-in-Python",
+      "score": 46.59,
+      "category": "Books / Reading / Library",
+      "stars": 160,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/UnExplainableFish52/lokii.tech",
+      "score": 46.56,
+      "category": "Notes / Knowledge",
+      "stars": 9,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Samya-S/jeechallenger-2.0",
+      "score": 45.88,
+      "category": "Books / Reading / Library",
+      "stars": 10,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bakrianoo/mini-rag",
+      "score": 78.3,
+      "category": "AI / LLM",
+      "stars": 631,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/OpenCircuits/OpenCircuits",
+      "score": 73.62,
+      "category": "Education / Learning",
+      "stars": 388,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/techblitzdev/TechBlitz",
+      "score": 66.84,
+      "category": "Developer Tools / Utilities",
+      "stars": 432,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/steamcmd/docker",
+      "score": 56.72,
+      "category": "Gaming / Game Servers",
+      "stars": 203,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ls1intum/Artemis",
+      "score": 77.89,
+      "category": "AI / LLM",
+      "stars": 778,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/SeanWong17/Mammalia-tree",
+      "score": 73.51,
+      "category": "Education / Learning",
+      "stars": 189,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/tutors-sdk/tutors",
+      "score": 64.9,
+      "category": "Developer Tools / Utilities",
+      "stars": 124,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/fausecteam/ctf-gameserver",
+      "score": 56.51,
+      "category": "Gaming / Game Servers",
+      "stars": 112,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/plastic-labs/tutor-gpt",
+      "score": 77.25,
+      "category": "AI / LLM",
+      "stars": 905,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/taybenlor/runno",
+      "score": 72.78,
+      "category": "Education / Learning",
+      "stars": 767,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/carbon-app/carbon",
+      "score": 62.0,
+      "category": "Developer Tools / Utilities",
+      "stars": 36035,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/SoftbearStudios/kiomet",
+      "score": 55.88,
+      "category": "Gaming / Game Servers",
+      "stars": 163,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cfgranda/ps4ds",
+      "score": 77.17,
+      "category": "AI / LLM",
+      "stars": 594,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/alexmojaki/futurecoder",
+      "score": 72.76,
+      "category": "Education / Learning",
+      "stars": 1500,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Hacker0x01/hacker101",
+      "score": 58.0,
+      "category": "Developer Tools / Utilities",
+      "stars": 14451,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aevien/master-server-toolkit",
+      "score": 54.73,
+      "category": "Gaming / Game Servers",
+      "stars": 173,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ai-infra-curriculum/ai-infra-junior-engineer-learning",
+      "score": 74.9,
+      "category": "AI / LLM",
+      "stars": 161,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/frankwxu/digital-forensics-lab",
+      "score": 72.49,
+      "category": "Education / Learning",
+      "stars": 2652,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/invent-framework/invent",
+      "score": 57.58,
+      "category": "Developer Tools / Utilities",
+      "stars": 127,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/edson-acordi/4bit-microcomputer",
+      "score": 54.15,
+      "category": "Gaming / Game Servers",
+      "stars": 71,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hluaguo/learn-faster-kit",
+      "score": 74.79,
+      "category": "AI / LLM",
+      "stars": 335,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/q5js/q5.js",
+      "score": 71.93,
+      "category": "Education / Learning",
+      "stars": 415,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/CM2Walki/TF2",
+      "score": 53.5,
+      "category": "Gaming / Game Servers",
+      "stars": 78,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/benjie-git/CardStock",
+      "score": 53.28,
+      "category": "Developer Tools / Utilities",
+      "stars": 284,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mlcommons/ck",
+      "score": 72.87,
+      "category": "AI / LLM",
+      "stars": 648,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "AI / LLM": 12,
+    "Education / Learning": 11,
+    "Developer Tools / Utilities": 11,
+    "Gaming / Game Servers": 11,
+    "Books / Reading / Library": 2,
+    "Communication / Social": 1,
+    "DevOps / Infra": 1,
+    "Notes / Knowledge": 1
+  },
+  "scoreStats": {
+    "min": 45.88,
+    "max": 85.3,
+    "mean": 67.33
+  },
+  "dockerCount": 32,
+  "hostname": "M17s-MacBook-Pro.local",
+  "python": "3.14.5",
+  "timing": {
+    "gather": 37.0,
+    "score": 0.0,
+    "confirm": 27.7,
+    "confirmedPool": 130,
+    "diversify": 0.5,
+    "total": 195.2
+  }
+}

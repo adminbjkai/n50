@@ -1,0 +1,434 @@
+{
+  "version": "v4",
+  "setNum": 210,
+  "searchCalls": 13,
+  "poolSize": 649,
+  "scoredCount": 153,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/python-visualization/folium",
+      "score": 69.0,
+      "category": "Maps / GIS / Location",
+      "stars": 7371,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/uiwjs/react-amap",
+      "score": 68.54,
+      "category": "Maps / GIS / Location",
+      "stars": 503,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/vicb/flyXC",
+      "score": 68.03,
+      "category": "Maps / GIS / Location",
+      "stars": 108,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Yizack/mappedlove",
+      "score": 67.59,
+      "category": "Maps / GIS / Location",
+      "stars": 70,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/MichaelGrupp/maps",
+      "score": 67.21,
+      "category": "Maps / GIS / Location",
+      "stars": 112,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/akutishevsky/withings-mcp",
+      "score": 60.05,
+      "category": "Health / Food / Fitness",
+      "stars": 28,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/doudar/SmartSpin2k",
+      "score": 59.48,
+      "category": "Health / Food / Fitness",
+      "stars": 273,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/brodeurlv/fastnfitness",
+      "score": 58.9,
+      "category": "Health / Food / Fitness",
+      "stars": 316,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/eddmann/garmin-connect-mcp",
+      "score": 57.17,
+      "category": "AI / LLM",
+      "stars": 43,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/fraineralex/tracky",
+      "score": 55.63,
+      "category": "AI / LLM",
+      "stars": 29,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Nexgene-Research/nexonco-mcp",
+      "score": 55.02,
+      "category": "AI / LLM",
+      "stars": 62,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/rolandsz/Mi-Fit-and-Zepp-workout-exporter",
+      "score": 54.97,
+      "category": "Health / Food / Fitness",
+      "stars": 207,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jat255/Fit-File-Faker",
+      "score": 54.83,
+      "category": "Health / Food / Fitness",
+      "stars": 83,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hhopke/intervals-icu-mcp",
+      "score": 54.39,
+      "category": "AI / LLM",
+      "stars": 18,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/FanKang2021/GPU-Health-eXpert",
+      "score": 46.99,
+      "category": "AI / LLM",
+      "stars": 84,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/beyonk/svelte-mapbox",
+      "score": 66.83,
+      "category": "Maps / GIS / Location",
+      "stars": 366,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mraible/21-points",
+      "score": 53.39,
+      "category": "Health / Food / Fitness",
+      "stars": 299,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/477-Studio/claude-gym",
+      "score": 46.92,
+      "category": "AI / LLM",
+      "stars": 43,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/drgrib/dotmap",
+      "score": 66.64,
+      "category": "Maps / GIS / Location",
+      "stars": 481,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/vitoksmile/HealthKMP",
+      "score": 52.76,
+      "category": "Health / Food / Fitness",
+      "stars": 88,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ParitoshParmar/Fitness-AQA",
+      "score": 46.23,
+      "category": "AI / LLM",
+      "stars": 103,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/evansiroky/timezone-boundary-builder",
+      "score": 65.87,
+      "category": "Maps / GIS / Location",
+      "stars": 1092,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sarfraznawaz2005/servermonitor",
+      "score": 52.76,
+      "category": "Health / Food / Fitness",
+      "stars": 196,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Hazrat-Ali9/Audio-Health-Assistant",
+      "score": 46.22,
+      "category": "AI / LLM",
+      "stars": 47,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/googlemaps/js-api-loader",
+      "score": 65.69,
+      "category": "Maps / GIS / Location",
+      "stars": 446,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bet-blocker/bet-blocker",
+      "score": 52.13,
+      "category": "Health / Food / Fitness",
+      "stars": 174,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aminezouari52/telemedicine-website",
+      "score": 44.47,
+      "category": "AI / LLM",
+      "stars": 9,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/flopp/go-staticmaps",
+      "score": 65.58,
+      "category": "Maps / GIS / Location",
+      "stars": 376,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/HCW-home/backend",
+      "score": 51.44,
+      "category": "Health / Food / Fitness",
+      "stars": 27,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Rogendo/Mental-health-Chatbot",
+      "score": 42.7,
+      "category": "AI / LLM",
+      "stars": 214,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mapdraw/mapdraw",
+      "score": 65.45,
+      "category": "Maps / GIS / Location",
+      "stars": 52,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Dieterbe/body.build",
+      "score": 50.03,
+      "category": "Health / Food / Fitness",
+      "stars": 36,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/KinesteX/KinesteX-SDK-ReactNative",
+      "score": 39.32,
+      "category": "AI / LLM",
+      "stars": 14,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/openstreetmap-ng/openstreetmap-ng",
+      "score": 64.71,
+      "category": "Maps / GIS / Location",
+      "stars": 247,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/roznet/connectstats",
+      "score": 50.0,
+      "category": "Health / Food / Fitness",
+      "stars": 83,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/googlemaps/js-samples",
+      "score": 64.67,
+      "category": "Maps / GIS / Location",
+      "stars": 804,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pilgrimlyieu/Focust",
+      "score": 49.37,
+      "category": "Health / Food / Fitness",
+      "stars": 43,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/maptiler/maptiler-sdk-js",
+      "score": 64.66,
+      "category": "Maps / GIS / Location",
+      "stars": 126,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/urastogi2048/fitnessapp",
+      "score": 48.89,
+      "category": "Health / Food / Fitness",
+      "stars": 9,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/acidflow-noita/noitamap",
+      "score": 64.61,
+      "category": "Maps / GIS / Location",
+      "stars": 54,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/benlhachemi/BestShape",
+      "score": 48.8,
+      "category": "Health / Food / Fitness",
+      "stars": 104,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Vonter/city-officials",
+      "score": 64.41,
+      "category": "Maps / GIS / Location",
+      "stars": 69,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AmirhosseinHonardoust/Workout-Efficiency-Benchmark",
+      "score": 48.02,
+      "category": "Health / Food / Fitness",
+      "stars": 11,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/OpenRailwayMap/OpenRailwayMap",
+      "score": 63.88,
+      "category": "Maps / GIS / Location",
+      "stars": 504,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/refact0r/respir",
+      "score": 47.85,
+      "category": "Health / Food / Fitness",
+      "stars": 20,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/koenderks/rcityviews",
+      "score": 63.8,
+      "category": "Maps / GIS / Location",
+      "stars": 219,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/federicofanini/gymbrah.com",
+      "score": 47.58,
+      "category": "Health / Food / Fitness",
+      "stars": 89,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/googlemaps/js-markerclusterer",
+      "score": 63.58,
+      "category": "Maps / GIS / Location",
+      "stars": 296,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ropensci/fingertipsR",
+      "score": 46.75,
+      "category": "Health / Food / Fitness",
+      "stars": 103,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/redblobgames/1843-planet-generation",
+      "score": 63.51,
+      "category": "Maps / GIS / Location",
+      "stars": 162,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Maps / GIS / Location": 20,
+    "Health / Food / Fitness": 19,
+    "AI / LLM": 11
+  },
+  "scoreStats": {
+    "min": 39.32,
+    "max": 69.0,
+    "mean": 56.75
+  },
+  "dockerCount": 18,
+  "hostname": "M17s-MacBook-Pro.local",
+  "python": "3.14.5",
+  "timing": {
+    "gather": 38.1,
+    "score": 0.0,
+    "confirm": 0.0,
+    "confirmedPool": 130,
+    "diversify": 0.4,
+    "total": 168.5
+  }
+}

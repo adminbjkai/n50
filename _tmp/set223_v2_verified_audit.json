@@ -1,0 +1,318 @@
+{
+  "version": "v2",
+  "setNum": 223,
+  "searchCalls": 6,
+  "poolSize": 549,
+  "scoredCount": 333,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "score": 93.14,
+      "category": "AI / LLM",
+      "stars": 9366
+    },
+    {
+      "url": "https://github.com/Agent-Field/agentfield",
+      "score": 91.34,
+      "category": "AI / LLM",
+      "stars": 2200
+    },
+    {
+      "url": "https://github.com/trycompai/comp",
+      "score": 90.63,
+      "category": "AI / LLM",
+      "stars": 1648
+    },
+    {
+      "url": "https://github.com/Netflix/metaflow",
+      "score": 90.59,
+      "category": "AI / LLM",
+      "stars": 10136
+    },
+    {
+      "url": "https://github.com/opensandbox-group/OpenSandbox",
+      "score": 90.41,
+      "category": "AI / LLM",
+      "stars": 11594
+    },
+    {
+      "url": "https://github.com/dohooo/helmor",
+      "score": 89.89,
+      "category": "AI / LLM",
+      "stars": 1236
+    },
+    {
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "score": 89.87,
+      "category": "AI / LLM",
+      "stars": 10396
+    },
+    {
+      "url": "https://github.com/microsoft/agent-framework",
+      "score": 89.01,
+      "category": "AI / LLM",
+      "stars": 11505
+    },
+    {
+      "url": "https://github.com/pipipi-pikachu/PPTist",
+      "score": 88.99,
+      "category": "AI / LLM",
+      "stars": 9083
+    },
+    {
+      "url": "https://github.com/mcp-use/mcp-use",
+      "score": 88.71,
+      "category": "AI / LLM",
+      "stars": 10125
+    },
+    {
+      "url": "https://github.com/microsoft/magentic-ui",
+      "score": 88.5,
+      "category": "AI / LLM",
+      "stars": 9916
+    },
+    {
+      "url": "https://github.com/cocoindex-io/cocoindex",
+      "score": 88.47,
+      "category": "AI / LLM",
+      "stars": 10432
+    },
+    {
+      "url": "https://github.com/microsoft/promptflow",
+      "score": 88.41,
+      "category": "AI / LLM",
+      "stars": 11158
+    },
+    {
+      "url": "https://github.com/iflytek/astron-agent",
+      "score": 88.33,
+      "category": "AI / LLM",
+      "stars": 8571
+    },
+    {
+      "url": "https://github.com/cloudwego/eino",
+      "score": 88.31,
+      "category": "AI / LLM",
+      "stars": 11881
+    },
+    {
+      "url": "https://github.com/CoplayDev/unity-mcp",
+      "score": 88.23,
+      "category": "AI / LLM",
+      "stars": 10875
+    },
+    {
+      "url": "https://github.com/EverMind-AI/EverOS",
+      "score": 88.2,
+      "category": "AI / LLM",
+      "stars": 8163
+    },
+    {
+      "url": "https://github.com/rockbenben/ChatGPT-Shortcut",
+      "score": 88.04,
+      "category": "AI / LLM",
+      "stars": 8565
+    },
+    {
+      "url": "https://github.com/iOfficeAI/OfficeCLI",
+      "score": 87.95,
+      "category": "AI / LLM",
+      "stars": 7533
+    },
+    {
+      "url": "https://github.com/xr843/fojin",
+      "score": 87.5,
+      "category": "AI / LLM",
+      "stars": 315
+    },
+    {
+      "url": "https://github.com/mrexodia/ida-pro-mcp",
+      "score": 87.43,
+      "category": "AI / LLM",
+      "stars": 9527
+    },
+    {
+      "url": "https://github.com/yunionio/cloudpods",
+      "score": 87.27,
+      "category": "AI / LLM",
+      "stars": 2912
+    },
+    {
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "score": 87.17,
+      "category": "AI / LLM",
+      "stars": 4210
+    },
+    {
+      "url": "https://github.com/junhoyeo/tokscale",
+      "score": 86.74,
+      "category": "AI / LLM",
+      "stars": 3860
+    },
+    {
+      "url": "https://github.com/IvanMurzak/Unity-MCP",
+      "score": 86.59,
+      "category": "AI / LLM",
+      "stars": 3234
+    },
+    {
+      "url": "https://github.com/electerm/electerm",
+      "score": 86.48,
+      "category": "AI / LLM",
+      "stars": 14308
+    },
+    {
+      "url": "https://github.com/datawhalechina/all-in-rag",
+      "score": 86.48,
+      "category": "AI / LLM",
+      "stars": 8772
+    },
+    {
+      "url": "https://github.com/alistaitsacle/free-llm-api-keys",
+      "score": 86.31,
+      "category": "AI / LLM",
+      "stars": 2618
+    },
+    {
+      "url": "https://github.com/sktime/sktime",
+      "score": 86.3,
+      "category": "AI / LLM",
+      "stars": 9816
+    },
+    {
+      "url": "https://github.com/microsoft/TypeChat",
+      "score": 86.18,
+      "category": "AI / LLM",
+      "stars": 8667
+    },
+    {
+      "url": "https://github.com/rivet-dev/agentos",
+      "score": 86.18,
+      "category": "AI / LLM",
+      "stars": 3027
+    },
+    {
+      "url": "https://github.com/Future-House/paper-qa",
+      "score": 85.99,
+      "category": "AI / LLM",
+      "stars": 8735
+    },
+    {
+      "url": "https://github.com/activeloopai/deeplake",
+      "score": 85.86,
+      "category": "AI / LLM",
+      "stars": 9182
+    },
+    {
+      "url": "https://github.com/langchain-ai/open-swe",
+      "score": 85.68,
+      "category": "AI / LLM",
+      "stars": 10013
+    },
+    {
+      "url": "https://github.com/elie222/inbox-zero",
+      "score": 85.65,
+      "category": "AI / LLM",
+      "stars": 11370
+    },
+    {
+      "url": "https://github.com/jlcodes99/cockpit-tools",
+      "score": 85.55,
+      "category": "AI / LLM",
+      "stars": 11857
+    },
+    {
+      "url": "https://github.com/XiaomiMiMo/MiMo-Code",
+      "score": 85.55,
+      "category": "AI / LLM",
+      "stars": 10096
+    },
+    {
+      "url": "https://github.com/databendlabs/databend",
+      "score": 85.45,
+      "category": "AI / LLM",
+      "stars": 9345
+    },
+    {
+      "url": "https://github.com/humanlayer/humanlayer",
+      "score": 85.32,
+      "category": "AI / LLM",
+      "stars": 11039
+    },
+    {
+      "url": "https://github.com/0xPlaygrounds/rig",
+      "score": 85.21,
+      "category": "AI / LLM",
+      "stars": 7694
+    },
+    {
+      "url": "https://github.com/0x4m4/hexstrike-ai",
+      "score": 85.09,
+      "category": "AI / LLM",
+      "stars": 9781
+    },
+    {
+      "url": "https://github.com/opensumi/core",
+      "score": 85.08,
+      "category": "AI / LLM",
+      "stars": 3636
+    },
+    {
+      "url": "https://github.com/crynta/terax-ai",
+      "score": 85.08,
+      "category": "AI / LLM",
+      "stars": 7199
+    },
+    {
+      "url": "https://github.com/SemiAnalysisAI/InferenceX",
+      "score": 84.99,
+      "category": "AI / LLM",
+      "stars": 1121
+    },
+    {
+      "url": "https://github.com/JOYCEQL/magic-resume",
+      "score": 84.96,
+      "category": "AI / LLM",
+      "stars": 8555
+    },
+    {
+      "url": "https://github.com/LykosAI/StabilityMatrix",
+      "score": 84.66,
+      "category": "AI / LLM",
+      "stars": 8372
+    },
+    {
+      "url": "https://github.com/rivet-dev/secure-exec",
+      "score": 84.14,
+      "category": "AI / LLM",
+      "stars": 910
+    },
+    {
+      "url": "https://github.com/rowboatlabs/rowboat",
+      "score": 83.61,
+      "category": "AI / LLM",
+      "stars": 15020
+    },
+    {
+      "url": "https://github.com/recommenders-team/recommenders",
+      "score": 83.4,
+      "category": "AI / LLM",
+      "stars": 21778
+    },
+    {
+      "url": "https://github.com/manojmallick/sigmap",
+      "score": 83.29,
+      "category": "AI / LLM",
+      "stars": 522
+    }
+  ],
+  "categoryDistribution": {
+    "AI / LLM": 50
+  },
+  "scoreStats": {
+    "min": 83.29,
+    "max": 93.14,
+    "mean": 87.04
+  }
+}

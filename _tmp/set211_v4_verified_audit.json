@@ -1,0 +1,434 @@
+{
+  "version": "v4",
+  "setNum": 211,
+  "searchCalls": 12,
+  "poolSize": 666,
+  "scoredCount": 153,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/originalankur/maptoposter",
+      "score": 69.0,
+      "category": "Maps / GIS / Location",
+      "stars": 13599,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/marceloprates/prettymaps",
+      "score": 67.0,
+      "category": "Maps / GIS / Location",
+      "stars": 12287,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/smeijer/leaflet-geosearch",
+      "score": 65.99,
+      "category": "Maps / GIS / Location",
+      "stars": 1126,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/baidu-maps/mcp",
+      "score": 65.56,
+      "category": "Maps / GIS / Location",
+      "stars": 433,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/elliotchance/orderedmap",
+      "score": 64.28,
+      "category": "Maps / GIS / Location",
+      "stars": 1023,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hubshashwat/letmelive",
+      "score": 46.6,
+      "category": "Health / Food / Fitness",
+      "stars": 9,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/IraSoro/peri",
+      "score": 44.49,
+      "category": "Health / Food / Fitness",
+      "stars": 97,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mxufc29/nbainjuries",
+      "score": 44.37,
+      "category": "Health / Food / Fitness",
+      "stars": 42,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mitchhankins01/oura-ring-mcp",
+      "score": 43.56,
+      "category": "AI / LLM",
+      "stars": 19,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/TysonStanley/furniture",
+      "score": 43.3,
+      "category": "Health / Food / Fitness",
+      "stars": 51,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nww/nightnight",
+      "score": 42.92,
+      "category": "Health / Food / Fitness",
+      "stars": 60,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/IsraelHikingMap/Site",
+      "score": 63.46,
+      "category": "Maps / GIS / Location",
+      "stars": 109,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/elfenware/badger",
+      "score": 39.48,
+      "category": "Health / Food / Fitness",
+      "stars": 54,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/JaeSeoKim/react-kakao-maps-sdk",
+      "score": 62.85,
+      "category": "Maps / GIS / Location",
+      "stars": 319,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/youngbryanyu/titan-health-app",
+      "score": 38.96,
+      "category": "Health / Food / Fitness",
+      "stars": 20,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/osm-americana/openstreetmap-americana",
+      "score": 62.26,
+      "category": "Maps / GIS / Location",
+      "stars": 238,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/svaponi/emdr-therapy-webapp",
+      "score": 37.52,
+      "category": "Health / Food / Fitness",
+      "stars": 28,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/UNDP-Data/geohub",
+      "score": 62.2,
+      "category": "Maps / GIS / Location",
+      "stars": 84,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/openplans/shareabouts",
+      "score": 62.09,
+      "category": "Maps / GIS / Location",
+      "stars": 285,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/googlemaps/extended-component-library",
+      "score": 61.7,
+      "category": "Maps / GIS / Location",
+      "stars": 186,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/GIScience/openrouteservice-app",
+      "score": 61.45,
+      "category": "Maps / GIS / Location",
+      "stars": 234,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pbugnion/gmaps",
+      "score": 61.23,
+      "category": "Maps / GIS / Location",
+      "stars": 767,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/DroneDB/Registry",
+      "score": 61.11,
+      "category": "Maps / GIS / Location",
+      "stars": 54,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/matplotlib/basemap",
+      "score": 60.94,
+      "category": "Maps / GIS / Location",
+      "stars": 812,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/rinigus/osmscout-server",
+      "score": 60.84,
+      "category": "Maps / GIS / Location",
+      "stars": 185,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/LarsWiegers/laravel-maps",
+      "score": 60.79,
+      "category": "Maps / GIS / Location",
+      "stars": 363,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/socib/Leaflet.TimeDimension",
+      "score": 60.62,
+      "category": "Maps / GIS / Location",
+      "stars": 451,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/graphhopper/graphhopper-maps",
+      "score": 59.93,
+      "category": "Maps / GIS / Location",
+      "stars": 161,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/vivet/GoogleApi",
+      "score": 59.91,
+      "category": "Maps / GIS / Location",
+      "stars": 584,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/riatelab/magrit",
+      "score": 59.88,
+      "category": "Maps / GIS / Location",
+      "stars": 157,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/podusowski/walkers",
+      "score": 59.63,
+      "category": "Maps / GIS / Location",
+      "stars": 274,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/geoql/v-maplibre",
+      "score": 59.34,
+      "category": "Maps / GIS / Location",
+      "stars": 52,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Rangi42/polished-map",
+      "score": 58.92,
+      "category": "Maps / GIS / Location",
+      "stars": 239,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/r-spatial/mapview",
+      "score": 58.79,
+      "category": "Maps / GIS / Location",
+      "stars": 549,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/googlemaps/js-three",
+      "score": 58.58,
+      "category": "Maps / GIS / Location",
+      "stars": 206,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/alexwohlbruck/parchment",
+      "score": 57.71,
+      "category": "Maps / GIS / Location",
+      "stars": 28,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/MakieOrg/Tyler.jl",
+      "score": 57.55,
+      "category": "Maps / GIS / Location",
+      "stars": 85,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/CelestialCartographers/Loenn",
+      "score": 57.31,
+      "category": "Maps / GIS / Location",
+      "stars": 224,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/geoadmin/web-mapviewer",
+      "score": 57.23,
+      "category": "Maps / GIS / Location",
+      "stars": 141,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/OSSPhilippines/philippines-travel-level-map",
+      "score": 56.83,
+      "category": "Maps / GIS / Location",
+      "stars": 143,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/JacksonAllan/CC",
+      "score": 56.8,
+      "category": "Maps / GIS / Location",
+      "stars": 465,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sonirico/vago",
+      "score": 56.67,
+      "category": "Maps / GIS / Location",
+      "stars": 101,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/eurostat/eurostat-map",
+      "score": 56.59,
+      "category": "Maps / GIS / Location",
+      "stars": 98,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/HackingLZ/maps_scanner",
+      "score": 56.54,
+      "category": "Maps / GIS / Location",
+      "stars": 93,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/PragTob/deep_merge",
+      "score": 56.23,
+      "category": "Maps / GIS / Location",
+      "stars": 118,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/volga-volga/react-native-yamap",
+      "score": 56.22,
+      "category": "Maps / GIS / Location",
+      "stars": 180,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/gagan-bansal/geojson2svg",
+      "score": 56.06,
+      "category": "Maps / GIS / Location",
+      "stars": 250,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/maximn/google-maps",
+      "score": 56.0,
+      "category": "Maps / GIS / Location",
+      "stars": 200,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/doersino/aerialbot",
+      "score": 54.96,
+      "category": "Maps / GIS / Location",
+      "stars": 233,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/giorgiabosello/google-maps-react-markers",
+      "score": 54.75,
+      "category": "Maps / GIS / Location",
+      "stars": 152,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Maps / GIS / Location": 41,
+    "Health / Food / Fitness": 8,
+    "AI / LLM": 1
+  },
+  "scoreStats": {
+    "min": 37.52,
+    "max": 69.0,
+    "mean": 56.74
+  },
+  "dockerCount": 13,
+  "hostname": "M17s-MacBook-Pro.local",
+  "python": "3.14.5",
+  "timing": {
+    "gather": 41.1,
+    "score": 0.0,
+    "confirm": 11.0,
+    "confirmedPool": 130,
+    "diversify": 0.7,
+    "total": 182.8
+  }
+}

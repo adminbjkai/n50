@@ -1,0 +1,334 @@
+{
+  "version": "v2",
+  "setNum": 182,
+  "searchCalls": 6,
+  "poolSize": 545,
+  "scoredCount": 299,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/lxf746/any-auto-register",
+      "score": 87.38,
+      "category": "AI / LLM",
+      "stars": 2769
+    },
+    {
+      "url": "https://github.com/bytedance/flowgram.ai",
+      "score": 87.32,
+      "category": "AI / LLM",
+      "stars": 8128
+    },
+    {
+      "url": "https://github.com/go-vgo/robotgo",
+      "score": 86.89,
+      "category": "AI / LLM",
+      "stars": 10727
+    },
+    {
+      "url": "https://github.com/clusterzx/paperless-ai",
+      "score": 86.59,
+      "category": "AI / LLM",
+      "stars": 5766
+    },
+    {
+      "url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+      "score": 86.37,
+      "category": "AI / LLM",
+      "stars": 2391
+    },
+    {
+      "url": "https://github.com/kangvcar/InfoSpider",
+      "score": 84.34,
+      "category": "Automation",
+      "stars": 8232
+    },
+    {
+      "url": "https://github.com/ory/dockertest",
+      "score": 83.21,
+      "category": "Automation",
+      "stars": 4519
+    },
+    {
+      "url": "https://github.com/opennaslab/kubespider",
+      "score": 82.91,
+      "category": "Automation",
+      "stars": 2190
+    },
+    {
+      "url": "https://github.com/appium/appium",
+      "score": 82.74,
+      "category": "Automation",
+      "stars": 21661
+    },
+    {
+      "url": "https://github.com/tox-dev/tox",
+      "score": 82.67,
+      "category": "Developer Tools / Utilities",
+      "stars": 3916
+    },
+    {
+      "url": "https://github.com/google/EarlGrey",
+      "score": 81.45,
+      "category": "Automation",
+      "stars": 5681
+    },
+    {
+      "url": "https://github.com/danger/danger",
+      "score": 80.87,
+      "category": "Developer Tools / Utilities",
+      "stars": 5680
+    },
+    {
+      "url": "https://github.com/getgauge/taiko",
+      "score": 79.66,
+      "category": "Books / Reading / Library",
+      "stars": 3671
+    },
+    {
+      "url": "https://github.com/cloudposse/atmos",
+      "score": 78.44,
+      "category": "DevOps / Infra",
+      "stars": 1313
+    },
+    {
+      "url": "https://github.com/sottlmarek/DevSecOps",
+      "score": 78.29,
+      "category": "Books / Reading / Library",
+      "stars": 6763
+    },
+    {
+      "url": "https://github.com/stephane/libmodbus",
+      "score": 78.23,
+      "category": "Books / Reading / Library",
+      "stars": 4178
+    },
+    {
+      "url": "https://github.com/xlwings/xlwings",
+      "score": 77.92,
+      "category": "Books / Reading / Library",
+      "stars": 3362
+    },
+    {
+      "url": "https://github.com/mono0926/LicensePlist",
+      "score": 77.89,
+      "category": "Developer Tools / Utilities",
+      "stars": 2528
+    },
+    {
+      "url": "https://github.com/macbre/phantomas",
+      "score": 77.69,
+      "category": "Monitoring / Observability",
+      "stars": 2263
+    },
+    {
+      "url": "https://github.com/joeseesun/qiaomu-anything-to-notebooklm",
+      "score": 77.55,
+      "category": "Media / Streaming",
+      "stars": 5297
+    },
+    {
+      "url": "https://github.com/fleschutz/PowerShell",
+      "score": 77.47,
+      "category": "Productivity / Tasks",
+      "stars": 3169
+    },
+    {
+      "url": "https://github.com/frain-dev/convoy",
+      "score": 76.81,
+      "category": "DevOps / Infra",
+      "stars": 2817
+    },
+    {
+      "url": "https://github.com/moul/assh",
+      "score": 76.45,
+      "category": "DevOps / Infra",
+      "stars": 3208
+    },
+    {
+      "url": "https://github.com/agronholm/apscheduler",
+      "score": 76.0,
+      "category": "Books / Reading / Library",
+      "stars": 7542
+    },
+    {
+      "url": "https://github.com/JustArchiNET/ArchiSteamFarm",
+      "score": 75.4,
+      "category": "Gaming / Game Servers",
+      "stars": 13416
+    },
+    {
+      "url": "https://github.com/release-it/release-it",
+      "score": 75.24,
+      "category": "Developer Tools / Utilities",
+      "stars": 8978
+    },
+    {
+      "url": "https://github.com/WordOps/WordOps",
+      "score": 75.12,
+      "category": "Developer Tools / Utilities",
+      "stars": 1557
+    },
+    {
+      "url": "https://github.com/Triple-T/gradle-play-publisher",
+      "score": 75.1,
+      "category": "E-commerce / Shop",
+      "stars": 4293
+    },
+    {
+      "url": "https://github.com/Minituff/nautical-backup",
+      "score": 75.04,
+      "category": "DevOps / Infra",
+      "stars": 442
+    },
+    {
+      "url": "https://github.com/growchief/growchief",
+      "score": 74.58,
+      "category": "Media / Streaming",
+      "stars": 3372
+    },
+    {
+      "url": "https://github.com/GodsScion/Auto_job_applier_linkedIn",
+      "score": 74.52,
+      "category": "Search / Indexing",
+      "stars": 2445
+    },
+    {
+      "url": "https://github.com/vincentneo/LosslessSwitcher",
+      "score": 74.38,
+      "category": "Media / Streaming",
+      "stars": 1870
+    },
+    {
+      "url": "https://github.com/yinkaisheng/Python-UIAutomation-for-Windows",
+      "score": 74.29,
+      "category": "CRM / Business",
+      "stars": 3514
+    },
+    {
+      "url": "https://github.com/safarsin/AutoRewarder",
+      "score": 74.24,
+      "category": "Search / Indexing",
+      "stars": 156
+    },
+    {
+      "url": "https://github.com/HaveAGitGat/Tdarr",
+      "score": 74.15,
+      "category": "Media / Streaming",
+      "stars": 4166
+    },
+    {
+      "url": "https://github.com/inlife/nexrender",
+      "score": 74.15,
+      "category": "Media / Streaming",
+      "stars": 1831
+    },
+    {
+      "url": "https://github.com/kalkih/mini-graph-card",
+      "score": 74.02,
+      "category": "Home Automation / IoT",
+      "stars": 3833
+    },
+    {
+      "url": "https://github.com/adnanh/webhook",
+      "score": 73.55,
+      "category": "DevOps / Infra",
+      "stars": 11911
+    },
+    {
+      "url": "https://github.com/ImranR98/Obtainium",
+      "score": 73.45,
+      "category": "Security / Auth",
+      "stars": 17696
+    },
+    {
+      "url": "https://github.com/thp/urlwatch",
+      "score": 73.43,
+      "category": "Communication / Social",
+      "stars": 3105
+    },
+    {
+      "url": "https://github.com/Coopydood/ultimate-macOS-KVM",
+      "score": 72.61,
+      "category": "CRM / Business",
+      "stars": 1569
+    },
+    {
+      "url": "https://github.com/nyxxbit/discord-quest-completer",
+      "score": 71.82,
+      "category": "Communication / Social",
+      "stars": 231
+    },
+    {
+      "url": "https://github.com/Hammerspoon/hammerspoon",
+      "score": 70.86,
+      "category": "Communication / Social",
+      "stars": 15587
+    },
+    {
+      "url": "https://github.com/hijack1r/CVE_PushService",
+      "score": 70.71,
+      "category": "Networking / VPN",
+      "stars": 47
+    },
+    {
+      "url": "https://github.com/MightyPirates/OpenComputers",
+      "score": 70.36,
+      "category": "Gaming / Game Servers",
+      "stars": 1715
+    },
+    {
+      "url": "https://github.com/kurogai/100-redteam-projects",
+      "score": 70.0,
+      "category": "Networking / VPN",
+      "stars": 2882
+    },
+    {
+      "url": "https://github.com/Foulest/RepairKit",
+      "score": 69.93,
+      "category": "Documents / PDF / Paperless",
+      "stars": 265
+    },
+    {
+      "url": "https://github.com/kalkih/mini-media-player",
+      "score": 68.85,
+      "category": "Home Automation / IoT",
+      "stars": 1703
+    },
+    {
+      "url": "https://github.com/Ocean-Industries-Concept-Lab/openbridge-webcomponents",
+      "score": 68.27,
+      "category": "CRM / Business",
+      "stars": 79
+    },
+    {
+      "url": "https://github.com/ipitio/backage",
+      "score": 67.46,
+      "category": "Monitoring / Observability",
+      "stars": 54
+    }
+  ],
+  "categoryDistribution": {
+    "AI / LLM": 5,
+    "Automation": 5,
+    "Developer Tools / Utilities": 5,
+    "Books / Reading / Library": 5,
+    "DevOps / Infra": 5,
+    "Media / Streaming": 5,
+    "CRM / Business": 3,
+    "Communication / Social": 3,
+    "Monitoring / Observability": 2,
+    "Gaming / Game Servers": 2,
+    "Search / Indexing": 2,
+    "Home Automation / IoT": 2,
+    "Networking / VPN": 2,
+    "Productivity / Tasks": 1,
+    "E-commerce / Shop": 1,
+    "Security / Auth": 1,
+    "Documents / PDF / Paperless": 1
+  },
+  "scoreStats": {
+    "min": 67.46,
+    "max": 87.38,
+    "mean": 76.73
+  }
+}

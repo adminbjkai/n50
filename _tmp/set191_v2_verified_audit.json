@@ -1,0 +1,332 @@
+{
+  "version": "v2",
+  "setNum": 191,
+  "searchCalls": 9,
+  "poolSize": 518,
+  "scoredCount": 341,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/vuestorefront/vue-storefront",
+      "score": 90.19,
+      "category": "E-commerce / Shop",
+      "stars": 10925
+    },
+    {
+      "url": "https://github.com/mercurjs/mercur",
+      "score": 89.12,
+      "category": "E-commerce / Shop",
+      "stars": 1602
+    },
+    {
+      "url": "https://github.com/salahlalami/idurar-erp-crm",
+      "score": 86.9,
+      "category": "Finance / Budget",
+      "stars": 8481
+    },
+    {
+      "url": "https://github.com/ssrajadh/sentrysearch",
+      "score": 86.84,
+      "category": "Media / Streaming",
+      "stars": 4296
+    },
+    {
+      "url": "https://github.com/infiniflow/infinity",
+      "score": 86.72,
+      "category": "AI / LLM",
+      "stars": 4573
+    },
+    {
+      "url": "https://github.com/alibaba/zvec",
+      "score": 85.17,
+      "category": "AI / LLM",
+      "stars": 11399
+    },
+    {
+      "url": "https://github.com/lunarphp/lunar",
+      "score": 85.1,
+      "category": "E-commerce / Shop",
+      "stars": 3555
+    },
+    {
+      "url": "https://github.com/unum-cloud/USearch",
+      "score": 85.08,
+      "category": "Image / Design / Creative",
+      "stars": 4175
+    },
+    {
+      "url": "https://github.com/swirlai/swirl-search",
+      "score": 84.13,
+      "category": "AI / LLM",
+      "stars": 3032
+    },
+    {
+      "url": "https://github.com/marqo-ai/marqo",
+      "score": 82.39,
+      "category": "AI / LLM",
+      "stars": 5021
+    },
+    {
+      "url": "https://github.com/SeekStorm/SeekStorm",
+      "score": 82.35,
+      "category": "AI / LLM",
+      "stars": 1893
+    },
+    {
+      "url": "https://github.com/RediSearch/RediSearch",
+      "score": 81.79,
+      "category": "Maps / GIS / Location",
+      "stars": 6158
+    },
+    {
+      "url": "https://github.com/qbittorrent/search-plugins",
+      "score": 80.26,
+      "category": "Search / Indexing",
+      "stars": 6278
+    },
+    {
+      "url": "https://github.com/reactioncommerce/reaction",
+      "score": 78.68,
+      "category": "DevOps / Infra",
+      "stars": 12409
+    },
+    {
+      "url": "https://github.com/nextapps-de/flexsearch",
+      "score": 78.47,
+      "category": "Books / Reading / Library",
+      "stars": 13729
+    },
+    {
+      "url": "https://github.com/F9y4ng/GreasyFork-Scripts",
+      "score": 78.03,
+      "category": "Developer Tools / Utilities",
+      "stars": 1479
+    },
+    {
+      "url": "https://github.com/aimeos/aimeos-typo3",
+      "score": 77.55,
+      "category": "Developer Tools / Utilities",
+      "stars": 1537
+    },
+    {
+      "url": "https://github.com/algolia/instantsearch-ios",
+      "score": 76.95,
+      "category": "Books / Reading / Library",
+      "stars": 613
+    },
+    {
+      "url": "https://github.com/elixpo/elixpo_chapter",
+      "score": 75.66,
+      "category": "DevOps / Infra",
+      "stars": 85
+    },
+    {
+      "url": "https://github.com/aimeos/aimeos-symfony",
+      "score": 75.53,
+      "category": "Developer Tools / Utilities",
+      "stars": 1519
+    },
+    {
+      "url": "https://github.com/WordPress/openverse",
+      "score": 74.74,
+      "category": "Media / Streaming",
+      "stars": 352
+    },
+    {
+      "url": "https://github.com/DO-SAY-GO/dn",
+      "score": 74.7,
+      "category": "Search / Indexing",
+      "stars": 3905
+    },
+    {
+      "url": "https://github.com/cyberytti/ToolHunt",
+      "score": 74.53,
+      "category": "Security / Auth",
+      "stars": 213
+    },
+    {
+      "url": "https://github.com/congminh1254/shopee-sdk",
+      "score": 74.09,
+      "category": "Developer Tools / Utilities",
+      "stars": 145
+    },
+    {
+      "url": "https://github.com/Smile-SA/elasticsuite",
+      "score": 74.09,
+      "category": "Search / Indexing",
+      "stars": 804
+    },
+    {
+      "url": "https://github.com/AnonCatalyst/Ominis-OSINT",
+      "score": 73.62,
+      "category": "Search / Indexing",
+      "stars": 579
+    },
+    {
+      "url": "https://github.com/apache/solr-operator",
+      "score": 73.31,
+      "category": "DevOps / Infra",
+      "stars": 280
+    },
+    {
+      "url": "https://github.com/jordansrowles/LeanCorpus",
+      "score": 73.18,
+      "category": "Search / Indexing",
+      "stars": 73
+    },
+    {
+      "url": "https://github.com/NotaInutilis/Super-SEO-Spam-Suppressor",
+      "score": 72.35,
+      "category": "Privacy / Ad-Blocking",
+      "stars": 281
+    },
+    {
+      "url": "https://github.com/RafaelGoulartB/next-ecommerce",
+      "score": 72.15,
+      "category": "E-commerce / Shop",
+      "stars": 482
+    },
+    {
+      "url": "https://github.com/teamtnt/tntsearch",
+      "score": 71.99,
+      "category": "Maps / GIS / Location",
+      "stars": 3199
+    },
+    {
+      "url": "https://github.com/algolia/algoliasearch-client-php",
+      "score": 71.78,
+      "category": "Maps / GIS / Location",
+      "stars": 697
+    },
+    {
+      "url": "https://github.com/nautilus-os/NautilusOS",
+      "score": 71.72,
+      "category": "Networking / VPN",
+      "stars": 108
+    },
+    {
+      "url": "https://github.com/librats/rats-search",
+      "score": 71.57,
+      "category": "Networking / VPN",
+      "stars": 1879
+    },
+    {
+      "url": "https://github.com/vanilophp/framework",
+      "score": 71.39,
+      "category": "E-commerce / Shop",
+      "stars": 866
+    },
+    {
+      "url": "https://github.com/indmdev/Free-Telegram-Store-Bot",
+      "score": 71.06,
+      "category": "Finance / Budget",
+      "stars": 121
+    },
+    {
+      "url": "https://github.com/quickwit-oss/tantivy",
+      "score": 70.56,
+      "category": "Books / Reading / Library",
+      "stars": 15410
+    },
+    {
+      "url": "https://github.com/algolia/instantsearch-android",
+      "score": 69.36,
+      "category": "Books / Reading / Library",
+      "stars": 158
+    },
+    {
+      "url": "https://github.com/SchizoDuckie/DuckieTV",
+      "score": 69.14,
+      "category": "Productivity / Tasks",
+      "stars": 1186
+    },
+    {
+      "url": "https://github.com/Hamza5/file-brain",
+      "score": 67.96,
+      "category": "Documents / PDF / Paperless",
+      "stars": 190
+    },
+    {
+      "url": "https://github.com/seart-group/ghs",
+      "score": 66.4,
+      "category": "Developer Tools / Utilities",
+      "stars": 193
+    },
+    {
+      "url": "https://github.com/kachkaev/njt",
+      "score": 66.08,
+      "category": "Maps / GIS / Location",
+      "stars": 318
+    },
+    {
+      "url": "https://github.com/magenx/Magento-2-docker-configuration",
+      "score": 65.95,
+      "category": "DevOps / Infra",
+      "stars": 40
+    },
+    {
+      "url": "https://github.com/algolia/algoliasearch-client-csharp",
+      "score": 64.51,
+      "category": "Books / Reading / Library",
+      "stars": 127
+    },
+    {
+      "url": "https://github.com/weaviate/typescript-client",
+      "score": 64.4,
+      "category": "Image / Design / Creative",
+      "stars": 100
+    },
+    {
+      "url": "https://github.com/opensemanticsearch/open-semantic-search",
+      "score": 61.4,
+      "category": "Documents / PDF / Paperless",
+      "stars": 1180
+    },
+    {
+      "url": "https://github.com/daonhan/Microservices-in-.NET",
+      "score": 60.9,
+      "category": "DevOps / Infra",
+      "stars": 13
+    },
+    {
+      "url": "https://github.com/FgForrest/evitaDB",
+      "score": 60.86,
+      "category": "Productivity / Tasks",
+      "stars": 68
+    },
+    {
+      "url": "https://github.com/BrenoFariasdaSilva/E-Commerces-WebScraper",
+      "score": 60.5,
+      "category": "Media / Streaming",
+      "stars": 23
+    },
+    {
+      "url": "https://github.com/CocaineCong/tangseng",
+      "score": 60.16,
+      "category": "Image / Design / Creative",
+      "stars": 140
+    }
+  ],
+  "categoryDistribution": {
+    "E-commerce / Shop": 5,
+    "AI / LLM": 5,
+    "Search / Indexing": 5,
+    "DevOps / Infra": 5,
+    "Books / Reading / Library": 5,
+    "Developer Tools / Utilities": 5,
+    "Maps / GIS / Location": 4,
+    "Media / Streaming": 3,
+    "Image / Design / Creative": 3,
+    "Finance / Budget": 2,
+    "Networking / VPN": 2,
+    "Productivity / Tasks": 2,
+    "Documents / PDF / Paperless": 2,
+    "Security / Auth": 1,
+    "Privacy / Ad-Blocking": 1
+  },
+  "scoreStats": {
+    "min": 60.16,
+    "max": 90.19,
+    "mean": 74.43
+  }
+}

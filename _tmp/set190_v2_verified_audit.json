@@ -1,0 +1,332 @@
+{
+  "version": "v2",
+  "setNum": 190,
+  "searchCalls": 6,
+  "poolSize": 543,
+  "scoredCount": 145,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/divriots/jampack",
+      "score": 79.47,
+      "category": "CMS / Website",
+      "stars": 1692
+    },
+    {
+      "url": "https://github.com/YunYouJun/valaxy",
+      "score": 78.12,
+      "category": "CMS / Website",
+      "stars": 1110
+    },
+    {
+      "url": "https://github.com/Planetable/Planet",
+      "score": 77.52,
+      "category": "CMS / Website",
+      "stars": 1807
+    },
+    {
+      "url": "https://github.com/11ty/eleventy-base-blog",
+      "score": 76.68,
+      "category": "CMS / Website",
+      "stars": 1526
+    },
+    {
+      "url": "https://github.com/ldqk/Masuit.MyBlogs",
+      "score": 76.37,
+      "category": "CMS / Website",
+      "stars": 1184
+    },
+    {
+      "url": "https://github.com/code-hike/codehike",
+      "score": 76.06,
+      "category": "Developer Tools / Utilities",
+      "stars": 5366
+    },
+    {
+      "url": "https://github.com/ChanceYu/front-end-rss",
+      "score": 75.4,
+      "category": "Notes / Knowledge",
+      "stars": 2879
+    },
+    {
+      "url": "https://github.com/blossom-editor/blossom",
+      "score": 75.23,
+      "category": "Notes / Knowledge",
+      "stars": 3797
+    },
+    {
+      "url": "https://github.com/typecho/typecho",
+      "score": 74.99,
+      "category": "Notes / Knowledge",
+      "stars": 12378
+    },
+    {
+      "url": "https://github.com/veeso/blogatto",
+      "score": 74.15,
+      "category": "Notes / Knowledge",
+      "stars": 91
+    },
+    {
+      "url": "https://github.com/cxro/astro-whono",
+      "score": 74.01,
+      "category": "Notes / Knowledge",
+      "stars": 135
+    },
+    {
+      "url": "https://github.com/KATO-Hiro/AtCoderClans",
+      "score": 70.71,
+      "category": "Books / Reading / Library",
+      "stars": 139
+    },
+    {
+      "url": "https://github.com/izuolan/notionic",
+      "score": 67.59,
+      "category": "Productivity / Tasks",
+      "stars": 339
+    },
+    {
+      "url": "https://github.com/krishnaacharyaa/wanderlust",
+      "score": 67.51,
+      "category": "Developer Tools / Utilities",
+      "stars": 298
+    },
+    {
+      "url": "https://github.com/eiblog/eiblog",
+      "score": 67.41,
+      "category": "Networking / VPN",
+      "stars": 693
+    },
+    {
+      "url": "https://github.com/Guizimo/cova",
+      "score": 67.31,
+      "category": "Image / Design / Creative",
+      "stars": 120
+    },
+    {
+      "url": "https://github.com/alemem64/Noxionite",
+      "score": 65.59,
+      "category": "Productivity / Tasks",
+      "stars": 74
+    },
+    {
+      "url": "https://github.com/vntechies/blog",
+      "score": 65.54,
+      "category": "AI / LLM",
+      "stars": 77
+    },
+    {
+      "url": "https://github.com/laolunsi/spring-boot-examples",
+      "score": 64.6,
+      "category": "Networking / VPN",
+      "stars": 281
+    },
+    {
+      "url": "https://github.com/guofei9987/guofei9987.github.io",
+      "score": 64.33,
+      "category": "Books / Reading / Library",
+      "stars": 127
+    },
+    {
+      "url": "https://github.com/memfault/interrupt",
+      "score": 63.07,
+      "category": "Developer Tools / Utilities",
+      "stars": 544
+    },
+    {
+      "url": "https://github.com/cheese10yun/blog-sample",
+      "score": 62.62,
+      "category": "Developer Tools / Utilities",
+      "stars": 374
+    },
+    {
+      "url": "https://github.com/deepset-ai/haystack-home",
+      "score": 62.58,
+      "category": "AI / LLM",
+      "stars": 21
+    },
+    {
+      "url": "https://github.com/MariaLetta/free-gophers-pack",
+      "score": 62.16,
+      "category": "Media / Streaming",
+      "stars": 3957
+    },
+    {
+      "url": "https://github.com/gadingnst/gading.dev",
+      "score": 62.04,
+      "category": "Dashboard / Homelab",
+      "stars": 125
+    },
+    {
+      "url": "https://github.com/lifeparticle/lifeparticle",
+      "score": 61.42,
+      "category": "Automation",
+      "stars": 190
+    },
+    {
+      "url": "https://github.com/skerkour/kerkour.com",
+      "score": 61.25,
+      "category": "Security / Auth",
+      "stars": 482
+    },
+    {
+      "url": "https://github.com/elm/elm-lang.org",
+      "score": 60.47,
+      "category": "Developer Tools / Utilities",
+      "stars": 2012
+    },
+    {
+      "url": "https://github.com/coatless/quarto-webr",
+      "score": 60.05,
+      "category": "Books / Reading / Library",
+      "stars": 440
+    },
+    {
+      "url": "https://github.com/xhyrom/discord-datamining",
+      "score": 59.85,
+      "category": "Communication / Social",
+      "stars": 64
+    },
+    {
+      "url": "https://github.com/CaoMeiYouRen/momei",
+      "score": 59.18,
+      "category": "AI / LLM",
+      "stars": 9
+    },
+    {
+      "url": "https://github.com/teamssix/twiki",
+      "score": 57.29,
+      "category": "Security / Auth",
+      "stars": 1049
+    },
+    {
+      "url": "https://github.com/TomasVotruba/tomasvotruba.com",
+      "score": 56.61,
+      "category": "AI / LLM",
+      "stars": 90
+    },
+    {
+      "url": "https://github.com/FriendsOfFlarum/blog",
+      "score": 56.36,
+      "category": "Communication / Social",
+      "stars": 52
+    },
+    {
+      "url": "https://github.com/RosaErick/erickrosa.dev",
+      "score": 55.63,
+      "category": "Security / Auth",
+      "stars": 28
+    },
+    {
+      "url": "https://github.com/yinguangyao/blog",
+      "score": 55.08,
+      "category": "Image / Design / Creative",
+      "stars": 315
+    },
+    {
+      "url": "https://github.com/nonacosa/Blog",
+      "score": 52.08,
+      "category": "DevOps / Infra",
+      "stars": 677
+    },
+    {
+      "url": "https://github.com/MoeraOrg/moera-client-react",
+      "score": 47.31,
+      "category": "Networking / VPN",
+      "stars": 16
+    },
+    {
+      "url": "https://github.com/vikyd/note",
+      "score": 46.45,
+      "category": "Maps / GIS / Location",
+      "stars": 489
+    },
+    {
+      "url": "https://github.com/Qexo/Qexo",
+      "score": 75.1,
+      "category": "CMS / Website",
+      "stars": 1943
+    },
+    {
+      "url": "https://github.com/monkey-papa/POEMON-BLOG",
+      "score": 72.87,
+      "category": "Notes / Knowledge",
+      "stars": 381
+    },
+    {
+      "url": "https://github.com/zxysilent/blog",
+      "score": 59.96,
+      "category": "Developer Tools / Utilities",
+      "stars": 722
+    },
+    {
+      "url": "https://github.com/OpenLiveWriter/OpenLiveWriter",
+      "score": 73.22,
+      "category": "CMS / Website",
+      "stars": 2501
+    },
+    {
+      "url": "https://github.com/srid/neuron",
+      "score": 71.75,
+      "category": "Notes / Knowledge",
+      "stars": 1550
+    },
+    {
+      "url": "https://github.com/ralscha/blog",
+      "score": 57.26,
+      "category": "Developer Tools / Utilities",
+      "stars": 220
+    },
+    {
+      "url": "https://github.com/fesiong/anqicms",
+      "score": 73.21,
+      "category": "CMS / Website",
+      "stars": 544
+    },
+    {
+      "url": "https://github.com/linkdotnet/Blog",
+      "score": 71.53,
+      "category": "Notes / Knowledge",
+      "stars": 422
+    },
+    {
+      "url": "https://github.com/ralscha/blog2019",
+      "score": 54.71,
+      "category": "Developer Tools / Utilities",
+      "stars": 117
+    },
+    {
+      "url": "https://github.com/bolo-blog/bolo-solo",
+      "score": 72.66,
+      "category": "CMS / Website",
+      "stars": 1342
+    },
+    {
+      "url": "https://github.com/hutusi/amytis",
+      "score": 71.46,
+      "category": "Notes / Knowledge",
+      "stars": 107
+    }
+  ],
+  "categoryDistribution": {
+    "CMS / Website": 9,
+    "Notes / Knowledge": 9,
+    "Developer Tools / Utilities": 8,
+    "AI / LLM": 4,
+    "Books / Reading / Library": 3,
+    "Networking / VPN": 3,
+    "Security / Auth": 3,
+    "Productivity / Tasks": 2,
+    "Image / Design / Creative": 2,
+    "Communication / Social": 2,
+    "Media / Streaming": 1,
+    "Dashboard / Homelab": 1,
+    "Automation": 1,
+    "DevOps / Infra": 1,
+    "Maps / GIS / Location": 1
+  },
+  "scoreStats": {
+    "min": 46.45,
+    "max": 79.47,
+    "mean": 65.88
+  }
+}

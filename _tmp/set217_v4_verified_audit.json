@@ -1,0 +1,440 @@
+{
+  "version": "v4",
+  "setNum": 217,
+  "searchCalls": 14,
+  "poolSize": 633,
+  "scoredCount": 172,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/liujuntao123/smart-draw",
+      "score": 81.14,
+      "category": "AI / LLM",
+      "stars": 422,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cracker0dks/whiteboard",
+      "score": 74.87,
+      "category": "Image / Design / Creative",
+      "stars": 822,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/foundation-interface/graphologue",
+      "score": 73.02,
+      "category": "AI / LLM",
+      "stars": 355,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kiraaziz/Neoflow",
+      "score": 72.44,
+      "category": "AI / LLM",
+      "stars": 252,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/simonkurtz-MSFT/drawio-mcp-server",
+      "score": 70.4,
+      "category": "AI / LLM",
+      "stars": 75,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Azim-Ahmed/Automation-workflow",
+      "score": 70.03,
+      "category": "Developer Tools / Utilities",
+      "stars": 312,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nine19een/CanvasCast",
+      "score": 67.99,
+      "category": "Image / Design / Creative",
+      "stars": 126,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lubusIN/gymie",
+      "score": 67.92,
+      "category": "CRM / Business",
+      "stars": 469,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Auxx-Ai/auxx-ai",
+      "score": 67.87,
+      "category": "AI / LLM",
+      "stars": 23,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/koedame/rails-mermaid_erd",
+      "score": 66.99,
+      "category": "Image / Design / Creative",
+      "stars": 181,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wieslawsoltes/Core2D",
+      "score": 66.61,
+      "category": "Image / Design / Creative",
+      "stars": 1175,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/digitalfox/pydici",
+      "score": 66.57,
+      "category": "CRM / Business",
+      "stars": 146,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/j0ono0/pinout",
+      "score": 66.56,
+      "category": "Image / Design / Creative",
+      "stars": 431,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/esimov/diagram",
+      "score": 64.89,
+      "category": "Developer Tools / Utilities",
+      "stars": 896,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/demike/TsUML2",
+      "score": 64.2,
+      "category": "Developer Tools / Utilities",
+      "stars": 328,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/getbrevo/brevo-node",
+      "score": 62.01,
+      "category": "CRM / Business",
+      "stars": 119,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Roskus/prospero-flow-crm",
+      "score": 61.77,
+      "category": "CRM / Business",
+      "stars": 68,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/tomatophp/filament-invoices",
+      "score": 61.08,
+      "category": "CRM / Business",
+      "stars": 104,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pb10005/diagram-vue",
+      "score": 58.96,
+      "category": "Developer Tools / Utilities",
+      "stars": 104,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/talsma-ict/umldoclet",
+      "score": 57.22,
+      "category": "Developer Tools / Utilities",
+      "stars": 256,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/project59/mintype",
+      "score": 48.15,
+      "category": "Notes / Knowledge",
+      "stars": 49,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AstraDraw/astradraw",
+      "score": 46.85,
+      "category": "Media / Streaming",
+      "stars": 17,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/BasicPrimitives/javascript",
+      "score": 46.26,
+      "category": "Documents / PDF / Paperless",
+      "stars": 65,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nextcloud/integration_whiteboard",
+      "score": 39.73,
+      "category": "Files / Storage / Backup",
+      "stars": 57,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/azamjonbro/Smart-Talim",
+      "score": 30.27,
+      "category": "Security / Auth",
+      "stars": 34,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/BusyBee3333/Go-High-Level-MCP-2026-Complete",
+      "score": 65.96,
+      "category": "AI / LLM",
+      "stars": 77,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/terrastruct/text-to-diagram-site",
+      "score": 64.95,
+      "category": "Image / Design / Creative",
+      "stars": 549,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mplatzer/BTYDplus",
+      "score": 60.22,
+      "category": "CRM / Business",
+      "stars": 188,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/JBZoo/Composer-Graph",
+      "score": 57.05,
+      "category": "Developer Tools / Utilities",
+      "stars": 67,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/excalimate/excalimate",
+      "score": 65.64,
+      "category": "AI / LLM",
+      "stars": 30,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kostyay/pi-k-excalidraw",
+      "score": 64.47,
+      "category": "Image / Design / Creative",
+      "stars": 62,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/getbrevo/brevo-php",
+      "score": 59.66,
+      "category": "CRM / Business",
+      "stars": 100,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/miroapp/app-examples",
+      "score": 57.03,
+      "category": "Developer Tools / Utilities",
+      "stars": 418,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jeddict/jeddict-modeler",
+      "score": 63.88,
+      "category": "Image / Design / Creative",
+      "stars": 403,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mehmetmasa/finova",
+      "score": 61.83,
+      "category": "AI / LLM",
+      "stars": 33,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Klickbee/klickbee-crm",
+      "score": 58.82,
+      "category": "CRM / Business",
+      "stars": 56,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dan-madsen/AzNetworkDiagram",
+      "score": 56.88,
+      "category": "Developer Tools / Utilities",
+      "stars": 66,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/eclipse-glsp/glsp",
+      "score": 62.75,
+      "category": "Image / Design / Creative",
+      "stars": 233,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/yastman/rag",
+      "score": 61.41,
+      "category": "AI / LLM",
+      "stars": 10,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/polirium/polirium",
+      "score": 57.67,
+      "category": "CRM / Business",
+      "stars": 40,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/DrMarkusVoss/pumla",
+      "score": 55.93,
+      "category": "Developer Tools / Utilities",
+      "stars": 137,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/prmr/JetUML",
+      "score": 62.67,
+      "category": "Image / Design / Creative",
+      "stars": 681,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/baryhuang/mcp-hubspot",
+      "score": 60.85,
+      "category": "AI / LLM",
+      "stars": 126,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/thinkingreed-inc/F-RevoCRM",
+      "score": 56.74,
+      "category": "CRM / Business",
+      "stars": 57,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lunogram/platform",
+      "score": 55.63,
+      "category": "Developer Tools / Utilities",
+      "stars": 17,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ChangeYourself0613/Solana-Arbitrage-Bot",
+      "score": 62.3,
+      "category": "Image / Design / Creative",
+      "stars": 290,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sales-skills/sales",
+      "score": 58.69,
+      "category": "AI / LLM",
+      "stars": 53,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/KaraBharat/shadcn-crm-dashboard",
+      "score": 55.92,
+      "category": "CRM / Business",
+      "stars": 179,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ozma-io/ozma",
+      "score": 52.93,
+      "category": "Developer Tools / Utilities",
+      "stars": 46,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/asciidoctor/asciidoctor-kroki",
+      "score": 62.04,
+      "category": "Image / Design / Creative",
+      "stars": 173,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Image / Design / Creative": 12,
+    "AI / LLM": 11,
+    "Developer Tools / Utilities": 11,
+    "CRM / Business": 11,
+    "Notes / Knowledge": 1,
+    "Media / Streaming": 1,
+    "Documents / PDF / Paperless": 1,
+    "Files / Storage / Backup": 1,
+    "Security / Auth": 1
+  },
+  "scoreStats": {
+    "min": 30.27,
+    "max": 81.14,
+    "mean": 61.11
+  },
+  "dockerCount": 40,
+  "hostname": "M17s-MacBook-Pro.local",
+  "python": "3.14.5",
+  "timing": {
+    "gather": 41.1,
+    "score": 0.0,
+    "confirm": 26.6,
+    "confirmedPool": 130,
+    "diversify": 0.5,
+    "total": 198.2
+  }
+}

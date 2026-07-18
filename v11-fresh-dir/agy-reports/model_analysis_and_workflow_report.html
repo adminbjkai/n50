@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion50 Runner Analysis: v11 Model Usage & Workflow Report</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0b0f19;
+      --card-bg: rgba(17, 24, 39, 0.7);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --text-highlight: #ffffff;
+      --primary: #6366f1;
+      --primary-hover: #4f46e5;
+      --secondary: #0d9488;
+      --accent: #d97706;
+      --danger: #ef4444;
+      --success: #10b981;
+      --fresh-color: #a855f7;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.1) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(13, 148, 136, 0.08) 0px, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .badge-v11 {
+      background: linear-gradient(135deg, var(--primary), #a855f7);
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--text-highlight);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    section {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.6rem;
+      color: var(--text-highlight);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.04);
+      padding-bottom: 0.5rem;
+    }
+
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 24px;
+      background: var(--primary);
+      border-radius: 2px;
+    }
+
+    h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.2rem;
+      color: var(--text-highlight);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    strong {
+      color: var(--text-highlight);
+    }
+
+    /* Model Grid */
+    .model-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .model-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .model-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .model-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(99, 102, 241, 0.3);
+    }
+
+    .model-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .model-title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--text-highlight);
+    }
+
+    .provider-badge {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .provider-anthropic {
+      background: rgba(249, 115, 22, 0.15);
+      color: #f97316;
+      border: 1px solid rgba(249, 115, 22, 0.3);
+    }
+
+    .provider-openrouter {
+      background: rgba(99, 102, 241, 0.15);
+      color: #818cf8;
+      border: 1px solid rgba(99, 102, 241, 0.3);
+    }
+
+    .model-meta {
+      font-family: monospace;
+      font-size: 0.85rem;
+      background: rgba(0, 0, 0, 0.25);
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      color: #a7f3d0;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .note-box {
+      background: rgba(168, 85, 247, 0.08);
+      border-left: 4px solid var(--fresh-color);
+      border-radius: 0 8px 8px 0;
+      padding: 1.25rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .note-box-title {
+      font-weight: 600;
+      color: var(--text-highlight);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+      background: rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 1rem 1.25rem;
+      text-align: left;
+    }
+
+    th {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text-highlight);
+      font-weight: 600;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    td {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      color: var(--text-muted);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      color: var(--text-highlight);
+      background: rgba(255, 255, 255, 0.01);
+    }
+
+    /* List items */
+    .dependency-list {
+      list-style-type: none;
+    }
+
+    .dependency-item {
+      background: rgba(255, 255, 255, 0.015);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .dependency-name {
+      font-family: monospace;
+      font-weight: 600;
+      color: #38bdf8;
+    }
+
+    .dependency-desc {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    /* Workflow Steps */
+    .workflow {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    .step-card {
+      display: flex;
+      gap: 1.25rem;
+      background: rgba(255, 255, 255, 0.01);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      border-radius: 12px;
+      padding: 1.25rem;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .step-card:hover {
+      background: rgba(255, 255, 255, 0.02);
+      border-color: rgba(99, 102, 241, 0.2);
+    }
+
+    .step-num {
+      width: 32px;
+      height: 32px;
+      background: var(--primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      flex-shrink: 0;
+      font-size: 0.9rem;
+    }
+
+    .step-content h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .step-content p {
+      margin-bottom: 0;
+      font-size: 0.92rem;
+    }
+
+    /* Badges */
+    .inline-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin: 0 0.2rem;
+    }
+    
+    .badge-docker {
+      background: rgba(14, 165, 233, 0.15);
+      color: #0ea5e9;
+      border: 1px solid rgba(14, 165, 233, 0.3);
+    }
+
+    .badge-awesome {
+      background: rgba(234, 179, 8, 0.15);
+      color: #eab308;
+      border: 1px solid rgba(234, 179, 8, 0.3);
+    }
+
+    .badge-fresh {
+      background: rgba(168, 85, 247, 0.15);
+      color: #a855f7;
+      border: 1px solid rgba(168, 85, 247, 0.3);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--card-border);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge-v11">Version v11</span>
+      <h1>Notion50 Runner Analysis</h1>
+      <p class="subtitle">v11 Model Integration, Shared Plumbing Architecture & Execution Flow Report</p>
+    </header>
+
+    <!-- SECTION 1: MODELS -->
+    <section id="models">
+      <h2>AI Model Usage & Enrichment Mechanics</h2>
+      <p>
+        The <code>run_next_set_v11.py</code> script utilizes generative AI model enrichment to classify, filter, and score candidate self-hosted apps. This phase is triggered dynamically when the <code>--enrich</code> CLI flag is provided.
+      </p>
+
+      <div class="model-cards">
+        <div class="model-card">
+          <div class="model-header">
+            <span class="model-title">Claude Haiku 4.5</span>
+            <span class="provider-badge provider-anthropic">Anthropic</span>
+          </div>
+          <span class="model-meta">claude-haiku-4-5</span>
+          <p>
+            <strong>Primary Model</strong>. Called directly via urllib with native HTTP requests. Delivers high accuracy utilizing structured output constraints (JSON schema formatting).
+          </p>
+        </div>
+
+        <div class="model-card">
+          <div class="model-header">
+            <span class="model-title">Nvidia Nemotron 3</span>
+            <span class="provider-badge provider-openrouter">OpenRouter</span>
+          </div>
+          <span class="model-meta">nvidia/nemotron-3-ultra-550b-a55b:free</span>
+          <p>
+            <strong>Fallback Model</strong>. Utilized automatically if Anthropic API keys are not detected, but OpenRouter keys are present. Classifies candidates using a system command prompt.
+          </p>
+        </div>
+      </div>
+
+      <h3>Enrichment Process & Scoring Effects</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Key Metric / Action</th>
+            <th>Description & Rules</th>
+            <th>Scoring / System Impact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Self-Hostable Verification</strong></td>
+            <td>LLM inspects metadata to verify if the repository is a deployable app/service rather than a library or CLI utility.</td>
+            <td>If classified as non-self-hostable, a heavy penalty of <strong>-15.0</strong> points is applied, filtering it out.</td>
+          </tr>
+          <tr>
+            <td><strong>Category Fitting</strong></td>
+            <td>Assigns repositories to a strict list of allowed categories. Fits to standard options without hallucinating new names.</td>
+            <td>Maintains balanced diversity across published category distributions.</td>
+          </tr>
+          <tr>
+            <td><strong>Novelty Assessment</strong></td>
+            <td>LLM grades repository novelty from 1 (generic clone) to 5 (highly novel/rare utility).</td>
+            <td>Adds positive or negative adjustments (calculated as <code>(novelty - 3) * novelty_weight</code>).</td>
+          </tr>
+          <tr>
+            <td><strong>Interest Hook Draft</strong></td>
+            <td>Generates a succinct, feature-focused user-value hook of 15 words or less (no marketing filler).</td>
+            <td>Published directly onto the Notion set page metadata.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="note-box">
+        <div class="note-box-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Smart Bypass Optimization
+        </div>
+        <p>
+          To save API call limits and ensure optimal performance, any repository that is already cataloged in the curated <span class="inline-badge badge-awesome">awesome-selfhosted-data</span> index <strong>AND</strong> passes Docker signature verification is bypassed completely, skipping LLM enrichment under the source label <code>bypass</code>.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 2: RELATIONSHIP -->
+    <section id="relationship">
+      <h2>Dependency Analysis: Plumbing Architecture</h2>
+      <p>
+        The script <code>run_next_set.py</code> is <strong>not just a reference snapshot</strong>. It is imported directly inside <code>run_next_set_v11.py</code> as <code>v1</code> and acts as a core dependencies and utility package for v11.
+      </p>
+
+      <ul class="dependency-list">
+        <li class="dependency-item">
+          <span class="dependency-name">Constants & Paths (v1.TRACKER, v1.MASTER_CSV, v1.AUDIT_DIR)</span>
+          <span class="dependency-desc">Inherits exact paths to the JSON state tracker, master CSV files, and temp folder structures.</span>
+        </li>
+        <li class="dependency-item">
+          <span class="dependency-name">Notion Request Plumbing (v1.load_notion_key, v1.notion_request, v1.append_blocks, v1.rt)</span>
+          <span class="dependency-desc">Reuses HTTP communication functions, rich text construct payloads, and credentials resolution handlers.</span>
+        </li>
+        <li class="dependency-item">
+          <span class="dependency-name">Reconciliation & Syncing (v1.reconcile_with_notion, v1.write_tracker)</span>
+          <span class="dependency-desc">Imports the sync logic that queries Notion for live pages to rebuild and dedup local logs.</span>
+        </li>
+        <li class="dependency-item">
+          <span class="dependency-name">Canonical Verification (v1.canonical_repo)</span>
+          <span class="dependency-desc">Uses the v1 engine to resolve GitHub redirects, query repository stats, and eliminate dead/forked links.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SECTION 3: WORKFLOW -->
+    <section id="workflow-steps">
+      <h2>Runner Execution Pipeline</h2>
+      <p>
+        The runner operates in a sequential, multi-step pipeline built to run quickly while respecting API limit controls.
+      </p>
+
+      <div class="workflow">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h3>State Synchronization</h3>
+            <p>Runs a reconciliation pass against Notion live blocks to retrieve all published repository URLs. Ensures no duplicates ever cross sets and resolves page title overlaps.</p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h3>Bench Seed & Bounded Search</h3>
+            <p>Loads previously vetted candidates from a bench cache file (<code>bench_v11.json</code>) to reduce network requests. Performs rotating REST sweeps for quality and fresh categories, exiting early once quotas are met (capped at 60 searches).</p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h3>Heuristic Filtering & Scoring</h3>
+            <p>Discards non-app structures (e.g. cheatsheets, books, tutorials). Applies a gentle "fresh gem" gate for young/low-star targets, and calculates multi-factor popularity/activity scores.</p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h3>GraphQL Live Confirmation</h3>
+            <p>Checks the status of the top 130 shortlisted candidates in batches of 35 using GitHub's GraphQL API. Looks up files in the repository tree to check for Docker configuration signals (e.g. <code>docker-compose.yml</code>).</p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h3>AI Enrichment</h3>
+            <p>If enrichment is active, passes ambiguous finalists to Claude Haiku or Nemotron. Discards non-viable apps and applies novelty adjustments.</p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">6</div>
+          <div class="step-content">
+            <h3>Diversity Balancing & Quotas</h3>
+            <p>Executes a category round-robin selection. If the selection contains fewer fresh gems than the configured <code>--fresh-quota</code>, it swaps out lowest-scoring popular projects for fresh items.</p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">7</div>
+          <div class="step-content">
+            <h3>Publication & Archiving</h3>
+            <p>Pushes the page blocks to Notion, appends selections to the master CSV database, saves unused candidates to the <code>bench_v11.json</code> cache for the next run, and dumps audit files.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Prepared by Antigravity AI Code Companion • 2026</p>
+    </footer>
+  </div>
+</body>
+</html>

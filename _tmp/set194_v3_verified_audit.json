@@ -1,0 +1,428 @@
+{
+  "version": "v3",
+  "setNum": 194,
+  "searchCalls": 13,
+  "poolSize": 649,
+  "scoredCount": 288,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/kewonit/aeris",
+      "score": 94.94,
+      "category": "Maps / GIS / Location",
+      "stars": 314,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/yousifamanuel/terraink",
+      "score": 91.0,
+      "category": "Maps / GIS / Location",
+      "stars": 3332,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/maplibre/maputnik",
+      "score": 88.29,
+      "category": "Maps / GIS / Location",
+      "stars": 2565,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/maplibre/martin",
+      "score": 86.04,
+      "category": "Maps / GIS / Location",
+      "stars": 3709,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/WebODM/WebODM",
+      "score": 85.86,
+      "category": "Maps / GIS / Location",
+      "stars": 3988,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nextcloud/maps",
+      "score": 70.54,
+      "category": "Media / Streaming",
+      "stars": 590,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/carekit-apple/CareKit",
+      "score": 70.06,
+      "category": "Health / Food / Fitness",
+      "stars": 2519,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/tcgoetz/GarminDB",
+      "score": 69.56,
+      "category": "Health / Food / Fitness",
+      "stars": 3152,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ohuc/CaffeineHealth",
+      "score": 69.43,
+      "category": "Health / Food / Fitness",
+      "stars": 92,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/PastVu/pastvu",
+      "score": 69.42,
+      "category": "Media / Streaming",
+      "stars": 160,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/om1cael/Hidroly",
+      "score": 69.11,
+      "category": "Health / Food / Fitness",
+      "stars": 110,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dsfsi/covid19za",
+      "score": 68.45,
+      "category": "Health / Food / Fitness",
+      "stars": 258,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ohs-foundation/android-fhir",
+      "score": 65.55,
+      "category": "Developer Tools / Utilities",
+      "stars": 592,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/leecdiang/Apple-Health-Pro",
+      "score": 64.63,
+      "category": "AI / LLM",
+      "stars": 64,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ubicomplab/rPPG-Toolbox",
+      "score": 62.02,
+      "category": "AI / LLM",
+      "stars": 1121,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/muktihari/fit",
+      "score": 62.01,
+      "category": "Developer Tools / Utilities",
+      "stars": 164,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/thinkwee/HiMe",
+      "score": 61.92,
+      "category": "AI / LLM",
+      "stars": 41,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cygnusb/coros-mcp",
+      "score": 61.91,
+      "category": "AI / LLM",
+      "stars": 92,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/remotebiosensing/rppg",
+      "score": 61.79,
+      "category": "AI / LLM",
+      "stars": 332,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cataseven/Google-Map-Card",
+      "score": 61.57,
+      "category": "Home Automation / IoT",
+      "stars": 100,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wp-cli/doctor-command",
+      "score": 57.72,
+      "category": "Developer Tools / Utilities",
+      "stars": 166,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nathan-gs/ha-map-card",
+      "score": 57.66,
+      "category": "Home Automation / IoT",
+      "stars": 116,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sepandhaghighi/nafas",
+      "score": 54.85,
+      "category": "Developer Tools / Utilities",
+      "stars": 196,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/IPdotSetAF/PingDog",
+      "score": 51.81,
+      "category": "Monitoring / Observability",
+      "stars": 24,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wrkout/exercises.json",
+      "score": 47.5,
+      "category": "Developer Tools / Utilities",
+      "stars": 592,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/stenic/k8status",
+      "score": 44.09,
+      "category": "Monitoring / Observability",
+      "stars": 8,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aws-samples/aws-health-aware",
+      "score": 41.83,
+      "category": "Monitoring / Observability",
+      "stars": 372,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/thuhci/RingTool",
+      "score": 41.7,
+      "category": "Monitoring / Observability",
+      "stars": 31,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/BEEMB/Battery-Health-Monitor",
+      "score": 34.89,
+      "category": "Monitoring / Observability",
+      "stars": 33,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/placemark/placemark",
+      "score": 84.99,
+      "category": "Maps / GIS / Location",
+      "stars": 1439,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/MilosRasic98/OpenCardiographySignalMeasuringDevice",
+      "score": 67.99,
+      "category": "Health / Food / Fitness",
+      "stars": 334,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/simonprovost/scikit-longitudinal",
+      "score": 60.03,
+      "category": "AI / LLM",
+      "stars": 81,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/exercemus/exercises",
+      "score": 37.48,
+      "category": "Developer Tools / Utilities",
+      "stars": 45,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/erayfazilordanuc/health-and-exercise-app",
+      "score": 33.86,
+      "category": "Monitoring / Observability",
+      "stars": 8,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/visgl/deck.gl",
+      "score": 83.5,
+      "category": "Maps / GIS / Location",
+      "stars": 14267,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/agencyenterprise/react-native-health",
+      "score": 67.63,
+      "category": "Health / Food / Fitness",
+      "stars": 1145,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/diegoscarabelli/garmin-health-data",
+      "score": 59.63,
+      "category": "AI / LLM",
+      "stars": 70,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/uldyssian-sh/vmware-vsan-health",
+      "score": 33.44,
+      "category": "Monitoring / Observability",
+      "stars": 12,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ianho7/maptoposter-online",
+      "score": 83.45,
+      "category": "Maps / GIS / Location",
+      "stars": 696,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wger-project/flutter",
+      "score": 67.54,
+      "category": "Health / Food / Fitness",
+      "stars": 925,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/maps-as-data/MapReader",
+      "score": 58.55,
+      "category": "AI / LLM",
+      "stars": 141,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hishizuka/pizero_bikecomputer",
+      "score": 82.98,
+      "category": "Maps / GIS / Location",
+      "stars": 1213,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/shubhamsinghshubham777/KHealth",
+      "score": 65.74,
+      "category": "Health / Food / Fitness",
+      "stars": 87,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/f5/unovis",
+      "score": 82.1,
+      "category": "Maps / GIS / Location",
+      "stars": 2794,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/DanielJamesTronca/SleepChartKit",
+      "score": 64.63,
+      "category": "Health / Food / Fitness",
+      "stars": 236,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zbycz/osmapp",
+      "score": 79.99,
+      "category": "Maps / GIS / Location",
+      "stars": 366,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jimmykane/quantified-self",
+      "score": 64.41,
+      "category": "Health / Food / Fitness",
+      "stars": 218,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/MIERUNE/svelte-maplibre-gl",
+      "score": 79.05,
+      "category": "Maps / GIS / Location",
+      "stars": 315,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/WhyAsh5114/MyFit",
+      "score": 63.26,
+      "category": "Health / Food / Fitness",
+      "stars": 136,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/maplibre/maplibre-native",
+      "score": 78.95,
+      "category": "Maps / GIS / Location",
+      "stars": 2021,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Maps / GIS / Location": 13,
+    "Health / Food / Fitness": 12,
+    "AI / LLM": 8,
+    "Monitoring / Observability": 7,
+    "Developer Tools / Utilities": 6,
+    "Media / Streaming": 2,
+    "Home Automation / IoT": 2
+  },
+  "scoreStats": {
+    "min": 33.44,
+    "max": 94.94,
+    "mean": 65.31
+  },
+  "dockerCount": 21
+}

@@ -1,0 +1,334 @@
+{
+  "version": "v2",
+  "setNum": 209,
+  "searchCalls": 22,
+  "poolSize": 1366,
+  "scoredCount": 298,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/ko-build/ko",
+      "score": 89.62,
+      "category": "DevOps / Infra",
+      "stars": 8453
+    },
+    {
+      "url": "https://github.com/SeleniumHQ/docker-selenium",
+      "score": 89.38,
+      "category": "DevOps / Infra",
+      "stars": 8639
+    },
+    {
+      "url": "https://github.com/easzlab/kubeasz",
+      "score": 88.93,
+      "category": "DevOps / Infra",
+      "stars": 11380
+    },
+    {
+      "url": "https://github.com/NotHarshhaa/DevOps-Projects",
+      "score": 88.83,
+      "category": "DevOps / Infra",
+      "stars": 4404
+    },
+    {
+      "url": "https://github.com/werf/werf",
+      "score": 87.88,
+      "category": "DevOps / Infra",
+      "stars": 4694
+    },
+    {
+      "url": "https://github.com/TechXueXi/TechXueXi",
+      "score": 87.58,
+      "category": "Docker / Containers",
+      "stars": 5651
+    },
+    {
+      "url": "https://github.com/cookiecutter/cookiecutter-django",
+      "score": 86.57,
+      "category": "Docker / Containers",
+      "stars": 13550
+    },
+    {
+      "url": "https://github.com/hiifeng/V2ray-for-Doprax",
+      "score": 86.41,
+      "category": "Docker / Containers",
+      "stars": 8339
+    },
+    {
+      "url": "https://github.com/89luca89/distrobox",
+      "score": 85.81,
+      "category": "Docker / Containers",
+      "stars": 12600
+    },
+    {
+      "url": "https://github.com/bitnami/containers",
+      "score": 85.79,
+      "category": "Docker / Containers",
+      "stars": 4441
+    },
+    {
+      "url": "https://github.com/labring/sealos",
+      "score": 83.63,
+      "category": "AI / LLM",
+      "stars": 18077
+    },
+    {
+      "url": "https://github.com/sansan0/TrendRadar",
+      "score": 83.48,
+      "category": "AI / LLM",
+      "stars": 59663
+    },
+    {
+      "url": "https://github.com/Cloud-CV/EvalAI",
+      "score": 83.04,
+      "category": "AI / LLM",
+      "stars": 2022
+    },
+    {
+      "url": "https://github.com/decodingai-magazine/llm-twin-course",
+      "score": 82.02,
+      "category": "AI / LLM",
+      "stars": 4355
+    },
+    {
+      "url": "https://github.com/dusty-nv/jetson-containers",
+      "score": 81.4,
+      "category": "AI / LLM",
+      "stars": 4737
+    },
+    {
+      "url": "https://github.com/bee-san/RustScan",
+      "score": 74.4,
+      "category": "Networking / VPN",
+      "stars": 19942
+    },
+    {
+      "url": "https://github.com/nginx-proxy/docker-gen",
+      "score": 73.59,
+      "category": "Networking / VPN",
+      "stars": 4627
+    },
+    {
+      "url": "https://github.com/BLB3DPrinting/filaops",
+      "score": 73.0,
+      "category": "CRM / Business",
+      "stars": 70
+    },
+    {
+      "url": "https://github.com/crazy-max/ddns-route53",
+      "score": 72.96,
+      "category": "Networking / VPN",
+      "stars": 409
+    },
+    {
+      "url": "https://github.com/stardew-valley-dedicated-server/server",
+      "score": 72.41,
+      "category": "CRM / Business",
+      "stars": 267
+    },
+    {
+      "url": "https://github.com/creightonlinza/forever-jukebox",
+      "score": 72.1,
+      "category": "Media / Streaming",
+      "stars": 30
+    },
+    {
+      "url": "https://github.com/WildMeOrg/Wildbook",
+      "score": 72.09,
+      "category": "Media / Streaming",
+      "stars": 137
+    },
+    {
+      "url": "https://github.com/crazy-max/undock",
+      "score": 71.46,
+      "category": "Developer Tools / Utilities",
+      "stars": 234
+    },
+    {
+      "url": "https://github.com/georchestra/georchestra",
+      "score": 71.19,
+      "category": "Maps / GIS / Location",
+      "stars": 144
+    },
+    {
+      "url": "https://github.com/alswl/excalidraw-collaboration",
+      "score": 70.66,
+      "category": "Dashboard / Homelab",
+      "stars": 592
+    },
+    {
+      "url": "https://github.com/feiskyer/kubernetes-handbook",
+      "score": 70.62,
+      "category": "Books / Reading / Library",
+      "stars": 5537
+    },
+    {
+      "url": "https://github.com/dockloghq/docklog",
+      "score": 70.24,
+      "category": "Media / Streaming",
+      "stars": 16
+    },
+    {
+      "url": "https://github.com/sickcodes/Docker-OSX",
+      "score": 70.04,
+      "category": "Security / Auth",
+      "stars": 52598
+    },
+    {
+      "url": "https://github.com/sysprog21/shecc",
+      "score": 69.54,
+      "category": "Dashboard / Homelab",
+      "stars": 1369
+    },
+    {
+      "url": "https://github.com/librenms/docker",
+      "score": 69.36,
+      "category": "Networking / VPN",
+      "stars": 842
+    },
+    {
+      "url": "https://github.com/crazy-max/docker-rtorrent-rutorrent",
+      "score": 69.29,
+      "category": "Networking / VPN",
+      "stars": 647
+    },
+    {
+      "url": "https://github.com/gibz104/SpoolmanSync",
+      "score": 69.26,
+      "category": "Home Automation / IoT",
+      "stars": 48
+    },
+    {
+      "url": "https://github.com/bliish-com/bliishspace",
+      "score": 69.11,
+      "category": "Media / Streaming",
+      "stars": 19
+    },
+    {
+      "url": "https://github.com/grafana/grafana-image-renderer",
+      "score": 68.97,
+      "category": "Monitoring / Observability",
+      "stars": 514
+    },
+    {
+      "url": "https://github.com/crazy-max/ghaction-container-scan",
+      "score": 68.87,
+      "category": "Security / Auth",
+      "stars": 74
+    },
+    {
+      "url": "https://github.com/CollotsSpot/Ensemble",
+      "score": 68.85,
+      "category": "Home Automation / IoT",
+      "stars": 201
+    },
+    {
+      "url": "https://github.com/WB2024/WBs-Guide-to-Navidrome",
+      "score": 68.81,
+      "category": "Media / Streaming",
+      "stars": 146
+    },
+    {
+      "url": "https://github.com/endatix/endatix",
+      "score": 67.9,
+      "category": "Dashboard / Homelab",
+      "stars": 38
+    },
+    {
+      "url": "https://github.com/butialabs/pingflare",
+      "score": 67.67,
+      "category": "Monitoring / Observability",
+      "stars": 39
+    },
+    {
+      "url": "https://github.com/mikeckennedy/talk-python-in-production-devops-book",
+      "score": 67.5,
+      "category": "Books / Reading / Library",
+      "stars": 121
+    },
+    {
+      "url": "https://github.com/cloudfavorites/favorites-web",
+      "score": 67.49,
+      "category": "Analytics / Data",
+      "stars": 4853
+    },
+    {
+      "url": "https://github.com/balnaimi/conan-exiles-server",
+      "score": 67.37,
+      "category": "Gaming / Game Servers",
+      "stars": 10
+    },
+    {
+      "url": "https://github.com/runtime-env/runtime-env",
+      "score": 67.33,
+      "category": "Developer Tools / Utilities",
+      "stars": 46
+    },
+    {
+      "url": "https://github.com/DougTrier/trier-os",
+      "score": 67.0,
+      "category": "Monitoring / Observability",
+      "stars": 18
+    },
+    {
+      "url": "https://github.com/particify/arsnova-server",
+      "score": 66.99,
+      "category": "Education / Learning",
+      "stars": 61
+    },
+    {
+      "url": "https://github.com/crazy-max/geoip-updater",
+      "score": 66.62,
+      "category": "Automation",
+      "stars": 72
+    },
+    {
+      "url": "https://github.com/kereis/traefik-certs-dumper",
+      "score": 66.58,
+      "category": "Developer Tools / Utilities",
+      "stars": 202
+    },
+    {
+      "url": "https://github.com/PranshulSoni/FlowWatch",
+      "score": 66.48,
+      "category": "Monitoring / Observability",
+      "stars": 8
+    },
+    {
+      "url": "https://github.com/kanaka/mal",
+      "score": 66.2,
+      "category": "Developer Tools / Utilities",
+      "stars": 10666
+    },
+    {
+      "url": "https://github.com/dietrichmax/docker-staticmaps",
+      "score": 66.02,
+      "category": "Maps / GIS / Location",
+      "stars": 127
+    }
+  ],
+  "categoryDistribution": {
+    "DevOps / Infra": 5,
+    "Docker / Containers": 5,
+    "AI / LLM": 5,
+    "Networking / VPN": 5,
+    "Media / Streaming": 5,
+    "Developer Tools / Utilities": 4,
+    "Monitoring / Observability": 4,
+    "Dashboard / Homelab": 3,
+    "CRM / Business": 2,
+    "Maps / GIS / Location": 2,
+    "Books / Reading / Library": 2,
+    "Security / Auth": 2,
+    "Home Automation / IoT": 2,
+    "Analytics / Data": 1,
+    "Gaming / Game Servers": 1,
+    "Education / Learning": 1,
+    "Automation": 1
+  },
+  "scoreStats": {
+    "min": 66.02,
+    "max": 89.62,
+    "mean": 74.37
+  }
+}

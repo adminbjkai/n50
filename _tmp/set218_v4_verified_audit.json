@@ -1,0 +1,436 @@
+{
+  "version": "v4",
+  "setNum": 218,
+  "searchCalls": 17,
+  "poolSize": 876,
+  "scoredCount": 222,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/swiftyapp/swifty",
+      "score": 74.98,
+      "category": "Security / Auth",
+      "stars": 943,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sirAndros/KeePassWinHello",
+      "score": 66.39,
+      "category": "Security / Auth",
+      "stars": 365,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/marius-wieschollek/passwords",
+      "score": 65.56,
+      "category": "Security / Auth",
+      "stars": 245,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/gopasspw/gopassbridge",
+      "score": 65.2,
+      "category": "Security / Auth",
+      "stars": 310,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/GGP1/kure",
+      "score": 65.17,
+      "category": "Developer Tools / Utilities",
+      "stars": 170,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/besoeasy/ZeroNote",
+      "score": 61.93,
+      "category": "Security / Auth",
+      "stars": 52,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jfeliu007/goplantuml",
+      "score": 61.9,
+      "category": "Image / Design / Creative",
+      "stars": 2095,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/homotopy-io/homotopy-rs",
+      "score": 60.47,
+      "category": "Image / Design / Creative",
+      "stars": 119,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wensimehrp/Paiagram",
+      "score": 59.07,
+      "category": "Image / Design / Creative",
+      "stars": 43,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Fruchtzwerg94/PlantUmlViewer",
+      "score": 58.63,
+      "category": "Image / Design / Creative",
+      "stars": 108,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kinow/protobuf-uml-diagram",
+      "score": 58.27,
+      "category": "Image / Design / Creative",
+      "stars": 78,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/tsffarias/LiftOff_Data",
+      "score": 56.56,
+      "category": "AI / LLM",
+      "stars": 59,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/basher83/Zammad-MCP",
+      "score": 55.9,
+      "category": "AI / LLM",
+      "stars": 34,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/theYahia/WWmcp",
+      "score": 55.49,
+      "category": "AI / LLM",
+      "stars": 15,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/openpetra/openpetra",
+      "score": 55.44,
+      "category": "CRM / Business",
+      "stars": 120,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/shelcia/CRM",
+      "score": 55.04,
+      "category": "CRM / Business",
+      "stars": 90,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/chapter-gtm/chapter",
+      "score": 54.99,
+      "category": "CRM / Business",
+      "stars": 114,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/TheAlexPG/ArchFlow",
+      "score": 54.8,
+      "category": "AI / LLM",
+      "stars": 13,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/espocrm/espocrm-docker",
+      "score": 54.74,
+      "category": "CRM / Business",
+      "stars": 86,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bendews/apw",
+      "score": 54.5,
+      "category": "Developer Tools / Utilities",
+      "stars": 212,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/anthroos/plaintext-crm",
+      "score": 54.15,
+      "category": "AI / LLM",
+      "stars": 43,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/HybirdCorp/creme_crm",
+      "score": 53.02,
+      "category": "CRM / Business",
+      "stars": 68,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/TomWright/mermaid-server",
+      "score": 52.05,
+      "category": "Developer Tools / Utilities",
+      "stars": 435,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/HiDeoo/astro-d2",
+      "score": 49.62,
+      "category": "Developer Tools / Utilities",
+      "stars": 49,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Evidlo/passhole",
+      "score": 48.01,
+      "category": "Developer Tools / Utilities",
+      "stars": 232,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/protonpass/ios-pass",
+      "score": 60.67,
+      "category": "Security / Auth",
+      "stars": 286,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/gwenaelp/vue-diagrams",
+      "score": 54.97,
+      "category": "Image / Design / Creative",
+      "stars": 300,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mindwear-capitian/followupboss-mcp-server",
+      "score": 52.25,
+      "category": "AI / LLM",
+      "stars": 17,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jstanden/cerb",
+      "score": 50.44,
+      "category": "CRM / Business",
+      "stars": 83,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/CoCreate-app/CoCreate-admin",
+      "score": 46.71,
+      "category": "Developer Tools / Utilities",
+      "stars": 55,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Rabbit-Company/Passky-Server",
+      "score": 60.48,
+      "category": "Security / Auth",
+      "stars": 243,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/meursyphus/easy-rd",
+      "score": 53.53,
+      "category": "Image / Design / Creative",
+      "stars": 65,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/op7418/Generative-UI-MCP",
+      "score": 51.61,
+      "category": "AI / LLM",
+      "stars": 54,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Intermesh/docker-groupoffice",
+      "score": 49.32,
+      "category": "CRM / Business",
+      "stars": 41,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bsamarji/Keepr",
+      "score": 46.23,
+      "category": "Developer Tools / Utilities",
+      "stars": 26,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/JFreegman/SpicyPass",
+      "score": 59.86,
+      "category": "Security / Auth",
+      "stars": 371,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jawira/doctrine-diagram-bundle",
+      "score": 51.25,
+      "category": "Image / Design / Creative",
+      "stars": 81,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/KonstiDoll/twenty-crm-mcp-server",
+      "score": 50.56,
+      "category": "AI / LLM",
+      "stars": 8,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/MrXujiang/FlowCRM",
+      "score": 49.13,
+      "category": "CRM / Business",
+      "stars": 43,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/c0d-0x/cruxpass",
+      "score": 44.39,
+      "category": "Developer Tools / Utilities",
+      "stars": 25,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kee-org/browser-addon",
+      "score": 58.09,
+      "category": "Security / Auth",
+      "stars": 472,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/PLAYG0N/mkdocs-panzoom",
+      "score": 51.09,
+      "category": "Image / Design / Creative",
+      "stars": 68,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/prolinkinfo/RealEstateCRM",
+      "score": 50.2,
+      "category": "AI / LLM",
+      "stars": 320,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cerb/cerb-release",
+      "score": 48.74,
+      "category": "CRM / Business",
+      "stars": 53,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/shikaan/keydex",
+      "score": 43.81,
+      "category": "Developer Tools / Utilities",
+      "stars": 95,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/gutenye/password-manager-tools",
+      "score": 58.0,
+      "category": "Security / Auth",
+      "stars": 51,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/yegor256/jekyll-plantuml",
+      "score": 50.89,
+      "category": "Image / Design / Creative",
+      "stars": 50,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/digitalfactorysn/mcp-dolibarr",
+      "score": 49.49,
+      "category": "AI / LLM",
+      "stars": 8,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/clawnify/open-crm",
+      "score": 48.22,
+      "category": "CRM / Business",
+      "stars": 11,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hesreallyhim/proton-pass-community-mcp",
+      "score": 43.37,
+      "category": "Developer Tools / Utilities",
+      "stars": 11,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Security / Auth": 10,
+    "Developer Tools / Utilities": 10,
+    "Image / Design / Creative": 10,
+    "AI / LLM": 10,
+    "CRM / Business": 10
+  },
+  "scoreStats": {
+    "min": 43.37,
+    "max": 74.98,
+    "mean": 54.7
+  },
+  "dockerCount": 28,
+  "hostname": "M17s-MacBook-Pro.local",
+  "python": "3.14.5",
+  "timing": {
+    "gather": 48.4,
+    "score": 0.0,
+    "confirm": 11.7,
+    "confirmedPool": 130,
+    "diversify": 0.3,
+    "total": 190.4
+  }
+}

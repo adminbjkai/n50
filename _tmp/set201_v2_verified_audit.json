@@ -1,0 +1,333 @@
+{
+  "version": "v2",
+  "setNum": 201,
+  "searchCalls": 11,
+  "poolSize": 620,
+  "scoredCount": 295,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/open-mercato/open-mercato",
+      "score": 85.88,
+      "category": "AI / LLM",
+      "stars": 1416
+    },
+    {
+      "url": "https://github.com/marmelab/atomic-crm",
+      "score": 84.64,
+      "category": "CRM / Business",
+      "stars": 1106
+    },
+    {
+      "url": "https://github.com/pdovhomilja/nextcrm-app",
+      "score": 82.93,
+      "category": "AI / LLM",
+      "stars": 635
+    },
+    {
+      "url": "https://github.com/babyvibe/deplao-builder",
+      "score": 82.28,
+      "category": "AI / LLM",
+      "stars": 166
+    },
+    {
+      "url": "https://github.com/avo-hq/avo",
+      "score": 82.21,
+      "category": "CRM / Business",
+      "stars": 1781
+    },
+    {
+      "url": "https://github.com/1Panel-dev/CordysCRM",
+      "score": 80.64,
+      "category": "AI / LLM",
+      "stars": 2294
+    },
+    {
+      "url": "https://github.com/macro-inc/macro",
+      "score": 78.02,
+      "category": "AI / LLM",
+      "stars": 268
+    },
+    {
+      "url": "https://github.com/getrebuild/rebuild",
+      "score": 76.28,
+      "category": "Files / Storage / Backup",
+      "stars": 1011
+    },
+    {
+      "url": "https://github.com/iota-uz/iota-sdk",
+      "score": 76.17,
+      "category": "Developer Tools / Utilities",
+      "stars": 440
+    },
+    {
+      "url": "https://github.com/Bottelet/DaybydayCRM",
+      "score": 75.58,
+      "category": "CRM / Business",
+      "stars": 2316
+    },
+    {
+      "url": "https://github.com/adrai/flowchart.js",
+      "score": 75.24,
+      "category": "Image / Design / Creative",
+      "stars": 8689
+    },
+    {
+      "url": "https://github.com/hikerpig/pintora",
+      "score": 75.03,
+      "category": "Books / Reading / Library",
+      "stars": 1284
+    },
+    {
+      "url": "https://github.com/skanaar/nomnoml",
+      "score": 75.01,
+      "category": "Image / Design / Creative",
+      "stars": 2832
+    },
+    {
+      "url": "https://github.com/yuqing2026/ruoyi-office",
+      "score": 74.59,
+      "category": "Home Automation / IoT",
+      "stars": 163
+    },
+    {
+      "url": "https://github.com/wavedrom/wavedrom",
+      "score": 74.21,
+      "category": "Image / Design / Creative",
+      "stars": 3429
+    },
+    {
+      "url": "https://github.com/mingrammer/diagrams",
+      "score": 74.01,
+      "category": "Developer Tools / Utilities",
+      "stars": 42375
+    },
+    {
+      "url": "https://github.com/meursyphus/flitter",
+      "score": 73.94,
+      "category": "Image / Design / Creative",
+      "stars": 390
+    },
+    {
+      "url": "https://github.com/plantuml/plantuml",
+      "score": 73.87,
+      "category": "Developer Tools / Utilities",
+      "stars": 13104
+    },
+    {
+      "url": "https://github.com/ivanceras/svgbob",
+      "score": 73.47,
+      "category": "Image / Design / Creative",
+      "stars": 4200
+    },
+    {
+      "url": "https://github.com/projectstorm/react-diagrams",
+      "score": 72.78,
+      "category": "Books / Reading / Library",
+      "stars": 9411
+    },
+    {
+      "url": "https://github.com/svar-widgets/gantt",
+      "score": 72.7,
+      "category": "Books / Reading / Library",
+      "stars": 242
+    },
+    {
+      "url": "https://github.com/dyatko/arkit",
+      "score": 72.33,
+      "category": "Developer Tools / Utilities",
+      "stars": 969
+    },
+    {
+      "url": "https://github.com/NeoRazorX/facturascripts",
+      "score": 72.33,
+      "category": "CRM / Business",
+      "stars": 473
+    },
+    {
+      "url": "https://github.com/FJ-OMS/oms-erp",
+      "score": 72.24,
+      "category": "DevOps / Infra",
+      "stars": 1896
+    },
+    {
+      "url": "https://github.com/directus-labs/agency-os",
+      "score": 72.12,
+      "category": "CRM / Business",
+      "stars": 951
+    },
+    {
+      "url": "https://github.com/wp-erp/wp-erp",
+      "score": 71.17,
+      "category": "Finance / Budget",
+      "stars": 689
+    },
+    {
+      "url": "https://github.com/HubSpot/ui-extensions-examples",
+      "score": 70.82,
+      "category": "Developer Tools / Utilities",
+      "stars": 159
+    },
+    {
+      "url": "https://github.com/webasyst/webasyst-framework",
+      "score": 69.59,
+      "category": "E-commerce / Shop",
+      "stars": 302
+    },
+    {
+      "url": "https://github.com/yuqing2026/ruoyi-office-vben",
+      "score": 69.03,
+      "category": "Home Automation / IoT",
+      "stars": 39
+    },
+    {
+      "url": "https://github.com/andrewdwallo/erpsaas",
+      "score": 68.59,
+      "category": "Finance / Budget",
+      "stars": 1445
+    },
+    {
+      "url": "https://github.com/hubleto/erp",
+      "score": 68.37,
+      "category": "Productivity / Tasks",
+      "stars": 39
+    },
+    {
+      "url": "https://github.com/Tabish5858/Leadflow-CRM",
+      "score": 66.93,
+      "category": "Productivity / Tasks",
+      "stars": 9
+    },
+    {
+      "url": "https://github.com/open-condo-software/condo",
+      "score": 66.71,
+      "category": "E-commerce / Shop",
+      "stars": 360
+    },
+    {
+      "url": "https://github.com/papyrussolution/OpenPapyrus",
+      "score": 65.26,
+      "category": "Finance / Budget",
+      "stars": 283
+    },
+    {
+      "url": "https://github.com/ls1intum/Apollon",
+      "score": 62.91,
+      "category": "Books / Reading / Library",
+      "stars": 94
+    },
+    {
+      "url": "https://github.com/AleksandrRogov/DynamicsWebApi",
+      "score": 62.59,
+      "category": "Books / Reading / Library",
+      "stars": 308
+    },
+    {
+      "url": "https://github.com/javanile/vtiger",
+      "score": 62.41,
+      "category": "DevOps / Infra",
+      "stars": 95
+    },
+    {
+      "url": "https://github.com/ptibogxiv/doliconnect",
+      "score": 61.94,
+      "category": "Finance / Budget",
+      "stars": 25
+    },
+    {
+      "url": "https://github.com/tomatophp/filament-accounts",
+      "score": 61.59,
+      "category": "Security / Auth",
+      "stars": 74
+    },
+    {
+      "url": "https://github.com/TiBillet/LaBoutik",
+      "score": 61.07,
+      "category": "E-commerce / Shop",
+      "stars": 16
+    },
+    {
+      "url": "https://github.com/pandey-raghvendra/infrasketch",
+      "score": 60.45,
+      "category": "DevOps / Infra",
+      "stars": 8
+    },
+    {
+      "url": "https://github.com/billingcat/crm",
+      "score": 59.39,
+      "category": "Finance / Budget",
+      "stars": 14
+    },
+    {
+      "url": "https://github.com/phili67/ecclesiacrm",
+      "score": 58.71,
+      "category": "Productivity / Tasks",
+      "stars": 61
+    },
+    {
+      "url": "https://github.com/nordeck/matrix-neoboard",
+      "score": 58.65,
+      "category": "Communication / Social",
+      "stars": 135
+    },
+    {
+      "url": "https://github.com/tldraw/obsidian-plugin",
+      "score": 58.43,
+      "category": "Notes / Knowledge",
+      "stars": 423
+    },
+    {
+      "url": "https://github.com/inshop/inshop-crm-api",
+      "score": 58.05,
+      "category": "Documents / PDF / Paperless",
+      "stars": 258
+    },
+    {
+      "url": "https://github.com/berliCRM/berlicrm",
+      "score": 57.71,
+      "category": "Documents / PDF / Paperless",
+      "stars": 59
+    },
+    {
+      "url": "https://github.com/inshop/inshop-crm-admin",
+      "score": 57.28,
+      "category": "Documents / PDF / Paperless",
+      "stars": 205
+    },
+    {
+      "url": "https://github.com/Someone0nEarth/excalidraw-self-hosted",
+      "score": 57.12,
+      "category": "Networking / VPN",
+      "stars": 165
+    },
+    {
+      "url": "https://github.com/WaelHamze/dyn365-ce-vsts-tasks",
+      "score": 56.96,
+      "category": "DevOps / Infra",
+      "stars": 121
+    }
+  ],
+  "categoryDistribution": {
+    "AI / LLM": 5,
+    "CRM / Business": 5,
+    "Developer Tools / Utilities": 5,
+    "Image / Design / Creative": 5,
+    "Books / Reading / Library": 5,
+    "Finance / Budget": 5,
+    "DevOps / Infra": 4,
+    "E-commerce / Shop": 3,
+    "Productivity / Tasks": 3,
+    "Documents / PDF / Paperless": 3,
+    "Home Automation / IoT": 2,
+    "Files / Storage / Backup": 1,
+    "Security / Auth": 1,
+    "Communication / Social": 1,
+    "Notes / Knowledge": 1,
+    "Networking / VPN": 1
+  },
+  "scoreStats": {
+    "min": 56.96,
+    "max": 85.88,
+    "mean": 69.6
+  }
+}

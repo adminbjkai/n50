@@ -1,0 +1,434 @@
+{
+  "version": "v3",
+  "setNum": 193,
+  "searchCalls": 11,
+  "poolSize": 462,
+  "scoredCount": 182,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/simonoppowa/OpenNutriTracker",
+      "score": 87.34,
+      "category": "Health / Food / Fitness",
+      "stars": 1984,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/thetahealth/mirobody",
+      "score": 85.77,
+      "category": "AI / LLM",
+      "stars": 1047,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kuberhealthy/kuberhealthy",
+      "score": 85.35,
+      "category": "Monitoring / Observability",
+      "stars": 2253,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/apoorvdarshan/fud-ai",
+      "score": 83.7,
+      "category": "AI / LLM",
+      "stars": 232,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/maksimowiczm/FoodYou",
+      "score": 81.53,
+      "category": "Health / Food / Fitness",
+      "stars": 472,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/marekkowalczyk/breathe-cli",
+      "score": 79.23,
+      "category": "Developer Tools / Utilities",
+      "stars": 312,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/isair/jarvis",
+      "score": 78.82,
+      "category": "AI / LLM",
+      "stars": 1234,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/yuhonas/free-exercise-db",
+      "score": 78.41,
+      "category": "Developer Tools / Utilities",
+      "stars": 1484,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cyberjunky/python-garminconnect",
+      "score": 76.5,
+      "category": "Developer Tools / Utilities",
+      "stars": 2450,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/slgobinath/safeeyes",
+      "score": 75.09,
+      "category": "Health / Food / Fitness",
+      "stars": 1723,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aspain/git-sweaty",
+      "score": 74.92,
+      "category": "Developer Tools / Utilities",
+      "stars": 245,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/alexliesenfeld/health",
+      "score": 74.54,
+      "category": "DevOps / Infra",
+      "stars": 833,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/timfraedrich/OutRun",
+      "score": 74.52,
+      "category": "Health / Food / Fitness",
+      "stars": 858,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jlai/fitness-dashboard",
+      "score": 74.28,
+      "category": "Health / Food / Fitness",
+      "stars": 79,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/matthiasn/lotti",
+      "score": 71.03,
+      "category": "AI / LLM",
+      "stars": 1126,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/earthians/marley",
+      "score": 70.67,
+      "category": "CRM / Business",
+      "stars": 506,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/melihcolpan/MuscleMap",
+      "score": 69.99,
+      "category": "Maps / GIS / Location",
+      "stars": 196,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/yo-WASSUP/Good-GYM",
+      "score": 68.86,
+      "category": "AI / LLM",
+      "stars": 342,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/matinzd/react-native-health-connect",
+      "score": 68.33,
+      "category": "Developer Tools / Utilities",
+      "stars": 398,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/k0rventen/apple-health-grafana",
+      "score": 67.58,
+      "category": "Monitoring / Observability",
+      "stars": 571,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/masslight/ottehr",
+      "score": 64.73,
+      "category": "Productivity / Tasks",
+      "stars": 313,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/CSenshi/nestjs-redis",
+      "score": 64.49,
+      "category": "Files / Storage / Backup",
+      "stars": 69,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AlertaDengue/PySUS",
+      "score": 63.24,
+      "category": "Maps / GIS / Location",
+      "stars": 230,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Rouast-Labs/vitallens-python",
+      "score": 62.33,
+      "category": "Media / Streaming",
+      "stars": 82,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wtbates99/batesposture",
+      "score": 61.41,
+      "category": "Productivity / Tasks",
+      "stars": 18,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/crmne/cluster-headache-tracker",
+      "score": 60.81,
+      "category": "Monitoring / Observability",
+      "stars": 27,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/thebriangao/totem",
+      "score": 60.8,
+      "category": "Security / Auth",
+      "stars": 81,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/RobertWojtowicz/export2garmin",
+      "score": 59.34,
+      "category": "Home Automation / IoT",
+      "stars": 266,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/healthysustainablecities/global-indicators",
+      "score": 59.26,
+      "category": "Networking / VPN",
+      "stars": 97,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wardle/hermes",
+      "score": 58.15,
+      "category": "Maps / GIS / Location",
+      "stars": 230,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/open-source-labs/Chronos",
+      "score": 57.08,
+      "category": "Monitoring / Observability",
+      "stars": 851,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/spatie/cpu-load-health-check",
+      "score": 55.72,
+      "category": "Monitoring / Observability",
+      "stars": 70,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/CTHRU/Hitrava",
+      "score": 53.47,
+      "category": "Maps / GIS / Location",
+      "stars": 419,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nanreh/calendar-hack",
+      "score": 51.05,
+      "category": "Productivity / Tasks",
+      "stars": 136,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/prankstr/hassio-whoop",
+      "score": 50.96,
+      "category": "Home Automation / IoT",
+      "stars": 30,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/N0ku/react-native-nitro-healthkit",
+      "score": 44.01,
+      "category": "Files / Storage / Backup",
+      "stars": 11,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/adsamcik/Tracker-Android",
+      "score": 42.74,
+      "category": "Maps / GIS / Location",
+      "stars": 46,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/DisplacedForest/ha-hevy-tracker",
+      "score": 40.97,
+      "category": "Home Automation / IoT",
+      "stars": 17,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wayneschuller/strengthjourneys",
+      "score": 40.76,
+      "category": "CRM / Business",
+      "stars": 14,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/rajatt04/FitByKit",
+      "score": 40.17,
+      "category": "Media / Streaming",
+      "stars": 8,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kgstorm/home-assistant-calorie-tracker",
+      "score": 38.92,
+      "category": "Home Automation / IoT",
+      "stars": 17,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dudanov/hassio-ftms",
+      "score": 38.32,
+      "category": "Home Automation / IoT",
+      "stars": 63,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/logicblocks/salutem",
+      "score": 32.76,
+      "category": "Files / Storage / Backup",
+      "stars": 45,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nissand/whoop-mcp-server-claude",
+      "score": 31.92,
+      "category": "Security / Auth",
+      "stars": 11,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/brandonp2412/Flexify",
+      "score": 73.47,
+      "category": "Health / Food / Fitness",
+      "stars": 395,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/LifeValue/HealthWallet.me",
+      "score": 68.81,
+      "category": "AI / LLM",
+      "stars": 64,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/JamsusMaximus/trainingpeaks-mcp",
+      "score": 68.19,
+      "category": "Developer Tools / Utilities",
+      "stars": 87,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/github-community-projects/org-metrics-dashboard",
+      "score": 52.16,
+      "category": "Monitoring / Observability",
+      "stars": 85,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/the-momentum/apple-health-mcp-server",
+      "score": 70.95,
+      "category": "Health / Food / Fitness",
+      "stars": 214,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jmandel/health-skillz",
+      "score": 66.47,
+      "category": "AI / LLM",
+      "stars": 74,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Health / Food / Fitness": 7,
+    "AI / LLM": 7,
+    "Monitoring / Observability": 6,
+    "Developer Tools / Utilities": 6,
+    "Maps / GIS / Location": 5,
+    "Home Automation / IoT": 5,
+    "Productivity / Tasks": 3,
+    "Files / Storage / Backup": 3,
+    "CRM / Business": 2,
+    "Media / Streaming": 2,
+    "Security / Auth": 2,
+    "DevOps / Infra": 1,
+    "Networking / VPN": 1
+  },
+  "scoreStats": {
+    "min": 31.92,
+    "max": 87.34,
+    "mean": 63.2
+  },
+  "dockerCount": 22
+}

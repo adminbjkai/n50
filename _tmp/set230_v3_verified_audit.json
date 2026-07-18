@@ -1,0 +1,424 @@
+{
+  "version": "v3",
+  "setNum": 230,
+  "searchCalls": 15,
+  "poolSize": 632,
+  "scoredCount": 292,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/SPlayer-Dev/SPlayer",
+      "score": 89.0,
+      "category": "Media / Streaming",
+      "stars": 7286,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/MarSeventh/CloudFlare-ImgBed",
+      "score": 88.0,
+      "category": "Media / Streaming",
+      "stars": 5373,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/WWBN/AVideo",
+      "score": 87.5,
+      "category": "Media / Streaming",
+      "stars": 2098,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mxpv/podsync",
+      "score": 86.87,
+      "category": "Media / Streaming",
+      "stars": 1921,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/illuspas/Node-Media-Server",
+      "score": 84.4,
+      "category": "Media / Streaming",
+      "stars": 6236,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/panyanyany/Twocast",
+      "score": 80.04,
+      "category": "AI / LLM",
+      "stars": 1251,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/BandarLabs/gitpodcast",
+      "score": 78.59,
+      "category": "AI / LLM",
+      "stars": 806,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mazzzystar/Queryable",
+      "score": 78.0,
+      "category": "AI / LLM",
+      "stars": 2957,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Super-Badmen-Viper/NSMusicS",
+      "score": 77.96,
+      "category": "Home Automation / IoT",
+      "stars": 2260,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nextcloud/recognize",
+      "score": 75.9,
+      "category": "AI / LLM",
+      "stars": 680,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wendy7756/podcast-transcriber",
+      "score": 73.91,
+      "category": "AI / LLM",
+      "stars": 234,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cropflre/nowen-video",
+      "score": 83.82,
+      "category": "Media / Streaming",
+      "stars": 122,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zarazhangrui/personalized-podcast",
+      "score": 72.06,
+      "category": "AI / LLM",
+      "stars": 386,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/meetqy/rao-pics",
+      "score": 83.49,
+      "category": "Media / Streaming",
+      "stars": 795,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wiidede/exif-gallery-nuxt",
+      "score": 71.85,
+      "category": "AI / LLM",
+      "stars": 120,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/8xFF/atm0s-media-server",
+      "score": 82.5,
+      "category": "Media / Streaming",
+      "stars": 323,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mozilla-ai/document-to-podcast",
+      "score": 71.44,
+      "category": "AI / LLM",
+      "stars": 176,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bjarneo/cliamp",
+      "score": 82.43,
+      "category": "Media / Streaming",
+      "stars": 2560,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/OrangeViolin/content-pipeline",
+      "score": 71.44,
+      "category": "AI / LLM",
+      "stars": 192,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/crocidb/bulletty",
+      "score": 81.89,
+      "category": "Media / Streaming",
+      "stars": 413,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/slive777/OpenAver",
+      "score": 70.23,
+      "category": "AI / LLM",
+      "stars": 129,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cbenning/fussel",
+      "score": 81.08,
+      "category": "Media / Streaming",
+      "stars": 307,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/HKUDS/VideoAgent",
+      "score": 69.41,
+      "category": "AI / LLM",
+      "stars": 763,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/stevezau/media_preview_generator",
+      "score": 80.36,
+      "category": "Media / Streaming",
+      "stars": 234,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/poloniki/quint",
+      "score": 66.11,
+      "category": "AI / LLM",
+      "stars": 61,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nazdridoy/kokoro-tts",
+      "score": 80.23,
+      "category": "Media / Streaming",
+      "stars": 1615,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/DataAnts-AI/CutScript",
+      "score": 66.1,
+      "category": "AI / LLM",
+      "stars": 140,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jmathai/elodie",
+      "score": 78.26,
+      "category": "Media / Streaming",
+      "stars": 1492,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/evandempsey/podcast-llm",
+      "score": 65.25,
+      "category": "AI / LLM",
+      "stars": 147,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mue/mue",
+      "score": 77.42,
+      "category": "Media / Streaming",
+      "stars": 749,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/marswaveai/skills",
+      "score": 64.69,
+      "category": "AI / LLM",
+      "stars": 68,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/vuiodev/vuio",
+      "score": 77.17,
+      "category": "Media / Streaming",
+      "stars": 138,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/impredicative/podgenai",
+      "score": 60.5,
+      "category": "AI / LLM",
+      "stars": 156,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/UniversalMediaServer/UniversalMediaServer",
+      "score": 76.66,
+      "category": "Media / Streaming",
+      "stars": 2623,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aiff22/PyNET-PyTorch",
+      "score": 58.42,
+      "category": "AI / LLM",
+      "stars": 390,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/SkyD666/PodAura",
+      "score": 76.56,
+      "category": "Media / Streaming",
+      "stars": 1234,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Super-Badmen-Viper/NineSong",
+      "score": 58.14,
+      "category": "AI / LLM",
+      "stars": 125,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/winshining/nginx-http-flv-module",
+      "score": 76.12,
+      "category": "Media / Streaming",
+      "stars": 2934,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aiff22/PyNET",
+      "score": 55.45,
+      "category": "AI / LLM",
+      "stars": 354,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/extesy/hoverzoom",
+      "score": 75.81,
+      "category": "Media / Streaming",
+      "stars": 2034,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hardhackerlabs/book",
+      "score": 55.16,
+      "category": "AI / LLM",
+      "stars": 1363,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ZLMediaKit/ZLMediaKit",
+      "score": 75.0,
+      "category": "Media / Streaming",
+      "stars": 17180,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/steilerDev/icloud-photos-sync",
+      "score": 74.67,
+      "category": "Media / Streaming",
+      "stars": 478,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AliAkhtari78/SpotifyScraper",
+      "score": 74.55,
+      "category": "Media / Streaming",
+      "stars": 260,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/harlanc/xiu",
+      "score": 74.52,
+      "category": "Media / Streaming",
+      "stars": 2297,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/podlove/podlove-publisher",
+      "score": 74.25,
+      "category": "Media / Streaming",
+      "stars": 307,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/JFLXCLOUD/NeXroll",
+      "score": 73.88,
+      "category": "Media / Streaming",
+      "stars": 88,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/RhetTbull/osxphotos",
+      "score": 73.72,
+      "category": "Media / Streaming",
+      "stars": 3634,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/unsplash/unsplash-js",
+      "score": 73.71,
+      "category": "Media / Streaming",
+      "stars": 2190,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/warreth/gPhotos2Immich",
+      "score": 73.48,
+      "category": "Media / Streaming",
+      "stars": 156,
+      "docker": true,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Media / Streaming": 29,
+    "AI / LLM": 20,
+    "Home Automation / IoT": 1
+  },
+  "scoreStats": {
+    "min": 55.16,
+    "max": 89.0,
+    "mean": 74.76
+  },
+  "dockerCount": 39
+}

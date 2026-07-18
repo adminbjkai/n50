@@ -1,0 +1,450 @@
+{
+  "version": "v4",
+  "setNum": 225,
+  "searchCalls": 6,
+  "poolSize": 406,
+  "scoredCount": 212,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/vedika-io/xalen-ephemeris",
+      "score": 83.23,
+      "category": "Web App / Other",
+      "stars": 836,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/CelestiaProject/Celestia",
+      "score": 82.3,
+      "category": "Web App / Other",
+      "stars": 2302,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Stellarium/stellarium",
+      "score": 77.21,
+      "category": "Web App / Other",
+      "stars": 9717,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/gwastro/pycbc",
+      "score": 74.43,
+      "category": "Education / Learning",
+      "stars": 386,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Yu-Yang-Li/StarWhisper",
+      "score": 73.28,
+      "category": "AI / LLM",
+      "stars": 316,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nasa/apod-api",
+      "score": 73.1,
+      "category": "Media / Streaming",
+      "stars": 1051,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/OpenSpace/OpenSpace",
+      "score": 73.06,
+      "category": "Notes / Knowledge",
+      "stars": 1186,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/astropy/astropy",
+      "score": 72.84,
+      "category": "Web App / Other",
+      "stars": 5192,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/isbeorn/nina",
+      "score": 72.29,
+      "category": "Automation",
+      "stars": 198,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dcf21/star-charter",
+      "score": 72.07,
+      "category": "Documents / PDF / Paperless",
+      "stars": 386,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/asdf-format/asdf",
+      "score": 71.95,
+      "category": "Analytics / Data",
+      "stars": 557,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AllskyTeam/allsky",
+      "score": 71.54,
+      "category": "Web App / Other",
+      "stars": 1555,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/PlasmaPy/PlasmaPy",
+      "score": 71.51,
+      "category": "Education / Learning",
+      "stars": 691,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/astropy/astroquery",
+      "score": 71.17,
+      "category": "Analytics / Data",
+      "stars": 781,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aaronwmorris/indi-allsky",
+      "score": 71.11,
+      "category": "Home Automation / IoT",
+      "stars": 441,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/astrolabsoftware/fink-broker",
+      "score": 63.08,
+      "category": "Media / Streaming",
+      "stars": 85,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/SAOImageDS9/SAOImageDS9",
+      "score": 62.38,
+      "category": "Education / Learning",
+      "stars": 126,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nasa-gcn/gcn.nasa.gov",
+      "score": 61.79,
+      "category": "Networking / VPN",
+      "stars": 223,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mrantonSG/nova_DSO_tracker",
+      "score": 61.79,
+      "category": "Monitoring / Observability",
+      "stars": 22,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/henrysky/astroNN",
+      "score": 61.77,
+      "category": "AI / LLM",
+      "stars": 207,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/clmun/Shadow",
+      "score": 60.34,
+      "category": "Home Automation / IoT",
+      "stars": 154,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/skyportal/skyportal",
+      "score": 60.19,
+      "category": "AI / LLM",
+      "stars": 127,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/grant-m-s/AstronomicAL",
+      "score": 58.75,
+      "category": "AI / LLM",
+      "stars": 88,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/polatory/polatory",
+      "score": 58.74,
+      "category": "Analytics / Data",
+      "stars": 191,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Starainrt/astro",
+      "score": 58.66,
+      "category": "Productivity / Tasks",
+      "stars": 152,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cds-astro/mocpy",
+      "score": 58.47,
+      "category": "Maps / GIS / Location",
+      "stars": 76,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cds-astro/aladin-lite",
+      "score": 58.15,
+      "category": "Maps / GIS / Location",
+      "stars": 149,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Abdul-Wasay-008/Atlas26",
+      "score": 57.95,
+      "category": "Analytics / Data",
+      "stars": 45,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nom-tam-fits/nom-tam-fits",
+      "score": 57.91,
+      "category": "Analytics / Data",
+      "stars": 64,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nasa/ExoMiner",
+      "score": 57.61,
+      "category": "AI / LLM",
+      "stars": 79,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/trehn/termtrack",
+      "score": 57.58,
+      "category": "Maps / GIS / Location",
+      "stars": 544,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/danieljprice/phantom",
+      "score": 56.95,
+      "category": "Developer Tools / Utilities",
+      "stars": 151,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mawinkler/uptonight",
+      "score": 56.68,
+      "category": "Maps / GIS / Location",
+      "stars": 61,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zencefilefendi/Diyanet-Offline-Namaz-Vakitleri-Hesaplama",
+      "score": 56.67,
+      "category": "Maps / GIS / Location",
+      "stars": 79,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/udivankin/sunrise-sunset-js",
+      "score": 54.64,
+      "category": "CRM / Business",
+      "stars": 91,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/klausbrunner/solarpositioning",
+      "score": 54.61,
+      "category": "Developer Tools / Utilities",
+      "stars": 103,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/maruf009sultan/Horizon-API-Explorer",
+      "score": 54.0,
+      "category": "Dashboard / Homelab",
+      "stars": 11,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mawinkler/astroweather",
+      "score": 53.68,
+      "category": "Home Automation / IoT",
+      "stars": 146,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ChunHuangPhy/CompactObject",
+      "score": 53.05,
+      "category": "Automation",
+      "stars": 53,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sdss/marvin",
+      "score": 52.46,
+      "category": "Books / Reading / Library",
+      "stars": 62,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/JuliaAstro/FITSIO.jl",
+      "score": 50.03,
+      "category": "CRM / Business",
+      "stars": 60,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/LilacMeteorObservatory/MetDetPy",
+      "score": 49.57,
+      "category": "Media / Streaming",
+      "stars": 52,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mmarquez76/AstrologyClock",
+      "score": 49.22,
+      "category": "Image / Design / Creative",
+      "stars": 59,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/segasai/q3c",
+      "score": 49.0,
+      "category": "Search / Indexing",
+      "stars": 90,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/thebioguy/Astro-Catalogue-Viewer",
+      "score": 48.75,
+      "category": "Notes / Knowledge",
+      "stars": 26,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ethankruse/kepler_orrery",
+      "score": 48.4,
+      "category": "Media / Streaming",
+      "stars": 105,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/rmjarvis/TreeCorr",
+      "score": 48.28,
+      "category": "Developer Tools / Utilities",
+      "stars": 111,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/OpenAstronomy/openastronomy.github.io",
+      "score": 48.14,
+      "category": "Developer Tools / Utilities",
+      "stars": 82,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mawinkler/astrolive",
+      "score": 46.78,
+      "category": "Home Automation / IoT",
+      "stars": 53,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/astrolabsoftware/fink-client",
+      "score": 42.4,
+      "category": "Dashboard / Homelab",
+      "stars": 17,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Web App / Other": 5,
+    "AI / LLM": 5,
+    "Analytics / Data": 5,
+    "Maps / GIS / Location": 5,
+    "Media / Streaming": 4,
+    "Home Automation / IoT": 4,
+    "Developer Tools / Utilities": 4,
+    "Education / Learning": 3,
+    "Notes / Knowledge": 2,
+    "Automation": 2,
+    "CRM / Business": 2,
+    "Dashboard / Homelab": 2,
+    "Documents / PDF / Paperless": 1,
+    "Networking / VPN": 1,
+    "Monitoring / Observability": 1,
+    "Productivity / Tasks": 1,
+    "Books / Reading / Library": 1,
+    "Image / Design / Creative": 1,
+    "Search / Indexing": 1
+  },
+  "scoreStats": {
+    "min": 42.4,
+    "max": 83.23,
+    "mean": 60.79
+  },
+  "dockerCount": 13,
+  "hostname": "M17s-MacBook-Pro.local",
+  "python": "3.14.5",
+  "timing": {
+    "gather": 19.1,
+    "score": 0.0,
+    "confirm": 23.4,
+    "confirmedPool": 130,
+    "diversify": 0.1,
+    "total": 172.6
+  }
+}

@@ -1,0 +1,438 @@
+{
+  "version": "v4",
+  "setNum": 219,
+  "searchCalls": 17,
+  "poolSize": 931,
+  "scoredCount": 240,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/ExteraApp/Extera",
+      "score": 74.7,
+      "category": "Communication / Social",
+      "stars": 85,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mautrix/gmessages",
+      "score": 71.88,
+      "category": "Communication / Social",
+      "stars": 152,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/project-robius/robrix",
+      "score": 71.26,
+      "category": "Communication / Social",
+      "stars": 459,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cowboy8625/rusty-rain",
+      "score": 70.92,
+      "category": "Communication / Social",
+      "stars": 460,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/timokoesters/conduit",
+      "score": 70.89,
+      "category": "Communication / Social",
+      "stars": 558,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/owlbarn/owl",
+      "score": 66.5,
+      "category": "AI / LLM",
+      "stars": 1342,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/passbolt/passbolt-windows",
+      "score": 57.22,
+      "category": "Security / Auth",
+      "stars": 83,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pwman3/pwman3",
+      "score": 55.66,
+      "category": "Security / Auth",
+      "stars": 56,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ftyszyx/lockpass",
+      "score": 55.13,
+      "category": "Security / Auth",
+      "stars": 350,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/stepchowfun/hashpass",
+      "score": 54.5,
+      "category": "Security / Auth",
+      "stars": 121,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Krev3tka/ShrimPG",
+      "score": 54.37,
+      "category": "Security / Auth",
+      "stars": 14,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/XUANTIE-RV/riscv-matrix-extension-spec",
+      "score": 52.6,
+      "category": "AI / LLM",
+      "stars": 183,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hibobmaster/matrix_chatgpt_bot",
+      "score": 51.36,
+      "category": "AI / LLM",
+      "stars": 88,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/james-bowman/sparse",
+      "score": 51.11,
+      "category": "AI / LLM",
+      "stars": 168,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/matrix-org/matrix-appservice-bridge",
+      "score": 49.65,
+      "category": "DevOps / Infra",
+      "stars": 183,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/RUC-NLPIR/OmniEval",
+      "score": 47.99,
+      "category": "AI / LLM",
+      "stars": 84,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/apideck-samples/crm",
+      "score": 47.11,
+      "category": "Developer Tools / Utilities",
+      "stars": 40,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ZeroDream-CN/ZDocs",
+      "score": 44.93,
+      "category": "CRM / Business",
+      "stars": 61,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/getbrevo/brevo-python",
+      "score": 44.63,
+      "category": "CRM / Business",
+      "stars": 35,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mihaigalos/pass",
+      "score": 44.62,
+      "category": "Developer Tools / Utilities",
+      "stars": 37,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Megabre/StokmasterPro",
+      "score": 44.34,
+      "category": "CRM / Business",
+      "stars": 11,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jfqd/redmine_helpdesk",
+      "score": 44.03,
+      "category": "CRM / Business",
+      "stars": 200,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pakeku/twenty-crm-on-coolify",
+      "score": 43.89,
+      "category": "CRM / Business",
+      "stars": 10,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/phax/ph-commons",
+      "score": 40.18,
+      "category": "Developer Tools / Utilities",
+      "stars": 44,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ssiyad/pass-rs",
+      "score": 39.83,
+      "category": "Developer Tools / Utilities",
+      "stars": 46,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aymenhmaidiwastaken/envsafe",
+      "score": 37.6,
+      "category": "Developer Tools / Utilities",
+      "stars": 13,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/JustUnknownDude/matrix-synapse",
+      "score": 34.39,
+      "category": "Media / Streaming",
+      "stars": 20,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/matrix-org/mjolnir",
+      "score": 70.83,
+      "category": "Communication / Social",
+      "stars": 440,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/SystemVll/TAuth",
+      "score": 53.56,
+      "category": "Security / Auth",
+      "stars": 141,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/channel-io/channel-web-sdk-loader",
+      "score": 46.87,
+      "category": "AI / LLM",
+      "stars": 78,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/marmelab/react-admin-crm",
+      "score": 42.35,
+      "category": "CRM / Business",
+      "stars": 65,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/0M3REXE/passman",
+      "score": 36.3,
+      "category": "Developer Tools / Utilities",
+      "stars": 14,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/TeamPiped/Piped-Backend",
+      "score": 70.73,
+      "category": "Communication / Social",
+      "stars": 168,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/b0x42/prizm",
+      "score": 53.05,
+      "category": "Security / Auth",
+      "stars": 22,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/unicornB/Supportly-Ai",
+      "score": 45.58,
+      "category": "AI / LLM",
+      "stars": 23,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/swayerloren/salesforce-coding",
+      "score": 41.42,
+      "category": "CRM / Business",
+      "stars": 12,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Telodendria/Telodendria",
+      "score": 35.92,
+      "category": "Developer Tools / Utilities",
+      "stars": 37,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jeremiah-k/meshtastic-matrix-relay",
+      "score": 70.23,
+      "category": "Communication / Social",
+      "stars": 189,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Nitrokey/nitrokey-app",
+      "score": 52.46,
+      "category": "Security / Auth",
+      "stars": 291,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/gyrdym/ml_linalg",
+      "score": 45.09,
+      "category": "AI / LLM",
+      "stars": 88,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mesh/clay-mcp",
+      "score": 41.35,
+      "category": "CRM / Business",
+      "stars": 32,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nocozen/nocozen",
+      "score": 35.64,
+      "category": "Developer Tools / Utilities",
+      "stars": 8,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cinnyapp/cinny-desktop",
+      "score": 69.99,
+      "category": "Communication / Social",
+      "stars": 803,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/conradkleinespel/rooster",
+      "score": 51.91,
+      "category": "Security / Auth",
+      "stars": 169,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Poll-The-People/customgpt-integrations",
+      "score": 44.1,
+      "category": "AI / LLM",
+      "stars": 14,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ulyssa/iamb",
+      "score": 68.77,
+      "category": "Communication / Social",
+      "stars": 1228,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/championswimmer/env.sync.local",
+      "score": 51.0,
+      "category": "Security / Auth",
+      "stars": 40,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/PythonSJL/PyPyNum",
+      "score": 42.71,
+      "category": "AI / LLM",
+      "stars": 32,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/the-draupnir-project/Draupnir",
+      "score": 68.46,
+      "category": "Communication / Social",
+      "stars": 236,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/drduh/pwd.sh",
+      "score": 50.93,
+      "category": "Security / Auth",
+      "stars": 1564,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Communication / Social": 11,
+    "Security / Auth": 11,
+    "AI / LLM": 10,
+    "Developer Tools / Utilities": 8,
+    "CRM / Business": 8,
+    "DevOps / Infra": 1,
+    "Media / Streaming": 1
+  },
+  "scoreStats": {
+    "min": 34.39,
+    "max": 74.7,
+    "mean": 52.21
+  },
+  "dockerCount": 26,
+  "hostname": "M17s-MacBook-Pro.local",
+  "python": "3.14.5",
+  "timing": {
+    "gather": 50.1,
+    "score": 0.0,
+    "confirm": 15.7,
+    "confirmedPool": 130,
+    "diversify": 0.4,
+    "total": 196.2
+  }
+}

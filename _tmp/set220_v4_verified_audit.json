@@ -1,0 +1,436 @@
+{
+  "version": "v4",
+  "setNum": 220,
+  "searchCalls": 14,
+  "poolSize": 705,
+  "scoredCount": 172,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/mautrix/twitter",
+      "score": 68.2,
+      "category": "Communication / Social",
+      "stars": 115,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mautrix/imessage",
+      "score": 68.11,
+      "category": "Communication / Social",
+      "stars": 442,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/omonimus1/geeks-for-geeks-solutions",
+      "score": 67.75,
+      "category": "Communication / Social",
+      "stars": 609,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mautrix/go",
+      "score": 67.48,
+      "category": "Communication / Social",
+      "stars": 635,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mautrix/slack",
+      "score": 65.71,
+      "category": "Communication / Social",
+      "stars": 99,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sschmid/pw-terminal-password-manager",
+      "score": 50.56,
+      "category": "Security / Auth",
+      "stars": 69,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/MacPass/MacPass",
+      "score": 50.54,
+      "category": "Security / Auth",
+      "stars": 6849,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dnviti/arsenale",
+      "score": 49.76,
+      "category": "Security / Auth",
+      "stars": 10,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jenspfahl/ANOTHERpass",
+      "score": 49.53,
+      "category": "Security / Auth",
+      "stars": 89,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/au2001/icloud-passwords-firefox",
+      "score": 49.03,
+      "category": "Security / Auth",
+      "stars": 241,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/tags-dev/tercela",
+      "score": 47.17,
+      "category": "AI / LLM",
+      "stars": 12,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ChiefGyk3D/Stream-Daemon",
+      "score": 42.62,
+      "category": "AI / LLM",
+      "stars": 33,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Hykudoru/Pescado-3D-Engine",
+      "score": 42.32,
+      "category": "AI / LLM",
+      "stars": 55,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bot-myrtus/forward",
+      "score": 40.06,
+      "category": "AI / LLM",
+      "stars": 48,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Michae2xl/freedom-stack",
+      "score": 37.91,
+      "category": "AI / LLM",
+      "stars": 9,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jkhsjdhjs/maubot-webhook",
+      "score": 31.68,
+      "category": "Developer Tools / Utilities",
+      "stars": 39,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/eelixir/vanta",
+      "score": 30.96,
+      "category": "Developer Tools / Utilities",
+      "stars": 10,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/umuttopalak/pass-cli",
+      "score": 30.86,
+      "category": "Developer Tools / Utilities",
+      "stars": 8,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sysadminsmedia/franken-glpi",
+      "score": 30.56,
+      "category": "CRM / Business",
+      "stars": 8,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mautrix/googlechat",
+      "score": 64.96,
+      "category": "Communication / Social",
+      "stars": 124,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/curkan/go2fa",
+      "score": 48.95,
+      "category": "Security / Auth",
+      "stars": 70,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AllenZYJ/Edge-Computing-Engine",
+      "score": 37.09,
+      "category": "AI / LLM",
+      "stars": 121,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/viktorstrate/mactrix",
+      "score": 64.56,
+      "category": "Communication / Social",
+      "stars": 225,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lucor/paw",
+      "score": 48.82,
+      "category": "Security / Auth",
+      "stars": 98,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/JuliaArrays/FixedSizeArrays.jl",
+      "score": 64.35,
+      "category": "Communication / Social",
+      "stars": 100,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/SunsetMkt/Sunsetvault",
+      "score": 48.77,
+      "category": "Security / Auth",
+      "stars": 96,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/easystats/correlation",
+      "score": 64.19,
+      "category": "Communication / Social",
+      "stars": 454,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wkoszek/lastpass-ssh",
+      "score": 48.49,
+      "category": "Security / Auth",
+      "stars": 109,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Quantco/tabmat",
+      "score": 63.46,
+      "category": "Communication / Social",
+      "stars": 135,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/PasscodesApp/Passcodes",
+      "score": 48.36,
+      "category": "Security / Auth",
+      "stars": 12,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/maelstrom-rs/maelstrom",
+      "score": 62.45,
+      "category": "Communication / Social",
+      "stars": 257,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/michaelliao/mypassword",
+      "score": 48.15,
+      "category": "Security / Auth",
+      "stars": 27,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hifi/heisenbridge",
+      "score": 61.47,
+      "category": "Communication / Social",
+      "stars": 309,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/psono/psono-client",
+      "score": 47.51,
+      "category": "Security / Auth",
+      "stars": 25,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/shayaantx/botdarr",
+      "score": 60.9,
+      "category": "Communication / Social",
+      "stars": 199,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/drduh/Purse",
+      "score": 47.36,
+      "category": "Security / Auth",
+      "stars": 613,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sorydima/REChain-",
+      "score": 60.57,
+      "category": "Communication / Social",
+      "stars": 21,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/0xdeb7ef/spass-manager",
+      "score": 47.32,
+      "category": "Security / Auth",
+      "stars": 64,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/HenrikBengtsson/matrixStats",
+      "score": 60.38,
+      "category": "Communication / Social",
+      "stars": 215,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/NorkzYT/BitwardenSync",
+      "score": 47.13,
+      "category": "Security / Auth",
+      "stars": 11,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/peterhellberg/gfx",
+      "score": 60.27,
+      "category": "Communication / Social",
+      "stars": 151,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/FrozenAssassine/EasePass",
+      "score": 45.07,
+      "category": "Security / Auth",
+      "stars": 21,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mautrix/bluesky",
+      "score": 58.78,
+      "category": "Communication / Social",
+      "stars": 42,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/larrylart/blue_keyboard",
+      "score": 44.9,
+      "category": "Security / Auth",
+      "stars": 28,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nordeck/matrix-poll",
+      "score": 58.54,
+      "category": "Communication / Social",
+      "stars": 58,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/IcyDrae/vaults",
+      "score": 44.85,
+      "category": "Security / Auth",
+      "stars": 36,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/vranki/hemppa",
+      "score": 58.42,
+      "category": "Communication / Social",
+      "stars": 179,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/vid4l-07/Klip",
+      "score": 43.79,
+      "category": "Security / Auth",
+      "stars": 27,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/M4444/TMatrix",
+      "score": 57.51,
+      "category": "Communication / Social",
+      "stars": 421,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/psdoood/SteganoPass",
+      "score": 43.28,
+      "category": "Security / Auth",
+      "stars": 52,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Communication / Social": 20,
+    "Security / Auth": 20,
+    "AI / LLM": 6,
+    "Developer Tools / Utilities": 3,
+    "CRM / Business": 1
+  },
+  "scoreStats": {
+    "min": 30.56,
+    "max": 68.2,
+    "mean": 51.63
+  },
+  "dockerCount": 25,
+  "hostname": "M17s-MacBook-Pro.local",
+  "python": "3.14.5",
+  "timing": {
+    "gather": 36.3,
+    "score": 0.0,
+    "confirm": 8.7,
+    "confirmedPool": 130,
+    "diversify": 1.0,
+    "total": 176.0
+  }
+}

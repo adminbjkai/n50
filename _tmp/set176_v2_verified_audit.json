@@ -1,0 +1,336 @@
+{
+  "version": "v2",
+  "setNum": 176,
+  "searchCalls": 8,
+  "poolSize": 546,
+  "scoredCount": 316,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/tonyantony300/alt-sendme",
+      "score": 93.04,
+      "category": "Security / Auth",
+      "stars": 8256
+    },
+    {
+      "url": "https://github.com/delibae/claude-prism",
+      "score": 89.56,
+      "category": "AI / LLM",
+      "stars": 1596
+    },
+    {
+      "url": "https://github.com/potatameister/PaperKnife",
+      "score": 89.35,
+      "category": "Security / Auth",
+      "stars": 1262
+    },
+    {
+      "url": "https://github.com/iliyami/MacSai",
+      "score": 88.62,
+      "category": "Documents / PDF / Paperless",
+      "stars": 649
+    },
+    {
+      "url": "https://github.com/OpenMined/PySyft",
+      "score": 88.61,
+      "category": "AI / LLM",
+      "stars": 9910
+    },
+    {
+      "url": "https://github.com/itsfatduck/optimizerDuck",
+      "score": 88.5,
+      "category": "Gaming / Game Servers",
+      "stars": 4170
+    },
+    {
+      "url": "https://github.com/microsoft/presidio",
+      "score": 87.8,
+      "category": "AI / LLM",
+      "stars": 8705
+    },
+    {
+      "url": "https://github.com/marswaveai/TypeNo",
+      "score": 87.34,
+      "category": "Productivity / Tasks",
+      "stars": 877
+    },
+    {
+      "url": "https://github.com/nisrulz/app-privacy-policy-generator",
+      "score": 87.17,
+      "category": "Web App / Other",
+      "stars": 4627
+    },
+    {
+      "url": "https://github.com/AprilNEA/OpenLogi",
+      "score": 86.86,
+      "category": "Monitoring / Observability",
+      "stars": 5117
+    },
+    {
+      "url": "https://github.com/QuiteAFancyEmerald/InvisiProxy",
+      "score": 86.81,
+      "category": "Networking / VPN",
+      "stars": 1467
+    },
+    {
+      "url": "https://github.com/pi-hole/docker-pi-hole",
+      "score": 86.72,
+      "category": "Networking / VPN",
+      "stars": 11263
+    },
+    {
+      "url": "https://github.com/momenbasel/PureMac",
+      "score": 86.29,
+      "category": "Monitoring / Observability",
+      "stars": 4833
+    },
+    {
+      "url": "https://github.com/Atlas-OS/Atlas",
+      "score": 86.21,
+      "category": "Gaming / Game Servers",
+      "stars": 20870
+    },
+    {
+      "url": "https://github.com/flick9000/winscript",
+      "score": 85.79,
+      "category": "Monitoring / Observability",
+      "stars": 2522
+    },
+    {
+      "url": "https://github.com/denislupookov/altersend",
+      "score": 85.68,
+      "category": "Files / Storage / Backup",
+      "stars": 640
+    },
+    {
+      "url": "https://github.com/Monica-Pass/Monica",
+      "score": 85.45,
+      "category": "Security / Auth",
+      "stars": 794
+    },
+    {
+      "url": "https://github.com/fjrevoredo/mini-diarium",
+      "score": 85.3,
+      "category": "Security / Auth",
+      "stars": 275
+    },
+    {
+      "url": "https://github.com/siddsachar/row-bot",
+      "score": 85.15,
+      "category": "AI / LLM",
+      "stars": 1284
+    },
+    {
+      "url": "https://github.com/silverstein/minutes",
+      "score": 85.07,
+      "category": "AI / LLM",
+      "stars": 1289
+    },
+    {
+      "url": "https://github.com/Beaver-Notes/Beaver-Notes",
+      "score": 85.03,
+      "category": "Notes / Knowledge",
+      "stars": 1293
+    },
+    {
+      "url": "https://github.com/berty/berty",
+      "score": 84.59,
+      "category": "Networking / VPN",
+      "stars": 9208
+    },
+    {
+      "url": "https://github.com/moona3k/macparakeet",
+      "score": 84.37,
+      "category": "Web App / Other",
+      "stars": 392
+    },
+    {
+      "url": "https://github.com/M66B/FairEmail",
+      "score": 84.17,
+      "category": "Security / Auth",
+      "stars": 4424
+    },
+    {
+      "url": "https://github.com/pass-with-high-score/blockads-android",
+      "score": 84.05,
+      "category": "Networking / VPN",
+      "stars": 1095
+    },
+    {
+      "url": "https://github.com/torlando-tech/columba",
+      "score": 83.93,
+      "category": "Communication / Social",
+      "stars": 830
+    },
+    {
+      "url": "https://github.com/julyx10/lap",
+      "score": 83.83,
+      "category": "Media / Streaming",
+      "stars": 1195
+    },
+    {
+      "url": "https://github.com/irbis-sh/zen-desktop",
+      "score": 83.53,
+      "category": "Privacy / Ad-Blocking",
+      "stars": 4047
+    },
+    {
+      "url": "https://github.com/zhom/donutbrowser",
+      "score": 83.48,
+      "category": "Web App / Other",
+      "stars": 3093
+    },
+    {
+      "url": "https://github.com/libredirect/browser_extension",
+      "score": 83.24,
+      "category": "Web App / Other",
+      "stars": 3911
+    },
+    {
+      "url": "https://github.com/futo-org/android-keyboard",
+      "score": 82.88,
+      "category": "Web App / Other",
+      "stars": 2654
+    },
+    {
+      "url": "https://github.com/TryQuiet/quiet",
+      "score": 82.85,
+      "category": "Communication / Social",
+      "stars": 2609
+    },
+    {
+      "url": "https://github.com/bitfireAT/davx5-ose",
+      "score": 82.85,
+      "category": "Productivity / Tasks",
+      "stars": 2666
+    },
+    {
+      "url": "https://github.com/Tribler/tribler",
+      "score": 82.77,
+      "category": "Media / Streaming",
+      "stars": 5237
+    },
+    {
+      "url": "https://github.com/angristan/wireguard-install",
+      "score": 82.22,
+      "category": "Networking / VPN",
+      "stars": 11080
+    },
+    {
+      "url": "https://github.com/anyproto/any-sync",
+      "score": 81.58,
+      "category": "Files / Storage / Backup",
+      "stars": 1635
+    },
+    {
+      "url": "https://github.com/kylecorry31/Trail-Sense",
+      "score": 81.47,
+      "category": "Maps / GIS / Location",
+      "stars": 2668
+    },
+    {
+      "url": "https://github.com/AdguardTeam/AdguardBrowserExtension",
+      "score": 81.3,
+      "category": "Privacy / Ad-Blocking",
+      "stars": 4233
+    },
+    {
+      "url": "https://github.com/meetrevision/playbook",
+      "score": 81.21,
+      "category": "Gaming / Game Servers",
+      "stars": 1900
+    },
+    {
+      "url": "https://github.com/Bearer/bearer",
+      "score": 80.75,
+      "category": "Developer Tools / Utilities",
+      "stars": 2683
+    },
+    {
+      "url": "https://github.com/WalletWasabi/WalletWasabi",
+      "score": 80.55,
+      "category": "Finance / Budget",
+      "stars": 2557
+    },
+    {
+      "url": "https://github.com/spupuz/VibeNVR",
+      "score": 80.4,
+      "category": "Media / Streaming",
+      "stars": 318
+    },
+    {
+      "url": "https://github.com/Materialious/Materialious",
+      "score": 80.22,
+      "category": "Media / Streaming",
+      "stars": 1064
+    },
+    {
+      "url": "https://github.com/reisxd/TizenTube",
+      "score": 80.09,
+      "category": "Privacy / Ad-Blocking",
+      "stars": 1810
+    },
+    {
+      "url": "https://github.com/dannymcc/bluehood",
+      "score": 79.74,
+      "category": "Monitoring / Observability",
+      "stars": 1030
+    },
+    {
+      "url": "https://github.com/FaFre/WebLibre",
+      "score": 78.83,
+      "category": "Search / Indexing",
+      "stars": 794
+    },
+    {
+      "url": "https://github.com/organicmaps/organicmaps",
+      "score": 78.62,
+      "category": "Maps / GIS / Location",
+      "stars": 14368
+    },
+    {
+      "url": "https://github.com/mateusz-bak/openreads",
+      "score": 78.55,
+      "category": "Books / Reading / Library",
+      "stars": 1563
+    },
+    {
+      "url": "https://github.com/FreeTubeApp/FreeTube",
+      "score": 78.41,
+      "category": "Media / Streaming",
+      "stars": 21263
+    },
+    {
+      "url": "https://github.com/libre-tube/LibreTube",
+      "score": 78.04,
+      "category": "Image / Design / Creative",
+      "stars": 12164
+    }
+  ],
+  "categoryDistribution": {
+    "Security / Auth": 5,
+    "AI / LLM": 5,
+    "Web App / Other": 5,
+    "Networking / VPN": 5,
+    "Media / Streaming": 5,
+    "Monitoring / Observability": 4,
+    "Gaming / Game Servers": 3,
+    "Privacy / Ad-Blocking": 3,
+    "Productivity / Tasks": 2,
+    "Files / Storage / Backup": 2,
+    "Communication / Social": 2,
+    "Maps / GIS / Location": 2,
+    "Documents / PDF / Paperless": 1,
+    "Notes / Knowledge": 1,
+    "Developer Tools / Utilities": 1,
+    "Finance / Budget": 1,
+    "Search / Indexing": 1,
+    "Books / Reading / Library": 1,
+    "Image / Design / Creative": 1
+  },
+  "scoreStats": {
+    "min": 78.04,
+    "max": 93.04,
+    "mean": 83.98
+  }
+}

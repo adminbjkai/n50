@@ -1,0 +1,339 @@
+{
+  "version": "v2",
+  "setNum": 208,
+  "searchCalls": 28,
+  "poolSize": 1740,
+  "scoredCount": 363,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/podman-desktop/podman-desktop",
+      "score": 92.95,
+      "category": "DevOps / Infra",
+      "stars": 7730
+    },
+    {
+      "url": "https://github.com/IBM/mcp-context-forge",
+      "score": 92.46,
+      "category": "AI / LLM",
+      "stars": 3929
+    },
+    {
+      "url": "https://github.com/ArcReel/ArcReel",
+      "score": 92.01,
+      "category": "AI / LLM",
+      "stars": 2684
+    },
+    {
+      "url": "https://github.com/meshery/meshery",
+      "score": 91.87,
+      "category": "DevOps / Infra",
+      "stars": 11144
+    },
+    {
+      "url": "https://github.com/gruntwork-io/terratest",
+      "score": 91.53,
+      "category": "Books / Reading / Library",
+      "stars": 7930
+    },
+    {
+      "url": "https://github.com/telepresenceio/telepresence",
+      "score": 90.84,
+      "category": "DevOps / Infra",
+      "stars": 7241
+    },
+    {
+      "url": "https://github.com/replicate/cog",
+      "score": 90.34,
+      "category": "AI / LLM",
+      "stars": 9427
+    },
+    {
+      "url": "https://github.com/SuperManito/LinuxMirrors",
+      "score": 90.07,
+      "category": "DevOps / Infra",
+      "stars": 7592
+    },
+    {
+      "url": "https://github.com/youki-dev/youki",
+      "score": 89.85,
+      "category": "DevOps / Infra",
+      "stars": 7453
+    },
+    {
+      "url": "https://github.com/dongyubin/DockerHub",
+      "score": 89.56,
+      "category": "Networking / VPN",
+      "stars": 8935
+    },
+    {
+      "url": "https://github.com/jupyter/docker-stacks",
+      "score": 89.3,
+      "category": "Docker / Containers",
+      "stars": 8430
+    },
+    {
+      "url": "https://github.com/podman-container-tools/buildah",
+      "score": 89.19,
+      "category": "Docker / Containers",
+      "stars": 8892
+    },
+    {
+      "url": "https://github.com/nodejs/docker-node",
+      "score": 88.97,
+      "category": "Docker / Containers",
+      "stars": 8563
+    },
+    {
+      "url": "https://github.com/HerbertHe/iptv-sources",
+      "score": 87.8,
+      "category": "Docker / Containers",
+      "stars": 8816
+    },
+    {
+      "url": "https://github.com/docker/build-push-action",
+      "score": 87.67,
+      "category": "Docker / Containers",
+      "stars": 5309
+    },
+    {
+      "url": "https://github.com/docker/docker-py",
+      "score": 86.92,
+      "category": "Books / Reading / Library",
+      "stars": 7183
+    },
+    {
+      "url": "https://github.com/Maintainerr/Maintainerr",
+      "score": 86.52,
+      "category": "Media / Streaming",
+      "stars": 2045
+    },
+    {
+      "url": "https://github.com/roboflow/inference",
+      "score": 86.34,
+      "category": "AI / LLM",
+      "stars": 2329
+    },
+    {
+      "url": "https://github.com/dagger/dagger",
+      "score": 86.33,
+      "category": "AI / LLM",
+      "stars": 15982
+    },
+    {
+      "url": "https://github.com/Tikam02/DevOps-Guide",
+      "score": 85.9,
+      "category": "Monitoring / Observability",
+      "stars": 9248
+    },
+    {
+      "url": "https://github.com/jammsen/docker-palworld-dedicated-server",
+      "score": 85.35,
+      "category": "Gaming / Game Servers",
+      "stars": 972
+    },
+    {
+      "url": "https://github.com/ivanpaulovich/clean-architecture-manga",
+      "score": 84.43,
+      "category": "Books / Reading / Library",
+      "stars": 4334
+    },
+    {
+      "url": "https://github.com/project-copacetic/copacetic",
+      "score": 83.43,
+      "category": "Developer Tools / Utilities",
+      "stars": 1645
+    },
+    {
+      "url": "https://github.com/nohajc/anylinuxfs",
+      "score": 82.92,
+      "category": "Analytics / Data",
+      "stars": 1340
+    },
+    {
+      "url": "https://github.com/telekom-security/tpotce",
+      "score": 82.91,
+      "category": "Networking / VPN",
+      "stars": 9284
+    },
+    {
+      "url": "https://github.com/collinbarrett/FilterLists",
+      "score": 82.49,
+      "category": "Privacy / Ad-Blocking",
+      "stars": 1631
+    },
+    {
+      "url": "https://github.com/EstrellaXD/Auto_Bangumi",
+      "score": 82.35,
+      "category": "Notes / Knowledge",
+      "stars": 8086
+    },
+    {
+      "url": "https://github.com/mviereck/x11docker",
+      "score": 81.74,
+      "category": "Security / Auth",
+      "stars": 6282
+    },
+    {
+      "url": "https://github.com/jessielw/Reclaimerr",
+      "score": 81.48,
+      "category": "Media / Streaming",
+      "stars": 518
+    },
+    {
+      "url": "https://github.com/readur/readur",
+      "score": 80.89,
+      "category": "Documents / PDF / Paperless",
+      "stars": 740
+    },
+    {
+      "url": "https://github.com/hexlet-codebattle/codebattle",
+      "score": 80.29,
+      "category": "Gaming / Game Servers",
+      "stars": 862
+    },
+    {
+      "url": "https://github.com/macrozheng/mall",
+      "score": 80.23,
+      "category": "Security / Auth",
+      "stars": 83881
+    },
+    {
+      "url": "https://github.com/slimtoolkit/slim",
+      "score": 79.95,
+      "category": "Security / Auth",
+      "stars": 23312
+    },
+    {
+      "url": "https://github.com/idea4good/GuiLite",
+      "score": 79.95,
+      "category": "Home Automation / IoT",
+      "stars": 7753
+    },
+    {
+      "url": "https://github.com/crashappsec/chalk",
+      "score": 79.77,
+      "category": "Monitoring / Observability",
+      "stars": 437
+    },
+    {
+      "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp",
+      "score": 78.41,
+      "category": "Education / Learning",
+      "stars": 42612
+    },
+    {
+      "url": "https://github.com/docker-easyconnect/docker-easyconnect",
+      "score": 77.96,
+      "category": "Networking / VPN",
+      "stars": 5247
+    },
+    {
+      "url": "https://github.com/vehagn/homelab",
+      "score": 77.91,
+      "category": "Media / Streaming",
+      "stars": 394
+    },
+    {
+      "url": "https://github.com/crmne/kamal-backup",
+      "score": 77.8,
+      "category": "Files / Storage / Backup",
+      "stars": 101
+    },
+    {
+      "url": "https://github.com/deviantony/docker-elk",
+      "score": 77.66,
+      "category": "Search / Indexing",
+      "stars": 18373
+    },
+    {
+      "url": "https://github.com/madnuttah/unbound-docker",
+      "score": 76.84,
+      "category": "Networking / VPN",
+      "stars": 354
+    },
+    {
+      "url": "https://github.com/tyfkda/xcc",
+      "score": 76.74,
+      "category": "Dashboard / Homelab",
+      "stars": 525
+    },
+    {
+      "url": "https://github.com/haugene/docker-transmission-openvpn",
+      "score": 75.9,
+      "category": "Networking / VPN",
+      "stars": 4545
+    },
+    {
+      "url": "https://github.com/mwakidenis/WebCheck-OSINT",
+      "score": 75.68,
+      "category": "CMS / Website",
+      "stars": 66
+    },
+    {
+      "url": "https://github.com/crazy-max/ftpgrab",
+      "score": 75.6,
+      "category": "Dashboard / Homelab",
+      "stars": 559
+    },
+    {
+      "url": "https://github.com/br3ndonland/inboard",
+      "score": 75.07,
+      "category": "CRM / Business",
+      "stars": 320
+    },
+    {
+      "url": "https://github.com/docker/cli",
+      "score": 74.75,
+      "category": "Developer Tools / Utilities",
+      "stars": 5918
+    },
+    {
+      "url": "https://github.com/I-am-PUID-0/DUMB",
+      "score": 74.72,
+      "category": "Media / Streaming",
+      "stars": 376
+    },
+    {
+      "url": "https://github.com/One-Language/One",
+      "score": 73.42,
+      "category": "Image / Design / Creative",
+      "stars": 286
+    },
+    {
+      "url": "https://github.com/geerlingguy/ansible-for-devops",
+      "score": 73.26,
+      "category": "Books / Reading / Library",
+      "stars": 9791
+    }
+  ],
+  "categoryDistribution": {
+    "DevOps / Infra": 5,
+    "AI / LLM": 5,
+    "Networking / VPN": 5,
+    "Docker / Containers": 5,
+    "Books / Reading / Library": 4,
+    "Media / Streaming": 4,
+    "Security / Auth": 3,
+    "Monitoring / Observability": 2,
+    "Gaming / Game Servers": 2,
+    "Developer Tools / Utilities": 2,
+    "Dashboard / Homelab": 2,
+    "Analytics / Data": 1,
+    "Privacy / Ad-Blocking": 1,
+    "Notes / Knowledge": 1,
+    "Documents / PDF / Paperless": 1,
+    "Home Automation / IoT": 1,
+    "Education / Learning": 1,
+    "Files / Storage / Backup": 1,
+    "Search / Indexing": 1,
+    "CMS / Website": 1,
+    "CRM / Business": 1,
+    "Image / Design / Creative": 1
+  },
+  "scoreStats": {
+    "min": 73.26,
+    "max": 92.95,
+    "mean": 83.13
+  }
+}

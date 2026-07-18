@@ -1,0 +1,440 @@
+{
+  "version": "v3",
+  "setNum": 216,
+  "searchCalls": 14,
+  "poolSize": 882,
+  "scoredCount": 242,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/foru17/neko-master",
+      "score": 95.48,
+      "category": "Networking / VPN",
+      "stars": 1907,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mcpware/cross-code-organizer",
+      "score": 94.86,
+      "category": "AI / LLM",
+      "stars": 340,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hanxi/cups-web",
+      "score": 94.62,
+      "category": "Dashboard / Homelab",
+      "stars": 1080,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/itq5/OpenClaw-Admin",
+      "score": 93.19,
+      "category": "AI / LLM",
+      "stars": 817,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/amtoaer/bili-sync",
+      "score": 92.73,
+      "category": "Media / Streaming",
+      "stars": 2470,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/spatie/dashboard.spatie.be",
+      "score": 89.33,
+      "category": "Developer Tools / Utilities",
+      "stars": 1958,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/singleton-altman/MoviePilotLite",
+      "score": 89.13,
+      "category": "Dashboard / Homelab",
+      "stars": 374,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/NasDock/AudioDock",
+      "score": 88.87,
+      "category": "Media / Streaming",
+      "stars": 391,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nasirkhan/laravel-starter",
+      "score": 88.64,
+      "category": "Dashboard / Homelab",
+      "stars": 1390,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ChocoMeow/Vocard",
+      "score": 86.46,
+      "category": "Media / Streaming",
+      "stars": 567,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AuxXxilium/arc",
+      "score": 85.77,
+      "category": "Networking / VPN",
+      "stars": 3349,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Difegue/LANraragi",
+      "score": 85.22,
+      "category": "Books / Reading / Library",
+      "stars": 2996,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/retronas/retronas",
+      "score": 84.63,
+      "category": "Gaming / Game Servers",
+      "stars": 1313,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/any-listen/any-listen",
+      "score": 84.4,
+      "category": "Media / Streaming",
+      "stars": 3076,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/linyuan0213/nexus-media",
+      "score": 84.3,
+      "category": "Media / Streaming",
+      "stars": 540,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wushuo894/ani-rss",
+      "score": 84.0,
+      "category": "Notes / Knowledge",
+      "stars": 3383,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ophub/fnnas",
+      "score": 84.0,
+      "category": "CRM / Business",
+      "stars": 3107,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ShukeBta/MediaStationGo",
+      "score": 83.99,
+      "category": "AI / LLM",
+      "stars": 148,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lllllllillllllillll/DweebUI",
+      "score": 82.35,
+      "category": "Dashboard / Homelab",
+      "stars": 1056,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nellavio/nellavio",
+      "score": 82.3,
+      "category": "Security / Auth",
+      "stars": 485,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/always-open/laravel-totem",
+      "score": 81.42,
+      "category": "Productivity / Tasks",
+      "stars": 1819,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/duyanming/Viper",
+      "score": 81.04,
+      "category": "Automation",
+      "stars": 753,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/weibeifen/wxbackup",
+      "score": 80.95,
+      "category": "Files / Storage / Backup",
+      "stars": 485,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/flask-dashboard/Flask-MonitoringDashboard",
+      "score": 80.9,
+      "category": "Monitoring / Observability",
+      "stars": 829,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/joeynyc/hermes-hud",
+      "score": 80.77,
+      "category": "AI / LLM",
+      "stars": 856,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/joseluis9595/lovelace-navbar-card",
+      "score": 80.74,
+      "category": "Home Automation / IoT",
+      "stars": 827,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aahl/tgnas",
+      "score": 80.58,
+      "category": "Networking / VPN",
+      "stars": 116,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/leon-kfd/Dashboard",
+      "score": 80.03,
+      "category": "Dashboard / Homelab",
+      "stars": 1050,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kubernetes-sigs/alibaba-cloud-csi-driver",
+      "score": 79.64,
+      "category": "DevOps / Infra",
+      "stars": 577,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cby-chen/Kubernetes",
+      "score": 79.48,
+      "category": "Monitoring / Observability",
+      "stars": 1238,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/victrme/Bonjourr",
+      "score": 77.59,
+      "category": "Image / Design / Creative",
+      "stars": 1967,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/PaddlePaddle/PaddleSlim",
+      "score": 77.4,
+      "category": "Search / Indexing",
+      "stars": 1613,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hesamsheikh/octogent",
+      "score": 76.9,
+      "category": "AI / LLM",
+      "stars": 1300,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/rbetree/menav",
+      "score": 76.63,
+      "category": "Maps / GIS / Location",
+      "stars": 285,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/shannonhochkins/ha-component-kit",
+      "score": 75.79,
+      "category": "Home Automation / IoT",
+      "stars": 1239,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Privoce/Portal-Lite",
+      "score": 75.34,
+      "category": "Maps / GIS / Location",
+      "stars": 349,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Lessica/Reveil",
+      "score": 75.26,
+      "category": "Security / Auth",
+      "stars": 655,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mendhak/waveshare-epaper-display",
+      "score": 74.75,
+      "category": "Productivity / Tasks",
+      "stars": 530,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/thingsboard/thingsboard-edge",
+      "score": 74.53,
+      "category": "Home Automation / IoT",
+      "stars": 167,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jahirfiquitiva/Blueprint",
+      "score": 74.44,
+      "category": "Image / Design / Creative",
+      "stars": 919,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Kwonelee/iStoreOS-Actions",
+      "score": 74.21,
+      "category": "CRM / Business",
+      "stars": 316,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kantord/just-dashboard",
+      "score": 73.89,
+      "category": "Developer Tools / Utilities",
+      "stars": 1578,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/leonchen83/redis-rdb-cli",
+      "score": 73.67,
+      "category": "Developer Tools / Utilities",
+      "stars": 479,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/FluxpointDev/CloudFrost-Dev",
+      "score": 72.89,
+      "category": "Gaming / Game Servers",
+      "stars": 333,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mahendrapaipuri/grafana-dashboard-reporter-app",
+      "score": 72.55,
+      "category": "Monitoring / Observability",
+      "stars": 151,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nasty-project/nasty",
+      "score": 72.34,
+      "category": "Files / Storage / Backup",
+      "stars": 263,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/poetaman/arttime",
+      "score": 72.13,
+      "category": "Developer Tools / Utilities",
+      "stars": 1353,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/plotly/Dash.jl",
+      "score": 70.91,
+      "category": "Productivity / Tasks",
+      "stars": 518,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/enbop/fungi",
+      "score": 70.51,
+      "category": "Networking / VPN",
+      "stars": 126,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/macgaver/zfsnas-chezmoi",
+      "score": 70.47,
+      "category": "Files / Storage / Backup",
+      "stars": 111,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "AI / LLM": 5,
+    "Dashboard / Homelab": 5,
+    "Media / Streaming": 5,
+    "Networking / VPN": 4,
+    "Developer Tools / Utilities": 4,
+    "Productivity / Tasks": 3,
+    "Files / Storage / Backup": 3,
+    "Monitoring / Observability": 3,
+    "Home Automation / IoT": 3,
+    "Gaming / Game Servers": 2,
+    "CRM / Business": 2,
+    "Security / Auth": 2,
+    "Image / Design / Creative": 2,
+    "Maps / GIS / Location": 2,
+    "Books / Reading / Library": 1,
+    "Notes / Knowledge": 1,
+    "Automation": 1,
+    "DevOps / Infra": 1,
+    "Search / Indexing": 1
+  },
+  "scoreStats": {
+    "min": 70.47,
+    "max": 95.48,
+    "mean": 80.84
+  },
+  "dockerCount": 40
+}

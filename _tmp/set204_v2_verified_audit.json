@@ -1,0 +1,333 @@
+{
+  "version": "v2",
+  "setNum": 204,
+  "searchCalls": 11,
+  "poolSize": 620,
+  "scoredCount": 349,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/NicolasHug/Surprise",
+      "score": 84.21,
+      "category": "AI / LLM",
+      "stars": 6796
+    },
+    {
+      "url": "https://github.com/gonum/gonum",
+      "score": 83.13,
+      "category": "Communication / Social",
+      "stars": 8397
+    },
+    {
+      "url": "https://github.com/element-hq/ess-helm",
+      "score": 83.07,
+      "category": "DevOps / Infra",
+      "stars": 861
+    },
+    {
+      "url": "https://github.com/gebruder/wirken",
+      "score": 82.83,
+      "category": "AI / LLM",
+      "stars": 153
+    },
+    {
+      "url": "https://github.com/continuwuity/continuwuity",
+      "score": 81.83,
+      "category": "Communication / Social",
+      "stars": 870
+    },
+    {
+      "url": "https://github.com/krille-chan/fluffychat",
+      "score": 81.39,
+      "category": "Communication / Social",
+      "stars": 2899
+    },
+    {
+      "url": "https://github.com/ARM-software/CMSIS-DSP",
+      "score": 78.11,
+      "category": "AI / LLM",
+      "stars": 1017
+    },
+    {
+      "url": "https://github.com/dimforge/nalgebra",
+      "score": 77.75,
+      "category": "Books / Reading / Library",
+      "stars": 4743
+    },
+    {
+      "url": "https://github.com/sarah-quinones/faer-rs",
+      "score": 76.88,
+      "category": "Communication / Social",
+      "stars": 2548
+    },
+    {
+      "url": "https://github.com/element-hq/element-android",
+      "score": 76.73,
+      "category": "Communication / Social",
+      "stars": 3701
+    },
+    {
+      "url": "https://github.com/koishijs/koishi",
+      "score": 75.73,
+      "category": "AI / LLM",
+      "stars": 5601
+    },
+    {
+      "url": "https://github.com/tiagomonteiro0715/The-Math-Behind-Artificial-Intelligence-A-Guide-to-AI-Foundations",
+      "score": 75.47,
+      "category": "AI / LLM",
+      "stars": 155
+    },
+    {
+      "url": "https://github.com/matrix-org/matrix-js-sdk",
+      "score": 75.17,
+      "category": "Developer Tools / Utilities",
+      "stars": 2138
+    },
+    {
+      "url": "https://github.com/magisk317/xinyi-relay",
+      "score": 73.48,
+      "category": "Developer Tools / Utilities",
+      "stars": 128
+    },
+    {
+      "url": "https://github.com/Axect/Peroxide",
+      "score": 73.04,
+      "category": "Books / Reading / Library",
+      "stars": 706
+    },
+    {
+      "url": "https://github.com/element-hq/element-x-android",
+      "score": 73.03,
+      "category": "Developer Tools / Utilities",
+      "stars": 2215
+    },
+    {
+      "url": "https://github.com/element-hq/element-x-ios",
+      "score": 72.39,
+      "category": "Developer Tools / Utilities",
+      "stars": 886
+    },
+    {
+      "url": "https://github.com/AcademySoftwareFoundation/Imath",
+      "score": 72.2,
+      "category": "Books / Reading / Library",
+      "stars": 474
+    },
+    {
+      "url": "https://github.com/keepassxreboot/keepassxc",
+      "score": 72.11,
+      "category": "Security / Auth",
+      "stars": 27707
+    },
+    {
+      "url": "https://github.com/keepassium/KeePassium",
+      "score": 69.84,
+      "category": "Security / Auth",
+      "stars": 1629
+    },
+    {
+      "url": "https://github.com/nextcloud/passman",
+      "score": 69.17,
+      "category": "Security / Auth",
+      "stars": 822
+    },
+    {
+      "url": "https://github.com/Kotlin/multik",
+      "score": 69.05,
+      "category": "Books / Reading / Library",
+      "stars": 729
+    },
+    {
+      "url": "https://github.com/passwall/passwall-desktop",
+      "score": 68.77,
+      "category": "Security / Auth",
+      "stars": 170
+    },
+    {
+      "url": "https://github.com/passbolt/passbolt_browser_extension",
+      "score": 68.71,
+      "category": "Security / Auth",
+      "stars": 269
+    },
+    {
+      "url": "https://github.com/8go/matrix-commander",
+      "score": 68.68,
+      "category": "Developer Tools / Utilities",
+      "stars": 737
+    },
+    {
+      "url": "https://github.com/lessthanoptimal/ejml",
+      "score": 68.44,
+      "category": "Books / Reading / Library",
+      "stars": 615
+    },
+    {
+      "url": "https://github.com/SkyUOI/OurChat",
+      "score": 66.79,
+      "category": "DevOps / Infra",
+      "stars": 54
+    },
+    {
+      "url": "https://github.com/asterics/Asterics-AAC",
+      "score": 64.94,
+      "category": "Media / Streaming",
+      "stars": 111
+    },
+    {
+      "url": "https://github.com/maglerod/andy-segment-display-card",
+      "score": 63.13,
+      "category": "Home Automation / IoT",
+      "stars": 39
+    },
+    {
+      "url": "https://github.com/seung-lab/cloud-volume",
+      "score": 62.4,
+      "category": "Files / Storage / Backup",
+      "stars": 174
+    },
+    {
+      "url": "https://github.com/Nosdesk/Nosdesk",
+      "score": 60.68,
+      "category": "CRM / Business",
+      "stars": 43
+    },
+    {
+      "url": "https://github.com/zodiepupper/barkvr",
+      "score": 58.84,
+      "category": "Gaming / Game Servers",
+      "stars": 80
+    },
+    {
+      "url": "https://github.com/DDonnyy/IduEdu",
+      "score": 58.75,
+      "category": "Maps / GIS / Location",
+      "stars": 13
+    },
+    {
+      "url": "https://github.com/mbologna/docker-bitlbee",
+      "score": 58.65,
+      "category": "DevOps / Infra",
+      "stars": 50
+    },
+    {
+      "url": "https://github.com/nordeck/matrix-meetings",
+      "score": 58.58,
+      "category": "Media / Streaming",
+      "stars": 104
+    },
+    {
+      "url": "https://github.com/nfrastack/container-freescout",
+      "score": 58.48,
+      "category": "CRM / Business",
+      "stars": 321
+    },
+    {
+      "url": "https://github.com/matrix-org/synapse-s3-storage-provider",
+      "score": 58.29,
+      "category": "Media / Streaming",
+      "stars": 198
+    },
+    {
+      "url": "https://github.com/dotWee/docker-matrix-synapse-s3",
+      "score": 58.12,
+      "category": "Files / Storage / Backup",
+      "stars": 17
+    },
+    {
+      "url": "https://github.com/zak-45/WLEDVideoSync",
+      "score": 58.01,
+      "category": "Media / Streaming",
+      "stars": 64
+    },
+    {
+      "url": "https://github.com/accraze/python-twelve-tone",
+      "score": 57.71,
+      "category": "Media / Streaming",
+      "stars": 70
+    },
+    {
+      "url": "https://github.com/progval/matrix2051",
+      "score": 57.24,
+      "category": "Networking / VPN",
+      "stars": 106
+    },
+    {
+      "url": "https://github.com/jaywink/matrix-alertmanager",
+      "score": 55.24,
+      "category": "Monitoring / Observability",
+      "stars": 92
+    },
+    {
+      "url": "https://github.com/Thavarshan/matrix",
+      "score": 54.78,
+      "category": "Productivity / Tasks",
+      "stars": 60
+    },
+    {
+      "url": "https://github.com/metio/matrix-alertmanager-receiver",
+      "score": 53.93,
+      "category": "Monitoring / Observability",
+      "stars": 44
+    },
+    {
+      "url": "https://github.com/MichaelSasser/matrixctl",
+      "score": 53.32,
+      "category": "DevOps / Infra",
+      "stars": 14
+    },
+    {
+      "url": "https://github.com/PioneersHub/pytanis",
+      "score": 50.47,
+      "category": "CRM / Business",
+      "stars": 29
+    },
+    {
+      "url": "https://github.com/CamelCaseName/HUB75nano",
+      "score": 49.78,
+      "category": "Home Automation / IoT",
+      "stars": 48
+    },
+    {
+      "url": "https://github.com/Neboer/NerChat",
+      "score": 49.15,
+      "category": "Notes / Knowledge",
+      "stars": 53
+    },
+    {
+      "url": "https://github.com/root676/QNEAT3",
+      "score": 48.64,
+      "category": "Networking / VPN",
+      "stars": 79
+    },
+    {
+      "url": "https://github.com/jeffcaldwellca/support-portal",
+      "score": 48.5,
+      "category": "CRM / Business",
+      "stars": 21
+    }
+  ],
+  "categoryDistribution": {
+    "AI / LLM": 5,
+    "Communication / Social": 5,
+    "Books / Reading / Library": 5,
+    "Developer Tools / Utilities": 5,
+    "Security / Auth": 5,
+    "Media / Streaming": 5,
+    "DevOps / Infra": 4,
+    "CRM / Business": 4,
+    "Home Automation / IoT": 2,
+    "Files / Storage / Backup": 2,
+    "Networking / VPN": 2,
+    "Monitoring / Observability": 2,
+    "Gaming / Game Servers": 1,
+    "Maps / GIS / Location": 1,
+    "Productivity / Tasks": 1,
+    "Notes / Knowledge": 1
+  },
+  "scoreStats": {
+    "min": 48.5,
+    "max": 84.21,
+    "mean": 66.31
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "version": "v3",
+  "setNum": 187,
+  "searchCalls": 9,
+  "poolSize": 775,
+  "scoredCount": 440,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/traceroot-ai/traceroot",
+      "score": 94.53,
+      "category": "AI / LLM",
+      "stars": 629,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Basekick-Labs/arc",
+      "score": 93.3,
+      "category": "AI / LLM",
+      "stars": 610,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/theopenco/llmgateway",
+      "score": 91.92,
+      "category": "AI / LLM",
+      "stars": 1319,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/clickvisual/clickvisual",
+      "score": 90.78,
+      "category": "DevOps / Infra",
+      "stars": 1641,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bruin-data/bruin",
+      "score": 90.25,
+      "category": "Analytics / Data",
+      "stars": 1621,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/StructuredLabs/preswald",
+      "score": 89.0,
+      "category": "AI / LLM",
+      "stars": 4282,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/GreptimeTeam/greptimedb",
+      "score": 89.0,
+      "category": "AI / LLM",
+      "stars": 6358,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/datalens-tech/datalens",
+      "score": 88.12,
+      "category": "CRM / Business",
+      "stars": 1687,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/vemetric/vemetric",
+      "score": 86.74,
+      "category": "Analytics / Data",
+      "stars": 352,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/rotki/rotki",
+      "score": 86.38,
+      "category": "Finance / Budget",
+      "stars": 3894,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Mooncake-Labs/pg_mooncake",
+      "score": 86.04,
+      "category": "Analytics / Data",
+      "stars": 1976,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/delta-io/delta",
+      "score": 86.0,
+      "category": "Files / Storage / Backup",
+      "stars": 8859,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/junobuild/juno",
+      "score": 85.32,
+      "category": "Developer Tools / Utilities",
+      "stars": 411,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/miantiao-me/Sink",
+      "score": 85.0,
+      "category": "Developer Tools / Utilities",
+      "stars": 6816,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ganweisoft/TOMs",
+      "score": 84.77,
+      "category": "Home Automation / IoT",
+      "stars": 480,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/duckdb/duckdb-wasm",
+      "score": 84.43,
+      "category": "Analytics / Data",
+      "stars": 2042,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/RaspAP/raspap-webgui",
+      "score": 83.3,
+      "category": "Home Automation / IoT",
+      "stars": 5183,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/iyashjayesh/monigo",
+      "score": 81.98,
+      "category": "Monitoring / Observability",
+      "stars": 409,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/serenedb/serenedb",
+      "score": 81.73,
+      "category": "Search / Indexing",
+      "stars": 542,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aws-amplify/amplify-cli",
+      "score": 81.53,
+      "category": "Developer Tools / Utilities",
+      "stars": 2873,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Pometry/Raphtory",
+      "score": 81.53,
+      "category": "Analytics / Data",
+      "stars": 623,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/tuya-cloudcutter/tuya-cloudcutter",
+      "score": 81.38,
+      "category": "Home Automation / IoT",
+      "stars": 1811,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/opendatacam/opendatacam",
+      "score": 81.16,
+      "category": "Home Automation / IoT",
+      "stars": 1717,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wasm3/wasm3",
+      "score": 81.0,
+      "category": "Home Automation / IoT",
+      "stars": 7932,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dbt-labs/metricflow",
+      "score": 80.97,
+      "category": "Monitoring / Observability",
+      "stars": 1633,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/roapi/roapi",
+      "score": 80.34,
+      "category": "Developer Tools / Utilities",
+      "stars": 3420,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/code-pushup/cli",
+      "score": 79.57,
+      "category": "Developer Tools / Utilities",
+      "stars": 344,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/vidstack/player",
+      "score": 79.55,
+      "category": "Media / Streaming",
+      "stars": 3547,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lalabuy948/PhoenixAnalytics",
+      "score": 78.92,
+      "category": "Dashboard / Homelab",
+      "stars": 451,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/igerber/diff-diff",
+      "score": 78.54,
+      "category": "Maps / GIS / Location",
+      "stars": 263,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/DavidWells/analytics",
+      "score": 78.31,
+      "category": "Monitoring / Observability",
+      "stars": 2655,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/y-scope/clp",
+      "score": 78.22,
+      "category": "Monitoring / Observability",
+      "stars": 1068,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/stoneatom/stonedb",
+      "score": 78.05,
+      "category": "Files / Storage / Backup",
+      "stars": 883,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/StarRocks/starrocks",
+      "score": 78.0,
+      "category": "CRM / Business",
+      "stars": 11800,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aws-amplify/amplify-js",
+      "score": 78.0,
+      "category": "Monitoring / Observability",
+      "stars": 9571,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/plan-player-analytics/Plan",
+      "score": 75.76,
+      "category": "Gaming / Game Servers",
+      "stars": 1011,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hashview/hashview",
+      "score": 75.46,
+      "category": "Security / Auth",
+      "stars": 396,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/perspective-dev/perspective",
+      "score": 75.0,
+      "category": "Media / Streaming",
+      "stars": 10969,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/quarylabs/quary",
+      "score": 74.81,
+      "category": "CRM / Business",
+      "stars": 2371,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/visualHFT/VisualHFT",
+      "score": 74.61,
+      "category": "Automation",
+      "stars": 1148,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sy-vendor/Gobi",
+      "score": 72.94,
+      "category": "CRM / Business",
+      "stars": 269,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/papa-torb/adtruth",
+      "score": 70.78,
+      "category": "CRM / Business",
+      "stars": 232,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/anudeepND/blacklist",
+      "score": 70.13,
+      "category": "Privacy / Ad-Blocking",
+      "stars": 1278,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/leeoniya/uPlot",
+      "score": 70.0,
+      "category": "Media / Streaming",
+      "stars": 10247,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/TaloDev/godot",
+      "score": 69.39,
+      "category": "Gaming / Game Servers",
+      "stars": 223,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/crazy-max/docker-matomo",
+      "score": 69.23,
+      "category": "Networking / VPN",
+      "stars": 181,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/HariSekhon/Diagrams-as-Code",
+      "score": 67.07,
+      "category": "DevOps / Infra",
+      "stars": 275,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/process-analytics/bpmn-visualization-js",
+      "score": 66.85,
+      "category": "Image / Design / Creative",
+      "stars": 285,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/devmount/third-stats",
+      "score": 66.74,
+      "category": "Communication / Social",
+      "stars": 258,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/18F/analytics.usa.gov",
+      "score": 66.33,
+      "category": "Dashboard / Homelab",
+      "stars": 780,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "AI / LLM": 5,
+    "Analytics / Data": 5,
+    "CRM / Business": 5,
+    "Developer Tools / Utilities": 5,
+    "Home Automation / IoT": 5,
+    "Monitoring / Observability": 5,
+    "Media / Streaming": 3,
+    "DevOps / Infra": 2,
+    "Files / Storage / Backup": 2,
+    "Dashboard / Homelab": 2,
+    "Gaming / Game Servers": 2,
+    "Finance / Budget": 1,
+    "Search / Indexing": 1,
+    "Maps / GIS / Location": 1,
+    "Security / Auth": 1,
+    "Automation": 1,
+    "Privacy / Ad-Blocking": 1,
+    "Networking / VPN": 1,
+    "Image / Design / Creative": 1,
+    "Communication / Social": 1
+  },
+  "scoreStats": {
+    "min": 66.33,
+    "max": 94.53,
+    "mean": 79.98
+  },
+  "dockerCount": 33
+}

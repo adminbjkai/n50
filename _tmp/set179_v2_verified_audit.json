@@ -1,0 +1,330 @@
+{
+  "version": "v2",
+  "setNum": 179,
+  "searchCalls": 6,
+  "poolSize": 478,
+  "scoredCount": 255,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/thelastoutpostworkshop/ESPConnect",
+      "score": 84.0,
+      "category": "Files / Storage / Backup",
+      "stars": 1939
+    },
+    {
+      "url": "https://github.com/JonathanTreffler/backblaze-personal-wine-container",
+      "score": 78.67,
+      "category": "Files / Storage / Backup",
+      "stars": 624
+    },
+    {
+      "url": "https://github.com/elasticsearch-dump/elasticsearch-dump",
+      "score": 78.51,
+      "category": "Files / Storage / Backup",
+      "stars": 7931
+    },
+    {
+      "url": "https://github.com/borgmatic-collective/borgmatic",
+      "score": 78.31,
+      "category": "Files / Storage / Backup",
+      "stars": 2275
+    },
+    {
+      "url": "https://github.com/GreenmaskIO/greenmask",
+      "score": 77.86,
+      "category": "Security / Auth",
+      "stars": 1695
+    },
+    {
+      "url": "https://github.com/lawndoc/stack-back",
+      "score": 77.16,
+      "category": "Files / Storage / Backup",
+      "stars": 176
+    },
+    {
+      "url": "https://github.com/FairwindsOps/gemini",
+      "score": 76.37,
+      "category": "DevOps / Infra",
+      "stars": 434
+    },
+    {
+      "url": "https://github.com/moosefs/moosefs",
+      "score": 75.92,
+      "category": "DevOps / Infra",
+      "stars": 1983
+    },
+    {
+      "url": "https://github.com/mrrfv/open-android-backup",
+      "score": 74.76,
+      "category": "Security / Auth",
+      "stars": 1312
+    },
+    {
+      "url": "https://github.com/MichaelCade/90DaysOfDevOps",
+      "score": 74.4,
+      "category": "Maps / GIS / Location",
+      "stars": 29508
+    },
+    {
+      "url": "https://github.com/creativeprojects/resticprofile",
+      "score": 73.85,
+      "category": "Monitoring / Observability",
+      "stars": 1336
+    },
+    {
+      "url": "https://github.com/stashed/stash",
+      "score": 72.88,
+      "category": "DevOps / Infra",
+      "stars": 1415
+    },
+    {
+      "url": "https://github.com/ellermister/mybili",
+      "score": 71.84,
+      "category": "Media / Streaming",
+      "stars": 647
+    },
+    {
+      "url": "https://github.com/rodrigogs/whats-reader",
+      "score": 71.6,
+      "category": "AI / LLM",
+      "stars": 202
+    },
+    {
+      "url": "https://github.com/cupcakearmy/autorestic",
+      "score": 70.77,
+      "category": "Developer Tools / Utilities",
+      "stars": 1838
+    },
+    {
+      "url": "https://github.com/s3tools/s3cmd",
+      "score": 70.73,
+      "category": "Developer Tools / Utilities",
+      "stars": 4891
+    },
+    {
+      "url": "https://github.com/zrepl/zrepl",
+      "score": 70.23,
+      "category": "Notes / Knowledge",
+      "stars": 1142
+    },
+    {
+      "url": "https://github.com/turbot/steampipe-plugin-aws",
+      "score": 70.05,
+      "category": "Developer Tools / Utilities",
+      "stars": 227
+    },
+    {
+      "url": "https://github.com/git-fire/git-fire",
+      "score": 69.39,
+      "category": "Developer Tools / Utilities",
+      "stars": 37
+    },
+    {
+      "url": "https://github.com/otwld/velero-ui",
+      "score": 68.79,
+      "category": "DevOps / Infra",
+      "stars": 120
+    },
+    {
+      "url": "https://github.com/osodevops/kafka-backup",
+      "score": 68.44,
+      "category": "DevOps / Infra",
+      "stars": 40
+    },
+    {
+      "url": "https://github.com/esnet/gdg",
+      "score": 68.36,
+      "category": "Monitoring / Observability",
+      "stars": 427
+    },
+    {
+      "url": "https://github.com/POW-Software/ByteSync",
+      "score": 68.04,
+      "category": "Networking / VPN",
+      "stars": 160
+    },
+    {
+      "url": "https://github.com/Archmonger/django-dbbackup",
+      "score": 67.48,
+      "category": "Media / Streaming",
+      "stars": 1110
+    },
+    {
+      "url": "https://github.com/camgitt/memoir",
+      "score": 67.23,
+      "category": "AI / LLM",
+      "stars": 12
+    },
+    {
+      "url": "https://github.com/S2thend/cursor-history",
+      "score": 67.22,
+      "category": "AI / LLM",
+      "stars": 84
+    },
+    {
+      "url": "https://github.com/iamsanmith/MetaSort",
+      "score": 67.14,
+      "category": "Media / Streaming",
+      "stars": 244
+    },
+    {
+      "url": "https://github.com/MikeMaximus/gbm",
+      "score": 66.84,
+      "category": "Gaming / Game Servers",
+      "stars": 282
+    },
+    {
+      "url": "https://github.com/Leafuke/MineBackup",
+      "score": 66.08,
+      "category": "Gaming / Game Servers",
+      "stars": 94
+    },
+    {
+      "url": "https://github.com/qoomon/otp-authenticator-webapp",
+      "score": 65.99,
+      "category": "Security / Auth",
+      "stars": 144
+    },
+    {
+      "url": "https://github.com/querylab/lazywarden",
+      "score": 65.74,
+      "category": "Security / Auth",
+      "stars": 828
+    },
+    {
+      "url": "https://github.com/030/n3dr",
+      "score": 65.57,
+      "category": "Developer Tools / Utilities",
+      "stars": 169
+    },
+    {
+      "url": "https://github.com/WikiTeam/wikiteam",
+      "score": 64.27,
+      "category": "Notes / Knowledge",
+      "stars": 849
+    },
+    {
+      "url": "https://github.com/GoogleCloudPlatform/elcarro-oracle-operator",
+      "score": 64.0,
+      "category": "Monitoring / Observability",
+      "stars": 212
+    },
+    {
+      "url": "https://github.com/sndnv/stasis",
+      "score": 63.65,
+      "category": "Security / Auth",
+      "stars": 162
+    },
+    {
+      "url": "https://github.com/maxisam/mgob",
+      "score": 63.61,
+      "category": "Monitoring / Observability",
+      "stars": 198
+    },
+    {
+      "url": "https://github.com/elkarbackup/elkarbackup",
+      "score": 62.75,
+      "category": "Networking / VPN",
+      "stars": 412
+    },
+    {
+      "url": "https://github.com/Red-noblue/Codex_Relay",
+      "score": 60.76,
+      "category": "AI / LLM",
+      "stars": 151
+    },
+    {
+      "url": "https://github.com/laktak/chkbit",
+      "score": 59.26,
+      "category": "Media / Streaming",
+      "stars": 177
+    },
+    {
+      "url": "https://github.com/Z1ni/XGP-save-extractor",
+      "score": 58.93,
+      "category": "Gaming / Game Servers",
+      "stars": 942
+    },
+    {
+      "url": "https://github.com/jasp-nerd/canvas-course-downloader",
+      "score": 58.9,
+      "category": "AI / LLM",
+      "stars": 18
+    },
+    {
+      "url": "https://github.com/aws-solutions-library-samples/guidance-for-rolling-back-changes-to-datasets-in-amazon-s3",
+      "score": 58.88,
+      "category": "Books / Reading / Library",
+      "stars": 14
+    },
+    {
+      "url": "https://github.com/joz-k/ios_backup_extractor",
+      "score": 58.31,
+      "category": "Media / Streaming",
+      "stars": 113
+    },
+    {
+      "url": "https://github.com/purarue/google_takeout_parser",
+      "score": 57.95,
+      "category": "Books / Reading / Library",
+      "stars": 135
+    },
+    {
+      "url": "https://github.com/XboxDev/extract-xiso",
+      "score": 57.59,
+      "category": "Gaming / Game Servers",
+      "stars": 1080
+    },
+    {
+      "url": "https://github.com/ngosang/restic-exporter",
+      "score": 57.08,
+      "category": "Monitoring / Observability",
+      "stars": 155
+    },
+    {
+      "url": "https://github.com/vzhd1701/evernote-backup",
+      "score": 56.44,
+      "category": "Notes / Knowledge",
+      "stars": 1640
+    },
+    {
+      "url": "https://github.com/TanagerTrough/koodo-reader",
+      "score": 56.24,
+      "category": "Books / Reading / Library",
+      "stars": 10
+    },
+    {
+      "url": "https://github.com/lfaoro/flares",
+      "score": 55.48,
+      "category": "Networking / VPN",
+      "stars": 193
+    },
+    {
+      "url": "https://github.com/sonnenkern/quip-export",
+      "score": 53.98,
+      "category": "Documents / PDF / Paperless",
+      "stars": 122
+    }
+  ],
+  "categoryDistribution": {
+    "Files / Storage / Backup": 5,
+    "Security / Auth": 5,
+    "DevOps / Infra": 5,
+    "Monitoring / Observability": 5,
+    "Media / Streaming": 5,
+    "AI / LLM": 5,
+    "Developer Tools / Utilities": 5,
+    "Gaming / Game Servers": 4,
+    "Notes / Knowledge": 3,
+    "Networking / VPN": 3,
+    "Books / Reading / Library": 3,
+    "Maps / GIS / Location": 1,
+    "Documents / PDF / Paperless": 1
+  },
+  "scoreStats": {
+    "min": 53.98,
+    "max": 84.0,
+    "mean": 67.17
+  }
+}

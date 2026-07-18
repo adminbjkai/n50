@@ -1,0 +1,438 @@
+{
+  "version": "v3",
+  "setNum": 192,
+  "searchCalls": 8,
+  "poolSize": 521,
+  "scoredCount": 239,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/probelabs/probe",
+      "score": 83.37,
+      "category": "AI / LLM",
+      "stars": 636,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ArcadeData/arcadedb",
+      "score": 82.78,
+      "category": "AI / LLM",
+      "stars": 949,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ghostwright/ghost-os",
+      "score": 80.15,
+      "category": "AI / LLM",
+      "stars": 1537,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aimok04/kitshn",
+      "score": 79.45,
+      "category": "Health / Food / Fitness",
+      "stars": 679,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/unsplash/datasets",
+      "score": 79.28,
+      "category": "AI / LLM",
+      "stars": 2731,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/karust/openserp",
+      "score": 78.45,
+      "category": "AI / LLM",
+      "stars": 778,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mwmbl/mwmbl",
+      "score": 75.36,
+      "category": "Search / Indexing",
+      "stars": 1810,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/tinysearch/tinysearch",
+      "score": 74.37,
+      "category": "Search / Indexing",
+      "stars": 2942,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/char0n/ramda-adjunct",
+      "score": 73.9,
+      "category": "Health / Food / Fitness",
+      "stars": 686,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/LuanRT/google-this",
+      "score": 72.88,
+      "category": "Search / Indexing",
+      "stars": 378,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/MehmetYukselSekeroglu/eye_of_web",
+      "score": 71.17,
+      "category": "Search / Indexing",
+      "stars": 245,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/db-benchmarks/db-benchmarks",
+      "score": 70.83,
+      "category": "Search / Indexing",
+      "stars": 185,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/rin-nas/postgresql-patterns-library",
+      "score": 70.28,
+      "category": "Communication / Social",
+      "stars": 777,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cypress-io/cypress-example-recipes",
+      "score": 70.0,
+      "category": "Health / Food / Fitness",
+      "stars": 3484,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/meilisearch/meilisearch-rust",
+      "score": 67.54,
+      "category": "Developer Tools / Utilities",
+      "stars": 431,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Xiao-MoMi/craft-engine",
+      "score": 67.43,
+      "category": "Health / Food / Fitness",
+      "stars": 243,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hhblaze/DBreeze",
+      "score": 63.95,
+      "category": "E-commerce / Shop",
+      "stars": 576,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/apolukhin/Boost-Cookbook",
+      "score": 63.66,
+      "category": "Health / Food / Fitness",
+      "stars": 430,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bisohns/search-engine-parser",
+      "score": 63.02,
+      "category": "Developer Tools / Utilities",
+      "stars": 487,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/wizenheimer/comet",
+      "score": 62.3,
+      "category": "E-commerce / Shop",
+      "stars": 121,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mrkamel/search_cop",
+      "score": 59.49,
+      "category": "CRM / Business",
+      "stars": 838,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jonatas/fast",
+      "score": 58.37,
+      "category": "Developer Tools / Utilities",
+      "stars": 268,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/klask-dev/klask-dev",
+      "score": 58.27,
+      "category": "Developer Tools / Utilities",
+      "stars": 61,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/meilisearch/saas-demo",
+      "score": 58.13,
+      "category": "CRM / Business",
+      "stars": 104,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Debian/dcs",
+      "score": 57.47,
+      "category": "Developer Tools / Utilities",
+      "stars": 238,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/empathyco/x",
+      "score": 56.15,
+      "category": "E-commerce / Shop",
+      "stars": 84,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/meilisearch/demo-movies",
+      "score": 55.61,
+      "category": "Media / Streaming",
+      "stars": 86,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/qasimio/DevShelf",
+      "score": 52.89,
+      "category": "Books / Reading / Library",
+      "stars": 16,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/harish124/movie-app-react",
+      "score": 52.58,
+      "category": "Media / Streaming",
+      "stars": 16,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ArjunSharda/Searchor",
+      "score": 52.21,
+      "category": "Productivity / Tasks",
+      "stars": 85,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/alechilczenko/kimi",
+      "score": 51.39,
+      "category": "Home Automation / IoT",
+      "stars": 257,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kayvane1/brave-api",
+      "score": 50.42,
+      "category": "Maps / GIS / Location",
+      "stars": 88,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mikebgrep/forkapi",
+      "score": 49.21,
+      "category": "Media / Streaming",
+      "stars": 14,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/andpalmier/seads",
+      "score": 48.88,
+      "category": "Documents / PDF / Paperless",
+      "stars": 48,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Semafind/semadb",
+      "score": 48.85,
+      "category": "Image / Design / Creative",
+      "stars": 32,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/drcrypterdotru/Zeus-Grabber",
+      "score": 47.93,
+      "category": "Documents / PDF / Paperless",
+      "stars": 62,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ffengc/boost-search-engine",
+      "score": 45.89,
+      "category": "Documents / PDF / Paperless",
+      "stars": 60,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kettasoft/filterable",
+      "score": 45.63,
+      "category": "Image / Design / Creative",
+      "stars": 38,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/CommerceExperts/open-commerce-search",
+      "score": 41.9,
+      "category": "E-commerce / Shop",
+      "stars": 44,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/typesense/showcase-ecommerce-store",
+      "score": 41.4,
+      "category": "E-commerce / Shop",
+      "stars": 83,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aurelienpierreeng/VirtualSecretary",
+      "score": 41.24,
+      "category": "Communication / Social",
+      "stars": 13,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/gatiella/Bug-Bounty-Search-Engine.io",
+      "score": 40.0,
+      "category": "Security / Auth",
+      "stars": 42,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ivan-sincek/chad",
+      "score": 37.25,
+      "category": "Media / Streaming",
+      "stars": 33,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Krutoy242/mc-craft-tree",
+      "score": 36.84,
+      "category": "Gaming / Game Servers",
+      "stars": 46,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Coordinate-Cat/OSINT-JAPAN",
+      "score": 35.99,
+      "category": "Maps / GIS / Location",
+      "stars": 41,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jeffThompson/Recipes",
+      "score": 35.66,
+      "category": "Notes / Knowledge",
+      "stars": 148,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ianbrault/nyt_recipe",
+      "score": 30.86,
+      "category": "Notes / Knowledge",
+      "stars": 38,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/neuml/txtai",
+      "score": 78.0,
+      "category": "AI / LLM",
+      "stars": 12669,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pisa-engine/pisa",
+      "score": 70.37,
+      "category": "Search / Indexing",
+      "stars": 1050,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/symfony/recipes-contrib",
+      "score": 63.04,
+      "category": "Health / Food / Fitness",
+      "stars": 558,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "AI / LLM": 6,
+    "Health / Food / Fitness": 6,
+    "Search / Indexing": 6,
+    "Developer Tools / Utilities": 5,
+    "E-commerce / Shop": 5,
+    "Media / Streaming": 4,
+    "Documents / PDF / Paperless": 3,
+    "Communication / Social": 2,
+    "CRM / Business": 2,
+    "Maps / GIS / Location": 2,
+    "Image / Design / Creative": 2,
+    "Notes / Knowledge": 2,
+    "Books / Reading / Library": 1,
+    "Productivity / Tasks": 1,
+    "Home Automation / IoT": 1,
+    "Security / Auth": 1,
+    "Gaming / Game Servers": 1
+  },
+  "scoreStats": {
+    "min": 30.86,
+    "max": 83.37,
+    "mean": 59.04
+  },
+  "dockerCount": 16
+}

@@ -1,0 +1,452 @@
+{
+  "version": "v4",
+  "setNum": 227,
+  "searchCalls": 15,
+  "poolSize": 694,
+  "scoredCount": 306,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/DrizzleTime/Foxel",
+      "score": 94.39,
+      "category": "AI / LLM",
+      "stars": 1038,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/bitfocus/companion",
+      "score": 85.16,
+      "category": "Media / Streaming",
+      "stars": 2199,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ossia/score",
+      "score": 80.22,
+      "category": "Media / Streaming",
+      "stars": 2027,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/eclipsesource/jsonforms",
+      "score": 80.02,
+      "category": "Developer Tools / Utilities",
+      "stars": 2698,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/TanStack/form",
+      "score": 79.7,
+      "category": "Web App / Other",
+      "stars": 6578,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ealush/vest",
+      "score": 79.36,
+      "category": "Web App / Other",
+      "stars": 2662,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/handsontable/hyperformula",
+      "score": 78.83,
+      "category": "CRM / Business",
+      "stars": 2714,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/microsoft/maker.js",
+      "score": 78.63,
+      "category": "Documents / PDF / Paperless",
+      "stars": 2007,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/TagStudioDev/TagStudio",
+      "score": 78.5,
+      "category": "Media / Streaming",
+      "stars": 6993,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/martiserra99/formity",
+      "score": 77.96,
+      "category": "Web App / Other",
+      "stars": 418,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ngx-formly/ngx-formly",
+      "score": 77.89,
+      "category": "Developer Tools / Utilities",
+      "stars": 2963,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/shipgtm/router",
+      "score": 77.81,
+      "category": "Web App / Other",
+      "stars": 374,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/422658476/MPV-EASY-Player",
+      "score": 77.79,
+      "category": "Media / Streaming",
+      "stars": 1375,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/final-form/react-final-form",
+      "score": 77.51,
+      "category": "Web App / Other",
+      "stars": 7442,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Sienci-Labs/gsender",
+      "score": 77.4,
+      "category": "Developer Tools / Utilities",
+      "stars": 353,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/winder/Universal-G-Code-Sender",
+      "score": 76.36,
+      "category": "Developer Tools / Utilities",
+      "stars": 2228,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Hello-hao/Tbed",
+      "score": 75.94,
+      "category": "Media / Streaming",
+      "stars": 1457,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/rjsf-team/react-jsonschema-form",
+      "score": 75.5,
+      "category": "Developer Tools / Utilities",
+      "stars": 15809,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/VRCWizard/TTS-Voice-Wizard",
+      "score": 74.32,
+      "category": "Communication / Social",
+      "stars": 792,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Paciente8159/uCNC",
+      "score": 70.33,
+      "category": "Files / Storage / Backup",
+      "stars": 442,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ChilloutCharles/BrainFlowsIntoVRChat",
+      "score": 69.51,
+      "category": "Monitoring / Observability",
+      "stars": 337,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nette/forms",
+      "score": 68.61,
+      "category": "Security / Auth",
+      "stars": 529,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/vuetifyjs/0",
+      "score": 68.47,
+      "category": "DevOps / Infra",
+      "stars": 156,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AOT-Technologies/forms-flow-ai",
+      "score": 67.71,
+      "category": "AI / LLM",
+      "stars": 406,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/JJConsulting/JJMasterData",
+      "score": 67.11,
+      "category": "CRM / Business",
+      "stars": 208,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/timschmidt/csgrs",
+      "score": 66.53,
+      "category": "Maps / GIS / Location",
+      "stars": 237,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sfxcode/formkit-primevue",
+      "score": 64.49,
+      "category": "CRM / Business",
+      "stars": 134,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Schildkroet/GRBL-Advanced",
+      "score": 62.93,
+      "category": "CRM / Business",
+      "stars": 300,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/UniBwTAS/ccma",
+      "score": 62.58,
+      "category": "Analytics / Data",
+      "stars": 304,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/OpenZeppelin/ui-builder",
+      "score": 62.45,
+      "category": "DevOps / Infra",
+      "stars": 38,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/formizee/formizee",
+      "score": 62.38,
+      "category": "Communication / Social",
+      "stars": 181,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kapitalismho/PuriPuly-heart",
+      "score": 61.72,
+      "category": "AI / LLM",
+      "stars": 79,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/horprogs/Just-validate",
+      "score": 59.1,
+      "category": "CRM / Business",
+      "stars": 591,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/eridur-de/mightyscape-1.2",
+      "score": 58.91,
+      "category": "Image / Design / Creative",
+      "stars": 72,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/OmenApps/django-tomselect",
+      "score": 58.16,
+      "category": "Search / Indexing",
+      "stars": 87,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/DevManSam777/devleads",
+      "score": 57.68,
+      "category": "Productivity / Tasks",
+      "stars": 17,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hidingwill/AbletonBridge",
+      "score": 55.38,
+      "category": "AI / LLM",
+      "stars": 40,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dreamrec/LivePilot",
+      "score": 55.32,
+      "category": "AI / LLM",
+      "stars": 34,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dergigi/vibeline",
+      "score": 55.14,
+      "category": "Docker / Containers",
+      "stars": 39,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/msurguy/rad-lines",
+      "score": 54.53,
+      "category": "Image / Design / Creative",
+      "stars": 175,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/tobimori/kirby-dreamform",
+      "score": 53.14,
+      "category": "CMS / Website",
+      "stars": 60,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/isotjs/todosian-app",
+      "score": 52.7,
+      "category": "Notes / Knowledge",
+      "stars": 23,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/barseghyanartur/django-fobi",
+      "score": 52.6,
+      "category": "CMS / Website",
+      "stars": 502,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/opensoftwareconsulting/rich-model-forms-bundle",
+      "score": 51.99,
+      "category": "Analytics / Data",
+      "stars": 218,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lutece-platform/lutece-core",
+      "score": 51.87,
+      "category": "Automation",
+      "stars": 80,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/endatix/endatix-hub",
+      "score": 51.22,
+      "category": "Dashboard / Homelab",
+      "stars": 10,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/svar-widgets/editor",
+      "score": 50.88,
+      "category": "Analytics / Data",
+      "stars": 35,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lesiayanytska78/ci-monitoring-simulation",
+      "score": 50.81,
+      "category": "Monitoring / Observability",
+      "stars": 16,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/FriendsOfREDAXO/mform",
+      "score": 50.5,
+      "category": "CMS / Website",
+      "stars": 84,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/markmead/alpinejs-form-validation",
+      "score": 50.03,
+      "category": "Analytics / Data",
+      "stars": 40,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "AI / LLM": 5,
+    "Media / Streaming": 5,
+    "Developer Tools / Utilities": 5,
+    "Web App / Other": 5,
+    "CRM / Business": 5,
+    "Analytics / Data": 4,
+    "CMS / Website": 3,
+    "Communication / Social": 2,
+    "Monitoring / Observability": 2,
+    "DevOps / Infra": 2,
+    "Image / Design / Creative": 2,
+    "Documents / PDF / Paperless": 1,
+    "Files / Storage / Backup": 1,
+    "Security / Auth": 1,
+    "Maps / GIS / Location": 1,
+    "Search / Indexing": 1,
+    "Productivity / Tasks": 1,
+    "Docker / Containers": 1,
+    "Notes / Knowledge": 1,
+    "Automation": 1,
+    "Dashboard / Homelab": 1
+  },
+  "scoreStats": {
+    "min": 50.03,
+    "max": 94.39,
+    "mean": 66.56
+  },
+  "dockerCount": 12,
+  "hostname": "M17s-MacBook-Pro.local",
+  "python": "3.14.5",
+  "timing": {
+    "gather": 36.6,
+    "score": 0.0,
+    "confirm": 28.1,
+    "confirmedPool": 130,
+    "diversify": 0.1,
+    "total": 194.8
+  }
+}

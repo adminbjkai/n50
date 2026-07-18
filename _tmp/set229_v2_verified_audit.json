@@ -1,0 +1,318 @@
+{
+  "version": "v2",
+  "setNum": 229,
+  "searchCalls": 6,
+  "poolSize": 519,
+  "scoredCount": 273,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/OpenWhispr/openwhispr",
+      "score": 92.1,
+      "category": "AI / LLM",
+      "stars": 3883
+    },
+    {
+      "url": "https://github.com/giancarloerra/SocratiCode",
+      "score": 91.52,
+      "category": "AI / LLM",
+      "stars": 3026
+    },
+    {
+      "url": "https://github.com/Azure-Samples/azure-search-openai-demo",
+      "score": 91.37,
+      "category": "AI / LLM",
+      "stars": 7695
+    },
+    {
+      "url": "https://github.com/openlit/openlit",
+      "score": 90.45,
+      "category": "AI / LLM",
+      "stars": 2534
+    },
+    {
+      "url": "https://github.com/calesthio/OpenMontage",
+      "score": 89.98,
+      "category": "AI / LLM",
+      "stars": 7469
+    },
+    {
+      "url": "https://github.com/codigoencasa/builderbot",
+      "score": 89.49,
+      "category": "AI / LLM",
+      "stars": 2948
+    },
+    {
+      "url": "https://github.com/open-multi-agent/open-multi-agent",
+      "score": 89.47,
+      "category": "AI / LLM",
+      "stars": 6412
+    },
+    {
+      "url": "https://github.com/The-PR-Agent/pr-agent",
+      "score": 88.8,
+      "category": "AI / LLM",
+      "stars": 11710
+    },
+    {
+      "url": "https://github.com/father-bot/chatgpt_telegram_bot",
+      "score": 88.45,
+      "category": "AI / LLM",
+      "stars": 5499
+    },
+    {
+      "url": "https://github.com/ArvinLovegood/go-stock",
+      "score": 88.13,
+      "category": "AI / LLM",
+      "stars": 6462
+    },
+    {
+      "url": "https://github.com/2FastLabs/agent-squad",
+      "score": 88.01,
+      "category": "AI / LLM",
+      "stars": 7662
+    },
+    {
+      "url": "https://github.com/OpenCoworkAI/open-codesign",
+      "score": 87.99,
+      "category": "AI / LLM",
+      "stars": 6901
+    },
+    {
+      "url": "https://github.com/strands-agents/harness-sdk",
+      "score": 87.95,
+      "category": "AI / LLM",
+      "stars": 6228
+    },
+    {
+      "url": "https://github.com/u14app/deep-research",
+      "score": 87.84,
+      "category": "AI / LLM",
+      "stars": 4617
+    },
+    {
+      "url": "https://github.com/FareedKhan-dev/train-llm-from-scratch",
+      "score": 87.82,
+      "category": "AI / LLM",
+      "stars": 7137
+    },
+    {
+      "url": "https://github.com/open-compass/opencompass",
+      "score": 87.72,
+      "category": "AI / LLM",
+      "stars": 7108
+    },
+    {
+      "url": "https://github.com/gpustack/gpustack",
+      "score": 87.49,
+      "category": "AI / LLM",
+      "stars": 5183
+    },
+    {
+      "url": "https://github.com/OpenBMB/UltraRAG",
+      "score": 87.46,
+      "category": "AI / LLM",
+      "stars": 5603
+    },
+    {
+      "url": "https://github.com/katanemo/plano",
+      "score": 87.41,
+      "category": "AI / LLM",
+      "stars": 6596
+    },
+    {
+      "url": "https://github.com/openai/openai-agents-js",
+      "score": 87.39,
+      "category": "AI / LLM",
+      "stars": 3256
+    },
+    {
+      "url": "https://github.com/zilliztech/claude-context",
+      "score": 87.33,
+      "category": "AI / LLM",
+      "stars": 11910
+    },
+    {
+      "url": "https://github.com/open-compass/VLMEvalKit",
+      "score": 87.27,
+      "category": "AI / LLM",
+      "stars": 4229
+    },
+    {
+      "url": "https://github.com/JetBrains/koog",
+      "score": 86.98,
+      "category": "AI / LLM",
+      "stars": 4369
+    },
+    {
+      "url": "https://github.com/clidey/whodb",
+      "score": 86.92,
+      "category": "AI / LLM",
+      "stars": 4866
+    },
+    {
+      "url": "https://github.com/buxuku/SmartSub",
+      "score": 86.81,
+      "category": "AI / LLM",
+      "stars": 3993
+    },
+    {
+      "url": "https://github.com/coze-dev/coze-loop",
+      "score": 86.54,
+      "category": "AI / LLM",
+      "stars": 5533
+    },
+    {
+      "url": "https://github.com/steipete/oracle",
+      "score": 86.2,
+      "category": "AI / LLM",
+      "stars": 2626
+    },
+    {
+      "url": "https://github.com/purocean/yn",
+      "score": 86.12,
+      "category": "AI / LLM",
+      "stars": 6638
+    },
+    {
+      "url": "https://github.com/PaddlePaddle/FastDeploy",
+      "score": 85.94,
+      "category": "AI / LLM",
+      "stars": 3699
+    },
+    {
+      "url": "https://github.com/tbphp/gpt-load",
+      "score": 85.89,
+      "category": "AI / LLM",
+      "stars": 6222
+    },
+    {
+      "url": "https://github.com/argilla-io/distilabel",
+      "score": 85.87,
+      "category": "AI / LLM",
+      "stars": 3285
+    },
+    {
+      "url": "https://github.com/Josh-XT/AGiXT",
+      "score": 85.54,
+      "category": "AI / LLM",
+      "stars": 3198
+    },
+    {
+      "url": "https://github.com/evolution-foundation/evolution-api",
+      "score": 85.32,
+      "category": "AI / LLM",
+      "stars": 8731
+    },
+    {
+      "url": "https://github.com/e2b-dev/code-interpreter",
+      "score": 85.07,
+      "category": "AI / LLM",
+      "stars": 2347
+    },
+    {
+      "url": "https://github.com/Upsonic/Upsonic",
+      "score": 84.97,
+      "category": "AI / LLM",
+      "stars": 7898
+    },
+    {
+      "url": "https://github.com/guardrails-ai/guardrails",
+      "score": 84.92,
+      "category": "AI / LLM",
+      "stars": 7021
+    },
+    {
+      "url": "https://github.com/Ironclad/rivet",
+      "score": 84.85,
+      "category": "AI / LLM",
+      "stars": 4615
+    },
+    {
+      "url": "https://github.com/qdrant/fastembed",
+      "score": 84.63,
+      "category": "AI / LLM",
+      "stars": 3045
+    },
+    {
+      "url": "https://github.com/plastic-labs/honcho",
+      "score": 84.55,
+      "category": "AI / LLM",
+      "stars": 5335
+    },
+    {
+      "url": "https://github.com/Eigenwise/atomic-agents",
+      "score": 84.54,
+      "category": "AI / LLM",
+      "stars": 5997
+    },
+    {
+      "url": "https://github.com/Sylinko/Everywhere",
+      "score": 84.51,
+      "category": "AI / LLM",
+      "stars": 6087
+    },
+    {
+      "url": "https://github.com/spiritLHLS/ecs",
+      "score": 84.45,
+      "category": "AI / LLM",
+      "stars": 6957
+    },
+    {
+      "url": "https://github.com/JimmyLv/BibiGPT-v1",
+      "score": 84.27,
+      "category": "AI / LLM",
+      "stars": 6111
+    },
+    {
+      "url": "https://github.com/souzatharsis/podcastfy",
+      "score": 84.24,
+      "category": "AI / LLM",
+      "stars": 6388
+    },
+    {
+      "url": "https://github.com/lemony-ai/cascadeflow",
+      "score": 84.16,
+      "category": "AI / LLM",
+      "stars": 2524
+    },
+    {
+      "url": "https://github.com/Kiln-AI/Kiln",
+      "score": 84.13,
+      "category": "AI / LLM",
+      "stars": 4920
+    },
+    {
+      "url": "https://github.com/CookSleep/gpt_image_playground",
+      "score": 84.06,
+      "category": "AI / LLM",
+      "stars": 2571
+    },
+    {
+      "url": "https://github.com/AditthyaSS/iloveAgents",
+      "score": 84.04,
+      "category": "AI / LLM",
+      "stars": 95
+    },
+    {
+      "url": "https://github.com/griptape-ai/griptape",
+      "score": 83.67,
+      "category": "AI / LLM",
+      "stars": 2544
+    },
+    {
+      "url": "https://github.com/golutra/golutra",
+      "score": 83.61,
+      "category": "AI / LLM",
+      "stars": 3701
+    }
+  ],
+  "categoryDistribution": {
+    "AI / LLM": 50
+  },
+  "scoreStats": {
+    "min": 83.61,
+    "max": 92.1,
+    "mean": 86.68
+  }
+}

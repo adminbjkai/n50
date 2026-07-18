@@ -1,0 +1,452 @@
+{
+  "version": "v4",
+  "setNum": 232,
+  "searchCalls": 13,
+  "poolSize": 452,
+  "scoredCount": 189,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/kairos-io/kairos",
+      "score": 83.28,
+      "category": "DevOps / Infra",
+      "stars": 1748,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/expectedparrot/edsl",
+      "score": 81.59,
+      "category": "AI / LLM",
+      "stars": 468,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/scito/extract_otp_secrets",
+      "score": 79.67,
+      "category": "Developer Tools / Utilities",
+      "stars": 1625,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/x0lie/pia-tun",
+      "score": 78.62,
+      "category": "Networking / VPN",
+      "stars": 107,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zxing-js/library",
+      "score": 78.28,
+      "category": "Web App / Other",
+      "stars": 2916,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/chillerlan/php-qrcode",
+      "score": 76.64,
+      "category": "Developer Tools / Utilities",
+      "stars": 2373,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ikhsan3adi/absensi-sekolah-qr-code",
+      "score": 76.44,
+      "category": "Developer Tools / Utilities",
+      "stars": 456,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/upvpn/upvpn-app",
+      "score": 75.35,
+      "category": "Networking / VPN",
+      "stars": 420,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/rememberber/MooTool",
+      "score": 75.32,
+      "category": "Web App / Other",
+      "stars": 1979,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/productdevbook/etiket",
+      "score": 75.17,
+      "category": "Developer Tools / Utilities",
+      "stars": 416,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/claudiodangelis/qrcp",
+      "score": 75.0,
+      "category": "Developer Tools / Utilities",
+      "stars": 10466,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/scopewu/qrcode.vue",
+      "score": 74.84,
+      "category": "Web App / Other",
+      "stars": 818,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/qifi-dev/qrs",
+      "score": 73.93,
+      "category": "Analytics / Data",
+      "stars": 1558,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ikhsan3adi/absensi-karyawan-gps-barcode",
+      "score": 71.47,
+      "category": "Maps / GIS / Location",
+      "stars": 177,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/TDuckCloud/tduck-front",
+      "score": 71.16,
+      "category": "Web App / Other",
+      "stars": 510,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mumuy/widget-qrcode",
+      "score": 70.56,
+      "category": "Web App / Other",
+      "stars": 508,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/felipeDS91/whatsapp-api",
+      "score": 70.43,
+      "category": "Automation",
+      "stars": 894,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zhushen12580/smart-screenshot",
+      "score": 70.29,
+      "category": "AI / LLM",
+      "stars": 183,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ggerganov/ggwave",
+      "score": 69.0,
+      "category": "Analytics / Data",
+      "stars": 7707,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/AmiRCandy/CandyConnect",
+      "score": 68.46,
+      "category": "Networking / VPN",
+      "stars": 118,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Sec-ant/barcode-detector",
+      "score": 67.94,
+      "category": "Documents / PDF / Paperless",
+      "stars": 221,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/liuyueyi/quick-media",
+      "score": 66.45,
+      "category": "Media / Streaming",
+      "stars": 910,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/PlanetHoster/time2fa",
+      "score": 66.01,
+      "category": "Security / Auth",
+      "stars": 149,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Azumi67/Wireguard-panel",
+      "score": 61.02,
+      "category": "Monitoring / Observability",
+      "stars": 195,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/latentcat/qrbtf",
+      "score": 61.0,
+      "category": "AI / LLM",
+      "stars": 6949,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/CharlesPikachu/pytools",
+      "score": 60.64,
+      "category": "Media / Streaming",
+      "stars": 953,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ytisf/PyExfil",
+      "score": 60.48,
+      "category": "Networking / VPN",
+      "stars": 807,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Tangerine-Community/Tangerine",
+      "score": 58.95,
+      "category": "Monitoring / Observability",
+      "stars": 62,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nuintun/qrcode",
+      "score": 58.44,
+      "category": "Documents / PDF / Paperless",
+      "stars": 238,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/iliaal/fastchart",
+      "score": 57.88,
+      "category": "Documents / PDF / Paperless",
+      "stars": 30,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/samuelhbne/server-xray",
+      "score": 56.63,
+      "category": "Networking / VPN",
+      "stars": 34,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Azumi67/WG_Panel",
+      "score": 55.91,
+      "category": "Monitoring / Observability",
+      "stars": 31,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/markusressel/barcode-server",
+      "score": 54.05,
+      "category": "Home Automation / IoT",
+      "stars": 79,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/jamenamcinteer/react-qr-barcode-scanner",
+      "score": 53.91,
+      "category": "Documents / PDF / Paperless",
+      "stars": 135,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/kesiev/rewtro",
+      "score": 53.67,
+      "category": "Gaming / Game Servers",
+      "stars": 340,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/TiBillet/Fedow",
+      "score": 53.42,
+      "category": "Documents / PDF / Paperless",
+      "stars": 9,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/scottgigawatt/plundarr",
+      "score": 52.1,
+      "category": "Media / Streaming",
+      "stars": 21,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sandros94/nuxt-qrcode",
+      "score": 51.01,
+      "category": "CRM / Business",
+      "stars": 85,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/receiptline/receiptjs",
+      "score": 48.09,
+      "category": "Notes / Knowledge",
+      "stars": 64,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/leplusorg/docker-qrcode",
+      "score": 44.52,
+      "category": "Docker / Containers",
+      "stars": 12,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/thalesog/pix-utils",
+      "score": 43.24,
+      "category": "E-commerce / Shop",
+      "stars": 94,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lesterchan/wp-polls",
+      "score": 42.3,
+      "category": "CMS / Website",
+      "stars": 96,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/tanmoysrt/pyaadhaar",
+      "score": 40.63,
+      "category": "Media / Streaming",
+      "stars": 46,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/cheprasov/js-qrcode",
+      "score": 40.36,
+      "category": "Image / Design / Creative",
+      "stars": 66,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/ushelp/EasyQRCodeJS-NodeJS",
+      "score": 40.04,
+      "category": "CRM / Business",
+      "stars": 110,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/YuukioFuyu/Serverless-Temp-File-Sharing",
+      "score": 39.88,
+      "category": "Files / Storage / Backup",
+      "stars": 16,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Henvezz95/BarBeR",
+      "score": 38.59,
+      "category": "AI / LLM",
+      "stars": 30,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/igorocampos/ESCPOS",
+      "score": 35.05,
+      "category": "E-commerce / Shop",
+      "stars": 65,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lencx/sd-webui-qrcode",
+      "score": 34.73,
+      "category": "AI / LLM",
+      "stars": 33,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aleskxyz/reality-ezpz",
+      "score": 74.69,
+      "category": "Developer Tools / Utilities",
+      "stars": 1554,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Developer Tools / Utilities": 6,
+    "AI / LLM": 5,
+    "Networking / VPN": 5,
+    "Web App / Other": 5,
+    "Documents / PDF / Paperless": 5,
+    "Media / Streaming": 4,
+    "Monitoring / Observability": 3,
+    "Analytics / Data": 2,
+    "CRM / Business": 2,
+    "E-commerce / Shop": 2,
+    "DevOps / Infra": 1,
+    "Maps / GIS / Location": 1,
+    "Automation": 1,
+    "Security / Auth": 1,
+    "Home Automation / IoT": 1,
+    "Gaming / Game Servers": 1,
+    "Notes / Knowledge": 1,
+    "Docker / Containers": 1,
+    "CMS / Website": 1,
+    "Image / Design / Creative": 1,
+    "Files / Storage / Backup": 1
+  },
+  "scoreStats": {
+    "min": 34.73,
+    "max": 83.28,
+    "mean": 61.34
+  },
+  "dockerCount": 15,
+  "hostname": "M17s-MacBook-Pro.local",
+  "python": "3.14.5",
+  "timing": {
+    "gather": 23.1,
+    "score": 0.0,
+    "confirm": 24.9,
+    "confirmedPool": 130,
+    "diversify": 0.1,
+    "total": 178.1
+  }
+}

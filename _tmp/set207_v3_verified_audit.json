@@ -1,0 +1,441 @@
+{
+  "version": "v3",
+  "setNum": 207,
+  "searchCalls": 29,
+  "poolSize": 1716,
+  "scoredCount": 286,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/xerrors/Yuxi",
+      "score": 97.0,
+      "category": "AI / LLM",
+      "stars": 5642,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/psviderski/unregistry",
+      "score": 95.0,
+      "category": "DevOps / Infra",
+      "stars": 4779,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/floci-io/floci",
+      "score": 94.0,
+      "category": "Gaming / Game Servers",
+      "stars": 14290,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/vikiboss/60s",
+      "score": 94.0,
+      "category": "Docker / Containers",
+      "stars": 5444,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pig-mesh/pig",
+      "score": 93.91,
+      "category": "AI / LLM",
+      "stars": 6642,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/marketcalls/openalgo",
+      "score": 92.77,
+      "category": "Finance / Budget",
+      "stars": 2100,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/devspace-sh/devspace",
+      "score": 92.45,
+      "category": "DevOps / Infra",
+      "stars": 5011,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Finsys/dockhand",
+      "score": 91.5,
+      "category": "Docker / Containers",
+      "stars": 4916,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/k3d-io/k3d",
+      "score": 91.12,
+      "category": "DevOps / Infra",
+      "stars": 6464,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/whyour/qinglong",
+      "score": 91.0,
+      "category": "Docker / Containers",
+      "stars": 19626,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hummingbot/hummingbot",
+      "score": 91.0,
+      "category": "Finance / Budget",
+      "stars": 18928,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/JoeanAmier/TikTokDownloader",
+      "score": 91.0,
+      "category": "Docker / Containers",
+      "stars": 14832,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/passteque/gluetun",
+      "score": 91.0,
+      "category": "Networking / VPN",
+      "stars": 14613,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/JoeanAmier/XHS-Downloader",
+      "score": 91.0,
+      "category": "Developer Tools / Utilities",
+      "stars": 11616,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/moby/buildkit",
+      "score": 91.0,
+      "category": "Docker / Containers",
+      "stars": 10069,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/TeXlyre/texlyre",
+      "score": 90.84,
+      "category": "Documents / PDF / Paperless",
+      "stars": 846,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/fabiolb/fabio",
+      "score": 90.2,
+      "category": "Security / Auth",
+      "stars": 7333,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/testcontainers/testcontainers-java",
+      "score": 90.11,
+      "category": "Automation",
+      "stars": 8662,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/goss-org/goss",
+      "score": 89.43,
+      "category": "DevOps / Infra",
+      "stars": 5905,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/generalaction/emdash",
+      "score": 89.0,
+      "category": "AI / LLM",
+      "stars": 4921,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/laradock/laradock",
+      "score": 89.0,
+      "category": "Networking / VPN",
+      "stars": 12660,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/phasehq/console",
+      "score": 88.94,
+      "category": "DevOps / Infra",
+      "stars": 872,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/opencontainers/runc",
+      "score": 88.9,
+      "category": "Developer Tools / Utilities",
+      "stars": 13295,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/digitalknk/openclaw-runbook",
+      "score": 88.64,
+      "category": "AI / LLM",
+      "stars": 1098,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mother-of-all-self-hosting/mash-playbook",
+      "score": 87.79,
+      "category": "Media / Streaming",
+      "stars": 1081,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/amacneil/dbmate",
+      "score": 87.55,
+      "category": "Analytics / Data",
+      "stars": 6956,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/amitshekhariitbhu/go-backend-clean-architecture",
+      "score": 87.0,
+      "category": "Security / Auth",
+      "stars": 6057,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/HisMax/RedInk",
+      "score": 87.0,
+      "category": "AI / LLM",
+      "stars": 5332,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/simjanos-dev/LinguaCafe",
+      "score": 86.59,
+      "category": "Media / Streaming",
+      "stars": 1396,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/xhongc/music-tag-web",
+      "score": 86.0,
+      "category": "Media / Streaming",
+      "stars": 5794,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mouredev/python-web",
+      "score": 86.0,
+      "category": "CMS / Website",
+      "stars": 4703,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/DrewThomasson/ebook2audiobook",
+      "score": 86.0,
+      "category": "Media / Streaming",
+      "stars": 19306,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/hanxi/xiaomusic",
+      "score": 86.0,
+      "category": "Media / Streaming",
+      "stars": 9991,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/anchore/syft",
+      "score": 86.0,
+      "category": "Developer Tools / Utilities",
+      "stars": 9141,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/HQarroum/docker-android",
+      "score": 86.0,
+      "category": "Gaming / Game Servers",
+      "stars": 5971,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nginx-proxy/acme-companion",
+      "score": 85.44,
+      "category": "Networking / VPN",
+      "stars": 7713,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/chaifeng/ufw-docker",
+      "score": 85.4,
+      "category": "Networking / VPN",
+      "stars": 6619,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/lilishop/lilishop",
+      "score": 85.34,
+      "category": "E-commerce / Shop",
+      "stars": 4211,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/aws/aws-sam-cli",
+      "score": 84.96,
+      "category": "Developer Tools / Utilities",
+      "stars": 6731,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/maildev/maildev",
+      "score": 84.22,
+      "category": "Developer Tools / Utilities",
+      "stars": 5930,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/nextcloud/docker",
+      "score": 84.13,
+      "category": "Files / Storage / Backup",
+      "stars": 7307,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/crawlab-team/crawlab",
+      "score": 84.0,
+      "category": "Productivity / Tasks",
+      "stars": 12221,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/MCSManager/MCSManager",
+      "score": 83.97,
+      "category": "Gaming / Game Servers",
+      "stars": 4795,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/IAmStoxe/wirehole",
+      "score": 83.46,
+      "category": "Networking / VPN",
+      "stars": 4960,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/WasmEdge/WasmEdge",
+      "score": 83.0,
+      "category": "Home Automation / IoT",
+      "stars": 10655,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/dushixiang/next-terminal",
+      "score": 83.0,
+      "category": "Image / Design / Creative",
+      "stars": 5562,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/stefanprodan/dockprom",
+      "score": 80.63,
+      "category": "Monitoring / Observability",
+      "stars": 6561,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/uber/kraken",
+      "score": 80.59,
+      "category": "Analytics / Data",
+      "stars": 6701,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/oracle/docker-images",
+      "score": 80.27,
+      "category": "Analytics / Data",
+      "stars": 6977,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Xyphyn/photon",
+      "score": 79.95,
+      "category": "Communication / Social",
+      "stars": 530,
+      "docker": true,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "AI / LLM": 5,
+    "DevOps / Infra": 5,
+    "Docker / Containers": 5,
+    "Networking / VPN": 5,
+    "Developer Tools / Utilities": 5,
+    "Media / Streaming": 5,
+    "Gaming / Game Servers": 3,
+    "Analytics / Data": 3,
+    "Finance / Budget": 2,
+    "Security / Auth": 2,
+    "Documents / PDF / Paperless": 1,
+    "Automation": 1,
+    "CMS / Website": 1,
+    "E-commerce / Shop": 1,
+    "Files / Storage / Backup": 1,
+    "Productivity / Tasks": 1,
+    "Home Automation / IoT": 1,
+    "Image / Design / Creative": 1,
+    "Monitoring / Observability": 1,
+    "Communication / Social": 1
+  },
+  "scoreStats": {
+    "min": 79.95,
+    "max": 97.0,
+    "mean": 87.86
+  },
+  "dockerCount": 55
+}

@@ -1,0 +1,426 @@
+{
+  "version": "v3",
+  "setNum": 195,
+  "searchCalls": 9,
+  "poolSize": 557,
+  "scoredCount": 280,
+  "graphql": true,
+  "awesome": true,
+  "enrich": false,
+  "rejected": [],
+  "selected": [
+    {
+      "url": "https://github.com/JamesLMilner/terra-draw",
+      "score": 78.95,
+      "category": "Maps / GIS / Location",
+      "stars": 1038,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/obsidianmd/obsidian-maps",
+      "score": 78.84,
+      "category": "Maps / GIS / Location",
+      "stars": 481,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/maplibre/maplibre-compose",
+      "score": 78.81,
+      "category": "Maps / GIS / Location",
+      "stars": 497,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/fleaflet/flutter_map",
+      "score": 78.63,
+      "category": "Maps / GIS / Location",
+      "stars": 2994,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/louis-e/arnis",
+      "score": 78.0,
+      "category": "Maps / GIS / Location",
+      "stars": 16076,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/decision-labs/geoai.js",
+      "score": 72.94,
+      "category": "AI / LLM",
+      "stars": 162,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/airwaylab-app/airwaylab",
+      "score": 65.75,
+      "category": "Health / Food / Fitness",
+      "stars": 21,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/fenwii/OpenHarmony",
+      "score": 62.94,
+      "category": "AI / LLM",
+      "stars": 1354,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/EmmaTellblom/Mensinator",
+      "score": 62.69,
+      "category": "Health / Food / Fitness",
+      "stars": 133,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/alxdrcirilo/apple-health-parser",
+      "score": 62.2,
+      "category": "Health / Food / Fitness",
+      "stars": 90,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Shreyas-29/cura",
+      "score": 61.77,
+      "category": "AI / LLM",
+      "stars": 55,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/brunoamaral/gregory-ai",
+      "score": 61.72,
+      "category": "AI / LLM",
+      "stars": 57,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/derdilla/blood-pressure-monitor-fl",
+      "score": 60.93,
+      "category": "Health / Food / Fitness",
+      "stars": 144,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/FirelyTeam/spark",
+      "score": 60.06,
+      "category": "Health / Food / Fitness",
+      "stars": 279,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/acara-app/plate",
+      "score": 59.51,
+      "category": "AI / LLM",
+      "stars": 24,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Azure-Samples/AzureMapsCodeSamples",
+      "score": 57.81,
+      "category": "Home Automation / IoT",
+      "stars": 368,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/CScorza/GEOINTInvestigation",
+      "score": 53.66,
+      "category": "Media / Streaming",
+      "stars": 135,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/JuditKaramazov/TakeYouThere",
+      "score": 37.98,
+      "category": "Media / Streaming",
+      "stars": 40,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/pelicanmapping/osgearth",
+      "score": 77.81,
+      "category": "Maps / GIS / Location",
+      "stars": 1773,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/avestura/EyesGuard",
+      "score": 59.56,
+      "category": "Health / Food / Fitness",
+      "stars": 566,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/davidoesch/ai-topographic-maps",
+      "score": 50.4,
+      "category": "AI / LLM",
+      "stars": 55,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/felixpalmer/a5",
+      "score": 77.61,
+      "category": "Maps / GIS / Location",
+      "stars": 314,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/rock-zhang/Shui",
+      "score": 58.83,
+      "category": "Health / Food / Fitness",
+      "stars": 359,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/yahskapar/MA-rPPG-Video-Toolbox",
+      "score": 49.6,
+      "category": "AI / LLM",
+      "stars": 82,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/zohaibbashir/Google-Maps-Scrapper",
+      "score": 77.35,
+      "category": "Maps / GIS / Location",
+      "stars": 1052,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/YangguangZhou/Caffeine-Tracker",
+      "score": 56.45,
+      "category": "Health / Food / Fitness",
+      "stars": 58,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/khalilbenaz/claude-skills-collection",
+      "score": 49.49,
+      "category": "AI / LLM",
+      "stars": 8,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/googlemaps/android-maps-compose",
+      "score": 77.23,
+      "category": "Maps / GIS / Location",
+      "stars": 1307,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/developmentseed/lonboard",
+      "score": 77.17,
+      "category": "Maps / GIS / Location",
+      "stars": 950,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/onthegomap/planetiler",
+      "score": 76.84,
+      "category": "Maps / GIS / Location",
+      "stars": 2094,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/SciTools/cartopy",
+      "score": 76.75,
+      "category": "Maps / GIS / Location",
+      "stars": 1604,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/maplibre/maplibre-react-native",
+      "score": 76.7,
+      "category": "Maps / GIS / Location",
+      "stars": 625,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/Ayyouboss0011/SherlockMaps",
+      "score": 76.67,
+      "category": "Maps / GIS / Location",
+      "stars": 79,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/antvis/L7",
+      "score": 75.81,
+      "category": "Maps / GIS / Location",
+      "stars": 4025,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/MerginMaps/mobile",
+      "score": 75.59,
+      "category": "Maps / GIS / Location",
+      "stars": 381,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/microg/GmsCore",
+      "score": 75.5,
+      "category": "Maps / GIS / Location",
+      "stars": 13646,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/sourcelocation/geoduels",
+      "score": 74.78,
+      "category": "Maps / GIS / Location",
+      "stars": 54,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mapbox/mapbox-gl-js",
+      "score": 74.74,
+      "category": "Maps / GIS / Location",
+      "stars": 12309,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/mapbox/supercluster",
+      "score": 74.57,
+      "category": "Maps / GIS / Location",
+      "stars": 2334,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/openglobus/openglobus",
+      "score": 74.21,
+      "category": "Maps / GIS / Location",
+      "stars": 911,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/MRPT/mrpt",
+      "score": 74.0,
+      "category": "Maps / GIS / Location",
+      "stars": 2139,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/waysidemapping/pinhead",
+      "score": 72.76,
+      "category": "Maps / GIS / Location",
+      "stars": 169,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/GenericMappingTools/pygmt",
+      "score": 72.57,
+      "category": "Maps / GIS / Location",
+      "stars": 863,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/openmaptiles/openmaptiles",
+      "score": 72.54,
+      "category": "Maps / GIS / Location",
+      "stars": 3098,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/enzet/map-machine",
+      "score": 72.38,
+      "category": "Maps / GIS / Location",
+      "stars": 561,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/protomaps/basemaps",
+      "score": 72.32,
+      "category": "Maps / GIS / Location",
+      "stars": 684,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/google-map-react/google-map-react",
+      "score": 72.15,
+      "category": "Maps / GIS / Location",
+      "stars": 6471,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/StrandedKitty/streets-gl",
+      "score": 72.09,
+      "category": "Maps / GIS / Location",
+      "stars": 1030,
+      "docker": true,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/googlemaps/android-maps-utils",
+      "score": 72.03,
+      "category": "Maps / GIS / Location",
+      "stars": 3608,
+      "docker": false,
+      "hook": ""
+    },
+    {
+      "url": "https://github.com/googlemaps/android-maps-ktx",
+      "score": 72.0,
+      "category": "Maps / GIS / Location",
+      "stars": 355,
+      "docker": false,
+      "hook": ""
+    }
+  ],
+  "categoryDistribution": {
+    "Maps / GIS / Location": 31,
+    "AI / LLM": 8,
+    "Health / Food / Fitness": 8,
+    "Media / Streaming": 2,
+    "Home Automation / IoT": 1
+  },
+  "scoreStats": {
+    "min": 37.98,
+    "max": 78.95,
+    "mean": 68.83
+  },
+  "dockerCount": 16
+}
