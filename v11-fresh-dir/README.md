@@ -1,59 +1,178 @@
-# v11-fresh-dir — Retrospective + v11 Plan
+# v11-fresh-dir — n50 runner family (v11 → v15)
 
-Fresh workspace for the next-generation runner of the "Set N — 50 More Self-Hosted Open-Source Web Apps (2026)" Notion pipeline, plus the full analysis of how v1→v10 got here.
+Workspace for the "Set N — 50 More Self-Hosted Open-Source Web Apps (2026)" Notion pipeline, served at **https://n50.bjk.ai** (nginx → `127.0.0.1:8055`).
+
+> **Use v17 for the next set of 50** — smart GraphQL-sliced discovery + quality-first gate; fills a real 50/50 in ~1–2 min. See [`V17-STRATEGY.md`](./V17-STRATEGY.md). (Older note:) **v15** It is the recommended default in the UI: v13's
+> product diversity, but rate-limit **governed** (no 300s of reactive sleeps) and it
+> **never crashes** on a thin pool. See [`V15-STRATEGY.md`](./V15-STRATEGY.md).
 
 ## Files
 
 | File | What it is |
 |---|---|
-| `run_next_set_v11.py` | **The v11 runner** — v9's selection core + candidate bench + bounded 60-call sweep + native urllib HTTP. Fully interchangeable with v1–v10 (same tracker/CSV/series). |
-| `run_next_set.py` | Unmodified copy of the v1 plumbing that v11 imports (`import run_next_set as v1`). v11 auto-resolves the live tracker/CSV/`_tmp` one level up in `notion50new-v4/`. |
-| `ANALYSIS.md` | Full retrospective of all 10 versions: the goal, what was done well/cleverly, what went wrong, a close bug-level review of v10, measured timing/token data from the real audits, and a scorecard. |
-| `V11-STRATEGY.md` | The design for v11 — architecture, what it keeps/drops from each ancestor, numeric targets, and the build/validation plan. |
-| `README.md` | This file. |
+| `v15.py` | **Recommended 50/set runner** — v13 diversity + rate-limit governor + never-crash graceful ship + warm caches. |
+| `v11.py` | Bench-backed fast discovery (original production default). |
+| `v12.py` | **Proof-first runner** — tier A/B/C ship proof; does not override v11. |
+| `v13.py` | **Product-diversity runner** — family floors (files/KB/media/PDF/…), AI hard-capped, theme discovery bank. *Superseded by v15.* |
+| `v14.py` | **200-per-set runner** — same series numbering, plus candidate recycling (reject cache, carry pool, near-miss parking). |
+| `run_next_set_v11.py` / `v12` / `v13` / `v14` / `v15` | Historical names / symlinks. |
+| `run_next_set.py` | Unmodified v1 plumbing. Tracker/CSV/`_tmp` one level up (`/apps/n50/`). |
+| `server.py` | Web UI: **v15 / v11 / v12 / v13 / v14** toggles (v15 default). SSE live log. |
+| `V11-STRATEGY.md` … `V15-STRATEGY.md` | Design docs. |
+| `ANALYSIS.md` | Retrospective v1→v10. |
 
-## Run
+## Shared state (both versions)
+
+Both v11 and v12 **append** to the same files:
+
+- `/apps/n50/notion-selfhosted-tracker.json`
+- `/apps/n50/notion-selfhosted-master.csv`
+- audits under `/apps/n50/_tmp/set{N}_{v11|v12}_*.json`
+
+Caches are **version-scoped** so they do not clobber each other:
+
+- v11: `bench_v11.json`, `repo_cache_v11.json`, …
+- v12: `bench_v12.json`, `repo_cache_v12.json`, …
+
+## Run (CLI)
 
 ```bash
-cd /Users/m17/2026/notion50/notion50new-v4/v11-fresh-dir
-python3 run_next_set_v11.py --self-test   # pure-function checks (no network)
-python3 run_next_set_v11.py --dry-run     # full pipeline, ZERO writes — always do this first
-python3 run_next_set_v11.py --verify      # tracker invariant check
-python3 run_next_set_v11.py               # publish the next set (only after dry-run + go-ahead)
+cd /apps/n50/v11-fresh-dir
+
+# v11 (default production)
+python3 v11.py --self-test
+python3 v11.py --dry-run
+python3 v11.py                 # publish — only after dry-run + go-ahead
+
+# v12 (proof-first)
+python3 v12.py --self-test
+python3 v12.py --dry-run
+python3 v12.py                 # publish — only after dry-run + go-ahead
 ```
 
-All v9 flags work unchanged: `--stats`, `--why URL`, `--breakdown`, `--enrich`, `--no-graphql`, `--no-awesome`, `--no-fresh`, `--target-fresh`, `--max-pages`, `--cat-cap`, `--min-score`, `--fresh-quota`. Caches (incl. the new `bench_v11.json`) live in the shared `../_tmp/` and are safe to delete.
+Flags (both): `--stats`, `--why URL`, `--breakdown`, `--enrich`, `--no-graphql`, `--no-awesome`, `--no-fresh`, `--target-fresh`, `--max-pages`, `--cat-cap`, `--min-score`, `--fresh-quota`, `--verify`.
 
-## Measured results (2026-07-10, real dry-runs against the live tracker, set 301)
+## Web UI (n50.bjk.ai)
 
-| Metric | v9/v10 (36 real runs) | v11 cold | v11 warm (bench seeded) |
-|---|---|---|---|
-| Wall clock | **444s median**, 862s max | **118s** | **73s** |
-| GitHub search calls | ~132 | 24 | 24 |
-| Confirm phase | (in total) | 35.5s | **1.3s** (cached) |
-| Categories in set | ~29 keys | 18 across 50 picks | 18 |
-| Docker/compose confirmed | 36 | 60 of 130 confirmed | 60 |
-| Fresh gems in set | 10 | 16 | 16 |
-| Appeal min/mean/max | comparable | 36.6 / 64.2 / 94.4 | identical |
+```bash
+python3 server.py   # 127.0.0.1:8055 — nginx already proxies n50.bjk.ai here
+```
 
-`--self-test`: 18/18 pass. Audit now records `benchSeeded`/`benchSaved`/`sweepSeconds`/`confirmSeconds` and is correctly labeled `"version": "v11"`.
+- **v15 (safe 50/set)** is selected by default; v11–v14 remain one click away.
+- Dry run / Publish run the active version.
+- Publish starts directly from the button.
+- Served by `systemd` unit `n50-runner.service`; deploy edits with
+  `sudo systemctl restart n50-runner.service`.
+- One run at a time; output streams over SSE (`proxy_buffering off` in nginx is correct).
 
-## TL;DR of the analysis
+Nginx snippet (unchanged — no need to edit for v12):
 
-- The pipeline **works** (~299 sets, ~14,874 tracked repos, publishing through today) and its safety/observability design (Notion-as-truth sync, atomic writes, dry-run, per-run audits) is genuinely strong.
-- The **latest runner (v10) is slow because of call count, not code speed**: ~132 sequential GitHub search calls against a 30/min rate limit ⇒ 444s median, up to 14 min. v10's parallelism never touched the search loop, and it accidentally *deleted* v9's early-exit, so it always burns its full call budget.
-- v10 also has real bugs: it still labels its audits **"v9"** (runs are indistinguishable in history), and its enrichment "bypass" writes fabricated hook text into the cache.
-- The big development-cost mistake across versions was **full-file copying** (v10 = 1,782 lines, only ~345 actually changed) with 80-line historical docstrings regenerated every iteration — that's where the tokens went during the building phases, not at runtime.
+```nginx
+location / {
+    proxy_pass http://127.0.0.1:8055;
+    proxy_http_version 1.1;
+    proxy_buffering off;
+    proxy_read_timeout 86400;
+    # … standard forwarded headers …
+}
+```
 
-## What makes v11 better (the headline claims)
+## v11 vs v12 (why v12 exists)
 
-1. **Time: ~90–150s per run instead of 7–14 min.** A persisted "candidate bench" reuses the ~2,750 scored-but-unused candidates each run currently throws away, so steady-state runs need ~10–25 search calls instead of ~132. Restored + strengthened early-exit; hard cap of 60 calls.
-2. **API efficiency: ~8 repos scored per pick instead of ~56**, and confirms stay at 2–3 GraphQL batch calls. Kinder to rate limits ⇒ fewer 15–45s backoff sleeps ⇒ more predictable runs.
-3. **Token efficiency: ≤ 5k Haiku tokens on `--enrich` runs, zero otherwise.** Only genuinely ambiguous finalists go to the LLM; Docker+awesome-verified repos bypass it (correctly labeled, no fabricated hooks). Development tokens drop too: ~1,100-line file, 15-line header, history lives here instead of in the docstring.
-4. **Quality: same or better than v9** — keeps the family's best selection core (v9's gate/scoring/diversity/fresh-gem quota, v6/v7's heuristic-driven diversity) and adds a hard rule that every pick shows real self-hostability evidence (compose file, awesome-selfhosted listing, or explicit self-host topic). Bench entries are re-confirmed live before publish, so nothing stale ships.
-5. **Trustworthy bookkeeping:** one `VERSION` constant drives every label (fixes the v9/v10 audit confusion), and audits gain per-phase timings so any future slowness is diagnosable from the JSON alone.
-6. **Fully interchangeable**, like every version before it: same tracker, same master CSV, same series numbering, imports v1's plumbing, never modifies v1–v10, always `--dry-run` first.
+| | **v11** | **v12** |
+|---|---|---|
+| Goal | Speed (bench + early-exit) | **Solid self-hostable web apps** |
+| Ship rule | Soft: docker/awesome boost score | **Hard tier A/B/C** — no tier, no ship |
+| Docker proof | compose / Dockerfile / **.env.example** | compose or Dockerfile only |
+| Awesome list | +score if lucky | **Seeds residual unused** + Tier B |
+| App gate | stars≥30 + language can pass alone | Strict self-host / app-shape required |
+| Junk escapes | Libraries, SDKs, frameworks, tutorials still appeared | Expanded `hard_reject` + no stars escape |
+| Category skew | AI/LLM often 10–15/50 | Hard caps (AI≤4, DevTools≤3, …) |
+| Quotas | 50 any that score | ≥40 A∪B, ≤10 C |
+| Bench | 400 soft-scored | 250 proof-eligible only |
+| Tracker | shared | **same shared** |
+
+Full design: [`V12-STRATEGY.md`](./V12-STRATEGY.md).
+
+### What “proof” means in v12
+
+- **Tier A** — GraphQL sees compose and/or Dockerfile **and** self-host/app intent  
+- **Tier B** — listed in awesome-selfhosted-data  
+- **Tier C** — explicit self-host keywords/topics **and** real product homepage (≤10 of 50)
+
+### Measured problem v12 targets
+
+From ~25 late v11 sets: docker often ~20–30/50, almost zero awesome hits, majority `selfhost_signal=0`, and published NO-PROOF examples (API clients, frameworks, ML infra, tutorials). v11 promised ship-proof in strategy docs but never enforced it after GraphQL — v12 does.
+
+## Auth
+
+- GitHub: `gh auth login` or `GH_TOKEN` / `GITHUB_TOKEN`
+- Notion: `NOTION_API_KEY` or `~/.config/notion/api_key`
+- Optional `--enrich`: Anthropic / OpenRouter keys
+
+## v14 — 200 per set
+
+```bash
+python3 v14.py --self-test
+python3 v14.py --dry-run
+python3 v14.py                 # publishes "Set N — 200 More …"
+```
+
+- Publishes **200 repos** per set; the title reads "200 More …".
+- **Set numbering continues the same series** — set 391 followed the 50-repo
+  set 390, and `completedSets` advances exactly as before. The tracker's
+  `titleTemplate` (still "50 More …") is never rewritten, so v11/v12/v13 are
+  unaffected.
+- Tracker and master CSV are appended exactly as before.
+- 200 is the normal size, so it does **not** need `--force-publish`.
+
+**Recycling caches** (the anti-waste work) — all under `/apps/n50/_tmp/`:
+
+| Cache | What it holds |
+|---|---|
+| `reject_cache_v14.json` | Known-bad repos, so they are never re-fetched (120d for structural rejects, 21d otherwise) |
+| `carry_v14.json` | Confirmed, proof-passing repos that were not shipped — re-seeded free next run |
+| `nearmiss_v14.json` | Scored candidates that never reached a confirm call |
+| `bench_v14.json` | Proof-eligible bench, now **merged** rather than overwritten |
+
+Measured on set 391's runs: the reject cache skipped **618** known-bad repos and
+cut the confirm stage from **132.5s to 3.5s**.
+
+⚠️ **Known limitation at N=200.** After 390 sets (20,000+ used URLs) several
+product families are mined out — `file_upload_share` returns 82 GitHub hits with
+**0 unused**. Set 391 had only 1.08× selection headroom (216 confirmed for 200
+slots), so the diversity selector could not rebalance and the tail of the set
+includes weak picks. See [`V14-STRATEGY.md`](./V14-STRATEGY.md) for the data and
+the discovery-surface levers that would fix it.
+
+## v15 — safe 50 per set (governed, never-crash)
+
+```bash
+python3 v15.py --self-test     # fast, offline (incl. governor + graceful checks)
+python3 v15.py --dry-run       # next Set N of 50; always completes, never publishes
+python3 v15.py                 # publish Set N (50). No --force-publish needed.
+```
+
+Built to fix the `exit 1` v13 hit when the mined-out corpus + GitHub rate limits left
+it short of 50. v15 keeps v13's product diversity and adds:
+
+- **Rate-limit governor** — paces GitHub *search* under its ~30/min limit (rolling
+  ≤26/min + ~2.2s anti-burst gap) and reads `X-RateLimit-*` / `Retry-After` headers,
+  so runs stop burning minutes in reactive `sleeping 15s/30s/45s` stacks. Measured:
+  68 search calls in 158.6s with **0** reactive sleeps.
+- **Never crashes** — always lenient; ships the best available set (honestly counted)
+  instead of a traceback. Only a catastrophic pool (outage/auth) halts, with a clean
+  one-line message. Dry-run always completes.
+- **Warm caches** — reject/bench/carry seed read-only from v14, so run 1 already
+  skipped **527** known-bad repos.
+
+Full design: [`V15-STRATEGY.md`](./V15-STRATEGY.md).
 
 ## Status
 
-**Built and validated (2026-07-10):** `--self-test` all pass; cold + warm `--dry-run` completed against the live tracker (set 301 would be next) with zero writes. **6.1× faster than the v9/v10 median** (73s warm vs 444s). Not yet used for a real publish — first real publish requires explicit go-ahead per the standing operating rules.
+- **v11**: bench-backed fast discovery (original default).
+- **v12**: proof-first (tier A/B/C); `--self-test` green.
+- **v13**: product-diversity runner; sets 384–390. *Superseded by v15.*
+- **v14**: 200-per-set; `--self-test` green; **published Set 391 (200 repos)**.
+- **v15**: built 2026-08-03; `--self-test` green; **recommended default** in the UI
+  (safe 50/set). Always dry-run before the first real v15 publish.
