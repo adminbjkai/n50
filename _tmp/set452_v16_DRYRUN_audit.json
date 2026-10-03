@@ -1,0 +1,1228 @@
+{
+  "version": "v16",
+  "setNum": 452,
+  "searchCalls": 76,
+  "zeroYieldQueries": 10,
+  "poolSize": 197,
+  "scoredCount": 160,
+  "freshScored": 0,
+  "graphql": true,
+  "awesome": true,
+  "awesomeResidual": 0,
+  "awesomeSeeded": 0,
+  "enrich": false,
+  "rejected": [
+    [
+      "https://github.com/liquidslr/system-design-notes",
+      "list-template-or-tutorial"
+    ],
+    [
+      "https://github.com/vivizzz007/vivi-music",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/Santandave961/receipt-scanner-fraud-detection",
+      "no-description"
+    ],
+    [
+      "https://github.com/ponsdotdev/ponsfamily",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/eleboucher/apoci",
+      "duplicate"
+    ],
+    [
+      "https://github.com/oussabida01-jpg/python-sysadmin-automation-pack",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/cathrynlavery/diagram-design",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/kossakovsky/selfhost-ai",
+      "duplicate"
+    ],
+    [
+      "https://github.com/vastsa/PI-Desktop",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/alsoup12-creator/-Data-Masking-Box-Small-Model-",
+      "no-description"
+    ],
+    [
+      "https://github.com/ChosenXu/raindrop-bookmark-organizer",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/onenight19-coder/x-link-to-pdf",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/daftAI2026/daftAI-skills",
+      "no-description"
+    ],
+    [
+      "https://github.com/Kunal260899/naukri-resume-automation",
+      "non-app-pattern"
+    ],
+    [
+      "https://github.com/donnemartin/system-design-primer",
+      "list-template-or-tutorial"
+    ],
+    [
+      "https://github.com/langgenius/mosoo",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/EvoMap/AutoResearch",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/anthropics/claude-code",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/zzr10207-art/enterprise-knowledge-base-agen",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/orbi-build/orb",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/lnkiai/m3e-canvas",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/mifunedev/agro",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/ayghri/i-have-adhd",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/maledadams/git-why",
+      "low-effort-clone"
+    ],
+    [
+      "https://github.com/liweiyi88/gosnakego",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/sergushkincom/workflow-canvas",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/vikash-singh123/Local-AI-Voice-Agen",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/Tencent/teamai-cl",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/A35G/JSON-to-XML",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/TauricResearch/TradingAgents",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/oriveo/oriveo",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/microsoft/markitdown",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/mergewatch/mergewatch.ai",
+      "duplicate"
+    ],
+    [
+      "https://github.com/obra/superpowers",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/kingwilliamAI/Augur",
+      "no-description"
+    ],
+    [
+      "https://github.com/deepseek-ai/deepseek-harness",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/bilawalsidhu/gods-eye-view",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/libenxier-beep/codex-memories",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/heygen-com/hyperframes",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/DropKbit/OneStorage",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/neskuchny/Tessbrain",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/mattpocock/skills",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/michaelblank23235/kontor",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/amagine-ai/Amagine3D",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/DietrichGebert/ponytail",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Benita2001/HedgeOS",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/chengyi-ai/native-subtitle-quote-image",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/microsoft/tgrep",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/glarsson/fast-dlssf",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/Edge0-AI/Edge0",
+      "no-description"
+    ],
+    [
+      "https://github.com/tt-a1i/archify",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/lib4u/TrustTunnel_Guide",
+      "no-description"
+    ],
+    [
+      "https://github.com/microsoft/generative-ai-for-beginners",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/hidicker/nzosa",
+      "no-description"
+    ],
+    [
+      "https://github.com/virattt/ai-hedge-fund",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/nagisanzenin/truanayan",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/tanujrajputdev/chronicle",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/headroomlabs-ai/headroom",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/google/artemis",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/bandundu/papers-releases",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/openai/skills",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/sdli1995/dlssg_for_sm86",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/ivenos/jellyfin_inventory",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/zvec-ai/zvec-grep",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/pascalorg/editor",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/multica-ai/andrej-karpathy-skills",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/sonicloudco/recorder",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/SpinnerAppreciate/glm-flash-offline-clien",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/msitarzewski/agency-agents",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/realchendahuang/feedsieve",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/tngklp/comfyui_private-server",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/agentic-ai-demos/airflow",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/k2-fsa/OmniVoice",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/senoff/self-hosted-ci-runner",
+      "non-app-pattern"
+    ],
+    [
+      "https://github.com/noogram/cosmon",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/crestcoursechateau/Acrobat-Pro-Software",
+      "no-description"
+    ],
+    [
+      "https://github.com/infercat/infercat",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/tigerless-labs/autoharness",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Navarre-AI/mitos",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/teng-lin/weread-omn",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/mobiledevloperlab/NimoteCode",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/practical-tutorials/project-based-learnin",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/aterrylu/autonomOS",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/TapXWorld/ChinaTextbook",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/bytefolk/mem",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/SUNJOOSOFT/onggijonggi-chat",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/hacksider/Deep-Live-Cam",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/public-apis/public-apis",
+      "list-template-or-tutorial"
+    ],
+    [
+      "https://github.com/codecrafters-io/build-your-own-x",
+      "awesome-list"
+    ],
+    [
+      "https://github.com/harry0703/MoneyPrinterTurbo",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/iptv-org/iptv",
+      "list-template-or-tutorial"
+    ],
+    [
+      "https://github.com/Albert-Weasker/niubigeo",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/redhat-et/ripwire",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/The-Swarm-Corporation/AutoHedge",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/mksglu/context-mode",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/hoochanlon/fq-book",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/ashemag/human-atlas",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/webadderallorg/Recordly",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/rakanki911/DLSS5-Swapper",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/jingyaogong/minimind",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/google-research/timesfm",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/blader/humanizer",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/humanlayer/skills",
+      "no-description"
+    ],
+    [
+      "https://github.com/stablyai/orca",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/crmne/fastpotify",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/anthropics/skills",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/firecrawl/firecrawl",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/farion1231/cc-switch",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Graphify-Labs/graphify",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/666ghj/MiroFish",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/openclaw/openclaw",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/D4Vinci/Scraplin",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/NousResearch/hermes-agen",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/earendil-works/p",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/garrytan/gstack",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/anomalyco/opencode",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/thedotmack/claude-mem",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Ratonpeureu/blogeur_ia",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/Yakumy/Station",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/PearPn15/AgenticOR",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/nimrid/agentic-flea-marke",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/mohakmalviya/codex-astra-orchestrator",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/ProportanilityConstant/cairn",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/onkarbadve/agy-auto",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/jystervinou/vibe2phone",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/joaovitorkc/harnessly",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/yaohui325/connect-skill",
+      "no-description"
+    ],
+    [
+      "https://github.com/jtaroreh/agystack",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/spinos1995/smart-shutdown-timer",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/Surge-Org/Surge",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/geekgod382/gatm",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/patforna/writin",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/arhistrategstudio/Universal-paper-converter",
+      "no-description"
+    ],
+    [
+      "https://github.com/pocket-stack/pocket-doc",
+      "no-description"
+    ],
+    [
+      "https://github.com/docuqueue/docuqueue-plugin",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/viettran-edgeAI/OCR_workflow_variants",
+      "no-description"
+    ],
+    [
+      "https://github.com/GeoCodeCrafter/dd-to-signal",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/injectinglabs/injoffice",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Nilina2002/paperHear",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/Arnav-sivarams/Latex-core",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/ravishu5/PaperLens",
+      "no-description"
+    ],
+    [
+      "https://github.com/openwhale-labs/md2pdf",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/wangsen2020/x-article-exporter",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/ArcticWinterSturm/ArenaAud",
+      "not-live/fork/archived"
+    ],
+    [
+      "https://github.com/RemiPelloux/OpenPlod",
+      "not-a-web-app (extension/desktop/cli)"
+    ],
+    [
+      "https://github.com/jceronch1/encuesta-salud",
+      "no-description"
+    ],
+    [
+      "https://github.com/larrylot/citeguard",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/lolopop01/pdf2zpl",
+      "not-live/fork/archived"
+    ]
+  ],
+  "selected": [
+    {
+      "url": "https://github.com/experientiallabs/experiential",
+      "score": 78.0,
+      "category": "Networking / VPN",
+      "llm_category": null,
+      "stars": 3906,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "proxy_net",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 16.0,
+        "liveliness": 14.0,
+        "traction": 12.0,
+        "polish": 15.0,
+        "selfhost_signal": 8.0,
+        "community": 4.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 6.0
+      },
+      "composition": "▲ momentum +16, polish +15, liveliness +14"
+    },
+    {
+      "url": "https://github.com/cloudbase/garm-provider-incus",
+      "score": 70.13,
+      "category": "Dashboard / Homelab",
+      "llm_category": null,
+      "stars": 14,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dash_mon",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 5.51,
+        "liveliness": 14.0,
+        "traction": 4.12,
+        "polish": 18.5,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": 2.0,
+        "dockerfile": 7.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ polish +18.5, liveliness +14, selfhost_signal +8"
+    },
+    {
+      "url": "https://github.com/0xmarkhydra/OpenRide",
+      "score": 67.4,
+      "category": "DevOps / Infra",
+      "llm_category": null,
+      "stars": 7,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "devops",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 10.24,
+        "liveliness": 14.0,
+        "traction": 3.16,
+        "polish": 16.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0
+      },
+      "composition": "▲ polish +16, liveliness +14, compose +14 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/ultraworkers/claw-code",
+      "score": 65.5,
+      "category": "Developer Tools / Utilities",
+      "llm_category": null,
+      "stars": 195195,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dev_web",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 16.0,
+        "liveliness": 11.0,
+        "traction": 12.0,
+        "polish": 10.0,
+        "selfhost_signal": 0.0,
+        "community": 2.0,
+        "youth": 2.0,
+        "maturity": 0.0,
+        "gem_balance": -3.0,
+        "compose": 14.0,
+        "rust": 1.5
+      },
+      "composition": "▲ momentum +16, compose +14, traction +12 · ▼ gem_balance -3"
+    },
+    {
+      "url": "https://github.com/ThailerL/glass-garden",
+      "score": 64.75,
+      "category": "DevOps / Infra",
+      "llm_category": null,
+      "stars": 6,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "devops",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 9.79,
+        "liveliness": 14.0,
+        "traction": 2.96,
+        "polish": 21.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "dockerfile": 7.0
+      },
+      "composition": "▲ polish +21, liveliness +14, momentum +9.79 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/nvm-sh/nvm",
+      "score": 63.0,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 95055,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 16.0,
+        "liveliness": 14.0,
+        "traction": 12.0,
+        "polish": 16.0,
+        "selfhost_signal": 0.0,
+        "community": 4.0,
+        "youth": 0.0,
+        "maturity": 0.0,
+        "gem_balance": -6.0,
+        "dockerfile": 7.0
+      },
+      "composition": "▲ momentum +16, polish +16, liveliness +14 · ▼ gem_balance -6"
+    },
+    {
+      "url": "https://github.com/ItsJustMouse/ascendant-ledger",
+      "score": 62.0,
+      "category": "Finance / Budget",
+      "llm_category": null,
+      "stars": 0,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "productivity",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 0.0,
+        "liveliness": 14.0,
+        "traction": 0.0,
+        "polish": 16.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ polish +16, liveliness +14, compose +14 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/elowbe/scry",
+      "score": 59.93,
+      "category": "Media / Streaming",
+      "llm_category": null,
+      "stars": 10,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "media",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 11.29,
+        "liveliness": 14.0,
+        "traction": 3.64,
+        "polish": 10.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ liveliness +14, momentum +11.29, polish +10"
+    },
+    {
+      "url": "https://github.com/Postduif-App/postduif",
+      "score": 59.35,
+      "category": "Communication / Social",
+      "llm_category": null,
+      "stars": 2,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "comms",
+      "fresh_gem": true,
+      "hook": "",
+      "breakdown": {
+        "momentum": 6.68,
+        "liveliness": 14.0,
+        "traction": 1.67,
+        "polish": 7.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ liveliness +14, compose +14, selfhost_signal +8 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/millianlmx/swimmich",
+      "score": 58.71,
+      "category": "Media / Streaming",
+      "llm_category": null,
+      "stars": 15,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "media",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 12.5,
+        "liveliness": 14.0,
+        "traction": 4.21,
+        "polish": 7.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ liveliness +14, momentum +12.5, selfhost_signal +8"
+    },
+    {
+      "url": "https://github.com/ekos-cyber/SecureShare-App",
+      "score": 54.72,
+      "category": "Security / Auth",
+      "llm_category": null,
+      "stars": 1,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "security",
+      "fresh_gem": true,
+      "hook": "",
+      "breakdown": {
+        "momentum": 3.17,
+        "liveliness": 14.0,
+        "traction": 1.05,
+        "polish": 13.5,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 1.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "compose": 14.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +13.5"
+    },
+    {
+      "url": "https://github.com/Starf0x/my-audiobook-collection",
+      "score": 51.35,
+      "category": "Media / Streaming",
+      "llm_category": null,
+      "stars": 2,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "media",
+      "fresh_gem": true,
+      "hook": "",
+      "breakdown": {
+        "momentum": 6.68,
+        "liveliness": 14.0,
+        "traction": 1.67,
+        "polish": 7.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +7 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/sterno/photoflow",
+      "score": 49.44,
+      "category": "Automation",
+      "llm_category": null,
+      "stars": 1,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "productivity",
+      "fresh_gem": true,
+      "hook": "",
+      "breakdown": {
+        "momentum": 4.89,
+        "liveliness": 14.0,
+        "traction": 1.05,
+        "polish": 7.5,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +7.5 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/johnwmail/e2mail",
+      "score": 49.44,
+      "category": "Security / Auth",
+      "llm_category": null,
+      "stars": 1,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "security",
+      "fresh_gem": true,
+      "hook": "",
+      "breakdown": {
+        "momentum": 4.89,
+        "liveliness": 14.0,
+        "traction": 1.05,
+        "polish": 7.5,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +7.5 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/nullsempra/zenkodata",
+      "score": 48.35,
+      "category": "DevOps / Infra",
+      "llm_category": null,
+      "stars": 2,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "devops",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 6.68,
+        "liveliness": 14.0,
+        "traction": 1.67,
+        "polish": 10.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +10 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/DarkZoneSD/Libredesk-SnipeIT-Link",
+      "score": 45.94,
+      "category": "Docker / Containers",
+      "llm_category": null,
+      "stars": 1,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "devops",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 4.89,
+        "liveliness": 14.0,
+        "traction": 1.05,
+        "polish": 10.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +10 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/Nergy101/Muorg",
+      "score": 45.45,
+      "category": "Media / Streaming",
+      "llm_category": null,
+      "stars": 2,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "media",
+      "fresh_gem": true,
+      "hook": "",
+      "breakdown": {
+        "momentum": 4.78,
+        "liveliness": 14.0,
+        "traction": 1.67,
+        "polish": 2.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 1.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "compose": 14.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ liveliness +14, compose +14, product_family +6"
+    },
+    {
+      "url": "https://github.com/tyolab/tyo-mq",
+      "score": 45.24,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 2,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": true,
+      "hook": "",
+      "breakdown": {
+        "momentum": 0.57,
+        "liveliness": 14.0,
+        "traction": 1.67,
+        "polish": 16.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0
+      },
+      "composition": "▲ polish +16, liveliness +14, compose +14 · ▼ gem_balance -1"
+    }
+  ],
+  "categoryDistribution": {
+    "Media / Streaming": 4,
+    "DevOps / Infra": 3,
+    "Web App / Other": 2,
+    "Security / Auth": 2,
+    "Networking / VPN": 1,
+    "Dashboard / Homelab": 1,
+    "Developer Tools / Utilities": 1,
+    "Finance / Budget": 1,
+    "Communication / Social": 1,
+    "Automation": 1,
+    "Docker / Containers": 1
+  },
+  "scoreStats": {
+    "min": 45.24,
+    "max": 78.0,
+    "mean": 57.71
+  },
+  "dockerCount": 15,
+  "composeCount": 12,
+  "dockerfileOnlyCount": 3,
+  "freshCount": 7,
+  "shipProofCount": 18,
+  "tierA": 15,
+  "tierB": 0,
+  "tierC": 3,
+  "noProofRejected": 44,
+  "trendshiftFound": 171,
+  "trendshiftSeeded": 143,
+  "trendshiftSources": {
+    "daily": 25,
+    "monthly": 27,
+    "topic:document": 27,
+    "topic:self-hosted": 25,
+    "topic:workflow": 27,
+    "trending": 19,
+    "weekly": 29,
+    "yearly": 27
+  },
+  "benchSeeded": 0,
+  "benchSaved": 0,
+  "rejectCacheSize": 2181,
+  "rejectSkipped": 366,
+  "carrySaved": 0,
+  "nearMissSaved": 0,
+  "rejectCacheAfter": 2330,
+  "sweepSeconds": 105.9,
+  "confirmSeconds": 33.9,
+  "topupAdded": 0,
+  "topupFamilies": {},
+  "familyDistribution": {
+    "devops": 4,
+    "media": 4,
+    "other": 2,
+    "productivity": 2,
+    "security": 2,
+    "proxy_net": 1,
+    "dash_mon": 1,
+    "dev_web": 1,
+    "comms": 1
+  },
+  "familyFloorShortfall": {
+    "files": {
+      "floor": 1,
+      "got": 0
+    },
+    "knowledge": {
+      "floor": 1,
+      "got": 0
+    },
+    "documents": {
+      "floor": 1,
+      "got": 0
+    },
+    "bookmarks_rss": {
+      "floor": 1,
+      "got": 0
+    },
+    "db_light": {
+      "floor": 1,
+      "got": 0
+    },
+    "sports": {
+      "floor": 1,
+      "got": 0
+    },
+    "cms": {
+      "floor": 1,
+      "got": 0
+    },
+    "home_health": {
+      "floor": 1,
+      "got": 0
+    }
+  },
+  "confirmedPoolDepth": 18,
+  "selectionHeadroom": 1.0,
+  "timingSeconds": 250.2
+}

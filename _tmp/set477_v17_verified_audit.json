@@ -1,0 +1,730 @@
+{
+  "version": "v17",
+  "setNum": 477,
+  "title": "Set 477 — 50 More Self-Hosted Open-Source Web Apps (2026)",
+  "count": 46,
+  "stats": {
+    "slices": 139,
+    "slicesSkipped": 15,
+    "seen": 5735,
+    "unused": 379,
+    "rejectReasons": {
+      "not-english-readable": 4,
+      "mobile-only-client": 1,
+      "addon-or-companion": 1,
+      "scraper-or-shady": 1,
+      "chat-bot": 1,
+      "fork/archived/template": 3,
+      "built-on-other-app": 3,
+      "plugin-for-other-app": 1,
+      "list": 1,
+      "no-description": 17,
+      "trading-crypto": 1,
+      "stale": 2,
+      "native-client": 1,
+      "too-few-stars": 32,
+      "non-app-pattern": 1,
+      "no-deploy-proof": 54,
+      "no-web-app-intent": 1
+    },
+    "passing": 253,
+    "renameDups": 1,
+    "gqlCalls": 165,
+    "gqlErrors": 0,
+    "gqlRemaining": 4526,
+    "carrySize": 208,
+    "seconds": 88.3
+  },
+  "categoryDistribution": {
+    "AI / LLM": 4,
+    "CRM / Business": 3,
+    "Productivity / Tasks": 1,
+    "DevOps / Infra": 3,
+    "Documents / PDF / Paperless": 1,
+    "Dashboard / Homelab": 13,
+    "Media / Streaming": 11,
+    "Developer Tools / Utilities": 2,
+    "Health / Food / Fitness": 1,
+    "Networking / VPN": 2,
+    "Communication / Social": 1,
+    "Monitoring / Observability": 1,
+    "E-commerce / Shop": 1,
+    "Files / Storage / Backup": 1,
+    "Notes / Knowledge": 1
+  },
+  "picks": [
+    {
+      "repo": "kittors/CliRelay",
+      "score": 54.1,
+      "stars": 1022,
+      "category": "AI / LLM",
+      "breakdown": {
+        "stars": 30.1,
+        "velocity": 12.0,
+        "deploy": 6,
+        "release": 5,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "ai": -6
+      }
+    },
+    {
+      "repo": "autonnel/autonnel",
+      "score": 50.73,
+      "stars": 373,
+      "category": "AI / LLM",
+      "breakdown": {
+        "stars": 25.7,
+        "velocity": 12.0,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "license": 2,
+        "active": 1,
+        "selfhost": 2,
+        "ai": -6
+      }
+    },
+    {
+      "repo": "banmu123/LoomFlow",
+      "score": 50.5,
+      "stars": 223,
+      "category": "AI / LLM",
+      "breakdown": {
+        "stars": 23.5,
+        "velocity": 12.0,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "ai": -6
+      }
+    },
+    {
+      "repo": "lennney/agent-search-mcp",
+      "score": 50.19,
+      "stars": 111,
+      "category": "AI / LLM",
+      "breakdown": {
+        "stars": 20.5,
+        "velocity": 8.7,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "Kurohiko-id/Kitab-Link-Self-Hosted",
+      "score": 44.69,
+      "stars": 23,
+      "category": "CRM / Business",
+      "breakdown": {
+        "stars": 13.8,
+        "velocity": 6.9,
+        "deploy": 6,
+        "release": 5,
+        "polish": 6,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "ellite/candlr",
+      "score": 42.69,
+      "stars": 23,
+      "category": "Productivity / Tasks",
+      "breakdown": {
+        "stars": 13.8,
+        "velocity": 6.9,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "license": 2,
+        "active": 3,
+        "life": 3
+      }
+    },
+    {
+      "repo": "northgraindata/dsui",
+      "score": 40.79,
+      "stars": 17,
+      "category": "DevOps / Infra",
+      "breakdown": {
+        "stars": 12.6,
+        "velocity": 5.2,
+        "deploy": 3,
+        "release": 5,
+        "polish": 6,
+        "org": 2,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "tuckerwales/nslibrary",
+      "score": 37.27,
+      "stars": 13,
+      "category": "Documents / PDF / Paperless",
+      "breakdown": {
+        "stars": 11.5,
+        "velocity": 4.8,
+        "deploy": 6,
+        "release": 5,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "wr/featherframe",
+      "score": 36.4,
+      "stars": 17,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 12.6,
+        "velocity": 2.8,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "Ferousco-dev/Mailx",
+      "score": 36.33,
+      "stars": 15,
+      "category": "DevOps / Infra",
+      "breakdown": {
+        "stars": 12.0,
+        "velocity": 5.3,
+        "deploy": 6,
+        "polish": 3,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "miwayomi/miwayomi",
+      "score": 35.86,
+      "stars": 26,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 14.3,
+        "velocity": 5.5,
+        "deploy": 6,
+        "release": 5,
+        "license": 2,
+        "active": 1,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "hakopod/hakopod",
+      "score": 35.69,
+      "stars": 12,
+      "category": "DevOps / Infra",
+      "breakdown": {
+        "stars": 11.1,
+        "velocity": 4.6,
+        "deploy": 3,
+        "release": 5,
+        "polish": 3,
+        "org": 2,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "Forgemind-git/ForgeGrowth-OSS",
+      "score": 35.05,
+      "stars": 18,
+      "category": "Developer Tools / Utilities",
+      "breakdown": {
+        "stars": 12.8,
+        "velocity": 4.3,
+        "deploy": 6,
+        "release": 5,
+        "org": 2,
+        "license": 2,
+        "active": 1,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "newguy467/MediaOs",
+      "score": 34.81,
+      "stars": 20,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 13.2,
+        "velocity": 4.6,
+        "deploy": 6,
+        "release": 5,
+        "license": 2,
+        "active": 1,
+        "life": 3
+      }
+    },
+    {
+      "repo": "TheOutdoorProgrammer/crate",
+      "score": 34.62,
+      "stars": 50,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 17.1,
+        "velocity": 4.5,
+        "deploy": 6,
+        "release": 5,
+        "license": -4,
+        "active": 3,
+        "life": 3
+      }
+    },
+    {
+      "repo": "deadlocker8/SportTracker",
+      "score": 34.57,
+      "stars": 20,
+      "category": "Health / Food / Fitness",
+      "breakdown": {
+        "stars": 13.2,
+        "velocity": 0.3,
+        "deploy": 6,
+        "release": 5,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "aquelemiguel/parrot",
+      "score": 34.21,
+      "stars": 154,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 21.9,
+        "velocity": 1.3,
+        "deploy": 3,
+        "release": 3,
+        "license": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "gulian/rewatch",
+      "score": 34.2,
+      "stars": 45,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 16.6,
+        "velocity": 5.6,
+        "deploy": 6,
+        "polish": 3,
+        "license": 2,
+        "active": 1
+      }
+    },
+    {
+      "repo": "torwin-job/musik",
+      "score": 34.11,
+      "stars": 25,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 14.1,
+        "velocity": 6.0,
+        "deploy": 6,
+        "license": 2,
+        "active": 3,
+        "life": 3
+      }
+    },
+    {
+      "repo": "ka1t3/residalink",
+      "score": 30.44,
+      "stars": 19,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 13.0,
+        "velocity": 4.4,
+        "deploy": 3,
+        "polish": 3,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "Spillebulle/HomeLab-Manger",
+      "score": 30.33,
+      "stars": 28,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 14.6,
+        "velocity": 2.7,
+        "deploy": 3,
+        "release": 5,
+        "license": 2,
+        "active": 3
+      }
+    },
+    {
+      "repo": "RojanSapkota/osint-terminal",
+      "score": 30.21,
+      "stars": 40,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 16.1,
+        "velocity": 5.1,
+        "deploy": 3,
+        "polish": 3,
+        "license": 2,
+        "active": 1
+      }
+    },
+    {
+      "repo": "samtate/dumbtalk",
+      "score": 30.18,
+      "stars": 46,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 16.7,
+        "velocity": 8.5,
+        "deploy": 6,
+        "license": -4,
+        "active": 3
+      }
+    },
+    {
+      "repo": "carsteneu/mystarhistory",
+      "score": 29.52,
+      "stars": 20,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 13.2,
+        "velocity": 3.3,
+        "deploy": 3,
+        "release": 5,
+        "license": 2,
+        "active": 3
+      }
+    },
+    {
+      "repo": "DatanoiseTV/Nomina",
+      "score": 26.08,
+      "stars": 10,
+      "category": "Networking / VPN",
+      "breakdown": {
+        "stars": 10.4,
+        "velocity": 1.7,
+        "deploy": 6,
+        "release": 5,
+        "license": 2,
+        "active": 1
+      }
+    },
+    {
+      "repo": "joaovarelas/GitRunner-C2",
+      "score": 25.85,
+      "stars": 34,
+      "category": "Networking / VPN",
+      "breakdown": {
+        "stars": 15.4,
+        "velocity": 4.4,
+        "deploy": 6,
+        "license": -4,
+        "active": 1,
+        "life": 3
+      }
+    },
+    {
+      "repo": "tirbofish/kitgit",
+      "score": 24.88,
+      "stars": 12,
+      "category": "Developer Tools / Utilities",
+      "breakdown": {
+        "stars": 11.1,
+        "velocity": 2.7,
+        "deploy": 3,
+        "polish": 3,
+        "license": 2,
+        "active": 3
+      }
+    },
+    {
+      "repo": "Prashant4900/mail-box",
+      "score": 24.42,
+      "stars": 20,
+      "category": "Communication / Social",
+      "breakdown": {
+        "stars": 13.2,
+        "velocity": 3.2,
+        "deploy": 6,
+        "license": -4,
+        "active": 1,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "ock666/Kin-CRM",
+      "score": 24.2,
+      "stars": 10,
+      "category": "CRM / Business",
+      "breakdown": {
+        "stars": 10.4,
+        "velocity": 2.8,
+        "deploy": 6,
+        "license": 2,
+        "active": 3
+      }
+    },
+    {
+      "repo": "kevinrivm/nea-agent",
+      "score": 23.62,
+      "stars": 15,
+      "category": "CRM / Business",
+      "breakdown": {
+        "stars": 12.0,
+        "velocity": 3.6,
+        "deploy": 3,
+        "license": 2,
+        "active": 3
+      }
+    },
+    {
+      "repo": "AlexPGAO/honeyfile-watcher",
+      "score": 23.21,
+      "stars": 38,
+      "category": "Monitoring / Observability",
+      "breakdown": {
+        "stars": 15.9,
+        "velocity": 2.3,
+        "deploy": 3,
+        "license": -4,
+        "active": 1,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "klppl/OpenIQ",
+      "score": 22.78,
+      "stars": 13,
+      "category": "E-commerce / Shop",
+      "breakdown": {
+        "stars": 11.5,
+        "velocity": 2.3,
+        "deploy": 6,
+        "license": 2,
+        "active": 1
+      }
+    },
+    {
+      "repo": "Ciphranova-LLC/ExoServe",
+      "score": 22.43,
+      "stars": 12,
+      "category": "Files / Storage / Backup",
+      "breakdown": {
+        "stars": 11.1,
+        "velocity": 2.3,
+        "deploy": 6,
+        "release": 3,
+        "license": -4,
+        "active": 1,
+        "life": 3
+      }
+    },
+    {
+      "repo": "imZack/PttRSS",
+      "score": 22.08,
+      "stars": 24,
+      "category": "Notes / Knowledge",
+      "breakdown": {
+        "stars": 14.0,
+        "velocity": 0.1,
+        "deploy": 3,
+        "license": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "rkanapka/sound-vault",
+      "score": 32.0,
+      "stars": 56,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 17.6,
+        "velocity": 3.4,
+        "deploy": 6,
+        "license": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "stefexec/Reframe",
+      "score": 28.84,
+      "stars": 54,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 17.4,
+        "velocity": 5.4,
+        "deploy": 6,
+        "license": -4,
+        "active": 1,
+        "life": 3
+      }
+    },
+    {
+      "repo": "CameraRick/SCADarina",
+      "score": 28.07,
+      "stars": 11,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 10.8,
+        "velocity": 4.3,
+        "deploy": 6,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "jauzin23/CAMron",
+      "score": 27.96,
+      "stars": 14,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 11.8,
+        "velocity": 2.2,
+        "deploy": 6,
+        "polish": 3,
+        "license": 2,
+        "active": 3
+      }
+    },
+    {
+      "repo": "rohanpandula/DockSentinel",
+      "score": 27.42,
+      "stars": 79,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 19.0,
+        "velocity": 3.4,
+        "deploy": 6,
+        "license": -4,
+        "active": 3
+      }
+    },
+    {
+      "repo": "nguyenquocanhz/DomainGateway",
+      "score": 27.41,
+      "stars": 10,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 10.4,
+        "velocity": 4.0,
+        "deploy": 6,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "ChrisTitusTech/chrome-home",
+      "score": 26.73,
+      "stars": 14,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 11.8,
+        "velocity": 4.0,
+        "deploy": 6,
+        "license": 2,
+        "active": 1,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "Ankit-ku-panda/Hoyahh-Your-Own-Browser",
+      "score": 25.41,
+      "stars": 10,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 10.4,
+        "velocity": 4.0,
+        "deploy": 6,
+        "license": 2,
+        "active": 3
+      }
+    },
+    {
+      "repo": "ardiannurcahya/opencode-pr-review",
+      "score": 24.51,
+      "stars": 11,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 10.8,
+        "velocity": 3.7,
+        "deploy": 6,
+        "release": 5,
+        "license": -4,
+        "active": 3
+      }
+    },
+    {
+      "repo": "Animesh98/jarvis-dashboard",
+      "score": 23.5,
+      "stars": 37,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 15.8,
+        "velocity": 2.7,
+        "deploy": 6,
+        "license": -4,
+        "life": 3
+      }
+    },
+    {
+      "repo": "dprkh/mayo",
+      "score": 20.99,
+      "stars": 21,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 13.4,
+        "velocity": 0.6,
+        "deploy": 3,
+        "release": 3,
+        "license": -4,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "Sultonisky/Scroll",
+      "score": 19.48,
+      "stars": 12,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 11.1,
+        "velocity": 2.3,
+        "deploy": 3,
+        "license": 2,
+        "active": 1
+      }
+    }
+  ],
+  "timingSeconds": 104.4
+}

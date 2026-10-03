@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#19212a">
+<title>n50</title>
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/static/fonts/archivo-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/static/app.css">
+<script src="/static/app.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <a class="mark" href="/" aria-label="n50 home">n50</a>
+  <p class="tagline" id="tagline">Self-hosted web apps, published to Notion fifty at a time.</p>
+  <div class="find" role="search">
+    <label class="sr" for="find">Find a published repo</label>
+    <input id="find" type="search" placeholder="Find a published repo" autocomplete="off" spellcheck="false">
+    <kbd class="key" aria-hidden="true">/</kbd>
+    <div class="find-results" id="find-results" hidden></div>
+  </div>
+</header>
+
+<main class="layout">
+  <section class="rack" aria-labelledby="next-label">
+    <div class="setno">
+      <span class="setno-label" id="next-label">Next set</span>
+      <span class="setno-num" id="next-num">…</span>
+    </div>
+
+    <div class="panel" id="panel" role="img" aria-label="Set preview"></div>
+    <p class="panel-note" id="panel-note">Loading…</p>
+
+    <fieldset class="engines">
+      <legend>Engine</legend>
+      <div id="engines-main"></div>
+      <details class="older" id="older">
+        <summary>Older engines</summary>
+        <div id="engines-older"></div>
+      </details>
+    </fieldset>
+
+    <div class="actions">
+      <button class="btn btn-dry" id="btn-dry" type="button">Dry run</button>
+      <button class="btn btn-pub" id="btn-pub" type="button"><span class="btn-fill"></span><span class="btn-text">Publish to Notion</span></button>
+      <button class="btn btn-stop" id="btn-stop" type="button" hidden>Stop</button>
+    </div>
+    <p class="hint" id="hint">Dry runs never write to Notion. Press <kbd>D</kbd> to start one.</p>
+  </section>
+
+  <section class="work">
+    <nav class="tabs" role="tablist" aria-label="Workspace">
+      <button role="tab" id="tab-console" aria-controls="pane-console" aria-selected="true">Console</button>
+      <button role="tab" id="tab-picks" aria-controls="pane-picks" aria-selected="false">Picks <span class="tab-count" id="picks-count"></span></button>
+      <button role="tab" id="tab-sets" aria-controls="pane-sets" aria-selected="false">Published</button>
+      <button role="tab" id="tab-runs" aria-controls="pane-runs" aria-selected="false">Runs</button>
+    </nav>
+
+    <div class="pane" id="pane-console" role="tabpanel" aria-labelledby="tab-console">
+      <div class="status" aria-live="polite">
+        <span class="led" id="led"></span>
+        <span class="status-text" id="status-text">Idle</span>
+        <span class="status-time" id="status-time"></span>
+      </div>
+      <div class="progress" id="progress" hidden><span id="progress-bar"></span></div>
+      <div class="replay" id="replay" hidden>
+        <span id="replay-text"></span>
+        <button type="button" class="link" id="replay-exit">Back to live console</button>
+      </div>
+      <div class="toolbar">
+        <label class="sr" for="log-filter">Filter log lines</label>
+        <input id="log-filter" type="search" placeholder="Filter lines" autocomplete="off" spellcheck="false">
+        <label class="check"><input type="checkbox" id="follow" checked> Follow</label>
+        <button type="button" class="tool" id="log-copy">Copy</button>
+        <button type="button" class="tool" id="log-save">Download</button>
+        <button type="button" class="tool" id="notify" aria-pressed="false" title="Desktop notification when a run finishes">Notify me</button>
+      </div>
+      <pre class="log" id="log" tabindex="0" aria-label="Run output"></pre>
+    </div>
+
+    <div class="pane" id="pane-picks" role="tabpanel" aria-labelledby="tab-picks" hidden>
+      <div id="picks"></div>
+    </div>
+
+    <div class="pane" id="pane-sets" role="tabpanel" aria-labelledby="tab-sets" hidden>
+      <div class="ledger-head">
+        <p id="ledger-summary"></p>
+        <label class="sr" for="ledger-filter">Filter by engine</label>
+        <select id="ledger-filter"><option value="">All engines</option></select>
+      </div>
+      <ol class="ledger" id="ledger" reversed></ol>
+      <button type="button" class="btn btn-quiet" id="ledger-more" hidden>Show older sets</button>
+    </div>
+
+    <div class="pane" id="pane-runs" role="tabpanel" aria-labelledby="tab-runs" hidden>
+      <p class="pane-intro">The last 60 runs are kept with their full output. Open one to read its log in the console.</p>
+      <ol class="runs" id="runs"></ol>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

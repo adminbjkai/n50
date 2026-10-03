@@ -1,0 +1,199 @@
+{
+  "version": "v17",
+  "setNum": 481,
+  "title": "Set 481 — 50 More Self-Hosted Open-Source Web Apps (2026)",
+  "count": 10,
+  "stats": {
+    "slices": 121,
+    "slicesSkipped": 33,
+    "seen": 4625,
+    "unused": 229,
+    "rejectReasons": {
+      "trading-crypto": 1,
+      "list-template-or-tutorial": 1,
+      "built-on-other-app": 1,
+      "mcp-server": 1,
+      "too-few-stars": 28,
+      "stale": 2,
+      "no-deploy-proof": 5
+    },
+    "passing": 190,
+    "renameDups": 0,
+    "gqlCalls": 142,
+    "gqlErrors": 0,
+    "gqlRemaining": 4275,
+    "carrySize": 209,
+    "seconds": 67.6
+  },
+  "categoryDistribution": {
+    "AI / LLM": 2,
+    "Finance / Budget": 1,
+    "Image / Design / Creative": 1,
+    "Web App / Other": 1,
+    "Security / Auth": 1,
+    "Dashboard / Homelab": 2,
+    "Media / Streaming": 1,
+    "Automation": 1
+  },
+  "picks": [
+    {
+      "repo": "inferstep/ATLAS",
+      "score": 68.22,
+      "stars": 2096,
+      "category": "AI / LLM",
+      "breakdown": {
+        "stars": 33.2,
+        "velocity": 12.0,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "org": 2,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "bailinghub/bailinghub",
+      "score": 50.95,
+      "stars": 123,
+      "category": "Finance / Budget",
+      "breakdown": {
+        "stars": 20.9,
+        "velocity": 10.0,
+        "deploy": 6,
+        "release": 5,
+        "polish": 6,
+        "org": 2,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "ai": -6
+      }
+    },
+    {
+      "repo": "LockedinLabs-AI/agent-console",
+      "score": 49.5,
+      "stars": 446,
+      "category": "AI / LLM",
+      "breakdown": {
+        "stars": 26.5,
+        "velocity": 12.0,
+        "deploy": 3,
+        "release": 5,
+        "org": 2,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "ai": -6
+      }
+    },
+    {
+      "repo": "groundboxerrespect/Dlls5-auto",
+      "score": 49.38,
+      "stars": 434,
+      "category": "Image / Design / Creative",
+      "breakdown": {
+        "stars": 26.4,
+        "velocity": 12.0,
+        "deploy": 6,
+        "polish": 3,
+        "license": 2,
+        "active": 3,
+        "life": 3,
+        "ai": -6
+      }
+    },
+    {
+      "repo": "autonnel/picocart",
+      "score": 37.84,
+      "stars": 140,
+      "category": "Web App / Other",
+      "breakdown": {
+        "stars": 21.5,
+        "velocity": 10.3,
+        "deploy": 3,
+        "license": 2,
+        "active": 1
+      }
+    },
+    {
+      "repo": "concile-dev/concile",
+      "score": 37.57,
+      "stars": 14,
+      "category": "Security / Auth",
+      "breakdown": {
+        "stars": 11.8,
+        "velocity": 2.8,
+        "deploy": 6,
+        "release": 5,
+        "polish": 6,
+        "org": 2,
+        "license": -4,
+        "active": 3,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "alvarobartt/sys1",
+      "score": 37.05,
+      "stars": 48,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 16.9,
+        "velocity": 10.1,
+        "deploy": 3,
+        "release": 5,
+        "polish": 3,
+        "license": -4,
+        "active": 3
+      }
+    },
+    {
+      "repo": "Slaker19/webkvm",
+      "score": 35.69,
+      "stars": 12,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 11.1,
+        "velocity": 4.6,
+        "deploy": 6,
+        "release": 5,
+        "license": 2,
+        "active": 3,
+        "curated": 4
+      }
+    },
+    {
+      "repo": "chenkanglin198904/Personal_External_Brain",
+      "score": 35.15,
+      "stars": 19,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 13.0,
+        "velocity": 6.1,
+        "deploy": 6,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "SelmiAbderrahim/rankme.fast",
+      "score": 33.56,
+      "stars": 20,
+      "category": "Automation",
+      "breakdown": {
+        "stars": 13.2,
+        "velocity": 6.3,
+        "deploy": 6,
+        "polish": 3,
+        "license": 2,
+        "active": 3
+      }
+    }
+  ],
+  "timingSeconds": 69.7
+}

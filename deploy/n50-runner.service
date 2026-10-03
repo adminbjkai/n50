@@ -1,0 +1,23 @@
+[Unit]
+Description=n50.bjk.ai control room (socket-activated, exits when idle)
+Requires=n50-runner.socket
+After=network.target n50-runner.socket
+
+[Service]
+Type=simple
+User=bjkai
+Group=bjkai
+WorkingDirectory=/apps/n50
+Environment=HOME=/home/bjkai
+Environment=N50_PORT=8055
+# Exit after 15 idle minutes (no requests, no open tab streaming a run, nothing running).
+Environment=N50_IDLE_EXIT=900
+ExecStart=/usr/bin/python3 /apps/n50/server.py
+Restart=on-failure
+RestartSec=3
+# On stop, only the server gets SIGTERM: it ends a dry run, waits for a publish to finish
+# (legacy engines have taken up to ~8.5 min), then exits; anything left after that is killed.
+KillMode=mixed
+TimeoutStopSec=900
+MemoryHigh=1G
+Nice=5

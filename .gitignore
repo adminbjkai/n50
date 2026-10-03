@@ -1,5 +1,12 @@
 __pycache__/
 *.py[cod]
-*$py.class
 *.log
 .DS_Store
+
+# Engine caches are machine-local and rebuildable; only publish audits are history.
+_tmp/*
+!_tmp/.gitkeep
+!_tmp/*audit*.json
+
+# OpenClaw daily notes that land in this folder; not part of the app.
+/memory/

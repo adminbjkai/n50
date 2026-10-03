@@ -1,0 +1,47 @@
+# PROGRESS — n50.bjk.ai overhaul (Oct 2026)
+
+**Goal:** a tidier, lighter, better-looking n50 control room that keeps every engine
+runnable, makes v17 actually fill 50/50 again, and is live on n50.bjk.ai + GitHub.
+**Started:** 2026-10-03 · **Sandbox:** dry-runs only; no Notion publish without the user.
+
+## Baseline (measured 2026-10-03)
+- Backend down: `n50-runner.service` stopped + disabled since 2026-10-02 06:49 (no note why).
+  nginx vhost + basic auth ("Admin") intact.
+- 7 engines (v11–v17, ~25k lines) in `v11-fresh-dir/`, plus a stale duplicate
+  `run_next_set_v11.py`, 6 unused symlinks, `__pycache__`, a `.bak`; `_tmp/` 51 MB incl.
+  caches for engines that no longer exist (v2–v10), Mac-path scripts, old logs.
+- Usage since v17 shipped (09-24): v11 ×4, v15 ×5, v16 ×5, v17 ×4 — engines are swapped
+  by hand to chase yield. GitHub `origin/main` is 1 commit behind (v17 commit unpushed).
+- v17 dry-run for Set 494: 151 pass the gate, 132 are AI → AI cap 4 → **23/50**, refuses.
+- UI: one 400-line file, version buttons, raw log; `/run` is a GET (CSRF-able publish);
+  reload loses the log; no history, no preview of picks.
+
+## Stages
+| # | Deliverable | Acceptance | Status | Evidence |
+|---|---|---|---|---|
+| 1 | Restructure + clean | engines in `engines/`, server+web at root, docs in `docs/`, dead files trashed, caches untracked | ✅ | all 7 engine `--self-test` ALL PASSED from `engines/`; `_tmp` 51→34 MB |
+| 2 | Server rewrite | JSON API, POST+header run/stop, replayable log, run history, socket-activated idle exit | ✅ | verifier: API vs tracker/CSV exact, traversal 400/404, 403 w/o header, 409 on double start, stop → rc −15; idle exit observed (40 s test); stop mid-dry-run 0.56 s |
+| 3 | New UI | distinctive design, engine stats, proof sheet, back issues, log tools | ✅ | Playwright flow 1440/390 px, no console errors; reload mid-run replays log; picks auto-open on finish |
+| 4 | v17 yield | dry-run fills 50/50 without junk; self-test green | ✅ | dry runs: 23/50 → 50/50 (95 s, 5 AI) → 50/50 after gate fixes (70 s, 17 AI, 64 MB RSS); self-test 32 checks |
+| 5 | Deploy | socket+service live, nginx path works, screenshots | ✅ | socket enabled/active; units == deploy/; KillMode=mixed, 5 min stop timeout; public URL 401 (basic auth) as before |
+| 6 | Docs + GitHub | README/docs current, pushed | ✅ | README, docs/ENGINES.md, V17 update; pushed to adminbjkai/n50 main |
+| 7 | Independent verify | fresh-context verifier PASS | ✅ | round 1: 7/8 + 7 bugs → fixed; round 2: server/gate/shutdown PASS, 1 doc sentence + a11y gaps + stop-timeout/run-record races → fixed and re-tested (stop 0.57 s, record saved; Home/End/Space work) |
+
+## Decisions
+- Keep all engines (v11–v17) runnable — they are still used. Group them; feature v17.
+- No Notion publish during this work (outward-facing); dry-runs only.
+- Publish stays one click (README: "Publish starts directly from the button"), but gets a
+  3-second cancelable countdown instead of a dialog.
+- v17 AI policy: pass 1 keeps AI ≤4; a short set is filled with non-AI past the category cap
+  first, then AI apps whose description shows a web UI, never more than 20/50. AI without a
+  web-app description is never picked. (2026-10-03)
+- v17 query-memory bug: overlap between slices counted as "nothing new" and marked slices
+  dead for 14 days. Fixed; dead counters reset; memory pruned after 28 days.
+- Dry runs always write their audit (with `publishable`), so a short set can be previewed.
+- Verifier round 1 found: every engine refuses short standard publishes (guards added
+  Sep 28–30), so "ship short" docs/UI were wrong; v14's guard compared to 50 (target 200) —
+  fixed to DEFAULT_TARGET. Restarts would SIGTERM a publish → KillMode=mixed + server waits.
+  Narrowed v17 gate regexes that hit legit apps; AI_APP no longer accepts bare platform/browser.
+- Round 2: TimeoutStopSec 900 (legacy publishes took up to 511 s); shutdown refuses new runs
+  and waits until the run record is written. Known leftover: loponai/oneshotmatrix-style
+  "one-shot" bundles can pass the narrowed packaging rule (accepted; low impact).

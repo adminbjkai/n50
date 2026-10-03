@@ -1,0 +1,813 @@
+{
+  "version": "v17",
+  "setNum": 476,
+  "title": "Set 476 — 50 More Self-Hosted Open-Source Web Apps (2026)",
+  "count": 50,
+  "stats": {
+    "slices": 75,
+    "slicesSkipped": 79,
+    "seen": 4435,
+    "unused": 306,
+    "rejectReasons": {
+      "too-few-stars": 25,
+      "stale": 2
+    },
+    "passing": 278,
+    "renameDups": 1,
+    "gqlCalls": 99,
+    "gqlErrors": 0,
+    "gqlRemaining": 2770,
+    "carrySize": 228,
+    "seconds": 59.7
+  },
+  "categoryDistribution": {
+    "AI / LLM": 4,
+    "Dashboard / Homelab": 6,
+    "Media / Streaming": 6,
+    "Security / Auth": 3,
+    "Developer Tools / Utilities": 6,
+    "Productivity / Tasks": 1,
+    "Monitoring / Observability": 1,
+    "Books / Reading / Library": 1,
+    "Image / Design / Creative": 2,
+    "Networking / VPN": 5,
+    "Files / Storage / Backup": 2,
+    "Communication / Social": 3,
+    "Analytics / Data": 2,
+    "Notes / Knowledge": 2,
+    "DevOps / Infra": 2,
+    "Automation": 1,
+    "Documents / PDF / Paperless": 1,
+    "Home Automation / IoT": 1,
+    "Finance / Budget": 1
+  },
+  "picks": [
+    {
+      "repo": "EKKOLearnAI/ekko-studio",
+      "score": 61.49,
+      "stars": 11185,
+      "category": "AI / LLM",
+      "breakdown": {
+        "stars": 40.5,
+        "velocity": 12.0,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "license": -4,
+        "active": 3,
+        "selfhost": 2,
+        "ai": -6
+      }
+    },
+    {
+      "repo": "Kritt-ai/open-kritt",
+      "score": 60.36,
+      "stars": 2167,
+      "category": "AI / LLM",
+      "breakdown": {
+        "stars": 33.4,
+        "velocity": 12.0,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "org": 2,
+        "license": 2,
+        "active": 3,
+        "ai": -6
+      }
+    },
+    {
+      "repo": "yyjeqhc/webcodex",
+      "score": 56.55,
+      "stars": 1799,
+      "category": "AI / LLM",
+      "breakdown": {
+        "stars": 32.6,
+        "velocity": 12.0,
+        "deploy": 6,
+        "release": 5,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "ai": -6
+      }
+    },
+    {
+      "repo": "rome-os/rome",
+      "score": 56.19,
+      "stars": 523,
+      "category": "AI / LLM",
+      "breakdown": {
+        "stars": 27.2,
+        "velocity": 12.0,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "org": 2,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "ai": -6
+      }
+    },
+    {
+      "repo": "TautvydasDerzinskas/Thingport",
+      "score": 49.29,
+      "stars": 84,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 19.3,
+        "velocity": 12.0,
+        "deploy": 6,
+        "release": 5,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "mkamranr/reelforge",
+      "score": 39.85,
+      "stars": 67,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 18.3,
+        "velocity": 11.5,
+        "deploy": 6,
+        "license": -4,
+        "active": 3,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "drewmt/lineweb-social",
+      "score": 39.03,
+      "stars": 20,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 13.2,
+        "velocity": 3.8,
+        "deploy": 6,
+        "release": 3,
+        "polish": 3,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "sunburnco/sunburn",
+      "score": 38.21,
+      "stars": 88,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 19.5,
+        "velocity": 2.7,
+        "deploy": 3,
+        "release": 3,
+        "polish": 3,
+        "org": 2,
+        "license": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "phoxwupsh/turto",
+      "score": 37.83,
+      "stars": 62,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 18.0,
+        "velocity": 0.8,
+        "deploy": 6,
+        "release": 5,
+        "license": 2,
+        "active": 3,
+        "life": 3
+      }
+    },
+    {
+      "repo": "usesesame/sesame-server",
+      "score": 37.51,
+      "stars": 11,
+      "category": "Security / Auth",
+      "breakdown": {
+        "stars": 10.8,
+        "velocity": 3.7,
+        "deploy": 3,
+        "release": 5,
+        "polish": 3,
+        "org": 2,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "wcfbxw/mediafetch",
+      "score": 37.33,
+      "stars": 31,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 15.1,
+        "velocity": 5.3,
+        "deploy": 6,
+        "polish": 3,
+        "license": 2,
+        "active": 1,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "iforge-go/iforge",
+      "score": 37.08,
+      "stars": 26,
+      "category": "Developer Tools / Utilities",
+      "breakdown": {
+        "stars": 14.3,
+        "velocity": 5.8,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "org": 2,
+        "license": -4,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "RojanSapkota/esewa-payment-gateway",
+      "score": 37.04,
+      "stars": 24,
+      "category": "Developer Tools / Utilities",
+      "breakdown": {
+        "stars": 14.0,
+        "velocity": 7.1,
+        "deploy": 6,
+        "polish": 3,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "CICCADA-CORP/SoundTime",
+      "score": 37.01,
+      "stars": 58,
+      "category": "Media / Streaming",
+      "breakdown": {
+        "stars": 17.7,
+        "velocity": 3.3,
+        "deploy": 6,
+        "polish": 3,
+        "org": 2,
+        "license": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "Muatasim-Aswad/job-tracker",
+      "score": 36.92,
+      "stars": 10,
+      "category": "Productivity / Tasks",
+      "breakdown": {
+        "stars": 10.4,
+        "velocity": 2.5,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "freewaretools/proxview",
+      "score": 36.88,
+      "stars": 13,
+      "category": "Monitoring / Observability",
+      "breakdown": {
+        "stars": 11.5,
+        "velocity": 2.4,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "org": 2,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "izum-vinipuhov/Izum-StoryFlow",
+      "score": 36.37,
+      "stars": 24,
+      "category": "Books / Reading / Library",
+      "breakdown": {
+        "stars": 14.0,
+        "velocity": 6.4,
+        "deploy": 3,
+        "release": 5,
+        "license": 2,
+        "active": 3,
+        "life": 3
+      }
+    },
+    {
+      "repo": "1120393079/aliashub",
+      "score": 36.35,
+      "stars": 16,
+      "category": "Developer Tools / Utilities",
+      "breakdown": {
+        "stars": 12.3,
+        "velocity": 3.0,
+        "deploy": 6,
+        "release": 5,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "fengyincheng/patchpawwww",
+      "score": 36.33,
+      "stars": 22,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 13.6,
+        "velocity": 6.7,
+        "deploy": 6,
+        "release": 5,
+        "license": 2,
+        "active": 3
+      }
+    },
+    {
+      "repo": "kserksi/summeRain",
+      "score": 36.13,
+      "stars": 21,
+      "category": "Image / Design / Creative",
+      "breakdown": {
+        "stars": 13.4,
+        "velocity": 3.7,
+        "deploy": 3,
+        "release": 5,
+        "polish": 3,
+        "license": 2,
+        "active": 3,
+        "life": 3
+      }
+    },
+    {
+      "repo": "cdwv/ReviewPhin",
+      "score": 35.99,
+      "stars": 16,
+      "category": "Developer Tools / Utilities",
+      "breakdown": {
+        "stars": 12.3,
+        "velocity": 2.7,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "org": 2,
+        "license": 2,
+        "active": 3
+      }
+    },
+    {
+      "repo": "andyshrx/pdfpost",
+      "score": 35.96,
+      "stars": 13,
+      "category": "Developer Tools / Utilities",
+      "breakdown": {
+        "stars": 11.5,
+        "velocity": 2.5,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "license": 2,
+        "active": 1,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "barats/shrl-io",
+      "score": 35.75,
+      "stars": 14,
+      "category": "Developer Tools / Utilities",
+      "breakdown": {
+        "stars": 11.8,
+        "velocity": 5.0,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "license": 2,
+        "active": 3
+      }
+    },
+    {
+      "repo": "HughRyu/SignMate",
+      "score": 35.49,
+      "stars": 23,
+      "category": "Networking / VPN",
+      "breakdown": {
+        "stars": 13.8,
+        "velocity": 2.7,
+        "deploy": 6,
+        "release": 5,
+        "license": 2,
+        "active": 3,
+        "life": 3
+      }
+    },
+    {
+      "repo": "wizier/airvault",
+      "score": 35.31,
+      "stars": 20,
+      "category": "Files / Storage / Backup",
+      "breakdown": {
+        "stars": 13.2,
+        "velocity": 4.1,
+        "deploy": 6,
+        "polish": 6,
+        "license": 2,
+        "active": 1,
+        "life": 3
+      }
+    },
+    {
+      "repo": "ntrance/wahoo-garmin-fit-bridge",
+      "score": 34.38,
+      "stars": 11,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 10.8,
+        "velocity": 2.6,
+        "deploy": 6,
+        "release": 5,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "JastinXyz/fana",
+      "score": 33.81,
+      "stars": 19,
+      "category": "Communication / Social",
+      "breakdown": {
+        "stars": 13.0,
+        "velocity": 3.8,
+        "deploy": 6,
+        "polish": 3,
+        "license": 2,
+        "active": 1,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "norenX/410-chat",
+      "score": 33.26,
+      "stars": 15,
+      "category": "Security / Auth",
+      "breakdown": {
+        "stars": 12.0,
+        "velocity": 5.2,
+        "deploy": 6,
+        "polish": 3,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "redstone-md/g3",
+      "score": 32.84,
+      "stars": 25,
+      "category": "Files / Storage / Backup",
+      "breakdown": {
+        "stars": 14.1,
+        "velocity": 3.7,
+        "deploy": 3,
+        "polish": 3,
+        "org": 2,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "MengMengCode/MailGo",
+      "score": 32.66,
+      "stars": 18,
+      "category": "Communication / Social",
+      "breakdown": {
+        "stars": 12.8,
+        "velocity": 2.9,
+        "deploy": 6,
+        "release": 5,
+        "license": 2,
+        "active": 1,
+        "life": 3
+      }
+    },
+    {
+      "repo": "respectlytics/respectlytics",
+      "score": 32.66,
+      "stars": 40,
+      "category": "Analytics / Data",
+      "breakdown": {
+        "stars": 16.1,
+        "velocity": 2.5,
+        "deploy": 6,
+        "release": 3,
+        "org": 2,
+        "license": 2,
+        "active": 1
+      }
+    },
+    {
+      "repo": "ridi-oss/proxy-monster",
+      "score": 32.54,
+      "stars": 13,
+      "category": "Networking / VPN",
+      "breakdown": {
+        "stars": 11.5,
+        "velocity": 3.1,
+        "deploy": 6,
+        "release": 5,
+        "org": 2,
+        "license": 2,
+        "active": 3
+      }
+    },
+    {
+      "repo": "luftaquila/skytrace",
+      "score": 32.49,
+      "stars": 11,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 10.8,
+        "velocity": 2.7,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "license": 2,
+        "active": 3
+      }
+    },
+    {
+      "repo": "Auto-Tournament/auto-tournament",
+      "score": 32.35,
+      "stars": 36,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 15.7,
+        "velocity": 1.7,
+        "deploy": 6,
+        "release": 3,
+        "polish": 3,
+        "org": 2,
+        "license": -4,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "banana2556/hme-manager",
+      "score": 32.32,
+      "stars": 43,
+      "category": "Communication / Social",
+      "breakdown": {
+        "stars": 16.4,
+        "velocity": 3.9,
+        "deploy": 6,
+        "license": 2,
+        "active": 1,
+        "life": 3
+      }
+    },
+    {
+      "repo": "niteenautade/minimamemosa",
+      "score": 32.23,
+      "stars": 25,
+      "category": "Notes / Knowledge",
+      "breakdown": {
+        "stars": 14.1,
+        "velocity": 4.1,
+        "deploy": 6,
+        "license": 2,
+        "active": 3,
+        "life": 3
+      }
+    },
+    {
+      "repo": "lisancao/lakehouse-at-home",
+      "score": 31.76,
+      "stars": 107,
+      "category": "Dashboard / Homelab",
+      "breakdown": {
+        "stars": 20.3,
+        "velocity": 4.4,
+        "deploy": 6,
+        "release": 3,
+        "license": -4,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "smallwat3r/secretapi",
+      "score": 31.32,
+      "stars": 36,
+      "category": "Security / Auth",
+      "breakdown": {
+        "stars": 15.7,
+        "velocity": 1.6,
+        "deploy": 6,
+        "polish": 3,
+        "license": 2,
+        "active": 3
+      }
+    },
+    {
+      "repo": "fspoettel/linkding-on-fly",
+      "score": 31.26,
+      "stars": 104,
+      "category": "Notes / Knowledge",
+      "breakdown": {
+        "stars": 20.2,
+        "velocity": 1.0,
+        "deploy": 3,
+        "license": 2,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "pythonsaber2/dockly",
+      "score": 30.46,
+      "stars": 13,
+      "category": "DevOps / Infra",
+      "breakdown": {
+        "stars": 11.5,
+        "velocity": 3.0,
+        "deploy": 6,
+        "polish": 3,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "bgwastu/meshflare",
+      "score": 30.21,
+      "stars": 20,
+      "category": "Networking / VPN",
+      "breakdown": {
+        "stars": 13.2,
+        "velocity": 4.0,
+        "deploy": 3,
+        "polish": 3,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "clementclecle/recaptcha-harvester",
+      "score": 29.66,
+      "stars": 32,
+      "category": "Automation",
+      "breakdown": {
+        "stars": 15.2,
+        "velocity": 6.5,
+        "deploy": 3,
+        "license": 2,
+        "active": 1,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "jmsz1996/linse-app",
+      "score": 29.65,
+      "stars": 31,
+      "category": "Image / Design / Creative",
+      "breakdown": {
+        "stars": 15.1,
+        "velocity": 3.6,
+        "deploy": 6,
+        "license": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "shurco/goSign",
+      "score": 29.56,
+      "stars": 20,
+      "category": "Documents / PDF / Paperless",
+      "breakdown": {
+        "stars": 13.2,
+        "velocity": 0.3,
+        "deploy": 6,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "Okhr/postflight",
+      "score": 28.65,
+      "stars": 13,
+      "category": "Home Automation / IoT",
+      "breakdown": {
+        "stars": 11.5,
+        "velocity": 4.2,
+        "deploy": 6,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "taliove/proxyhub",
+      "score": 28.46,
+      "stars": 11,
+      "category": "Networking / VPN",
+      "breakdown": {
+        "stars": 10.8,
+        "velocity": 2.7,
+        "deploy": 3,
+        "release": 5,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "Oaklight/composerize-minimal",
+      "score": 27.28,
+      "stars": 41,
+      "category": "DevOps / Infra",
+      "breakdown": {
+        "stars": 16.2,
+        "velocity": 1.0,
+        "deploy": 6,
+        "license": 2,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "sheppy/actual-truelayer-sync",
+      "score": 27.23,
+      "stars": 24,
+      "category": "Finance / Budget",
+      "breakdown": {
+        "stars": 14.0,
+        "velocity": 2.3,
+        "deploy": 3,
+        "license": 2,
+        "active": 1,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
+      "repo": "ronaldmiranda/docker-cloudflared-controller",
+      "score": 27.07,
+      "stars": 13,
+      "category": "Networking / VPN",
+      "breakdown": {
+        "stars": 11.5,
+        "velocity": 2.6,
+        "deploy": 6,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
+      "repo": "Jenesyx/openreply-fa",
+      "score": 26.24,
+      "stars": 18,
+      "category": "Analytics / Data",
+      "breakdown": {
+        "stars": 12.8,
+        "velocity": 4.5,
+        "deploy": 6,
+        "license": 2,
+        "active": 1
+      }
+    }
+  ],
+  "timingSeconds": 61.4
+}

@@ -1,0 +1,1799 @@
+{
+  "version": "v15",
+  "setNum": 447,
+  "searchCalls": 36,
+  "zeroYieldQueries": 5,
+  "poolSize": 445,
+  "scoredCount": 121,
+  "freshScored": 1,
+  "graphql": true,
+  "awesome": true,
+  "awesomeResidual": 0,
+  "awesomeSeeded": 0,
+  "enrich": false,
+  "rejected": [
+    [
+      "https://github.com/Chnapy/PKVault",
+      "duplicate"
+    ],
+    [
+      "https://github.com/kevinmalinoski/intune-preflight",
+      "duplicate"
+    ],
+    [
+      "https://github.com/tnt-sbab/spring-boot-event-store",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/DMulajkar/Quantgress",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/TieruYT/metin2-playerbots",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/sapientorius/Nebulynk",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/opensubsonic/open-subsonic-api",
+      "duplicate"
+    ],
+    [
+      "https://github.com/Csontikka/esphome-tailscale",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/SuperNG6/docker-qbittorrent",
+      "duplicate"
+    ],
+    [
+      "https://github.com/countertek/powersync-lynx",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/TabSlate-dev/TabSlate",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/liaisonio/liaison",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/giantbranch/pwn_deploy_chroot",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/viklee666/docker-composer-api",
+      "duplicate"
+    ],
+    [
+      "https://github.com/Emp5r0R/Abyssal",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/teableio/teable-deployment",
+      "duplicate"
+    ],
+    [
+      "https://github.com/oddbit/shrtnr",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Agrid-Dev/gridone",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/TaterTotterson/Tater",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Morriz/itsUP",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/AKzar1el/mcp-geo",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/JoaaoVerona/runfile",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/a8hok/DevOps-Study-Guide",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/yerzhansa/enduragent",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/SoluDevTech/flux",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/AuuCoder/gptGrok2api",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/ondata/ckan-mcp-server",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/huihuijiangqiang/moshu",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/imMamdouhaboammar/chatgpt-codex-plugin-autopilot",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/xdlc-labs/xdlc-agent",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/madmatt112/tradr",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/DFXswiss/app",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/RealSeaberry/AutoMCM-Pro",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Dyalog/documentation",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/genz27/SanHub",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/kekzl/imp",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/HKUSTDial/DeepEye",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/enapt/SwarmLLM",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/xiaoze-hub/Stock-Intelligent-Data-Analytics",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/mforce/cluckwork",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/caid-technologies/Forma-OSS",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Raytto/codex-web",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/munazir17/MPGR-HUB",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/jazz1x/ohmyboring",
+      "duplicate"
+    ],
+    [
+      "https://github.com/OpsMaxx/OpsMaxx",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/slowleelab/lumio",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/wso2/labs-agentic-engineer",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/iome-sh/iomesh-memory-mcp",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/OpenDigitalProductFactory/opendigitalproductfactory",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/lukibahr/stars",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/stigmer/stigmer",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/CarlLee1983/dbcli",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/OortCloudGroup/VLStream-Cloud",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/anyhop/anyhop",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/geboai/Gebo.ai",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/OkamiOps/okami-sentinel",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Jehuty-ML/nl2sql-agent",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/sreevarshan-xenoz/xencode",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/memengine/memory-api",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/loozzi/gemini-fri",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/yeye1208/knowforge-bidguard-ragops",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/frankbria/auto-music-studio",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/pulkit777exe/sastram",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/OmniNode-ai/omnibase_infra",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/tonera/vitoom",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Design-Machines-Studio/depot",
+      "ai-without-webui"
+    ]
+  ],
+  "selected": [
+    {
+      "url": "https://github.com/klboke/kkRepo",
+      "score": 87.48,
+      "category": "DevOps / Infra",
+      "llm_category": null,
+      "stars": 263,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "devops",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 16.0,
+        "liveliness": 14.0,
+        "traction": 8.48,
+        "polish": 21.0,
+        "selfhost_signal": 8.0,
+        "community": 4.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 6.0,
+        "dockerfile": 7.0
+      },
+      "composition": "▲ polish +21, momentum +16, liveliness +14"
+    },
+    {
+      "url": "https://github.com/LiteFarmOrg/LiteFarm",
+      "score": 83.73,
+      "category": "Communication / Social",
+      "llm_category": null,
+      "stars": 239,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "comms",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 11.2,
+        "liveliness": 14.0,
+        "traction": 8.33,
+        "polish": 20.2,
+        "selfhost_signal": 0.0,
+        "community": 2.0,
+        "youth": 0.0,
+        "maturity": 0.0,
+        "gem_balance": 6.0,
+        "compose": 14.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ polish +20.2, liveliness +14, compose +14"
+    },
+    {
+      "url": "https://github.com/bojieli/queqiao",
+      "score": 80.12,
+      "category": "Networking / VPN",
+      "llm_category": null,
+      "stars": 402,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "proxy_net",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 16.0,
+        "liveliness": 14.0,
+        "traction": 9.12,
+        "polish": 16.0,
+        "selfhost_signal": 8.0,
+        "community": 4.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 10.0
+      },
+      "composition": "▲ momentum +16, polish +16, liveliness +14"
+    },
+    {
+      "url": "https://github.com/fhem/fhem-docker",
+      "score": 76.43,
+      "category": "Home Automation / IoT",
+      "llm_category": null,
+      "stars": 90,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "home_health",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 7.57,
+        "liveliness": 14.0,
+        "traction": 6.86,
+        "polish": 21.0,
+        "selfhost_signal": 0.0,
+        "community": 4.0,
+        "youth": 0.0,
+        "maturity": 0.0,
+        "gem_balance": 3.0,
+        "compose": 14.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ polish +21, liveliness +14, compose +14"
+    },
+    {
+      "url": "https://github.com/StealHD/infohub-light",
+      "score": 75.35,
+      "category": "Notes / Knowledge",
+      "llm_category": null,
+      "stars": 2,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "knowledge",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 6.68,
+        "liveliness": 14.0,
+        "traction": 1.67,
+        "polish": 21.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ polish +21, liveliness +14, compose +14 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/locphamnguyen/ZaloCRM",
+      "score": 74.33,
+      "category": "CRM / Business",
+      "llm_category": null,
+      "stars": 239,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "productivity",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 16.0,
+        "liveliness": 7.0,
+        "traction": 8.33,
+        "polish": 10.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 2.0,
+        "maturity": 0.0,
+        "gem_balance": 9.0,
+        "compose": 14.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ momentum +16, compose +14, polish +10"
+    },
+    {
+      "url": "https://github.com/anyrobert/cursor-api-proxy",
+      "score": 73.34,
+      "category": "Developer Tools / Utilities",
+      "llm_category": null,
+      "stars": 240,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dev_web",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 16.0,
+        "liveliness": 14.0,
+        "traction": 8.34,
+        "polish": 7.0,
+        "selfhost_signal": 0.0,
+        "community": 4.0,
+        "youth": 1.0,
+        "maturity": 0.0,
+        "gem_balance": 9.0,
+        "compose": 14.0
+      },
+      "composition": "▲ momentum +16, liveliness +14, compose +14"
+    },
+    {
+      "url": "https://github.com/upciti/wakemeops",
+      "score": 72.07,
+      "category": "DevOps / Infra",
+      "llm_category": null,
+      "stars": 209,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "devops",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 11.44,
+        "liveliness": 14.0,
+        "traction": 8.13,
+        "polish": 18.5,
+        "selfhost_signal": 0.0,
+        "community": 4.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": 6.0,
+        "dockerfile": 7.0
+      },
+      "composition": "▲ polish +18.5, liveliness +14, momentum +11.44"
+    },
+    {
+      "url": "https://github.com/krillinai/Clawee",
+      "score": 68.32,
+      "category": "Networking / VPN",
+      "llm_category": null,
+      "stars": 42,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "proxy_net",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 15.6,
+        "liveliness": 14.0,
+        "traction": 5.72,
+        "polish": 16.0,
+        "selfhost_signal": 8.0,
+        "community": 4.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0
+      },
+      "composition": "▲ polish +16, momentum +15.6, liveliness +14"
+    },
+    {
+      "url": "https://github.com/R44VC0RP/opensend",
+      "score": 68.25,
+      "category": "Communication / Social",
+      "llm_category": null,
+      "stars": 29,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "comms",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 14.48,
+        "liveliness": 14.0,
+        "traction": 5.17,
+        "polish": 9.6,
+        "selfhost_signal": 8.0,
+        "community": 4.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ momentum +14.48, liveliness +14, polish +9.6"
+    },
+    {
+      "url": "https://github.com/myastroboard/myastroboard",
+      "score": 67.57,
+      "category": "Dashboard / Homelab",
+      "llm_category": null,
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dash_mon",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 5.46,
+        "liveliness": 14.0,
+        "traction": 2.11,
+        "polish": 21.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 1.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "compose": 14.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ polish +21, liveliness +14, compose +14"
+    },
+    {
+      "url": "https://github.com/marmos91/dittofs",
+      "score": 67.25,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 43,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 12.0,
+        "liveliness": 14.0,
+        "traction": 5.75,
+        "polish": 18.5,
+        "selfhost_signal": 0.0,
+        "community": 4.0,
+        "youth": 1.0,
+        "maturity": 0.0,
+        "gem_balance": 5.0,
+        "dockerfile": 7.0
+      },
+      "composition": "▲ polish +18.5, liveliness +14, momentum +12"
+    },
+    {
+      "url": "https://github.com/deiger/AirCon",
+      "score": 67.13,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 240,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 10.79,
+        "liveliness": 14.0,
+        "traction": 8.34,
+        "polish": 10.0,
+        "selfhost_signal": 0.0,
+        "community": 4.0,
+        "youth": 0.0,
+        "maturity": 0.0,
+        "gem_balance": 6.0,
+        "compose": 14.0
+      },
+      "composition": "▲ liveliness +14, compose +14, momentum +10.79"
+    },
+    {
+      "url": "https://github.com/devswha/gajae-code-app",
+      "score": 65.16,
+      "category": "Developer Tools / Utilities",
+      "llm_category": null,
+      "stars": 26,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "dev_web",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 14.15,
+        "liveliness": 14.0,
+        "traction": 5.01,
+        "polish": 15.0,
+        "selfhost_signal": 8.0,
+        "community": 4.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0
+      },
+      "composition": "▲ polish +15, momentum +14.15, liveliness +14"
+    },
+    {
+      "url": "https://github.com/Iviesever/msvc-quick-build",
+      "score": 64.94,
+      "category": "Developer Tools / Utilities",
+      "llm_category": null,
+      "stars": 28,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "dev_web",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 12.82,
+        "liveliness": 14.0,
+        "traction": 5.12,
+        "polish": 16.0,
+        "selfhost_signal": 8.0,
+        "community": 2.0,
+        "youth": 2.0,
+        "maturity": 0.0,
+        "gem_balance": 5.0
+      },
+      "composition": "▲ polish +16, liveliness +14, momentum +12.82"
+    },
+    {
+      "url": "https://github.com/riadvice/bbbeasy",
+      "score": 64.15,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 22,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 5.38,
+        "liveliness": 14.0,
+        "traction": 4.77,
+        "polish": 21.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": 2.0,
+        "compose": 14.0
+      },
+      "composition": "▲ polish +21, liveliness +14, compose +14"
+    },
+    {
+      "url": "https://github.com/wso2/fhir-server",
+      "score": 63.51,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 15,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 12.5,
+        "liveliness": 14.0,
+        "traction": 4.21,
+        "polish": 13.8,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "compose": 14.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +13.8"
+    },
+    {
+      "url": "https://github.com/Matt-Wood-23/mh3u-revival",
+      "score": 61.71,
+      "category": "Dashboard / Homelab",
+      "llm_category": null,
+      "stars": 15,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "dash_mon",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 12.5,
+        "liveliness": 14.0,
+        "traction": 4.21,
+        "polish": 10.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ liveliness +14, momentum +12.5, polish +10"
+    },
+    {
+      "url": "https://github.com/cboxdk/php-baseimages",
+      "score": 60.22,
+      "category": "Networking / VPN",
+      "llm_category": null,
+      "stars": 8,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "proxy_net",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 7.88,
+        "liveliness": 14.0,
+        "traction": 3.34,
+        "polish": 18.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 1.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "compose": 14.0
+      },
+      "composition": "▲ polish +18, liveliness +14, compose +14"
+    },
+    {
+      "url": "https://github.com/aiven/aiven-docs",
+      "score": 59.63,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 22,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 6.76,
+        "liveliness": 14.0,
+        "traction": 4.77,
+        "polish": 15.1,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": 2.0,
+        "compose": 14.0
+      },
+      "composition": "▲ polish +15.1, liveliness +14, compose +14"
+    },
+    {
+      "url": "https://github.com/shangril/crero",
+      "score": 59.17,
+      "category": "Media / Streaming",
+      "llm_category": null,
+      "stars": 12,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "media",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 2.27,
+        "liveliness": 14.0,
+        "traction": 3.9,
+        "polish": 21.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ polish +21, liveliness +14, selfhost_signal +8"
+    },
+    {
+      "url": "https://github.com/nzxl101/homedash-rs",
+      "score": 56.7,
+      "category": "Media / Streaming",
+      "llm_category": null,
+      "stars": 3,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "media",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 3.59,
+        "liveliness": 14.0,
+        "traction": 2.11,
+        "polish": 16.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": 2.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ polish +16, liveliness +14, selfhost_signal +8"
+    },
+    {
+      "url": "https://github.com/hashtopolis/web-ui",
+      "score": 56.29,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 48,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 7.87,
+        "liveliness": 14.0,
+        "traction": 5.92,
+        "polish": 7.5,
+        "selfhost_signal": 0.0,
+        "community": 2.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": 2.0,
+        "compose": 14.0
+      },
+      "composition": "▲ liveliness +14, compose +14, momentum +7.87"
+    },
+    {
+      "url": "https://github.com/fgilde/hausverwaltung",
+      "score": 55.97,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 8,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 10.63,
+        "liveliness": 14.0,
+        "traction": 3.34,
+        "polish": 12.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +12 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/softwareone-platform/ffc-extension",
+      "score": 55.74,
+      "category": "E-commerce / Shop",
+      "llm_category": null,
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "cms",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 6.13,
+        "liveliness": 14.0,
+        "traction": 2.11,
+        "polish": 7.5,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 2.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "compose": 14.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +7.5"
+    },
+    {
+      "url": "https://github.com/pc-Blog/lxpavilion",
+      "score": 55.69,
+      "category": "CMS / Website",
+      "llm_category": null,
+      "stars": 3,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "cms",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 7.28,
+        "liveliness": 14.0,
+        "traction": 2.11,
+        "polish": 16.3,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 2.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "dockerfile": 7.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ polish +16.3, liveliness +14, momentum +7.28 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/ImperialCollegeLondon/proCAT",
+      "score": 55.57,
+      "category": "Analytics / Data",
+      "llm_category": null,
+      "stars": 2,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "db_light",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 2.4,
+        "liveliness": 14.0,
+        "traction": 1.67,
+        "polish": 12.5,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": 2.0,
+        "compose": 14.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +12.5"
+    },
+    {
+      "url": "https://github.com/destiny-evidence/destiny-repository",
+      "score": 54.91,
+      "category": "Developer Tools / Utilities",
+      "llm_category": null,
+      "stars": 5,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dev_web",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 4.19,
+        "liveliness": 14.0,
+        "traction": 2.72,
+        "polish": 15.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": 2.0,
+        "compose": 14.0
+      },
+      "composition": "▲ polish +15, liveliness +14, compose +14"
+    },
+    {
+      "url": "https://github.com/Eltik/myrtle",
+      "score": 54.9,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 19,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 6.35,
+        "liveliness": 14.0,
+        "traction": 4.55,
+        "polish": 9.5,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": 2.0,
+        "compose": 14.0,
+        "rust": 1.5
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +9.5"
+    },
+    {
+      "url": "https://github.com/mziqudhd92/honeypot-auditor",
+      "score": 52.48,
+      "category": "Developer Tools / Utilities",
+      "llm_category": null,
+      "stars": 9,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dev_web",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 10.98,
+        "liveliness": 14.0,
+        "traction": 3.5,
+        "polish": 15.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "dockerfile": 7.0
+      },
+      "composition": "▲ polish +15, liveliness +14, momentum +10.98 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/RowanCole/ease-mc",
+      "score": 51.91,
+      "category": "Gaming / Game Servers",
+      "llm_category": null,
+      "stars": 14,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "gaming",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 12.29,
+        "liveliness": 14.0,
+        "traction": 4.12,
+        "polish": 7.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "rust": 1.5
+      },
+      "composition": "▲ liveliness +14, momentum +12.29, selfhost_signal +8"
+    },
+    {
+      "url": "https://github.com/vytorrennan/DisplayLab",
+      "score": 49.39,
+      "category": "CMS / Website",
+      "llm_category": null,
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "cms",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 2.28,
+        "liveliness": 14.0,
+        "traction": 2.11,
+        "polish": 7.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": -1.0,
+        "compose": 14.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +7 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/podnebnik/website",
+      "score": 47.66,
+      "category": "CMS / Website",
+      "llm_category": null,
+      "stars": 7,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "cms",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 2.5,
+        "liveliness": 14.0,
+        "traction": 3.16,
+        "polish": 7.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +7 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/Aho1ic/NexusMail",
+      "score": 45.35,
+      "category": "Networking / VPN",
+      "llm_category": null,
+      "stars": 2,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "proxy_net",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 6.68,
+        "liveliness": 14.0,
+        "traction": 1.67,
+        "polish": 7.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +7 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/DanielH2018/server",
+      "score": 44.97,
+      "category": "DevOps / Infra",
+      "llm_category": null,
+      "stars": 2,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "devops",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 4.8,
+        "liveliness": 14.0,
+        "traction": 1.67,
+        "polish": 13.5,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 1.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0
+      },
+      "composition": "▲ liveliness +14, polish +13.5, selfhost_signal +8"
+    },
+    {
+      "url": "https://github.com/Muluk-m/ai-image-playground",
+      "score": 42.76,
+      "category": "AI / LLM",
+      "llm_category": null,
+      "stars": 2,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "ai",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 6.09,
+        "liveliness": 14.0,
+        "traction": 1.67,
+        "polish": 21.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 2.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "dockerfile": 7.0,
+        "ai_webui_damp": -8.0
+      },
+      "composition": "▲ polish +21, liveliness +14, dockerfile +7 · ▼ ai_webui_damp -8, gem_balance -1"
+    },
+    {
+      "url": "https://github.com/mdblp/blip",
+      "score": 40.97,
+      "category": "Analytics / Data",
+      "llm_category": null,
+      "stars": 7,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "db_light",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 1.81,
+        "liveliness": 14.0,
+        "traction": 3.16,
+        "polish": 10.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "dockerfile": 7.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ liveliness +14, polish +10, dockerfile +7 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/r3e-network/neo-rs",
+      "score": 40.02,
+      "category": "Networking / VPN",
+      "llm_category": null,
+      "stars": 2,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "proxy_net",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 1.85,
+        "liveliness": 14.0,
+        "traction": 1.67,
+        "polish": 5.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": -1.0,
+        "compose": 14.0,
+        "rust": 1.5
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +5 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/686f6c61/NaN-Open-WebUI",
+      "score": 38.97,
+      "category": "AI / LLM",
+      "llm_category": null,
+      "stars": 8,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "ai",
+      "fresh_gem": true,
+      "hook": "",
+      "breakdown": {
+        "momentum": 10.63,
+        "liveliness": 11.0,
+        "traction": 3.34,
+        "polish": 13.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 2.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "ai_webui_damp": -8.0
+      },
+      "composition": "▲ polish +13, liveliness +11, momentum +10.63 · ▼ ai_webui_damp -8, gem_balance -1"
+    },
+    {
+      "url": "https://github.com/meyayl/ocrmypdf-batch",
+      "score": 38.43,
+      "category": "Docker / Containers",
+      "llm_category": null,
+      "stars": 5,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "devops",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 1.71,
+        "liveliness": 14.0,
+        "traction": 2.72,
+        "polish": 7.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +7 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/newrelic/nri-kafka",
+      "score": 38.32,
+      "category": "DevOps / Infra",
+      "llm_category": null,
+      "stars": 17,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "devops",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 3.43,
+        "liveliness": 14.0,
+        "traction": 4.39,
+        "polish": 7.5,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "dockerfile": 7.0
+      },
+      "composition": "▲ liveliness +14, polish +7.5, dockerfile +7"
+    },
+    {
+      "url": "https://github.com/pkg-ru/imager",
+      "score": 53.27,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 2,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 2.6,
+        "liveliness": 14.0,
+        "traction": 1.67,
+        "polish": 16.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": 2.0,
+        "compose": 14.0
+      },
+      "composition": "▲ polish +16, liveliness +14, compose +14"
+    },
+    {
+      "url": "https://github.com/baptistecdr/Aria2Kit",
+      "score": 49.72,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 6,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 2.86,
+        "liveliness": 14.0,
+        "traction": 2.96,
+        "polish": 13.9,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": -1.0,
+        "compose": 14.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +13.9 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/jumalauta/partyboi",
+      "score": 49.09,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 7,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 4.63,
+        "liveliness": 14.0,
+        "traction": 3.16,
+        "polish": 8.3,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": 2.0,
+        "compose": 14.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +8.3"
+    },
+    {
+      "url": "https://github.com/penpot/penpotqa",
+      "score": 47.06,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 15,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 4.85,
+        "liveliness": 14.0,
+        "traction": 4.21,
+        "polish": 5.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": 2.0,
+        "compose": 14.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +5"
+    },
+    {
+      "url": "https://github.com/daniel-ospina/tortoise",
+      "score": 45.35,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 2,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 6.68,
+        "liveliness": 14.0,
+        "traction": 1.67,
+        "polish": 7.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +7 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/SciCatProject/scicatlive",
+      "score": 44.4,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 11,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 3.12,
+        "liveliness": 14.0,
+        "traction": 3.78,
+        "polish": 7.5,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 0.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "compose": 14.0
+      },
+      "composition": "▲ liveliness +14, compose +14, polish +7.5"
+    },
+    {
+      "url": "https://github.com/ulruchdev/gestion_de_stok_multifiliale",
+      "score": 42.85,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 2,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 6.68,
+        "liveliness": 14.0,
+        "traction": 1.67,
+        "polish": 4.5,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0
+      },
+      "composition": "▲ liveliness +14, compose +14, momentum +6.68 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/vu1Art1st/talos",
+      "score": 42.85,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 2,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 6.68,
+        "liveliness": 14.0,
+        "traction": 1.67,
+        "polish": 4.5,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0
+      },
+      "composition": "▲ liveliness +14, compose +14, momentum +6.68 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/Nomploy/nomploy",
+      "score": 40.3,
+      "category": "Web App / Other",
+      "llm_category": null,
+      "stars": 2,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 6.63,
+        "liveliness": 14.0,
+        "traction": 1.67,
+        "polish": 10.0,
+        "selfhost_signal": 0.0,
+        "community": 0.0,
+        "youth": 2.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "dockerfile": 7.0
+      },
+      "composition": "▲ liveliness +14, polish +10, dockerfile +7 · ▼ gem_balance -1"
+    }
+  ],
+  "categoryDistribution": {
+    "Web App / Other": 17,
+    "Networking / VPN": 5,
+    "Developer Tools / Utilities": 5,
+    "DevOps / Infra": 4,
+    "CMS / Website": 3,
+    "Communication / Social": 2,
+    "Dashboard / Homelab": 2,
+    "Media / Streaming": 2,
+    "Analytics / Data": 2,
+    "AI / LLM": 2,
+    "Home Automation / IoT": 1,
+    "Notes / Knowledge": 1,
+    "CRM / Business": 1,
+    "E-commerce / Shop": 1,
+    "Gaming / Game Servers": 1,
+    "Docker / Containers": 1
+  },
+  "scoreStats": {
+    "min": 38.32,
+    "max": 87.48,
+    "mean": 57.03
+  },
+  "dockerCount": 39,
+  "composeCount": 30,
+  "dockerfileOnlyCount": 9,
+  "freshCount": 1,
+  "shipProofCount": 50,
+  "tierA": 39,
+  "tierB": 0,
+  "tierC": 11,
+  "noProofRejected": 18,
+  "benchSeeded": 3,
+  "benchSaved": 5,
+  "rejectCacheSize": 2037,
+  "rejectSkipped": 464,
+  "carrySaved": 5,
+  "nearMissSaved": 0,
+  "rejectCacheAfter": 2103,
+  "sweepSeconds": 96.9,
+  "confirmSeconds": 25.3,
+  "topupAdded": 0,
+  "topupFamilies": {},
+  "familyDistribution": {
+    "other": 17,
+    "devops": 5,
+    "proxy_net": 5,
+    "dev_web": 5,
+    "cms": 4,
+    "comms": 2,
+    "dash_mon": 2,
+    "media": 2,
+    "db_light": 2,
+    "ai": 2,
+    "home_health": 1,
+    "knowledge": 1,
+    "productivity": 1,
+    "gaming": 1
+  },
+  "familyFloorShortfall": {
+    "files": {
+      "floor": 3,
+      "got": 0
+    },
+    "knowledge": {
+      "floor": 3,
+      "got": 1
+    },
+    "media": {
+      "floor": 3,
+      "got": 2
+    },
+    "documents": {
+      "floor": 2,
+      "got": 0
+    },
+    "productivity": {
+      "floor": 2,
+      "got": 1
+    },
+    "bookmarks_rss": {
+      "floor": 2,
+      "got": 0
+    },
+    "sports": {
+      "floor": 1,
+      "got": 0
+    },
+    "security": {
+      "floor": 1,
+      "got": 0
+    }
+  },
+  "confirmedPoolDepth": 55,
+  "selectionHeadroom": 1.1,
+  "timingSeconds": 122.2
+}

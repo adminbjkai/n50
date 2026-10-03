@@ -1,0 +1,561 @@
+{
+  "version": "v16",
+  "setNum": 461,
+  "searchCalls": 167,
+  "zeroYieldQueries": 17,
+  "poolSize": 70,
+  "scoredCount": 30,
+  "freshScored": 0,
+  "graphql": true,
+  "awesome": true,
+  "awesomeResidual": 0,
+  "awesomeSeeded": 0,
+  "enrich": false,
+  "rejected": [
+    [
+      "https://github.com/Defiabell/yixi",
+      "duplicate"
+    ],
+    [
+      "https://github.com/orbi-build/orbi",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/epheterson/Zimi",
+      "duplicate"
+    ],
+    [
+      "https://github.com/kajeesan/Open-Health-Atlas",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/agentscope-ai-java/idempotency-shield",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/agentsea/nautilo",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/yuxino/koma",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Zafer-Liu/book-learning",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Podiom/Podiom",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/BeckY824/daedalus-crm",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/redevops-io/context-runtime",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/fellowship-dev/navvi",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/csnyder256/RAG-OS",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/beboite/boite",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/geminixiang/mikan",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/DanielHou315/overleaf-mcp-rt",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/k-k1/agent-fleet",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/zhangkaixuan01/crewscope",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/TheRealFaruhaan/crundi",
+      "duplicate"
+    ]
+  ],
+  "selected": [
+    {
+      "url": "https://github.com/alex-soul/pi-rain-radar",
+      "score": 92.15,
+      "category": "CRM / Business",
+      "llm_category": null,
+      "stars": 56,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "productivity",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 16.0,
+        "liveliness": 14.0,
+        "traction": 6.15,
+        "polish": 16.0,
+        "selfhost_signal": 8.0,
+        "community": 4.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 3.0,
+        "compose": 14.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ momentum +16, polish +16, liveliness +14"
+    },
+    {
+      "url": "https://github.com/Defiabell/shotsync",
+      "score": 88.0,
+      "category": "Files / Storage / Backup",
+      "llm_category": null,
+      "stars": 192,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "files",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 16.0,
+        "liveliness": 14.0,
+        "traction": 8.0,
+        "polish": 21.0,
+        "selfhost_signal": 8.0,
+        "community": 4.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 6.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ polish +21, momentum +16, liveliness +14"
+    },
+    {
+      "url": "https://github.com/shawnbure/elm-chat",
+      "score": 84.53,
+      "category": "Security / Auth",
+      "llm_category": null,
+      "stars": 65,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "security",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 15.16,
+        "liveliness": 14.0,
+        "traction": 6.37,
+        "polish": 21.0,
+        "selfhost_signal": 8.0,
+        "community": 4.0,
+        "youth": 2.0,
+        "maturity": 0.0,
+        "gem_balance": 6.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ polish +21, momentum +15.16, liveliness +14"
+    },
+    {
+      "url": "https://github.com/picklem0b/Rheoson",
+      "score": 81.55,
+      "category": "Media / Streaming",
+      "llm_category": null,
+      "stars": 7,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "media",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 9.39,
+        "liveliness": 14.0,
+        "traction": 3.16,
+        "polish": 21.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 2.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "compose": 14.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ polish +21, liveliness +14, compose +14"
+    },
+    {
+      "url": "https://github.com/bassem-elsodany/resolvr-dns-dashboard",
+      "score": 80.26,
+      "category": "Monitoring / Observability",
+      "llm_category": null,
+      "stars": 17,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dash_mon",
+      "fresh_gem": true,
+      "hook": "",
+      "breakdown": {
+        "momentum": 12.87,
+        "liveliness": 14.0,
+        "traction": 4.39,
+        "polish": 16.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "compose": 14.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ polish +16, liveliness +14, compose +14"
+    },
+    {
+      "url": "https://github.com/justin-stanley/feather-reader",
+      "score": 73.48,
+      "category": "Notes / Knowledge",
+      "llm_category": null,
+      "stars": 5,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "knowledge",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 9.26,
+        "liveliness": 14.0,
+        "traction": 2.72,
+        "polish": 21.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "dockerfile": 7.0,
+        "product_cat": 2.0,
+        "product_family": 6.0,
+        "rust": 1.5
+      },
+      "composition": "▲ polish +21, liveliness +14, momentum +9.26 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/jinqians/proxy-stack",
+      "score": 72.23,
+      "category": "Networking / VPN",
+      "llm_category": null,
+      "stars": 33,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "proxy_net",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 14.87,
+        "liveliness": 14.0,
+        "traction": 5.36,
+        "polish": 21.0,
+        "selfhost_signal": 8.0,
+        "community": 4.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0
+      },
+      "composition": "▲ polish +21, momentum +14.87, liveliness +14"
+    },
+    {
+      "url": "https://github.com/zmustafa/AzureVMScheduler",
+      "score": 71.93,
+      "category": "DevOps / Infra",
+      "llm_category": null,
+      "stars": 10,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "devops",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 11.29,
+        "liveliness": 14.0,
+        "traction": 3.64,
+        "polish": 16.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "compose": 14.0
+      },
+      "composition": "▲ polish +16, liveliness +14, compose +14"
+    },
+    {
+      "url": "https://github.com/colfin22/node-red-config",
+      "score": 71.63,
+      "category": "Home Automation / IoT",
+      "llm_category": null,
+      "stars": 6,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "home_health",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 9.67,
+        "liveliness": 14.0,
+        "traction": 2.96,
+        "polish": 16.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 2.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ polish +16, liveliness +14, compose +14 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/rk-chavali/strata",
+      "score": 70.98,
+      "category": "DevOps / Infra",
+      "llm_category": null,
+      "stars": 5,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "devops",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 9.26,
+        "liveliness": 14.0,
+        "traction": 2.72,
+        "polish": 21.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": -1.0,
+        "compose": 14.0
+      },
+      "composition": "▲ polish +21, liveliness +14, compose +14 · ▼ gem_balance -1"
+    },
+    {
+      "url": "https://github.com/Ubaidofficial/Playback-info-card",
+      "score": 70.93,
+      "category": "Media / Streaming",
+      "llm_category": null,
+      "stars": 10,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "media",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 11.29,
+        "liveliness": 14.0,
+        "traction": 3.64,
+        "polish": 21.0,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 3.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      },
+      "composition": "▲ polish +21, liveliness +14, momentum +11.29"
+    },
+    {
+      "url": "https://github.com/ngc7331/docker-derper",
+      "score": 68.4,
+      "category": "Networking / VPN",
+      "llm_category": null,
+      "stars": 32,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "proxy_net",
+      "fresh_gem": false,
+      "hook": "",
+      "breakdown": {
+        "momentum": 7.89,
+        "liveliness": 14.0,
+        "traction": 5.31,
+        "polish": 17.2,
+        "selfhost_signal": 8.0,
+        "community": 4.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": 2.0,
+        "dockerfile": 7.0
+      },
+      "composition": "▲ polish +17.2, liveliness +14, selfhost_signal +8"
+    },
+    {
+      "url": "https://github.com/linux-universe/immich-podman-quadlets",
+      "score": 63.7,
+      "category": "Docker / Containers",
+      "llm_category": null,
+      "stars": 64,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "devops",
+      "fresh_gem": true,
+      "hook": "",
+      "breakdown": {
+        "momentum": 12.35,
+        "liveliness": 14.0,
+        "traction": 6.35,
+        "polish": 10.0,
+        "selfhost_signal": 8.0,
+        "community": 4.0,
+        "youth": 0.0,
+        "maturity": 3.0,
+        "gem_balance": 6.0
+      },
+      "composition": "▲ liveliness +14, momentum +12.35, polish +10"
+    }
+  ],
+  "categoryDistribution": {
+    "Media / Streaming": 2,
+    "Networking / VPN": 2,
+    "DevOps / Infra": 2,
+    "CRM / Business": 1,
+    "Files / Storage / Backup": 1,
+    "Security / Auth": 1,
+    "Monitoring / Observability": 1,
+    "Notes / Knowledge": 1,
+    "Home Automation / IoT": 1,
+    "Docker / Containers": 1
+  },
+  "scoreStats": {
+    "min": 63.7,
+    "max": 92.15,
+    "mean": 76.14
+  },
+  "dockerCount": 8,
+  "composeCount": 6,
+  "dockerfileOnlyCount": 2,
+  "freshCount": 2,
+  "shipProofCount": 13,
+  "tierA": 8,
+  "tierB": 0,
+  "tierC": 5,
+  "noProofRejected": 0,
+  "trendshiftFound": 172,
+  "trendshiftSeeded": 2,
+  "trendshiftSources": {
+    "daily": 2,
+    "monthly": 1,
+    "topic:document": 1,
+    "topic:self-hosted": 1,
+    "topic:workflow": 1,
+    "trending": 1,
+    "weekly": 1,
+    "yearly": 1
+  },
+  "benchSeeded": 1,
+  "benchSaved": 0,
+  "rejectCacheSize": 2530,
+  "rejectSkipped": 254,
+  "carrySaved": 0,
+  "nearMissSaved": 1,
+  "rejectCacheAfter": 2548,
+  "sweepSeconds": 134.7,
+  "confirmSeconds": 6.9,
+  "topupAdded": 0,
+  "topupFamilies": {},
+  "familyDistribution": {
+    "devops": 3,
+    "media": 2,
+    "proxy_net": 2,
+    "productivity": 1,
+    "files": 1,
+    "security": 1,
+    "dash_mon": 1,
+    "knowledge": 1,
+    "home_health": 1
+  },
+  "familyFloorShortfall": {
+    "documents": {
+      "floor": 1,
+      "got": 0
+    },
+    "bookmarks_rss": {
+      "floor": 1,
+      "got": 0
+    },
+    "dev_web": {
+      "floor": 1,
+      "got": 0
+    },
+    "db_light": {
+      "floor": 1,
+      "got": 0
+    },
+    "sports": {
+      "floor": 1,
+      "got": 0
+    },
+    "comms": {
+      "floor": 1,
+      "got": 0
+    },
+    "cms": {
+      "floor": 1,
+      "got": 0
+    }
+  },
+  "confirmedPoolDepth": 13,
+  "selectionHeadroom": 1.0,
+  "timingSeconds": 404.5
+}

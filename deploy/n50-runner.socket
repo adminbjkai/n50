@@ -1,0 +1,9 @@
+[Unit]
+Description=n50.bjk.ai control room (socket; starts the server on first request)
+
+[Socket]
+ListenStream=127.0.0.1:8055
+NoDelay=true
+
+[Install]
+WantedBy=sockets.target
