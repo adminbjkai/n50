@@ -93,6 +93,7 @@ def fill(version, selected, target, tracker, dry_run, ai_ceiling=None, is_ai_cat
                   f"keeping {len(selected) + len(added)} picks")
             stats = {"error": str(exc)}
             break
+        picks = _drop_renamed(v17, picks, tracker, version)
         ai_now = _take(picks, need, added, taken_urls, owners, cats, cat_cap, ai_ceiling, ai_now,
                        is_ai_cat, family_of, v17)
         if len(added) < need and (floor, young) != ladder[-1]:
@@ -114,6 +115,20 @@ def fill(version, selected, target, tracker, dry_run, ai_ceiling=None, is_ai_cat
           f"→ {len(selected) + len(added)}/{target}", flush=True)
     sys.stdout.flush()
     return selected + added, record
+
+
+def _drop_renamed(v17, picks, tracker, version):
+    """Second rename/transfer check on lane picks (v17 resolves a capped number per run)."""
+    try:
+        import quality
+        dups = quality._renamed_copies(v17, [{"repo": {"full_name": r["full_name"]}} for r in picks],
+                                       tracker, None)
+    except Exception:  # noqa: BLE001 — the lane's own dedupe still applied
+        return picks
+    if dups:
+        print(f"[{version}] top-up: skipped {len(dups)} renamed copies of published repos: "
+              + ", ".join(sorted(dups)))
+    return [r for r in picks if r["full_name"].lower() not in dups]
 
 
 def _take(picks, need, added, taken_urls, owners, cats, cat_cap, ai_ceiling, ai_now, is_ai_cat,

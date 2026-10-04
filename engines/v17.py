@@ -298,7 +298,9 @@ JUNK = [
     (r"\bfor (the |your )?\*arr\b|\*arr (media )?stack\b", "plugin-for-other-app"),
     (r"\bdocker[- ]?(compose)?[- ]?(solution|setup|stack|configuration|config|environment|template)s?\s+(for|to)\b|\bready[- ]to[- ]use\b.{0,40}\bdocker[- ]?compose\b|\b(monitoring|logging|observability) stack\b.{0,60}\b(prometheus|grafana|loki)\b", "packaging-of-other-app"),
     (r"\bdedicated server\b|\bfor [\w ]{0,30}dedicated servers\b|\bgame server (for|of)\b|\bserver for (minecraft|palworld|valheim|ark|rust|terraria)", "game-server-wrapper"),
-    (r"\b(discord|telegram|slack|whatsapp|twitch)\s*bot\b|\bbot for (discord|telegram|slack)", "chat-bot"),
+    (r"\b(discord|telegram|slack|whatsapp|twitch|feishu|lark|wechat|dingtalk|qq)\b.{0,30}\bbot\b|\bbot for (discord|telegram|slack|feishu)", "chat-bot"),
+    (r"\bprivate servers?\b|\bgame servers?\b.{0,40}\b(minecraft|valheim|palworld|terraria|factorio|cs2|ark)\b", "game-server-wrapper"),
+    (r"\bfor use alongside\b|\bcompanion (tool|app|service) (for|to)\b", "companion-for-other-app"),
     (r"2api\b|\bto[- ]?api\b|account pool|\b(ai |llm )?subscription pool|reverse[- ]proxy for (chatgpt|claude|openai|gemini|codex|cursor|kiro|grok|copilot)|\b(chatgpt|claude|gemini|codex|kiro|grok|copilot|cursor) (account|api) (proxy|pool|gateway)", "ai-account-proxy"),
     (r"\b(trading bot|crypto|binance|bybit|coinbase|airdrop|memecoin|defi|quant(itative)? trading|stock pick|arbitrage|mev)\b", "trading-crypto"),
     (r"\b(readme|github) (stats|profile|streak)|\bstats cards?\b|profile readme", "github-vanity"),
@@ -310,6 +312,8 @@ JUNK = [
     # The repo IS an MCP server (apps that include one as a feature are fine).
     (r"\b(mcp|model context protocol) servers? (for|that|to|which|exposing)\b|\bis an? (mcp|model context protocol) server\b", "mcp-server"),
     (r"\b(sdk|code|client) generator\b|\bbackend (api|service|server)? ?for [\w.-]+\b", "component-or-dev-tool"),
+    (r"\b(ai|api|llm|token) (reseller|resale)\b|\breseller panel\b", "ai-account-proxy"),
+    (r"\bsend (e-?mails?|messages|sms) without limits\b|\bbulk (e-?mail|sms|mail)\w*\b|\bmass (e-?mail|mail)\w*\b", "growth-or-device-farm"),
     (r"\bcommand and control\b|\bc2 (server|framework)\b|\bwhatsapp (rest )?api\b|\bunofficial (whatsapp|instagram|tiktok) api\b", "scraper-or-shady"),
     (r"\b(cloudron|yunohost|umbrel|casaos|unraid|truenas)(\.io)? app (package|template)\b|\bapp package for\b", "packaging-of-other-app"),
     (r"\b(rest )?api (around|wrapping)\b|\bwrapper (around|for)\b|\b(sso|auth|authentication|oauth2?) (library )?for (go|golang|python|node(\.js)?|rust|java|php|react)\b|\bapi for node(\.js)?\b", "component-or-dev-tool"),
@@ -361,8 +365,15 @@ HOST_APPS = re.compile(r"\b(jellyfin|plex|emby|navidrome|subsonic|immich|nextclo
                        r"jellyseerr|stremio|home assistant|mastodon|lemmy|chatwoot|audiobookshelf|"
                        r"calibre-web|kavita|komga|obsidian|notion|trilium|linkwarden|vaultwarden|"
                        r"authentik|pi-hole|adguard|unraid|truenas|proxmox|portainer|n8n|firefly(?: iii)?|"
-                       r"coolify|headscale|twenty crm|firecrawl|frigate|ghost|wordpress)\b", re.I)
-ALT_TO = re.compile(r"alternative|replacement|replaces|instead of|like\s", re.I)
+                       r"coolify|headscale|twenty crm|firecrawl|frigate|ghost|wordpress|photoprism|lancache|"
+                       r"bazarr|qbittorrent|transmission|deluge|maintainerr|tautulli)\b", re.I)
+# Companion tools for the *arr stack and torrent clients, whatever their topics say.
+ARR_TOOLS = re.compile(r"\b(sonarr|radarr|lidarr|prowlarr|readarr|bazarr|qbittorrent|transmission|deluge|"
+                       r"maintainerr|tautulli|overseerr|jellyseerr)\b", re.I)
+# Alternatives say so ("Jellyfin alternative", "replaces Plex", "like Notion"); a bare
+# "instead of static values" is not about another app.
+ALT_TO = re.compile(r"\b(alternatives?|replacements?|replaces|drop-in)\b|\b(instead of|like) (using )?"
+                    + HOST_APPS.pattern[2:], re.I)
 # "Works with Nextcloud, Radicale…", "friendly to Obsidian": compatibility, not an add-on.
 COMPAT = re.compile(r"\b(works with|compatible with|friendly to|interoperable with|imports? from|migrate from)\b", re.I)
 # "Sonarr/Radarr for games": an app modelled on a known one, not an add-on to it.
@@ -402,6 +413,8 @@ def gate(repo, now, curated=False, light=False):
             BUILT_ON.search(desc) or (HOST_APPS.search(desc) and not
                                       {t.lower() for t in repo["topics"]} & {"media-server", "alternative"})):
         return "built-on-other-app"
+    if ARR_TOOLS.search(desc) and not ALT_TO.search(desc) and not ANALOGY.search(desc):
+        return "plugin-for-other-app"
     if TERMINAL.search(desc) and not re.search(r"\bweb\b", desc, re.I):
         return "terminal-app"
     base = v16.hard_reject(repo)
@@ -445,7 +458,15 @@ def interest_score(repo, now, curated=None):
 
 
 CATEGORY_OVERRIDES = [
-    (r"\b(virtual tabletop|vtt|tabletop|ttrpg|board games?|dungeons?)\b", "Gaming / Game Servers"),
+    (r"\b(backups?|family (digital )?safe|file (storage|sharing)|dropbox)\b", "Files / Storage / Backup"),
+    (r"\b(observability|uptime|status page|speedtests?|netflow|error tracking|telemetry|monitoring)\b", "Monitoring / Observability"),
+    (r"\b(forum|community platform|chat rooms?|messaging|webrtc)\b", "Communication / Social"),
+    (r"\b(learning platform|courses?|flashcards|exams?|quiz\w*|lms)\b", "Education / Learning"),
+    (r"\b(cookie consent|consent management|gdpr|privacy (checkup|dashboard))\b", "Privacy / Ad-Blocking"),
+    (r"\b(baas|backend as a service|supabase alternative|firebase alternative)\b", "Developer Tools / Utilities"),
+    (r"\b(app distribution|paas|ci/cd)\b", "DevOps / Infra"),
+    (r"\b(3d print\w*|filament)\b", "Home Automation / IoT"),
+    (r"\b(virtual tabletop|vtt|tabletop|ttrpg|board games?|dungeons?|arcade|retro games?|game (library|saves?))\b", "Gaming / Game Servers"),
     (r"\b(crm|help ?desk|support desk|ticketing)\b", "CRM / Business"),
     (r"\b(fitness|workout|strength[- ]training|sleep tracking|fitbit|habit tracker|health tracker)\b", "Health / Food / Fitness"),
     (r"\b(time[- ]tracking|time tracker|timesheets?|to-?do|task manager|pomodoro|vehicle|car maintenance|home inventory|household)\b", "Productivity / Tasks"),
@@ -508,7 +529,7 @@ def rename_duplicates(cands, used_urls, used_by_name):
         for old in used_by_name.get(short, []):
             if old not in cache:
                 todo.add(old)
-    todo = sorted(todo)[:150]
+    todo = sorted(todo)[:400]  # REST lookups are cached, so later runs only resolve new names
 
     def resolve(old):
         try:
@@ -898,6 +919,17 @@ def self_test():
         (mk("s/wa", "Free, self-hosted WhatsApp REST API for Node.js. Send text and media"), "scraper-or-shady"),
         (mk("s/bn", "Read-only Binance Pay payment checker with a web dashboard"), "trading-crypto"),
         (mk("s/sso", "Self-hosted Enterprise SSO for Go — one OAuth2-style flow in your app"), "component-or-dev-tool"),
+        (mk("t/pp", "An unofficial companion tool created for use alongside PhotoPrism to enable API endpoints"), "companion-for-other-app"),
+        (mk("t/cal", "Auto-tunes Sonarr/Radarr quality-tier sizes from your library", topics=("media-server",)), "plugin-for-other-app"),
+        (mk("t/qb", "Find disk files not tracked by any qBittorrent torrent and reclaim storage"), "built-on-other-app"),
+        (mk("t/fs", "Self-hosted Telegram customer service bot: routes each chat into a forum"), "chat-bot"),
+        (mk("t/wow", "A web-based management panel for AzerothCore WoW private servers"), "game-server-wrapper"),
+        (mk("t/play", "Self-hosted game servers on your own VPS, starting with Minecraft"), "game-server-wrapper"),
+        (mk("t/arr", "A self-hosted media manager: an alternative to Sonarr and Radarr in one app"), None),
+        (mk("t/cal2", "Auto-tunes Sonarr/Radarr sizes from your library, instead of static guide values"), "built-on-other-app"),
+        (mk("t/like", "A self-hosted reading app, like Kavita but for comics only"), None),
+        (mk("t/resell", "Open-source AI reseller panel with customer API keys and prepaid balance"), "ai-account-proxy"),
+        (mk("t/mail", "Send emails without limits. Self-hosted. Built in Go."), "growth-or-device-farm"),
         (mk("p/cjk", "知归是一个面向个人使用的 AI 知识归档工具，把内容链接发送给机器人 GitHub web app"), "not-english-readable"),
     ]
     ok = True
@@ -948,7 +980,12 @@ def self_test():
                        ("A fully local, self-hosted replacement for Siri and Alexa with smart-home control", "Home Automation / IoT"),
                        ("A modern open-source publishing platform built with Go", "CMS / Website"),
                        ("Self-hosted web slides editor with .pptx round-trip", "Documents / PDF / Paperless"),
-                       ("Privacy-first PDF toolkit with browser-based editing and AI summaries", "Documents / PDF / Paperless")]:
+                       ("Privacy-first PDF toolkit with browser-based editing and AI summaries", "Documents / PDF / Paperless"),
+                       ("Self-hosted community platform in a single Go binary. Chat, forum, WebRTC video rooms", "Communication / Social"),
+                       ("Self-hosted, lightweight observability tool for indie developers", "Monitoring / Observability"),
+                       ("A streamlined, self-hosted learning platform focused on simplicity", "Education / Learning"),
+                       ("Self-hosted automatic backups of your files with a web dashboard", "Files / Storage / Backup"),
+                       ("Play classic arcade games online with friends, straight from the browser", "Gaming / Game Servers")]:
         got = categorize(mk("c/c", desc))
         t = got == want
         ok &= t

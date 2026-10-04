@@ -55,3 +55,15 @@ Evidence (dry runs via the live server): v16 45→50 (91.6 s top-up), v15 36→5
 v16 49→50 (64.4 s); v13 filled 50 itself (top-up skipped cleanly). Audit check on the v16
 run: 50 unique, 0 already published, 0 duplicate owners, tier A+B 35. Also fixed the
 A∪B warning to count after the top-up. Self-tests: all 7 engines + `topup.py` (7 checks).
+
+## Real publishes, one per engine (2026-10-03, user-requested)
+Order v17 → v16 → v15 → v13 → v12 → v11 → v14 (200, last). After each: check_set (tracker,
+CSV, Notion, no reuse, no duplicate owners) + reading every line.
+- Set 494 v17: 50/50 clean structurally; review found 2 agent-infra picks + bad categories →
+  gate/category rules; repaired (3 replaced incl. a backend component).
+- Set 495 v16: 50/50 but ~28 junk (templates, compose bundles, 0★, AI proxy, clients, dup
+  owner) → built quality.py (v17 gate for every engine, 3★ floor) + repair_set.py; repaired
+  27, then LibreChat (renamed copy of a published repo) + 1 more.
+- Lane exhausted at ≥20★ after 494 → STAR_LADDER (20/10 → 10/5 → 5/3) in v17 + lane.
+- Set 496 v15: 9 own + 41 lane; review found statainer (renamed copy) + 5 junk → rename
+  dedupe in quality.screen; repaired 6; 2 categories refreshed.

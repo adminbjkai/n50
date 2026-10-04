@@ -74,7 +74,7 @@ that hit real apps (Helm *option*, apps that *include* an MCP server, standalone
 apps, "X for games" analogies, "works with Nextcloud" compatibility). Categories gained
 tabletop/gaming, CRM/helpdesk, fitness, time tracking/household, smart home and publishing.
 The star ladder (see ENGINES.md) was added once Set 494 had used up most ≥20★ non-AI apps.
-Self-test: 63 checks, including "must keep" cases for legitimate apps.
+Self-test: 65 checks, including "must keep" cases for legitimate apps.
 
 ## Run
     python3 v17.py --self-test
