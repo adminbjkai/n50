@@ -23,18 +23,17 @@
   },
   "categoryDistribution": {
     "AI / LLM": 10,
-    "Media / Streaming": 8,
+    "Media / Streaming": 7,
     "Monitoring / Observability": 4,
     "Notes / Knowledge": 3,
     "CRM / Business": 3,
+    "Security / Auth": 2,
     "Books / Reading / Library": 2,
     "Documents / PDF / Paperless": 2,
     "Communication / Social": 2,
     "Gaming / Game Servers": 2,
-    "Health / Food / Fitness": 2,
     "Productivity / Tasks": 2,
     "Maps / GIS / Location": 1,
-    "Security / Auth": 1,
     "Dashboard / Homelab": 1,
     "Home Automation / IoT": 1,
     "CMS / Website": 1,
@@ -42,14 +41,16 @@
     "Automation": 1,
     "Web App / Other": 1,
     "Developer Tools / Utilities": 1,
+    "Analytics / Data": 1,
+    "Health / Food / Fitness": 1,
     "Finance / Budget": 1
   },
   "picks": [
     {
       "repo": "egmalt/house-planner",
       "url": "https://github.com/egmalt/house-planner",
-      "score": 53.73,
-      "stars": 93,
+      "score": 53.78,
+      "stars": 94,
       "category": "Maps / GIS / Location",
       "description": "Self-hosted house planner: true-scale 2D floor plan, 3D, satellite map overlay, sewer, electrical, water and underfloor heating with calculations, priced bill of materials. React + PHP, no database. By the team behind homedesignsai.pro",
       "language": "TypeScript",
@@ -57,7 +58,7 @@
       "docker": true,
       "ai": false,
       "breakdown": {
-        "stars": 19.7,
+        "stars": 19.8,
         "velocity": 12.0,
         "deploy": 6,
         "release": 5,
@@ -353,6 +354,29 @@
       }
     },
     {
+      "repo": "tntexploding/StruInfo",
+      "url": "https://github.com/tntexploding/StruInfo",
+      "score": 40.26,
+      "stars": 60,
+      "category": "AI / LLM",
+      "description": "Self-hosted, traceable document-to-knowledge workspace with deterministic workflows, optional AI, search, RAG, and an editable knowledge graph.",
+      "language": "TypeScript",
+      "compose": false,
+      "docker": true,
+      "ai": true,
+      "breakdown": {
+        "stars": 17.9,
+        "velocity": 10.4,
+        "deploy": 3,
+        "release": 5,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "life": 3,
+        "ai": -6
+      }
+    },
+    {
       "repo": "TaterTotterson/Tater",
       "url": "https://github.com/TaterTotterson/Tater",
       "score": 40.16,
@@ -372,29 +396,6 @@
         "license": 2,
         "active": 3,
         "life": 3
-      }
-    },
-    {
-      "repo": "tntexploding/StruInfo",
-      "url": "https://github.com/tntexploding/StruInfo",
-      "score": 39.95,
-      "stars": 58,
-      "category": "AI / LLM",
-      "description": "Self-hosted, traceable document-to-knowledge workspace with deterministic workflows, optional AI, search, RAG, and an editable knowledge graph.",
-      "language": "TypeScript",
-      "compose": false,
-      "docker": true,
-      "ai": true,
-      "breakdown": {
-        "stars": 17.7,
-        "velocity": 10.2,
-        "deploy": 3,
-        "release": 5,
-        "license": 2,
-        "active": 3,
-        "selfhost": 2,
-        "life": 3,
-        "ai": -6
       }
     },
     {
@@ -755,7 +756,7 @@
       "url": "https://github.com/Samarth-23-eng/scope-intelligence",
       "score": 32.89,
       "stars": 28,
-      "category": "AI / LLM",
+      "category": "Security / Auth",
       "description": "Evidence-first, self-hosted OSINT workspace for public-source collection, grounded AI research, relationship intelligence, monitoring, and verification.",
       "language": "Python",
       "compose": true,
@@ -865,7 +866,7 @@
       "url": "https://github.com/DaKheera47/strong-statistics",
       "score": 30.35,
       "stars": 26,
-      "category": "Health / Food / Fitness",
+      "category": "Analytics / Data",
       "description": "Self‑hosted strength‑training analytics for Strong app exports. Import your CSV, see PRs, volume trends, rep ranges, and workout history — all stored locally in SQLite.",
       "language": "TypeScript",
       "compose": true,
@@ -1047,26 +1048,6 @@
       }
     },
     {
-      "repo": "DeviantEng/Cmdarr",
-      "url": "https://github.com/DeviantEng/Cmdarr",
-      "score": 22.71,
-      "stars": 40,
-      "category": "Media / Streaming",
-      "description": "A modular command-driven automation platform for self-hosted music workflows. Cmdarr integrates Lidarr, Plex, and Jellyfin with music services like Last.fm, MusicBrainz, and ListenBrainz to automate artist discovery, playlist synchronization, playlist generation, and more.",
-      "language": "Python",
-      "compose": false,
-      "docker": true,
-      "ai": false,
-      "breakdown": {
-        "stars": 16.1,
-        "velocity": 1.6,
-        "deploy": 3,
-        "license": -4,
-        "active": 3,
-        "life": 3
-      }
-    },
-    {
       "repo": "TheHoltz/errex",
       "url": "https://github.com/TheHoltz/errex",
       "score": 22.63,
@@ -1128,47 +1109,69 @@
         "life": 3,
         "ai": -6
       }
+    },
+    {
+      "repo": "goehou/Happy-Code-Review",
+      "url": "https://github.com/goehou/Happy-Code-Review",
+      "score": 10.42,
+      "stars": 7,
+      "category": "AI / LLM",
+      "description": "Self-hosted multi-platform Git activity dashboard (GitLab/GitHub/Gitee) with built-in AI code review. Aggregates pushes, commits, diffs and code stats into one page. Flask + SQLite, single-file.",
+      "language": "HTML",
+      "compose": true,
+      "docker": true,
+      "ai": true,
+      "breakdown": {
+        "stars": 9.0,
+        "velocity": 1.4,
+        "deploy": 6,
+        "license": -4,
+        "active": 1,
+        "life": 3,
+        "ai": -6
+      }
     }
   ],
   "aiCount": 11,
   "publishable": true,
   "timingSeconds": 63.9,
   "repair": {
-    "at": "2026-10-04T01:33:15+00:00",
+    "at": "2026-10-04T02:22:39+00:00",
     "dropped": [
       {
-        "repo": "hpcll/HMusic-Server",
-        "why": "component-or-dev-tool"
-      },
-      {
-        "repo": "awaithumans/awaithumans-human-in-the-loop-ai-agents",
-        "why": "library-or-sdk"
-      },
-      {
-        "repo": "SammyTourani/evestack",
-        "why": "agent-infrastructure"
+        "repo": "DeviantEng/Cmdarr",
+        "why": "built-on-other-app"
       }
     ],
     "added": [
-      "TheHoltz/errex",
-      "S2zxx0zxx/FinCo-pilot",
-      "pasichDev/docket"
+      "goehou/Happy-Code-Review"
+    ],
+    "recategorized": [
+      {
+        "repo": "Samarth-23-eng/scope-intelligence",
+        "from": "AI / LLM",
+        "to": "Security / Auth"
+      },
+      {
+        "repo": "DaKheera47/strong-statistics",
+        "from": "Health / Food / Fitness",
+        "to": "Analytics / Data"
+      }
     ],
     "topUp": {
       "from": "v17",
-      "needed": 3,
-      "added": 3,
+      "needed": 1,
+      "added": 1,
       "starFloors": [
-        20
+        20,
+        10
       ],
       "repos": [
-        "TheHoltz/errex",
-        "S2zxx0zxx/FinCo-pilot",
-        "pasichDev/docket"
+        "goehou/Happy-Code-Review"
       ],
-      "laneSeen": 5175,
-      "lanePassing": 118,
-      "seconds": 59.9
+      "laneSeen": 7366,
+      "lanePassing": 191,
+      "seconds": 137.9
     }
   }
 }

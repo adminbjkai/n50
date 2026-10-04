@@ -695,7 +695,7 @@
       "family": "other",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 13.6,
         "v17 velocity": 1.1,
@@ -721,7 +721,7 @@
       "family": "productivity",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 11.5,
         "v17 velocity": 2.4,
@@ -746,7 +746,7 @@
       "family": "media",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 9.5,
         "v17 velocity": 3.4,
@@ -773,7 +773,7 @@
       "family": "gaming",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 12.6,
         "v17 velocity": 1.8,
@@ -789,7 +789,7 @@
     {
       "url": "https://github.com/gitbckr/gitbacker",
       "score": 36.64,
-      "category": "DevOps / Infra",
+      "category": "Files / Storage / Backup",
       "stars": 13,
       "docker": true,
       "compose": true,
@@ -799,7 +799,7 @@
       "family": "devops",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 11.5,
         "v17 velocity": 1.2,
@@ -825,7 +825,7 @@
       "family": "db_light",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 10.4,
         "v17 velocity": 0.8,
@@ -851,7 +851,7 @@
       "family": "documents",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 12.6,
         "v17 velocity": 1.4,
@@ -876,7 +876,7 @@
       "family": "knowledge",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 11.8,
         "v17 velocity": 1.2,
@@ -901,7 +901,7 @@
       "family": "dash_mon",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 9.5,
         "v17 velocity": 3.4,
@@ -926,7 +926,7 @@
       "family": "knowledge",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 9.5,
         "v17 velocity": 3.4,
@@ -952,7 +952,7 @@
       "family": "knowledge",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 12.8,
         "v17 velocity": 1.0,
@@ -978,7 +978,7 @@
       "family": "dev_web",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 9.0,
         "v17 velocity": 3.1,
@@ -1003,7 +1003,7 @@
       "family": "knowledge",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 7.8,
         "v17 velocity": 1.0,
@@ -1029,7 +1029,7 @@
       "family": "devops",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 11.1,
         "v17 velocity": 0.6,
@@ -1045,7 +1045,7 @@
     {
       "url": "https://github.com/nasnet-community/nasnet-monitor",
       "score": 32.5,
-      "category": "Maps / GIS / Location",
+      "category": "Monitoring / Observability",
       "stars": 5,
       "docker": true,
       "compose": true,
@@ -1055,7 +1055,7 @@
       "family": "other",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 7.8,
         "v17 velocity": 0.7,
@@ -1082,7 +1082,7 @@
       "family": "db_light",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 11.8,
         "v17 velocity": 0.8,
@@ -1106,7 +1106,7 @@
       "family": "knowledge",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 12.8,
         "v17 velocity": 0.6,
@@ -1130,7 +1130,7 @@
       "family": "knowledge",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 9.0,
         "v17 velocity": 2.1,
@@ -1155,7 +1155,7 @@
       "family": "proxy_net",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 7.8,
         "v17 velocity": 2.3,
@@ -1180,7 +1180,7 @@
       "family": "home_health",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 9.0,
         "v17 velocity": 3.1,
@@ -1204,7 +1204,7 @@
       "family": "files",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 7.8,
         "v17 velocity": 0.9,
@@ -1230,7 +1230,7 @@
       "family": "productivity",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 10.4,
         "v17 velocity": 1.2,
@@ -1254,7 +1254,7 @@
       "family": "productivity",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 8.5,
         "v17 velocity": 1.1,
@@ -1279,7 +1279,7 @@
       "family": "comms",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 13.0,
         "v17 velocity": 1.5,
@@ -1303,7 +1303,7 @@
       "family": "productivity",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 9.5,
         "v17 velocity": 1.9,
@@ -1328,7 +1328,7 @@
       "family": "proxy_net",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": null,
+      "topup": "v17",
       "breakdown": {
         "v17 stars": 12.8,
         "v17 velocity": 0.5,
@@ -1396,21 +1396,21 @@
     "Media / Streaming": 5,
     "Books / Reading / Library": 5,
     "Gaming / Game Servers": 4,
+    "Monitoring / Observability": 4,
     "Networking / VPN": 4,
-    "Monitoring / Observability": 3,
     "Notes / Knowledge": 3,
     "Dashboard / Homelab": 3,
-    "DevOps / Infra": 3,
     "Developer Tools / Utilities": 3,
     "Analytics / Data": 3,
     "Productivity / Tasks": 3,
+    "DevOps / Infra": 2,
     "Health / Food / Fitness": 2,
-    "Maps / GIS / Location": 2,
+    "Files / Storage / Backup": 2,
     "Security / Auth": 1,
+    "Maps / GIS / Location": 1,
     "CRM / Business": 1,
     "Documents / PDF / Paperless": 1,
     "Search / Indexing": 1,
-    "Files / Storage / Backup": 1,
     "Communication / Social": 1,
     "AI / LLM": 1
   },
@@ -1494,36 +1494,21 @@
   "selectionHeadroom": 1.54,
   "timingSeconds": 150.8,
   "repair": {
-    "at": "2026-10-04T01:45:34+00:00",
-    "dropped": [
+    "at": "2026-10-04T02:25:33+00:00",
+    "dropped": [],
+    "added": [],
+    "recategorized": [
       {
-        "repo": "LibreChat-AI/LibreChat",
-        "why": "renamed-copy-of-published"
+        "repo": "gitbckr/gitbacker",
+        "from": "DevOps / Infra",
+        "to": "Files / Storage / Backup"
       },
       {
-        "repo": "botnick/telegram-media-downloader",
-        "why": "adult-content"
+        "repo": "nasnet-community/nasnet-monitor",
+        "from": "Maps / GIS / Location",
+        "to": "Monitoring / Observability"
       }
     ],
-    "added": [
-      "NextEpochs/opifer",
-      "PEG4TRON/MeshCorium"
-    ],
-    "topUp": {
-      "from": "v17",
-      "needed": 2,
-      "added": 2,
-      "starFloors": [
-        20,
-        10
-      ],
-      "repos": [
-        "NextEpochs/opifer",
-        "PEG4TRON/MeshCorium"
-      ],
-      "laneSeen": 8044,
-      "lanePassing": 258,
-      "seconds": 134.8
-    }
+    "topUp": null
   }
 }

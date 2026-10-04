@@ -1289,7 +1289,7 @@
     {
       "url": "https://github.com/devzspy/redops-vault",
       "score": 21.94,
-      "category": "Documents / PDF / Paperless",
+      "category": "Security / Auth",
       "stars": 6,
       "docker": true,
       "compose": true,
@@ -1383,7 +1383,7 @@
     {
       "url": "https://github.com/spydirbyte/spy-privacy-pulse",
       "score": 20.69,
-      "category": "Monitoring / Observability",
+      "category": "Privacy / Ad-Blocking",
       "stars": 5,
       "docker": true,
       "compose": true,
@@ -1431,7 +1431,7 @@
     {
       "url": "https://github.com/Gerald-Ha/LingoVeil",
       "score": 20.15,
-      "category": "Documents / PDF / Paperless",
+      "category": "AI / LLM",
       "stars": 5,
       "docker": true,
       "compose": true,
@@ -1904,21 +1904,22 @@
     }
   ],
   "categoryDistribution": {
-    "Monitoring / Observability": 11,
+    "Monitoring / Observability": 10,
     "Media / Streaming": 6,
     "Dashboard / Homelab": 5,
-    "Documents / PDF / Paperless": 4,
     "Productivity / Tasks": 3,
     "Gaming / Game Servers": 3,
+    "AI / LLM": 3,
     "Communication / Social": 2,
     "Networking / VPN": 2,
     "Developer Tools / Utilities": 2,
+    "Documents / PDF / Paperless": 2,
+    "Privacy / Ad-Blocking": 2,
     "Files / Storage / Backup": 2,
-    "AI / LLM": 2,
     "Education / Learning": 2,
     "Home Automation / IoT": 1,
-    "Privacy / Ad-Blocking": 1,
     "DevOps / Infra": 1,
+    "Security / Auth": 1,
     "Books / Reading / Library": 1,
     "Notes / Knowledge": 1,
     "CMS / Website": 1
@@ -2185,49 +2186,26 @@
   },
   "timingSeconds": 359.8,
   "repair": {
-    "at": "2026-10-04T02:03:41+00:00",
-    "dropped": [
+    "at": "2026-10-04T02:26:46+00:00",
+    "dropped": [],
+    "added": [],
+    "recategorized": [
       {
-        "repo": "stardust153/calibrarr",
-        "why": "plugin-for-other-app"
+        "repo": "devzspy/redops-vault",
+        "from": "Documents / PDF / Paperless",
+        "to": "Security / Auth"
       },
       {
-        "repo": "imsks/Chitthi",
-        "why": "growth-or-device-farm"
+        "repo": "spydirbyte/spy-privacy-pulse",
+        "from": "Monitoring / Observability",
+        "to": "Privacy / Ad-Blocking"
       },
       {
-        "repo": "FuzionCD/LANBooru",
-        "why": "renamed-copy-of-published"
-      },
-      {
-        "repo": "tokenpanel/tokenpanel",
-        "why": "ai-account-proxy"
+        "repo": "Gerald-Ha/LingoVeil",
+        "from": "Documents / PDF / Paperless",
+        "to": "AI / LLM"
       }
     ],
-    "added": [
-      "qianzhu18/Muku",
-      "BytesAndCoffee/bad-decisions",
-      "PedroLucasMiguel/harmony",
-      "xubaoer19940428-creator/omni-media"
-    ],
-    "recategorized": [],
-    "topUp": {
-      "from": "v17",
-      "needed": 4,
-      "added": 4,
-      "starFloors": [
-        20,
-        10
-      ],
-      "repos": [
-        "qianzhu18/Muku",
-        "BytesAndCoffee/bad-decisions",
-        "PedroLucasMiguel/harmony",
-        "xubaoer19940428-creator/omni-media"
-      ],
-      "laneSeen": 7727,
-      "lanePassing": 205,
-      "seconds": 135.2
-    }
+    "topUp": null
   }
 }

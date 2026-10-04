@@ -80,7 +80,10 @@ def fill(version, selected, target, tracker, dry_run, ai_ceiling=None, is_ai_cat
     added, stats, floors = [], {}, []
     ladder = getattr(v17, "STAR_LADDER", None) or [(getattr(v17, "MIN_STARS", None),
                                                       getattr(v17, "MIN_STARS_YOUNG", None))]
-    for floor, young in ladder:
+    start = v17.ladder_start() if hasattr(v17, "ladder_start") else 0
+    for rung, (floor, young) in enumerate(ladder):
+        if rung < start:
+            continue
         if len(added) >= need:
             break
         if hasattr(v17, "set_star_floor"):
@@ -96,6 +99,8 @@ def fill(version, selected, target, tracker, dry_run, ai_ceiling=None, is_ai_cat
         picks = _drop_renamed(v17, picks, tracker, version)
         ai_now = _take(picks, need, added, taken_urls, owners, cats, cat_cap, ai_ceiling, ai_now,
                        is_ai_cat, family_of, v17)
+        if hasattr(v17, "ladder_record") and (len(added) >= need or (floor, young) == ladder[-1]):
+            v17.ladder_record(rung)
         if len(added) < need and (floor, young) != ladder[-1]:
             print(f"[{version}] top-up: {len(added)}/{need} at ≥{floor}★; trying a lower star floor …",
                   flush=True)

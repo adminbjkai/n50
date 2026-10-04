@@ -74,7 +74,17 @@ that hit real apps (Helm *option*, apps that *include* an MCP server, standalone
 apps, "X for games" analogies, "works with Nextcloud" compatibility). Categories gained
 tabletop/gaming, CRM/helpdesk, fitness, time tracking/household, smart home and publishing.
 The star ladder (see ENGINES.md) was added once Set 494 had used up most ≥20★ non-AI apps.
-Self-test: 65 checks, including "must keep" cases for legitimate apps.
+The final review round (Sets 496–498) added: rename/transfer checks on every engine's picks
+(three published duplicates found: statainer, LibreChat, Reactive-Resume), companions for
+the *arr stack and torrent clients regardless of topics, chat bots for Feishu/WeChat/
+Telegram, game-server and private-server panels, AI/API resellers, bulk mailers, programming
+languages, engine SDKs, "reference" relays, SVG card services, and a non-English check for
+Latin-script descriptions (foreign function words or accents, and no English ones). The
+"alternative to" exemption now needs an app name after "instead of"/"like", and
+compatibility ("works with Nextcloud") only exempts when it names the host app; "built on
+Home Assistant" always counts. Categories: the override matching earliest in the
+description wins (feature lists later in a description no longer decide).
+Self-test: 94 checks, including "must keep" cases for legitimate apps.
 
 ## Run
     python3 v17.py --self-test

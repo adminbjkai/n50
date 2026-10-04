@@ -69,12 +69,14 @@ CARRY_CACHE = CACHE_DIR / "carry_v17.json"
 REJECT_CACHE = CACHE_DIR / "reject_cache_v17.json"
 RENAME_CACHE = CACHE_DIR / "rename_cache_v17.json"
 LOCKFILE = CACHE_DIR / "publish_v17.lock"
+LADDER_STATE = CACHE_DIR / "ladder_state_v17.json"
 
 MIN_STARS = 20
 MIN_STARS_YOUNG = 10          # repos created < YOUNG_DAYS ago
 # When a rung can't fill the set, discovery reruns one rung lower. Every other rule is the
 # same on every rung, and ranking still prefers the most-starred repos.
 STAR_LADDER = [(20, 10), (10, 5), (5, 3)]   # (floor, floor if younger than YOUNG_DAYS)
+LADDER_MEMORY_HOURS = 12      # start at the rung that last filled a set, for this long
 YOUNG_DAYS = 120
 MAX_PUSH_AGE_DAYS = 240
 CAT_CAP = 6
@@ -303,7 +305,7 @@ JUNK = [
     (r"\bfor use alongside\b|\bcompanion (tool|app|service) (for|to)\b", "companion-for-other-app"),
     (r"2api\b|\bto[- ]?api\b|account pool|\b(ai |llm )?subscription pool|reverse[- ]proxy for (chatgpt|claude|openai|gemini|codex|cursor|kiro|grok|copilot)|\b(chatgpt|claude|gemini|codex|kiro|grok|copilot|cursor) (account|api) (proxy|pool|gateway)", "ai-account-proxy"),
     (r"\b(trading bot|crypto|binance|bybit|coinbase|airdrop|memecoin|defi|quant(itative)? trading|stock pick|arbitrage|mev)\b", "trading-crypto"),
-    (r"\b(readme|github) (stats|profile|streak)|\bstats cards?\b|profile readme", "github-vanity"),
+    (r"\b(readme|github) (stats|profile|streak)|\bstats cards?\b|\bsvg cards?\b|profile readme", "github-vanity"),
     (r"\buserscript\b|\btampermonkey\b|\bbrowser extension\b|\bchrome extension\b", "browser-extension"),
     (r"\b(docker images?|docker-?compose files?|compose (files|stack|templates?)|dockerfiles?|deployment|install(er|ation) scripts?|setup scripts?)\s+for\b", "packaging-of-other-app"),
     (r"^(my|personal) |\bmy (homelab|home lab|server|setup|infra)\b|\bhomelab (config|setup|infrastructure|repo|gitops)\b|\bgitops\b|\bdotfiles\b|\bnixos config", "personal-setup"),
@@ -311,7 +313,7 @@ JUNK = [
     (r"\bawesome\b.*\b(list|collection)\b|\bcurated list\b", "list"),
     # The repo IS an MCP server (apps that include one as a feature are fine).
     (r"\b(mcp|model context protocol) servers? (for|that|to|which|exposing)\b|\bis an? (mcp|model context protocol) server\b", "mcp-server"),
-    (r"\b(sdk|code|client) generator\b|\bbackend (api|service|server)? ?for [\w.-]+\b", "component-or-dev-tool"),
+    (r"\bprogramming language\b|\bsdk (built|written) in\b|\bengine sdk\b|\breference (implementation|server|relay|spool)\b|\b(sdk|code|client) generator\b|\bbackend (api|service|server)? ?for [\w.-]+\b", "component-or-dev-tool"),
     (r"\b(ai|api|llm|token) (reseller|resale)\b|\breseller panel\b", "ai-account-proxy"),
     (r"\bsend (e-?mails?|messages|sms) without limits\b|\bbulk (e-?mail|sms|mail)\w*\b|\bmass (e-?mail|mail)\w*\b", "growth-or-device-farm"),
     (r"\bcommand and control\b|\bc2 (server|framework)\b|\bwhatsapp (rest )?api\b|\bunofficial (whatsapp|instagram|tiktok) api\b", "scraper-or-shady"),
@@ -351,9 +353,22 @@ def _age_days(iso, now):
 CJK = re.compile(r"[\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]")
 
 
+ENGLISH_WORDS = {"the", "and", "for", "with", "your", "you", "to", "of", "that", "from", "is", "an",
+                 "on", "it", "this", "by", "or", "into", "without", "all", "every", "a", "in"}
+FOREIGN_WORDS = {"der", "die", "das", "und", "ohne", "mit", "für", "als", "ein", "eine", "nicht", "zu",
+                 "von", "auf", "bei", "de", "e", "para", "com", "sem", "seu", "sua", "um", "uma", "não",
+                 "y", "el", "los", "las", "con", "por", "del", "le", "les", "et", "pour", "avec", "sans",
+                 "des", "du", "une", "est", "il", "di", "che", "gli", "och", "med", "för", "og", "er"}
+ACCENTED = re.compile(r"[ãõçáíóúâêôàüößäñœ]")
+
+
 def readable(desc):
     letters = [c for c in desc if c.isalpha()]
     if len(letters) < 20 or len(CJK.findall(desc)) > 8:
+        return False
+    words = set(re.findall(r"[a-zãõçáéíóúâêôàüößäñœ]+", desc.lower()))
+    foreign = len(words & FOREIGN_WORDS) + (1 if ACCENTED.search(desc.lower()) else 0)
+    if foreign >= 2 and not words & ENGLISH_WORDS:   # Latin-script but not English
         return False
     return sum(1 for c in letters if c.isascii()) / len(letters) >= 0.6
 
@@ -366,7 +381,8 @@ HOST_APPS = re.compile(r"\b(jellyfin|plex|emby|navidrome|subsonic|immich|nextclo
                        r"calibre-web|kavita|komga|obsidian|notion|trilium|linkwarden|vaultwarden|"
                        r"authentik|pi-hole|adguard|unraid|truenas|proxmox|portainer|n8n|firefly(?: iii)?|"
                        r"coolify|headscale|twenty crm|firecrawl|frigate|ghost|wordpress|photoprism|lancache|"
-                       r"bazarr|qbittorrent|transmission|deluge|maintainerr|tautulli)\b", re.I)
+                       r"bazarr|qbittorrent|transmission|deluge|maintainerr|tautulli|rustdesk|asterisk|"
+                       r"freeswitch|invoice ninja)\b", re.I)
 # Companion tools for the *arr stack and torrent clients, whatever their topics say.
 ARR_TOOLS = re.compile(r"\b(sonarr|radarr|lidarr|prowlarr|readarr|bazarr|qbittorrent|transmission|deluge|"
                        r"maintainerr|tautulli|overseerr|jellyseerr)\b", re.I)
@@ -375,13 +391,14 @@ ARR_TOOLS = re.compile(r"\b(sonarr|radarr|lidarr|prowlarr|readarr|bazarr|qbittor
 ALT_TO = re.compile(r"\b(alternatives?|replacements?|replaces|drop-in)\b|\b(instead of|like) (using )?"
                     + HOST_APPS.pattern[2:], re.I)
 # "Works with Nextcloud, Radicale…", "friendly to Obsidian": compatibility, not an add-on.
-COMPAT = re.compile(r"\b(works with|compatible with|friendly to|interoperable with|imports? from|migrate from)\b", re.I)
+COMPAT = re.compile(r"\b(works with|compatible with|friendly to|interoperable with|imports? from|migrate from)"
+                    r"[^.]{0,60}?" + HOST_APPS.pattern, re.I)
 # "Sonarr/Radarr for games": an app modelled on a known one, not an add-on to it.
 ANALOGY = re.compile(HOST_APPS.pattern + r"(\s*/\s*[\w-]+)?\s+for\s+(games|books|comics|music|podcasts|"
                      r"recipes|audiobooks|movies|photos|ebooks|manga|anime|papers|notes)\b", re.I)
 # "... for every Jellyfin user", "powered by Twenty CRM": built on another app even when the
 # repo carries a media-server/alternative topic.
-BUILT_ON = re.compile(r"\b(for|with|on top of|powered by|built on|integrat\w* with|companion to)\s+"
+BUILT_ON = re.compile(r"\b(for|on top of|powered by|built on|integrat\w* with|companion to)\s+"
                       r"(every\s+|your\s+|all\s+|self-hosted\s+)?" + HOST_APPS.pattern[2:], re.I)
 TERMINAL = re.compile(r"\b(tui|terminal ui|terminal user interface)\b", re.I)
 
@@ -409,8 +426,8 @@ def gate(repo, now, curated=False, light=False):
             return why
     if re.match(r"(an? |the )?(mcp|model context protocol) server\b", desc, re.I):
         return "mcp-server"
-    if not ALT_TO.search(desc) and not ANALOGY.search(desc) and not COMPAT.search(desc) and (
-            BUILT_ON.search(desc) or (HOST_APPS.search(desc) and not
+    if not ALT_TO.search(desc) and not ANALOGY.search(desc) and (
+            BUILT_ON.search(desc) or (HOST_APPS.search(desc) and not COMPAT.search(desc) and not
                                       {t.lower() for t in repo["topics"]} & {"media-server", "alternative"})):
         return "built-on-other-app"
     if ARR_TOOLS.search(desc) and not ALT_TO.search(desc) and not ANALOGY.search(desc):
@@ -458,6 +475,10 @@ def interest_score(repo, now, curated=None):
 
 
 CATEGORY_OVERRIDES = [
+    (r"\b(crm|help ?desk|support desk|ticketing)\b", "CRM / Business"),
+    (r"\b(epub|ebooks?|ebook reader|audiobooks?)\b", "Books / Reading / Library"),
+    (r"\b(dictionary|vocabulary|language learning)\b", "Education / Learning"),
+    (r"\b(day planner|planner pwa|to-?do lists?)\b", "Productivity / Tasks"),
     (r"\b(backups?|family (digital )?safe|file (storage|sharing)|dropbox)\b", "Files / Storage / Backup"),
     (r"\b(observability|uptime|status page|speedtests?|netflow|error tracking|telemetry|monitoring)\b", "Monitoring / Observability"),
     (r"\b(forum|community platform|chat rooms?|messaging|webrtc)\b", "Communication / Social"),
@@ -466,7 +487,8 @@ CATEGORY_OVERRIDES = [
     (r"\b(baas|backend as a service|supabase alternative|firebase alternative)\b", "Developer Tools / Utilities"),
     (r"\b(app distribution|paas|ci/cd)\b", "DevOps / Infra"),
     (r"\b(3d print\w*|filament)\b", "Home Automation / IoT"),
-    (r"\b(virtual tabletop|vtt|tabletop|ttrpg|board games?|dungeons?|arcade|retro games?|game (library|saves?))\b", "Gaming / Game Servers"),
+    (r"\b(virtual tabletop|vtt|tabletop|ttrpg|board games?|dungeons?|arcade|retro games?|game (library|saves?|servers?))\b", "Gaming / Game Servers"),
+    (r"\b(osint|threat intel\w*|siem|sigma detection|red team)\b", "Security / Auth"),
     (r"\b(crm|help ?desk|support desk|ticketing)\b", "CRM / Business"),
     (r"\b(fitness|workout|strength[- ]training|sleep tracking|fitbit|habit tracker|health tracker)\b", "Health / Food / Fitness"),
     (r"\b(time[- ]tracking|time tracker|timesheets?|to-?do|task manager|pomodoro|vehicle|car maintenance|home inventory|household)\b", "Productivity / Tasks"),
@@ -487,11 +509,15 @@ CATEGORY_OVERRIDES = [(re.compile(p, re.I), c) for p, c in CATEGORY_OVERRIDES]
 
 
 def categorize(repo):
-    """Description-first overrides for families v16's keyword categorizer misfiles."""
-    for rx, cat in CATEGORY_OVERRIDES:
-        if rx.search(repo["description"]):
-            return cat
-    return v16.categorize(repo)
+    """Description-first overrides for families v16's keyword categorizer misfiles.
+    The override matching earliest in the description wins (descriptions lead with what the
+    app is; a feature list later shouldn't decide); list order breaks ties."""
+    best = None
+    for order, (rx, cat) in enumerate(CATEGORY_OVERRIDES):
+        m = rx.search(repo["description"])
+        if m and (best is None or (m.start(), order) < best[:2]):
+            best = (m.start(), order, cat)
+    return best[2] if best else v16.categorize(repo)
 
 
 AI_APP = re.compile(r"\b(web ?ui|webui|web app|web-based|web interface|dashboard|workspace|interface|"
@@ -598,15 +624,35 @@ def set_star_floor(floor, young):
     MIN_STARS, MIN_STARS_YOUNG = floor, young
 
 
+def ladder_start():
+    """Rung to start from: a lower rung's results include every higher rung's repos (same
+    searches, lower floor, ranked by stars), so skipping rungs that recently came up short
+    loses nothing and saves a full discovery pass each."""
+    st = load_json(LADDER_STATE, {})
+    if time.time() - st.get("t", 0) < LADDER_MEMORY_HOURS * 3600:
+        return max(0, min(int(st.get("rung", 0)), len(STAR_LADDER) - 1))
+    return 0
+
+
+def ladder_record(rung):
+    save_json(LADDER_STATE, {"rung": rung, "t": int(time.time())})
+
+
 def discover_ladder(tracker, target, now, args, enough=None):
     """discover() on each STAR_LADDER rung until `enough(picked)` (default: a full set).
     Leaves MIN_STARS/MIN_STARS_YOUNG at the rung that produced the returned picks."""
     enough = enough or (lambda p: len(p) >= target)
-    for i, (floor, young) in enumerate(STAR_LADDER):
+    start = ladder_start()
+    if start:
+        print(f"[{VERSION}] star ladder: starting at ≥{STAR_LADDER[start][0]}★ (higher rungs came up short "
+              f"in the last {LADDER_MEMORY_HOURS} h)", flush=True)
+    for i in range(start, len(STAR_LADDER)):
+        floor, young = STAR_LADDER[i]
         set_star_floor(floor, young)
         picked, stats = discover(tracker, target, now, args)
         stats["starFloor"] = [floor, young]
         if enough(picked) or i == len(STAR_LADDER) - 1:
+            ladder_record(i)
             return picked, stats
         nxt = STAR_LADDER[i + 1]
         print(f"[{VERSION}] {len(picked)}/{target} at ≥{floor}★ (≥{young}★ if under {YOUNG_DAYS} days); "
@@ -930,6 +976,15 @@ def self_test():
         (mk("t/like", "A self-hosted reading app, like Kavita but for comics only"), None),
         (mk("t/resell", "Open-source AI reseller panel with customer API keys and prepaid balance"), "ai-account-proxy"),
         (mk("t/mail", "Send emails without limits. Self-hosted. Built in Go."), "growth-or-device-farm"),
+        (mk("u/rd", "Self-hosted RustDesk address book web app with live online status"), "built-on-other-app"),
+        (mk("u/ast", "Clean, self-hosted web phone for a single SIP line, built on Asterisk"), "built-on-other-app"),
+        (mk("u/lang", "Self-hosted systems and scientific programming language with epistemic types"), "component-or-dev-tool"),
+        (mk("u/sdk", "Modular document and spreadsheet engine SDK built in pure Rust"), "component-or-dev-tool"),
+        (mk("u/card", "A self-hosted GitHub repository gallery and SVG card service"), "github-vanity"),
+        (mk("u/de", "Belege per Drag und Drop als Ausgaben buchen, lokale OCR, ohne Cloud, Docker Web App"), "not-english-readable"),
+        (mk("u/pt", "Controle financeiro pessoal e familiar self-hosted: renda, despesas, cartões, metas"), "not-english-readable"),
+        (mk("u/en", "Self-hosted minimal time tracking."), None),
+        (mk("u/ha", "A self-hosted family dashboard built on Home Assistant API, works with any calendar"), "built-on-other-app"),
         (mk("p/cjk", "知归是一个面向个人使用的 AI 知识归档工具，把内容链接发送给机器人 GitHub web app"), "not-english-readable"),
     ]
     ok = True
@@ -985,7 +1040,11 @@ def self_test():
                        ("Self-hosted, lightweight observability tool for indie developers", "Monitoring / Observability"),
                        ("A streamlined, self-hosted learning platform focused on simplicity", "Education / Learning"),
                        ("Self-hosted automatic backups of your files with a web dashboard", "Files / Storage / Backup"),
-                       ("Play classic arcade games online with friends, straight from the browser", "Gaming / Game Servers")]:
+                       ("Play classic arcade games online with friends, straight from the browser", "Gaming / Game Servers"),
+                       ("Polished self-hostable browser-based EPUB & PDF library", "Books / Reading / Library"),
+                       ("Minimalist day planner PWA with a vertical timeline", "Productivity / Tasks"),
+                       ("A self-hosted English dictionary with 300 000 entries", "Education / Learning"),
+                       ("Combines CRM, project management, invoicing, time tracking and monitoring", "CRM / Business")]:
         got = categorize(mk("c/c", desc))
         t = got == want
         ok &= t

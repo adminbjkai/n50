@@ -60,7 +60,10 @@ v17 searches with a floor of 20 stars (10 for repos under 120 days old). New non
 clear that bar are scarce: one published set uses up most of them for days. When a rung
 can't fill the set, discovery reruns one rung lower: ≥10★ (≥5★ young), then ≥5★ (≥3★
 young). Every other rule is identical on every rung, ranking still favours the most-starred
-repos, and v17's page states the floor that was actually used.
+repos, and v17's page states the floor that was actually used. A lower rung's results
+include every higher rung's repos (same searches, lower floor), so v17 and the lane remember
+the rung that last filled a set (`_tmp/ladder_state_v17.json`, 12 h) and start there instead
+of re-running rungs known to be exhausted.
 
 ## Repairing a published set
 

@@ -332,7 +332,7 @@
     {
       "url": "https://github.com/hunanjay/friday",
       "score": 21.56,
-      "category": "Analytics / Data",
+      "category": "AI / LLM",
       "stars": 13,
       "docker": true,
       "compose": true,
@@ -482,7 +482,7 @@
     {
       "url": "https://github.com/twpro8/lumiere",
       "score": 30.85,
-      "category": "Media / Streaming",
+      "category": "Communication / Social",
       "stars": 11,
       "docker": true,
       "compose": true,
@@ -604,7 +604,7 @@
     {
       "url": "https://github.com/yassinebenameur/probara",
       "score": 29.95,
-      "category": "Maps / GIS / Location",
+      "category": "Monitoring / Observability",
       "stars": 7,
       "docker": true,
       "compose": true,
@@ -944,7 +944,7 @@
     {
       "url": "https://github.com/wagga40/LogsTotal",
       "score": 27.93,
-      "category": "Monitoring / Observability",
+      "category": "Security / Auth",
       "stars": 8,
       "docker": true,
       "compose": true,
@@ -993,7 +993,7 @@
     {
       "url": "https://github.com/Mattboxx/Clipboard-Bridge",
       "score": 27.6,
-      "category": "Networking / VPN",
+      "category": "Files / Storage / Backup",
       "stars": 5,
       "docker": true,
       "compose": true,
@@ -1135,7 +1135,7 @@
     {
       "url": "https://github.com/Ha22yX/VaultBridge",
       "score": 25.59,
-      "category": "Developer Tools / Utilities",
+      "category": "Files / Storage / Backup",
       "stars": 9,
       "docker": true,
       "compose": true,
@@ -1351,20 +1351,20 @@
   ],
   "categoryDistribution": {
     "Dashboard / Homelab": 5,
-    "Analytics / Data": 5,
-    "Media / Streaming": 5,
     "Monitoring / Observability": 4,
-    "Networking / VPN": 4,
+    "Media / Streaming": 4,
+    "Files / Storage / Backup": 4,
     "Notes / Knowledge": 4,
-    "Developer Tools / Utilities": 3,
+    "Analytics / Data": 4,
+    "Security / Auth": 3,
+    "AI / LLM": 3,
+    "Networking / VPN": 3,
     "Books / Reading / Library": 3,
-    "Security / Auth": 2,
-    "AI / LLM": 2,
-    "Files / Storage / Backup": 2,
-    "Maps / GIS / Location": 2,
+    "Communication / Social": 2,
+    "Developer Tools / Utilities": 2,
     "Documents / PDF / Paperless": 2,
+    "Maps / GIS / Location": 1,
     "Automation": 1,
-    "Communication / Social": 1,
     "Gaming / Game Servers": 1,
     "Health / Food / Fitness": 1,
     "DevOps / Infra": 1,
@@ -1659,19 +1659,39 @@
   "selectionHeadroom": 1.24,
   "timingSeconds": 297.7,
   "repair": {
-    "at": "2026-10-04T01:49:41+00:00",
+    "at": "2026-10-04T02:26:12+00:00",
     "dropped": [],
     "added": [],
     "recategorized": [
       {
-        "repo": "aliansari22/pdfclear",
-        "from": "AI / LLM",
-        "to": "Documents / PDF / Paperless"
+        "repo": "hunanjay/friday",
+        "from": "Analytics / Data",
+        "to": "AI / LLM"
       },
       {
-        "repo": "CasualOffice/slides",
+        "repo": "twpro8/lumiere",
+        "from": "Media / Streaming",
+        "to": "Communication / Social"
+      },
+      {
+        "repo": "yassinebenameur/probara",
         "from": "Maps / GIS / Location",
-        "to": "Documents / PDF / Paperless"
+        "to": "Monitoring / Observability"
+      },
+      {
+        "repo": "wagga40/LogsTotal",
+        "from": "Monitoring / Observability",
+        "to": "Security / Auth"
+      },
+      {
+        "repo": "Mattboxx/Clipboard-Bridge",
+        "from": "Networking / VPN",
+        "to": "Files / Storage / Backup"
+      },
+      {
+        "repo": "Ha22yX/VaultBridge",
+        "from": "Developer Tools / Utilities",
+        "to": "Files / Storage / Backup"
       }
     ],
     "topUp": null

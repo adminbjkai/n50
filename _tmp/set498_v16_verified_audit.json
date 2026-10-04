@@ -1,0 +1,1742 @@
+{
+  "version": "v16",
+  "setNum": 498,
+  "searchCalls": 58,
+  "zeroYieldQueries": 11,
+  "poolSize": 126,
+  "scoredCount": 82,
+  "freshScored": 3,
+  "graphql": true,
+  "awesome": true,
+  "awesomeResidual": 1,
+  "awesomeSeeded": 1,
+  "enrich": false,
+  "rejected": [
+    [
+      "https://github.com/jub0t/Concat",
+      "duplicate"
+    ],
+    [
+      "https://github.com/GeiserX/paperless-telegram-bot",
+      "duplicate"
+    ],
+    [
+      "https://github.com/firsttris/snapraid-ui",
+      "duplicate"
+    ],
+    [
+      "https://github.com/thejacedev/McHeads-API",
+      "duplicate"
+    ],
+    [
+      "https://github.com/oderajoseph95/Claude-Intercom-HelpCenter-Article-Writer",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/Socioboard-developers/Socioboard-5.0",
+      "no-ship-proof"
+    ],
+    [
+      "https://github.com/agentscope-ai-java/idempotency-shield",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Fade97/satisfactory-logistics-map",
+      "duplicate"
+    ],
+    [
+      "https://github.com/findias/takt",
+      "duplicate"
+    ],
+    [
+      "https://github.com/Wilovy09/heartbeat",
+      "duplicate"
+    ],
+    [
+      "https://github.com/RxAi-Aus/amp",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/azaek/cntrl",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Claquettes/aubi",
+      "duplicate"
+    ],
+    [
+      "https://github.com/NimbleBrainInc/mpak",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/khannoussi-malek/PaperLab",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Mubder/kazma",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/Helltar/artific-intellig-bot",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/spirkaa/llm-homelab",
+      "ai-without-webui"
+    ],
+    [
+      "https://github.com/companionintelligence/Companion-Hub",
+      "ai-without-webui"
+    ]
+  ],
+  "selected": [
+    {
+      "url": "https://github.com/varenc/pax-app-bluetooth-server",
+      "score": 52.67,
+      "category": "Dashboard / Homelab",
+      "stars": 3,
+      "docker": false,
+      "compose": false,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "C",
+      "family": "dash_mon",
+      "fresh_gem": false,
+      "hook": "",
+      "topup": null,
+      "breakdown": {
+        "momentum": 6.36,
+        "liveliness": 7.0,
+        "traction": 2.11,
+        "polish": 17.2,
+        "selfhost_signal": 8.0,
+        "community": 0.0,
+        "youth": 2.0,
+        "maturity": 0.0,
+        "gem_balance": 2.0,
+        "product_cat": 2.0,
+        "product_family": 6.0
+      }
+    },
+    {
+      "url": "https://github.com/andyscuff/DenonDJ-Eaas-Server",
+      "score": 23.69,
+      "category": "Media / Streaming",
+      "stars": 19,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "media",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 13.0,
+        "v17 velocity": 1.7,
+        "v17 deploy": 3,
+        "v17 license": 2,
+        "v17 active": 1,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/syms-dev/panelarr",
+      "score": 22.33,
+      "category": "Media / Streaming",
+      "stars": 10,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "media",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 10.4,
+        "v17 velocity": 0.9,
+        "v17 deploy": 6,
+        "v17 release": 3,
+        "v17 license": 2
+      }
+    },
+    {
+      "url": "https://github.com/janlucaklees/yuzukam",
+      "score": 20.19,
+      "category": "Dashboard / Homelab",
+      "stars": 14,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dash_mon",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 11.8,
+        "v17 velocity": 0.4,
+        "v17 deploy": 6,
+        "v17 release": 3,
+        "v17 license": -4,
+        "v17 active": 1,
+        "v17 selfhost": 2
+      }
+    },
+    {
+      "url": "https://github.com/ttncode/music-assistant",
+      "score": 18.08,
+      "category": "Media / Streaming",
+      "stars": 7,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "media",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 9.0,
+        "v17 velocity": 1.0,
+        "v17 deploy": 6,
+        "v17 license": -4,
+        "v17 active": 3,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/spongehah/Openagent-Github-Bridge",
+      "score": 16.36,
+      "category": "AI / LLM",
+      "stars": 10,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "ai",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 10.4,
+        "v17 velocity": 0.9,
+        "v17 deploy": 6,
+        "v17 release": 3,
+        "v17 license": 2,
+        "v17 ai": -6
+      }
+    },
+    {
+      "url": "https://github.com/bacobjarton/Simple-Job-Search-Tracker",
+      "score": 15.7,
+      "category": "AI / LLM",
+      "stars": 9,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "ai",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 10.0,
+        "v17 velocity": 3.7,
+        "v17 deploy": 3,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 ai": -6
+      }
+    },
+    {
+      "url": "https://github.com/srware-net/LocalLightChat",
+      "score": 15.66,
+      "category": "AI / LLM",
+      "stars": 15,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "ai",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 12.0,
+        "v17 velocity": 1.6,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 license": -4,
+        "v17 active": 1,
+        "v17 ai": -6
+      }
+    },
+    {
+      "url": "https://github.com/dfface/epub-browser",
+      "score": 37.44,
+      "category": "Books / Reading / Library",
+      "stars": 9,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "documents",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 10.0,
+        "v17 velocity": 0.4,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 6,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/OpenMasjid-Solutions/OpenMasjidStudents",
+      "score": 33.81,
+      "category": "Finance / Budget",
+      "stars": 4,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "productivity",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 7.0,
+        "v17 velocity": 0.8,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 org": 2,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/Booyaka101/studio-os",
+      "score": 33.75,
+      "category": "Productivity / Tasks",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "productivity",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 0.7,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 6,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/SachinVenugopalan30/sous-clip",
+      "score": 33.58,
+      "category": "Health / Food / Fitness",
+      "stars": 7,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "home_health",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 9.0,
+        "v17 velocity": 0.6,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/Public-Vinyl-Radio/groovenet",
+      "score": 33.29,
+      "category": "Media / Streaming",
+      "stars": 7,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "media",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 9.0,
+        "v17 velocity": 0.3,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 org": 2,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/wungjyan/framefolio",
+      "score": 32.59,
+      "category": "Image / Design / Creative",
+      "stars": 4,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "media",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 7.0,
+        "v17 velocity": 1.6,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/drkokorev/Planly",
+      "score": 32.53,
+      "category": "Productivity / Tasks",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dev_web",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 1.5,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 6,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/Fristail27/vocab-bloom-hub",
+      "score": 31.96,
+      "category": "Education / Learning",
+      "stars": 9,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dev_web",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 10.0,
+        "v17 velocity": 1.0,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2
+      }
+    },
+    {
+      "url": "https://github.com/mfinelli/recueil",
+      "score": 31.75,
+      "category": "Notes / Knowledge",
+      "stars": 4,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "knowledge",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 7.0,
+        "v17 velocity": 0.8,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/tachyontec/pi-sd-monitor",
+      "score": 31.74,
+      "category": "Monitoring / Observability",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dash_mon",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 0.7,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 6,
+        "v17 license": 2,
+        "v17 active": 1,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/WallabyDesigns/gitmanager",
+      "score": 31.61,
+      "category": "Developer Tools / Utilities",
+      "stars": 7,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dev_web",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 9.0,
+        "v17 velocity": 0.6,
+        "v17 deploy": 6,
+        "v17 polish": 6,
+        "v17 org": 2,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/Dvorinka/cal",
+      "score": 31.53,
+      "category": "Productivity / Tasks",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "productivity",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 1.5,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/PierreEbele/cadenas",
+      "score": 31.53,
+      "category": "Developer Tools / Utilities",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dev_web",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 1.5,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/Vuln-SafeLab/HiTo",
+      "score": 31.39,
+      "category": "Maps / GIS / Location",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 1.4,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/reymooy27/infinite",
+      "score": 30.76,
+      "category": "Developer Tools / Utilities",
+      "stars": 7,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dev_web",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 9.0,
+        "v17 velocity": 0.7,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/cagatayuresin/observer-lite",
+      "score": 30.11,
+      "category": "Monitoring / Observability",
+      "stars": 6,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dash_mon",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 8.5,
+        "v17 velocity": 0.7,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/crstian19/tesdash",
+      "score": 29.94,
+      "category": "Media / Streaming",
+      "stars": 6,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "media",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 8.5,
+        "v17 velocity": 0.5,
+        "v17 deploy": 3,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/n30nex/CartoLite-Server",
+      "score": 29.9,
+      "category": "Maps / GIS / Location",
+      "stars": 4,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 7.0,
+        "v17 velocity": 1.9,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/dravcore/kurul",
+      "score": 29.89,
+      "category": "Productivity / Tasks",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "productivity",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 0.9,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 org": 2,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/at2software/talvis",
+      "score": 29.74,
+      "category": "CRM / Business",
+      "stars": 9,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dash_mon",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 10.0,
+        "v17 velocity": 0.7,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 active": 3
+      }
+    },
+    {
+      "url": "https://github.com/ThinkAI-Studio/hostdeck",
+      "score": 29.66,
+      "category": "Monitoring / Observability",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dash_mon",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 0.6,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 org": 2,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2
+      }
+    },
+    {
+      "url": "https://github.com/nomad4tech/backup-manager",
+      "score": 29.62,
+      "category": "Files / Storage / Backup",
+      "stars": 7,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "files",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 9.0,
+        "v17 velocity": 0.6,
+        "v17 deploy": 6,
+        "v17 release": 3,
+        "v17 polish": 6,
+        "v17 license": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/vahdamv0/wander",
+      "score": 29.53,
+      "category": "Maps / GIS / Location",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 1.5,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/ColeLundstrom/printshopcrm",
+      "score": 29.49,
+      "category": "CRM / Business",
+      "stars": 4,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "productivity",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 7.0,
+        "v17 velocity": 1.5,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2
+      }
+    },
+    {
+      "url": "https://github.com/joekhoobyar/autofile",
+      "score": 29.18,
+      "category": "Documents / PDF / Paperless",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "documents",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 1.2,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/GioMez/Iris",
+      "score": 28.97,
+      "category": "Documents / PDF / Paperless",
+      "stars": 7,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "documents",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 9.0,
+        "v17 velocity": 0.9,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/tdferreira/inboxbridge",
+      "score": 28.64,
+      "category": "Communication / Social",
+      "stars": 7,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "comms",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 9.0,
+        "v17 velocity": 0.6,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/paperkite-hq/stork",
+      "score": 28.62,
+      "category": "Security / Auth",
+      "stars": 7,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "security",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 9.0,
+        "v17 velocity": 0.6,
+        "v17 deploy": 6,
+        "v17 release": 3,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/emmertex/carbon",
+      "score": 28.54,
+      "category": "Productivity / Tasks",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "productivity",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 0.5,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/MarquesCoding/PolarHQ",
+      "score": 28.47,
+      "category": "Image / Design / Creative",
+      "stars": 5,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "media",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 7.8,
+        "v17 velocity": 0.7,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 active": 1,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/Ruchoir/ruchoir",
+      "score": 28.36,
+      "category": "Communication / Social",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "files",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 1.3,
+        "v17 deploy": 6,
+        "v17 polish": 3,
+        "v17 org": 2,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/ribato22/BillKu",
+      "score": 28.15,
+      "category": "Finance / Budget",
+      "stars": 5,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "productivity",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 7.8,
+        "v17 velocity": 0.4,
+        "v17 deploy": 6,
+        "v17 release": 3,
+        "v17 polish": 6,
+        "v17 license": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/drench44/family-hub",
+      "score": 27.99,
+      "category": "Home Automation / IoT",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "home_health",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 1.0,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/Mapalmeira/Moedeiro",
+      "score": 27.93,
+      "category": "Finance / Budget",
+      "stars": 4,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "productivity",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 7.0,
+        "v17 velocity": 1.9,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/stackopshq/ghostbit",
+      "score": 29.02,
+      "category": "Developer Tools / Utilities",
+      "stars": 6,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dev_web",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 8.5,
+        "v17 velocity": 0.6,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 6,
+        "v17 org": 2,
+        "v17 license": -4,
+        "v17 active": 3,
+        "v17 selfhost": 2
+      }
+    },
+    {
+      "url": "https://github.com/vul-os/diwan",
+      "score": 28.68,
+      "category": "Documents / PDF / Paperless",
+      "stars": 7,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "documents",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 9.0,
+        "v17 velocity": 0.6,
+        "v17 deploy": 3,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 org": 2,
+        "v17 license": 2,
+        "v17 active": 1,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/QuintixLabs/Relay",
+      "score": 28.3,
+      "category": "Dashboard / Homelab",
+      "stars": 8,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dash_mon",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 9.5,
+        "v17 velocity": 0.8,
+        "v17 deploy": 6,
+        "v17 release": 3,
+        "v17 polish": 3,
+        "v17 org": 2,
+        "v17 license": 2,
+        "v17 selfhost": 2
+      }
+    },
+    {
+      "url": "https://github.com/johnfmorton/upload-drive-in",
+      "score": 28.25,
+      "category": "Developer Tools / Utilities",
+      "stars": 7,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dev_web",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 9.0,
+        "v17 velocity": 0.2,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/BobbyLLM/pimaps",
+      "score": 27.93,
+      "category": "Maps / GIS / Location",
+      "stars": 4,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "other",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 7.0,
+        "v17 velocity": 1.9,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/Noqte-AI/scale-swarm",
+      "score": 27.56,
+      "category": "Monitoring / Observability",
+      "stars": 7,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dash_mon",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 9.0,
+        "v17 velocity": 0.5,
+        "v17 deploy": 6,
+        "v17 polish": 3,
+        "v17 org": 2,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2
+      }
+    },
+    {
+      "url": "https://github.com/ichwars/RailKeeper",
+      "score": 27.35,
+      "category": "Dashboard / Homelab",
+      "stars": 5,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dash_mon",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 7.8,
+        "v17 velocity": 0.6,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/youssef509/LoomDeploy",
+      "score": 27.06,
+      "category": "DevOps / Infra",
+      "stars": 9,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "devops",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 10.0,
+        "v17 velocity": 1.1,
+        "v17 deploy": 6,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    }
+  ],
+  "categoryDistribution": {
+    "Media / Streaming": 5,
+    "Productivity / Tasks": 5,
+    "Developer Tools / Utilities": 5,
+    "Dashboard / Homelab": 4,
+    "Monitoring / Observability": 4,
+    "Maps / GIS / Location": 4,
+    "AI / LLM": 3,
+    "Finance / Budget": 3,
+    "Documents / PDF / Paperless": 3,
+    "Image / Design / Creative": 2,
+    "CRM / Business": 2,
+    "Communication / Social": 2,
+    "Books / Reading / Library": 1,
+    "Health / Food / Fitness": 1,
+    "Education / Learning": 1,
+    "Notes / Knowledge": 1,
+    "Files / Storage / Backup": 1,
+    "Security / Auth": 1,
+    "Home Automation / IoT": 1,
+    "DevOps / Infra": 1
+  },
+  "scoreStats": {
+    "min": 15.66,
+    "max": 52.67,
+    "mean": 29.7
+  },
+  "dockerCount": 48,
+  "composeCount": 43,
+  "dockerfileOnlyCount": 5,
+  "freshCount": 0,
+  "shipProofCount": 50,
+  "tierA": 48,
+  "tierB": 0,
+  "tierC": 2,
+  "noProofRejected": 2,
+  "trendshiftFound": 165,
+  "trendshiftSeeded": 2,
+  "trendshiftSources": {
+    "daily": 2,
+    "monthly": 1,
+    "topic:document": 1,
+    "topic:self-hosted": 1,
+    "topic:workflow": 1,
+    "trending": 1,
+    "weekly": 1,
+    "yearly": 1
+  },
+  "benchSeeded": 66,
+  "benchSaved": 61,
+  "rejectCacheSize": 3629,
+  "rejectSkipped": 391,
+  "carrySaved": 61,
+  "nearMissSaved": 3,
+  "rejectCacheAfter": 3645,
+  "sweepSeconds": 136.7,
+  "confirmSeconds": 8.3,
+  "topupAdded": 0,
+  "topupFamilies": {},
+  "qualityScreen": {
+    "checked": 50,
+    "dropped": [
+      {
+        "repo": "Twigpine/node",
+        "why": "renamed-copy-of-published"
+      },
+      {
+        "repo": "PrimePoobah/Pi-hole-Blocklist-Catalog",
+        "why": "built-on-other-app"
+      },
+      {
+        "repo": "SiroxCW/Jellyfin-AniWorld-Downloader",
+        "why": "plugin-for-other-app"
+      },
+      {
+        "repo": "lubaskinc0de/beatstash",
+        "why": "built-on-other-app"
+      },
+      {
+        "repo": "uptimy/agent",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "truenas/apps",
+        "why": "built-on-other-app"
+      },
+      {
+        "repo": "DnzzL/notara",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "visualfusion/feedkeeper",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "Renzodef/tankarr",
+        "why": "plugin-for-other-app"
+      },
+      {
+        "repo": "DerKezorm/nexlore",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "niels-emmer/profile-page",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "Star-Trowa/StarBookOrbit",
+        "why": "native-client"
+      },
+      {
+        "repo": "ali-rajabpour/ZoDAV",
+        "why": "built-on-other-app"
+      },
+      {
+        "repo": "renefichtmueller/PaperCortex",
+        "why": "mcp-server"
+      },
+      {
+        "repo": "heyitsmiike101/mantel",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "junkerderprovinz/knightloader",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "tbckr/lucid",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "remageht/HushDrop",
+        "why": "not-english-readable"
+      },
+      {
+        "repo": "samuelrubiodev/deepseek-harness-community",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "santosh-kafle/prometheus-grafana-monitoring",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "Abhi-Subedi/LocalDrop",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "firsttris/haul",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "OwnzZzZ/Unshacklarr",
+        "why": "built-on-other-app"
+      },
+      {
+        "repo": "jstuart0/agentpulse",
+        "why": "mcp-server"
+      },
+      {
+        "repo": "reactive-resume/reactive-resume",
+        "why": "renamed-copy-of-published"
+      },
+      {
+        "repo": "junkerderprovinz/garage",
+        "why": "built-on-other-app"
+      },
+      {
+        "repo": "brspoon/keep",
+        "why": "built-on-other-app"
+      },
+      {
+        "repo": "BenGhosti/starlink-monitor",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "mforce/cluckwork",
+        "why": "trading-crypto"
+      },
+      {
+        "repo": "GeiserX/genieacs-ha",
+        "why": "plugin-for-other-app"
+      },
+      {
+        "repo": "tubepresscms/tubepress",
+        "why": "adult-content"
+      },
+      {
+        "repo": "drumandbytes/momentarr",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "jangviktor-web/NiuCap",
+        "why": "not-english-readable"
+      },
+      {
+        "repo": "chaynik-kun/mizu",
+        "why": "client-for-other-app"
+      },
+      {
+        "repo": "tallica/lazyincus",
+        "why": "terminal-app"
+      },
+      {
+        "repo": "TheShulksUp/offlineyt",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "yzyworks-com-acc1/starkill",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "githubixx/ansible-role-docker",
+        "why": "no-web-app-intent"
+      },
+      {
+        "repo": "larkinwc/proxmox-lxc-compose",
+        "why": "no-web-app-intent"
+      },
+      {
+        "repo": "Erreur32/homeassistant-dozzle",
+        "why": "ai-without-web-ui"
+      },
+      {
+        "repo": "ssullivan/nifi-docker-compose",
+        "why": "no-web-app-intent"
+      },
+      {
+        "repo": "nulcell/homecloud",
+        "why": "personal-setup"
+      },
+      {
+        "repo": "w3arise/blockchain-rpc-nodes",
+        "why": "packaging-of-other-app"
+      },
+      {
+        "repo": "Melle79/nupplo",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "7sh1d0w7x/linux-doctor",
+        "why": "renamed-copy-of-published"
+      },
+      {
+        "repo": "GovindSingh9447/docker-log-viewer-packages",
+        "why": "too-few-stars (<3)"
+      },
+      {
+        "repo": "yourhomelab-guide/yourhomelab",
+        "why": "packaging-of-other-app"
+      },
+      {
+        "repo": "ibrahimhates/iskele",
+        "why": "too-few-stars (<3)"
+      }
+    ]
+  },
+  "topUp": {
+    "from": "v17",
+    "needed": 48,
+    "added": 48,
+    "starFloors": [
+      20,
+      10,
+      5
+    ],
+    "repos": [
+      "andyscuff/DenonDJ-Eaas-Server",
+      "syms-dev/panelarr",
+      "reloadlife/astrisk-web-ui",
+      "janlucaklees/yuzukam",
+      "ttncode/music-assistant",
+      "spongehah/Openagent-Github-Bridge",
+      "bacobjarton/Simple-Job-Search-Tracker",
+      "srware-net/LocalLightChat",
+      "dfface/epub-browser",
+      "OpenMasjid-Solutions/OpenMasjidStudents",
+      "Booyaka101/studio-os",
+      "SachinVenugopalan30/sous-clip",
+      "Public-Vinyl-Radio/groovenet",
+      "getknit/spool",
+      "wungjyan/framefolio",
+      "drkokorev/Planly",
+      "Fristail27/vocab-bloom-hub",
+      "mfinelli/recueil",
+      "tachyontec/pi-sd-monitor",
+      "WallabyDesigns/gitmanager",
+      "Sounio-lang/sounio",
+      "Dvorinka/cal",
+      "beerjunky/invoiceninja-belegimport",
+      "PierreEbele/cadenas",
+      "Vuln-SafeLab/HiTo",
+      "financerto/financerto-app",
+      "reymooy27/infinite",
+      "Rudra-Office/Rudra-Editor",
+      "cagatayuresin/observer-lite",
+      "crstian19/tesdash",
+      "n30nex/CartoLite-Server",
+      "dravcore/kurul",
+      "at2software/talvis",
+      "ThinkAI-Studio/hostdeck",
+      "nomad4tech/backup-manager",
+      "vahdamv0/wander",
+      "ColeLundstrom/printshopcrm",
+      "joekhoobyar/autofile",
+      "GioMez/Iris",
+      "MengMengCode/Meteor-History",
+      "tdferreira/inboxbridge",
+      "paperkite-hq/stork",
+      "emmertex/carbon",
+      "MarquesCoding/PolarHQ",
+      "Ruchoir/ruchoir",
+      "ribato22/BillKu",
+      "drench44/family-hub",
+      "Mapalmeira/Moedeiro"
+    ],
+    "laneSeen": 13515,
+    "lanePassing": 502,
+    "seconds": 281.3
+  },
+  "familyDistribution": {
+    "dash_mon": 9,
+    "productivity": 9,
+    "media": 8,
+    "documents": 5,
+    "dev_web": 5,
+    "other": 4,
+    "ai": 3,
+    "home_health": 2,
+    "files": 2,
+    "knowledge": 1,
+    "comms": 1,
+    "security": 1
+  },
+  "familyFloorShortfall": {
+    "files": {
+      "floor": 3,
+      "got": 2
+    },
+    "knowledge": {
+      "floor": 3,
+      "got": 1
+    },
+    "bookmarks_rss": {
+      "floor": 2,
+      "got": 0
+    },
+    "proxy_net": {
+      "floor": 1,
+      "got": 0
+    },
+    "db_light": {
+      "floor": 1,
+      "got": 0
+    },
+    "sports": {
+      "floor": 1,
+      "got": 0
+    },
+    "cms": {
+      "floor": 1,
+      "got": 0
+    }
+  },
+  "confirmedPoolDepth": 63,
+  "selectionHeadroom": 1.26,
+  "timingSeconds": 426.8,
+  "repair": {
+    "at": "2026-10-04T02:27:24+00:00",
+    "dropped": [
+      {
+        "repo": "calebgab/Home-Assistant-Family-Panel",
+        "why": "built-on-other-app"
+      }
+    ],
+    "added": [
+      "youssef509/LoomDeploy"
+    ],
+    "recategorized": [
+      {
+        "repo": "Ruchoir/ruchoir",
+        "from": "Files / Storage / Backup",
+        "to": "Communication / Social"
+      }
+    ],
+    "topUp": {
+      "from": "v17",
+      "needed": 1,
+      "added": 1,
+      "starFloors": [
+        10,
+        5
+      ],
+      "repos": [
+        "youssef509/LoomDeploy"
+      ],
+      "laneSeen": 11377,
+      "lanePassing": 442,
+      "seconds": 192.8
+    }
+  }
+}

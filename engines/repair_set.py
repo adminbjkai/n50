@@ -30,6 +30,17 @@ import v17  # noqa: E402
 v1 = v17.v1
 
 
+def _server_publishing():
+    """True when the n50 server reports an active publish (it shares the tracker and CSV)."""
+    import urllib.request
+    try:
+        with urllib.request.urlopen("http://127.0.0.1:8055/api/overview", timeout=5) as r:
+            run = json.loads(r.read()).get("run") or {}
+        return bool(run.get("active") and run.get("mode") == "publish")
+    except Exception:  # noqa: BLE001 — server down means nothing is publishing through it
+        return False
+
+
 def load_set(n):
     tracker = json.loads(v1.TRACKER.read_text())
     entries = [p for p in tracker["completedPages"] if p.get("setNum") == n]
@@ -127,6 +138,8 @@ def main():
     args = ap.parse_args()
     if not v17.v16.GH_TOKEN:
         raise SystemExit("no GitHub token (gh auth login or GH_TOKEN)")
+    if args.apply and _server_publishing():
+        raise SystemExit("[repair] a publish is running on the n50 server; try again when it finishes.")
     now = datetime.now(timezone.utc)
     n = args.set
     tracker, entry, engine, audit_path, audit, rows = load_set(n)
@@ -173,6 +186,9 @@ def main():
     print(f"[repair] Notion page rewritten ({len(old)} old blocks removed, {len(blocks)} added)")
 
     urls = [c["repo"]["html_url"] for c in final] if engine != "v17" else [r["html_url"] for r in final_rows]
+    # Re-read right before writing: a publish may have finished while this repair ran.
+    tracker = json.loads(v1.TRACKER.read_text())
+    entry = next(p for p in tracker["completedPages"] if p.get("setNum") == n)
     entry["repos"] = urls
     entry["count"] = len(urls)
     entry["repaired"] = now.strftime("%Y-%m-%d")
