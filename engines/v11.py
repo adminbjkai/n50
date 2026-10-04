@@ -1427,6 +1427,7 @@ def page_blocks(set_num, selected):
     dist_line = " · ".join(f"{k} ({v})" for k, v in sorted(dist.items(), key=lambda kv: -kv[1]))
     docker_n = sum(1 for c in selected if c["docker"])
     fresh_n = sum(1 for c in selected if c.get("fresh_gem"))
+    topup_n = sum(1 for c in selected if c.get("topup"))
     blocks = [
         {"object": "block", "type": "paragraph", "paragraph": {"rich_text": [v1.rt(
             f"Set {set_num}: 50 self-hosted open-source apps, curated for quality and "
@@ -1434,9 +1435,11 @@ def page_blocks(set_num, selected):
             "repo was scored on momentum, recent activity, polish, self-host signal, "
             f"youth bonus and hidden-gem balance, then diversified across categories. "
             f"{docker_n} of 50 ship a Docker/compose file. {fresh_n} of 50 are fresh gems "
-            "(newly discovered, <100 stars or <6 months old). Each entry below shows its "
+            "(newly discovered: under 100 stars or under 6 months old). Each entry below shows its "
             "appeal score and the main pluses (▲) and minuses (▼) behind it. "
-            "All confirmed live via the GitHub API."
+            + (f"{topup_n} of {len(selected)} picks came from the v17 top-up lane and "
+               "carry v17 interest scores. " if topup_n else "")
+            + "All confirmed live via the GitHub API."
         )]}},
         {"object": "block", "type": "paragraph", "paragraph": {"rich_text": [
             v1.rt("Category mix: ", bold=True), v1.rt(dist_line or "—")]}},
@@ -1445,6 +1448,8 @@ def page_blocks(set_num, selected):
     for c in selected:
         repo = c["repo"]
         desc = repo.get("description") or "Open-source self-hostable project."
+        if len(desc) > 340:
+            desc = desc[:339].rstrip() + "…"
         hook = (c.get("enrich") or {}).get("interest_hook", "")
         topics = ", ".join(repo.get("topics", [])[:6]) or "no topics"
         badge = " 🐳" if c["docker"] else ""
@@ -1455,7 +1460,7 @@ def page_blocks(set_num, selected):
         details = (
             f" — [{c['category']}]{badge}{star}{fresh} {repo.get('language') or 'Unknown'} — {desc[:340]}{tail} "
             f"(★ {repo.get('stargazers_count', 0):,}; updated {repo.get('pushed_at', '')[:10]}; "
-            f"appeal {c['score']:.0f} · {comp}; topics: {topics})"
+            f"{'v17 interest' if c.get('topup') else 'appeal'} {c['score']:.0f} · {comp}; topics: {topics})"
         )
         blocks.append({"object": "block", "type": "numbered_list_item",
                        "numbered_list_item": {"rich_text": [

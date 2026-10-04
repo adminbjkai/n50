@@ -23,7 +23,7 @@ import time
 from datetime import datetime, timezone
 from types import SimpleNamespace
 
-HOOK = "added by the v17 top-up lane (score is v17 interest)"
+HOOK = "added by the v17 top-up lane"
 
 
 def _owner(full_name):

@@ -302,6 +302,8 @@ JUNK = [
     (r"\b(starter|boilerplate|template|scaffold|example|sample|demo|tutorial|course|workshop|homework|assignment|learning)\b( (app|project|repo|for|of|to))", "template-or-learning"),
     (r"\bawesome\b.*\b(list|collection)\b|\bcurated list\b", "list"),
     (r"\bmcp server\b|\bmodel context protocol\b", "mcp-server"),
+    (r"\b(library|sdk|framework)\s+for\s+(production\s+)?(llm|ai|agents?|python|typescript|javascript|node(\.js)?|go|rust|react|vue)\b", "library-or-sdk"),
+    (r"\bagent (runtime|harness|sandbox|stack|infrastructure|framework)\b|\bdocker sandbox\b|\b[\d,]+\+? tool integrations\b|\bmemory (layer|system|api|store) for (ai )?agents?\b", "agent-infrastructure"),
     (r"\bmulti[- ]account|\baccounts? (manager|management|farm)|\bauto(matic)? ?(sign[- ]?in|check[- ]?in)|签到|\bfree[- ]tier (farm|abuse)", "account-farming"),
     (r"\b(gamma exposure|options (flow|chain)|stock|stocks|forex|trading|trader|trade journal|broker sync|portfolio tracker for (crypto|stocks))\b", "trading-crypto"),
     (r"\b(serving kit|inference (kit|stack) for|exl[23])\b", "model-serving-kit"),
@@ -423,7 +425,11 @@ def interest_score(repo, now, curated=None):
 
 
 CATEGORY_OVERRIDES = [
-    (r"\b(blog|blogging|cms|website builder)\b", "CMS / Website"),
+    (r"\b(crm|help ?desk|support desk|ticketing)\b", "CRM / Business"),
+    (r"\b(fitness|workout|strength[- ]training|sleep tracking|fitbit|habit tracker|health tracker)\b", "Health / Food / Fitness"),
+    (r"\b(time[- ]tracking|time tracker|timesheets?|to-?do|task manager|pomodoro|vehicle|car maintenance|home inventory|household)\b", "Productivity / Tasks"),
+    (r"\b(voice assistant|replacement for siri|alexa|smart[- ]home|home automation)\b", "Home Automation / IoT"),
+    (r"\b(blog|blogging|cms|website builder|publishing platform|static site)\b", "CMS / Website"),
     (r"\b(web analytics|product analytics|analytics)\b", "Analytics / Data"),
     (r"\b(gps|gpx|maps?|geospatial|location|travel|trip)\b", "Maps / GIS / Location"),
     (r"\b(photo|photos|gallery|image hosting)\b", "Image / Design / Creative"),
@@ -729,15 +735,22 @@ def page_blocks(set_num, picked, stats):
         dist[r["_cat"]] = dist.get(r["_cat"], 0) + 1
     dist_line = " · ".join(f"{k} ({v})" for k, v in sorted(dist.items(), key=lambda kv: -kv[1]))
     compose_n = sum(1 for r in picked if r["compose"])
+    docker_n = sum(1 for r in picked if r["compose"] or r["dockerfile"])
+    ai_n = sum(1 for r in picked if is_ai(r))
     stars_med = sorted(r["stargazers_count"] for r in picked)[len(picked) // 2] if picked else 0
+    proof = (f"Every pick ships a Dockerfile or compose file ({compose_n} with compose)"
+             if docker_n == len(picked) else
+             f"{docker_n} of {len(picked)} ship a Dockerfile or compose file ({compose_n} with compose) "
+             "and the rest are listed on awesome-selfhosted")
     blocks = [
         {"object": "block", "type": "paragraph", "paragraph": {"rich_text": [v1.rt(
             f"Set {set_num}: {len(picked)} self-hosted open-source web apps (v17 smart curation). "
-            f"Every pick ships a Dockerfile or compose file ({compose_n} with compose), has at least "
-            f"{MIN_STARS_YOUNG}–{MIN_STARS} real stars (median ★ {_fmt_k(stars_med)}), was pushed in the "
-            f"last {MAX_PUSH_AGE_DAYS // 30} months, and passed a junk gate (no plugins, clients, "
-            "Helm charts, bots, game-server wrappers or AI-account proxies). One repo per owner. "
-            f"Ranked by interest: popularity, momentum (★/month), releases and polish. "
+            f"{proof}. Each has at least {MIN_STARS_YOUNG} real stars if under {YOUNG_DAYS} days "
+            f"old, otherwise {MIN_STARS} (median ★ {_fmt_k(stars_med)}), was pushed in the last "
+            f"{MAX_PUSH_AGE_DAYS // 30} months, and passed a junk gate (no plugins or add-ons for "
+            "other apps, clients, Helm charts, bots, game-server wrappers or AI-account proxies). "
+            f"One repo per owner; {ai_n} AI {'pick' if ai_n == 1 else 'picks'}, each with a web UI. "
+            "Ranked by interest: popularity, momentum (★/month), releases and polish. "
             f"Screened {stats['unused']} unused candidates from {stats['seen']} search hits.")]}},
         {"object": "block", "type": "paragraph", "paragraph": {"rich_text": [
             v1.rt("Category mix: ", bold=True), v1.rt(dist_line or "—")]}},
@@ -750,8 +763,9 @@ def page_blocks(set_num, picked, stats):
         vel = r["stargazers_count"] / age_mo
         flags = (" 🐳" if r["compose"] or r["dockerfile"] else "") + (" 🏷️" if r["releases"] else "")
         home = f" · {r['homepage']}" if r["homepage"] and "github.com" not in r["homepage"] else ""
+        desc = r["description"] if len(r["description"]) <= 340 else r["description"][:339].rstrip() + "…"
         details = (
-            f" — [{r['_cat']}]{flags} {r.get('language') or 'Unknown'} — {r['description'][:340]} "
+            f" — [{r['_cat']}]{flags} {r.get('language') or 'Unknown'} — {desc} "
             f"(★ {r['stargazers_count']:,} · ~{vel:.0f}★/mo · updated {(r['pushed_at'] or '')[:10]}"
             f" · interest {r['_score']:.0f}{home}; topics: {', '.join(r['topics'][:6]) or '—'})"
         )
@@ -816,6 +830,9 @@ def self_test():
         (mk("w/cd", "Self-hosted CD ripper and music library web app"), None),
         (mk("w/llm", "Self-hosted LLM chat web UI that supports GGUF models"), None),
         (mk("w/chess", "Self-hosted chess server web app with dedicated servers support"), None),
+        (mk("x/hitl", "Open source human-in-the-loop library for production LLM agents with a web dashboard"), "library-or-sdk"),
+        (mk("x/eve", "The whole stack on your machine: a Docker sandbox, memory, 1,070 tool integrations, and a dashboard"), "agent-infrastructure"),
+        (mk("w/lib", "Self-hosted library for your ebooks and comics with a web reader"), None),
         (mk("p/cjk", "知归是一个面向个人使用的 AI 知识归档工具，把内容链接发送给机器人 GitHub web app"), "not-english-readable"),
     ]
     ok = True
@@ -859,6 +876,16 @@ def self_test():
     t = len(build_query_plan(now)) > 60
     ok &= t
     print(f"  {'ok ' if t else 'FAIL'} query plan size {len(build_query_plan(now))}")
+    for desc, want in [("Self-hosted, chat-style support desk", "CRM / Business"),
+                       ("Self-hosted strength-training analytics with sleep tracking", "Health / Food / Fitness"),
+                       ("Self-hosted minimal time tracking.", "Productivity / Tasks"),
+                       ("Self-hosted vehicle management and maintenance tracking platform", "Productivity / Tasks"),
+                       ("A fully local, self-hosted replacement for Siri and Alexa with smart-home control", "Home Automation / IoT"),
+                       ("A modern open-source publishing platform built with Go", "CMS / Website")]:
+        got = categorize(mk("c/c", desc))
+        t = got == want
+        ok &= t
+        print(f"  {'ok ' if t else 'FAIL'} category {desc[:40]!r} -> {got}")
     print("SELF-TEST", "ALL PASSED" if ok else "FAILED")
     return ok
 
