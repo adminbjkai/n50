@@ -1371,10 +1371,10 @@ def select_set(tracker, live_titles, args):
                                           is_ai_cat=lambda c: c.get("hcat") == "AI / LLM",
                                           cat_cap=getattr(args, "cat_cap", None))
     if len(selected) != 50:
-        raise RuntimeError(
-            f"Only {len(selected)} repos scored >= --min-score {args.min_score} "
-            f"(confirmed pool {len(confirmed)}). Widen the search "
-            f"(--target-fresh/--max-pages) or lower --min-score.")
+        raise SystemExit(
+            f"[{VERSION}] only {len(selected)} clean picks after the quality screen and the "
+            f"v17 top-up lane (need 50); nothing was written. Few unpublished apps clear "
+            f"the bar right now; try another engine or run again later.")
 
     for c in selected:
         e = c.get("enrich") or {}

@@ -1159,7 +1159,7 @@
     {
       "url": "https://github.com/mortaljinx/pagerr",
       "score": 25.3,
-      "category": "Networking / VPN",
+      "category": "Dashboard / Homelab",
       "stars": 19,
       "docker": true,
       "compose": true,
@@ -1350,7 +1350,7 @@
     }
   ],
   "categoryDistribution": {
-    "Dashboard / Homelab": 5,
+    "Dashboard / Homelab": 6,
     "Monitoring / Observability": 4,
     "Media / Streaming": 4,
     "Files / Storage / Backup": 4,
@@ -1358,10 +1358,10 @@
     "Analytics / Data": 4,
     "Security / Auth": 3,
     "AI / LLM": 3,
-    "Networking / VPN": 3,
     "Books / Reading / Library": 3,
     "Communication / Social": 2,
     "Developer Tools / Utilities": 2,
+    "Networking / VPN": 2,
     "Documents / PDF / Paperless": 2,
     "Maps / GIS / Location": 1,
     "Automation": 1,
@@ -1659,39 +1659,14 @@
   "selectionHeadroom": 1.24,
   "timingSeconds": 297.7,
   "repair": {
-    "at": "2026-10-04T02:26:12+00:00",
+    "at": "2026-10-04T02:54:15+00:00",
     "dropped": [],
     "added": [],
     "recategorized": [
       {
-        "repo": "hunanjay/friday",
-        "from": "Analytics / Data",
-        "to": "AI / LLM"
-      },
-      {
-        "repo": "twpro8/lumiere",
-        "from": "Media / Streaming",
-        "to": "Communication / Social"
-      },
-      {
-        "repo": "yassinebenameur/probara",
-        "from": "Maps / GIS / Location",
-        "to": "Monitoring / Observability"
-      },
-      {
-        "repo": "wagga40/LogsTotal",
-        "from": "Monitoring / Observability",
-        "to": "Security / Auth"
-      },
-      {
-        "repo": "Mattboxx/Clipboard-Bridge",
+        "repo": "mortaljinx/pagerr",
         "from": "Networking / VPN",
-        "to": "Files / Storage / Backup"
-      },
-      {
-        "repo": "Ha22yX/VaultBridge",
-        "from": "Developer Tools / Utilities",
-        "to": "Files / Storage / Backup"
+        "to": "Dashboard / Homelab"
       }
     ],
     "topUp": null

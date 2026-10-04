@@ -2793,11 +2793,10 @@ def select_set(tracker, live_titles, args):
             print(f"[{VERSION}] WARN: shipping {len(selected)}/{target_n} "
                   f"(unused discovery pool thin after {len(used)} used URLs)")
         else:
-            raise RuntimeError(
-                f"Only {len(selected)} proof-passing repos scored >= --min-score {args.min_score} "
-                f"(confirmed pool {len(confirmed)}, A∪B available="
-                f"{sum(1 for c in confirmed if c.get('proof_tier') in ('A','B'))}). "
-                f"Need {target_n}. Widen search or lower --min-score.")
+            raise SystemExit(
+                f"[{VERSION}] only {len(selected)} clean picks after the quality screen and the "
+                f"v17 top-up lane (need {target_n}); nothing was written. Few unpublished apps clear "
+                f"the bar right now; try another engine or run again later.")
     ab_n = sum(1 for c in selected if c.get("proof_tier") in ("A", "B"))  # after any top-up
     min_ab = max(1, int(round(MIN_AB_FRAC * target_n)))
     if ab_n < min_ab:

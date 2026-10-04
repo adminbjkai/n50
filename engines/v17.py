@@ -303,7 +303,7 @@ JUNK = [
     (r"\bdedicated server\b|\bfor [\w ]{0,30}dedicated servers\b|\bgame server (for|of)\b|\bserver for (minecraft|palworld|valheim|ark|rust|terraria)", "game-server-wrapper"),
     (r"\b(discord|telegram|slack|whatsapp|twitch|feishu|lark|wechat|dingtalk|qq)\b.{0,30}\bbot\b|\bbot for (discord|telegram|slack|feishu)", "chat-bot"),
     (r"\bprivate servers?\b|\bgame servers?\b.{0,40}\b(minecraft|valheim|palworld|terraria|factorio|cs2|ark)\b", "game-server-wrapper"),
-    (r"\bfor use alongside\b|\bcompanion (tool|app|service) (for|to)\b", "companion-for-other-app"),
+    (r"\b(browser-based |web )client for (?!your\b)[\w.-]+|\bfor use alongside\b|\bcompanion (tool|app|service) (for|to)\b", "companion-for-other-app"),
     (r"2api\b|\bto[- ]?api\b|account pool|\b(ai |llm )?subscription pool|reverse[- ]proxy for (chatgpt|claude|openai|gemini|codex|cursor|kiro|grok|copilot)|\b(chatgpt|claude|gemini|codex|kiro|grok|copilot|cursor) (account|api) (proxy|pool|gateway)", "ai-account-proxy"),
     (r"\b(trading bot|crypto|binance|bybit|coinbase|airdrop|memecoin|defi|quant(itative)? trading|stock pick|arbitrage|mev)\b", "trading-crypto"),
     (r"\b(readme|github) (stats|profile|streak)|\bstats cards?\b|\bsvg cards?\b|profile readme", "github-vanity"),
@@ -327,7 +327,8 @@ JUNK = [
     (r"\b(gamma exposure|options (flow|chain)|stock|stocks|forex|trading|trader|trade journal|broker sync|portfolio tracker for (crypto|stocks))\b", "trading-crypto"),
     (r"\b(serving kit|inference (kit|stack) for|exl[23])\b", "model-serving-kit"),
     (r"\b(sidecar|addons?|add-ons?)\b", "addon-or-companion"),
-    (r"\b(device|phone|iphone) farm\b|\bfarm of (real )?(iphones|phones|devices)\b|\btraffic distribution system\b|\blead[- ]gen|\bfinds? (the )?people\b|\bcold (email|outreach)|\bgrowth hack", "growth-or-device-farm"),
+    (r"\b(device|phone|iphone) farm\b|\bfarm of (real )?(iphones|phones|devices)\b|\btraffic distribution system\b|\blead[- ]gen|\blead (sourcing|generation|scraping|enrichment)\b|\bclay\.com\b|\bfinds? (the )?people\b|\bcold (email|outreach)|\bgrowth hack", "growth-or-device-farm"),
+    (r"\binstall(ation)? (config|configuration|files?) for\b|\bconfig only\b", "packaging-of-other-app"),
     (r"\bone[- ](shot|command|click)\s+(docker\s+)?(install|deploy|setup|self-hosting)\w*\s+(of|for)\b|\b(docker )?self-hosting for the\b|\bdocker (deployment|setup|installer) for\b", "packaging-of-other-app"),
     (r"\b(dashboard|ui|frontend|manager|portal|panel)\s+for\s+(your\s+)?(self-hosted\s+)?[\w.-]+\s+instances?\b", "companion-for-other-app"),
     (r"\bcold[- ]call\w*|\b(power|auto|predictive|progressive)[- ]?dialer\b|\bauto(matically)?[- ]?(view|like|follow)(s|ing|er)?\b", "growth-or-device-farm"),
@@ -383,7 +384,7 @@ HOST_APPS = re.compile(r"\b(jellyfin|plex|emby|navidrome|subsonic|immich|nextclo
                        r"authentik|pi-hole|adguard|unraid|truenas|proxmox|portainer|n8n|firefly(?: iii)?|"
                        r"coolify|headscale|twenty crm|firecrawl|frigate|ghost|wordpress|photoprism|lancache|"
                        r"bazarr|qbittorrent|transmission|deluge|maintainerr|tautulli|rustdesk|asterisk|"
-                       r"freeswitch|invoice ninja)\b", re.I)
+                       r"freeswitch|invoice ninja|linkding|actual budget|unifi|hermes agent|instapaper)\b", re.I)
 # Companion tools for the *arr stack and torrent clients, whatever their topics say.
 ARR_TOOLS = re.compile(r"\b(sonarr|radarr|lidarr|prowlarr|readarr|bazarr|qbittorrent|transmission|deluge|"
                        r"maintainerr|tautulli|overseerr|jellyseerr)\b", re.I)
@@ -401,7 +402,7 @@ ANALOGY = re.compile(HOST_APPS.pattern + r"(\s*/\s*[\w-]+)?\s+for\s+(games|books
 # repo carries a media-server/alternative topic.
 BUILT_ON = re.compile(r"\b(for|on top of|powered by|built on|integrat\w* with|companion to)\s+"
                       r"(every\s+|your\s+|all\s+|self-hosted\s+)?" + HOST_APPS.pattern[2:], re.I)
-TERMINAL = re.compile(r"\b(tui|terminal ui|terminal user interface)\b", re.I)
+TERMINAL = re.compile(r"\b(tui|terminal ui|terminal user interface|command[- ]line|cli tool)\b", re.I)
 
 
 def gate(repo, now, curated=False, light=False):
@@ -427,6 +428,9 @@ def gate(repo, now, curated=False, light=False):
             return why
     if re.match(r"(an? |the )?(mcp|model context protocol) server\b", desc, re.I):
         return "mcp-server"
+    if re.match(r"(asp\.net( core)?|laravel|django|rails|react|vue|angular|express|flask|fastapi|spring boot)\s*[-–—:]",
+                desc, re.I):
+        return "library-or-sdk"   # "ASP.NET Core - helper for …": a framework add-on
     if not ALT_TO.search(desc) and not ANALOGY.search(desc) and (
             BUILT_ON.search(desc) or (HOST_APPS.search(desc) and not COMPAT.search(desc) and not
                                       {t.lower() for t in repo["topics"]} & {"media-server", "alternative"})):
@@ -477,7 +481,10 @@ def interest_score(repo, now, curated=None):
 
 CATEGORY_OVERRIDES = [
     (r"\b(crm|help ?desk|support desk|ticketing|customer (service|support))\b", "CRM / Business"),
-    (r"\b(epub|ebooks?|ebook reader|audiobooks?)\b", "Books / Reading / Library"),
+    (r"\b(epub|ebooks?|ebook reader|audiobooks?|book library|fb2|opds|calibre)\b", "Books / Reading / Library"),
+    (r"\b(radio (server|station)|internet radio|music player|podcasts?)\b", "Media / Streaming"),
+    (r"\b(markdown notes|note-taking|notes app|knowledge base|wiki)\b", "Notes / Knowledge"),
+    (r"\b(dashboard (application|app) for your|dashboard for your (containers|services|apps|homelab))\b", "Dashboard / Homelab"),
     (r"\b(photography|portfolio|photo (browser|management|manager)|stl|3mf|3d models?)\b", "Image / Design / Creative"),
     (r"\b(document management|paperless)\b", "Documents / PDF / Paperless"),
     (r"\b(period|menstrual|fertility|cycle tracking|intimacy tracking)\b", "Health / Food / Fitness"),
@@ -499,7 +506,7 @@ CATEGORY_OVERRIDES = [
     (r"\b(virtual tabletop|vtt|tabletop|ttrpg|board games?|dungeons?|arcade|retro games?|game (library|saves?|servers?))\b", "Gaming / Game Servers"),
     (r"\b(osint|threat intel\w*|siem|sigma detection|red team)\b", "Security / Auth"),
     (r"\b(crm|help ?desk|support desk|ticketing)\b", "CRM / Business"),
-    (r"\b(fitness|workout|strength[- ]training|sleep tracking|fitbit|habit tracker|health tracker)\b", "Health / Food / Fitness"),
+    (r"\b(fitness|workout|strength[- ]training|sleep tracking|fitbit|habit tracker|health tracker|wellness|nutrition|longevity)\b", "Health / Food / Fitness"),
     (r"\b(time[- ]tracking|time tracker|timesheets?|to-?do|task manager|pomodoro|vehicle|car maintenance|home inventory|household)\b", "Productivity / Tasks"),
     (r"\b(voice assistant|replacement for siri|alexa|smart[- ]home|home automation)\b", "Home Automation / IoT"),
     (r"\b(blog|blogging|cms|website builder|publishing platform|static site)\b", "CMS / Website"),
@@ -995,6 +1002,12 @@ def self_test():
         (mk("u/pt", "Controle financeiro pessoal e familiar self-hosted: renda, despesas, cartões, metas"), "not-english-readable"),
         (mk("u/en", "Self-hosted minimal time tracking."), None),
         (mk("u/ha", "A self-hosted family dashboard built on Home Assistant API, works with any calendar"), "built-on-other-app"),
+        (mk("w/lead", "Open-source, self-hosted alternative to Clay.com for lead sourcing and enrichment"), "growth-or-device-farm"),
+        (mk("w/octi", "Browser-based client for Octi: A multi-device manager."), "companion-for-other-app"),
+        (mk("w/arm", "Install configuration for self-hosted ArmoryHub. Config only, the image is private"), "packaging-of-other-app"),
+        (mk("w/asp", "ASP.NET Core - Transform server-side validations to client-side without JavaScript"), "library-or-sdk"),
+        (mk("w/cli", "Command line server and client for webhooks deliveries"), "terminal-app"),
+        (mk("w/sync", "Service to sync transactions to Actual Budget"), "built-on-other-app"),
         (mk("v/spot", "Self-hosted personal music server with Spotify ingest"), "scraper-or-shady"),
         (mk("v/alt", "Open-source alternative to Intercom and Linear. Support, projects, CRM", topics=()), None),
         (mk("v/ytdlp", "Production-ready REST API for video downloads and metadata extraction using yt-dlp"), "component-or-dev-tool"),

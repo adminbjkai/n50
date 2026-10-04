@@ -77,3 +77,9 @@ CSV, Notion, no reuse, no duplicate owners) + reading every line.
   categorization; star-ladder memory. All of 494–498 re-checked under final rules.
 - Lesson: `pkill -f <pattern>` kills the calling shell when the pattern is in its command
   line — use `ps -eo pid,args | grep "^..."` and kill by pid.
+- Set 499 v12 (4 own + 46 lane) and Set 500 v11 (9 own + 41 lane) published; repaired after
+  review. v11/v12 now record version+count. v14 dry run: 9 own pass + 46 lane = 55/200 →
+  v14 can't publish a clean 200 today (documented; not published). Shortfall tracebacks in
+  v11–v14 replaced by clean one-line exits.
+- Final verification: Sets 494–500 all 50/50, no reuse, no duplicate owners, tracker = CSV =
+  live Notion page; all 350 picks pass the final screen. Self-tests: all engines pass; v17 109 checks.

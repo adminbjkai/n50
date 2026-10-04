@@ -535,31 +535,6 @@
       }
     },
     {
-      "url": "https://github.com/jknyght9/unifi-dns",
-      "score": 26.39,
-      "category": "Networking / VPN",
-      "stars": 3,
-      "docker": true,
-      "compose": true,
-      "dockerfile": false,
-      "awesome": false,
-      "proof_tier": "A",
-      "family": null,
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 6.0,
-        "v17 velocity": 1.4,
-        "v17 deploy": 6,
-        "v17 release": 5,
-        "v17 polish": 3,
-        "v17 license": 2,
-        "v17 active": 1,
-        "v17 selfhost": 2
-      }
-    },
-    {
       "url": "https://github.com/Elias02345/CloudGate",
       "score": 26.37,
       "category": "Networking / VPN",
@@ -1346,24 +1321,48 @@
         "v17 license": 2,
         "v17 life": 3
       }
+    },
+    {
+      "url": "https://github.com/wangjiqing/xingyu-music-vault",
+      "score": 23.14,
+      "category": "Media / Streaming",
+      "stars": 6,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": null,
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 8.5,
+        "v17 velocity": 0.7,
+        "v17 deploy": 3,
+        "v17 release": 5,
+        "v17 license": 2,
+        "v17 active": 1,
+        "v17 life": 3
+      }
     }
   ],
   "categoryDistribution": {
     "Image / Design / Creative": 6,
     "AI / LLM": 5,
-    "Media / Streaming": 4,
+    "Media / Streaming": 5,
     "CRM / Business": 4,
     "Communication / Social": 4,
     "Dashboard / Homelab": 3,
     "Monitoring / Observability": 3,
     "Files / Storage / Backup": 2,
-    "Networking / VPN": 2,
     "Web App / Other": 2,
     "Productivity / Tasks": 2,
     "Developer Tools / Utilities": 2,
     "Notes / Knowledge": 2,
     "Health / Food / Fitness": 2,
     "Books / Reading / Library": 1,
+    "Networking / VPN": 1,
     "Documents / PDF / Paperless": 1,
     "Analytics / Data": 1,
     "DevOps / Infra": 1,
@@ -1627,23 +1626,17 @@
   },
   "timingSeconds": 148.8,
   "repair": {
-    "at": "2026-10-04T02:40:41+00:00",
+    "at": "2026-10-04T02:56:15+00:00",
     "dropped": [
       {
-        "repo": "Howlpy/bbeat",
-        "why": "scraper-or-shady"
+        "repo": "jknyght9/unifi-dns",
+        "why": "built-on-other-app"
       }
     ],
     "added": [
-      "fnayou/podcastify"
+      "wangjiqing/xingyu-music-vault"
     ],
-    "recategorized": [
-      {
-        "repo": "MilesReed2025/earth-dashboard",
-        "from": "Media / Streaming",
-        "to": "Dashboard / Homelab"
-      }
-    ],
+    "recategorized": [],
     "topUp": {
       "from": "v17",
       "needed": 1,
@@ -1652,11 +1645,11 @@
         5
       ],
       "repos": [
-        "fnayou/podcastify"
+        "wangjiqing/xingyu-music-vault"
       ],
-      "laneSeen": 10318,
-      "lanePassing": 390,
-      "seconds": 103.6
+      "laneSeen": 10379,
+      "lanePassing": 343,
+      "seconds": 94.6
     }
   }
 }

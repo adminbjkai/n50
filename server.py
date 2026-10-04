@@ -61,7 +61,8 @@ ENGINES = [
     {"id": "v13", "name": "Diversity", "size": 50, "group": "older",
      "about": "Family floors (files, knowledge, media, PDF…) with AI capped near 3 per set."},
     {"id": "v14", "name": "200 per set", "size": 200, "group": "older",
-     "about": "Publishes 200 repos per set with reject cache, carry pool and near-miss parking."},
+     "about": "Publishes 200 repos per set with reject cache, carry pool and near-miss parking. "
+              "Needs 200 clean picks, which the pool rarely has (a dry run on 2026-10-03 reached 55)."},
 ]
 ENGINE_BY_ID = {e["id"]: e for e in ENGINES}
 DEFAULT_ENGINE = "v17"

@@ -1596,7 +1596,7 @@
     {
       "url": "https://github.com/perfektnacht/uplink",
       "score": 14.05,
-      "category": "Networking / VPN",
+      "category": "Dashboard / Homelab",
       "stars": 6,
       "docker": true,
       "compose": true,
@@ -1906,17 +1906,17 @@
   "categoryDistribution": {
     "Monitoring / Observability": 10,
     "Media / Streaming": 6,
-    "Dashboard / Homelab": 5,
+    "Dashboard / Homelab": 6,
     "Productivity / Tasks": 3,
     "Gaming / Game Servers": 3,
     "AI / LLM": 3,
     "Communication / Social": 2,
-    "Networking / VPN": 2,
     "Developer Tools / Utilities": 2,
     "Documents / PDF / Paperless": 2,
     "Privacy / Ad-Blocking": 2,
     "Files / Storage / Backup": 2,
     "Education / Learning": 2,
+    "Networking / VPN": 1,
     "Home Automation / IoT": 1,
     "DevOps / Infra": 1,
     "Security / Auth": 1,
@@ -2186,24 +2186,14 @@
   },
   "timingSeconds": 359.8,
   "repair": {
-    "at": "2026-10-04T02:26:46+00:00",
+    "at": "2026-10-04T02:55:00+00:00",
     "dropped": [],
     "added": [],
     "recategorized": [
       {
-        "repo": "devzspy/redops-vault",
-        "from": "Documents / PDF / Paperless",
-        "to": "Security / Auth"
-      },
-      {
-        "repo": "spydirbyte/spy-privacy-pulse",
-        "from": "Monitoring / Observability",
-        "to": "Privacy / Ad-Blocking"
-      },
-      {
-        "repo": "Gerald-Ha/LingoVeil",
-        "from": "Documents / PDF / Paperless",
-        "to": "AI / LLM"
+        "repo": "perfektnacht/uplink",
+        "from": "Networking / VPN",
+        "to": "Dashboard / Homelab"
       }
     ],
     "topUp": null

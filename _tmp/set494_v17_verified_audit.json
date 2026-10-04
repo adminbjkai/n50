@@ -23,14 +23,14 @@
   },
   "categoryDistribution": {
     "AI / LLM": 10,
-    "Media / Streaming": 7,
+    "Media / Streaming": 6,
     "Monitoring / Observability": 4,
     "Notes / Knowledge": 3,
+    "Communication / Social": 3,
     "CRM / Business": 3,
     "Security / Auth": 2,
     "Books / Reading / Library": 2,
     "Documents / PDF / Paperless": 2,
-    "Communication / Social": 2,
     "Gaming / Game Servers": 2,
     "Productivity / Tasks": 2,
     "Maps / GIS / Location": 1,
@@ -49,8 +49,8 @@
     {
       "repo": "egmalt/house-planner",
       "url": "https://github.com/egmalt/house-planner",
-      "score": 53.78,
-      "stars": 94,
+      "score": 53.82,
+      "stars": 95,
       "category": "Maps / GIS / Location",
       "description": "Self-hosted house planner: true-scale 2D floor plan, 3D, satellite map overlay, sewer, electrical, water and underfloor heating with calculations, priced bill of materials. React + PHP, no database. By the team behind homedesignsai.pro",
       "language": "TypeScript",
@@ -157,6 +157,29 @@
       }
     },
     {
+      "repo": "ardi4s/feedme",
+      "url": "https://github.com/ardi4s/feedme",
+      "score": 47.73,
+      "stars": 33,
+      "category": "Notes / Knowledge",
+      "description": "feedme — RSS feed creator. Turn any web page into a feed and serve it as RSS 2.0, Atom 1.0 or JSON Feed 1.1 from one static binary.",
+      "language": "Go",
+      "compose": true,
+      "docker": true,
+      "ai": false,
+      "breakdown": {
+        "stars": 15.3,
+        "velocity": 8.4,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "life": 3
+      }
+    },
+    {
       "repo": "madmorett/bullpane",
       "url": "https://github.com/madmorett/bullpane",
       "score": 47.66,
@@ -176,29 +199,6 @@
         "license": 2,
         "active": 3,
         "selfhost": 2
-      }
-    },
-    {
-      "repo": "ardi4s/feedme",
-      "url": "https://github.com/ardi4s/feedme",
-      "score": 47.47,
-      "stars": 32,
-      "category": "Notes / Knowledge",
-      "description": "feedme — RSS feed creator. Turn any web page into a feed and serve it as RSS 2.0, Atom 1.0 or JSON Feed 1.1 from one static binary.",
-      "language": "Go",
-      "compose": true,
-      "docker": true,
-      "ai": false,
-      "breakdown": {
-        "stars": 15.2,
-        "velocity": 8.3,
-        "deploy": 6,
-        "release": 5,
-        "polish": 3,
-        "license": 2,
-        "active": 3,
-        "selfhost": 2,
-        "life": 3
       }
     },
     {
@@ -269,7 +269,7 @@
       "url": "https://github.com/jshields-ca/LatestArr",
       "score": 41.41,
       "stars": 10,
-      "category": "Media / Streaming",
+      "category": "Communication / Social",
       "description": "A “what's new” newsletter for your media server. It collects everything added recently and emails your users a clean, branded digest on a schedule you choose.",
       "language": "TypeScript",
       "compose": true,
@@ -1136,42 +1136,16 @@
   "publishable": true,
   "timingSeconds": 63.9,
   "repair": {
-    "at": "2026-10-04T02:22:39+00:00",
-    "dropped": [
-      {
-        "repo": "DeviantEng/Cmdarr",
-        "why": "built-on-other-app"
-      }
-    ],
-    "added": [
-      "goehou/Happy-Code-Review"
-    ],
+    "at": "2026-10-04T02:53:37+00:00",
+    "dropped": [],
+    "added": [],
     "recategorized": [
       {
-        "repo": "Samarth-23-eng/scope-intelligence",
-        "from": "AI / LLM",
-        "to": "Security / Auth"
-      },
-      {
-        "repo": "DaKheera47/strong-statistics",
-        "from": "Health / Food / Fitness",
-        "to": "Analytics / Data"
+        "repo": "jshields-ca/LatestArr",
+        "from": "Media / Streaming",
+        "to": "Communication / Social"
       }
     ],
-    "topUp": {
-      "from": "v17",
-      "needed": 1,
-      "added": 1,
-      "starFloors": [
-        20,
-        10
-      ],
-      "repos": [
-        "goehou/Happy-Code-Review"
-      ],
-      "laneSeen": 7366,
-      "lanePassing": 191,
-      "seconds": 137.9
-    }
+    "topUp": null
   }
 }

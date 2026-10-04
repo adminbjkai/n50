@@ -969,7 +969,7 @@
     {
       "url": "https://github.com/paperkite-hq/stork",
       "score": 28.62,
-      "category": "Security / Auth",
+      "category": "Communication / Social",
       "stars": 7,
       "docker": true,
       "compose": true,
@@ -1349,15 +1349,14 @@
     "AI / LLM": 3,
     "Finance / Budget": 3,
     "Documents / PDF / Paperless": 3,
+    "Communication / Social": 3,
     "Image / Design / Creative": 2,
     "CRM / Business": 2,
-    "Communication / Social": 2,
     "Books / Reading / Library": 1,
     "Health / Food / Fitness": 1,
     "Education / Learning": 1,
     "Notes / Knowledge": 1,
     "Files / Storage / Backup": 1,
-    "Security / Auth": 1,
     "Home Automation / IoT": 1,
     "DevOps / Infra": 1
   },
@@ -1706,37 +1705,16 @@
   "selectionHeadroom": 1.26,
   "timingSeconds": 426.8,
   "repair": {
-    "at": "2026-10-04T02:27:24+00:00",
-    "dropped": [
-      {
-        "repo": "calebgab/Home-Assistant-Family-Panel",
-        "why": "built-on-other-app"
-      }
-    ],
-    "added": [
-      "youssef509/LoomDeploy"
-    ],
+    "at": "2026-10-04T02:55:36+00:00",
+    "dropped": [],
+    "added": [],
     "recategorized": [
       {
-        "repo": "Ruchoir/ruchoir",
-        "from": "Files / Storage / Backup",
+        "repo": "paperkite-hq/stork",
+        "from": "Security / Auth",
         "to": "Communication / Social"
       }
     ],
-    "topUp": {
-      "from": "v17",
-      "needed": 1,
-      "added": 1,
-      "starFloors": [
-        10,
-        5
-      ],
-      "repos": [
-        "youssef509/LoomDeploy"
-      ],
-      "laneSeen": 11377,
-      "lanePassing": 442,
-      "seconds": 192.8
-    }
+    "topUp": null
   }
 }

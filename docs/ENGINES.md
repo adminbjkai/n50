@@ -54,6 +54,29 @@ If the lane fails, the engine continues with what it has, and a short standard p
 still refuses. `python3 engines/quality.py --self-test` and `topup.py --self-test` cover the
 rules offline.
 
+When a run still can't reach a full set, every engine exits with one clean line (no
+traceback) saying how many clean picks it had and that nothing was written.
+
+**v14 (200 per set)** rarely has enough clean candidates now. A dry run on 2026-10-03, after
+seven 50-repo sets that day, got 78 candidates of its own; only 9 passed the screen, and the
+lane could add 46, so it stopped at 55/200. It will work again only when far more new
+apps have appeared.
+
+## Measured on 2026-10-03 (Sets 494–500, one per engine)
+
+| Set | Engine | Own picks kept | From the lane | Later repairs |
+|---|---|---|---|---|
+| 494 | v17 | 50 | — | 4 replaced (agent infra, HITL library, backend, *arr companion) |
+| 495 | v16 | 23 | 27 | +2 (LibreChat renamed copy, adult-flagged downloader) |
+| 496 | v15 | 9 | 41 | 6 (statainer renamed copy, packaging, API wrappers, crypto, SSO lib) |
+| 497 | v13 | 9 | 41 | 11 (companions, bots, game servers, reseller, bulk mailer, renamed copy) |
+| 498 | v16 | 2 | 48 | 9 (add-ons, language/SDK, non-English, SVG cards, HA add-on) |
+| 499 | v12 | 4 | 46 | 6 (API wrapper, *arr tool, personal repos, Spotify ingest, UniFi add-on) |
+| 500 | v11 | 9 | 41 | 8 (clients, CLI, library, sync add-ons, packaging, lead-gen) |
+
+Repairs happened because the rules kept improving during the day's review; the final rules
+pass all 350 picks, and every page, tracker entry and CSV row agree.
+
 ## Star ladder (v17 and the lane)
 
 v17 searches with a floor of 20 stars (10 for repos under 120 days old). New non-AI apps that

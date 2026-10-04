@@ -1987,11 +1987,10 @@ def select_set(tracker, live_titles, args):
                                           cat_cap=getattr(args, "cat_cap", None))
     ab_n = sum(1 for c in selected if c.get("proof_tier") in ("A", "B"))
     if len(selected) != 50:
-        raise RuntimeError(
-            f"Only {len(selected)} proof-passing repos scored >= --min-score {args.min_score} "
-            f"(confirmed pool {len(confirmed)}, A∪B available="
-            f"{sum(1 for c in confirmed if c.get('proof_tier') in ('A','B'))}). "
-            f"Widen the search (--target-fresh/--max-pages) or lower --min-score.")
+        raise SystemExit(
+            f"[{VERSION}] only {len(selected)} clean picks after the quality screen and the "
+            f"v17 top-up lane (need 50); nothing was written. Few unpublished apps clear "
+            f"the bar right now; try another engine or run again later.")
     if ab_n < MIN_AB_PROOF:
         # Soft fail → warn. With a full 50 proven picks, a thin A∪B floor is
         # still better than aborting a good dry-run (C-heavy sets are rare).

@@ -84,7 +84,7 @@ Latin-script descriptions (foreign function words or accents, and no English one
 compatibility ("works with Nextcloud") only exempts when it names the host app; "built on
 Home Assistant" always counts. Categories: the override matching earliest in the
 description wins (feature lists later in a description no longer decide).
-Self-test: 94 checks, including "must keep" cases for legitimate apps.
+Self-test: 109 checks, including "must keep" cases for legitimate apps.
 
 ## Run
     python3 v17.py --self-test
