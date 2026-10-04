@@ -128,7 +128,7 @@ def fill(version, selected, target, tracker, dry_run, ai_ceiling=None, is_ai_cat
     ladder = getattr(v17, "STAR_LADDER", None) or [(getattr(v17, "MIN_STARS", None),
                                                       getattr(v17, "MIN_STARS_YOUNG", None))]
     memory = need >= LADDER_MEMORY_MIN_NEED and hasattr(v17, "ladder_record")
-    start = v17.ladder_start() if memory else 0
+    start = v17.ladder_start(need) if memory else 0
     try:
         for rung, (floor, young) in enumerate(ladder):
             if rung < start:
@@ -151,7 +151,7 @@ def fill(version, selected, target, tracker, dry_run, ai_ceiling=None, is_ai_cat
             ai_now = _take(picks, need, added, taken_urls, owners, cats, cat_cap, ai_ceiling, ai_now,
                            is_ai_cat, family_of, v17, capped=bool(cat_cap))
             if memory and (len(added) >= need or (floor, young) == ladder[-1]):
-                v17.ladder_record(rung)
+                v17.ladder_record(rung, need)
             if len(added) < need and (floor, young) != ladder[-1]:
                 print(f"[{version}] top-up: {len(added)}/{need} at ≥{floor}★; trying a lower star floor …",
                       flush=True)
@@ -280,8 +280,8 @@ def self_test():
                    [c["repo"]["full_name"] for c in out6[3:]] == ["l1/n"] and rec6["starFloors"] == [20, 5]))
     # an error mid-ladder still resets the star floor; small fills ignore ladder memory
     rungs.clear()
-    fake.ladder_start = lambda: 1
-    fake.ladder_record = lambda rung: (_ for _ in ()).throw(OSError("disk full"))
+    fake.ladder_start = lambda need=None: 1
+    fake.ladder_record = lambda rung, need=None: (_ for _ in ()).throw(OSError("disk full"))
     fake.discover = lambda tracker, target, now, args: (lane[:target], {"seen": 1})
     try:
         fill("vX", [], 12, {"usedRepoUrls": []}, True)
@@ -293,7 +293,7 @@ def self_test():
     checks.append(("small fill starts at the top rung", rungs[0] == 20))
     # a lane error on a lower rung must not relax the cap for picks seen on a higher rung
     rungs.clear()
-    fake.ladder_start = lambda: 0
+    fake.ladder_start = lambda need=None: 0
     fake.discover = lambda tracker, target, now, args: (
         [mk("h2/m", cat="Media / Streaming")] if rungs[-1] == 20 else (_ for _ in ()).throw(RuntimeError("down")),
         {"seen": 1})

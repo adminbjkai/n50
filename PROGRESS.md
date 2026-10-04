@@ -121,3 +121,7 @@ CSV = Notion, history untouched, no reuse). Confirmed bugs, all fixed:
   ~30 categories that v16's catch-all filed under Dashboard fixed. Third repair round on
   494–500 (494: bullpane, OpenMausBot; 500: VideoSphere). Final: all 350 picks pass, AI and
   category caps hold, tracker = CSV = Notion. Self-tests: v17 203 checks, topup 14, all pass.
+- End-to-end dry runs through the live server after all fixes: v17 Set 501 50/50 publishable
+  (twice; from the top rung: 27 at ≥20★, 37 at ≥10★, 50 at ≥5★, 4 AI, 0 GraphQL errors) and
+  v16 Set 501 50/50 publishable (5 own + 45 lane over 3 rungs, every category ≤ 5).
+  Ladder memory now stores the job size (a 145-slot v14 fill had pushed v17 to start at 5★).

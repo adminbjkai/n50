@@ -744,25 +744,27 @@ def set_star_floor(floor, young):
     MIN_STARS, MIN_STARS_YOUNG = floor, young
 
 
-def ladder_start():
-    """Rung to start from: a lower rung's results include every higher rung's repos (same
-    searches, lower floor, ranked by stars), so skipping rungs that recently came up short
-    loses nothing and saves a full discovery pass each."""
+def ladder_start(need=None):
+    """Rung to start from. Higher rungs that recently came up short for a job at least this
+    large would come up short again, so they are skipped (saving a discovery pass each); a
+    smaller job starts at the top. A lower rung searches a superset of a higher rung's pool."""
     st = load_json(LADDER_STATE, {})
-    if time.time() - st.get("t", 0) < LADDER_MEMORY_HOURS * 3600:
-        return max(0, min(int(st.get("rung", 0)), len(STAR_LADDER) - 1))
-    return 0
+    if time.time() - st.get("t", 0) >= LADDER_MEMORY_HOURS * 3600:
+        return 0
+    if need is not None and need < st.get("need", 0):
+        return 0
+    return max(0, min(int(st.get("rung", 0)), len(STAR_LADDER) - 1))
 
 
-def ladder_record(rung):
-    save_json(LADDER_STATE, {"rung": rung, "t": int(time.time())})
+def ladder_record(rung, need=None):
+    save_json(LADDER_STATE, {"rung": rung, "t": int(time.time()), "need": need or 0})
 
 
 def discover_ladder(tracker, target, now, args, enough=None):
     """discover() on each STAR_LADDER rung until `enough(picked)` (default: a full set).
     Leaves MIN_STARS/MIN_STARS_YOUNG at the rung that produced the returned picks."""
     enough = enough or (lambda p: len(p) >= target)
-    start = ladder_start()
+    start = ladder_start(target)
     if start:
         print(f"[{VERSION}] star ladder: starting at ≥{STAR_LADDER[start][0]}★ (higher rungs came up short "
               f"in the last {LADDER_MEMORY_HOURS} h)", flush=True)
@@ -772,7 +774,7 @@ def discover_ladder(tracker, target, now, args, enough=None):
         picked, stats = discover(tracker, target, now, args)
         stats["starFloor"] = [floor, young]
         if enough(picked) or i == len(STAR_LADDER) - 1:
-            ladder_record(i)
+            ladder_record(i, target)
             return picked, stats
         nxt = STAR_LADDER[i + 1]
         print(f"[{VERSION}] {len(picked)}/{target} at ≥{floor}★ (≥{young}★ if under {YOUNG_DAYS} days); "
@@ -1286,6 +1288,18 @@ def self_test():
         t = got == want
         ok &= t
         print(f"  {'ok ' if t else 'FAIL'} category {desc[:40]!r} -> {got}")
+    # Ladder memory: a rung that came up short for a big job is skipped only by jobs that big.
+    import tempfile
+    global LADDER_STATE
+    real_state = LADDER_STATE
+    LADDER_STATE = Path(tempfile.mkdtemp()) / "ladder.json"
+    try:
+        ladder_record(2, 145)
+        t = ladder_start(145) == 2 and ladder_start(200) == 2 and ladder_start(50) == 0
+    finally:
+        LADDER_STATE = real_state
+    ok &= t
+    print(f"  {'ok ' if t else 'FAIL'} ladder memory applies only to jobs at least as large")
     # A rate-limited GraphQL answer must stop discovery, and a failed slice is "unknown", not "empty".
     import io
     real_urlopen = urllib.request.urlopen

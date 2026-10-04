@@ -101,8 +101,9 @@ the highest rung that all of its picks clear). A lower rung searches a superset 
 rung's pool, so v17 and the lane remember the rung that last filled a set
 (`_tmp/ladder_state_v17.json`, 12 h) and start there instead of re-running rungs known to
 be exhausted. The trade-off is that the picks can include lower-star repos the higher rung
-would have left out. Only fills of 10 or more slots read or write this memory, so a small
-repair always starts at the top rung.
+would have left out. The memory records the job size too: only a job at least as large as
+the one that came up short skips rungs (a 145-slot v14 fill no longer pushes a 50-repo v17
+run straight to 5★), and fills under 10 slots neither read nor write it.
 
 ## Repairing a published set
 
