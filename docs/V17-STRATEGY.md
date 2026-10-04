@@ -84,7 +84,24 @@ Latin-script descriptions (foreign function words or accents, and no English one
 compatibility ("works with Nextcloud") only exempts when it names the host app; "built on
 Home Assistant" always counts. Categories: the override matching earliest in the
 description wins (feature lists later in a description no longer decide).
-Self-test: 109 checks, including "must keep" cases for legitimate apps.
+An independent review afterwards probed the gate with ordinary app descriptions and found
+rules that were too broad: "stock levels" and "trading card" read as trading, a "language
+learning app" as coursework, "supports add-ons" as an add-on, "a theme for your store" as a
+plugin, "(scraper built in)" as a scraper, "Plex-like" as built on Plex, "Subsonic API
+support" as a Subsonic add-on, and a web app that also ships mobile apps as a native client.
+All were narrowed. It also found junk that shipped: a library "for building LLM agents", a
+family assistant "for Telegram", a web player "compatible with Navidrome" (a client for
+another app) and a README-only guide; each now has a rule. Categories gained VPN/DNS,
+Nostr/fediverse, start pages, signage, labels/barcodes, game maps, collections, kanban and
+shop management, and Sentry-style error tracking now files under monitoring.
+GitHub rate limits: a rate-limited GraphQL answer arrives as HTTP 200 with a `RATE_LIMIT`
+error. It used to be read as "no results", which marked live search slices dead in query
+memory and cached good repos as `hydrate-failed` rejects. Now `gql()` waits 60 s and retries
+(GitHub's short burst limit usually clears), then raises `RateLimited`, and v17 and the
+repair tool stop with "Nothing was written". A slice whose search failed keeps its old
+memory, `hydrate-failed` is never cached, and each cached reject records a signature of
+the gate rules, so a rule change invalidates rejects made under the old rules.
+Self-test: 150 checks, including "must keep" cases for legitimate apps.
 
 ## Run
     python3 v17.py --self-test

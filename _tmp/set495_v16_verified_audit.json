@@ -70,7 +70,7 @@
       "url": "https://github.com/jub0t/Concat",
       "score": 93.5,
       "category": "Media / Streaming",
-      "stars": 4026,
+      "stars": 4027,
       "docker": false,
       "compose": false,
       "dockerfile": false,
@@ -126,7 +126,7 @@
     {
       "url": "https://github.com/findias/takt",
       "score": 79.75,
-      "category": "Monitoring / Observability",
+      "category": "Productivity / Tasks",
       "stars": 6,
       "docker": true,
       "compose": true,
@@ -242,7 +242,7 @@
     {
       "url": "https://github.com/stammig/yoyo-collection",
       "score": 72.34,
-      "category": "Media / Streaming",
+      "category": "Productivity / Tasks",
       "stars": 3,
       "docker": true,
       "compose": true,
@@ -300,7 +300,7 @@
     {
       "url": "https://github.com/Leandro-Juan/paladio",
       "score": 70.91,
-      "category": "Dashboard / Homelab",
+      "category": "Maps / GIS / Location",
       "stars": 3,
       "docker": true,
       "compose": true,
@@ -633,7 +633,7 @@
     {
       "url": "https://github.com/AmigoUK/BarcodeLabelGen",
       "score": 48.63,
-      "category": "Networking / VPN",
+      "category": "Documents / PDF / Paperless",
       "stars": 3,
       "docker": false,
       "compose": true,
@@ -653,32 +653,6 @@
         "community": 0.0,
         "youth": 2.0,
         "maturity": 0.0,
-        "gem_balance": 2.0
-      }
-    },
-    {
-      "url": "https://github.com/amirh3sam/Setting-Up-a-Secure-Local-Server-with-DuckDNS-and-Nginx-Proxy-Manager",
-      "score": 47.76,
-      "category": "Networking / VPN",
-      "stars": 6,
-      "docker": false,
-      "compose": false,
-      "dockerfile": false,
-      "awesome": false,
-      "proof_tier": "C",
-      "family": "proxy_net",
-      "fresh_gem": false,
-      "hook": "",
-      "topup": null,
-      "breakdown": {
-        "momentum": 4.8,
-        "liveliness": 14.0,
-        "traction": 2.96,
-        "polish": 13.0,
-        "selfhost_signal": 8.0,
-        "community": 0.0,
-        "youth": 0.0,
-        "maturity": 3.0,
         "gem_balance": 2.0
       }
     },
@@ -942,7 +916,7 @@
     {
       "url": "https://github.com/privkeyio/wisp",
       "score": 33.76,
-      "category": "Notes / Knowledge",
+      "category": "Communication / Social",
       "stars": 18,
       "docker": true,
       "compose": false,
@@ -994,7 +968,7 @@
       "url": "https://github.com/merrypatch/bramblekeep",
       "score": 32.8,
       "category": "Notes / Knowledge",
-      "stars": 5,
+      "stars": 6,
       "docker": true,
       "compose": true,
       "dockerfile": true,
@@ -1270,7 +1244,7 @@
       "url": "https://github.com/OpenNeutron/OpenNeutron",
       "score": 30.55,
       "category": "Communication / Social",
-      "stars": 19,
+      "stars": 20,
       "docker": true,
       "compose": true,
       "dockerfile": true,
@@ -1340,34 +1314,6 @@
       }
     },
     {
-      "url": "https://github.com/NextEpochs/opifer",
-      "score": 30.12,
-      "category": "AI / LLM",
-      "stars": 5,
-      "docker": true,
-      "compose": true,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": "A",
-      "family": "ai",
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 7.8,
-        "v17 velocity": 2.3,
-        "v17 deploy": 6,
-        "v17 release": 5,
-        "v17 polish": 3,
-        "v17 org": 2,
-        "v17 license": 2,
-        "v17 active": 3,
-        "v17 selfhost": 2,
-        "v17 life": 3,
-        "v17 ai": -6
-      }
-    },
-    {
       "url": "https://github.com/PEG4TRON/MeshCorium",
       "score": 29.42,
       "category": "Dashboard / Homelab",
@@ -1390,29 +1336,75 @@
         "v17 active": 1,
         "v17 life": 3
       }
+    },
+    {
+      "url": "https://github.com/Sqartet/hemio",
+      "score": 20.53,
+      "category": "Dashboard / Homelab",
+      "stars": 3,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dash_mon",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 1.5,
+        "v17 deploy": 3,
+        "v17 release": 5,
+        "v17 license": 2,
+        "v17 active": 3
+      }
+    },
+    {
+      "url": "https://github.com/yorickpeterse/shost",
+      "score": 20.08,
+      "category": "CMS / Website",
+      "stars": 8,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dash_mon",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 9.5,
+        "v17 velocity": 0.5,
+        "v17 deploy": 3,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2
+      }
     }
   ],
   "categoryDistribution": {
-    "Media / Streaming": 5,
+    "Productivity / Tasks": 5,
     "Books / Reading / Library": 5,
+    "Media / Streaming": 4,
     "Gaming / Game Servers": 4,
-    "Monitoring / Observability": 4,
-    "Networking / VPN": 4,
-    "Notes / Knowledge": 3,
+    "Monitoring / Observability": 3,
     "Dashboard / Homelab": 3,
     "Developer Tools / Utilities": 3,
     "Analytics / Data": 3,
-    "Productivity / Tasks": 3,
+    "Notes / Knowledge": 2,
+    "Maps / GIS / Location": 2,
     "DevOps / Infra": 2,
     "Health / Food / Fitness": 2,
+    "Documents / PDF / Paperless": 2,
     "Files / Storage / Backup": 2,
+    "Communication / Social": 2,
+    "Networking / VPN": 2,
     "Security / Auth": 1,
-    "Maps / GIS / Location": 1,
     "CRM / Business": 1,
-    "Documents / PDF / Paperless": 1,
     "Search / Indexing": 1,
-    "Communication / Social": 1,
-    "AI / LLM": 1
+    "CMS / Website": 1
   },
   "scoreStats": {
     "min": 37.0,
@@ -1493,22 +1485,99 @@
   "confirmedPoolDepth": 77,
   "selectionHeadroom": 1.54,
   "timingSeconds": 150.8,
-  "repair": {
-    "at": "2026-10-04T02:25:33+00:00",
-    "dropped": [],
-    "added": [],
-    "recategorized": [
-      {
-        "repo": "gitbckr/gitbacker",
-        "from": "DevOps / Infra",
-        "to": "Files / Storage / Backup"
-      },
-      {
-        "repo": "nasnet-community/nasnet-monitor",
-        "from": "Maps / GIS / Location",
-        "to": "Monitoring / Observability"
+  "repairs": [
+    {
+      "at": "2026-10-04T02:25:33+00:00",
+      "dropped": [],
+      "added": [],
+      "recategorized": [
+        {
+          "repo": "gitbckr/gitbacker",
+          "from": "DevOps / Infra",
+          "to": "Files / Storage / Backup"
+        },
+        {
+          "repo": "nasnet-community/nasnet-monitor",
+          "from": "Maps / GIS / Location",
+          "to": "Monitoring / Observability"
+        }
+      ],
+      "topUp": null
+    },
+    {
+      "at": "2026-10-04T03:33:48+00:00",
+      "dropped": [
+        {
+          "repo": "amirh3sam/Setting-Up-a-Secure-Local-Server-with-DuckDNS-and-Nginx-Proxy-Manager",
+          "why": "no-code (docs-only repo)"
+        },
+        {
+          "repo": "NextEpochs/opifer",
+          "why": "over-ai-ceiling (3)"
+        }
+      ],
+      "added": [
+        "Sqartet/hemio",
+        "yorickpeterse/shost"
+      ],
+      "recategorized": [
+        {
+          "repo": "findias/takt",
+          "from": "Monitoring / Observability",
+          "to": "Productivity / Tasks"
+        },
+        {
+          "repo": "stammig/yoyo-collection",
+          "from": "Media / Streaming",
+          "to": "Productivity / Tasks"
+        },
+        {
+          "repo": "Leandro-Juan/paladio",
+          "from": "Dashboard / Homelab",
+          "to": "Maps / GIS / Location"
+        },
+        {
+          "repo": "AmigoUK/BarcodeLabelGen",
+          "from": "Networking / VPN",
+          "to": "Documents / PDF / Paperless"
+        },
+        {
+          "repo": "privkeyio/wisp",
+          "from": "Notes / Knowledge",
+          "to": "Communication / Social"
+        }
+      ],
+      "topUp": {
+        "from": "v17",
+        "needed": 2,
+        "added": 2,
+        "starFloors": [
+          20,
+          10,
+          5
+        ],
+        "replacedOverAiCeiling": [],
+        "repos": [
+          "Sqartet/hemio",
+          "yorickpeterse/shost"
+        ],
+        "laneSeen": 10171,
+        "lanePassing": 329,
+        "seconds": 221.4
       }
-    ],
-    "topUp": null
-  }
+    },
+    {
+      "at": "2026-10-04T03:48:05+00:00",
+      "dropped": [],
+      "added": [],
+      "recategorized": [
+        {
+          "repo": "yorickpeterse/shost",
+          "from": "Dashboard / Homelab",
+          "to": "CMS / Website"
+        }
+      ],
+      "topUp": null
+    }
+  ]
 }

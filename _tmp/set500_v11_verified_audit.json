@@ -14,7 +14,7 @@
     {
       "url": "https://github.com/meroxis/nuvabill",
       "score": 73.8,
-      "category": "DevOps / Infra",
+      "category": "Finance / Budget",
       "stars": 13,
       "docker": true,
       "compose": false,
@@ -168,7 +168,7 @@
       "url": "https://github.com/SourceWeft/SourceWeft",
       "score": 37.96,
       "category": "AI / LLM",
-      "stars": 134,
+      "stars": 135,
       "docker": true,
       "compose": true,
       "dockerfile": true,
@@ -265,29 +265,6 @@
         "v17 license": 2,
         "v17 active": 3,
         "v17 ai": -6
-      }
-    },
-    {
-      "url": "https://github.com/thebitsamuraii23/UrZen-player",
-      "score": 24.56,
-      "category": "Media / Streaming",
-      "stars": 9,
-      "docker": true,
-      "compose": true,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": null,
-      "family": null,
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 10.0,
-        "v17 velocity": 0.6,
-        "v17 deploy": 6,
-        "v17 polish": 3,
-        "v17 license": 2,
-        "v17 life": 3
       }
     },
     {
@@ -1008,7 +985,7 @@
     {
       "url": "https://github.com/d0linger/Treckrr",
       "score": 20.57,
-      "category": "Monitoring / Observability",
+      "category": "Finance / Budget",
       "stars": 3,
       "docker": true,
       "compose": true,
@@ -1219,24 +1196,49 @@
         "v17 selfhost": 2,
         "v17 ai": -6
       }
+    },
+    {
+      "url": "https://github.com/pinkpixel-dev/kintara",
+      "score": 25.45,
+      "category": "Documents / PDF / Paperless",
+      "stars": 20,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": null,
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 13.2,
+        "v17 velocity": 2.2,
+        "v17 deploy": 6,
+        "v17 org": 2,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 life": 3,
+        "v17 ai": -6
+      }
     }
   ],
   "categoryDistribution": {
-    "Media / Streaming": 9,
+    "Media / Streaming": 8,
     "AI / LLM": 7,
+    "Finance / Budget": 4,
     "Health / Food / Fitness": 4,
-    "Monitoring / Observability": 4,
+    "Monitoring / Observability": 3,
     "Productivity / Tasks": 3,
     "Dashboard / Homelab": 3,
     "Image / Design / Creative": 3,
-    "DevOps / Infra": 2,
+    "Documents / PDF / Paperless": 2,
     "Networking / VPN": 2,
     "Books / Reading / Library": 2,
-    "Finance / Budget": 2,
     "Analytics / Data": 1,
-    "Documents / PDF / Paperless": 1,
     "Gaming / Game Servers": 1,
     "Maps / GIS / Location": 1,
+    "DevOps / Infra": 1,
     "CRM / Business": 1,
     "CMS / Website": 1,
     "Notes / Knowledge": 1,
@@ -1478,37 +1480,78 @@
     "seconds": 95.8
   },
   "timingSeconds": 447.6,
-  "repair": {
-    "at": "2026-10-04T03:01:19+00:00",
-    "dropped": [
-      {
-        "repo": "debpalash/OpenGTM",
-        "why": "growth-or-device-farm"
-      }
-    ],
-    "added": [
-      "SASUKE40/pi-daemon"
-    ],
-    "recategorized": [
-      {
-        "repo": "zilet/cairn",
-        "from": "AI / LLM",
-        "to": "Health / Food / Fitness"
-      }
-    ],
-    "topUp": {
-      "from": "v17",
-      "needed": 1,
-      "added": 1,
-      "starFloors": [
-        5
+  "repairs": [
+    {
+      "at": "2026-10-04T03:01:19+00:00",
+      "dropped": [
+        {
+          "repo": "debpalash/OpenGTM",
+          "why": "growth-or-device-farm"
+        }
       ],
-      "repos": [
+      "added": [
         "SASUKE40/pi-daemon"
       ],
-      "laneSeen": 10201,
-      "lanePassing": 335,
-      "seconds": 99.5
+      "recategorized": [
+        {
+          "repo": "zilet/cairn",
+          "from": "AI / LLM",
+          "to": "Health / Food / Fitness"
+        }
+      ],
+      "topUp": {
+        "from": "v17",
+        "needed": 1,
+        "added": 1,
+        "starFloors": [
+          5
+        ],
+        "repos": [
+          "SASUKE40/pi-daemon"
+        ],
+        "laneSeen": 10201,
+        "lanePassing": 335,
+        "seconds": 99.5
+      }
+    },
+    {
+      "at": "2026-10-04T03:45:08+00:00",
+      "dropped": [
+        {
+          "repo": "thebitsamuraii23/UrZen-player",
+          "why": "client-for-other-app"
+        }
+      ],
+      "added": [
+        "pinkpixel-dev/kintara"
+      ],
+      "recategorized": [
+        {
+          "repo": "meroxis/nuvabill",
+          "from": "DevOps / Infra",
+          "to": "Finance / Budget"
+        },
+        {
+          "repo": "d0linger/Treckrr",
+          "from": "Monitoring / Observability",
+          "to": "Finance / Budget"
+        }
+      ],
+      "topUp": {
+        "from": "v17",
+        "needed": 1,
+        "added": 1,
+        "starFloors": [
+          20
+        ],
+        "replacedOverAiCeiling": [],
+        "repos": [
+          "pinkpixel-dev/kintara"
+        ],
+        "laneSeen": 4502,
+        "lanePassing": 90,
+        "seconds": 50.9
+      }
     }
-  }
+  ]
 }

@@ -4,10 +4,12 @@ repair_set.py — replace picks in a published set that fail the current quality
 
     python3 repair_set.py 495            # plan only: what would be dropped and added
     python3 repair_set.py 495 --apply    # rewrite the Notion page, tracker entry, CSV rows, audit
+    python3 repair_set.py 494 --rebuild --apply   # also rewrite the page when every pick passes
 
 The set keeps its number, title and size. Picks are re-checked with live GitHub data through
 engines/quality.py; failing ones are replaced from v17's GraphQL lane (engines/topup.py) under
-the set's own engine rules (AI ceiling, category cap). Dropped repos stay in usedRepoUrls so
+the set's own engine rules (AI ceiling, category cap); AI picks past the engine's ceiling
+are replaced too, and so are lane picks past the engine's category cap. Dropped repos stay in usedRepoUrls so
 they are never picked again. The page is rebuilt with the engine's own page format: new
 blocks are appended first and the old ones deleted after, so a failure can't leave the page
 empty. Backups of the tracker, CSV and audit go to _tmp/backup-repair-<time>/.
@@ -96,8 +98,8 @@ def build_candidates(engine, audit, rows, now):
 def engine_rules(engine, mod):
     if engine == "v17":
         return dict(ai_ceiling=v17.AI_FILL_CAP, is_ai_cat=lambda c: v17.is_ai(c["_v17"]))
-    if engine in ("v11",):
-        return dict(ai_ceiling=None, is_ai_cat=lambda c: c.get("hcat") == "AI / LLM")
+    if engine == "v11":   # no AI ceiling; --cat-cap defaults to 5
+        return dict(ai_ceiling=None, is_ai_cat=lambda c: c.get("hcat") == "AI / LLM", cat_cap=5)
     if engine == "v12":
         return dict(ai_ceiling=mod.HARD_CAT_CAPS.get("AI / LLM", 10),
                     is_ai_cat=lambda c: c.get("hcat") == "AI / LLM",
@@ -107,12 +109,25 @@ def engine_rules(engine, mod):
                 family_of=mod.family_of, cat_cap=getattr(mod, "DEFAULT_CAT_CAP", None))
 
 
-def page_for(engine, mod, n, final, audit):
+def star_floor_of(picked, now):
+    """Highest STAR_LADDER rung every pick clears — what a rebuilt v17 page may claim."""
+    for floor, young in v17.STAR_LADDER:
+        if all(r["stargazers_count"] >= (young if v17._age_days(r.get("created_at") or "", now) < v17.YOUNG_DAYS
+                                         else floor) for r in picked):
+            return floor, young
+    return v17.STAR_LADDER[-1]
+
+
+def page_for(engine, mod, n, final, audit, now):
     if engine == "v17":
         picked = sorted((c["_v17"] for c in final), key=lambda r: -r["_score"])
         for r in picked:
             r.setdefault("_cat", v17.categorize(r))
-        return v17.page_blocks(n, picked, audit.get("stats") or {"unused": "?", "seen": "?"}), picked
+        floor = star_floor_of(picked, now)
+        v17.set_star_floor(*floor)
+        stats = audit.get("stats") or {"unused": "?", "seen": "?"}
+        stats["starFloor"] = list(floor)
+        return v17.page_blocks(n, picked, stats), picked
     import inspect
     kw = {"special_page": False} if "special_page" in inspect.signature(mod.page_blocks).parameters else {}
     return mod.page_blocks(n, final, **kw), final
@@ -138,6 +153,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[1])
     ap.add_argument("set", type=int)
     ap.add_argument("--apply", action="store_true", help="Write Notion, tracker, CSV and audit.")
+    ap.add_argument("--rebuild", action="store_true", help="Rewrite the page even when every pick passes.")
     args = ap.parse_args()
     if not v17.v16.GH_TOKEN:
         raise SystemExit("no GitHub token (gh auth login or GH_TOKEN)")
@@ -151,24 +167,29 @@ def main():
     print(f"[repair] Set {n} ({engine}, {len(rows)} published rows) — checking with live GitHub data …")
 
     cands, missing = build_candidates(engine, audit, rows, now)
+    kept, record = quality.screen("repair", cands, ignore_set=n, tracker=tracker)   # also relabels
     published_cat = {row["repo_url"].lower(): row["category"] for row in rows}
     recat = [(c["repo"]["full_name"], published_cat.get(c["_published_url"].lower()), c["category"])
-             for c in cands if published_cat.get(c["_published_url"].lower()) != c["category"]]
+             for c in kept if published_cat.get(c["_published_url"].lower()) != c["category"]]
     for name, old, new in recat:
         print(f"[repair] category: {name}: {old} → {new}")
-    kept, record = quality.screen("repair", cands, ignore_set=n, tracker=tracker)
-    dropped = (record or {}).get("dropped", []) + [{"repo": m, "why": "unavailable-on-github"} for m in missing]
+    rules = engine_rules(engine, mod)
+    kept, over_ai = topup.trim_ai("repair", kept, rules["ai_ceiling"], rules["is_ai_cat"], v17)
+    kept, over_cap = topup.trim_cap("repair", kept, rules.get("cat_cap"))
+    dropped = ((record or {}).get("dropped", []) + [{"repo": m, "why": "unavailable-on-github"} for m in missing]
+               + [{"repo": m, "why": f"over-ai-ceiling ({rules['ai_ceiling']})"} for m in over_ai]
+               + [{"repo": m, "why": f"over-category-cap ({rules.get('cat_cap')})"} for m in over_cap])
     if missing:
         print(f"[repair] {len(missing)} published repos are gone from GitHub: {', '.join(missing)}")
-    if not dropped and not recat:
+    if not dropped and not recat and not args.rebuild:
         print(f"[repair] Set {n} passes the current gate; nothing to do.")
         return
 
-    final, top = topup.fill("repair", kept, size, tracker, dry_run=not args.apply, **engine_rules(engine, mod))
+    final, top = topup.fill("repair", kept, size, tracker, dry_run=not args.apply, **rules)
     if len(final) != size:
         raise SystemExit(f"[repair] could only reach {len(final)}/{size}; not touching Set {n}.")
     added = [c["repo"]["full_name"] for c in final if c.get("topup") and c in final[len(kept):]]
-    blocks, final_rows = page_for(engine, mod, n, final, audit)
+    blocks, final_rows = page_for(engine, mod, n, final, audit, now)
     print(f"[repair] plan: drop {len(dropped)}, add {len(added)}; page {len(blocks)} blocks")
     if not args.apply:
         print("[repair] plan only — run with --apply to write Notion, tracker, CSV and audit.")
@@ -203,7 +224,10 @@ def main():
     with open(v1.MASTER_CSV, newline="", encoding="utf-8") as f:
         reader = csv.reader(f)
         header = next(reader)
-        others = [row for row in reader if row and row[0] != str(n)]
+        rows_all = [row for row in reader if row]
+    at = next((i for i, row in enumerate(rows_all) if row[0] == str(n)), len(rows_all))
+    before = [row for row in rows_all[:at] if row[0] != str(n)]   # the set keeps its place in the file
+    after = [row for row in rows_all[at:] if row[0] != str(n)]
     new_rows = []
     for item in final_rows:
         r = item if engine == "v17" else item["repo"]
@@ -214,8 +238,9 @@ def main():
     with open(tmp, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(header)
-        w.writerows(others)
+        w.writerows(before)
         w.writerows(new_rows)
+        w.writerows(after)
     tmp.replace(v1.MASTER_CSV)
 
     key, items = audit_rows(engine, final_rows)
@@ -224,12 +249,22 @@ def main():
     for row in new_rows:
         dist[row[2]] = dist.get(row[2], 0) + 1
     audit["categoryDistribution"] = dict(sorted(dist.items(), key=lambda kv: -kv[1]))
-    audit["repair"] = {"at": now.isoformat(timespec="seconds"), "dropped": dropped, "added": added,
-                       "recategorized": [{"repo": a, "from": b, "to": c} for a, b, c in recat],
-                       "topUp": top}
+    if engine == "v17":
+        audit["aiCount"] = sum(1 for r in final_rows if v17.is_ai(r))
+        audit["stats"] = audit.get("stats") or {}
+        audit["stats"]["starFloor"] = [v17.MIN_STARS, v17.MIN_STARS_YOUNG]
+    repairs = audit.pop("repairs", None) or ([audit.pop("repair")] if audit.get("repair") else [])
+    audit.pop("repair", None)
+    repairs.append({"at": now.isoformat(timespec="seconds"), "dropped": dropped, "added": added,
+                    "recategorized": [{"repo": a, "from": b, "to": c} for a, b, c in recat],
+                    "topUp": top})
+    audit["repairs"] = repairs   # every repair, oldest first; the run's own fields describe the original pick
     audit_path.write_text(json.dumps(audit, indent=2, ensure_ascii=False) + "\n")
     print(f"[repair] Set {n}: tracker, master CSV ({len(new_rows)} rows) and audit updated ✅")
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except v17.RateLimited as exc:
+        raise SystemExit(f"[repair] {exc}. Nothing was written.")

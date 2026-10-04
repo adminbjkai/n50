@@ -105,7 +105,7 @@
     {
       "url": "https://github.com/lihor-hub/news-dashboard",
       "score": 87.79,
-      "category": "AI / LLM",
+      "category": "Notes / Knowledge",
       "stars": 36,
       "docker": true,
       "compose": true,
@@ -132,7 +132,7 @@
     {
       "url": "https://github.com/helpin-ai/helpin",
       "score": 68.46,
-      "category": "AI / LLM",
+      "category": "CRM / Business",
       "stars": 8,
       "docker": true,
       "compose": true,
@@ -479,30 +479,6 @@
         "v17 velocity": 0.5,
         "v17 deploy": 6,
         "v17 polish": 3,
-        "v17 license": 2,
-        "v17 active": 3,
-        "v17 life": 3
-      }
-    },
-    {
-      "url": "https://github.com/artkruglov/shusha",
-      "score": 26.53,
-      "category": "Image / Design / Creative",
-      "stars": 3,
-      "docker": true,
-      "compose": true,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": "A",
-      "family": null,
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 6.0,
-        "v17 velocity": 1.5,
-        "v17 deploy": 6,
-        "v17 release": 5,
         "v17 license": 2,
         "v17 active": 3,
         "v17 life": 3
@@ -880,7 +856,7 @@
     {
       "url": "https://github.com/rajnandan1/saki",
       "score": 24.97,
-      "category": "Analytics / Data",
+      "category": "Networking / VPN",
       "stars": 6,
       "docker": true,
       "compose": true,
@@ -1077,7 +1053,7 @@
     {
       "url": "https://github.com/chasmlol/skate3-custom-maps-backend",
       "score": 24.23,
-      "category": "Maps / GIS / Location",
+      "category": "Gaming / Game Servers",
       "stars": 3,
       "docker": true,
       "compose": true,
@@ -1150,7 +1126,7 @@
     {
       "url": "https://github.com/marinfrankovic/Kolektor",
       "score": 23.76,
-      "category": "Image / Design / Creative",
+      "category": "Productivity / Tasks",
       "stars": 3,
       "docker": true,
       "compose": true,
@@ -1345,28 +1321,51 @@
         "v17 active": 1,
         "v17 life": 3
       }
+    },
+    {
+      "url": "https://github.com/Itz-Agasta/OpenDiagram",
+      "score": 29.91,
+      "category": "AI / LLM",
+      "stars": 46,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": null,
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 16.7,
+        "v17 velocity": 5.2,
+        "v17 deploy": 6,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 ai": -6
+      }
     }
   ],
   "categoryDistribution": {
-    "Image / Design / Creative": 6,
-    "AI / LLM": 5,
+    "CRM / Business": 5,
     "Media / Streaming": 5,
-    "CRM / Business": 4,
+    "AI / LLM": 4,
+    "Image / Design / Creative": 4,
     "Communication / Social": 4,
+    "Notes / Knowledge": 3,
     "Dashboard / Homelab": 3,
+    "Productivity / Tasks": 3,
     "Monitoring / Observability": 3,
     "Files / Storage / Backup": 2,
+    "Networking / VPN": 2,
     "Web App / Other": 2,
-    "Productivity / Tasks": 2,
     "Developer Tools / Utilities": 2,
-    "Notes / Knowledge": 2,
     "Health / Food / Fitness": 2,
     "Books / Reading / Library": 1,
-    "Networking / VPN": 1,
     "Documents / PDF / Paperless": 1,
-    "Analytics / Data": 1,
     "DevOps / Infra": 1,
-    "Maps / GIS / Location": 1,
+    "Gaming / Game Servers": 1,
     "Finance / Budget": 1,
     "Automation": 1
   },
@@ -1625,31 +1624,87 @@
     "seconds": 103.9
   },
   "timingSeconds": 148.8,
-  "repair": {
-    "at": "2026-10-04T02:56:15+00:00",
-    "dropped": [
-      {
-        "repo": "jknyght9/unifi-dns",
-        "why": "built-on-other-app"
-      }
-    ],
-    "added": [
-      "wangjiqing/xingyu-music-vault"
-    ],
-    "recategorized": [],
-    "topUp": {
-      "from": "v17",
-      "needed": 1,
-      "added": 1,
-      "starFloors": [
-        5
+  "repairs": [
+    {
+      "at": "2026-10-04T02:56:15+00:00",
+      "dropped": [
+        {
+          "repo": "jknyght9/unifi-dns",
+          "why": "built-on-other-app"
+        }
       ],
-      "repos": [
+      "added": [
         "wangjiqing/xingyu-music-vault"
       ],
-      "laneSeen": 10379,
-      "lanePassing": 343,
-      "seconds": 94.6
+      "recategorized": [],
+      "topUp": {
+        "from": "v17",
+        "needed": 1,
+        "added": 1,
+        "starFloors": [
+          5
+        ],
+        "repos": [
+          "wangjiqing/xingyu-music-vault"
+        ],
+        "laneSeen": 10379,
+        "lanePassing": 343,
+        "seconds": 94.6
+      }
+    },
+    {
+      "at": "2026-10-04T03:43:30+00:00",
+      "dropped": [
+        {
+          "repo": "artkruglov/shusha",
+          "why": "chat-bot"
+        }
+      ],
+      "added": [
+        "Itz-Agasta/OpenDiagram"
+      ],
+      "recategorized": [
+        {
+          "repo": "lihor-hub/news-dashboard",
+          "from": "AI / LLM",
+          "to": "Notes / Knowledge"
+        },
+        {
+          "repo": "helpin-ai/helpin",
+          "from": "AI / LLM",
+          "to": "CRM / Business"
+        },
+        {
+          "repo": "rajnandan1/saki",
+          "from": "Analytics / Data",
+          "to": "Networking / VPN"
+        },
+        {
+          "repo": "chasmlol/skate3-custom-maps-backend",
+          "from": "Maps / GIS / Location",
+          "to": "Gaming / Game Servers"
+        },
+        {
+          "repo": "marinfrankovic/Kolektor",
+          "from": "Image / Design / Creative",
+          "to": "Productivity / Tasks"
+        }
+      ],
+      "topUp": {
+        "from": "v17",
+        "needed": 1,
+        "added": 1,
+        "starFloors": [
+          20
+        ],
+        "replacedOverAiCeiling": [],
+        "repos": [
+          "Itz-Agasta/OpenDiagram"
+        ],
+        "laneSeen": 4502,
+        "lanePassing": 91,
+        "seconds": 55.7
+      }
     }
-  }
+  ]
 }

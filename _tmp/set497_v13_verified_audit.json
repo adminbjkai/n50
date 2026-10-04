@@ -744,7 +744,7 @@
     {
       "url": "https://github.com/lordbasex/go-link",
       "score": 70.08,
-      "category": "Media / Streaming",
+      "category": "Gaming / Game Servers",
       "stars": 13,
       "docker": false,
       "compose": false,
@@ -827,7 +827,7 @@
     {
       "url": "https://github.com/rbnkr/kivra-export",
       "score": 46.91,
-      "category": "Developer Tools / Utilities",
+      "category": "Finance / Budget",
       "stars": 3,
       "docker": true,
       "compose": false,
@@ -1218,53 +1218,6 @@
       }
     },
     {
-      "url": "https://github.com/uplg/hora",
-      "score": 22.28,
-      "category": "Monitoring / Observability",
-      "stars": 6,
-      "docker": true,
-      "compose": false,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": "A",
-      "family": "dash_mon",
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 8.5,
-        "v17 velocity": 0.8,
-        "v17 deploy": 3,
-        "v17 release": 5,
-        "v17 license": 2,
-        "v17 active": 3
-      }
-    },
-    {
-      "url": "https://github.com/alexgeraldo/ilo-fan-control",
-      "score": 22.17,
-      "category": "Monitoring / Observability",
-      "stars": 11,
-      "docker": true,
-      "compose": false,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": "A",
-      "family": "dash_mon",
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 10.8,
-        "v17 velocity": 0.4,
-        "v17 deploy": 3,
-        "v17 release": 3,
-        "v17 license": 2,
-        "v17 active": 1,
-        "v17 selfhost": 2
-      }
-    },
-    {
       "url": "https://github.com/codespearhead/word-to-pdf-api",
       "score": 21.94,
       "category": "Documents / PDF / Paperless",
@@ -1429,57 +1382,9 @@
       }
     },
     {
-      "url": "https://github.com/Gerald-Ha/LingoVeil",
-      "score": 20.15,
-      "category": "AI / LLM",
-      "stars": 5,
-      "docker": true,
-      "compose": true,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": "A",
-      "family": "documents",
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 7.8,
-        "v17 velocity": 1.4,
-        "v17 deploy": 6,
-        "v17 polish": 3,
-        "v17 license": -4,
-        "v17 active": 3,
-        "v17 life": 3
-      }
-    },
-    {
-      "url": "https://github.com/userAshwani/PingFlow",
-      "score": 19.65,
-      "category": "Monitoring / Observability",
-      "stars": 7,
-      "docker": true,
-      "compose": true,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": "A",
-      "family": "dash_mon",
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 9.0,
-        "v17 velocity": 2.6,
-        "v17 deploy": 6,
-        "v17 polish": 3,
-        "v17 license": -4,
-        "v17 active": 1,
-        "v17 selfhost": 2
-      }
-    },
-    {
       "url": "https://github.com/AiryAir/signage2",
       "score": 19.58,
-      "category": "Notes / Knowledge",
+      "category": "Media / Streaming",
       "stars": 15,
       "docker": true,
       "compose": true,
@@ -1547,30 +1452,6 @@
       }
     },
     {
-      "url": "https://github.com/starfleetapp/fleetview",
-      "score": 16.31,
-      "category": "Monitoring / Observability",
-      "stars": 8,
-      "docker": true,
-      "compose": false,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": "A",
-      "family": "other",
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 9.5,
-        "v17 velocity": 1.8,
-        "v17 deploy": 3,
-        "v17 license": -4,
-        "v17 active": 1,
-        "v17 selfhost": 2,
-        "v17 life": 3
-      }
-    },
-    {
       "url": "https://github.com/milanjrodd/roddoska",
       "score": 15.15,
       "category": "Productivity / Tasks",
@@ -1591,50 +1472,6 @@
         "v17 license": -4,
         "v17 active": 1,
         "v17 life": 3
-      }
-    },
-    {
-      "url": "https://github.com/perfektnacht/uplink",
-      "score": 14.05,
-      "category": "Dashboard / Homelab",
-      "stars": 6,
-      "docker": true,
-      "compose": true,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": "A",
-      "family": "proxy_net",
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 8.5,
-        "v17 velocity": 2.6,
-        "v17 deploy": 6,
-        "v17 license": -4,
-        "v17 active": 1
-      }
-    },
-    {
-      "url": "https://github.com/BentFender/netpulse",
-      "score": 11.62,
-      "category": "Monitoring / Observability",
-      "stars": 5,
-      "docker": true,
-      "compose": true,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": "A",
-      "family": "dash_mon",
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 7.8,
-        "v17 velocity": 0.8,
-        "v17 deploy": 6,
-        "v17 license": -4,
-        "v17 active": 1
       }
     },
     {
@@ -1805,33 +1642,6 @@
       }
     },
     {
-      "url": "https://github.com/qianzhu18/Muku",
-      "score": 27.44,
-      "category": "Media / Streaming",
-      "stars": 11,
-      "docker": true,
-      "compose": true,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": "A",
-      "family": "media",
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 10.8,
-        "v17 velocity": 0.6,
-        "v17 deploy": 6,
-        "v17 release": 5,
-        "v17 polish": 3,
-        "v17 license": 2,
-        "v17 active": 1,
-        "v17 selfhost": 2,
-        "v17 life": 3,
-        "v17 ai": -6
-      }
-    },
-    {
       "url": "https://github.com/BytesAndCoffee/bad-decisions",
       "score": 25.12,
       "category": "Gaming / Game Servers",
@@ -1901,28 +1711,216 @@
         "v17 active": 3,
         "v17 life": 3
       }
+    },
+    {
+      "url": "https://github.com/alekm/radix",
+      "score": 19.51,
+      "category": "Security / Auth",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "security",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 0.5,
+        "v17 deploy": 6,
+        "v17 license": 2,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/metalfinger/refboard",
+      "score": 19.31,
+      "category": "Notes / Knowledge",
+      "stars": 5,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "knowledge",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 7.8,
+        "v17 velocity": 0.5,
+        "v17 deploy": 6,
+        "v17 license": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/AmirHBuilds/mirrorino",
+      "score": 18.7,
+      "category": "Developer Tools / Utilities",
+      "stars": 9,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dev_web",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 10.0,
+        "v17 velocity": 0.7,
+        "v17 deploy": 6,
+        "v17 license": -4,
+        "v17 active": 1,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/pidanou/homeboard",
+      "score": 18.48,
+      "category": "Productivity / Tasks",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "productivity",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 0.5,
+        "v17 deploy": 6,
+        "v17 license": 2,
+        "v17 active": 1,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/pinkpixel-dev/stitchlet",
+      "score": 18.47,
+      "category": "Productivity / Tasks",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "productivity",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 0.4,
+        "v17 deploy": 6,
+        "v17 org": 2,
+        "v17 license": -4,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/Pardalesteban/sshpanel",
+      "score": 18.46,
+      "category": "Docker / Containers",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "devops",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 0.4,
+        "v17 deploy": 6,
+        "v17 release": 3,
+        "v17 license": 2,
+        "v17 active": 1
+      }
+    },
+    {
+      "url": "https://github.com/Netrun-Systems/sigil-cms",
+      "score": 18.21,
+      "category": "CMS / Website",
+      "stars": 5,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "cms",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 7.8,
+        "v17 velocity": 0.4,
+        "v17 deploy": 3,
+        "v17 polish": 3,
+        "v17 org": 2,
+        "v17 license": 2
+      }
+    },
+    {
+      "url": "https://github.com/MarwanAlghamdi/Lawha",
+      "score": 17.99,
+      "category": "Image / Design / Creative",
+      "stars": 3,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "media",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 6.0,
+        "v17 velocity": 1.0,
+        "v17 deploy": 6,
+        "v17 license": 2,
+        "v17 active": 3
+      }
     }
   ],
   "categoryDistribution": {
-    "Monitoring / Observability": 10,
-    "Media / Streaming": 6,
-    "Dashboard / Homelab": 6,
-    "Productivity / Tasks": 3,
-    "Gaming / Game Servers": 3,
-    "AI / LLM": 3,
+    "Productivity / Tasks": 5,
+    "Media / Streaming": 5,
+    "Dashboard / Homelab": 5,
+    "Monitoring / Observability": 5,
+    "Gaming / Game Servers": 4,
     "Communication / Social": 2,
-    "Developer Tools / Utilities": 2,
     "Documents / PDF / Paperless": 2,
     "Privacy / Ad-Blocking": 2,
     "Files / Storage / Backup": 2,
+    "Developer Tools / Utilities": 2,
+    "AI / LLM": 2,
+    "Security / Auth": 2,
+    "CMS / Website": 2,
     "Education / Learning": 2,
     "Networking / VPN": 1,
+    "Finance / Budget": 1,
     "Home Automation / IoT": 1,
     "DevOps / Infra": 1,
-    "Security / Auth": 1,
     "Books / Reading / Library": 1,
     "Notes / Knowledge": 1,
-    "CMS / Website": 1
+    "Docker / Containers": 1,
+    "Image / Design / Creative": 1
   },
   "scoreStats": {
     "min": 11.62,
@@ -2185,17 +2183,150 @@
     "db_light": 1
   },
   "timingSeconds": 359.8,
-  "repair": {
-    "at": "2026-10-04T02:55:00+00:00",
-    "dropped": [],
-    "added": [],
-    "recategorized": [
-      {
-        "repo": "perfektnacht/uplink",
-        "from": "Networking / VPN",
-        "to": "Dashboard / Homelab"
+  "repairs": [
+    {
+      "at": "2026-10-04T02:55:00+00:00",
+      "dropped": [],
+      "added": [],
+      "recategorized": [
+        {
+          "repo": "perfektnacht/uplink",
+          "from": "Networking / VPN",
+          "to": "Dashboard / Homelab"
+        }
+      ],
+      "topUp": null
+    },
+    {
+      "at": "2026-10-04T03:38:48+00:00",
+      "dropped": [
+        {
+          "repo": "Gerald-Ha/LingoVeil",
+          "why": "over-ai-ceiling (3)"
+        },
+        {
+          "repo": "qianzhu18/Muku",
+          "why": "over-ai-ceiling (3)"
+        }
+      ],
+      "added": [
+        "alekm/radix",
+        "giammbo/incident-commander"
+      ],
+      "recategorized": [
+        {
+          "repo": "lordbasex/go-link",
+          "from": "Media / Streaming",
+          "to": "Gaming / Game Servers"
+        },
+        {
+          "repo": "rbnkr/kivra-export",
+          "from": "Developer Tools / Utilities",
+          "to": "Finance / Budget"
+        },
+        {
+          "repo": "AiryAir/signage2",
+          "from": "Notes / Knowledge",
+          "to": "Media / Streaming"
+        }
+      ],
+      "topUp": {
+        "from": "v17",
+        "needed": 2,
+        "added": 2,
+        "starFloors": [
+          20,
+          10,
+          5
+        ],
+        "replacedOverAiCeiling": [],
+        "repos": [
+          "alekm/radix",
+          "giammbo/incident-commander"
+        ],
+        "laneSeen": 10171,
+        "lanePassing": 327,
+        "seconds": 218.7
       }
-    ],
-    "topUp": null
-  }
+    },
+    {
+      "at": "2026-10-04T03:48:42+00:00",
+      "dropped": [],
+      "added": [],
+      "recategorized": [
+        {
+          "repo": "giammbo/incident-commander",
+          "from": "Maps / GIS / Location",
+          "to": "Monitoring / Observability"
+        }
+      ],
+      "topUp": null
+    },
+    {
+      "at": "2026-10-04T04:06:58+00:00",
+      "dropped": [
+        {
+          "repo": "uplg/hora",
+          "why": "over-category-cap (5)"
+        },
+        {
+          "repo": "alexgeraldo/ilo-fan-control",
+          "why": "over-category-cap (5)"
+        },
+        {
+          "repo": "userAshwani/PingFlow",
+          "why": "over-category-cap (5)"
+        },
+        {
+          "repo": "starfleetapp/fleetview",
+          "why": "over-category-cap (5)"
+        },
+        {
+          "repo": "perfektnacht/uplink",
+          "why": "over-category-cap (5)"
+        },
+        {
+          "repo": "BentFender/netpulse",
+          "why": "over-category-cap (5)"
+        },
+        {
+          "repo": "giammbo/incident-commander",
+          "why": "over-category-cap (5)"
+        }
+      ],
+      "added": [
+        "metalfinger/refboard",
+        "AmirHBuilds/mirrorino",
+        "pidanou/homeboard",
+        "pinkpixel-dev/stitchlet",
+        "Pardalesteban/sshpanel",
+        "Netrun-Systems/sigil-cms",
+        "MarwanAlghamdi/Lawha"
+      ],
+      "recategorized": [],
+      "topUp": {
+        "from": "v17",
+        "needed": 7,
+        "added": 7,
+        "starFloors": [
+          20,
+          10,
+          5
+        ],
+        "replacedOverAiCeiling": [],
+        "repos": [
+          "metalfinger/refboard",
+          "AmirHBuilds/mirrorino",
+          "pidanou/homeboard",
+          "pinkpixel-dev/stitchlet",
+          "Pardalesteban/sshpanel",
+          "Netrun-Systems/sigil-cms",
+          "MarwanAlghamdi/Lawha"
+        ],
+        "laneSeen": 10132,
+        "lanePassing": 323,
+        "seconds": 218.0
+      }
+    }
+  ]
 }

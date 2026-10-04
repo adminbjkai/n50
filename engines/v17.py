@@ -192,6 +192,11 @@ _gql_lock = threading.Lock()
 _gql_stats = {"calls": 0, "errors": 0, "remaining": None}
 
 
+class RateLimited(RuntimeError):
+    """GitHub refused GraphQL calls for now. Discovery must stop, not read this as 'no repos':
+    an empty answer would mark search slices dead and cache good repos as rejects."""
+
+
 def gql(query, variables=None, retries=3):
     body = json.dumps({"query": query, "variables": variables or {}}).encode()
     for attempt in range(retries):
@@ -203,9 +208,6 @@ def gql(query, variables=None, retries=3):
                 data = json.loads(r.read().decode())
             with _gql_lock:
                 _gql_stats["calls"] += 1
-            if data.get("errors") and not data.get("data"):
-                raise RuntimeError(str(data["errors"])[:200])
-            return data.get("data") or {}
         except urllib.error.HTTPError as e:
             wait = float(e.headers.get("Retry-After") or (4 * (attempt + 1)))
             if e.code in (403, 429, 502, 503) and attempt + 1 < retries:
@@ -221,6 +223,17 @@ def gql(query, variables=None, retries=3):
             with _gql_lock:
                 _gql_stats["errors"] += 1
             return None
+        errors = data.get("errors") or []
+        if any(e.get("type") == "RATE_LIMIT" for e in errors):
+            if attempt + 1 < retries:      # usually GitHub's short burst limit: wait, then retry
+                time.sleep(60)
+                continue
+            raise RateLimited("GitHub GraphQL rate limit reached; try again in up to an hour")
+        if errors and not data.get("data"):
+            with _gql_lock:
+                _gql_stats["errors"] += 1
+            return None
+        return data.get("data") or {}
     return None
 
 
@@ -251,10 +264,13 @@ def normalise(node):
 
 
 def search_slice(q, pages=1, per_page=100):
+    """Repos for one search slice, or None if its first page failed (unknown, not empty)."""
     out, after = [], None
-    for _ in range(pages):
+    for page in range(pages):
         data = gql(SEARCH_Q % per_page, {"q": q, "after": after})
         if not data:
+            if page == 0:
+                return None
             break
         s = data.get("search") or {}
         if data.get("rateLimit"):
@@ -294,14 +310,13 @@ def hydrate(full_names, batch=25):
 JUNK = [
     # The repo IS a chart/role/module (an app that merely offers a Helm option is fine).
     (r"\b(a |an |the )?helm charts? (for|to|that)\b|\bansible (roles?|playbooks?|collections?) (for|to|that)\b|\bterraform (modules?|providers?) (for|to|that)\b|\bk8s operator\b|\bkubernetes operator\b", "infra-packaging"),
-    (r"\b(plugin|extension|add-?on|addon|integration|theme|skin|widget|module|mod)\s+(for|to)\b", "plugin-for-other-app"),
+    (r"\b(plugin|extension|add-?on|addon|integration|theme|skin|widget|module|mod)\s+(for|to)\b(?! (your|any|every) )", "plugin-for-other-app"),
     (r"\b(client|app|frontend|player|companion)\s+for\s+(jellyfin|plex|navidrome|subsonic|emby|immich|home assistant|nextcloud|sonarr|radarr|mastodon|matrix|lemmy)", "client-for-other-app"),
-    (r"\b(android|ios|iphone|mobile|desktop|windows|macos|tvos)\s+(app|client|application)\b|\b(apps?|clients?) for (android|ios|iphone|windows|macos)\b", "native-client"),
     (r"\bfor (the |your )?\*?arr\b( (ecosystem|stack|apps?))?|\*arr (media )?stack\b", "plugin-for-other-app"),
     (r"\b(rest )?api\b.{0,50}\busing (yt-dlp|ffmpeg|puppeteer|playwright|selenium)\b|\bapi (wrapper )?(for|around) yt-dlp\b", "component-or-dev-tool"),
     (r"\bdocker[- ]?(compose)?[- ]?(solution|setup|stack|configuration|config|environment|template)s?\s+(for|to)\b|\bready[- ]to[- ]use\b.{0,40}\bdocker[- ]?compose\b|\b(monitoring|logging|observability) stack\b.{0,60}\b(prometheus|grafana|loki)\b", "packaging-of-other-app"),
     (r"\bdedicated server\b|\bfor [\w ]{0,30}dedicated servers\b|\bgame server (for|of)\b|\bserver for (minecraft|palworld|valheim|ark|rust|terraria)", "game-server-wrapper"),
-    (r"\b(discord|telegram|slack|whatsapp|twitch|feishu|lark|wechat|dingtalk|qq)\b.{0,30}\bbot\b|\bbot for (discord|telegram|slack|feishu)", "chat-bot"),
+    (r"\b(discord|telegram|slack|whatsapp|twitch|feishu|lark|wechat|dingtalk|qq)\b.{0,30}\bbot\b|\bbot for (discord|telegram|slack|feishu)|\b(assistant|bot|agent|companion)s? (for|in|on|via|inside) (telegram|whatsapp|discord|slack|wechat|feishu|lark|signal)\b", "chat-bot"),
     (r"\bprivate servers?\b|\bgame servers?\b.{0,40}\b(minecraft|valheim|palworld|terraria|factorio|cs2|ark)\b", "game-server-wrapper"),
     (r"\b(browser-based |web )client for (?!your\b)[\w.-]+|\bfor use alongside\b|\bcompanion (tool|app|service) (for|to)\b", "companion-for-other-app"),
     (r"2api\b|\bto[- ]?api\b|account pool|\b(ai |llm )?subscription pool|reverse[- ]proxy for (chatgpt|claude|openai|gemini|codex|cursor|kiro|grok|copilot)|\b(chatgpt|claude|gemini|codex|kiro|grok|copilot|cursor) (account|api) (proxy|pool|gateway)", "ai-account-proxy"),
@@ -310,7 +325,7 @@ JUNK = [
     (r"\buserscript\b|\btampermonkey\b|\bbrowser extension\b|\bchrome extension\b", "browser-extension"),
     (r"\b(docker images?|docker-?compose files?|compose (files|stack|templates?)|dockerfiles?|deployment|install(er|ation) scripts?|setup scripts?)\s+for\b", "packaging-of-other-app"),
     (r"\bmade for (my|own|our) (own )?(personal )?(server|homelab|setup)\b|\bpersonal use\b|^(my|personal) |\bmy (homelab|home lab|server|setup|infra)\b|\bhomelab (config|setup|infrastructure|repo|gitops)\b|\bgitops\b|\bdotfiles\b|\bnixos config", "personal-setup"),
-    (r"\b(starter|boilerplate|template|scaffold|example|sample|demo|tutorial|course|workshop|homework|assignment|learning)\b( (app|project|repo|for|of|to))", "template-or-learning"),
+    (r"\b(starter|boilerplate|template|scaffold|example|sample|demo|tutorial|course|workshop|homework|assignment)\b( (app|project|repo|for|of|to))|\blearning (project|repo|exercise)", "template-or-learning"),
     (r"\bawesome\b.*\b(list|collection)\b|\bcurated list\b", "list"),
     # The repo IS an MCP server (apps that include one as a feature are fine).
     (r"\b(mcp|model context protocol) servers? (for|that|to|which|exposing)\b|\bis an? (mcp|model context protocol) server\b", "mcp-server"),
@@ -321,19 +336,20 @@ JUNK = [
     (r"\b(cloudron|yunohost|umbrel|casaos|unraid|truenas)(\.io)? app (package|template)\b|\bapp package for\b", "packaging-of-other-app"),
     (r"\b(rest )?api (around|wrapping)\b|\bwrapper (around|for)\b|\b(sso|auth|authentication|oauth2?) (library )?for (go|golang|python|node(\.js)?|rust|java|php|react)\b|\bapi for node(\.js)?\b", "component-or-dev-tool"),
     (r"\badult (tube|site|content|video)s?\b|\bporn\w*\b|\bnsfw\b|\bhentai\b", "adult-content"),
-    (r"\b(library|sdk|framework)\s+for\s+(production\s+)?(llm|ai|agents?|python|typescript|javascript|node(\.js)?|go|rust|react|vue)\b", "library-or-sdk"),
+    (r"\b(library|sdk|framework)\s+for\s+(production\s+)?(llm|ai|agents?|python|typescript|javascript|node(\.js)?|go|rust|react|vue|building|creating|writing|developing)\b", "library-or-sdk"),
     (r"\bagent (runtime|harness|sandbox|stack|infrastructure|framework)\b|\bdocker sandbox\b|\b[\d,]+\+? tool integrations\b|\bmemory (layer|system|api|store) for (ai )?agents?\b", "agent-infrastructure"),
     (r"\bmulti[- ]account|\baccounts? (manager|management|farm)|\bauto(matic)? ?(sign[- ]?in|check[- ]?in)|签到|\bfree[- ]tier (farm|abuse)", "account-farming"),
-    (r"\b(gamma exposure|options (flow|chain)|stock|stocks|forex|trading|trader|trade journal|broker sync|portfolio tracker for (crypto|stocks))\b", "trading-crypto"),
+    (r"\b(gamma exposure|options (flow|chain)|stock (market|trading|screener|prices?|quotes?|analysis|alerts?|picks?|tickers?)|stocks (and|&) (crypto|etfs?|options|bonds)|forex|(algo|algorithmic|crypto|stock|day|paper|options|copy) trading|trading (bot|strateg\w+|platform|signals?|terminal|journal|desk)|trader|trade journal|broker sync|portfolio tracker for (crypto|stocks))\b", "trading-crypto"),
     (r"\b(serving kit|inference (kit|stack) for|exl[23])\b", "model-serving-kit"),
-    (r"\b(sidecar|addons?|add-ons?)\b", "addon-or-companion"),
+    (r"\bsidecar (for|to|that|container)\b|\b(stremio|kodi|home assistant|firefox|thunderbird|blender|anki|torrentio) add-?ons?\b|\badd-?ons? (repository|repo|pack|collection)\b", "addon-or-companion"),
     (r"\b(device|phone|iphone) farm\b|\bfarm of (real )?(iphones|phones|devices)\b|\btraffic distribution system\b|\blead[- ]gen|\blead (sourcing|generation|scraping|enrichment)\b|\bclay\.com\b|\bfinds? (the )?people\b|\bcold (email|outreach)|\bgrowth hack", "growth-or-device-farm"),
     (r"\binstall(ation)? (config|configuration|files?) for\b|\bconfig only\b", "packaging-of-other-app"),
+    (r"\b(tailscale )?(exit node|subnet router)s?\b", "packaging-of-other-app"),
     (r"\bone[- ](shot|command|click)\s+(docker\s+)?(install|deploy|setup|self-hosting)\w*\s+(of|for)\b|\b(docker )?self-hosting for the\b|\bdocker (deployment|setup|installer) for\b", "packaging-of-other-app"),
     (r"\b(dashboard|ui|frontend|manager|portal|panel)\s+for\s+(your\s+)?(self-hosted\s+)?[\w.-]+\s+instances?\b", "companion-for-other-app"),
     (r"\bcold[- ]call\w*|\b(power|auto|predictive|progressive)[- ]?dialer\b|\bauto(matically)?[- ]?(view|like|follow)(s|ing|er)?\b", "growth-or-device-farm"),
     (r"\bdownloader for (apple music|spotify|deezer|qobuz|tidal|youtube|soundcloud)\b|\b(music|stream|spotify|apple music|deezer|tidal|qobuz|youtube) ripper\b|\b(spotify|tidal|deezer|qobuz|apple music) (ingest|download\w*|rip\w*)\b|\bdownload\w* (music )?from (spotify|tidal|deezer|qobuz|apple music)\b", "scraper-or-shady"),
-    (r"\bscraper\b|\bcrawler\b|\bspam\b|\bmass (dm|mail)|\bbot farm\b|\bcheat\b|\bpiracy\b|\bcrack(ed)?\b|\bwarez\b", "scraper-or-shady"),
+    (r"\bspam\b|\bmass (dm|mail)|\bbot farm\b|\bcheat\b|\bpiracy\b|\bcrack(ed)?\b|\bwarez\b", "scraper-or-shady"),
 ]
 JUNK_RE = [(re.compile(p, re.I), why) for p, why in JUNK]
 WEB_INTENT = re.compile(r"\b(web|webui|web ui|web-based|browser|dashboard|self-?host\w*|homelab|alternative|"
@@ -355,20 +371,22 @@ def _age_days(iso, now):
 CJK = re.compile(r"[\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]")
 
 
+# Words only English uses ("a" and "in" are also French/German, so they don't count).
 ENGLISH_WORDS = {"the", "and", "for", "with", "your", "you", "to", "of", "that", "from", "is", "an",
-                 "on", "it", "this", "by", "or", "into", "without", "all", "every", "a", "in"}
+                 "on", "it", "this", "by", "or", "into", "without", "all", "every"}
 FOREIGN_WORDS = {"der", "die", "das", "und", "ohne", "mit", "für", "als", "ein", "eine", "nicht", "zu",
                  "von", "auf", "bei", "de", "e", "para", "com", "sem", "seu", "sua", "um", "uma", "não",
                  "y", "el", "los", "las", "con", "por", "del", "le", "les", "et", "pour", "avec", "sans",
-                 "des", "du", "une", "est", "il", "di", "che", "gli", "och", "med", "för", "og", "er"}
-ACCENTED = re.compile(r"[ãõçáíóúâêôàüößäñœ]")
+                 "des", "du", "une", "est", "il", "di", "che", "gli", "och", "med", "för", "og", "er",
+                 "la", "ce", "sur", "dans", "qui", "vous", "votre", "nous", "à", "pas", "plus", "aux"}
+ACCENTED = re.compile(r"[ãõçáéèëíîïóúùûâêôàüößäñœ]")
 
 
 def readable(desc):
     letters = [c for c in desc if c.isalpha()]
     if len(letters) < 20 or len(CJK.findall(desc)) > 8:
         return False
-    words = set(re.findall(r"[a-zãõçáéíóúâêôàüößäñœ]+", desc.lower()))
+    words = set(re.findall(r"[a-zãõçáéèëíîïóúùûâêôàüößäñœ]+", desc.lower()))
     foreign = len(words & FOREIGN_WORDS) + (1 if ACCENTED.search(desc.lower()) else 0)
     if foreign >= 2 and not words & ENGLISH_WORDS:   # Latin-script but not English
         return False
@@ -391,10 +409,11 @@ ARR_TOOLS = re.compile(r"\b(sonarr|radarr|lidarr|prowlarr|readarr|bazarr|qbittor
 # Alternatives say so ("Jellyfin alternative", "replaces Plex", "like Notion"); a bare
 # "instead of static values" is not about another app.
 ALT_TO = re.compile(r"\b(alternatives?|replacements?|replaces|drop-in)\b|\b(instead of|like) (using )?"
-                    + HOST_APPS.pattern[2:], re.I)
+                    + HOST_APPS.pattern[2:] + "|" + HOST_APPS.pattern + r"[- ](like|style|inspired)\b", re.I)
 # "Works with Nextcloud, Radicale…", "friendly to Obsidian": compatibility, not an add-on.
 COMPAT = re.compile(r"\b(works with|compatible with|friendly to|interoperable with|imports? from|migrate from)"
-                    r"[^.]{0,60}?" + HOST_APPS.pattern, re.I)
+                    r"[^.]{0,60}?" + HOST_APPS.pattern + "|" + HOST_APPS.pattern + r"[- ](api|protocol)\b|"
+                    + HOST_APPS.pattern + r"[- ]compatible\b", re.I)
 # "Sonarr/Radarr for games": an app modelled on a known one, not an add-on to it.
 ANALOGY = re.compile(HOST_APPS.pattern + r"(\s*/\s*[\w-]+)?\s+for\s+(games|books|comics|music|podcasts|"
                      r"recipes|audiobooks|movies|photos|ebooks|manga|anime|papers|notes)\b", re.I)
@@ -403,6 +422,17 @@ ANALOGY = re.compile(HOST_APPS.pattern + r"(\s*/\s*[\w-]+)?\s+for\s+(games|books
 BUILT_ON = re.compile(r"\b(for|on top of|powered by|built on|integrat\w* with|companion to)\s+"
                       r"(every\s+|your\s+|all\s+|self-hosted\s+)?" + HOST_APPS.pattern[2:], re.I)
 TERMINAL = re.compile(r"\b(tui|terminal ui|terminal user interface|command[- ]line|cli tool)\b", re.I)
+
+
+NATIVE = re.compile(r"\b(android|ios|iphone|mobile|desktop|windows|macos|tvos)\s+(app|client|application)\b|"
+                    r"\b(apps?|clients?) for (android|ios|iphone|windows|macos)\b", re.I)
+SCRAPER = re.compile(r"\b(scraper|crawler)s?\b", re.I)
+SCRAPER_FEATURE = re.compile(r"\b(built[- ]in|metadata|recipe|integrated|optional|bundled)\s+(scraper|crawler)|"
+                             r"\b(scraper|crawler)\)?\s+(built[- ]in|included)\b", re.I)
+# A player/client/frontend that works with someone else's server is a client for it.
+CLIENT_OF = re.compile(r"\b(player|client|frontend|front-end|remote|viewer)\b.{0,120}?\b(compatible with|works with|"
+                       r"connects? to|for)\b[^.]{0,30}?\b(jellyfin|plex|emby|navidrome|subsonic|immich|"
+                       r"audiobookshelf|kavita|komga|home assistant)\b", re.I)
 
 
 def gate(repo, now, curated=False, light=False):
@@ -426,6 +456,12 @@ def gate(repo, now, curated=False, light=False):
     for rx, why in JUNK_RE:
         if rx.search(blob):
             return why
+    if NATIVE.search(blob) and not re.search(r"\b(web|browser)\b", desc, re.I):
+        return "native-client"
+    if SCRAPER.search(blob) and not SCRAPER_FEATURE.search(desc):
+        return "scraper-or-shady"
+    if CLIENT_OF.search(desc) and not re.search(r"\bserver\b", desc.split(",")[0], re.I):
+        return "client-for-other-app"
     if re.match(r"(an? |the )?(mcp|model context protocol) server\b", desc, re.I):
         return "mcp-server"
     if re.match(r"(asp\.net( core)?|laravel|django|rails|react|vue|angular|express|flask|fastapi|spring boot)\s*[-–—:]",
@@ -450,6 +486,19 @@ def gate(repo, now, curated=False, light=False):
     if not (topics & (SELFHOST_TOPICS | WEBAPP_TOPICS) or WEB_INTENT.search(desc) or curated):
         return "no-web-app-intent"
     return None
+
+
+def _gate_signature():
+    """Hash of every rule the gate applies, so a rule change invalidates cached rejects."""
+    import hashlib
+    parts = [p for p, _ in JUNK] + [rx.pattern for rx in (
+        WEB_INTENT, HOST_APPS, ARR_TOOLS, ALT_TO, COMPAT, ANALOGY, BUILT_ON, TERMINAL, NATIVE,
+        SCRAPER, SCRAPER_FEATURE, CLIENT_OF)] + sorted(ENGLISH_WORDS) + sorted(FOREIGN_WORDS) + [
+        ACCENTED.pattern, str(MAX_PUSH_AGE_DAYS)]
+    return hashlib.sha1("\n".join(parts).encode()).hexdigest()[:12]
+
+
+GATE_SIG = _gate_signature()
 
 
 def interest_score(repo, now, curated=None):
@@ -482,8 +531,18 @@ def interest_score(repo, now, curated=None):
 CATEGORY_OVERRIDES = [
     (r"\b(crm|help ?desk|support desk|ticketing|customer (service|support))\b", "CRM / Business"),
     (r"\b(epub|ebooks?|ebook reader|audiobooks?|book library|fb2|opds|calibre)\b", "Books / Reading / Library"),
-    (r"\b(radio (server|station)|internet radio|music player|podcasts?)\b", "Media / Streaming"),
-    (r"\b(markdown notes|note-taking|notes app|knowledge base|wiki)\b", "Notes / Knowledge"),
+    (r"\b(radio (server|station|automation|stream\w*)|internet radio|music player|podcasts?|vinyl)\b", "Media / Streaming"),
+    (r"\b(test (management|case management)|qa (platform|management))\b", "Developer Tools / Utilities"),
+    (r"\b(crochet|knitting|sewing|embroidery patterns?|hobby (tracker|projects?))\b", "Productivity / Tasks"),
+    (r"\b(markdown notes|note-taking|notes? (app|application)s?|knowledge base|wiki)\b", "Notes / Knowledge"),
+    (r"\b(nostr|activitypub|fediverse)\b", "Communication / Social"),
+    (r"\b(shop management|business management|quoting|quotes and invoices)\b", "CRM / Business"),
+    (r"\b(collection (manager|tracker|catalog\w*)|catalog\w* (and \w+ )?your [\w ]{0,20}collection)\b", "Productivity / Tasks"),
+    (r"\b(wireguard|vpn|dns (filtering|server|resolver)|reverse proxy)\b", "Networking / VPN"),
+    (r"\b(navigation (portal|page)|start ?page|links? (portal|page))\b", "Dashboard / Homelab"),
+    (r"\b(digital signage|signage)\b", "Media / Streaming"),
+    (r"\b(label (designer|templates?|printing|printer)|barcodes?|qr codes?)\b", "Documents / PDF / Paperless"),
+    (r"\b(custom maps|maps? catalog|game mods?|modding)\b", "Gaming / Game Servers"),
     (r"\b(dashboard (application|app) for your|dashboard for your (containers|services|apps|homelab))\b", "Dashboard / Homelab"),
     (r"\b(photography|portfolio|photo (browser|management|manager)|stl|3mf|3d models?)\b", "Image / Design / Creative"),
     (r"\b(document management|paperless)\b", "Documents / PDF / Paperless"),
@@ -496,7 +555,7 @@ CATEGORY_OVERRIDES = [
     (r"\b(dictionary|vocabulary|language learning)\b", "Education / Learning"),
     (r"\b(day planner|planner pwa|to-?do lists?)\b", "Productivity / Tasks"),
     (r"\b(backups?|family (digital )?safe|file (storage|sharing)|dropbox)\b", "Files / Storage / Backup"),
-    (r"\b(observability|uptime|status page|speedtests?|netflow|error tracking|telemetry|monitoring)\b", "Monitoring / Observability"),
+    (r"\b(observability|uptime|status page|speedtests?|netflow|error tracking|sentry|telemetry|monitoring|incident (management|response)|on-call|alerting)\b", "Monitoring / Observability"),
     (r"\b(forum|community platform|chat rooms?|messaging|webrtc)\b", "Communication / Social"),
     (r"\b(learning platform|courses?|flashcards|exams?|quiz\w*|lms)\b", "Education / Learning"),
     (r"\b(cookie consent|consent management|gdpr|privacy (checkup|dashboard))\b", "Privacy / Ad-Blocking"),
@@ -507,15 +566,15 @@ CATEGORY_OVERRIDES = [
     (r"\b(osint|threat intel\w*|siem|sigma detection|red team)\b", "Security / Auth"),
     (r"\b(crm|help ?desk|support desk|ticketing)\b", "CRM / Business"),
     (r"\b(fitness|workout|strength[- ]training|sleep tracking|fitbit|habit tracker|health tracker|wellness|nutrition|longevity)\b", "Health / Food / Fitness"),
-    (r"\b(time[- ]tracking|time tracker|timesheets?|to-?do|task manager|pomodoro|vehicle|car maintenance|home inventory|household)\b", "Productivity / Tasks"),
+    (r"\b(time[- ]tracking|time tracker|timesheets?|to-?do|task manager|kanban|pomodoro|vehicle|car maintenance|home inventory|household)\b", "Productivity / Tasks"),
     (r"\b(voice assistant|replacement for siri|alexa|smart[- ]home|home automation)\b", "Home Automation / IoT"),
-    (r"\b(blog|blogging|cms|website builder|publishing platform|static site)\b", "CMS / Website"),
-    (r"\b(pdf|slides|presentations?|spreadsheets?|office suite|pptx|docx|word processor|ocr)\b", "Documents / PDF / Paperless"),
+    (r"\b(blog|blogging|cms|website builder|publishing platform|static (web)?sites?|static websites?)\b", "CMS / Website"),
+    (r"\b(pdfs?|slides|presentations?|spreadsheets?|office suite|pptx|docx|word processor|ocr)\b", "Documents / PDF / Paperless"),
     (r"\b(web analytics|product analytics|analytics)\b", "Analytics / Data"),
     (r"\b(gps|gpx|maps?|geospatial|location|travel|trip planner|road ?trips?|itinerar\w+)\b", "Maps / GIS / Location"),
     (r"\b(photo|photos|gallery|image hosting)\b", "Image / Design / Creative"),
     (r"\b(recipe|recipes|meal|grocery|pantry)\b", "Health / Food / Fitness"),
-    (r"\b(budget|finance|expense|invoice|accounting|erp)\b", "Finance / Budget"),
+    (r"\b(budget|finance|expenses?|invoic\w+|billing|accounting|ledgers?|cost[- ]sharing|erp)\b", "Finance / Budget"),
     (r"\b(bookmark|read[- ]later|rss|feed reader)\b", "Notes / Knowledge"),
     (r"\b(ebook|ebooks|kobo|kindle|audiobook|library of books)\b", "Books / Reading / Library"),
     (r"\b(music|podcast|video|streaming|movies|tv shows)\b", "Media / Streaming"),
@@ -698,8 +757,9 @@ def discover(tracker, target, now, args):
         pass
 
     now_ts = int(time.time())
+    # A cached reject is only valid for the gate rules that made it.
     rejects = {k: v for k, v in load_json(REJECT_CACHE, {}).items()
-               if now_ts - v.get("t", 0) < REJECT_TTL_DAYS * 86400}
+               if now_ts - v.get("t", 0) < REJECT_TTL_DAYS * 86400 and v.get("gate") == GATE_SIG}
     mem = load_json(QUERY_MEM, {})
     stats = {"slices": 0, "slicesSkipped": 0, "seen": 0, "unused": 0, "rejectReasons": {}}
 
@@ -727,6 +787,9 @@ def discover(tracker, target, now, args):
     with ThreadPoolExecutor(WORKERS) as ex:
         for i, (item, repos) in enumerate(ex.map(run_slice, live), 1):
             stats["slices"] += 1
+            if repos is None:            # failed: leave its query memory as it was
+                stats["slicesFailed"] = stats.get("slicesFailed", 0) + 1
+                continue
             fresh = 0
             for r in repos:
                 k = r["full_name"].lower()
@@ -776,8 +839,8 @@ def discover(tracker, target, now, args):
     # 3) cheap gate on light fields, then hydrate ONLY survivors with deploy-proof fields
     def reject(k, why):
         stats["rejectReasons"][why] = stats["rejectReasons"].get(why, 0) + 1
-        if why not in ("too-few-stars", "stale"):  # those can change; don't cache
-            new_rejects[k] = {"why": why, "t": now_ts}
+        if why not in ("too-few-stars", "stale", "hydrate-failed"):  # those can change; don't cache
+            new_rejects[k] = {"why": why, "t": now_ts, "gate": GATE_SIG}
 
     new_rejects, survivors = {}, []
     for k, r in pool.items():
@@ -1014,6 +1077,28 @@ def self_test():
         (mk("v/gamearr", "The definitive Video Game PVR for the arr ecosystem. Automate metadata"), "plugin-for-other-app"),
         (mk("v/personal", "A status portal made for own personal server hosting different services"), "personal-setup"),
         (mk("p/cjk", "知归是一个面向个人使用的 AI 知识归档工具，把内容链接发送给机器人 GitHub web app"), "not-english-readable"),
+        # 2026-10-03 verifier probes: ordinary apps that earlier rules rejected …
+        (mk("x/music", "Self-hosted music streaming server with Subsonic API support"), None),
+        (mk("x/later", "Self-hosted read-later app with a web UI and an Android app"), None),
+        (mk("x/pantry", "Self-hosted pantry app that tracks stock levels and expiry dates"), None),
+        (mk("x/shop", "Self-hosted stock management web app for small shops"), None),
+        (mk("x/cards", "Self-hosted trading card collection manager with a web UI"), None),
+        (mk("x/lang", "Self-hosted language learning app with spaced repetition"), None),
+        (mk("x/plexlike", "A Plex-like self-hosted media server for your movies"), None),
+        (mk("x/ghostish", "A Ghost-style self-hosted blogging platform"), None),
+        (mk("x/addons", "Self-hosted wiki web app that supports add-ons and themes"), None),
+        (mk("x/theme", "Self-hosted e-commerce web app with a theme for your store"), None),
+        (mk("x/scrape", "Self-hosted recipe manager web app (scraper built in)"), None),
+        (mk("x/mobile", "Self-hosted budget web app with apps for Android and iOS"), None),
+        # … and junk that got through
+        (mk("x/lib", "Python library for building LLM agents with tools and memory"), "library-or-sdk"),
+        (mk("x/tg", "Self-hosted family assistant for Telegram: memory, reminders, tasks"), "chat-bot"),
+        (mk("x/urzen", "Self-hosted web player, built with TypeScript. Fully compatible with Navidrome and the Subsonic API."), "client-for-other-app"),
+        (mk("x/scraper", "Self-hosted LinkedIn scraper with a web dashboard"), "scraper-or-shady"),
+        (mk("x/ios", "Native iOS app for your self-hosted server"), "native-client"),
+        (mk("x/fr", "Ce site a pour vocation de devenir la ressource de référence pour le self-hosting"), "not-english-readable"),
+        (mk("x/exit", "Tailscale exit node whose egress is routed through a commercial VPN, in two containers"), "packaging-of-other-app"),
+        (mk("x/cafe", "Self-hosted café menu and ordering web app for small restaurants"), None),
     ]
     ok = True
     for repo, want in cases:
@@ -1076,11 +1161,59 @@ def self_test():
                        ("A modern, self-hosted photography portfolio platform built with React and analytics", "Image / Design / Creative"),
                        ("Privacy-first PWA for period and intimacy tracking", "Health / Food / Fitness"),
                        ("Modern, streamlined, open-source customer service software with monitoring", "CRM / Business"),
-                       ("A one-binary, self-hosted mailing list manager", "Communication / Social")]:
+                       ("A one-binary, self-hosted mailing list manager", "Communication / Social"),
+                       ("Lightweight, self-hosted Sentry alternative with a dashboard, MCP-ready for AI agents", "Monitoring / Observability"),
+                       ("Self-hosted WireGuard VPN with DNS filtering, real-time analytics", "Networking / VPN"),
+                       ("Self-hosted cost-sharing ledger for agricultural machinery and invoices", "Finance / Budget"),
+                       ("Self-hosted web app for designing label templates and batch-generating PDFs. Docker + Tailscale", "Documents / PDF / Paperless"),
+                       ("A simple self-hosted web-based digital signage system with clocks, timers and RSS feeds", "Media / Streaming"),
+                       ("Self-hosted navigation portal with a built-in WAF and live attack map", "Dashboard / Homelab"),
+                       ("Self-hostable Custom Maps catalog and download API for a skateboarding game", "Gaming / Game Servers"),
+                       ("Fast, lightweight Nostr relay that syncs notes from people you follow", "Communication / Social"),
+                       ("Self-Hosted Note Application featuring End-to-End Encryption", "Notes / Knowledge"),
+                       ("Self-hosted Kanban PWA for projects, tasks, shared expenses and gamification", "Productivity / Tasks"),
+                       ("Open-source shop management for screen printers — quoting, production, invoicing", "CRM / Business"),
+                       ("Self-hosted web app to catalog and showcase your yoyo collection — specs, photos", "Productivity / Tasks"),
+                       ("A self-hosted vinyl collection manager for DJs.", "Media / Streaming"),
+                       ("Open-Source Billing & Business Management Platform", "Finance / Budget"),
+                       ("An HTTP server for self-hosting static websites", "CMS / Website"),
+                       ("Open-source, self-hosted incident management: postmortems, alerting, 3D dependency map", "Monitoring / Observability"),
+                       ("Lightweight radio automation — programming, Liquidsoap playout, web UI", "Media / Streaming"),
+                       ("A self-hosted crochet companion for tracking projects, stitches and PDF patterns", "Productivity / Tasks"),
+                       ("Free, self-hosted test management — a modern TestRail alternative with analytics", "Developer Tools / Utilities")]:
         got = categorize(mk("c/c", desc))
         t = got == want
         ok &= t
         print(f"  {'ok ' if t else 'FAIL'} category {desc[:40]!r} -> {got}")
+    # A rate-limited GraphQL answer must stop discovery, and a failed slice is "unknown", not "empty".
+    import io
+    real_urlopen = urllib.request.urlopen
+
+    class _Resp(io.BytesIO):
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *exc):
+            return False
+    urllib.request.urlopen = lambda req, timeout=None: _Resp(
+        b'{"errors":[{"type":"RATE_LIMIT","message":"API rate limit already exceeded"}]}')
+    try:
+        gql("{ viewer { login } }", retries=1)
+        t = False
+    except RateLimited:
+        t = True
+    finally:
+        urllib.request.urlopen = real_urlopen
+    ok &= t
+    print(f"  {'ok ' if t else 'FAIL'} rate limit raises RateLimited")
+    real_gql = globals()["gql"]
+    globals()["gql"] = lambda *a, **k: None
+    try:
+        t = search_slice("x") is None
+    finally:
+        globals()["gql"] = real_gql
+    ok &= t
+    print(f"  {'ok ' if t else 'FAIL'} failed slice returns None, not []")
     print("SELF-TEST", "ALL PASSED" if ok else "FAILED")
     return ok
 
@@ -1130,7 +1263,10 @@ def main():
     print(f"[{VERSION}] next: {title} · {len(tracker.get('usedRepoUrls', []))} used URLs", flush=True)
 
     now = datetime.now(timezone.utc)
-    picked, stats = discover_ladder(tracker, args.target, now, args)
+    try:
+        picked, stats = discover_ladder(tracker, args.target, now, args)
+    except RateLimited as exc:
+        raise SystemExit(f"[{VERSION}] {exc}. Nothing was written.")
     dist = {}
     for r in picked:
         dist[r["_cat"]] = dist.get(r["_cat"], 0) + 1

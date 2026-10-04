@@ -40,11 +40,17 @@ own selection and before its shortfall check:
    patterns, readable description, not stale, not a fork/template, not built on another app),
    web-app intent, the AI rule (an AI description must show a web UI), owner dedupe (best
    *passing* pick per owner), re-upload dedupe (same description as a published repo) and
-   rename/transfer dedupe (GitHub redirect check). The star floor is 3, not v17's 20,
-   because these engines deliberately feature fresh gems (their median pick has 4–6 stars).
+   rename/transfer dedupe (GitHub redirect check), and a code check (a repo with no primary
+   language and no Dockerfile/compose is a README or guide, not an app). The star floor is 3,
+   not v17's 20, because these engines deliberately feature fresh gems (their median pick has
+   4–6 stars). Kept picks are relabelled with v17's categorizer, so every engine publishes
+   the same, more accurate categories; this runs after selection and changes labels only.
 2. **`engines/topup.py` refills the freed slots** from v17's GraphQL discovery: never a repo
    already selected, one per owner, the engine's own AI ceiling (v13–v16: 3, v12: 10, v11:
-   none) and `--cat-cap` (relaxed only if needed to fill), proof tier A (compose/Dockerfile)
+   none; a pick counts as AI by its category or by AI words in its description, the same test
+   for the engine's own picks and lane picks, and AI picks past the ceiling are replaced)
+   and `--cat-cap` (held on every star rung, relaxed only if the whole ladder can't fill
+   the set within it), proof tier A (compose/Dockerfile)
    or B (awesome-selfhosted). Each top-up pick is marked in the audit (`topUp`) and on its
    Notion line, and the page intro counts them; their score is v17's interest score.
 3. The engine's normal audit, page and CSV code then run on the final 50.
@@ -67,15 +73,19 @@ apps have appeared.
 | Set | Engine | Own picks kept | From the lane | Later repairs |
 |---|---|---|---|---|
 | 494 | v17 | 50 | — | 4 replaced (agent infra, HITL library, backend, *arr companion) |
-| 495 | v16 | 23 | 27 | +2 (LibreChat renamed copy, adult-flagged downloader) |
+| 495 | v16 | 50 at publish | — | 27 (first repair; the publish predates the screen), then 2 (LibreChat renamed copy, adult-flagged downloader) |
 | 496 | v15 | 9 | 41 | 6 (statainer renamed copy, packaging, API wrappers, crypto, SSO lib) |
 | 497 | v13 | 9 | 41 | 11 (companions, bots, game servers, reseller, bulk mailer, renamed copy) |
 | 498 | v16 | 2 | 48 | 9 (add-ons, language/SDK, non-English, SVG cards, HA add-on) |
 | 499 | v12 | 4 | 46 | 6 (API wrapper, *arr tool, personal repos, Spotify ingest, UniFi add-on) |
 | 500 | v11 | 9 | 41 | 8 (clients, CLI, library, sync add-ons, packaging, lead-gen) |
 
-Repairs happened because the rules kept improving during the day's review; the final rules
-pass all 350 picks, and every page, tracker entry and CSV row agree.
+Repairs happened because the rules kept improving during the day's review. An independent
+review that night led to a second round: 494's page rebuilt with its true star floor; 495
+2 replaced (README-only guide, AI over the ceiling); 496 1 (category cap); 497 9 (AI over
+the ceiling, 7 lane picks over the Monitoring cap); 499 1 (Telegram bot); 500 1 (Navidrome
+client); about 25 categories relabelled across the seven sets. Every page, tracker entry
+and CSV row agree.
 
 ## Star ladder (v17 and the lane)
 
@@ -83,19 +93,25 @@ v17 searches with a floor of 20 stars (10 for repos under 120 days old). New non
 clear that bar are scarce: one published set uses up most of them for days. When a rung
 can't fill the set, discovery reruns one rung lower: ≥10★ (≥5★ young), then ≥5★ (≥3★
 young). Every other rule is identical on every rung, ranking still favours the most-starred
-repos, and v17's page states the floor that was actually used. A lower rung's results
-include every higher rung's repos (same searches, lower floor), so v17 and the lane remember
-the rung that last filled a set (`_tmp/ladder_state_v17.json`, 12 h) and start there instead
-of re-running rungs known to be exhausted.
+repos, and v17's page states the floor that was actually used (a repaired v17 page states
+the highest rung that all of its picks clear). A lower rung searches a superset of a higher
+rung's pool, so v17 and the lane remember the rung that last filled a set
+(`_tmp/ladder_state_v17.json`, 12 h) and start there instead of re-running rungs known to
+be exhausted. The trade-off is that the picks can include lower-star repos the higher rung
+would have left out. Only fills of 10 or more slots read or write this memory, so a small
+repair always starts at the top rung.
 
 ## Repairing a published set
 
 `python3 engines/repair_set.py N` re-checks set N's picks with live GitHub data and the
-current rules and shows what it would replace; `--apply` replaces them from the lane under
-the set's own engine rules, rebuilds the Notion page in that engine's format (new blocks
-are appended before the old ones are deleted), updates the tracker entry, CSV rows and
-audit (`repair` record), and keeps backups in `_tmp/backup-repair-<time>/`. Replaced repos
-stay in `usedRepoUrls`, so they never come back.
+current rules (including the AI ceiling, categories and, for lane picks, the engine's
+category cap) and shows what it would change;
+`--apply` replaces failing picks from the lane under the set's own engine rules, rebuilds
+the Notion page in that engine's format (new blocks are appended before the old ones are
+deleted), updates the tracker entry, CSV rows (in place) and audit (`repairs`, one record
+per repair), and keeps backups in `_tmp/backup-repair-<time>/`. `--rebuild` rewrites the
+page even when nothing changed. Replaced repos stay in `usedRepoUrls`, so they never come
+back. The audit's other fields still describe the original run.
 
 ## Picking an engine
 

@@ -69,7 +69,7 @@ CSV, Notion, no reuse, no duplicate owners) + reading every line.
   dedupe in quality.screen; repaired 6; 2 categories refreshed.
 - Set 497 v13: 9 own + 41 lane; review → companion/*arr/bot/game-server/reseller/bulk-mail
   rules, categories; repaired twice (11 replaced). Lane rename re-check added after LANBooru.
-- Set 498 v16 (started by the user from the UI at 22:05): 2 own + 48 lane (≥5★ rung, 503
+- Set 498 v16 (started by the user from the UI at 22:05): 2 own + 48 lane (≥5★ rung, 502
   passing); review → RustDesk/Asterisk/Invoice Ninja add-ons, language/SDK, non-English;
   repaired (9 replaced). Found repair_set race with concurrent publishes → re-read tracker
   before write + refuse while the server publishes.
@@ -83,3 +83,32 @@ CSV, Notion, no reuse, no duplicate owners) + reading every line.
   v11–v14 replaced by clean one-line exits.
 - Final verification: Sets 494–500 all 50/50, no reuse, no duplicate owners, tracker = CSV =
   live Notion page; all 350 picks pass the final screen. Self-tests: all engines pass; v17 109 checks.
+
+## Independent verification (2026-10-03 late) and fixes
+Fresh-context verifier: PASS-WITH-CONCERNS. Data integrity of 494–500 confirmed (tracker =
+CSV = Notion, history untouched, no reuse). Confirmed bugs, all fixed:
+- Repaired v17 page (494) stated the default 20/10★ floor though a pick has 7★ → the repair
+  now states the highest rung all picks clear (`star_floor_of`); 494 rebuilt.
+- AI ceiling counted by category for existing picks but by description for lane picks →
+  one test (`topup._is_ai`); picks over the ceiling are replaced (`trim_ai`), also in repairs.
+- Ladder memory shared by 1-slot repairs and full runs → only fills of ≥10 use it.
+- Category cap relaxed per rung → held on every rung, relaxed only after the whole ladder.
+- v11 repairs ignored `--cat-cap 5`; `topup.fill` lacked try/finally for the star floor;
+  audit `repair` overwritten → `repairs` list; CSV rows of a repaired set now stay in place.
+- Gate: 10 over-broad rules narrowed, 4 missed junk types added (17 new self-test cases);
+  screen now drops docs-only repos (no language, no deploy file); kept picks relabelled with
+  v17's categorizer (9 new category cases). v17 self-test 138 checks, topup 12.
+- Reading the replacement picks found more: French descriptions passed the English check
+  (no é/è in the accent set; French "a" counted as English) → fixed; a Tailscale exit-node
+  bundle → packaging; static-site server, incident management, vinyl, billing categories.
+- Repairs applied to all of 494–500 (494 page rebuilt with the true 10/5★ floor); repair now
+  also replaces lane picks past the engine's category cap (497 had 11 Monitoring, all lane
+  picks from the old per-rung relaxation). CSV rows of 494–500 restored to set order; diff
+  vs 2ab99a0 removes no line.
+- Server: a run's result now requires an audit of its own engine and mode (a repair's audit
+  was credited to a failing v14 dry run); set dates from publish records.
+- GitHub secondary rate limit hit during the Set 500 cap repair (stopped before writing).
+  Found `gql()` swallowed RATE_LIMIT as "no results": query memory marked slices dead,
+  `hydrate-failed` rejects cached. Fixed (RateLimited, retry after 60 s, failed slices keep
+  memory, rejects carry a gate signature); restored 200 slice counters from that run.
+  Set 500's cap repair (Media 8/AI 7 of cap 5 from the lane) is pending until the limit clears.

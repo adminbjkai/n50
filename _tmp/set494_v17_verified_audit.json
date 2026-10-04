@@ -19,12 +19,16 @@
     "gqlErrors": 0,
     "gqlRemaining": 4085,
     "carrySize": 241,
-    "seconds": 61.9
+    "seconds": 61.9,
+    "starFloor": [
+      10,
+      5
+    ]
   },
   "categoryDistribution": {
-    "AI / LLM": 10,
+    "AI / LLM": 9,
     "Media / Streaming": 6,
-    "Monitoring / Observability": 4,
+    "Monitoring / Observability": 5,
     "Notes / Knowledge": 3,
     "Communication / Social": 3,
     "CRM / Business": 3,
@@ -332,6 +336,29 @@
       }
     },
     {
+      "repo": "tntexploding/StruInfo",
+      "url": "https://github.com/tntexploding/StruInfo",
+      "score": 40.41,
+      "stars": 61,
+      "category": "AI / LLM",
+      "description": "Self-hosted, traceable document-to-knowledge workspace with deterministic workflows, optional AI, search, RAG, and an editable knowledge graph.",
+      "language": "TypeScript",
+      "compose": false,
+      "docker": true,
+      "ai": true,
+      "breakdown": {
+        "stars": 17.9,
+        "velocity": 10.5,
+        "deploy": 3,
+        "release": 5,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "life": 3,
+        "ai": -6
+      }
+    },
+    {
       "repo": "maxjb-xyz/reverb",
       "url": "https://github.com/maxjb-xyz/reverb",
       "score": 40.27,
@@ -351,29 +378,6 @@
         "active": 1,
         "selfhost": 2,
         "life": 3
-      }
-    },
-    {
-      "repo": "tntexploding/StruInfo",
-      "url": "https://github.com/tntexploding/StruInfo",
-      "score": 40.26,
-      "stars": 60,
-      "category": "AI / LLM",
-      "description": "Self-hosted, traceable document-to-knowledge workspace with deterministic workflows, optional AI, search, RAG, and an editable knowledge graph.",
-      "language": "TypeScript",
-      "compose": false,
-      "docker": true,
-      "ai": true,
-      "breakdown": {
-        "stars": 17.9,
-        "velocity": 10.4,
-        "deploy": 3,
-        "release": 5,
-        "license": 2,
-        "active": 3,
-        "selfhost": 2,
-        "life": 3,
-        "ai": -6
       }
     },
     {
@@ -1052,7 +1056,7 @@
       "url": "https://github.com/TheHoltz/errex",
       "score": 22.63,
       "stars": 22,
-      "category": "AI / LLM",
+      "category": "Monitoring / Observability",
       "description": "Lightweight, self-hosted Sentry alternative. Rust + SQLite, ~10 MB RAM. Sentry-SDK compatible ingest, fast SvelteKit dashboard, MCP-ready for AI agents.",
       "language": "Rust",
       "compose": true,
@@ -1132,20 +1136,35 @@
       }
     }
   ],
-  "aiCount": 11,
+  "aiCount": 13,
   "publishable": true,
   "timingSeconds": 63.9,
-  "repair": {
-    "at": "2026-10-04T02:53:37+00:00",
-    "dropped": [],
-    "added": [],
-    "recategorized": [
-      {
-        "repo": "jshields-ca/LatestArr",
-        "from": "Media / Streaming",
-        "to": "Communication / Social"
-      }
-    ],
-    "topUp": null
-  }
+  "repairs": [
+    {
+      "at": "2026-10-04T02:53:37+00:00",
+      "dropped": [],
+      "added": [],
+      "recategorized": [
+        {
+          "repo": "jshields-ca/LatestArr",
+          "from": "Media / Streaming",
+          "to": "Communication / Social"
+        }
+      ],
+      "topUp": null
+    },
+    {
+      "at": "2026-10-04T03:33:08+00:00",
+      "dropped": [],
+      "added": [],
+      "recategorized": [
+        {
+          "repo": "TheHoltz/errex",
+          "from": "AI / LLM",
+          "to": "Monitoring / Observability"
+        }
+      ],
+      "topUp": null
+    }
+  ]
 }

@@ -619,7 +619,7 @@
     {
       "url": "https://github.com/Vuln-SafeLab/HiTo",
       "score": 31.39,
-      "category": "Maps / GIS / Location",
+      "category": "Dashboard / Homelab",
       "stars": 3,
       "docker": true,
       "compose": true,
@@ -1340,14 +1340,14 @@
     }
   ],
   "categoryDistribution": {
+    "Dashboard / Homelab": 5,
     "Media / Streaming": 5,
     "Productivity / Tasks": 5,
     "Developer Tools / Utilities": 5,
-    "Dashboard / Homelab": 4,
     "Monitoring / Observability": 4,
-    "Maps / GIS / Location": 4,
     "AI / LLM": 3,
     "Finance / Budget": 3,
+    "Maps / GIS / Location": 3,
     "Documents / PDF / Paperless": 3,
     "Communication / Social": 3,
     "Image / Design / Creative": 2,
@@ -1704,17 +1704,32 @@
   "confirmedPoolDepth": 63,
   "selectionHeadroom": 1.26,
   "timingSeconds": 426.8,
-  "repair": {
-    "at": "2026-10-04T02:55:36+00:00",
-    "dropped": [],
-    "added": [],
-    "recategorized": [
-      {
-        "repo": "paperkite-hq/stork",
-        "from": "Security / Auth",
-        "to": "Communication / Social"
-      }
-    ],
-    "topUp": null
-  }
+  "repairs": [
+    {
+      "at": "2026-10-04T02:55:36+00:00",
+      "dropped": [],
+      "added": [],
+      "recategorized": [
+        {
+          "repo": "paperkite-hq/stork",
+          "from": "Security / Auth",
+          "to": "Communication / Social"
+        }
+      ],
+      "topUp": null
+    },
+    {
+      "at": "2026-10-04T03:42:56+00:00",
+      "dropped": [],
+      "added": [],
+      "recategorized": [
+        {
+          "repo": "Vuln-SafeLab/HiTo",
+          "from": "Maps / GIS / Location",
+          "to": "Dashboard / Homelab"
+        }
+      ],
+      "topUp": null
+    }
+  ]
 }

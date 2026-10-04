@@ -29012,8 +29012,8 @@
         "https://github.com/jshields-ca/LatestArr",
         "https://github.com/resonand-app/resonand",
         "https://github.com/rayriffy/rayriffy-h",
-        "https://github.com/maxjb-xyz/reverb",
         "https://github.com/tntexploding/StruInfo",
+        "https://github.com/maxjb-xyz/reverb",
         "https://github.com/TaterTotterson/Tater",
         "https://github.com/arita-yuto/video-review",
         "https://github.com/t0mer/ocr-docker",
@@ -29082,7 +29082,6 @@
         "https://github.com/datannur/datannur",
         "https://github.com/Perkybeet/noust",
         "https://github.com/AmigoUK/BarcodeLabelGen",
-        "https://github.com/amirh3sam/Setting-Up-a-Secure-Local-Server-with-DuckDNS-and-Nginx-Proxy-Manager",
         "https://github.com/chenxuan520/roadbook",
         "https://github.com/SimplerDevelopment/SimplerDevelopment",
         "https://github.com/pinkpixel-dev/miso",
@@ -29109,8 +29108,9 @@
         "https://github.com/OpenNeutron/OpenNeutron",
         "https://github.com/Erik-A-Smith/DayFront",
         "https://github.com/jcreek/OpenNetworkDiagram",
-        "https://github.com/NextEpochs/opifer",
-        "https://github.com/PEG4TRON/MeshCorium"
+        "https://github.com/PEG4TRON/MeshCorium",
+        "https://github.com/Sqartet/hemio",
+        "https://github.com/yorickpeterse/shost"
       ],
       "count": 50,
       "version": "v16",
@@ -29165,18 +29165,18 @@
         "https://github.com/cosoloco/openshelf",
         "https://github.com/Databounty-io/databounty",
         "https://github.com/Ha22yX/VaultBridge",
-        "https://github.com/mortaljinx/pagerr",
         "https://github.com/ahmedharabi/Hunt-CRM",
         "https://github.com/aliansari22/pdfclear",
         "https://github.com/poesterlin/sole",
         "https://github.com/vanditsramblings/graphql-meter",
         "https://github.com/WasixXD/bunko",
         "https://github.com/CasualOffice/slides",
-        "https://github.com/mohamedelhefni/Siraaj-analytics"
+        "https://github.com/mohamedelhefni/Siraaj-analytics",
+        "https://github.com/esbeneickhardt/Planly"
       ],
       "count": 50,
       "version": "v15",
-      "repaired": "2026-10-03"
+      "repaired": "2026-10-04"
     },
     {
       "setNum": 497,
@@ -29206,8 +29206,6 @@
         "https://github.com/piskevalee-cpu/OpenSync",
         "https://github.com/glnarayanan/arivu",
         "https://github.com/foisalislambd/openbackup",
-        "https://github.com/uplg/hora",
-        "https://github.com/alexgeraldo/ilo-fan-control",
         "https://github.com/codespearhead/word-to-pdf-api",
         "https://github.com/devzspy/redops-vault",
         "https://github.com/MoeAisaka/game-inventory-hub",
@@ -29215,15 +29213,10 @@
         "https://github.com/woodscode/vellichor-web",
         "https://github.com/spydirbyte/spy-privacy-pulse",
         "https://github.com/xk1ko/aigloo",
-        "https://github.com/Gerald-Ha/LingoVeil",
-        "https://github.com/userAshwani/PingFlow",
         "https://github.com/AiryAir/signage2",
         "https://github.com/crumbleerp/clarity",
         "https://github.com/drpwchen/exam-practice",
-        "https://github.com/starfleetapp/fleetview",
         "https://github.com/milanjrodd/roddoska",
-        "https://github.com/perfektnacht/uplink",
-        "https://github.com/BentFender/netpulse",
         "https://github.com/atvirokodosprendimai/forumchat",
         "https://github.com/VladoPortos/skillgoblin",
         "https://github.com/Aditya-Rawat01/koala-self-deployed",
@@ -29231,14 +29224,21 @@
         "https://github.com/smaharx/driftwatch",
         "https://github.com/P1c1s/AegisCA",
         "https://github.com/samirkoirala/OwnSMTP",
-        "https://github.com/qianzhu18/Muku",
         "https://github.com/BytesAndCoffee/bad-decisions",
         "https://github.com/PedroLucasMiguel/harmony",
-        "https://github.com/xubaoer19940428-creator/omni-media"
+        "https://github.com/xubaoer19940428-creator/omni-media",
+        "https://github.com/alekm/radix",
+        "https://github.com/metalfinger/refboard",
+        "https://github.com/AmirHBuilds/mirrorino",
+        "https://github.com/pidanou/homeboard",
+        "https://github.com/pinkpixel-dev/stitchlet",
+        "https://github.com/Pardalesteban/sshpanel",
+        "https://github.com/Netrun-Systems/sigil-cms",
+        "https://github.com/MarwanAlghamdi/Lawha"
       ],
       "count": 50,
       "version": "v13",
-      "repaired": "2026-10-03"
+      "repaired": "2026-10-04"
     },
     {
       "setNum": 498,
@@ -29323,7 +29323,6 @@
         "https://github.com/KiranTheRam/mangarr",
         "https://github.com/nopoz/hosaka",
         "https://github.com/dublyo/mailat",
-        "https://github.com/artkruglov/shusha",
         "https://github.com/Pycasa/Pycasa",
         "https://github.com/Elias02345/CloudGate",
         "https://github.com/RealDougEubanks/gitpreserver",
@@ -29357,7 +29356,8 @@
         "https://github.com/MilesReed2025/earth-dashboard",
         "https://github.com/SoCloseSociety/neowatch",
         "https://github.com/fnayou/podcastify",
-        "https://github.com/wangjiqing/xingyu-music-vault"
+        "https://github.com/wangjiqing/xingyu-music-vault",
+        "https://github.com/Itz-Agasta/OpenDiagram"
       ],
       "count": 50,
       "repaired": "2026-10-03",
@@ -29379,7 +29379,6 @@
         "https://github.com/openviglet/turing-ce",
         "https://github.com/Noah-1919/Fottly",
         "https://github.com/aldemaroc/forage",
-        "https://github.com/thebitsamuraii23/UrZen-player",
         "https://github.com/behradkhodayar/repodify",
         "https://github.com/andresjmorales/cognote",
         "https://github.com/rancur/garden-godmother",
@@ -29418,7 +29417,8 @@
         "https://github.com/riza/kast",
         "https://github.com/nathanamorin/local-podcasts",
         "https://github.com/OwlCt/OwlPlayer",
-        "https://github.com/SASUKE40/pi-daemon"
+        "https://github.com/SASUKE40/pi-daemon",
+        "https://github.com/pinkpixel-dev/kintara"
       ],
       "count": 50,
       "version": "v11",
@@ -54584,6 +54584,20 @@
     "https://github.com/riza/kast",
     "https://github.com/nathanamorin/local-podcasts",
     "https://github.com/OwlCt/OwlPlayer",
-    "https://github.com/SASUKE40/pi-daemon"
+    "https://github.com/SASUKE40/pi-daemon",
+    "https://github.com/Sqartet/hemio",
+    "https://github.com/yorickpeterse/shost",
+    "https://github.com/alekm/radix",
+    "https://github.com/giammbo/incident-commander",
+    "https://github.com/Itz-Agasta/OpenDiagram",
+    "https://github.com/pinkpixel-dev/kintara",
+    "https://github.com/esbeneickhardt/Planly",
+    "https://github.com/metalfinger/refboard",
+    "https://github.com/AmirHBuilds/mirrorino",
+    "https://github.com/pidanou/homeboard",
+    "https://github.com/pinkpixel-dev/stitchlet",
+    "https://github.com/Pardalesteban/sshpanel",
+    "https://github.com/Netrun-Systems/sigil-cms",
+    "https://github.com/MarwanAlghamdi/Lawha"
   ]
 }
