@@ -195,7 +195,7 @@ def main():
     entry["repos"] = urls
     entry["count"] = len(urls)
     entry.setdefault("version", engine)
-    entry["repaired"] = now.strftime("%Y-%m-%d")
+    entry["repaired"] = time.strftime("%Y-%m-%d")  # local date, like the UI
     seen = {u.lower() for u in tracker["usedRepoUrls"]}
     tracker["usedRepoUrls"] += [u for u in urls if u.lower() not in seen]
     v1.write_tracker(tracker)

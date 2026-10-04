@@ -104,9 +104,25 @@ def _audit_index():
 AUDITS = Cached(_audit_index, TMP)
 
 
+def _published_at():
+    """setNum -> publish time from the server's run records (exact, unlike audit mtimes,
+    which change when a set is repaired)."""
+    out = {}
+    for p in RUNS_DIR.glob("*-publish.json") if RUNS_DIR.exists() else []:
+        try:
+            run = json.loads(p.read_text())
+        except (OSError, ValueError):
+            continue
+        res = run.get("result") or {}
+        if run.get("rc") == 0 and res.get("kind") == "published" and res.get("set"):
+            out[int(res["set"])] = round(run.get("ended") or run.get("started") or 0)
+    return out
+
+
 def _tracker_view():
     t = json.loads(TRACKER.read_text())
     audits = AUDITS.get()
+    published_at = _published_at()
     sets = []
     for p in t.get("completedPages", []):
         n = p.get("setNum") or 0
@@ -116,9 +132,10 @@ def _tracker_view():
         engine = p.get("version") or (pub or {}).get("engine")
         count = p.get("count") or len(p.get("repos", []))
         size = 200 if engine == "v14" or "200 More" in p.get("title", "") else 50
+        at = published_at.get(n) or (round(pub["mtime"]) if pub else None)
         sets.append({"n": n, "title": p.get("title", ""), "count": count, "size": size,
-                     "engine": engine, "url": p.get("pageUrl"),
-                     "at": round(pub["mtime"]) if pub else None, "special": bool(p.get("special"))})
+                     "engine": engine, "url": p.get("pageUrl"), "at": at,
+                     "repaired": p.get("repaired"), "special": bool(p.get("special"))})
     sets.sort(key=lambda s: s["n"])
     pid = (t.get("parentPageId") or "").replace("-", "")
     return {"completed": t.get("completedSets", 0), "used": len(t.get("usedRepoUrls", [])),
@@ -126,7 +143,7 @@ def _tracker_view():
             "sets": sets}
 
 
-TRACKER_VIEW = Cached(_tracker_view, TRACKER, TMP)
+TRACKER_VIEW = Cached(_tracker_view, TRACKER, TMP, RUNS_DIR)
 
 
 def engine_stats(sets):
@@ -316,7 +333,7 @@ class Runner:
         rc = proc.wait()
         run = self.run
         run.update(ended=time.time(), rc=rc, elapsed=round(time.time() - run["started"], 1),
-                   result=self._find_result(run["started"]))
+                   result=self._find_result(run))
         (RUNS_DIR / f"{rid}.json").write_text(json.dumps(run, indent=1))
         self._prune()
         with self.lock:
@@ -324,13 +341,16 @@ class Runner:
         self.broadcast("done", self.state())
 
     @staticmethod
-    def _find_result(started):
-        """The audit file this run wrote (engines write one per dry run or publish)."""
-        best = None
+    def _find_result(run):
+        """The audit file this run wrote (engines write one per dry run or publish). Matching
+        engine and kind keeps a repair or another tool writing an audit meanwhile out of it."""
+        best, kind = None, "DRYRUN" if run["mode"] == "dry" else "verified"
         for p in TMP.glob("set*_audit.json"):
             m = AUDIT_RE.match(p.name)
+            if not m or m.group(3) != kind or m.group(2) not in (None, run["engine"]):
+                continue
             mt = p.stat().st_mtime
-            if m and mt >= started - 1 and (not best or mt > best[1]):
+            if mt >= run["started"] - 1 and (not best or mt > best[1]):
                 best = (p, mt, m)
         if not best:
             return None

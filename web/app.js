@@ -497,7 +497,7 @@ function setRow(s) {
     h("span", { class: "fill", title: `${s.count} of ${s.size}` }, h("i", { class: f < 1 ? "short" : null, style: `width:${f * 100}%` })),
     h("span", { class: "set-count", text: `${s.count} of ${s.size}` }),
     h("span", { class: "chip", title: s.engine ? null : "No engine recorded for this set", text: s.engine || "—" }),
-    h("span", { class: "set-date", text: s.at ? dateFmt.format(s.at * 1000) : "" }),
+    h("span", { class: "set-date", title: s.repaired ? `Picks repaired ${s.repaired}` : null, text: s.at ? dateFmt.format(s.at * 1000) : "" }),
     s.url ? h("a", { class: "set-open", href: s.url, target: "_blank", rel: "noopener", text: "Notion", onclick: (e) => e.stopPropagation() }) : h("span"),
   );
   const toggle = () => toggleSet(li, s.n);
