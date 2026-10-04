@@ -1361,13 +1361,15 @@ def select_set(tracker, live_titles, args):
             print("[enrich] no ANTHROPIC/OPENROUTER key found — skipping enrichment")
 
     selected = select_with_fresh_quota(confirmed, args.cat_cap, args.min_score, args.fresh_quota)
-    if len(selected) < 50:
-        # REST search is mined out; fill the gap from v17's GraphQL lane (engines/topup.py).
-        import topup
-        selected, audit["topUp"] = topup.fill(VERSION, selected, 50, tracker, args.dry_run,
-                                              ai_ceiling=None,
-                                              is_ai_cat=lambda c: c.get("hcat") == "AI / LLM",
-            cat_cap=getattr(args, "cat_cap", None))
+    # Screen the picks with v17's quality gate, then refill any gap from v17's GraphQL lane
+    # (REST search is mined out). See engines/quality.py and engines/topup.py.
+    import quality
+    import topup
+    selected, audit["qualityScreen"] = quality.screen(VERSION, selected)
+    selected, audit["topUp"] = topup.fill(VERSION, selected, 50, tracker, args.dry_run,
+                                          ai_ceiling=None,
+                                          is_ai_cat=lambda c: c.get("hcat") == "AI / LLM",
+                                          cat_cap=getattr(args, "cat_cap", None))
     if len(selected) != 50:
         raise RuntimeError(
             f"Only {len(selected)} repos scored >= --min-score {args.min_score} "

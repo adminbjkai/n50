@@ -72,6 +72,9 @@ LOCKFILE = CACHE_DIR / "publish_v17.lock"
 
 MIN_STARS = 20
 MIN_STARS_YOUNG = 10          # repos created < YOUNG_DAYS ago
+# When a rung can't fill the set, discovery reruns one rung lower. Every other rule is the
+# same on every rung, and ranking still prefers the most-starred repos.
+STAR_LADDER = [(20, 10), (10, 5), (5, 3)]   # (floor, floor if younger than YOUNG_DAYS)
 YOUNG_DAYS = 120
 MAX_PUSH_AGE_DAYS = 240
 CAT_CAP = 6
@@ -287,10 +290,13 @@ def hydrate(full_names, batch=25):
 
 # --- quality gate ------------------------------------------------------------
 JUNK = [
-    (r"\bhelm\b|\bhelm[- ]chart|\bansible\b|\bterraform\b|\bk8s operator\b|\bkubernetes operator\b", "infra-packaging"),
+    # The repo IS a chart/role/module (an app that merely offers a Helm option is fine).
+    (r"\b(a |an |the )?helm charts? (for|to|that)\b|\bansible (roles?|playbooks?|collections?) (for|to|that)\b|\bterraform (modules?|providers?) (for|to|that)\b|\bk8s operator\b|\bkubernetes operator\b", "infra-packaging"),
     (r"\b(plugin|extension|add-?on|addon|integration|theme|skin|widget|module|mod)\s+(for|to)\b", "plugin-for-other-app"),
     (r"\b(client|app|frontend|player|companion)\s+for\s+(jellyfin|plex|navidrome|subsonic|emby|immich|home assistant|nextcloud|sonarr|radarr|mastodon|matrix|lemmy)", "client-for-other-app"),
-    (r"\b(android|ios|iphone|mobile|desktop|windows|macos|tvos)\s+(app|client|application)\b", "native-client"),
+    (r"\b(android|ios|iphone|mobile|desktop|windows|macos|tvos)\s+(app|client|application)\b|\b(apps?|clients?) for (android|ios|iphone|windows|macos)\b", "native-client"),
+    (r"\bfor (the |your )?\*arr\b|\*arr (media )?stack\b", "plugin-for-other-app"),
+    (r"\bdocker[- ]?(compose)?[- ]?(solution|setup|stack|configuration|config|environment|template)s?\s+(for|to)\b|\bready[- ]to[- ]use\b.{0,40}\bdocker[- ]?compose\b|\b(monitoring|logging|observability) stack\b.{0,60}\b(prometheus|grafana|loki)\b", "packaging-of-other-app"),
     (r"\bdedicated server\b|\bfor [\w ]{0,30}dedicated servers\b|\bgame server (for|of)\b|\bserver for (minecraft|palworld|valheim|ark|rust|terraria)", "game-server-wrapper"),
     (r"\b(discord|telegram|slack|whatsapp|twitch)\s*bot\b|\bbot for (discord|telegram|slack)", "chat-bot"),
     (r"2api\b|\bto[- ]?api\b|account pool|\b(ai |llm )?subscription pool|reverse[- ]proxy for (chatgpt|claude|openai|gemini|codex|cursor|kiro|grok|copilot)|\b(chatgpt|claude|gemini|codex|kiro|grok|copilot|cursor) (account|api) (proxy|pool|gateway)", "ai-account-proxy"),
@@ -301,13 +307,16 @@ JUNK = [
     (r"^(my|personal) |\bmy (homelab|home lab|server|setup|infra)\b|\bhomelab (config|setup|infrastructure|repo|gitops)\b|\bgitops\b|\bdotfiles\b|\bnixos config", "personal-setup"),
     (r"\b(starter|boilerplate|template|scaffold|example|sample|demo|tutorial|course|workshop|homework|assignment|learning)\b( (app|project|repo|for|of|to))", "template-or-learning"),
     (r"\bawesome\b.*\b(list|collection)\b|\bcurated list\b", "list"),
-    (r"\bmcp server\b|\bmodel context protocol\b", "mcp-server"),
+    # The repo IS an MCP server (apps that include one as a feature are fine).
+    (r"\b(mcp|model context protocol) servers? (for|that|to|which|exposing)\b|\bis an? (mcp|model context protocol) server\b", "mcp-server"),
+    (r"\b(sdk|code|client) generator\b|\bbackend (api|service|server)? ?for [\w.-]+\b", "component-or-dev-tool"),
+    (r"\bcommand and control\b|\bc2 (server|framework)\b", "scraper-or-shady"),
     (r"\b(library|sdk|framework)\s+for\s+(production\s+)?(llm|ai|agents?|python|typescript|javascript|node(\.js)?|go|rust|react|vue)\b", "library-or-sdk"),
     (r"\bagent (runtime|harness|sandbox|stack|infrastructure|framework)\b|\bdocker sandbox\b|\b[\d,]+\+? tool integrations\b|\bmemory (layer|system|api|store) for (ai )?agents?\b", "agent-infrastructure"),
     (r"\bmulti[- ]account|\baccounts? (manager|management|farm)|\bauto(matic)? ?(sign[- ]?in|check[- ]?in)|签到|\bfree[- ]tier (farm|abuse)", "account-farming"),
     (r"\b(gamma exposure|options (flow|chain)|stock|stocks|forex|trading|trader|trade journal|broker sync|portfolio tracker for (crypto|stocks))\b", "trading-crypto"),
     (r"\b(serving kit|inference (kit|stack) for|exl[23])\b", "model-serving-kit"),
-    (r"\b(sidecar|companion|addon|add-on|addons)\b", "addon-or-companion"),
+    (r"\b(sidecar|addons?|add-ons?)\b", "addon-or-companion"),
     (r"\b(device|phone|iphone) farm\b|\bfarm of (real )?(iphones|phones|devices)\b|\btraffic distribution system\b|\blead[- ]gen|\bfinds? (the )?people\b|\bcold (email|outreach)|\bgrowth hack", "growth-or-device-farm"),
     (r"\bone[- ](shot|command|click)\s+(docker\s+)?(install|deploy|setup|self-hosting)\w*\s+(of|for)\b|\b(docker )?self-hosting for the\b|\bdocker (deployment|setup|installer) for\b", "packaging-of-other-app"),
     (r"\b(dashboard|ui|frontend|manager|portal|panel)\s+for\s+(your\s+)?(self-hosted\s+)?[\w.-]+\s+instances?\b", "companion-for-other-app"),
@@ -349,8 +358,11 @@ HOST_APPS = re.compile(r"\b(jellyfin|plex|emby|navidrome|subsonic|immich|nextclo
                        r"jellyseerr|stremio|home assistant|mastodon|lemmy|chatwoot|audiobookshelf|"
                        r"calibre-web|kavita|komga|obsidian|notion|trilium|linkwarden|vaultwarden|"
                        r"authentik|pi-hole|adguard|unraid|truenas|proxmox|portainer|n8n|firefly(?: iii)?|"
-                       r"coolify|headscale|twenty crm|firecrawl|frigate)\b", re.I)
+                       r"coolify|headscale|twenty crm|firecrawl|frigate|ghost|wordpress)\b", re.I)
 ALT_TO = re.compile(r"alternative|replacement|replaces|instead of|like\s", re.I)
+# "Sonarr/Radarr for games": an app modelled on a known one, not an add-on to it.
+ANALOGY = re.compile(HOST_APPS.pattern + r"(\s*/\s*[\w-]+)?\s+for\s+(games|books|comics|music|podcasts|"
+                     r"recipes|audiobooks|movies|photos|ebooks|manga|anime|papers|notes)\b", re.I)
 # "... for every Jellyfin user", "powered by Twenty CRM": built on another app even when the
 # repo carries a media-server/alternative topic.
 BUILT_ON = re.compile(r"\b(for|with|on top of|powered by|built on|integrat\w* with|companion to)\s+"
@@ -379,7 +391,9 @@ def gate(repo, now, curated=False, light=False):
     for rx, why in JUNK_RE:
         if rx.search(blob):
             return why
-    if not ALT_TO.search(desc) and (BUILT_ON.search(desc) or (
+    if re.match(r"(an? |the )?(mcp|model context protocol) server\b", desc, re.I):
+        return "mcp-server"
+    if not ALT_TO.search(desc) and not ANALOGY.search(desc) and (BUILT_ON.search(desc) or (
             HOST_APPS.search(desc) and not {t.lower() for t in repo["topics"]} & {"media-server", "alternative"})):
         return "built-on-other-app"
     if TERMINAL.search(desc) and not re.search(r"\bweb\b", desc, re.I):
@@ -425,6 +439,7 @@ def interest_score(repo, now, curated=None):
 
 
 CATEGORY_OVERRIDES = [
+    (r"\b(virtual tabletop|vtt|tabletop|ttrpg|board games?|dungeons?)\b", "Gaming / Game Servers"),
     (r"\b(crm|help ?desk|support desk|ticketing)\b", "CRM / Business"),
     (r"\b(fitness|workout|strength[- ]training|sleep tracking|fitbit|habit tracker|health tracker)\b", "Health / Food / Fitness"),
     (r"\b(time[- ]tracking|time tracker|timesheets?|to-?do|task manager|pomodoro|vehicle|car maintenance|home inventory|household)\b", "Productivity / Tasks"),
@@ -453,7 +468,8 @@ def categorize(repo):
 
 AI_APP = re.compile(r"\b(web ?ui|webui|web app|web-based|web interface|dashboard|workspace|interface|"
                     r"browser[- ]based|in (the|your) browser|browser workbench|frontend|panel|portal|"
-                    r"chat ui|self-host\w* (app|workspace))\b", re.I)
+                    r"chat ui|chat app|chat client|chatgpt clone|clone|ui|web application|"
+                    r"self-host\w* (app|workspace))\b", re.I)
 
 
 def is_ai(repo):
@@ -547,6 +563,26 @@ def select(cands, target):
             if len(picked) >= target:
                 break
     return sorted(picked, key=lambda x: -x["_score"])
+
+
+def set_star_floor(floor, young):
+    global MIN_STARS, MIN_STARS_YOUNG
+    MIN_STARS, MIN_STARS_YOUNG = floor, young
+
+
+def discover_ladder(tracker, target, now, args, enough=None):
+    """discover() on each STAR_LADDER rung until `enough(picked)` (default: a full set).
+    Leaves MIN_STARS/MIN_STARS_YOUNG at the rung that produced the returned picks."""
+    enough = enough or (lambda p: len(p) >= target)
+    for i, (floor, young) in enumerate(STAR_LADDER):
+        set_star_floor(floor, young)
+        picked, stats = discover(tracker, target, now, args)
+        stats["starFloor"] = [floor, young]
+        if enough(picked) or i == len(STAR_LADDER) - 1:
+            return picked, stats
+        nxt = STAR_LADDER[i + 1]
+        print(f"[{VERSION}] {len(picked)}/{target} at ≥{floor}★ (≥{young}★ if under {YOUNG_DAYS} days); "
+              f"retrying one rung lower at ≥{nxt[0]}★ (≥{nxt[1]}★) …", flush=True)
 
 
 def discover(tracker, target, now, args):
@@ -833,6 +869,20 @@ def self_test():
         (mk("x/hitl", "Open source human-in-the-loop library for production LLM agents with a web dashboard"), "library-or-sdk"),
         (mk("x/eve", "The whole stack on your machine: a Docker sandbox, memory, 1,070 tool integrations, and a dashboard"), "agent-infrastructure"),
         (mk("w/lib", "Self-hosted library for your ebooks and comics with a web reader"), None),
+        (mk("y/epg", "A ready to use plug-and-forget Docker Compose to download EPG with cron"), "packaging-of-other-app"),
+        (mk("y/php", "Docker-environment for web-development on PHP"), "packaging-of-other-app"),
+        (mk("y/graf", "Docker Compose monitoring stack for Docker hosts: Prometheus, Grafana, Alertmanager"), "packaging-of-other-app"),
+        (mk("y/arr", "Multi-language audio enforcement for the *arr media stack"), "plugin-for-other-app"),
+        (mk("y/vpn", "Open-source VPN clients for Android and Windows, self-hosted panel"), "native-client"),
+        (mk("z/retro", "Game library manager with indexer search and download automation. Sonarr/Radarr for games."), None),
+        (mk("z/takt", "Self-hosted kanban board with flow metrics. Docker, systemd or Helm; runs air-gapped."), None),
+        (mk("z/mh", "A self-hosted model library web app. Includes an MCP server and scoped keys for agentic use."), None),
+        (mk("z/kt", "A companion web app for groups playing a tabletop adventure path"), None),
+        (mk("z/mcp", "An MCP server for searching your notes from any AI client"), "mcp-server"),
+        (mk("q/seance", "A self-hostable contact form for Ghost"), "built-on-other-app"),
+        (mk("q/perga", "Backend API for Perga - a personal workspace for daily planning"), "component-or-dev-tool"),
+        (mk("q/sdk", "Open-source SDK generator for OpenAPI 3: idiomatic Rust and TypeScript"), "component-or-dev-tool"),
+        (mk("q/c2", "Open-source, self-hosted command and control for fleets of drones"), "scraper-or-shady"),
         (mk("p/cjk", "知归是一个面向个人使用的 AI 知识归档工具，把内容链接发送给机器人 GitHub web app"), "not-english-readable"),
     ]
     ok = True
@@ -935,7 +985,7 @@ def main():
     print(f"[{VERSION}] next: {title} · {len(tracker.get('usedRepoUrls', []))} used URLs", flush=True)
 
     now = datetime.now(timezone.utc)
-    picked, stats = discover(tracker, args.target, now, args)
+    picked, stats = discover_ladder(tracker, args.target, now, args)
     dist = {}
     for r in picked:
         dist[r["_cat"]] = dist.get(r["_cat"], 0) + 1
@@ -943,7 +993,7 @@ def main():
     stars = sorted(r["stargazers_count"] for r in picked) or [0]
     print(f"[{VERSION}] selected {len(picked)}/{args.target} ({sum(1 for r in picked if is_ai(r))} AI) | median ★ {stars[len(stars) // 2]} | "
           f"interest min/max {min(scores):.0f}/{max(scores):.0f} | compose "
-          f"{sum(r['compose'] for r in picked)} | GraphQL calls {stats['gqlCalls']} "
+          f"{sum(r['compose'] for r in picked)} | star floor ≥{MIN_STARS} (≥{MIN_STARS_YOUNG} young) | GraphQL calls {stats['gqlCalls']} "
           f"(errors {stats['gqlErrors']}, budget left {stats['gqlRemaining']}) | {stats['seconds']}s")
     print(f"[{VERSION}] categories: " + ", ".join(f"{k}={v}" for k, v in
                                                  sorted(dist.items(), key=lambda kv: -kv[1])))

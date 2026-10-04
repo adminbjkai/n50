@@ -22,24 +22,27 @@
     "seconds": 61.9
   },
   "categoryDistribution": {
-    "Maps / GIS / Location": 1,
-    "AI / LLM": 11,
-    "Security / Auth": 1,
+    "AI / LLM": 10,
+    "Media / Streaming": 8,
     "Monitoring / Observability": 4,
     "Notes / Knowledge": 3,
-    "Dashboard / Homelab": 4,
-    "Media / Streaming": 10,
+    "CRM / Business": 3,
     "Books / Reading / Library": 2,
     "Documents / PDF / Paperless": 2,
-    "CRM / Business": 1,
-    "Developer Tools / Utilities": 2,
+    "Communication / Social": 2,
+    "Gaming / Game Servers": 2,
+    "Health / Food / Fitness": 2,
+    "Productivity / Tasks": 2,
+    "Maps / GIS / Location": 1,
+    "Security / Auth": 1,
+    "Dashboard / Homelab": 1,
+    "Home Automation / IoT": 1,
+    "CMS / Website": 1,
     "E-commerce / Shop": 1,
     "Automation": 1,
     "Web App / Other": 1,
-    "Communication / Social": 2,
-    "Productivity / Tasks": 1,
-    "Gaming / Game Servers": 2,
-    "Analytics / Data": 1
+    "Developer Tools / Utilities": 1,
+    "Finance / Budget": 1
   },
   "picks": [
     {
@@ -354,7 +357,7 @@
       "url": "https://github.com/TaterTotterson/Tater",
       "score": 40.16,
       "stars": 43,
-      "category": "Media / Streaming",
+      "category": "Home Automation / IoT",
       "description": "A fully local, self-hosted replacement for Siri and Alexa.  One assistant for voice, vision, memory, automations, smart-home control, music, messaging, and more—running on hardware you control.",
       "language": "Python",
       "compose": true,
@@ -465,7 +468,7 @@
       "url": "https://github.com/kite-plus/kite",
       "score": 38.07,
       "stars": 11,
-      "category": "Developer Tools / Utilities",
+      "category": "CMS / Website",
       "description": "A modern open-source publishing platform built with Go. Markdown content, a visual editor, static site generation, and Git publishing in one binary.",
       "language": "Go",
       "compose": true,
@@ -579,7 +582,7 @@
       "url": "https://github.com/shanananana/deepticket",
       "score": 36.39,
       "stars": 65,
-      "category": "AI / LLM",
+      "category": "CRM / Business",
       "description": "An AI troubleshooting workbench for internal systems: it integrates ticketing and alerting systems via HTTP APIs and webhooks, connects code, logs, configurations, and agents, and provides a web-based self-service analysis interface for product, operations, and customer support teams.",
       "language": "Python",
       "compose": true,
@@ -771,27 +774,6 @@
       }
     },
     {
-      "repo": "hpcll/HMusic-Server",
-      "url": "https://github.com/hpcll/HMusic-Server",
-      "score": 32.62,
-      "stars": 13,
-      "category": "Media / Streaming",
-      "description": "Self-hosted HMusic backend for personal music libraries and home speaker control",
-      "language": "TypeScript",
-      "compose": true,
-      "docker": true,
-      "ai": false,
-      "breakdown": {
-        "stars": 11.5,
-        "velocity": 2.2,
-        "deploy": 6,
-        "release": 5,
-        "license": 2,
-        "active": 3,
-        "life": 3
-      }
-    },
-    {
       "repo": "paladini/voice-separator-demucs",
       "url": "https://github.com/paladini/voice-separator-demucs",
       "score": 32.37,
@@ -804,36 +786,12 @@
       "ai": false,
       "breakdown": {
         "stars": 16.0,
-        "velocity": 1.4,
+        "velocity": 1.3,
         "deploy": 6,
         "polish": 3,
         "license": 2,
         "active": 1,
         "life": 3
-      }
-    },
-    {
-      "repo": "awaithumans/awaithumans-human-in-the-loop-ai-agents",
-      "url": "https://github.com/awaithumans/awaithumans-human-in-the-loop-ai-agents",
-      "score": 32.02,
-      "stars": 24,
-      "category": "AI / LLM",
-      "description": "Pause your AI agent. Ask a human. Resume with their answer. Open source human-in-the-loop (HITL) library for production LLM agents: Slack, email, and web dashboard. Typed Pydantic and Zod responses. Durable Temporal and LangGraph adapters. AI verifier. Audit trail. Self-hosted, Apache 2.0. Python and TypeScript.",
-      "language": "Python",
-      "compose": true,
-      "docker": true,
-      "ai": true,
-      "breakdown": {
-        "stars": 14.0,
-        "velocity": 2.0,
-        "deploy": 6,
-        "release": 3,
-        "polish": 3,
-        "org": 2,
-        "license": 2,
-        "active": 3,
-        "life": 3,
-        "ai": -6
       }
     },
     {
@@ -864,7 +822,7 @@
       "url": "https://github.com/florinel-chis/GopherCRM",
       "score": 30.57,
       "stars": 23,
-      "category": "Productivity / Tasks",
+      "category": "CRM / Business",
       "description": "Open-source, self-hosted CRM: leads, deals, tickets, tasks and lead-capture forms. Go + React, SQLite or MySQL.",
       "language": "Go",
       "compose": true,
@@ -907,7 +865,7 @@
       "url": "https://github.com/DaKheera47/strong-statistics",
       "score": 30.35,
       "stars": 26,
-      "category": "Analytics / Data",
+      "category": "Health / Food / Fitness",
       "description": "Self‑hosted strength‑training analytics for Strong app exports. Import your CSV, see PRs, volume trends, rep ranges, and workout history — all stored locally in SQLite.",
       "language": "TypeScript",
       "compose": true,
@@ -928,7 +886,7 @@
       "url": "https://github.com/winnicodes/pocketwatch",
       "score": 29.99,
       "stars": 28,
-      "category": "Dashboard / Homelab",
+      "category": "Productivity / Tasks",
       "description": "Self-hosted minimal time tracking.",
       "language": "TypeScript",
       "compose": true,
@@ -987,28 +945,6 @@
       }
     },
     {
-      "repo": "SammyTourani/evestack",
-      "url": "https://github.com/SammyTourani/evestack",
-      "score": 27.85,
-      "stars": 14,
-      "category": "AI / LLM",
-      "description": "The whole eve stack. On your own machine. Durable Postgres sessions, a Docker sandbox, memory, approvals, schedules, 1,070 tool integrations, and a dashboard that drives the agent.",
-      "language": "JavaScript",
-      "compose": true,
-      "docker": true,
-      "ai": true,
-      "breakdown": {
-        "stars": 11.8,
-        "velocity": 3.1,
-        "deploy": 6,
-        "release": 5,
-        "polish": 3,
-        "license": 2,
-        "active": 3,
-        "ai": -6
-      }
-    },
-    {
       "repo": "Lm36/tempmail-server",
       "url": "https://github.com/Lm36/tempmail-server",
       "score": 27.72,
@@ -1033,7 +969,7 @@
       "url": "https://github.com/flizzy27/smart-garage",
       "score": 26.37,
       "stars": 11,
-      "category": "Dashboard / Homelab",
+      "category": "Productivity / Tasks",
       "description": "Self-hosted vehicle management and maintenance tracking platform",
       "language": "TypeScript",
       "compose": true,
@@ -1095,7 +1031,7 @@
       "url": "https://github.com/adityaongit/pulse",
       "score": 23.07,
       "stars": 11,
-      "category": "Dashboard / Homelab",
+      "category": "Health / Food / Fitness",
       "description": "your fitbit air, but it finally tells you why you feel like garbage. recovery, strain, sleep and a Pulse Age that judges you, all free and self-hosted.",
       "language": "TypeScript",
       "compose": true,
@@ -1129,9 +1065,110 @@
         "active": 3,
         "life": 3
       }
+    },
+    {
+      "repo": "TheHoltz/errex",
+      "url": "https://github.com/TheHoltz/errex",
+      "score": 22.63,
+      "stars": 22,
+      "category": "AI / LLM",
+      "description": "Lightweight, self-hosted Sentry alternative. Rust + SQLite, ~10 MB RAM. Sentry-SDK compatible ingest, fast SvelteKit dashboard, MCP-ready for AI agents.",
+      "language": "Rust",
+      "compose": true,
+      "docker": true,
+      "ai": true,
+      "breakdown": {
+        "stars": 13.6,
+        "velocity": 2.0,
+        "deploy": 6,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2,
+        "ai": -6
+      }
+    },
+    {
+      "repo": "S2zxx0zxx/FinCo-pilot",
+      "url": "https://github.com/S2zxx0zxx/FinCo-pilot",
+      "score": 22.41,
+      "stars": 10,
+      "category": "Finance / Budget",
+      "description": "⚡ Open-source, privacy-first personal finance cockpit. Bring accounts, transactions, budgets, goals, assets & reports into one intelligent workspace — with optional AI, powerful automation, and self-hosted control. Built to turn scattered financial data into clarity, context and better decisions.",
+      "language": "Python",
+      "compose": true,
+      "docker": true,
+      "ai": true,
+      "breakdown": {
+        "stars": 10.4,
+        "velocity": 4.0,
+        "deploy": 6,
+        "license": 2,
+        "active": 3,
+        "life": 3,
+        "ai": -6
+      }
+    },
+    {
+      "repo": "pasichDev/docket",
+      "url": "https://github.com/pasichDev/docket",
+      "score": 22.27,
+      "stars": 10,
+      "category": "AI / LLM",
+      "description": "Local-first, self-hostable coordination workspace for AI coding agents. Shared tasks, claims, sync and MCP integration.",
+      "language": "TypeScript",
+      "compose": true,
+      "docker": true,
+      "ai": true,
+      "breakdown": {
+        "stars": 10.4,
+        "velocity": 3.9,
+        "deploy": 6,
+        "license": 2,
+        "active": 3,
+        "life": 3,
+        "ai": -6
+      }
     }
   ],
   "aiCount": 11,
   "publishable": true,
-  "timingSeconds": 63.9
+  "timingSeconds": 63.9,
+  "repair": {
+    "at": "2026-10-04T01:33:15+00:00",
+    "dropped": [
+      {
+        "repo": "hpcll/HMusic-Server",
+        "why": "component-or-dev-tool"
+      },
+      {
+        "repo": "awaithumans/awaithumans-human-in-the-loop-ai-agents",
+        "why": "library-or-sdk"
+      },
+      {
+        "repo": "SammyTourani/evestack",
+        "why": "agent-infrastructure"
+      }
+    ],
+    "added": [
+      "TheHoltz/errex",
+      "S2zxx0zxx/FinCo-pilot",
+      "pasichDev/docket"
+    ],
+    "topUp": {
+      "from": "v17",
+      "needed": 3,
+      "added": 3,
+      "starFloors": [
+        20
+      ],
+      "repos": [
+        "TheHoltz/errex",
+        "S2zxx0zxx/FinCo-pilot",
+        "pasichDev/docket"
+      ],
+      "laneSeen": 5175,
+      "lanePassing": 118,
+      "seconds": 59.9
+    }
+  }
 }

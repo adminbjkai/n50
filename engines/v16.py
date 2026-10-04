@@ -3482,15 +3482,17 @@ def select_set(tracker, live_titles, args):
             selected.append(c)
             taken.add(u)
         print(f"[{VERSION}] padded selection to {len(selected)}")
-    if not special and len(selected) < target_n:
-        # REST search is mined out; fill the gap from v17's GraphQL lane (engines/topup.py).
+    if not special:
+        # Screen the picks with v17's quality gate, then refill any gap from v17's GraphQL
+        # lane (REST search is mined out). See engines/quality.py and engines/topup.py.
+        import quality
         import topup
-        selected, audit["topUp"] = topup.fill(
-            VERSION, selected, target_n, tracker, args.dry_run,
-            ai_ceiling=HARD_CAT_CAPS.get("AI / LLM", 3),
-            is_ai_cat=lambda c: family_of(c.get("hcat") or "") == "ai",
-            family_of=family_of,
-            cat_cap=getattr(args, "cat_cap", None))
+        selected, audit["qualityScreen"] = quality.screen(VERSION, selected)
+        selected, audit["topUp"] = topup.fill(VERSION, selected, target_n, tracker, args.dry_run,
+                                              ai_ceiling=HARD_CAT_CAPS.get("AI / LLM", 3),
+                                              is_ai_cat=lambda c: family_of(c.get("hcat") or "") == "ai",
+                                              family_of=family_of,
+                                              cat_cap=getattr(args, "cat_cap", None))
     if len(selected) != target_n:
         # v15 NEVER aborts a run with a traceback. A mined-out corpus that yields
         # a solid partial set should ship (honestly reported), not crash. Only a

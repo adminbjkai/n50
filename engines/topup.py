@@ -42,6 +42,7 @@ def _to_candidate(r, family_of=None):
         "awesome": False, "proof_tier": "A" if docker else "B", "fresh_gem": False,
         "breakdown": {f"v17 {k}": v for k, v in (r.get("_bd") or {}).items()},
         "enrich": {"interest_hook": HOOK}, "topup": "v17",
+        "_v17": r,  # original v17 record, for v17-format pages
     }
     if family_of:
         c["family"] = family_of(r["_cat"])
@@ -71,18 +72,53 @@ def fill(version, selected, target, tracker, dry_run, ai_ceiling=None, is_ai_cat
     view = dict(tracker)
     view["usedRepoUrls"] = list(tracker.get("usedRepoUrls", [])) + sorted(taken_urls)
     args = SimpleNamespace(quick=False, dry_run=dry_run, save_caches=False)
-    try:
-        picks, stats = v17.discover(view, need + 25, datetime.now(timezone.utc), args)
-    except Exception as exc:  # noqa: BLE001 — never turn a short set into a crash
-        print(f"[{version}] top-up failed ({type(exc).__name__}: {exc}); leaving the set at {len(selected)}")
-        return selected, {"from": "v17", "added": 0, "error": str(exc)}
-
     ai_now = sum(1 for c in selected if is_ai_cat and is_ai_cat(c))
     cats = {}
     for c in selected:
         k = c.get("category") or c.get("hcat")
         cats[k] = cats.get(k, 0) + 1
-    added = []
+    added, stats, floors = [], {}, []
+    ladder = getattr(v17, "STAR_LADDER", None) or [(getattr(v17, "MIN_STARS", None),
+                                                      getattr(v17, "MIN_STARS_YOUNG", None))]
+    for floor, young in ladder:
+        if len(added) >= need:
+            break
+        if hasattr(v17, "set_star_floor"):
+            v17.set_star_floor(floor, young)
+        floors.append(floor)
+        try:
+            picks, stats = v17.discover(view, need + 25, datetime.now(timezone.utc), args)
+        except Exception as exc:  # noqa: BLE001 — never turn a short set into a crash
+            print(f"[{version}] top-up lane failed ({type(exc).__name__}: {exc}); "
+                  f"keeping {len(selected) + len(added)} picks")
+            stats = {"error": str(exc)}
+            break
+        ai_now = _take(picks, need, added, taken_urls, owners, cats, cat_cap, ai_ceiling, ai_now,
+                       is_ai_cat, family_of, v17)
+        if len(added) < need and (floor, young) != ladder[-1]:
+            print(f"[{version}] top-up: {len(added)}/{need} at ≥{floor}★; trying a lower star floor …",
+                  flush=True)
+    if hasattr(v17, "set_star_floor"):
+        v17.set_star_floor(*ladder[0])
+    for c in added:
+        print(f"[{version}]   + {c['repo']['full_name']:<42} [{c['category'][:24]}] "
+              f"★{c['repo']['stargazers_count']} tier {c['proof_tier']} · "
+              f"{(c['repo']['description'] or '')[:60]}")
+    record = {"from": "v17", "needed": need, "added": len(added), "starFloors": floors,
+              "repos": [c["repo"]["full_name"] for c in added],
+              "laneSeen": stats.get("seen"), "lanePassing": stats.get("passing"),
+              "seconds": round(time.time() - t0, 1)}
+    if stats.get("error"):
+        record["error"] = stats["error"]
+    print(f"[{version}] top-up: added {len(added)} of {need} in {record['seconds']}s "
+          f"→ {len(selected) + len(added)}/{target}", flush=True)
+    sys.stdout.flush()
+    return selected + added, record
+
+
+def _take(picks, need, added, taken_urls, owners, cats, cat_cap, ai_ceiling, ai_now, is_ai_cat,
+          family_of, v17):
+    """Move acceptable lane picks into `added` (honouring the category cap first)."""
     for capped in ((True, False) if cat_cap else (False,)):
         for r in picks:
             if len(added) >= need:
@@ -100,18 +136,7 @@ def fill(version, selected, target, tracker, dry_run, ai_ceiling=None, is_ai_cat
             cats[r["_cat"]] = cats.get(r["_cat"], 0) + 1
             owners.add(_owner(r["full_name"]))
             taken_urls.add(r["html_url"].lower())
-    for c in added:
-        print(f"[{version}]   + {c['repo']['full_name']:<42} [{c['category'][:24]}] "
-              f"★{c['repo']['stargazers_count']} tier {c['proof_tier']} · "
-              f"{(c['repo']['description'] or '')[:60]}")
-    record = {"from": "v17", "needed": need, "added": len(added),
-              "repos": [c["repo"]["full_name"] for c in added],
-              "laneSeen": stats.get("seen"), "lanePassing": stats.get("passing"),
-              "seconds": round(time.time() - t0, 1)}
-    print(f"[{version}] top-up: added {len(added)} of {need} in {record['seconds']}s "
-          f"→ {len(selected) + len(added)}/{target}", flush=True)
-    sys.stdout.flush()
-    return selected + added, record
+    return ai_now
 
 
 def self_test():
@@ -144,6 +169,14 @@ def self_test():
     fake.discover = lambda *a: (_ for _ in ()).throw(RuntimeError("lane down"))
     out2, rec2 = fill("vX", sel, 7, {"usedRepoUrls": []}, True)
     checks.append(("lane failure keeps the set, no crash", out2 == sel and rec2["added"] == 0))
+    # ladder: rung 1 yields nothing usable, rung 2 fills
+    rungs = []
+    fake.STAR_LADDER = [(20, 10), (5, 3)]
+    fake.MIN_STARS, fake.MIN_STARS_YOUNG = 20, 10
+    fake.set_star_floor = lambda f, y: rungs.append(f)
+    fake.discover = lambda tracker, target, now, args: (lane[:target] if rungs[-1] == 5 else [], {"seen": 1})
+    out4, rec4 = fill("vX", sel, 5, {"usedRepoUrls": []}, True)
+    checks.append(("star ladder retries a lower rung", len(out4) == 5 and rec4["starFloors"] == [20, 5]))
     fake.discover = lambda tracker, target, now, args: (lane[:target], {"seen": 99, "passing": len(lane)})
     lane[4:4] = [mk("m1/a", cat="Media / Streaming", score=90), mk("m2/b", cat="Media / Streaming", score=89)]
     media = [{"repo": {"full_name": f"s{i}/m", "html_url": f"https://github.com/s{i}/m"},

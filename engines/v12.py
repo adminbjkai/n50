@@ -1976,13 +1976,15 @@ def select_set(tracker, live_titles, args):
     selected = select_with_proof_quotas(
         confirmed, args.cat_cap, args.min_score, args.fresh_quota)
 
-    if len(selected) < 50:
-        # REST search is mined out; fill the gap from v17's GraphQL lane (engines/topup.py).
-        import topup
-        selected, audit["topUp"] = topup.fill(VERSION, selected, 50, tracker, args.dry_run,
-                                              ai_ceiling=HARD_CAT_CAPS.get("AI / LLM", 10),
-                                              is_ai_cat=lambda c: c.get("hcat") == "AI / LLM",
-            cat_cap=getattr(args, "cat_cap", None))
+    # Screen the picks with v17's quality gate, then refill any gap from v17's GraphQL lane
+    # (REST search is mined out). See engines/quality.py and engines/topup.py.
+    import quality
+    import topup
+    selected, audit["qualityScreen"] = quality.screen(VERSION, selected)
+    selected, audit["topUp"] = topup.fill(VERSION, selected, 50, tracker, args.dry_run,
+                                          ai_ceiling=HARD_CAT_CAPS.get("AI / LLM", 10),
+                                          is_ai_cat=lambda c: c.get("hcat") == "AI / LLM",
+                                          cat_cap=getattr(args, "cat_cap", None))
     ab_n = sum(1 for c in selected if c.get("proof_tier") in ("A", "B"))
     if len(selected) != 50:
         raise RuntimeError(
