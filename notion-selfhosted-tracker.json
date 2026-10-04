@@ -28999,13 +28999,13 @@
       "pageId": "3ef41186-19e5-818a-b8ad-f608c69b4f63",
       "pageUrl": "https://www.notion.so/Set-494-50-More-Self-Hosted-Open-Source-Web-Apps-2026-3ef4118619e5818ab8adf608c69b4f63",
       "repos": [
+        "https://github.com/kgoedecke/doop",
         "https://github.com/egmalt/house-planner",
         "https://github.com/EthanChan050430/Saki-Panel",
         "https://github.com/1Panel-dev/laya-server",
         "https://github.com/Maneek21/Deft",
         "https://github.com/jeffcaldwellca/mkcertWeb",
         "https://github.com/ardi4s/feedme",
-        "https://github.com/madmorett/bullpane",
         "https://github.com/DejavuMoe/edgeTTS",
         "https://github.com/afk-sapien/PokeSim",
         "https://github.com/desirevolution/jump-key",
@@ -29016,9 +29016,9 @@
         "https://github.com/maxjb-xyz/reverb",
         "https://github.com/TaterTotterson/Tater",
         "https://github.com/arita-yuto/video-review",
+        "https://github.com/kite-plus/kite",
         "https://github.com/t0mer/ocr-docker",
         "https://github.com/lallero-dev/pappice",
-        "https://github.com/kite-plus/kite",
         "https://github.com/epure-sh/epure",
         "https://github.com/karl-cta/statup",
         "https://github.com/AsoBeast/asobeast",
@@ -29052,7 +29052,7 @@
       ],
       "count": 50,
       "version": "v17",
-      "repaired": "2026-10-03"
+      "repaired": "2026-10-04"
     },
     {
       "setNum": 495,
@@ -29114,7 +29114,7 @@
       ],
       "count": 50,
       "version": "v16",
-      "repaired": "2026-10-03"
+      "repaired": "2026-10-04"
     },
     {
       "setNum": 496,
@@ -29300,7 +29300,7 @@
       ],
       "count": 50,
       "version": "v16",
-      "repaired": "2026-10-03"
+      "repaired": "2026-10-04"
     },
     {
       "setNum": 499,
@@ -29360,7 +29360,7 @@
         "https://github.com/Itz-Agasta/OpenDiagram"
       ],
       "count": 50,
-      "repaired": "2026-10-03",
+      "repaired": "2026-10-04",
       "version": "v12"
     },
     {
@@ -29400,11 +29400,9 @@
         "https://github.com/mazzz1y/majmun",
         "https://github.com/BG3Z/OpenGYM",
         "https://github.com/ilyaskhan12Q/flexstock",
-        "https://github.com/rursache/StationCast",
         "https://github.com/EinKRieGeR/VortexLib",
         "https://github.com/yousefalfoqaha/flowstruct",
         "https://github.com/YanaDevOps/copycat",
-        "https://github.com/threehappypenguins/VideoSphere",
         "https://github.com/bndct-devops/forge",
         "https://github.com/codad5/raba",
         "https://github.com/PocketLens/pocketlens-app",
@@ -29413,16 +29411,18 @@
         "https://github.com/Usires/Contentix",
         "https://github.com/zilet/cairn",
         "https://github.com/NotYuSheng/TracePcap",
-        "https://github.com/fralapo/clippyme",
         "https://github.com/riza/kast",
-        "https://github.com/nathanamorin/local-podcasts",
-        "https://github.com/OwlCt/OwlPlayer",
-        "https://github.com/SASUKE40/pi-daemon",
-        "https://github.com/pinkpixel-dev/kintara"
+        "https://github.com/pinkpixel-dev/kintara",
+        "https://github.com/dboudreau00/NocTORnal",
+        "https://github.com/Myriad-You/Myriad",
+        "https://github.com/biosshot/metric",
+        "https://github.com/evergreen-it-dev/folio",
+        "https://github.com/Strandgaard96/mc-gamertime",
+        "https://github.com/frontier-ai-next/flowMAS"
       ],
       "count": 50,
       "version": "v11",
-      "repaired": "2026-10-03"
+      "repaired": "2026-10-04"
     }
   ],
   "usedRepoUrls": [
@@ -54598,6 +54598,15 @@
     "https://github.com/pinkpixel-dev/stitchlet",
     "https://github.com/Pardalesteban/sshpanel",
     "https://github.com/Netrun-Systems/sigil-cms",
-    "https://github.com/MarwanAlghamdi/Lawha"
+    "https://github.com/MarwanAlghamdi/Lawha",
+    "https://github.com/dboudreau00/NocTORnal",
+    "https://github.com/Myriad-You/Myriad",
+    "https://github.com/biosshot/metric",
+    "https://github.com/lewlew-glitch/qm_companion",
+    "https://github.com/evergreen-it-dev/folio",
+    "https://github.com/Strandgaard96/mc-gamertime",
+    "https://github.com/milind-soni/OpenMausBot",
+    "https://github.com/frontier-ai-next/flowMAS",
+    "https://github.com/kgoedecke/doop"
   ]
 }

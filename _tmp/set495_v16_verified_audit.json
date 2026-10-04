@@ -356,7 +356,7 @@
     {
       "url": "https://github.com/shodiwarmic/lastwar-alliance-manager",
       "score": 67.96,
-      "category": "Dashboard / Homelab",
+      "category": "Gaming / Game Servers",
       "stars": 4,
       "docker": true,
       "compose": true,
@@ -1194,7 +1194,7 @@
     {
       "url": "https://github.com/Xpiatio/Hearthwave",
       "score": 30.66,
-      "category": "Productivity / Tasks",
+      "category": "Communication / Social",
       "stars": 10,
       "docker": true,
       "compose": true,
@@ -1316,7 +1316,7 @@
     {
       "url": "https://github.com/PEG4TRON/MeshCorium",
       "score": 29.42,
-      "category": "Dashboard / Homelab",
+      "category": "Communication / Social",
       "stars": 12,
       "docker": true,
       "compose": true,
@@ -1385,12 +1385,12 @@
     }
   ],
   "categoryDistribution": {
-    "Productivity / Tasks": 5,
+    "Gaming / Game Servers": 5,
     "Books / Reading / Library": 5,
     "Media / Streaming": 4,
-    "Gaming / Game Servers": 4,
+    "Productivity / Tasks": 4,
+    "Communication / Social": 4,
     "Monitoring / Observability": 3,
-    "Dashboard / Homelab": 3,
     "Developer Tools / Utilities": 3,
     "Analytics / Data": 3,
     "Notes / Knowledge": 2,
@@ -1399,11 +1399,11 @@
     "Health / Food / Fitness": 2,
     "Documents / PDF / Paperless": 2,
     "Files / Storage / Backup": 2,
-    "Communication / Social": 2,
     "Networking / VPN": 2,
     "Security / Auth": 1,
     "CRM / Business": 1,
     "Search / Indexing": 1,
+    "Dashboard / Homelab": 1,
     "CMS / Website": 1
   },
   "scoreStats": {
@@ -1575,6 +1575,29 @@
           "repo": "yorickpeterse/shost",
           "from": "Dashboard / Homelab",
           "to": "CMS / Website"
+        }
+      ],
+      "topUp": null
+    },
+    {
+      "at": "2026-10-04T04:41:22+00:00",
+      "dropped": [],
+      "added": [],
+      "recategorized": [
+        {
+          "repo": "shodiwarmic/lastwar-alliance-manager",
+          "from": "Dashboard / Homelab",
+          "to": "Gaming / Game Servers"
+        },
+        {
+          "repo": "Xpiatio/Hearthwave",
+          "from": "Productivity / Tasks",
+          "to": "Communication / Social"
+        },
+        {
+          "repo": "PEG4TRON/MeshCorium",
+          "from": "Dashboard / Homelab",
+          "to": "Communication / Social"
         }
       ],
       "topUp": null

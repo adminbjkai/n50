@@ -62,9 +62,27 @@ def load_set(n):
     return tracker, entry, engine, audit_path, audit, rows
 
 
+def _gone(full_name):
+    """True only when GitHub says 404; any other failure means 'unknown', never 'gone'."""
+    import urllib.error
+    import urllib.request
+    req = urllib.request.Request(f"https://api.github.com/repos/{full_name}")
+    req.add_header("Authorization", f"Bearer {v17.v16.GH_TOKEN}")
+    try:
+        urllib.request.urlopen(req, timeout=30).close()
+        return False
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return True
+        raise v17.GitHubUnavailable(f"GitHub answered HTTP {e.code} for {full_name}")
+
+
 def build_candidates(engine, audit, rows, now):
     """Published rows + live GitHub data -> candidates in the engine's own shape."""
     live = v17.hydrate([r["repo_name"] for r in rows])
+    unresolved = [r["repo_name"] for r in rows if r["repo_name"].lower() not in live]
+    if unresolved and not all(_gone(n) for n in unresolved):
+        raise v17.GitHubUnavailable(f"could not load {len(unresolved)} of the set's repos from GitHub")
     by_url = {}
     for a in audit.get("selected") or audit.get("picks") or []:
         url = (a.get("url") or f"https://github.com/{a.get('repo', '')}").lower()
@@ -168,14 +186,14 @@ def main():
 
     cands, missing = build_candidates(engine, audit, rows, now)
     kept, record = quality.screen("repair", cands, ignore_set=n, tracker=tracker)   # also relabels
+    rules = engine_rules(engine, mod)
+    kept, over_ai = topup.trim_ai("repair", kept, rules["ai_ceiling"], rules["is_ai_cat"], v17)
+    kept, over_cap = topup.trim_cap("repair", kept, rules.get("cat_cap"))
     published_cat = {row["repo_url"].lower(): row["category"] for row in rows}
     recat = [(c["repo"]["full_name"], published_cat.get(c["_published_url"].lower()), c["category"])
              for c in kept if published_cat.get(c["_published_url"].lower()) != c["category"]]
     for name, old, new in recat:
         print(f"[repair] category: {name}: {old} → {new}")
-    rules = engine_rules(engine, mod)
-    kept, over_ai = topup.trim_ai("repair", kept, rules["ai_ceiling"], rules["is_ai_cat"], v17)
-    kept, over_cap = topup.trim_cap("repair", kept, rules.get("cat_cap"))
     dropped = ((record or {}).get("dropped", []) + [{"repo": m, "why": "unavailable-on-github"} for m in missing]
                + [{"repo": m, "why": f"over-ai-ceiling ({rules['ai_ceiling']})"} for m in over_ai]
                + [{"repo": m, "why": f"over-category-cap ({rules.get('cat_cap')})"} for m in over_cap])
@@ -187,7 +205,8 @@ def main():
 
     final, top = topup.fill("repair", kept, size, tracker, dry_run=not args.apply, **rules)
     if len(final) != size:
-        raise SystemExit(f"[repair] could only reach {len(final)}/{size}; not touching Set {n}.")
+        why = f" (the lane failed: {top['error']})" if top and top.get("error") else ""
+        raise SystemExit(f"[repair] could only reach {len(final)}/{size}{why}. Nothing was written.")
     added = [c["repo"]["full_name"] for c in final if c.get("topup") and c in final[len(kept):]]
     blocks, final_rows = page_for(engine, mod, n, final, audit, now)
     print(f"[repair] plan: drop {len(dropped)}, add {len(added)}; page {len(blocks)} blocks")
@@ -266,5 +285,5 @@ def main():
 if __name__ == "__main__":
     try:
         main()
-    except v17.RateLimited as exc:
+    except v17.GitHubUnavailable as exc:
         raise SystemExit(f"[repair] {exc}. Nothing was written.")

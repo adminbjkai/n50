@@ -192,9 +192,13 @@ _gql_lock = threading.Lock()
 _gql_stats = {"calls": 0, "errors": 0, "remaining": None}
 
 
-class RateLimited(RuntimeError):
-    """GitHub refused GraphQL calls for now. Discovery must stop, not read this as 'no repos':
-    an empty answer would mark search slices dead and cache good repos as rejects."""
+class GitHubUnavailable(RuntimeError):
+    """GitHub isn't answering searches right now. Discovery must stop rather than read this as
+    'no repos': an empty answer would mark search slices dead and cache good repos as rejects."""
+
+
+class RateLimited(GitHubUnavailable):
+    """GitHub refused GraphQL calls (primary or burst limit)."""
 
 
 def gql(query, variables=None, retries=3):
@@ -215,6 +219,8 @@ def gql(query, variables=None, retries=3):
                 continue
             with _gql_lock:
                 _gql_stats["errors"] += 1
+            if e.code in (403, 429):        # GitHub's burst limit answers 403/429
+                raise RateLimited(f"GitHub GraphQL refused requests (HTTP {e.code}); try again in up to an hour")
             return None
         except Exception:  # noqa: BLE001 — network blips: retry then give up quietly
             if attempt + 1 < retries:
@@ -224,7 +230,8 @@ def gql(query, variables=None, retries=3):
                 _gql_stats["errors"] += 1
             return None
         errors = data.get("errors") or []
-        if any(e.get("type") == "RATE_LIMIT" for e in errors):
+        if any(e.get("type") in ("RATE_LIMIT", "RATE_LIMITED") or "rate_limit" in str(e.get("code", ""))
+               for e in errors):
             if attempt + 1 < retries:      # usually GitHub's short burst limit: wait, then retry
                 time.sleep(60)
                 continue
@@ -310,21 +317,20 @@ def hydrate(full_names, batch=25):
 JUNK = [
     # The repo IS a chart/role/module (an app that merely offers a Helm option is fine).
     (r"\b(a |an |the )?helm charts? (for|to|that)\b|\bansible (roles?|playbooks?|collections?) (for|to|that)\b|\bterraform (modules?|providers?) (for|to|that)\b|\bk8s operator\b|\bkubernetes operator\b", "infra-packaging"),
-    (r"\b(plugin|extension|add-?on|addon|integration|theme|skin|widget|module|mod)\s+(for|to)\b(?! (your|any|every) )", "plugin-for-other-app"),
     (r"\b(client|app|frontend|player|companion)\s+for\s+(jellyfin|plex|navidrome|subsonic|emby|immich|home assistant|nextcloud|sonarr|radarr|mastodon|matrix|lemmy)", "client-for-other-app"),
     (r"\bfor (the |your )?\*?arr\b( (ecosystem|stack|apps?))?|\*arr (media )?stack\b", "plugin-for-other-app"),
     (r"\b(rest )?api\b.{0,50}\busing (yt-dlp|ffmpeg|puppeteer|playwright|selenium)\b|\bapi (wrapper )?(for|around) yt-dlp\b", "component-or-dev-tool"),
     (r"\bdocker[- ]?(compose)?[- ]?(solution|setup|stack|configuration|config|environment|template)s?\s+(for|to)\b|\bready[- ]to[- ]use\b.{0,40}\bdocker[- ]?compose\b|\b(monitoring|logging|observability) stack\b.{0,60}\b(prometheus|grafana|loki)\b", "packaging-of-other-app"),
     (r"\bdedicated server\b|\bfor [\w ]{0,30}dedicated servers\b|\bgame server (for|of)\b|\bserver for (minecraft|palworld|valheim|ark|rust|terraria)", "game-server-wrapper"),
-    (r"\b(discord|telegram|slack|whatsapp|twitch|feishu|lark|wechat|dingtalk|qq)\b.{0,30}\bbot\b|\bbot for (discord|telegram|slack|feishu)|\b(assistant|bot|agent|companion)s? (for|in|on|via|inside) (telegram|whatsapp|discord|slack|wechat|feishu|lark|signal)\b", "chat-bot"),
+    (r"\b(discord|telegram|slack|whatsapp|twitch|feishu|lark|wechat|dingtalk|qq|matrix|mattermost|teams)\b.{0,30}\bbot\b|\bbot for (discord|telegram|slack|feishu|matrix)|\b(assistant|bot|agent|companion)s? (that )?((lives?|living|runs?|works?) )?(for|in|on|via|inside) (telegram|whatsapp|discord|slack|wechat|feishu|lark|signal|matrix|mattermost)\b", "chat-bot"),
     (r"\bprivate servers?\b|\bgame servers?\b.{0,40}\b(minecraft|valheim|palworld|terraria|factorio|cs2|ark)\b", "game-server-wrapper"),
     (r"\b(browser-based |web )client for (?!your\b)[\w.-]+|\bfor use alongside\b|\bcompanion (tool|app|service) (for|to)\b", "companion-for-other-app"),
     (r"2api\b|\bto[- ]?api\b|account pool|\b(ai |llm )?subscription pool|reverse[- ]proxy for (chatgpt|claude|openai|gemini|codex|cursor|kiro|grok|copilot)|\b(chatgpt|claude|gemini|codex|kiro|grok|copilot|cursor) (account|api) (proxy|pool|gateway)", "ai-account-proxy"),
-    (r"\b(trading bot|crypto|binance|bybit|coinbase|airdrop|memecoin|defi|quant(itative)? trading|stock pick|arbitrage|mev)\b", "trading-crypto"),
+    (r"\b(trading bots?|(grid|arbitrage|sniper|market[- ]making|copy[- ]trading|prediction[- ]market) bots?|crypto|binance|bybit|coinbase|kraken|kucoin|okx|hyperliquid|polymarket|kalshi|airdrop|memecoin|defi|quant(itative)? trading|stock pick|arbitrage|mev)\b", "trading-crypto"),
     (r"\b(readme|github) (stats|profile|streak)|\bstats cards?\b|\bsvg cards?\b|profile readme", "github-vanity"),
     (r"\buserscript\b|\btampermonkey\b|\bbrowser extension\b|\bchrome extension\b", "browser-extension"),
     (r"\b(docker images?|docker-?compose files?|compose (files|stack|templates?)|dockerfiles?|deployment|install(er|ation) scripts?|setup scripts?)\s+for\b", "packaging-of-other-app"),
-    (r"\bmade for (my|own|our) (own )?(personal )?(server|homelab|setup)\b|\bpersonal use\b|^(my|personal) |\bmy (homelab|home lab|server|setup|infra)\b|\bhomelab (config|setup|infrastructure|repo|gitops)\b|\bgitops\b|\bdotfiles\b|\bnixos config", "personal-setup"),
+    (r"\bmade for (my|own|our) (own )?(personal )?(server|homelab|setup)\b|\bpersonal use\b|\bmy (homelab|home lab|server|setup|infra|self-hosted (services|stack|setup|apps))\b|\bpersonal (homelab|server|setup|config|infra)\b|\bhomelab (config|setup|infrastructure|repo|gitops)\b|\bgitops\b|\bdotfiles\b|\bnixos config", "personal-setup"),
     (r"\b(starter|boilerplate|template|scaffold|example|sample|demo|tutorial|course|workshop|homework|assignment)\b( (app|project|repo|for|of|to))|\blearning (project|repo|exercise)", "template-or-learning"),
     (r"\bawesome\b.*\b(list|collection)\b|\bcurated list\b", "list"),
     # The repo IS an MCP server (apps that include one as a feature are fine).
@@ -336,10 +342,10 @@ JUNK = [
     (r"\b(cloudron|yunohost|umbrel|casaos|unraid|truenas)(\.io)? app (package|template)\b|\bapp package for\b", "packaging-of-other-app"),
     (r"\b(rest )?api (around|wrapping)\b|\bwrapper (around|for)\b|\b(sso|auth|authentication|oauth2?) (library )?for (go|golang|python|node(\.js)?|rust|java|php|react)\b|\bapi for node(\.js)?\b", "component-or-dev-tool"),
     (r"\badult (tube|site|content|video)s?\b|\bporn\w*\b|\bnsfw\b|\bhentai\b", "adult-content"),
-    (r"\b(library|sdk|framework)\s+for\s+(production\s+)?(llm|ai|agents?|python|typescript|javascript|node(\.js)?|go|rust|react|vue|building|creating|writing|developing)\b", "library-or-sdk"),
-    (r"\bagent (runtime|harness|sandbox|stack|infrastructure|framework)\b|\bdocker sandbox\b|\b[\d,]+\+? tool integrations\b|\bmemory (layer|system|api|store) for (ai )?agents?\b", "agent-infrastructure"),
+    (r"\b(library|sdk|framework)\s+(for|to)\s+(production\s+)?(llm|ai|agents?|python|typescript|javascript|node(\.js)?|go|rust|react|vue|build|building|create|creating|write|writing|develop|developing|add|adding|integrate|integrating)\b", "library-or-sdk"),
+    (r"\bagent (runtime|harness|sandbox|stack|infrastructure|framework)\b|\bdocker sandbox\b|\b[\d,]+\+? tool integrations\b|\bmemory (layer|system|api|store) for (ai )?agents?\b|\b(virtual machines?|vms?|sandbox(es)?|computers?) (that|for) (ai )?(bots|agents)\b|\bcomputer[- ]use (agents?|sandbox)\b", "agent-infrastructure"),
     (r"\bmulti[- ]account|\baccounts? (manager|management|farm)|\bauto(matic)? ?(sign[- ]?in|check[- ]?in)|签到|\bfree[- ]tier (farm|abuse)", "account-farming"),
-    (r"\b(gamma exposure|options (flow|chain)|stock (market|trading|screener|prices?|quotes?|analysis|alerts?|picks?|tickers?)|stocks (and|&) (crypto|etfs?|options|bonds)|forex|(algo|algorithmic|crypto|stock|day|paper|options|copy) trading|trading (bot|strateg\w+|platform|signals?|terminal|journal|desk)|trader|trade journal|broker sync|portfolio tracker for (crypto|stocks))\b", "trading-crypto"),
+    (r"\b(gamma exposure|options (flow|chain)|stock (market|trading|screener|prices?|quotes?|analysis|alerts?|picks?|tickers?)|stocks (and|&) (crypto|etfs?|options|bonds)|forex|(algo|algorithmic|crypto|stock|day|paper|options|copy) trading|trading (bot|strateg\w+|platform|signals?|terminal|journal|desk)|trader|trade journal|broker sync|portfolio tracker for crypto)\b", "trading-crypto"),
     (r"\b(serving kit|inference (kit|stack) for|exl[23])\b", "model-serving-kit"),
     (r"\bsidecar (for|to|that|container)\b|\b(stremio|kodi|home assistant|firefox|thunderbird|blender|anki|torrentio) add-?ons?\b|\badd-?ons? (repository|repo|pack|collection)\b", "addon-or-companion"),
     (r"\b(device|phone|iphone) farm\b|\bfarm of (real )?(iphones|phones|devices)\b|\btraffic distribution system\b|\blead[- ]gen|\blead (sourcing|generation|scraping|enrichment)\b|\bclay\.com\b|\bfinds? (the )?people\b|\bcold (email|outreach)|\bgrowth hack", "growth-or-device-farm"),
@@ -402,7 +408,7 @@ HOST_APPS = re.compile(r"\b(jellyfin|plex|emby|navidrome|subsonic|immich|nextclo
                        r"authentik|pi-hole|adguard|unraid|truenas|proxmox|portainer|n8n|firefly(?: iii)?|"
                        r"coolify|headscale|twenty crm|firecrawl|frigate|ghost|wordpress|photoprism|lancache|"
                        r"bazarr|qbittorrent|transmission|deluge|maintainerr|tautulli|rustdesk|asterisk|"
-                       r"freeswitch|invoice ninja|linkding|actual budget|unifi|hermes agent|instapaper)\b", re.I)
+                       r"freeswitch|invoice ninja|linkding|actual budget|unifi|hermes agent|instapaper|sdrtrunk|bullmq|taskiq)\b", re.I)
 # Companion tools for the *arr stack and torrent clients, whatever their topics say.
 ARR_TOOLS = re.compile(r"\b(sonarr|radarr|lidarr|prowlarr|readarr|bazarr|qbittorrent|transmission|deluge|"
                        r"maintainerr|tautulli|overseerr|jellyseerr)\b", re.I)
@@ -424,6 +430,13 @@ BUILT_ON = re.compile(r"\b(for|on top of|powered by|built on|integrat\w* with|co
 TERMINAL = re.compile(r"\b(tui|terminal ui|terminal user interface|command[- ]line|cli tool)\b", re.I)
 
 
+PLUGIN_FOR = re.compile(r"\b(plugin|extension|add-?on|addon|integration|theme|skin|widget|module|mod)\s+(for|to)\b"
+                        r"(?! (your|any|every) )", re.I)
+# A native app named as a feature of a web app ("… with an iOS app") isn't a native client.
+FEATURE_BEFORE = re.compile(r"\b(with|and|plus|also|includes?|including|offers?|ships?|has|optional|companion)\b"
+                            r"[^.;:]{0,30}$", re.I)
+GUIDE = re.compile(r"(documentation|docs|tutorials?|guides?|walkthroughs?|how-?tos?)( and \w+)? (for|on|about|to)\b|"
+                   r"(an? |the )?(step-by-step |complete |beginner'?s? )?(guide|tutorial|walkthrough)s? (to|for|on)\b", re.I)
 NATIVE = re.compile(r"\b(android|ios|iphone|mobile|desktop|windows|macos|tvos)\s+(app|client|application)\b|"
                     r"\b(apps?|clients?) for (android|ios|iphone|windows|macos)\b", re.I)
 SCRAPER = re.compile(r"\b(scraper|crawler)s?\b", re.I)
@@ -456,12 +469,28 @@ def gate(repo, now, curated=False, light=False):
     for rx, why in JUNK_RE:
         if rx.search(blob):
             return why
-    if NATIVE.search(blob) and not re.search(r"\b(web|browser)\b", desc, re.I):
+    if any(not FEATURE_BEFORE.search(desc[:m.start()]) for m in PLUGIN_FOR.finditer(desc)):
+        return "plugin-for-other-app"
+    natives = list(NATIVE.finditer(desc))
+    if natives and (re.match(r"(an? |the )?(native |open[- ]source )?(android|ios|iphone|mobile|desktop|windows|"
+                             r"macos|tvos)\b", desc, re.I)
+                    or not (re.search(r"\b(web|browser)\b", desc, re.I)
+                            or all(FEATURE_BEFORE.search(desc[:m.start()]) for m in natives))):
         return "native-client"
+    if GUIDE.match(desc) or re.search(r"\b(guide|tutorial|walkthrough)s? (to|for|on) (self-?host\w*|setting up|"
+                                      r"install\w*|deploy\w*)\b", desc, re.I):
+        return "template-or-learning"
+    if re.match(r"(an? |the )?([\w-]+ ){0,3}(go|golang|python|rust|node(\.js)?|typescript|javascript|java|kotlin|php|"
+                r"ruby|elixir|c#|\.net|react|vue|svelte) (library|sdk|package|crate|gem|module)\b", desc, re.I):
+        return "library-or-sdk"
+    if re.match(r"my\b", desc, re.I):
+        return "personal-setup"
     if SCRAPER.search(blob) and not SCRAPER_FEATURE.search(desc):
         return "scraper-or-shady"
     if CLIENT_OF.search(desc) and not re.search(r"\bserver\b", desc.split(",")[0], re.I):
         return "client-for-other-app"
+    if re.search(r"\b[Cc]ompanion (app |tool |service )?(for|to) (the )?[A-Z][\w.-]+", desc):
+        return "companion-for-other-app"   # "companion for Quartermaster" (a named app), not "for tracking"
     if re.match(r"(an? |the )?(mcp|model context protocol) server\b", desc, re.I):
         return "mcp-server"
     if re.match(r"(asp\.net( core)?|laravel|django|rails|react|vue|angular|express|flask|fastapi|spring boot)\s*[-–—:]",
@@ -491,7 +520,10 @@ def gate(repo, now, curated=False, light=False):
 def _gate_signature():
     """Hash of every rule the gate applies, so a rule change invalidates cached rejects."""
     import hashlib
-    parts = [p for p, _ in JUNK] + [rx.pattern for rx in (
+    import inspect
+    parts = [inspect.getsource(gate), inspect.getsource(readable), inspect.getsource(v16.hard_reject)]
+    parts += sorted(SELFHOST_TOPICS) + sorted(WEBAPP_TOPICS) + [CJK.pattern]
+    parts += [p for p, _ in JUNK] + [rx.pattern for rx in (PLUGIN_FOR, FEATURE_BEFORE, GUIDE, 
         WEB_INTENT, HOST_APPS, ARR_TOOLS, ALT_TO, COMPAT, ANALOGY, BUILT_ON, TERMINAL, NATIVE,
         SCRAPER, SCRAPER_FEATURE, CLIENT_OF)] + sorted(ENGLISH_WORDS) + sorted(FOREIGN_WORDS) + [
         ACCENTED.pattern, str(MAX_PUSH_AGE_DAYS)]
@@ -535,15 +567,27 @@ CATEGORY_OVERRIDES = [
     (r"\b(test (management|case management)|qa (platform|management))\b", "Developer Tools / Utilities"),
     (r"\b(crochet|knitting|sewing|embroidery patterns?|hobby (tracker|projects?))\b", "Productivity / Tasks"),
     (r"\b(markdown notes|note-taking|notes? (app|application)s?|knowledge base|wiki)\b", "Notes / Knowledge"),
-    (r"\b(nostr|activitypub|fediverse)\b", "Communication / Social"),
+    (r"\b(design (canvas|tool|editor)|whiteboards?|diagram(s|ming)? (editor|tool))\b", "Image / Design / Creative"),
+    (r"\b(nostr|activitypub|fediverse|meshtastic|meshcore|lora|gmrs|ham radio|amateur radio)\b", "Communication / Social"),
+    (r"\b(sms|voicemail|fax|voip|pbx|phone (numbers?|system|calls?)|smtp|mail server|e-?mail server|screen[- ]shar\w*|video (calls?|conferenc\w+))\b", "Communication / Social"),
+    (r"\b(video ?games?|pok[eé]mon|board games?|game (nights?|library|collection|tracker|launcher|saves?|stats|master)|games? (tracker|collection|library|launcher|night)|play\w* (classic |retro )?games|gaming|arcades?|alliance (management|manager))\b", "Gaming / Game Servers"),
+    (r"\b(certificate authority|pki|tls certificates?|ssl certificates?)\b", "Security / Auth"),
+    (r"\b(medic\w*|prescriptions?|care coordination|caregiv\w+|ageing|elderly)\b", "Health / Food / Fitness"),
+    (r"\b(baby monitor|bluetooth|zigbee|mqtt)\b", "Home Automation / IoT"),
+    (r"\b(iptv|m3u|epg|tv guide)\b", "Media / Streaming"),
+    (r"\b(patch management|fleet management|configuration management)\b", "DevOps / Infra"),
+    (r"\b(studio|salon|clinic|practice) management\b", "CRM / Business"),
+    (r"\b(booking calendar|appointments?|appointment booking)\b", "Productivity / Tasks"),
+    (r"\b(garden\w*|plants?|seed library|model railways?)\b", "Productivity / Tasks"),
+    (r"\b(file tools|pdf tools|image tools|converters?)\b", "Files / Storage / Backup"),
     (r"\b(shop management|business management|quoting|quotes and invoices)\b", "CRM / Business"),
     (r"\b(collection (manager|tracker|catalog\w*)|catalog\w* (and \w+ )?your [\w ]{0,20}collection)\b", "Productivity / Tasks"),
     (r"\b(wireguard|vpn|dns (filtering|server|resolver)|reverse proxy)\b", "Networking / VPN"),
     (r"\b(navigation (portal|page)|start ?page|links? (portal|page))\b", "Dashboard / Homelab"),
     (r"\b(digital signage|signage)\b", "Media / Streaming"),
-    (r"\b(label (designer|templates?|printing|printer)|barcodes?|qr codes?)\b", "Documents / PDF / Paperless"),
+    (r"\b(label (designer|templates?|printing|printer)|printing [\w ]{0,30}labels|barcodes?|qr codes?)\b", "Documents / PDF / Paperless"),
     (r"\b(custom maps|maps? catalog|game mods?|modding)\b", "Gaming / Game Servers"),
-    (r"\b(dashboard (application|app) for your|dashboard for your (containers|services|apps|homelab))\b", "Dashboard / Homelab"),
+    (r"\b(dashboard (application|app) for your|dashboard for your (self-hosted )?(containers|services|apps|homelab))\b", "Dashboard / Homelab"),
     (r"\b(photography|portfolio|photo (browser|management|manager)|stl|3mf|3d models?)\b", "Image / Design / Creative"),
     (r"\b(document management|paperless)\b", "Documents / PDF / Paperless"),
     (r"\b(period|menstrual|fertility|cycle tracking|intimacy tracking)\b", "Health / Food / Fitness"),
@@ -563,7 +607,7 @@ CATEGORY_OVERRIDES = [
     (r"\b(app distribution|paas|ci/cd)\b", "DevOps / Infra"),
     (r"\b(3d print\w*|filament)\b", "Home Automation / IoT"),
     (r"\b(virtual tabletop|vtt|tabletop|ttrpg|board games?|dungeons?|arcade|retro games?|game (library|saves?|servers?))\b", "Gaming / Game Servers"),
-    (r"\b(osint|threat intel\w*|siem|sigma detection|red team)\b", "Security / Auth"),
+    (r"\b(osint|threat intel\w*|siem|sigma detection|red team|cybercrime|forensics?|chain of custody|investigators?)\b", "Security / Auth"),
     (r"\b(crm|help ?desk|support desk|ticketing)\b", "CRM / Business"),
     (r"\b(fitness|workout|strength[- ]training|sleep tracking|fitbit|habit tracker|health tracker|wellness|nutrition|longevity)\b", "Health / Food / Fitness"),
     (r"\b(time[- ]tracking|time tracker|timesheets?|to-?do|task manager|kanban|pomodoro|vehicle|car maintenance|home inventory|household)\b", "Productivity / Tasks"),
@@ -577,7 +621,7 @@ CATEGORY_OVERRIDES = [
     (r"\b(budget|finance|expenses?|invoic\w+|billing|accounting|ledgers?|cost[- ]sharing|erp)\b", "Finance / Budget"),
     (r"\b(bookmark|read[- ]later|rss|feed reader)\b", "Notes / Knowledge"),
     (r"\b(ebook|ebooks|kobo|kindle|audiobook|library of books)\b", "Books / Reading / Library"),
-    (r"\b(music|podcast|video|streaming|movies|tv shows)\b", "Media / Streaming"),
+    (r"\b(music|podcast|videos?|streaming|movies|tv shows)\b", "Media / Streaming"),
     (r"\b(translation|speech|transcri\w+|llm|agent|agents)\b", "AI / LLM"),
 ]
 CATEGORY_OVERRIDES = [(re.compile(p, re.I), c) for p, c in CATEGORY_OVERRIDES]
@@ -799,6 +843,9 @@ def discover(tracker, target, now, args):
                 fresh += 1  # counts overlap with other slices: a slice is only dead if it finds nothing usable
                 pool.setdefault(k, r)
             slice_new[item["q"].split(" pushed:")[0]] = fresh
+            if stats.get("slicesFailed", 0) > max(3, len(live) // 10):
+                raise GitHubUnavailable(f"{stats['slicesFailed']} of {i} searches failed; GitHub isn't "
+                                        "answering reliably, so this run stops instead of guessing")
             if i % 20 == 0:
                 print(f"[{VERSION}]   {i}/{len(live)} slices · {len(pool)} unused candidates · "
                       f"{time.time() - t0:.0f}s", flush=True)
@@ -1098,6 +1145,32 @@ def self_test():
         (mk("x/ios", "Native iOS app for your self-hosted server"), "native-client"),
         (mk("x/fr", "Ce site a pour vocation de devenir la ressource de référence pour le self-hosting"), "not-english-readable"),
         (mk("x/exit", "Tailscale exit node whose egress is routed through a commercial VPN, in two containers"), "packaging-of-other-app"),
+        (mk("x/qm", "Self-hosted companion for Quartermaster, with Docker management and mobile pairing"), "companion-for-other-app"),
+        (mk("x/crochet", "A self-hosted crochet companion for tracking projects, stitches and patterns"), None),
+        # second verifier round (2026-10-04): apps that also ship native apps, features …
+        (mk("y/photos", "Self-hosted Google Photos alternative with mobile apps for iOS and Android"), None),
+        (mk("y/chat", "Self-hosted team chat like Slack, with a desktop app"), None),
+        (mk("y/notion", "Self-hosted Notion alternative with an Android app"), None),
+        (mk("y/habit", "Self-hosted habit tracker with a mobile app"), None),
+        (mk("y/help", "Self-hosted helpdesk with an email integration for inbound tickets"), None),
+        (mk("y/folio", "Self-hosted portfolio tracker for stocks, ETFs and savings plans"), None),
+        (mk("y/docsite", "Self-hosted documentation platform with Markdown and full-text search"), None),
+        # … and junk
+        (mk("y/passkey", "A Go library for adding passkey authentication to self-hosted apps"), "library-or-sdk"),
+        (mk("y/nodelib", "A Node.js library to build self-hosted dashboards"), "library-or-sdk"),
+        (mk("y/grid", "Self-hosted grid bot for Kraken with backtesting and a web UI"), "trading-crypto"),
+        (mk("y/poly", "Polymarket bot with a self-hosted web dashboard"), "trading-crypto"),
+        (mk("y/slack", "Self-hosted AI assistant that lives in Slack"), "chat-bot"),
+        (mk("y/matrix", "Self-hosted Matrix bot that posts RSS feeds to your rooms"), "chat-bot"),
+        (mk("y/tut", "Documentation and tutorials for self-hosting services at home"), "template-or-learning"),
+        (mk("y/guide", "A guide to self-hosting your own mail server with Docker"), "template-or-learning"),
+        (mk("y/mine", "My self-hosted services and their compose files"), "personal-setup"),
+        (mk("y/android", "Android client for your self-hosted media server"), "native-client"),
+        (mk("y/cms", "Multi-tenant headless CMS with PostgreSQL RLS. 21 plugins, TypeScript SDK, GraphQL + REST. Self-hosted."), None),
+        (mk("y/sdr", "Local-first live dashboard for SDRTrunk: call feed, control channel and talkgroups"), "built-on-other-app"),
+        (mk("y/starlink", "Interactive self-hosted web dashboard for Starlink kits with live telemetry"), None),
+        (mk("y/vm", "Open-source Grok Bot alternative with a virtual machine that bots can use, self-hosted"), "agent-infrastructure"),
+        (mk("y/plugin", "Plugin for Obsidian that syncs notes to a self-hosted server"), "plugin-for-other-app"),
         (mk("x/cafe", "Self-hosted café menu and ordering web app for small restaurants"), None),
     ]
     ok = True
@@ -1178,6 +1251,34 @@ def self_test():
                        ("Open-Source Billing & Business Management Platform", "Finance / Budget"),
                        ("An HTTP server for self-hosting static websites", "CMS / Website"),
                        ("Open-source, self-hosted incident management: postmortems, alerting, 3D dependency map", "Monitoring / Observability"),
+                       ("Self-hosted case system for cybercrime investigators. A social network graph of entities", "Security / Auth"),
+                       ("Self-hosted Pokémon Red and Blue adventures that play themselves in your browser", "Gaming / Game Servers"),
+                       ("Self-hosted alliance management web app for Last War: Survival", "Gaming / Game Servers"),
+                       ("A self-hosted video game collection tracker", "Gaming / Game Servers"),
+                       ("GMRS family hub for home server. Any household member connects from their phone", "Communication / Social"),
+                       ("MeshCorium is a self-hosted MeshCore client with a hybrid contact system.", "Communication / Social"),
+                       ("Open source, self-hosted care coordination for families looking after a relative", "Health / Food / Fitness"),
+                       ("A self-hosted web app to track medicines, prescriptions, etc", "Health / Food / Fitness"),
+                       ("Self-hosted web app for managing Twilio phone numbers, SMS, voicemail, and fax", "Communication / Social"),
+                       ("A self-hosted web app for designing and printing parameterized thermal labels.", "Documents / PDF / Paperless"),
+                       ("A self-contained web application for creating and managing a Local Certificate Authority", "Security / Auth"),
+                       ("A self-hosted HTTP API for your own SMTP server.", "Communication / Social"),
+                       ("Self-hosted screen sharing with sub-second latency, on hardware you already have", "Communication / Social"),
+                       ("Yuzukam is a self-hosted, local-only baby monitor for privacy-conscious parents", "Home Automation / IoT"),
+                       ("Self-hosted inventory and documentation cockpit for model railway collections.", "Productivity / Tasks"),
+                       ("Free, open-source file tools that run 100% in your browser. No uploads.", "Files / Storage / Backup"),
+                       ("Open-source, self-hostable studio management for private music teachers", "CRM / Business"),
+                       ("Self-hosted garden management app — Next.js + FastAPI + SQLite", "Productivity / Tasks"),
+                       ("Lightweight patch management for Linux servers, homelab-friendly", "DevOps / Infra"),
+                       ("A minimal, functional IPTV gateway for your TV", "Media / Streaming"),
+                       ("A Next.js app for uploading videos to Cloudflare R2 and distributing them, with backup", "Media / Streaming"),
+                       ("Booking Calendar is a self-hosted PWA for single-admin appointment management", "Productivity / Tasks"),
+                       ("JumpKey is a keyboard-first dashboard for your self-hosted apps and bookmarks.", "Dashboard / Homelab"),
+                       ("Self-hosted, on-premise alternative to Frame.io for game and video teams", "Media / Streaming"),
+                       ("Local media tracker for games, anime, movies, manga, books & light novels", "Media / Streaming"),
+                       ("Open-source software for VR arcades: online booking, staff dashboard and a game launcher", "Gaming / Game Servers"),
+                       ("Self-hosted web UI for scheduling and managing database backups in Docker environments", "Files / Storage / Backup"),
+                       ("The open-source alternative to Paper.design. A multiplayer design canvas where humans and AI agents design together", "Image / Design / Creative"),
                        ("Lightweight radio automation — programming, Liquidsoap playout, web UI", "Media / Streaming"),
                        ("A self-hosted crochet companion for tracking projects, stitches and PDF patterns", "Productivity / Tasks"),
                        ("Free, self-hosted test management — a modern TestRail alternative with analytics", "Developer Tools / Utilities")]:
@@ -1206,6 +1307,18 @@ def self_test():
         urllib.request.urlopen = real_urlopen
     ok &= t
     print(f"  {'ok ' if t else 'FAIL'} rate limit raises RateLimited")
+    def _403(req, timeout=None):
+        raise urllib.error.HTTPError("https://api.github.com/graphql", 403, "Forbidden", {}, None)
+    urllib.request.urlopen = _403
+    try:
+        gql("{ viewer { login } }", retries=1)
+        t = False
+    except RateLimited:
+        t = True
+    finally:
+        urllib.request.urlopen = real_urlopen
+    ok &= t
+    print(f"  {'ok ' if t else 'FAIL'} HTTP 403 burst limit raises RateLimited")
     real_gql = globals()["gql"]
     globals()["gql"] = lambda *a, **k: None
     try:
@@ -1265,7 +1378,7 @@ def main():
     now = datetime.now(timezone.utc)
     try:
         picked, stats = discover_ladder(tracker, args.target, now, args)
-    except RateLimited as exc:
+    except GitHubUnavailable as exc:
         raise SystemExit(f"[{VERSION}] {exc}. Nothing was written.")
     dist = {}
     for r in picked:

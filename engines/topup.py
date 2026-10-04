@@ -124,7 +124,7 @@ def fill(version, selected, target, tracker, dry_run, ai_ceiling=None, is_ai_cat
     for c in selected:
         k = c.get("category") or c.get("hcat")
         cats[k] = cats.get(k, 0) + 1
-    added, stats, floors, pool = [], {}, [], []
+    added, stats, floors, pool, lane_failed = [], {}, [], [], False
     ladder = getattr(v17, "STAR_LADDER", None) or [(getattr(v17, "MIN_STARS", None),
                                                       getattr(v17, "MIN_STARS_YOUNG", None))]
     memory = need >= LADDER_MEMORY_MIN_NEED and hasattr(v17, "ladder_record")
@@ -144,6 +144,7 @@ def fill(version, selected, target, tracker, dry_run, ai_ceiling=None, is_ai_cat
                 print(f"[{version}] top-up lane failed ({type(exc).__name__}: {exc}); "
                       f"keeping {len(selected) + len(added)} picks")
                 stats = {"error": str(exc)}
+                lane_failed = True
                 break
             picks = _drop_renamed(v17, picks, tracker, version)
             pool += picks
@@ -154,7 +155,7 @@ def fill(version, selected, target, tracker, dry_run, ai_ceiling=None, is_ai_cat
             if len(added) < need and (floor, young) != ladder[-1]:
                 print(f"[{version}] top-up: {len(added)}/{need} at ≥{floor}★; trying a lower star floor …",
                       flush=True)
-        if cat_cap and len(added) < need and pool:
+        if cat_cap and len(added) < need and pool and not lane_failed:   # only after the whole ladder
             print(f"[{version}] top-up: {len(added)}/{need} within the category cap of {cat_cap} on every "
                   f"rung; relaxing it for the rest", flush=True)
             ai_now = _take(pool, need, added, taken_urls, owners, cats, cat_cap, ai_ceiling, ai_now,
@@ -290,6 +291,14 @@ def self_test():
     rungs.clear()
     fill("vX", sel, 4, {"usedRepoUrls": []}, True)
     checks.append(("small fill starts at the top rung", rungs[0] == 20))
+    # a lane error on a lower rung must not relax the cap for picks seen on a higher rung
+    rungs.clear()
+    fake.ladder_start = lambda: 0
+    fake.discover = lambda tracker, target, now, args: (
+        [mk("h2/m", cat="Media / Streaming")] if rungs[-1] == 20 else (_ for _ in ()).throw(RuntimeError("down")),
+        {"seen": 1})
+    out8, rec8 = fill("vX", media, 4, {"usedRepoUrls": []}, True, cat_cap=3)
+    checks.append(("lane error mid-ladder keeps the cap", len(out8) == 3 and rec8.get("error") == "down"))
     capped = [{"repo": {"full_name": f"c{i}/m"}, "category": "Monitoring", "score": i, "topup": "v17" if i else None}
               for i in range(5)]
     kept7, cut7 = trim_cap("vX", capped, 2)

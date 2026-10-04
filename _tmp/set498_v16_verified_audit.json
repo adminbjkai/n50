@@ -93,7 +93,7 @@
     {
       "url": "https://github.com/varenc/pax-app-bluetooth-server",
       "score": 52.67,
-      "category": "Dashboard / Homelab",
+      "category": "Home Automation / IoT",
       "stars": 3,
       "docker": false,
       "compose": false,
@@ -166,7 +166,7 @@
     {
       "url": "https://github.com/janlucaklees/yuzukam",
       "score": 20.19,
-      "category": "Dashboard / Homelab",
+      "category": "Home Automation / IoT",
       "stars": 14,
       "docker": true,
       "compose": true,
@@ -336,7 +336,7 @@
     {
       "url": "https://github.com/Booyaka101/studio-os",
       "score": 33.75,
-      "category": "Productivity / Tasks",
+      "category": "CRM / Business",
       "stars": 3,
       "docker": true,
       "compose": true,
@@ -721,7 +721,7 @@
     {
       "url": "https://github.com/n30nex/CartoLite-Server",
       "score": 29.9,
-      "category": "Maps / GIS / Location",
+      "category": "Communication / Social",
       "stars": 4,
       "docker": true,
       "compose": true,
@@ -1293,7 +1293,7 @@
     {
       "url": "https://github.com/ichwars/RailKeeper",
       "score": 27.35,
-      "category": "Dashboard / Homelab",
+      "category": "Productivity / Tasks",
       "stars": 5,
       "docker": true,
       "compose": true,
@@ -1340,24 +1340,24 @@
     }
   ],
   "categoryDistribution": {
-    "Dashboard / Homelab": 5,
     "Media / Streaming": 5,
     "Productivity / Tasks": 5,
     "Developer Tools / Utilities": 5,
     "Monitoring / Observability": 4,
+    "Communication / Social": 4,
+    "Home Automation / IoT": 3,
     "AI / LLM": 3,
     "Finance / Budget": 3,
-    "Maps / GIS / Location": 3,
+    "CRM / Business": 3,
     "Documents / PDF / Paperless": 3,
-    "Communication / Social": 3,
     "Image / Design / Creative": 2,
-    "CRM / Business": 2,
+    "Dashboard / Homelab": 2,
+    "Maps / GIS / Location": 2,
     "Books / Reading / Library": 1,
     "Health / Food / Fitness": 1,
     "Education / Learning": 1,
     "Notes / Knowledge": 1,
     "Files / Storage / Backup": 1,
-    "Home Automation / IoT": 1,
     "DevOps / Infra": 1
   },
   "scoreStats": {
@@ -1727,6 +1727,39 @@
           "repo": "Vuln-SafeLab/HiTo",
           "from": "Maps / GIS / Location",
           "to": "Dashboard / Homelab"
+        }
+      ],
+      "topUp": null
+    },
+    {
+      "at": "2026-10-04T04:43:00+00:00",
+      "dropped": [],
+      "added": [],
+      "recategorized": [
+        {
+          "repo": "varenc/pax-app-bluetooth-server",
+          "from": "Dashboard / Homelab",
+          "to": "Home Automation / IoT"
+        },
+        {
+          "repo": "janlucaklees/yuzukam",
+          "from": "Dashboard / Homelab",
+          "to": "Home Automation / IoT"
+        },
+        {
+          "repo": "Booyaka101/studio-os",
+          "from": "Productivity / Tasks",
+          "to": "CRM / Business"
+        },
+        {
+          "repo": "n30nex/CartoLite-Server",
+          "from": "Maps / GIS / Location",
+          "to": "Communication / Social"
+        },
+        {
+          "repo": "ichwars/RailKeeper",
+          "from": "Dashboard / Homelab",
+          "to": "Productivity / Tasks"
         }
       ],
       "topUp": null

@@ -28,15 +28,16 @@
   "categoryDistribution": {
     "AI / LLM": 9,
     "Media / Streaming": 6,
-    "Monitoring / Observability": 5,
-    "Notes / Knowledge": 3,
+    "Monitoring / Observability": 4,
+    "Gaming / Game Servers": 3,
     "Communication / Social": 3,
     "CRM / Business": 3,
     "Security / Auth": 2,
+    "Notes / Knowledge": 2,
     "Books / Reading / Library": 2,
     "Documents / PDF / Paperless": 2,
-    "Gaming / Game Servers": 2,
     "Productivity / Tasks": 2,
+    "Image / Design / Creative": 1,
     "Maps / GIS / Location": 1,
     "Dashboard / Homelab": 1,
     "Home Automation / IoT": 1,
@@ -50,6 +51,28 @@
     "Finance / Budget": 1
   },
   "picks": [
+    {
+      "repo": "kgoedecke/doop",
+      "url": "https://github.com/kgoedecke/doop",
+      "score": 54.01,
+      "stars": 796,
+      "category": "Image / Design / Creative",
+      "description": "The open-source alternative to Paper.design. A multiplayer design canvas where humans and AI agents design together, live. MCP built in.",
+      "language": "TypeScript",
+      "compose": true,
+      "docker": true,
+      "ai": true,
+      "breakdown": {
+        "stars": 29.0,
+        "velocity": 12.0,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "license": 2,
+        "active": 3,
+        "ai": -6
+      }
+    },
     {
       "repo": "egmalt/house-planner",
       "url": "https://github.com/egmalt/house-planner",
@@ -98,8 +121,8 @@
     {
       "repo": "1Panel-dev/laya-server",
       "url": "https://github.com/1Panel-dev/laya-server",
-      "score": 49.54,
-      "stars": 89,
+      "score": 49.59,
+      "stars": 90,
       "category": "AI / LLM",
       "description": "A self-hosted API and web interface for Laya’s structured decision models, compatible with the TypeSafe Jev API format.",
       "language": "TypeScript",
@@ -107,7 +130,7 @@
       "docker": true,
       "ai": true,
       "breakdown": {
-        "stars": 19.5,
+        "stars": 19.6,
         "velocity": 12.0,
         "deploy": 6,
         "release": 5,
@@ -184,28 +207,6 @@
       }
     },
     {
-      "repo": "madmorett/bullpane",
-      "url": "https://github.com/madmorett/bullpane",
-      "score": 47.66,
-      "stars": 46,
-      "category": "Monitoring / Observability",
-      "description": "A fast, self-hosted dashboard for BullMQ and BullMQ Pro. Free core, Pro for team features.",
-      "language": "TypeScript",
-      "compose": true,
-      "docker": true,
-      "ai": false,
-      "breakdown": {
-        "stars": 16.7,
-        "velocity": 9.9,
-        "deploy": 6,
-        "release": 5,
-        "polish": 3,
-        "license": 2,
-        "active": 3,
-        "selfhost": 2
-      }
-    },
-    {
       "repo": "DejavuMoe/edgeTTS",
       "url": "https://github.com/DejavuMoe/edgeTTS",
       "score": 44.19,
@@ -231,7 +232,7 @@
       "url": "https://github.com/afk-sapien/PokeSim",
       "score": 41.99,
       "stars": 34,
-      "category": "Dashboard / Homelab",
+      "category": "Gaming / Game Servers",
       "description": "Self-hosted Pokémon Red and Blue adventures that play themselves. Watch, collect and trade in your browser.",
       "language": "Python",
       "compose": true,
@@ -252,7 +253,7 @@
       "url": "https://github.com/desirevolution/jump-key",
       "score": 41.58,
       "stars": 48,
-      "category": "Notes / Knowledge",
+      "category": "Dashboard / Homelab",
       "description": "JumpKey is a keyboard-first dashboard for your self-hosted apps and bookmarks.",
       "language": "JavaScript",
       "compose": true,
@@ -338,8 +339,8 @@
     {
       "repo": "tntexploding/StruInfo",
       "url": "https://github.com/tntexploding/StruInfo",
-      "score": 40.41,
-      "stars": 61,
+      "score": 40.7,
+      "stars": 63,
       "category": "AI / LLM",
       "description": "Self-hosted, traceable document-to-knowledge workspace with deterministic workflows, optional AI, search, RAG, and an editable knowledge graph.",
       "language": "TypeScript",
@@ -347,8 +348,8 @@
       "docker": true,
       "ai": true,
       "breakdown": {
-        "stars": 17.9,
-        "velocity": 10.5,
+        "stars": 18.1,
+        "velocity": 10.6,
         "deploy": 3,
         "release": 5,
         "license": 2,
@@ -425,6 +426,29 @@
       }
     },
     {
+      "repo": "kite-plus/kite",
+      "url": "https://github.com/kite-plus/kite",
+      "score": 38.69,
+      "stars": 12,
+      "category": "CMS / Website",
+      "description": "A modern open-source publishing platform built with Go. Markdown content, a visual editor, static site generation, and Git publishing in one binary.",
+      "language": "Go",
+      "compose": true,
+      "docker": true,
+      "ai": false,
+      "breakdown": {
+        "stars": 11.1,
+        "velocity": 4.6,
+        "deploy": 6,
+        "release": 5,
+        "polish": 3,
+        "org": 2,
+        "license": 2,
+        "active": 3,
+        "selfhost": 2
+      }
+    },
+    {
       "repo": "t0mer/ocr-docker",
       "url": "https://github.com/t0mer/ocr-docker",
       "score": 38.56,
@@ -466,29 +490,6 @@
         "org": 2,
         "license": 2,
         "active": 3
-      }
-    },
-    {
-      "repo": "kite-plus/kite",
-      "url": "https://github.com/kite-plus/kite",
-      "score": 38.07,
-      "stars": 11,
-      "category": "CMS / Website",
-      "description": "A modern open-source publishing platform built with Go. Markdown content, a visual editor, static site generation, and Git publishing in one binary.",
-      "language": "Go",
-      "compose": true,
-      "docker": true,
-      "ai": false,
-      "breakdown": {
-        "stars": 10.8,
-        "velocity": 4.3,
-        "deploy": 6,
-        "release": 5,
-        "polish": 3,
-        "org": 2,
-        "license": 2,
-        "active": 3,
-        "selfhost": 2
       }
     },
     {
@@ -1013,7 +1014,7 @@
     {
       "repo": "uri-travoski/Notebook-Plus-Plus",
       "url": "https://github.com/uri-travoski/Notebook-Plus-Plus",
-      "score": 25.05,
+      "score": 25.03,
       "stars": 10,
       "category": "Notes / Knowledge",
       "description": "Single-user, self-hosted notes & knowledge base — Nuxt 3 + PostgreSQL + Drizzle, Outline-style UX.",
@@ -1034,8 +1035,8 @@
     {
       "repo": "adityaongit/pulse",
       "url": "https://github.com/adityaongit/pulse",
-      "score": 23.07,
-      "stars": 11,
+      "score": 23.69,
+      "stars": 12,
       "category": "Health / Food / Fitness",
       "description": "your fitbit air, but it finally tells you why you feel like garbage. recovery, strain, sleep and a Pulse Age that judges you, all free and self-hosted.",
       "language": "TypeScript",
@@ -1043,8 +1044,8 @@
       "docker": true,
       "ai": false,
       "breakdown": {
-        "stars": 10.8,
-        "velocity": 4.3,
+        "stars": 11.1,
+        "velocity": 4.6,
         "deploy": 6,
         "polish": 3,
         "license": -4,
@@ -1136,7 +1137,7 @@
       }
     }
   ],
-  "aiCount": 13,
+  "aiCount": 14,
   "publishable": true,
   "timingSeconds": 63.9,
   "repairs": [
@@ -1162,6 +1163,86 @@
           "repo": "TheHoltz/errex",
           "from": "AI / LLM",
           "to": "Monitoring / Observability"
+        }
+      ],
+      "topUp": null
+    },
+    {
+      "at": "2026-10-04T04:39:35+00:00",
+      "dropped": [
+        {
+          "repo": "madmorett/bullpane",
+          "why": "built-on-other-app"
+        }
+      ],
+      "added": [
+        "milind-soni/OpenMausBot"
+      ],
+      "recategorized": [
+        {
+          "repo": "afk-sapien/PokeSim",
+          "from": "Dashboard / Homelab",
+          "to": "Gaming / Game Servers"
+        },
+        {
+          "repo": "desirevolution/jump-key",
+          "from": "Notes / Knowledge",
+          "to": "Dashboard / Homelab"
+        }
+      ],
+      "topUp": {
+        "from": "v17",
+        "needed": 1,
+        "added": 1,
+        "starFloors": [
+          20
+        ],
+        "replacedOverAiCeiling": [],
+        "repos": [
+          "milind-soni/OpenMausBot"
+        ],
+        "laneSeen": 4471,
+        "lanePassing": 196,
+        "seconds": 70.0
+      }
+    },
+    {
+      "at": "2026-10-04T04:46:46+00:00",
+      "dropped": [
+        {
+          "repo": "milind-soni/OpenMausBot",
+          "why": "agent-infrastructure"
+        }
+      ],
+      "added": [
+        "kgoedecke/doop"
+      ],
+      "recategorized": [],
+      "topUp": {
+        "from": "v17",
+        "needed": 1,
+        "added": 1,
+        "starFloors": [
+          20
+        ],
+        "replacedOverAiCeiling": [],
+        "repos": [
+          "kgoedecke/doop"
+        ],
+        "laneSeen": 4471,
+        "lanePassing": 194,
+        "seconds": 55.5
+      }
+    },
+    {
+      "at": "2026-10-04T04:49:39+00:00",
+      "dropped": [],
+      "added": [],
+      "recategorized": [
+        {
+          "repo": "kgoedecke/doop",
+          "from": "AI / LLM",
+          "to": "Image / Design / Creative"
         }
       ],
       "topUp": null

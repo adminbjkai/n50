@@ -131,7 +131,7 @@
     {
       "url": "https://github.com/NexaFlowFrance/OpenCare",
       "score": 76.91,
-      "category": "Dashboard / Homelab",
+      "category": "Health / Food / Fitness",
       "stars": 3,
       "docker": true,
       "compose": true,
@@ -189,7 +189,7 @@
     {
       "url": "https://github.com/snachodog/medicine-cabinet",
       "score": 64.43,
-      "category": "Dashboard / Homelab",
+      "category": "Health / Food / Fitness",
       "stars": 3,
       "docker": true,
       "compose": true,
@@ -218,7 +218,7 @@
     {
       "url": "https://github.com/diskchord/switchboard",
       "score": 58.31,
-      "category": "Dashboard / Homelab",
+      "category": "Communication / Social",
       "stars": 3,
       "docker": true,
       "compose": true,
@@ -247,7 +247,7 @@
     {
       "url": "https://github.com/xingrz/labelprint",
       "score": 54.64,
-      "category": "Dashboard / Homelab",
+      "category": "Documents / PDF / Paperless",
       "stars": 3,
       "docker": true,
       "compose": true,
@@ -531,7 +531,7 @@
     {
       "url": "https://github.com/sametcn99/booking-calendar",
       "score": 30.15,
-      "category": "Developer Tools / Utilities",
+      "category": "Productivity / Tasks",
       "stars": 10,
       "docker": true,
       "compose": true,
@@ -1352,27 +1352,27 @@
     }
   ],
   "categoryDistribution": {
-    "Dashboard / Homelab": 6,
     "Notes / Knowledge": 5,
     "Monitoring / Observability": 4,
     "Media / Streaming": 4,
     "Files / Storage / Backup": 4,
+    "Health / Food / Fitness": 3,
+    "Communication / Social": 3,
+    "Documents / PDF / Paperless": 3,
     "AI / LLM": 3,
     "Networking / VPN": 3,
     "Books / Reading / Library": 3,
     "Analytics / Data": 3,
-    "Communication / Social": 2,
-    "Developer Tools / Utilities": 2,
-    "Documents / PDF / Paperless": 2,
+    "Dashboard / Homelab": 2,
+    "Productivity / Tasks": 2,
     "Maps / GIS / Location": 1,
     "Automation": 1,
     "Gaming / Game Servers": 1,
-    "Health / Food / Fitness": 1,
+    "Developer Tools / Utilities": 1,
     "Security / Auth": 1,
     "DevOps / Infra": 1,
     "Web App / Other": 1,
-    "CRM / Business": 1,
-    "Productivity / Tasks": 1
+    "CRM / Business": 1
   },
   "scoreStats": {
     "min": 19.56,
@@ -1727,6 +1727,39 @@
         "lanePassing": 324,
         "seconds": 224.0
       }
+    },
+    {
+      "at": "2026-10-04T04:41:53+00:00",
+      "dropped": [],
+      "added": [],
+      "recategorized": [
+        {
+          "repo": "NexaFlowFrance/OpenCare",
+          "from": "Dashboard / Homelab",
+          "to": "Health / Food / Fitness"
+        },
+        {
+          "repo": "snachodog/medicine-cabinet",
+          "from": "Dashboard / Homelab",
+          "to": "Health / Food / Fitness"
+        },
+        {
+          "repo": "diskchord/switchboard",
+          "from": "Dashboard / Homelab",
+          "to": "Communication / Social"
+        },
+        {
+          "repo": "xingrz/labelprint",
+          "from": "Dashboard / Homelab",
+          "to": "Documents / PDF / Paperless"
+        },
+        {
+          "repo": "sametcn99/booking-calendar",
+          "from": "Developer Tools / Utilities",
+          "to": "Productivity / Tasks"
+        }
+      ],
+      "topUp": null
     }
   ]
 }

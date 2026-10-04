@@ -749,7 +749,9 @@ def hard_reject(repo):
         return "awesome-list"
     if any(m in desc for m in MOBILE_ONLY) and not (topics & STRICT_SELFHOST_TOPICS) and "server" not in desc:
         return "mobile-only-client"
-    if any(s in desc for s in NON_APP_SIGNALS):
+    if any(s in desc for s in NON_APP_SIGNALS) and not re.search(
+            r"\b(with|and|plus|also|includes?|including|offers?) (an? |the |native |optional )*"
+            r"(desktop|macos|windows) (app|application)s?\b", desc):   # a feature of a web app
         return "not-a-web-app (extension/desktop/cli)"
     # Library/SDK: no GOOD_TOPICS escape (v11 hole). Self-host monorepos with
     # "library" in desc still need to pass via app shape later + proof tier.

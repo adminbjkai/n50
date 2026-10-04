@@ -294,7 +294,7 @@
     {
       "url": "https://github.com/andresjmorales/cognote",
       "score": 24.16,
-      "category": "Media / Streaming",
+      "category": "CRM / Business",
       "stars": 8,
       "docker": true,
       "compose": false,
@@ -318,7 +318,7 @@
     {
       "url": "https://github.com/rancur/garden-godmother",
       "score": 23.97,
-      "category": "Dashboard / Homelab",
+      "category": "Productivity / Tasks",
       "stars": 6,
       "docker": true,
       "compose": true,
@@ -390,7 +390,7 @@
     {
       "url": "https://github.com/Johlansl/cadence",
       "score": 23.47,
-      "category": "Dashboard / Homelab",
+      "category": "DevOps / Infra",
       "stars": 3,
       "docker": true,
       "compose": true,
@@ -699,7 +699,7 @@
     {
       "url": "https://github.com/mazzz1y/majmun",
       "score": 21.69,
-      "category": "Networking / VPN",
+      "category": "Media / Streaming",
       "stars": 6,
       "docker": true,
       "compose": false,
@@ -768,31 +768,6 @@
       }
     },
     {
-      "url": "https://github.com/rursache/StationCast",
-      "score": 21.32,
-      "category": "Media / Streaming",
-      "stars": 5,
-      "docker": true,
-      "compose": true,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": null,
-      "family": null,
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 7.8,
-        "v17 velocity": 0.5,
-        "v17 deploy": 6,
-        "v17 release": 5,
-        "v17 polish": 3,
-        "v17 license": -4,
-        "v17 active": 1,
-        "v17 selfhost": 2
-      }
-    },
-    {
       "url": "https://github.com/EinKRieGeR/VortexLib",
       "score": 21.31,
       "category": "Books / Reading / Library",
@@ -857,30 +832,6 @@
         "v17 deploy": 3,
         "v17 release": 3,
         "v17 license": 2,
-        "v17 active": 1,
-        "v17 life": 3
-      }
-    },
-    {
-      "url": "https://github.com/threehappypenguins/VideoSphere",
-      "score": 20.92,
-      "category": "Files / Storage / Backup",
-      "stars": 7,
-      "docker": true,
-      "compose": true,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": null,
-      "family": null,
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 9.0,
-        "v17 velocity": 0.9,
-        "v17 deploy": 6,
-        "v17 release": 5,
-        "v17 license": -4,
         "v17 active": 1,
         "v17 life": 3
       }
@@ -1080,31 +1031,6 @@
       }
     },
     {
-      "url": "https://github.com/fralapo/clippyme",
-      "score": 30.67,
-      "category": "AI / LLM",
-      "stars": 51,
-      "docker": true,
-      "compose": true,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": "A",
-      "family": null,
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 17.2,
-        "v17 velocity": 3.5,
-        "v17 deploy": 6,
-        "v17 license": 2,
-        "v17 active": 3,
-        "v17 selfhost": 2,
-        "v17 life": 3,
-        "v17 ai": -6
-      }
-    },
-    {
       "url": "https://github.com/riza/kast",
       "score": 22.47,
       "category": "Media / Streaming",
@@ -1125,76 +1051,6 @@
         "v17 polish": 3,
         "v17 license": 2,
         "v17 active": 1
-      }
-    },
-    {
-      "url": "https://github.com/nathanamorin/local-podcasts",
-      "score": 21.83,
-      "category": "Media / Streaming",
-      "stars": 5,
-      "docker": true,
-      "compose": true,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": "A",
-      "family": null,
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 7.8,
-        "v17 velocity": 0.1,
-        "v17 deploy": 6,
-        "v17 license": 2,
-        "v17 active": 3,
-        "v17 life": 3
-      }
-    },
-    {
-      "url": "https://github.com/OwlCt/OwlPlayer",
-      "score": 21.39,
-      "category": "Media / Streaming",
-      "stars": 8,
-      "docker": true,
-      "compose": true,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": "A",
-      "family": null,
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 9.5,
-        "v17 velocity": 0.8,
-        "v17 deploy": 6,
-        "v17 license": 2,
-        "v17 life": 3
-      }
-    },
-    {
-      "url": "https://github.com/SASUKE40/pi-daemon",
-      "score": 30.62,
-      "category": "AI / LLM",
-      "stars": 31,
-      "docker": true,
-      "compose": true,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": "A",
-      "family": null,
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 15.1,
-        "v17 velocity": 5.6,
-        "v17 deploy": 6,
-        "v17 release": 5,
-        "v17 license": 2,
-        "v17 active": 1,
-        "v17 selfhost": 2,
-        "v17 ai": -6
       }
     },
     {
@@ -1221,29 +1077,183 @@
         "v17 life": 3,
         "v17 ai": -6
       }
+    },
+    {
+      "url": "https://github.com/dboudreau00/NocTORnal",
+      "score": 46.5,
+      "category": "Security / Auth",
+      "stars": 150,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": null,
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 21.8,
+        "v17 velocity": 11.7,
+        "v17 deploy": 3,
+        "v17 release": 5,
+        "v17 license": 2,
+        "v17 active": 3
+      }
+    },
+    {
+      "url": "https://github.com/Myriad-You/Myriad",
+      "score": 42.07,
+      "category": "Dashboard / Homelab",
+      "stars": 67,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": null,
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 18.3,
+        "v17 velocity": 2.7,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 6,
+        "v17 org": 2,
+        "v17 license": -4,
+        "v17 active": 3,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/biosshot/metric",
+      "score": 41.47,
+      "category": "Monitoring / Observability",
+      "stars": 50,
+      "docker": true,
+      "compose": false,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": null,
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 17.1,
+        "v17 velocity": 6.4,
+        "v17 deploy": 3,
+        "v17 release": 5,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/evergreen-it-dev/folio",
+      "score": 39.56,
+      "category": "Notes / Knowledge",
+      "stars": 20,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": null,
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 13.2,
+        "v17 velocity": 6.3,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 org": 2,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3,
+        "v17 ai": -6
+      }
+    },
+    {
+      "url": "https://github.com/Strandgaard96/mc-gamertime",
+      "score": 39.07,
+      "category": "Gaming / Game Servers",
+      "stars": 11,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": null,
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 10.8,
+        "v17 velocity": 4.3,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3
+      }
+    },
+    {
+      "url": "https://github.com/frontier-ai-next/flowMAS",
+      "score": 31.69,
+      "category": "Monitoring / Observability",
+      "stars": 21,
+      "docker": true,
+      "compose": true,
+      "dockerfile": false,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": null,
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 13.4,
+        "v17 velocity": 3.3,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 org": 2,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 ai": -6
+      }
     }
   ],
   "categoryDistribution": {
-    "Media / Streaming": 8,
-    "AI / LLM": 7,
+    "Monitoring / Observability": 5,
+    "AI / LLM": 5,
+    "Media / Streaming": 5,
     "Finance / Budget": 4,
     "Health / Food / Fitness": 4,
-    "Monitoring / Observability": 3,
-    "Productivity / Tasks": 3,
-    "Dashboard / Homelab": 3,
+    "Productivity / Tasks": 4,
     "Image / Design / Creative": 3,
+    "CRM / Business": 2,
+    "DevOps / Infra": 2,
     "Documents / PDF / Paperless": 2,
-    "Networking / VPN": 2,
     "Books / Reading / Library": 2,
+    "Gaming / Game Servers": 2,
+    "Dashboard / Homelab": 2,
+    "Notes / Knowledge": 2,
     "Analytics / Data": 1,
-    "Gaming / Game Servers": 1,
+    "Networking / VPN": 1,
     "Maps / GIS / Location": 1,
-    "DevOps / Infra": 1,
-    "CRM / Business": 1,
     "CMS / Website": 1,
-    "Notes / Knowledge": 1,
-    "Files / Storage / Backup": 1,
-    "Developer Tools / Utilities": 1
+    "Developer Tools / Utilities": 1,
+    "Security / Auth": 1
   },
   "scoreStats": {
     "min": 20.48,
@@ -1551,6 +1561,141 @@
         "laneSeen": 4502,
         "lanePassing": 90,
         "seconds": 50.9
+      }
+    },
+    {
+      "at": "2026-10-04T04:21:33+00:00",
+      "dropped": [
+        {
+          "repo": "rursache/StationCast",
+          "why": "over-category-cap (5)"
+        },
+        {
+          "repo": "fralapo/clippyme",
+          "why": "over-category-cap (5)"
+        },
+        {
+          "repo": "nathanamorin/local-podcasts",
+          "why": "over-category-cap (5)"
+        },
+        {
+          "repo": "OwlCt/OwlPlayer",
+          "why": "over-category-cap (5)"
+        },
+        {
+          "repo": "SASUKE40/pi-daemon",
+          "why": "over-category-cap (5)"
+        }
+      ],
+      "added": [
+        "dboudreau00/NocTORnal",
+        "Myriad-You/Myriad",
+        "biosshot/metric",
+        "lewlew-glitch/qm_companion",
+        "evergreen-it-dev/folio"
+      ],
+      "recategorized": [],
+      "topUp": {
+        "from": "v17",
+        "needed": 5,
+        "added": 5,
+        "starFloors": [
+          20
+        ],
+        "replacedOverAiCeiling": [],
+        "repos": [
+          "dboudreau00/NocTORnal",
+          "Myriad-You/Myriad",
+          "biosshot/metric",
+          "lewlew-glitch/qm_companion",
+          "evergreen-it-dev/folio"
+        ],
+        "laneSeen": 4471,
+        "lanePassing": 201,
+        "seconds": 92.9
+      }
+    },
+    {
+      "at": "2026-10-04T04:24:46+00:00",
+      "dropped": [
+        {
+          "repo": "lewlew-glitch/qm_companion",
+          "why": "companion-for-other-app"
+        }
+      ],
+      "added": [
+        "Strandgaard96/mc-gamertime"
+      ],
+      "recategorized": [
+        {
+          "repo": "dboudreau00/NocTORnal",
+          "from": "Networking / VPN",
+          "to": "Security / Auth"
+        }
+      ],
+      "topUp": {
+        "from": "v17",
+        "needed": 1,
+        "added": 1,
+        "starFloors": [
+          20
+        ],
+        "replacedOverAiCeiling": [],
+        "repos": [
+          "Strandgaard96/mc-gamertime"
+        ],
+        "laneSeen": 4471,
+        "lanePassing": 196,
+        "seconds": 86.9
+      }
+    },
+    {
+      "at": "2026-10-04T04:44:16+00:00",
+      "dropped": [
+        {
+          "repo": "threehappypenguins/VideoSphere",
+          "why": "over-category-cap (5)"
+        }
+      ],
+      "added": [
+        "frontier-ai-next/flowMAS"
+      ],
+      "recategorized": [
+        {
+          "repo": "andresjmorales/cognote",
+          "from": "Media / Streaming",
+          "to": "CRM / Business"
+        },
+        {
+          "repo": "rancur/garden-godmother",
+          "from": "Dashboard / Homelab",
+          "to": "Productivity / Tasks"
+        },
+        {
+          "repo": "Johlansl/cadence",
+          "from": "Dashboard / Homelab",
+          "to": "DevOps / Infra"
+        },
+        {
+          "repo": "mazzz1y/majmun",
+          "from": "Networking / VPN",
+          "to": "Media / Streaming"
+        }
+      ],
+      "topUp": {
+        "from": "v17",
+        "needed": 1,
+        "added": 1,
+        "starFloors": [
+          20
+        ],
+        "replacedOverAiCeiling": [],
+        "repos": [
+          "frontier-ai-next/flowMAS"
+        ],
+        "laneSeen": 4471,
+        "lanePassing": 195,
+        "seconds": 84.0
       }
     }
   ]

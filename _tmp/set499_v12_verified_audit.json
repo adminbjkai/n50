@@ -236,7 +236,7 @@
     {
       "url": "https://github.com/mstrlargo/vgc-shelf",
       "score": 28.45,
-      "category": "Media / Streaming",
+      "category": "Gaming / Game Servers",
       "stars": 3,
       "docker": true,
       "compose": true,
@@ -976,7 +976,7 @@
     {
       "url": "https://github.com/nouploads/nouploads",
       "score": 24.61,
-      "category": "Dashboard / Homelab",
+      "category": "Files / Storage / Backup",
       "stars": 7,
       "docker": true,
       "compose": true,
@@ -1349,15 +1349,16 @@
   ],
   "categoryDistribution": {
     "CRM / Business": 5,
-    "Media / Streaming": 5,
     "AI / LLM": 4,
+    "Media / Streaming": 4,
     "Image / Design / Creative": 4,
     "Communication / Social": 4,
     "Notes / Knowledge": 3,
-    "Dashboard / Homelab": 3,
+    "Files / Storage / Backup": 3,
     "Productivity / Tasks": 3,
     "Monitoring / Observability": 3,
-    "Files / Storage / Backup": 2,
+    "Gaming / Game Servers": 2,
+    "Dashboard / Homelab": 2,
     "Networking / VPN": 2,
     "Web App / Other": 2,
     "Developer Tools / Utilities": 2,
@@ -1365,7 +1366,6 @@
     "Books / Reading / Library": 1,
     "Documents / PDF / Paperless": 1,
     "DevOps / Infra": 1,
-    "Gaming / Game Servers": 1,
     "Finance / Budget": 1,
     "Automation": 1
   },
@@ -1705,6 +1705,24 @@
         "lanePassing": 91,
         "seconds": 55.7
       }
+    },
+    {
+      "at": "2026-10-04T04:43:38+00:00",
+      "dropped": [],
+      "added": [],
+      "recategorized": [
+        {
+          "repo": "mstrlargo/vgc-shelf",
+          "from": "Media / Streaming",
+          "to": "Gaming / Game Servers"
+        },
+        {
+          "repo": "nouploads/nouploads",
+          "from": "Dashboard / Homelab",
+          "to": "Files / Storage / Backup"
+        }
+      ],
+      "topUp": null
     }
   ]
 }

@@ -1597,7 +1597,7 @@
     {
       "url": "https://github.com/P1c1s/AegisCA",
       "score": 24.64,
-      "category": "Dashboard / Homelab",
+      "category": "Security / Auth",
       "stars": 5,
       "docker": true,
       "compose": true,
@@ -1621,7 +1621,7 @@
     {
       "url": "https://github.com/samirkoirala/OwnSMTP",
       "score": 24.12,
-      "category": "Dashboard / Homelab",
+      "category": "Communication / Social",
       "stars": 5,
       "docker": true,
       "compose": true,
@@ -1669,7 +1669,7 @@
     {
       "url": "https://github.com/PedroLucasMiguel/harmony",
       "score": 21.12,
-      "category": "Dashboard / Homelab",
+      "category": "Communication / Social",
       "stars": 5,
       "docker": true,
       "compose": true,
@@ -1901,16 +1901,16 @@
   "categoryDistribution": {
     "Productivity / Tasks": 5,
     "Media / Streaming": 5,
-    "Dashboard / Homelab": 5,
     "Monitoring / Observability": 5,
+    "Communication / Social": 4,
     "Gaming / Game Servers": 4,
-    "Communication / Social": 2,
+    "Security / Auth": 3,
+    "Dashboard / Homelab": 2,
     "Documents / PDF / Paperless": 2,
     "Privacy / Ad-Blocking": 2,
     "Files / Storage / Backup": 2,
     "Developer Tools / Utilities": 2,
     "AI / LLM": 2,
-    "Security / Auth": 2,
     "CMS / Website": 2,
     "Education / Learning": 2,
     "Networking / VPN": 1,
@@ -2327,6 +2327,29 @@
         "lanePassing": 323,
         "seconds": 218.0
       }
+    },
+    {
+      "at": "2026-10-04T04:42:25+00:00",
+      "dropped": [],
+      "added": [],
+      "recategorized": [
+        {
+          "repo": "P1c1s/AegisCA",
+          "from": "Dashboard / Homelab",
+          "to": "Security / Auth"
+        },
+        {
+          "repo": "samirkoirala/OwnSMTP",
+          "from": "Dashboard / Homelab",
+          "to": "Communication / Social"
+        },
+        {
+          "repo": "PedroLucasMiguel/harmony",
+          "from": "Dashboard / Homelab",
+          "to": "Communication / Social"
+        }
+      ],
+      "topUp": null
     }
   ]
 }

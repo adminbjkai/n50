@@ -97,7 +97,7 @@ CSV = Notion, history untouched, no reuse). Confirmed bugs, all fixed:
   audit `repair` overwritten → `repairs` list; CSV rows of a repaired set now stay in place.
 - Gate: 10 over-broad rules narrowed, 4 missed junk types added (17 new self-test cases);
   screen now drops docs-only repos (no language, no deploy file); kept picks relabelled with
-  v17's categorizer (9 new category cases). v17 self-test 138 checks, topup 12.
+  v17's categorizer (9 new category cases).
 - Reading the replacement picks found more: French descriptions passed the English check
   (no é/è in the accent set; French "a" counted as English) → fixed; a Tailscale exit-node
   bundle → packaging; static-site server, incident management, vinyl, billing categories.
@@ -111,4 +111,13 @@ CSV = Notion, history untouched, no reuse). Confirmed bugs, all fixed:
   Found `gql()` swallowed RATE_LIMIT as "no results": query memory marked slices dead,
   `hydrate-failed` rejects cached. Fixed (RateLimited, retry after 60 s, failed slices keep
   memory, rejects carry a gate signature); restored 200 slice counters from that run.
-  Set 500's cap repair (Media 8/AI 7 of cap 5 from the lane) is pending until the limit clears.
+  Set 500's cap repair ran once the limit cleared (5 lane picks replaced), then 1 more
+  (companion for Quartermaster) and a relabel.
+- Second verifier (PASS-WITH-CONCERNS, data consistent) → fixed: HTTP 403/429 now raises
+  RateLimited; >10% failed searches stop discovery; lane error never relaxes the cap; repair
+  treats a repo as gone only on 404; gate signature hashes gate()/readable()/hard_reject
+  source + topic sets; "My …" anchor; recat after trims; native/plugin/desktop features
+  pass (also in v16's hard_reject); libraries/trading bots/Slack-Matrix bots/guides caught;
+  ~30 categories that v16's catch-all filed under Dashboard fixed. Third repair round on
+  494–500 (494: bullpane, OpenMausBot; 500: VideoSphere). Final: all 350 picks pass, AI and
+  category caps hold, tracker = CSV = Notion. Self-tests: v17 203 checks, topup 14, all pass.

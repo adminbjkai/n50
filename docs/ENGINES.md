@@ -49,8 +49,8 @@ own selection and before its shortfall check:
    already selected, one per owner, the engine's own AI ceiling (v13–v16: 3, v12: 10, v11:
    none; a pick counts as AI by its category or by AI words in its description, the same test
    for the engine's own picks and lane picks, and AI picks past the ceiling are replaced)
-   and `--cat-cap` (held on every star rung, relaxed only if the whole ladder can't fill
-   the set within it), proof tier A (compose/Dockerfile)
+   and `--cat-cap` (held on every star rung, relaxed only if the whole ladder ran and still
+   can't fill the set within it; never after a lane error), proof tier A (compose/Dockerfile)
    or B (awesome-selfhosted). Each top-up pick is marked in the audit (`topUp`) and on its
    Notion line, and the page intro counts them; their score is v17's interest score.
 3. The engine's normal audit, page and CSV code then run on the final 50.
@@ -84,8 +84,11 @@ Repairs happened because the rules kept improving during the day's review. An in
 review that night led to a second round: 494's page rebuilt with its true star floor; 495
 2 replaced (README-only guide, AI over the ceiling); 496 1 (category cap); 497 9 (AI over
 the ceiling, 7 lane picks over the Monitoring cap); 499 1 (Telegram bot); 500 1 (Navidrome
-client); about 25 categories relabelled across the seven sets. Every page, tracker entry
-and CSV row agree.
+client); about 25 categories relabelled across the seven sets. A third round after a
+second review: 494 2 replaced (a queue-library dashboard, then an agent VM sandbox), 500 1
+(category cap after a relabel), and about 30 more categories relabelled, mostly picks that
+v16's catch-all had filed under Dashboard / Homelab. Every page, tracker entry and CSV row
+agree.
 
 ## Star ladder (v17 and the lane)
 
@@ -111,7 +114,8 @@ the Notion page in that engine's format (new blocks are appended before the old 
 deleted), updates the tracker entry, CSV rows (in place) and audit (`repairs`, one record
 per repair), and keeps backups in `_tmp/backup-repair-<time>/`. `--rebuild` rewrites the
 page even when nothing changed. Replaced repos stay in `usedRepoUrls`, so they never come
-back. The audit's other fields still describe the original run.
+back. The audit's other fields still describe the original run. A pick counts as gone
+from GitHub only on a 404; any other failure stops the repair before it writes anything.
 
 ## Picking an engine
 
