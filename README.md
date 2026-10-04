@@ -11,7 +11,7 @@ no repo is ever published twice.
 |---|---|
 | `server.py` | Stdlib web server: runs one engine at a time, streams its output, JSON API over the series data. |
 | `web/` | The UI (`index.html`, `app.css`, `app.js`, self-hosted Archivo font). No build step. |
-| `engines/` | The set builders. `v17.py` is the default; `v11`–`v16` stay runnable. `run_next_set.py` is the shared Notion/tracker plumbing they import. |
+| `engines/` | The set builders. `v17.py` is the default; `v11`–`v16` stay runnable and top up a short set from v17's lane (`topup.py`). `run_next_set.py` is the shared Notion/tracker plumbing they import. |
 | `deploy/` | systemd socket + service units (copied to `/etc/systemd/system/`). |
 | `docs/` | `ENGINES.md` (which engine does what), per-engine strategy notes, history. |
 | `notion-selfhosted-tracker.json` | Source of truth: completed sets, page links, every used repo URL. |

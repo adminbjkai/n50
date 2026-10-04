@@ -3243,6 +3243,15 @@ def select_set(tracker, live_titles, args):
             selected.append(c)
             taken.add(u)
         print(f"[{VERSION}] padded selection to {len(selected)}")
+    if not special and len(selected) < target_n:
+        # REST search is mined out; fill the gap from v17's GraphQL lane (engines/topup.py).
+        import topup
+        selected, audit["topUp"] = topup.fill(
+            VERSION, selected, target_n, tracker, args.dry_run,
+            ai_ceiling=HARD_CAT_CAPS.get("AI / LLM", 3),
+            is_ai_cat=lambda c: family_of(c.get("hcat") or "") == "ai",
+            family_of=family_of,
+            cat_cap=getattr(args, "cat_cap", None))
     if len(selected) != target_n:
         # v15 NEVER aborts a run with a traceback. A mined-out corpus that yields
         # a solid partial set should ship (honestly reported), not crash. Only a
@@ -3263,6 +3272,7 @@ def select_set(tracker, live_titles, args):
                 f"rate-limit/outage or an auth problem, not a corpus issue. "
                 f"Nothing was published. Re-run in a minute (the governor will "
                 f"pace search calls) or check `gh auth status`.")
+    ab_n = sum(1 for c in selected if c.get("proof_tier") in ("A", "B"))  # after any top-up
     min_ab = max(1, int(round(MIN_AB_FRAC * target_n)))
     if ab_n < min_ab:
         # Soft fail → warn. With a full 50 proven picks, a thin A∪B floor is

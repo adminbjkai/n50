@@ -28,11 +28,32 @@ v1–v10 predate this folder (retrospective: [history/ANALYSIS-v1-v10.md](histor
 The UI tags a published set with its engine from the tracker or its audit file name; 206
 early sets (all at or below Set 377) have neither and show "—".
 
+## Top-up lane (v11–v16)
+
+The REST-search engines are mined out: after ~25k published repos a typical run confirms
+45–48 candidates for 50 slots. Since 2026-10-03, when an engine's own selection comes up
+short, `engines/topup.py` fills the missing slots from v17's GraphQL discovery before the
+engine's shortfall check, so the engine's normal audit, page and CSV code handle them.
+
+- Top-up picks pass v17's quality gate and dedupe (URLs, renames, re-uploads), are never a
+  repo already selected, keep one repo per owner across the set, and respect the engine's
+  own AI ceiling (v13–v16: 3, v12: 10; v11 has none) and its `--cat-cap` per category,
+  which is relaxed only if the set can't be filled within it.
+- Proof tier A when the repo ships compose/Dockerfile, B when it's on awesome-selfhosted.
+- They keep v17's interest score (a different scale from the engines' appeal score), and
+  each is marked: the audit has a `topUp` record, and the Notion line says "added by the v17
+  top-up lane".
+- It costs about 90 s and ~250 GraphQL points, only on runs that come up short. If the lane
+  fails, the engine continues with what it had (and a short standard publish still refuses).
+- Measured on Set 494 dry runs (2026-10-03): v16 45 → 50/50 and v15 36 → 50/50, ~92 s per top-up.
+- `python3 engines/topup.py --self-test` checks the rules offline.
+
 ## Picking an engine
 
 The UI shows each engine's recent fill (how many of the 50 slots its last eight sets
-filled). Start with a v17 dry run. If it comes up short, try v11 (looser quality rules) or
-v16/v15 (different discovery lanes); only a full set publishes.
+filled). Any engine can be used: a short run is topped up from v17's lane (below), so the
+choice is about style of picks. v17 is strictest on junk; v13–v16 favour product-family
+diversity; v11 is fastest with looser rules. Only a full set publishes.
 
 A publish always runs discovery again rather than reusing the dry run's list, so its picks
 can differ slightly from the preview (new repos, refreshed caches).

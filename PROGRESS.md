@@ -45,3 +45,13 @@ runnable, makes v17 actually fill 50/50 again, and is live on n50.bjk.ai + GitHu
 - Round 2: TimeoutStopSec 900 (legacy publishes took up to 511 s); shutdown refuses new runs
   and waits until the run record is written. Known leftover: loponai/oneshotmatrix-style
   "one-shot" bundles can pass the narrowed packaging rule (accepted; low impact).
+
+## Follow-up (2026-10-03 evening): short sets on v11–v16
+User's v16 publish selected 45/50 and refused. Cause: REST search mined out (48 confirmed for
+50 slots). Added `engines/topup.py`: before each engine's shortfall check, missing slots are
+filled from v17's GraphQL lane (v17 gate + dedupe, owner-unique, engine's AI ceiling and
+`--cat-cap` honoured first, tier A/B, marked in audit `topUp` and on the Notion line).
+Evidence (dry runs via the live server): v16 45→50 (91.6 s top-up), v15 36→50 (92.3 s),
+v16 49→50 (64.4 s); v13 filled 50 itself (top-up skipped cleanly). Audit check on the v16
+run: 50 unique, 0 already published, 0 duplicate owners, tier A+B 35. Also fixed the
+A∪B warning to count after the top-up. Self-tests: all 7 engines + `topup.py` (7 checks).
