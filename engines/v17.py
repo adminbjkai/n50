@@ -300,7 +300,7 @@ JUNK = [
     (r"\bdedicated server\b|\bfor [\w ]{0,30}dedicated servers\b|\bgame server (for|of)\b|\bserver for (minecraft|palworld|valheim|ark|rust|terraria)", "game-server-wrapper"),
     (r"\b(discord|telegram|slack|whatsapp|twitch)\s*bot\b|\bbot for (discord|telegram|slack)", "chat-bot"),
     (r"2api\b|\bto[- ]?api\b|account pool|\b(ai |llm )?subscription pool|reverse[- ]proxy for (chatgpt|claude|openai|gemini|codex|cursor|kiro|grok|copilot)|\b(chatgpt|claude|gemini|codex|kiro|grok|copilot|cursor) (account|api) (proxy|pool|gateway)", "ai-account-proxy"),
-    (r"\b(trading bot|crypto|airdrop|memecoin|defi|quant(itative)? trading|stock pick|arbitrage|mev)\b", "trading-crypto"),
+    (r"\b(trading bot|crypto|binance|bybit|coinbase|airdrop|memecoin|defi|quant(itative)? trading|stock pick|arbitrage|mev)\b", "trading-crypto"),
     (r"\b(readme|github) (stats|profile|streak)|\bstats cards?\b|profile readme", "github-vanity"),
     (r"\buserscript\b|\btampermonkey\b|\bbrowser extension\b|\bchrome extension\b", "browser-extension"),
     (r"\b(docker images?|docker-?compose files?|compose (files|stack|templates?)|dockerfiles?|deployment|install(er|ation) scripts?|setup scripts?)\s+for\b", "packaging-of-other-app"),
@@ -310,7 +310,10 @@ JUNK = [
     # The repo IS an MCP server (apps that include one as a feature are fine).
     (r"\b(mcp|model context protocol) servers? (for|that|to|which|exposing)\b|\bis an? (mcp|model context protocol) server\b", "mcp-server"),
     (r"\b(sdk|code|client) generator\b|\bbackend (api|service|server)? ?for [\w.-]+\b", "component-or-dev-tool"),
-    (r"\bcommand and control\b|\bc2 (server|framework)\b", "scraper-or-shady"),
+    (r"\bcommand and control\b|\bc2 (server|framework)\b|\bwhatsapp (rest )?api\b|\bunofficial (whatsapp|instagram|tiktok) api\b", "scraper-or-shady"),
+    (r"\b(cloudron|yunohost|umbrel|casaos|unraid|truenas)(\.io)? app (package|template)\b|\bapp package for\b", "packaging-of-other-app"),
+    (r"\b(rest )?api (around|wrapping)\b|\bwrapper (around|for)\b|\b(sso|auth|authentication|oauth2?) (library )?for (go|golang|python|node(\.js)?|rust|java|php|react)\b|\bapi for node(\.js)?\b", "component-or-dev-tool"),
+    (r"\badult (tube|site|content|video)s?\b|\bporn\w*\b|\bnsfw\b|\bhentai\b", "adult-content"),
     (r"\b(library|sdk|framework)\s+for\s+(production\s+)?(llm|ai|agents?|python|typescript|javascript|node(\.js)?|go|rust|react|vue)\b", "library-or-sdk"),
     (r"\bagent (runtime|harness|sandbox|stack|infrastructure|framework)\b|\bdocker sandbox\b|\b[\d,]+\+? tool integrations\b|\bmemory (layer|system|api|store) for (ai )?agents?\b", "agent-infrastructure"),
     (r"\bmulti[- ]account|\baccounts? (manager|management|farm)|\bauto(matic)? ?(sign[- ]?in|check[- ]?in)|签到|\bfree[- ]tier (farm|abuse)", "account-farming"),
@@ -360,6 +363,8 @@ HOST_APPS = re.compile(r"\b(jellyfin|plex|emby|navidrome|subsonic|immich|nextclo
                        r"authentik|pi-hole|adguard|unraid|truenas|proxmox|portainer|n8n|firefly(?: iii)?|"
                        r"coolify|headscale|twenty crm|firecrawl|frigate|ghost|wordpress)\b", re.I)
 ALT_TO = re.compile(r"alternative|replacement|replaces|instead of|like\s", re.I)
+# "Works with Nextcloud, Radicale…", "friendly to Obsidian": compatibility, not an add-on.
+COMPAT = re.compile(r"\b(works with|compatible with|friendly to|interoperable with|imports? from|migrate from)\b", re.I)
 # "Sonarr/Radarr for games": an app modelled on a known one, not an add-on to it.
 ANALOGY = re.compile(HOST_APPS.pattern + r"(\s*/\s*[\w-]+)?\s+for\s+(games|books|comics|music|podcasts|"
                      r"recipes|audiobooks|movies|photos|ebooks|manga|anime|papers|notes)\b", re.I)
@@ -393,8 +398,9 @@ def gate(repo, now, curated=False, light=False):
             return why
     if re.match(r"(an? |the )?(mcp|model context protocol) server\b", desc, re.I):
         return "mcp-server"
-    if not ALT_TO.search(desc) and not ANALOGY.search(desc) and (BUILT_ON.search(desc) or (
-            HOST_APPS.search(desc) and not {t.lower() for t in repo["topics"]} & {"media-server", "alternative"})):
+    if not ALT_TO.search(desc) and not ANALOGY.search(desc) and not COMPAT.search(desc) and (
+            BUILT_ON.search(desc) or (HOST_APPS.search(desc) and not
+                                      {t.lower() for t in repo["topics"]} & {"media-server", "alternative"})):
         return "built-on-other-app"
     if TERMINAL.search(desc) and not re.search(r"\bweb\b", desc, re.I):
         return "terminal-app"
@@ -445,8 +451,9 @@ CATEGORY_OVERRIDES = [
     (r"\b(time[- ]tracking|time tracker|timesheets?|to-?do|task manager|pomodoro|vehicle|car maintenance|home inventory|household)\b", "Productivity / Tasks"),
     (r"\b(voice assistant|replacement for siri|alexa|smart[- ]home|home automation)\b", "Home Automation / IoT"),
     (r"\b(blog|blogging|cms|website builder|publishing platform|static site)\b", "CMS / Website"),
+    (r"\b(pdf|slides|presentations?|spreadsheets?|office suite|pptx|docx|word processor|ocr)\b", "Documents / PDF / Paperless"),
     (r"\b(web analytics|product analytics|analytics)\b", "Analytics / Data"),
-    (r"\b(gps|gpx|maps?|geospatial|location|travel|trip)\b", "Maps / GIS / Location"),
+    (r"\b(gps|gpx|maps?|geospatial|location|travel|trip planner|road ?trips?|itinerar\w+)\b", "Maps / GIS / Location"),
     (r"\b(photo|photos|gallery|image hosting)\b", "Image / Design / Creative"),
     (r"\b(recipe|recipes|meal|grocery|pantry)\b", "Health / Food / Fitness"),
     (r"\b(budget|finance|expense|invoice|accounting|erp)\b", "Finance / Budget"),
@@ -883,6 +890,14 @@ def self_test():
         (mk("q/perga", "Backend API for Perga - a personal workspace for daily planning"), "component-or-dev-tool"),
         (mk("q/sdk", "Open-source SDK generator for OpenAPI 3: idiomatic Rust and TypeScript"), "component-or-dev-tool"),
         (mk("q/c2", "Open-source, self-hosted command and control for fleets of drones"), "scraper-or-shady"),
+        (mk("r/lucid", "Self-hostable web client for your CalDAV calendars. Works with Nextcloud, Radicale, iCloud."), None),
+        (mk("r/nex", "Notes as Markdown files in the browser, with a graph. Self-hosted, friendly to Obsidian."), None),
+        (mk("r/tube", "Free, self-hosted adult tube site CMS (PHP 8.2+)"), "adult-content"),
+        (mk("s/cloudron", "Cloudron.io app package for self-hosting a Nostr relay, with backups"), "packaging-of-other-app"),
+        (mk("s/scipio", "Self-hosted REST API around israeli-bank-scrapers: fetch transactions"), "component-or-dev-tool"),
+        (mk("s/wa", "Free, self-hosted WhatsApp REST API for Node.js. Send text and media"), "scraper-or-shady"),
+        (mk("s/bn", "Read-only Binance Pay payment checker with a web dashboard"), "trading-crypto"),
+        (mk("s/sso", "Self-hosted Enterprise SSO for Go — one OAuth2-style flow in your app"), "component-or-dev-tool"),
         (mk("p/cjk", "知归是一个面向个人使用的 AI 知识归档工具，把内容链接发送给机器人 GitHub web app"), "not-english-readable"),
     ]
     ok = True
@@ -931,7 +946,9 @@ def self_test():
                        ("Self-hosted minimal time tracking.", "Productivity / Tasks"),
                        ("Self-hosted vehicle management and maintenance tracking platform", "Productivity / Tasks"),
                        ("A fully local, self-hosted replacement for Siri and Alexa with smart-home control", "Home Automation / IoT"),
-                       ("A modern open-source publishing platform built with Go", "CMS / Website")]:
+                       ("A modern open-source publishing platform built with Go", "CMS / Website"),
+                       ("Self-hosted web slides editor with .pptx round-trip", "Documents / PDF / Paperless"),
+                       ("Privacy-first PDF toolkit with browser-based editing and AI summaries", "Documents / PDF / Paperless")]:
         got = categorize(mk("c/c", desc))
         t = got == want
         ok &= t

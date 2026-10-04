@@ -17,12 +17,15 @@ A pick is dropped when it:
   * is an AI repo whose description shows no web UI / app
   * repeats an owner already in the set (the higher-scored pick is kept)
   * has the same description as a repo already published (re-uploads / mirrors)
+  * is a renamed or transferred copy of a published repo (GitHub redirect check)
 """
 
 import csv
+import re
 from datetime import datetime, timezone
 
 LEGACY_MIN_STARS = 3
+AI_WORDS = re.compile(r"\b(ai|llm|gpt|agent|agents|rag|chatbot|openai|claude|mcp)\b", re.I)
 
 
 def _adapt(c):
@@ -70,16 +73,33 @@ def why_not(c, v17, now, used_desc):
     if not (topics & (v17.SELFHOST_TOPICS | v17.WEBAPP_TOPICS) or v17.WEB_INTENT.search(r["description"])
             or c.get("awesome")):
         return "no-web-app-intent"
-    if v17.is_ai(r) and not v17.AI_APP.search(r["description"]):
+    # The AI rule follows the description, not the engine's category (which can be wrong).
+    if AI_WORDS.search(r["description"]) and not v17.AI_APP.search(r["description"]):
         return "ai-without-web-ui"
     if v17._norm_desc(r["description"]) in used_desc:
         return "same-description-as-published"
     return None
 
 
-def screen(version, selected, ignore_set=None):
+def _renamed_copies(v17, selected, tracker, ignore_set):
+    """Full names (lowercase) of picks that are renamed/transferred copies of published repos."""
+    own = set()
+    for p in tracker.get("completedPages", []):
+        if ignore_set is not None and str(p.get("setNum")) == str(ignore_set):
+            own.update(u.lower().rstrip("/") for u in p.get("repos", []))
+    used = {u.lower().rstrip("/") for u in tracker.get("usedRepoUrls", [])} - own
+    used_full = {u.split("github.com/")[-1] for u in used if "github.com/" in u}
+    by_name = {}
+    for fn in used_full:
+        by_name.setdefault(fn.split("/")[-1], []).append(fn)
+    cands = [{"full_name": c["repo"].get("full_name") or ""} for c in selected]
+    return v17.rename_duplicates(cands, used, by_name)
+
+
+def screen(version, selected, ignore_set=None, tracker=None):
     """Return (kept, record). Order of `selected` is preserved for kept picks.
-    `ignore_set` skips that set's own rows in the published-description check (repairs)."""
+    `ignore_set` skips that set's own entries in the published checks (repairs); `tracker`
+    enables the renamed/transferred-copy check."""
     if not selected:
         return selected, None
     try:
@@ -89,7 +109,9 @@ def screen(version, selected, ignore_set=None):
         return selected, {"error": str(exc)}
     now = datetime.now(timezone.utc)
     used_desc = _published_descriptions(v17, ignore_set)
-    reasons = {id(c): why_not(c, v17, now, used_desc) for c in selected}
+    renamed = _renamed_copies(v17, selected, tracker, ignore_set) if tracker else set()
+    reasons = {id(c): ("renamed-copy-of-published" if (c["repo"].get("full_name") or "").lower() in renamed
+                       else why_not(c, v17, now, used_desc)) for c in selected}
     best_by_owner = {}                      # best-scored *passing* pick per owner
     for c in selected:
         if reasons[id(c)]:
@@ -141,10 +163,12 @@ def self_test():
         mk("lc/chat", "Enhanced ChatGPT Clone: agents, MCP, multiple AI providers, self-hosted"),
         mk("dup/bad", "Railway deployment template for a chat app", score=99),     # best score but fails
         mk("dup/good", "Self-hosted kanban board with a web UI", score=10),        # so this one is kept
+        dict(mk("rr/resume", "A one-of-a-kind resume builder that keeps your privacy in mind."),
+             category="AI / LLM"),                                                 # wrong engine category
     ]
     kept, rec = screen("test", sel)
     names = [c["repo"]["full_name"] for c in kept]
-    ok = names == ["good/app", "ok/ai", "gem/new", "lc/chat", "dup/good"]
+    ok = names == ["good/app", "ok/ai", "gem/new", "lc/chat", "dup/good", "rr/resume"]
     print(f"  {'ok ' if ok else 'FAIL'} kept {names}")
     print("quality self-test:", "ALL PASSED" if ok else "FAILED")
     return ok

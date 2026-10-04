@@ -68,6 +68,9 @@ def build_candidates(engine, audit, rows, now):
              "family": a.get("family"), "_published_url": row["repo_url"]}
         if a.get("hook"):
             c["enrich"] = {"interest_hook": a["hook"]}
+        if a.get("topup") or a.get("hook") == topup.HOOK:   # v17-sourced: v17's categories apply
+            c.update(category=v17.categorize(r), hcat=v17.categorize(r), topup="v17", _v17=r)
+            r["_score"], r["_bd"], r["_cat"] = c["score"], c["breakdown"], c["category"]
         if engine == "v17":
             r["_score"], r["_bd"] = v17.interest_score(r, now)
             r["_cat"] = v17.categorize(r)
@@ -132,18 +135,23 @@ def main():
     print(f"[repair] Set {n} ({engine}, {len(rows)} published rows) — checking with live GitHub data …")
 
     cands, missing = build_candidates(engine, audit, rows, now)
-    kept, record = quality.screen("repair", cands, ignore_set=n)
+    published_cat = {row["repo_url"].lower(): row["category"] for row in rows}
+    recat = [(c["repo"]["full_name"], published_cat.get(c["_published_url"].lower()), c["category"])
+             for c in cands if published_cat.get(c["_published_url"].lower()) != c["category"]]
+    for name, old, new in recat:
+        print(f"[repair] category: {name}: {old} → {new}")
+    kept, record = quality.screen("repair", cands, ignore_set=n, tracker=tracker)
     dropped = (record or {}).get("dropped", []) + [{"repo": m, "why": "unavailable-on-github"} for m in missing]
     if missing:
         print(f"[repair] {len(missing)} published repos are gone from GitHub: {', '.join(missing)}")
-    if not dropped:
+    if not dropped and not recat:
         print(f"[repair] Set {n} passes the current gate; nothing to do.")
         return
 
     final, top = topup.fill("repair", kept, size, tracker, dry_run=not args.apply, **engine_rules(engine, mod))
     if len(final) != size:
         raise SystemExit(f"[repair] could only reach {len(final)}/{size}; not touching Set {n}.")
-    added = [c["repo"]["full_name"] for c in final if c.get("topup")]
+    added = [c["repo"]["full_name"] for c in final if c.get("topup") and c in final[len(kept):]]
     blocks, final_rows = page_for(engine, mod, n, final, audit)
     print(f"[repair] plan: drop {len(dropped)}, add {len(added)}; page {len(blocks)} blocks")
     if not args.apply:
@@ -197,6 +205,7 @@ def main():
         dist[row[2]] = dist.get(row[2], 0) + 1
     audit["categoryDistribution"] = dict(sorted(dist.items(), key=lambda kv: -kv[1]))
     audit["repair"] = {"at": now.isoformat(timespec="seconds"), "dropped": dropped, "added": added,
+                       "recategorized": [{"repo": a, "from": b, "to": c} for a, b, c in recat],
                        "topUp": top}
     audit_path.write_text(json.dumps(audit, indent=2, ensure_ascii=False) + "\n")
     print(f"[repair] Set {n}: tracker, master CSV ({len(new_rows)} rows) and audit updated ✅")

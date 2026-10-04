@@ -64,7 +64,17 @@ not being searched. Changes:
   even a short set. The final list is ordered by interest score.
 
 Measured on Set 494 dry runs (2026-10-03): before 23/50 (refused); after 50/50 in 70–105 s
-with 5–17 AI picks, 240–250 GraphQL points, 64 MB peak memory. Self-test: 32 checks, including six "must keep" cases for legitimate apps.
+with 5–17 AI picks, 240–250 GraphQL points, 64 MB peak memory.
+
+Later the same day, reviewing real published picks led to more rules (libraries/SDKs for
+agents or languages, agent infrastructure, backend components, SDK generators, compose
+bundles, app-store packages, API wrappers, unofficial WhatsApp APIs, adult content,
+command-and-control, crypto exchanges, native clients "for Android") and to narrowing others
+that hit real apps (Helm *option*, apps that *include* an MCP server, standalone companion
+apps, "X for games" analogies, "works with Nextcloud" compatibility). Categories gained
+tabletop/gaming, CRM/helpdesk, fitness, time tracking/household, smart home and publishing.
+The star ladder (see ENGINES.md) was added once Set 494 had used up most ≥20★ non-AI apps.
+Self-test: 63 checks, including "must keep" cases for legitimate apps.
 
 ## Run
     python3 v17.py --self-test

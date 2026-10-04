@@ -96,35 +96,6 @@
       }
     },
     {
-      "url": "https://github.com/LibreChat-AI/LibreChat",
-      "score": 88.0,
-      "category": "AI / LLM",
-      "stars": 45233,
-      "docker": true,
-      "compose": true,
-      "dockerfile": true,
-      "awesome": true,
-      "proof_tier": "A",
-      "family": "ai",
-      "fresh_gem": false,
-      "hook": "",
-      "topup": null,
-      "breakdown": {
-        "momentum": 16.0,
-        "liveliness": 14.0,
-        "traction": 12.0,
-        "polish": 21.0,
-        "selfhost_signal": 8.0,
-        "community": 4.0,
-        "youth": 0.0,
-        "maturity": 3.0,
-        "gem_balance": -6.0,
-        "compose": 14.0,
-        "ai_webui_damp": -8.0,
-        "awesome": 10.0
-      }
-    },
-    {
       "url": "https://github.com/RiDDiX/RetroArr",
       "score": 86.38,
       "category": "Gaming / Game Servers",
@@ -724,7 +695,7 @@
       "family": "other",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 13.6,
         "v17 velocity": 1.1,
@@ -750,7 +721,7 @@
       "family": "productivity",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 11.5,
         "v17 velocity": 2.4,
@@ -775,7 +746,7 @@
       "family": "media",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 9.5,
         "v17 velocity": 3.4,
@@ -802,7 +773,7 @@
       "family": "gaming",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 12.6,
         "v17 velocity": 1.8,
@@ -828,7 +799,7 @@
       "family": "devops",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 11.5,
         "v17 velocity": 1.2,
@@ -854,7 +825,7 @@
       "family": "db_light",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 10.4,
         "v17 velocity": 0.8,
@@ -880,7 +851,7 @@
       "family": "documents",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 12.6,
         "v17 velocity": 1.4,
@@ -905,7 +876,7 @@
       "family": "knowledge",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 11.8,
         "v17 velocity": 1.2,
@@ -930,7 +901,7 @@
       "family": "dash_mon",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 9.5,
         "v17 velocity": 3.4,
@@ -955,7 +926,7 @@
       "family": "knowledge",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 9.5,
         "v17 velocity": 3.4,
@@ -981,7 +952,7 @@
       "family": "knowledge",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 12.8,
         "v17 velocity": 1.0,
@@ -1007,7 +978,7 @@
       "family": "dev_web",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 9.0,
         "v17 velocity": 3.1,
@@ -1032,7 +1003,7 @@
       "family": "knowledge",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 7.8,
         "v17 velocity": 1.0,
@@ -1058,7 +1029,7 @@
       "family": "devops",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 11.1,
         "v17 velocity": 0.6,
@@ -1069,31 +1040,6 @@
         "v17 license": 2,
         "v17 active": 1,
         "v17 selfhost": 2
-      }
-    },
-    {
-      "url": "https://github.com/botnick/telegram-media-downloader",
-      "score": 32.51,
-      "category": "Image / Design / Creative",
-      "stars": 11,
-      "docker": true,
-      "compose": true,
-      "dockerfile": true,
-      "awesome": false,
-      "proof_tier": "A",
-      "family": "media",
-      "fresh_gem": false,
-      "hook": "added by the v17 top-up lane",
-      "topup": "v17",
-      "breakdown": {
-        "v17 stars": 10.8,
-        "v17 velocity": 0.7,
-        "v17 deploy": 6,
-        "v17 release": 5,
-        "v17 license": 2,
-        "v17 active": 3,
-        "v17 selfhost": 2,
-        "v17 life": 3
       }
     },
     {
@@ -1109,7 +1055,7 @@
       "family": "other",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 7.8,
         "v17 velocity": 0.7,
@@ -1136,7 +1082,7 @@
       "family": "db_light",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 11.8,
         "v17 velocity": 0.8,
@@ -1160,7 +1106,7 @@
       "family": "knowledge",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 12.8,
         "v17 velocity": 0.6,
@@ -1184,7 +1130,7 @@
       "family": "knowledge",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 9.0,
         "v17 velocity": 2.1,
@@ -1209,7 +1155,7 @@
       "family": "proxy_net",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 7.8,
         "v17 velocity": 2.3,
@@ -1234,7 +1180,7 @@
       "family": "home_health",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 9.0,
         "v17 velocity": 3.1,
@@ -1258,7 +1204,7 @@
       "family": "files",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 7.8,
         "v17 velocity": 0.9,
@@ -1284,7 +1230,7 @@
       "family": "productivity",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 10.4,
         "v17 velocity": 1.2,
@@ -1308,7 +1254,7 @@
       "family": "productivity",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 8.5,
         "v17 velocity": 1.1,
@@ -1333,7 +1279,7 @@
       "family": "comms",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 13.0,
         "v17 velocity": 1.5,
@@ -1357,7 +1303,7 @@
       "family": "productivity",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 9.5,
         "v17 velocity": 1.9,
@@ -1382,7 +1328,7 @@
       "family": "proxy_net",
       "fresh_gem": false,
       "hook": "added by the v17 top-up lane",
-      "topup": "v17",
+      "topup": null,
       "breakdown": {
         "v17 stars": 12.8,
         "v17 velocity": 0.5,
@@ -1391,6 +1337,58 @@
         "v17 polish": 3,
         "v17 license": 2,
         "v17 active": 1
+      }
+    },
+    {
+      "url": "https://github.com/NextEpochs/opifer",
+      "score": 30.12,
+      "category": "AI / LLM",
+      "stars": 5,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "ai",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 7.8,
+        "v17 velocity": 2.3,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 polish": 3,
+        "v17 org": 2,
+        "v17 license": 2,
+        "v17 active": 3,
+        "v17 selfhost": 2,
+        "v17 life": 3,
+        "v17 ai": -6
+      }
+    },
+    {
+      "url": "https://github.com/PEG4TRON/MeshCorium",
+      "score": 29.42,
+      "category": "Dashboard / Homelab",
+      "stars": 12,
+      "docker": true,
+      "compose": true,
+      "dockerfile": true,
+      "awesome": false,
+      "proof_tier": "A",
+      "family": "dash_mon",
+      "fresh_gem": false,
+      "hook": "added by the v17 top-up lane",
+      "topup": "v17",
+      "breakdown": {
+        "v17 stars": 11.1,
+        "v17 velocity": 1.3,
+        "v17 deploy": 6,
+        "v17 release": 5,
+        "v17 license": 2,
+        "v17 active": 1,
+        "v17 life": 3
       }
     }
   ],
@@ -1401,21 +1399,20 @@
     "Networking / VPN": 4,
     "Monitoring / Observability": 3,
     "Notes / Knowledge": 3,
+    "Dashboard / Homelab": 3,
     "DevOps / Infra": 3,
     "Developer Tools / Utilities": 3,
     "Analytics / Data": 3,
     "Productivity / Tasks": 3,
-    "Dashboard / Homelab": 2,
     "Health / Food / Fitness": 2,
     "Maps / GIS / Location": 2,
-    "AI / LLM": 1,
     "Security / Auth": 1,
     "CRM / Business": 1,
     "Documents / PDF / Paperless": 1,
     "Search / Indexing": 1,
-    "Image / Design / Creative": 1,
     "Files / Storage / Backup": 1,
-    "Communication / Social": 1
+    "Communication / Social": 1,
+    "AI / LLM": 1
   },
   "scoreStats": {
     "min": 37.0,
@@ -1497,186 +1494,36 @@
   "selectionHeadroom": 1.54,
   "timingSeconds": 150.8,
   "repair": {
-    "at": "2026-10-04T01:28:13+00:00",
+    "at": "2026-10-04T01:45:34+00:00",
     "dropped": [
       {
-        "repo": "pierre-emmanuelJ/iptv-proxy",
-        "why": "no-web-app-intent"
+        "repo": "LibreChat-AI/LibreChat",
+        "why": "renamed-copy-of-published"
       },
       {
-        "repo": "jedisct1/minisign",
-        "why": "no-web-app-intent"
-      },
-      {
-        "repo": "zexadev/gemini-web2api-go",
-        "why": "ai-account-proxy"
-      },
-      {
-        "repo": "jamesmattson/programmarr",
-        "why": "same-description-as-published"
-      },
-      {
-        "repo": "rockbenben/juflow",
-        "why": "not-english-readable"
-      },
-      {
-        "repo": "Fade97/satisfactory-logistics-map",
-        "why": "game-server-wrapper"
-      },
-      {
-        "repo": "jonesd/xudanu",
-        "why": "library-or-sdk"
-      },
-      {
-        "repo": "mnfst/llm-gateway",
-        "why": "ai-without-web-ui"
-      },
-      {
-        "repo": "tohenk/docker-epg",
-        "why": "packaging-of-other-app"
-      },
-      {
-        "repo": "toks-love/modelharbor",
-        "why": "ai-without-web-ui"
-      },
-      {
-        "repo": "tsukumijima/EDCB-Wine",
-        "why": "not-english-readable"
-      },
-      {
-        "repo": "dlepaux/multilinguarr",
-        "why": "plugin-for-other-app"
-      },
-      {
-        "repo": "highaltidude/FermentOS",
-        "why": "too-few-stars (<3)"
-      },
-      {
-        "repo": "kuwacom/lobehub-compose",
-        "why": "not-english-readable"
-      },
-      {
-        "repo": "t0mer/grafana-stack",
-        "why": "packaging-of-other-app"
-      },
-      {
-        "repo": "t0mer/Xiaomi-Token-Extractor",
-        "why": "built-on-other-app"
-      },
-      {
-        "repo": "geransmith/clockspan",
-        "why": "too-few-stars (<3)"
-      },
-      {
-        "repo": "Posnic/POS",
-        "why": "no-web-app-intent"
-      },
-      {
-        "repo": "goryn-clade/pathfinder-containers",
-        "why": "packaging-of-other-app"
-      },
-      {
-        "repo": "jytt8u/Marvia",
-        "why": "native-client"
-      },
-      {
-        "repo": "rhamdeew/docker-compose-php",
-        "why": "packaging-of-other-app"
-      },
-      {
-        "repo": "anzal1/hum",
-        "why": "too-few-stars (<3)"
-      },
-      {
-        "repo": "nallej/MyJourney",
-        "why": "packaging-of-other-app"
-      },
-      {
-        "repo": "insaid-code/bsky-media-scrobbler",
-        "why": "too-few-stars (<3)"
-      },
-      {
-        "repo": "yxqzme2/listening-dungeon",
-        "why": "no-description"
-      },
-      {
-        "repo": "warengonzaga/opendots-railway",
-        "why": "template-or-learning"
-      },
-      {
-        "repo": "prof958/KingmakerTools",
-        "why": "too-few-stars (<3)"
+        "repo": "botnick/telegram-media-downloader",
+        "why": "adult-content"
       }
     ],
     "added": [
-      "chenxuan520/roadbook",
-      "SimplerDevelopment/SimplerDevelopment",
-      "pinkpixel-dev/miso",
-      "CheekyChinchilla/CozyVTT",
-      "gitbckr/gitbacker",
-      "stratif-io/stratif.io",
-      "G0rsthir/pdfmanager",
-      "woliveiras/bookaneer",
-      "jarvis2f/netqmon",
-      "seurch-eu/seurch",
-      "privkeyio/wisp",
-      "cristobaltormo/git-sync",
-      "merrypatch/bramblekeep",
-      "DaoFlow-dev/DaoFlow",
-      "botnick/telegram-media-downloader",
-      "nasnet-community/nasnet-monitor",
-      "kongesque/locus-vision",
-      "vrsandeep/mango-go",
-      "moku-project/Tsunagu",
-      "PrincipleBreach/waybend",
-      "wangdj104/tx-analysis-service",
-      "shivsarthak/holdfast",
-      "Xpiatio/Hearthwave",
-      "eigger/stash",
-      "OpenNeutron/OpenNeutron",
-      "Erik-A-Smith/DayFront",
-      "jcreek/OpenNetworkDiagram"
+      "NextEpochs/opifer",
+      "PEG4TRON/MeshCorium"
     ],
     "topUp": {
       "from": "v17",
-      "needed": 27,
-      "added": 27,
+      "needed": 2,
+      "added": 2,
       "starFloors": [
         20,
         10
       ],
       "repos": [
-        "chenxuan520/roadbook",
-        "SimplerDevelopment/SimplerDevelopment",
-        "pinkpixel-dev/miso",
-        "CheekyChinchilla/CozyVTT",
-        "gitbckr/gitbacker",
-        "stratif-io/stratif.io",
-        "G0rsthir/pdfmanager",
-        "woliveiras/bookaneer",
-        "jarvis2f/netqmon",
-        "seurch-eu/seurch",
-        "privkeyio/wisp",
-        "cristobaltormo/git-sync",
-        "merrypatch/bramblekeep",
-        "DaoFlow-dev/DaoFlow",
-        "botnick/telegram-media-downloader",
-        "nasnet-community/nasnet-monitor",
-        "kongesque/locus-vision",
-        "vrsandeep/mango-go",
-        "moku-project/Tsunagu",
-        "PrincipleBreach/waybend",
-        "wangdj104/tx-analysis-service",
-        "shivsarthak/holdfast",
-        "Xpiatio/Hearthwave",
-        "eigger/stash",
-        "OpenNeutron/OpenNeutron",
-        "Erik-A-Smith/DayFront",
-        "jcreek/OpenNetworkDiagram"
+        "NextEpochs/opifer",
+        "PEG4TRON/MeshCorium"
       ],
-      "laneSeen": 11289,
-      "lanePassing": 363,
-      "seconds": 168.7
+      "laneSeen": 8044,
+      "lanePassing": 258,
+      "seconds": 134.8
     }
   }
 }

@@ -1365,7 +1365,7 @@ def select_set(tracker, live_titles, args):
     # (REST search is mined out). See engines/quality.py and engines/topup.py.
     import quality
     import topup
-    selected, audit["qualityScreen"] = quality.screen(VERSION, selected)
+    selected, audit["qualityScreen"] = quality.screen(VERSION, selected, tracker=tracker)
     selected, audit["topUp"] = topup.fill(VERSION, selected, 50, tracker, args.dry_run,
                                           ai_ceiling=None,
                                           is_ai_cat=lambda c: c.get("hcat") == "AI / LLM",

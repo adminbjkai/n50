@@ -3487,7 +3487,7 @@ def select_set(tracker, live_titles, args):
         # lane (REST search is mined out). See engines/quality.py and engines/topup.py.
         import quality
         import topup
-        selected, audit["qualityScreen"] = quality.screen(VERSION, selected)
+        selected, audit["qualityScreen"] = quality.screen(VERSION, selected, tracker=tracker)
         selected, audit["topUp"] = topup.fill(VERSION, selected, target_n, tracker, args.dry_run,
                                               ai_ceiling=HARD_CAT_CAPS.get("AI / LLM", 3),
                                               is_ai_cat=lambda c: family_of(c.get("hcat") or "") == "ai",

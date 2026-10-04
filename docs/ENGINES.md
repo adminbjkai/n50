@@ -28,25 +28,48 @@ v1–v10 predate this folder (retrospective: [history/ANALYSIS-v1-v10.md](histor
 The UI tags a published set with its engine from the tracker or its audit file name; 206
 early sets (all at or below Set 377) have neither and show "—".
 
-## Top-up lane (v11–v16)
+## Quality screen and top-up lane (v11–v16)
 
-The REST-search engines are mined out: after ~25k published repos a typical run confirms
-45–48 candidates for 50 slots. Since 2026-10-03, when an engine's own selection comes up
-short, `engines/topup.py` fills the missing slots from v17's GraphQL discovery before the
-engine's shortfall check, so the engine's normal audit, page and CSV code handle them.
+The REST-search engines are mined out (a typical run confirms 45–48 candidates for 50 slots)
+and their own junk rules are old: real sets shipped deployment templates, compose bundles,
+0-star repos, AI-account proxies, native clients, add-ons for other apps, renamed copies of
+published repos and the same owner several times. Since 2026-10-03, right after an engine's
+own selection and before its shortfall check:
 
-- Top-up picks pass v17's quality gate and dedupe (URLs, renames, re-uploads), are never a
-  repo already selected, keep one repo per owner across the set, and respect the engine's
-  own AI ceiling (v13–v16: 3, v12: 10; v11 has none) and its `--cat-cap` per category,
-  which is relaxed only if the set can't be filled within it.
-- Proof tier A when the repo ships compose/Dockerfile, B when it's on awesome-selfhosted.
-- They keep v17's interest score (a different scale from the engines' appeal score), and
-  each is marked: the audit has a `topUp` record, and the Notion line says "added by the v17
-  top-up lane".
-- It costs about 90 s and ~250 GraphQL points, only on runs that come up short. If the lane
-  fails, the engine continues with what it had (and a short standard publish still refuses).
-- Measured on Set 494 dry runs (2026-10-03): v16 45 → 50/50 and v15 36 → 50/50, ~92 s per top-up.
-- `python3 engines/topup.py --self-test` checks the rules offline.
+1. **`engines/quality.py` screens the picks** with v17's gate on search-level fields (junk
+   patterns, readable description, not stale, not a fork/template, not built on another app),
+   web-app intent, the AI rule (an AI description must show a web UI), owner dedupe (best
+   *passing* pick per owner), re-upload dedupe (same description as a published repo) and
+   rename/transfer dedupe (GitHub redirect check). The star floor is 3, not v17's 20,
+   because these engines deliberately feature fresh gems (their median pick has 4–6 stars).
+2. **`engines/topup.py` refills the freed slots** from v17's GraphQL discovery: never a repo
+   already selected, one per owner, the engine's own AI ceiling (v13–v16: 3, v12: 10, v11:
+   none) and `--cat-cap` (relaxed only if needed to fill), proof tier A (compose/Dockerfile)
+   or B (awesome-selfhosted). Each top-up pick is marked in the audit (`topUp`) and on its
+   Notion line, and the page intro counts them; their score is v17's interest score.
+3. The engine's normal audit, page and CSV code then run on the final 50.
+
+The lane walks v17's **star ladder** (below) when the top rung can't supply enough repos.
+If the lane fails, the engine continues with what it has, and a short standard publish
+still refuses. `python3 engines/quality.py --self-test` and `topup.py --self-test` cover the
+rules offline.
+
+## Star ladder (v17 and the lane)
+
+v17 searches with a floor of 20 stars (10 for repos under 120 days old). New non-AI apps that
+clear that bar are scarce: one published set uses up most of them for days. When a rung
+can't fill the set, discovery reruns one rung lower: ≥10★ (≥5★ young), then ≥5★ (≥3★
+young). Every other rule is identical on every rung, ranking still favours the most-starred
+repos, and v17's page states the floor that was actually used.
+
+## Repairing a published set
+
+`python3 engines/repair_set.py N` re-checks set N's picks with live GitHub data and the
+current rules and shows what it would replace; `--apply` replaces them from the lane under
+the set's own engine rules, rebuilds the Notion page in that engine's format (new blocks
+are appended before the old ones are deleted), updates the tracker entry, CSV rows and
+audit (`repair` record), and keeps backups in `_tmp/backup-repair-<time>/`. Replaced repos
+stay in `usedRepoUrls`, so they never come back.
 
 ## Picking an engine
 
