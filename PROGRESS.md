@@ -67,3 +67,13 @@ CSV, Notion, no reuse, no duplicate owners) + reading every line.
 - Lane exhausted at ≥20★ after 494 → STAR_LADDER (20/10 → 10/5 → 5/3) in v17 + lane.
 - Set 496 v15: 9 own + 41 lane; review found statainer (renamed copy) + 5 junk → rename
   dedupe in quality.screen; repaired 6; 2 categories refreshed.
+- Set 497 v13: 9 own + 41 lane; review → companion/*arr/bot/game-server/reseller/bulk-mail
+  rules, categories; repaired twice (11 replaced). Lane rename re-check added after LANBooru.
+- Set 498 v16 (started by the user from the UI at 22:05): 2 own + 48 lane (≥5★ rung, 503
+  passing); review → RustDesk/Asterisk/Invoice Ninja add-ons, language/SDK, non-English;
+  repaired (9 replaced). Found repair_set race with concurrent publishes → re-read tracker
+  before write + refuse while the server publishes.
+- Category ordering regression caught before writing (killed the chain) → earliest-match
+  categorization; star-ladder memory. All of 494–498 re-checked under final rules.
+- Lesson: `pkill -f <pattern>` kills the calling shell when the pattern is in its command
+  line — use `ps -eo pid,args | grep "^..."` and kill by pid.

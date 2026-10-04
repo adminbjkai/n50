@@ -163,12 +163,13 @@ def self_test():
         mk("lc/chat", "Enhanced ChatGPT Clone: agents, MCP, multiple AI providers, self-hosted"),
         mk("dup/bad", "Railway deployment template for a chat app", score=99),     # best score but fails
         mk("dup/good", "Self-hosted kanban board with a web UI", score=10),        # so this one is kept
+        mk("ai/pwa", "Self-hosted PWA to control Claude Code or any terminal from your phone"),
         dict(mk("rr/resume", "A one-of-a-kind resume builder that keeps your privacy in mind."),
              category="AI / LLM"),                                                 # wrong engine category
     ]
     kept, rec = screen("test", sel)
     names = [c["repo"]["full_name"] for c in kept]
-    ok = names == ["good/app", "ok/ai", "gem/new", "lc/chat", "dup/good", "rr/resume"]
+    ok = names == ["good/app", "ok/ai", "gem/new", "lc/chat", "dup/good", "ai/pwa", "rr/resume"]
     print(f"  {'ok ' if ok else 'FAIL'} kept {names}")
     print("quality self-test:", "ALL PASSED" if ok else "FAILED")
     return ok

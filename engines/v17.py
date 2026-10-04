@@ -297,7 +297,8 @@ JUNK = [
     (r"\b(plugin|extension|add-?on|addon|integration|theme|skin|widget|module|mod)\s+(for|to)\b", "plugin-for-other-app"),
     (r"\b(client|app|frontend|player|companion)\s+for\s+(jellyfin|plex|navidrome|subsonic|emby|immich|home assistant|nextcloud|sonarr|radarr|mastodon|matrix|lemmy)", "client-for-other-app"),
     (r"\b(android|ios|iphone|mobile|desktop|windows|macos|tvos)\s+(app|client|application)\b|\b(apps?|clients?) for (android|ios|iphone|windows|macos)\b", "native-client"),
-    (r"\bfor (the |your )?\*arr\b|\*arr (media )?stack\b", "plugin-for-other-app"),
+    (r"\bfor (the |your )?\*?arr\b( (ecosystem|stack|apps?))?|\*arr (media )?stack\b", "plugin-for-other-app"),
+    (r"\b(rest )?api\b.{0,50}\busing (yt-dlp|ffmpeg|puppeteer|playwright|selenium)\b|\bapi (wrapper )?(for|around) yt-dlp\b", "component-or-dev-tool"),
     (r"\bdocker[- ]?(compose)?[- ]?(solution|setup|stack|configuration|config|environment|template)s?\s+(for|to)\b|\bready[- ]to[- ]use\b.{0,40}\bdocker[- ]?compose\b|\b(monitoring|logging|observability) stack\b.{0,60}\b(prometheus|grafana|loki)\b", "packaging-of-other-app"),
     (r"\bdedicated server\b|\bfor [\w ]{0,30}dedicated servers\b|\bgame server (for|of)\b|\bserver for (minecraft|palworld|valheim|ark|rust|terraria)", "game-server-wrapper"),
     (r"\b(discord|telegram|slack|whatsapp|twitch|feishu|lark|wechat|dingtalk|qq)\b.{0,30}\bbot\b|\bbot for (discord|telegram|slack|feishu)", "chat-bot"),
@@ -308,7 +309,7 @@ JUNK = [
     (r"\b(readme|github) (stats|profile|streak)|\bstats cards?\b|\bsvg cards?\b|profile readme", "github-vanity"),
     (r"\buserscript\b|\btampermonkey\b|\bbrowser extension\b|\bchrome extension\b", "browser-extension"),
     (r"\b(docker images?|docker-?compose files?|compose (files|stack|templates?)|dockerfiles?|deployment|install(er|ation) scripts?|setup scripts?)\s+for\b", "packaging-of-other-app"),
-    (r"^(my|personal) |\bmy (homelab|home lab|server|setup|infra)\b|\bhomelab (config|setup|infrastructure|repo|gitops)\b|\bgitops\b|\bdotfiles\b|\bnixos config", "personal-setup"),
+    (r"\bmade for (my|own|our) (own )?(personal )?(server|homelab|setup)\b|\bpersonal use\b|^(my|personal) |\bmy (homelab|home lab|server|setup|infra)\b|\bhomelab (config|setup|infrastructure|repo|gitops)\b|\bgitops\b|\bdotfiles\b|\bnixos config", "personal-setup"),
     (r"\b(starter|boilerplate|template|scaffold|example|sample|demo|tutorial|course|workshop|homework|assignment|learning)\b( (app|project|repo|for|of|to))", "template-or-learning"),
     (r"\bawesome\b.*\b(list|collection)\b|\bcurated list\b", "list"),
     # The repo IS an MCP server (apps that include one as a feature are fine).
@@ -330,11 +331,11 @@ JUNK = [
     (r"\bone[- ](shot|command|click)\s+(docker\s+)?(install|deploy|setup|self-hosting)\w*\s+(of|for)\b|\b(docker )?self-hosting for the\b|\bdocker (deployment|setup|installer) for\b", "packaging-of-other-app"),
     (r"\b(dashboard|ui|frontend|manager|portal|panel)\s+for\s+(your\s+)?(self-hosted\s+)?[\w.-]+\s+instances?\b", "companion-for-other-app"),
     (r"\bcold[- ]call\w*|\b(power|auto|predictive|progressive)[- ]?dialer\b|\bauto(matically)?[- ]?(view|like|follow)(s|ing|er)?\b", "growth-or-device-farm"),
-    (r"\bdownloader for (apple music|spotify|deezer|qobuz|tidal|youtube|soundcloud)\b|\b(music|stream|spotify|apple music|deezer|tidal|qobuz|youtube) ripper\b", "scraper-or-shady"),
+    (r"\bdownloader for (apple music|spotify|deezer|qobuz|tidal|youtube|soundcloud)\b|\b(music|stream|spotify|apple music|deezer|tidal|qobuz|youtube) ripper\b|\b(spotify|tidal|deezer|qobuz|apple music) (ingest|download\w*|rip\w*)\b|\bdownload\w* (music )?from (spotify|tidal|deezer|qobuz|apple music)\b", "scraper-or-shady"),
     (r"\bscraper\b|\bcrawler\b|\bspam\b|\bmass (dm|mail)|\bbot farm\b|\bcheat\b|\bpiracy\b|\bcrack(ed)?\b|\bwarez\b", "scraper-or-shady"),
 ]
 JUNK_RE = [(re.compile(p, re.I), why) for p, why in JUNK]
-WEB_INTENT = re.compile(r"\b(web|webui|web ui|web-based|browser|dashboard|self-?host\w*|homelab|"
+WEB_INTENT = re.compile(r"\b(web|webui|web ui|web-based|browser|dashboard|self-?host\w*|homelab|alternative|"
                         r"server|platform|portal|app|application|service|manager|tracker|panel|"
                         r"pwa|interface|ui)\b", re.I)
 
@@ -475,8 +476,16 @@ def interest_score(repo, now, curated=None):
 
 
 CATEGORY_OVERRIDES = [
-    (r"\b(crm|help ?desk|support desk|ticketing)\b", "CRM / Business"),
+    (r"\b(crm|help ?desk|support desk|ticketing|customer (service|support))\b", "CRM / Business"),
     (r"\b(epub|ebooks?|ebook reader|audiobooks?)\b", "Books / Reading / Library"),
+    (r"\b(photography|portfolio|photo (browser|management|manager)|stl|3mf|3d models?)\b", "Image / Design / Creative"),
+    (r"\b(document management|paperless)\b", "Documents / PDF / Paperless"),
+    (r"\b(period|menstrual|fertility|cycle tracking|intimacy tracking)\b", "Health / Food / Fitness"),
+    (r"\b(mailing lists?|newsletters?|transactional e-?mails?|e-?mail (platform|client|sequencer))\b", "Communication / Social"),
+    (r"\b(status (portal|page)|uptime)\b", "Monitoring / Observability"),
+    (r"\b(news (inbox|reader|dashboard)|feed reader|rss)\b", "Notes / Knowledge"),
+    (r"\b(points[- ]and[- ]rewards|family (points|rewards))\b", "Productivity / Tasks"),
+    (r"\b((homelab|personal|start|home) (dashboard|page)|homepage)\b", "Dashboard / Homelab"),
     (r"\b(dictionary|vocabulary|language learning)\b", "Education / Learning"),
     (r"\b(day planner|planner pwa|to-?do lists?)\b", "Productivity / Tasks"),
     (r"\b(backups?|family (digital )?safe|file (storage|sharing)|dropbox)\b", "Files / Storage / Backup"),
@@ -522,7 +531,8 @@ def categorize(repo):
 
 AI_APP = re.compile(r"\b(web ?ui|webui|web app|web-based|web interface|dashboard|workspace|interface|"
                     r"browser[- ]based|in (the|your) browser|browser workbench|frontend|panel|portal|"
-                    r"chat ui|chat app|chat client|chatgpt clone|clone|ui|web application|"
+                    r"chat ui|chat app|chat client|chatgpt clone|clone|ui|web application|pwa|"
+                    r"workstation|alternative|web chat|editor|studio|"
                     r"self-host\w* (app|workspace))\b", re.I)
 
 
@@ -985,6 +995,11 @@ def self_test():
         (mk("u/pt", "Controle financeiro pessoal e familiar self-hosted: renda, despesas, cartões, metas"), "not-english-readable"),
         (mk("u/en", "Self-hosted minimal time tracking."), None),
         (mk("u/ha", "A self-hosted family dashboard built on Home Assistant API, works with any calendar"), "built-on-other-app"),
+        (mk("v/spot", "Self-hosted personal music server with Spotify ingest"), "scraper-or-shady"),
+        (mk("v/alt", "Open-source alternative to Intercom and Linear. Support, projects, CRM", topics=()), None),
+        (mk("v/ytdlp", "Production-ready REST API for video downloads and metadata extraction using yt-dlp"), "component-or-dev-tool"),
+        (mk("v/gamearr", "The definitive Video Game PVR for the arr ecosystem. Automate metadata"), "plugin-for-other-app"),
+        (mk("v/personal", "A status portal made for own personal server hosting different services"), "personal-setup"),
         (mk("p/cjk", "知归是一个面向个人使用的 AI 知识归档工具，把内容链接发送给机器人 GitHub web app"), "not-english-readable"),
     ]
     ok = True
@@ -1044,7 +1059,11 @@ def self_test():
                        ("Polished self-hostable browser-based EPUB & PDF library", "Books / Reading / Library"),
                        ("Minimalist day planner PWA with a vertical timeline", "Productivity / Tasks"),
                        ("A self-hosted English dictionary with 300 000 entries", "Education / Learning"),
-                       ("Combines CRM, project management, invoicing, time tracking and monitoring", "CRM / Business")]:
+                       ("Combines CRM, project management, invoicing, time tracking and monitoring", "CRM / Business"),
+                       ("A modern, self-hosted photography portfolio platform built with React and analytics", "Image / Design / Creative"),
+                       ("Privacy-first PWA for period and intimacy tracking", "Health / Food / Fitness"),
+                       ("Modern, streamlined, open-source customer service software with monitoring", "CRM / Business"),
+                       ("A one-binary, self-hosted mailing list manager", "Communication / Social")]:
         got = categorize(mk("c/c", desc))
         t = got == want
         ok &= t

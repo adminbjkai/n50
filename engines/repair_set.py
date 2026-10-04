@@ -48,6 +48,9 @@ def load_set(n):
         raise SystemExit(f"set {n}: expected one tracker entry, found {len(entries)}")
     entry = entries[0]
     engine = entry.get("version")
+    if not engine:  # v11/v12 entries before 2026-10-03 carry no version; the audit name does
+        found = sorted(v1.AUDIT_DIR.glob(f"set{n}_v*_verified_audit.json"))
+        engine = found[-1].name.split("_")[1] if found else None
     if engine not in ("v11", "v12", "v13", "v14", "v15", "v16", "v17"):
         raise SystemExit(f"set {n}: engine {engine!r} has no page builder here")
     audit_path = v1.AUDIT_DIR / f"set{n}_{engine}_verified_audit.json"
@@ -191,6 +194,7 @@ def main():
     entry = next(p for p in tracker["completedPages"] if p.get("setNum") == n)
     entry["repos"] = urls
     entry["count"] = len(urls)
+    entry.setdefault("version", engine)
     entry["repaired"] = now.strftime("%Y-%m-%d")
     seen = {u.lower() for u in tracker["usedRepoUrls"]}
     tracker["usedRepoUrls"] += [u for u in urls if u.lower() not in seen]

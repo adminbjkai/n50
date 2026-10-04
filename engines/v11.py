@@ -1780,7 +1780,8 @@ def main():
         v1.append_blocks(page["id"], page_blocks(set_num, selected))
         urls = [c["repo"]["html_url"] for c in selected]
         entry = {"setNum": set_num, "title": title, "pageId": page["id"],
-                 "pageUrl": v1.notion_url(title, page["id"]), "repos": urls}
+                 "pageUrl": v1.notion_url(title, page["id"]), "repos": urls,
+                 "count": len(urls), "version": VERSION}
         tracker["completedSets"] = set_num
         tracker["completedPages"].append(entry)
         merged, seen = [], set()
